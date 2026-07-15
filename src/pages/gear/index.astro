@@ -7,13 +7,54 @@ const items = (await getCollection('gear', ({ data }) => !data.draft)).sort(
 );
 ---
 
-<BaseLayout title="Astro Gear">
+<BaseLayout title="Astro Gear" description="Equipment - Imaging Gear - Tools - Reviews">
   <h1>Astro Gear</h1>
+  <p class="tagline">Equipment - Imaging Gear - Tools - Reviews</p>
+
+  <h2>Gear Reviews</h2>
   <ul>
     {items.map((item) => (
       <li>
         <a href={`/gear/${item.id}/`}>{item.data.title}</a>
+        {item.data.description && <> - {item.data.description}</>}
       </li>
     ))}
   </ul>
+
+  <h2>Equipment Images...</h2>
+  <p>A snapshot history of just some of the gear that I have employed.</p>
+
+  <p>This hobby is a battlefield, a war in which the attrition rate overwhelms strategic planning and ultimately loses out to the larger force. This is where photon-cannons lose sight of the target amidst sporadically cloudy skies. Where deep-space artillery and targeting scopes, with their sophisticated command software, come together to form a combined-arms attack, only to be demoralized by the more powerful forces of mount error, light pollution, atmospheric anomalies, and light mechanical imprecision – where poorly outfitted armies, bad supplies lies, and dreadful reinforcements are overwhelmed by the shock and awe of a pervasive attack by the enemy on all fronts. Ground to air forces made ineffective against the air superiority of the adversary, leaving the gear to be sold off of Astromart to the highest third-world bidder.</p>
+
+  <p>Astronomy classifieds are like an orphanage, where poor, helpless youths stand in line for adoption by new, prospective parents, only to be redeemed and rejected once again when these children prove too unruly, too time-consuming to handle. Otherwise soulful kids marketed and bargained about like meaningless objects, bouncing from foster home to foster home without ever achieving full potential.</p>
+
+  <p>A more apt description of the difficulties within this hobby you will never find!</p>
+
+  <p>The reasons for the high turnover rate with astronomy gear and the exit from the hobby by well-intentioned, motivated individuals is ultimately very personal, sometimes sad. But the excuses all come from one overriding factor, a lineage that can be traced back to the first branch of the astrophotographic family tree – astroimaging is highly complex and highly variable.</p>
+
+  <p>To have success in this hobby, time, motivation, commitment, and talent are key factors, but NOTHING is more important than solid, reliable equipment. Together, a fusion results, a recipe for winning over the complexities and variables in this hobby.</p>
+
+  <p>Complexities can be overcome through practice and study, much the same way a doctor learns the intricate and immense detail in the human body, or a mechanic optimizes an engine through years of practice and knowledge. Resources (like this website) are available to the astroimager to assist you with the management of the details brought together by such a synergy of hardware and software systems. This is where dedication and commitment exerts a strong will over the understanding required for success. This comprehension is based on known factors; a constant value that normally ramps up in direct proportion to the number of elements your pocketbook purchases, a linear function of the amount of time spent in praxis and learning.</p>
+
+  <p>Ultimately, it's not the complexity that is the problem – that is a challenge that is often well met. Instead, it's the variables – so many parameters can change on a nightly basis.</p>
+
+  <p>At any time during an imaging session, odds are likely that you will run into a performance issue that is not easily understood. For example, when a one-minute image reveals trailed stars, the solution will not be readily apparent, especially to the newly-initiated among us. Rather, any one of several potential issues is possible – and, often, multiple offenders are involved:</p>
+
+  <ul>
+    <li>Is the polar alignment good?</li>
+    <li>Is there an autoguiding or tracking problem?</li>
+    <li>Did the wind blow the scope or the seeing deteriorate?</li>
+    <li>Did the focuser shift due to the temperature change or did it just slip?</li>
+    <li>Did I snag a cable or did a cosmic ray hit confuse the autoguider?</li>
+  </ul>
+
+  <p>The only solution to this interplay of unpredictable circumstances is to know enough about your imaging system in order to identify the roots causes, diminish their effects, or eliminate them entirely. This assumes, of course, that those factors can be addressed at all – Murphy's Law was invented for a reason.</p>
+
+  <p>The solution is to know your imaging gear. This can indeed reduce the amplitude and frequency of your errors. Likewise, more experience, particularly with software tools designed to provide objective methods for troubleshooting your hardware, can allow the astroimager to reduce the impact of most imaging variables.</p>
 </BaseLayout>
+
+<style>
+  .tagline {
+    color: #9aa4b8;
+  }
+</style>
