@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const items = (await getCollection('gear', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<BaseLayout title="Astro Gear">
+  <h1>Astro Gear</h1>
+  <ul>
+    {items.map((item) => (
+      <li>
+        <a href={`/gear/${item.id}/`}>{item.data.title}</a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

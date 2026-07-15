@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const entries = (await getCollection('sliderules', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<BaseLayout title="Jay's Slide Rules">
+  <h1>Jay's Slide Rules</h1>
+  <ul>
+    {entries.map((entry) => (
+      <li>
+        <a href={`/sliderules/${entry.id}/`}>{entry.data.title}</a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
