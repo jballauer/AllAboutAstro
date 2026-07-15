@@ -1,8 +1,125 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import heroImage from '../assets/home/hero.jpg';
+
+const recentImages = (await getCollection('gallery', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const gear = {
+  Telescopes: [
+    '6" Takahashi TOA-150',
+    '5" Skywatcher Esprit 120',
+    '4" Takahashi FSQ-106',
+    'Celestron 11" RASA',
+    'Celestron 11" Edge SCT',
+    '7" Teleport Dob',
+    'Meade LX200 Classic',
+    'Coronado Solar Max 90 (double-stack)',
+  ],
+  Cameras: ['QHY 600 Grayscale', 'Nikon D810a DSLR camera'],
+  Mounts: [
+    'SB Paramount MX+',
+    'Takahashi NJP',
+    'iOptron CEM-60EC',
+    'Rainbow Astro RST-135',
+  ],
+};
 ---
 
 <BaseLayout title="Home">
-  <h1>All About Astro</h1>
-  <p>Home page content coming soon — migrated from the live site.</p>
+  <section class="hero">
+    <Image src={heroImage} alt="All About Astro" width={570} />
+    <div>
+      <h1>Astrophotography by Jay Ballauer</h1>
+      <p class="tagline">Images - Tutorials - Articles - Equipment</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Most Recent Images...</h2>
+    <div class="recent-grid">
+      {recentImages.map((entry) => (
+        <a class="recent-tile" href={`/gallery/${entry.id}/`}>
+          {entry.data.image && <Image src={entry.data.image} alt={entry.data.title} width={300} height={220} />}
+          <span>{entry.data.title}</span>
+        </a>
+      ))}
+    </div>
+    <p><a href="/gallery/">View the Astro Gallery for more!</a></p>
+  </section>
+
+  <section>
+    <h2>Current Gear</h2>
+    {Object.entries(gear).map(([category, items]) => (
+      <div>
+        <h3>{category}...</h3>
+        <ul>
+          {items.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <section>
+    <h2>Welcome to All About Astro!</h2>
+    <p>What you'll find here is a website that showcases some of my astrophotography, but more than that, it will show you how to do the same! I hope that you can use this site to help you learn a new hobby - or master it!</p>
+
+    <p>If you are a beginner, what you will discover in this wonderful, demanding hobby is that all the failures combine to make you a better imager. In essence, like an Apollo 13 mission, it will be the successful failures that make all the difference. Whereas Apollo has its faulty oxygen tank, we have our fogging of the CCD chamber window. While our struggle to find a guide-star is not as life-endangering as their compromised heat-shield, we need to experience some difficulties in order to appreciate what the hobby is all about.</p>
+
+    <p>It is about adventure and perseverance and passion. It is about learning and struggling and improving. But above all else, astrophotography is all about meeting every challenge in a complex, unpredictable hobby that burdens us with a substantial learning-curve.</p>
+
+    <p>Therefore, the challenge of a good website about this hobby becomes organizing the information in a way that is logical, yet cohesive; organized, yet complete. But it is also about maintaining a balance between beginner and expert, giving a steady diet of meat and potatoes without letting the beginner know he is overeating.</p>
+
+    <p>In that light, I will not refrain from giving opinions on this site, particularly if I know a method, philosophy, or technique will provide the visitor with a time-saving, or money-saving approach.</p>
+
+    <p>In my time as a teacher and presenter of CCD topics and hands-on astronomy workshops, particularly to beginners, I've learned that I cannot take the approach of, "What questions do you have and let's see if I can answer them?"</p>
+
+    <p>The reality is that, in this terrifically and terribly difficult hobby, what is likely holding you back is that you have no earthly idea of what questions to ask!</p>
+
+    <p>So I suspect that if you've found your way here, you also want a little, "Jay, tell us what we need to know - and when." This is the key reason why, for the most part, All About Astro.com will attempt to teach the hobby from the macro perspective, focusing more on the overall concepts as opposed to giving the reader a myopic "getting started" or "step-by-step" guide.</p>
+
+    <p>But there are a couple of other reasons to express the hobby in such a way. First, the number of hardware and software options available to the hobbyist does not permit individual tutorials on specific software and hardware without also alienating the reader who has a different set of tools, or promoting only my favorite tools - I will do some of that, but only because I feel the tools are that good.</p>
+
+    <p>Second, teaching WHAT to do in this hobby, in the long-run, will not be as effective as teaching WHY. The person who understands the concepts and philosophies will soon be able to make decisions outside the scope of this website. This will lead to an understanding that promotes progress and innovation within the hobby, making it more likely that the imager will be able to contribute back to the astroimaging community at large.</p>
+
+    <p>Regardless of the reason you are in the hobby or the goals you hope to achieve, the problem with being a beginner is that we spend most of our time trying to figure out what questions we need to ask. Whereas there are many resources that can teach the hobby, I have found that too many of them leave me desiring for more, and more often than not, they leave us with apprehension about what is next.</p>
+
+    <p>Therefore this website not only showcases some fine astrophotography, but will help you learn how to do the same. It will attempt to tell you what questions you need to ask and when you need to ask them. This way, you can research your inquiries, perhaps beginning with this website and finishing in the laboratory of experience. But in the end, as comprehensive as you might find the information contained herein, it is my desire that All About Astro.com will prove authoritative, not because some guy like me wrote it, but rather because you find success in the methods contained on these pages.</p>
+
+    <p>Give a person a fish, and he feeds for a day...teach a person to fish, and...well...you get it. Pithy saying, but applicable.</p>
+  </section>
 </BaseLayout>
+
+<style>
+  .hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .tagline {
+    color: #9aa4b8;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  .recent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+  }
+  .recent-tile {
+    color: inherit;
+    text-decoration: none;
+  }
+  .recent-tile span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+</style>

@@ -1,8 +1,41 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import jayPhoto from '../assets/about/jay-with-telescope.jpg';
 ---
 
-<BaseLayout title="About Me">
+<BaseLayout title="About Me" description="About Jay Ballauer — high school math teacher, astrophotographer, and founding Director of Astronomy for the Three Rivers Foundation.">
   <h1>About Me</h1>
-  <p>About Me content coming soon — migrated from the live site.</p>
+
+  <Image src={jayPhoto} alt="Jay Ballauer with his telescope" width={700} />
+
+  <p>Jay Ballauer is a high school Mathematics teacher in the north Texas area, working in public education since 1994. With a passion for teaching others, sharing his favorite hobby, astronomy, came naturally.</p>
+
+  <p>Jay has had his hands in several projects, but most notably served as the founding Director of Astronomy for the Three Rivers Foundation (3RF), a non-profit organization for education. 3RF runs the Comanche Springs Astronomy Campus, where Jay has spent many of his nights under their pristine west Texas skies. He has also consulted and built other observatory projects across the country.</p>
+
+  <p>Jay became seriously involved with amateur astronomy when he caught his first naked-eye views of Comet Hale-Bopp in 1997. Over the next few years, he learned how to view the sky through his first scope, a 10″ Meade LX-50, using the old fashioned star-hop method with the standard Meade finderscope. He became a very proficient and knowledgeable observer.</p>
+
+  <p>Beginning in 2000, Jay jumped neck-deep into astrophotography. It quickly became the favorite part of his hobby because of the challenges inherent when merging art with science; technology with astronomy. With the power of modern CCD imaging cameras and world-class telescope gear, his passion came to include everything from wide-field vistas to narrow-field, high resolution deep sky objects.</p>
+
+  <p>His images have been published on NASA'S APOD, in books, astronomy magazines/websites, and a plethora of literature and media. Awards include Best Deep Sky Image at the 2004 Texas Star Party and 1st Place in Sky and Telescope's 2007 Beautiful Universe imaging competition. He has spoken regularly in 3RF-sponsored imaging workshops throughout Texas, at major star parties such as the Texas Star Party and Rocky Mountain Star Stare, and at national conventions such as NEAF (NEAIC).</p>
+
+  <p>Between observing, imaging, and sharing the night sky with others, the blessings come easily. But for Jay, the joy comes also from his family and close friends. He is in semi-retirement from astronomy at the present time, focusing more on family, which includes his wife, Helen, and his three children, Will (24), Peyton (21), and Sara (16). But once life slows down, he looks forward to a lifetime full of astronomy and astrophotography.</p>
+
+  <h2>Areas of Interest</h2>
+  <p>Astro CCD imaging, wide and narrow field, RGB and spectral-band; public astronomy outreach/education; mentoring and consulting.</p>
+
+  <h2>Astrophotography Publications</h2>
+  <p><strong>Magazines</strong><br />Sky and Telescope, Astronomy, Dark Sky Insight, and Amateur Astronomy Magazine.</p>
+  <p><strong>Books</strong><br />Digital Astrophotography by Robert Reeves<br />The Backyard Astronomer's Guide by Dickenson and Dyer</p>
+  <p><strong>Internet</strong><br />NASA's APOD, www.space.com, www.astronomy.com, www.skyandtelescope.com, www.spaceweather.com</p>
+  <p><strong>Awards</strong><br />2004 Texas Star Party – Best Deep Sky Photograph<br />2007 Sky and Telescope's Beautiful Universe Imaging Contest - 1st Place</p>
+  <p><strong>Magazine Covers</strong><br />Amateur Astronomy Magazine, Fall 2017<br />Heart Magazine - Society of the Sacred Heart, Winter 2008</p>
+
+  <h2>Contact</h2>
+  <p>Feel free to contact me with questions or comments:</p>
+  <p>
+    Jay Ballauer<br />
+    Grapevine, Texas<br />
+    <a href="mailto:jballauer@gmail.com">jballauer@gmail.com</a>
+  </p>
 </BaseLayout>
