@@ -1,14 +1,59 @@
+---
+import { Image } from 'astro:assets';
+import footerLogo from '../assets/home/footer-logo.jpg';
+---
+
 <footer class="site-footer">
-  <p>&copy; {new Date().getFullYear()} All About Astro</p>
+  <div class="site-footer__inner">
+    <Image src={footerLogo} alt="All About Astro" width={133} />
+    <div class="site-footer__terms">
+      <h2>Terms of Use</h2>
+      <p>All images and content on www.allaboutastro.com are copyright by Jay Ballauer. Permission for use and proper credit is required.</p>
+      <p>&copy; COPYRIGHT 2003 - {new Date().getFullYear()} ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
 </footer>
 
 <style>
   .site-footer {
-    border-top: 1px solid #333;
     margin-top: 3rem;
-    padding: 1.5rem;
-    text-align: center;
-    color: #7a8296;
-    font-size: 0.875rem;
+    background-color: #1c1c1c;
+    border-top: 1px solid #333;
+  }
+  .site-footer__inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .site-footer__terms {
+    text-align: right;
+  }
+  .site-footer__terms h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: 1rem;
+    color: var(--color-heading);
+    margin: 0 0 0.5rem;
+  }
+  .site-footer__terms p {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--color-prose-text);
+    margin: 0.25rem 0;
+  }
+
+  @media (max-width: 600px) {
+    .site-footer__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .site-footer__terms {
+      text-align: center;
+    }
   }
 </style>
