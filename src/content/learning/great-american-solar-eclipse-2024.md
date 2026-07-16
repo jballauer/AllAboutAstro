@@ -7,6 +7,8 @@ draft: false
 
 The April 2024 Total Solar Eclipse Guide for Teachers (and Non-Teachers)
 ​                                                                                                               By Jay Ballauer
+![Total solar eclipse corona](./_images/eclipse24-01-hero.jpg)
+
 Look to the right.  At around 1:45pm on April 8, 2024, if you are in the Dallas area, then you should just look up.  This is pretty much what you will see. 
 
 That glorious photo is not photographic trickery.  It is an HDR composite image which shows the moon covering up the light of the sun.  This is what happens in a total solar eclipse, which will rob you of your breath unlike ANY other event that nature has to offer!  
@@ -41,6 +43,9 @@ Exposure Info: This is a composite, HDR image, with nine individual sub-exposure
 
 Notes:  This is the "beauty shot" for any total solar eclipse.  It requires several exposures of various lengths to capture the dynamic range of the entire display (which, remarkably, your eye's can see all at once).   It will require a tracking mount and a telescope for best details.  Toward the end of this article, I discuss how to capture such an image.   Amazingly, this is mostly what you will see at the 2024 eclipse at totality, except for the earthshine.
 The Rarity of a Total Solar Eclipse
+![21st Century Eclipses](./_images/eclipse24-02-21stcentury.jpg)
+![Eclipse frequency screenshot](./_images/eclipse24-03-screenshot.png)
+
 Somewhere in the world, there are anywhere from 2 to 5 solar eclipses within a typical year.  But every 18 months or so, it might be a TOTAL solar eclipse.  These do not seem rare, since the Earth is a large planet.  But any particular spot on the globe only experiences a TOTAL solar eclipse every 350 to 450 years on average.  And because the planet is 75% covered in water, travelling to find the one that's happening every 18 months can be quite the journey!   
 ​
 But, believe it or not, there are dedicated eclipse "chasers" who won't miss a single one.  All it takes is money and planning to intercept an eclipse's path, which often times is on an "eclipse cruise" somewhere in the middle of a distant ocean.   Surely you have $20 grand for an eclipse cruise, right? 
@@ -74,6 +79,8 @@ There will be opportunities to travel to annular solar eclipses as well.   For
 
 As described later, an annular eclipse is a different KIND of "spectacular," but it pales in comparison with a total solar eclipse like what we are about to experience.  How beautiful it IS that it will pass right overhead for so many people in North America!  It's as if the astronomy gods picked YOU to receive this free gift.  So I implore you to enjoy it!
 The Beauty of a Total Solar Eclipse
+![Full h-alpha eclipse view](./_images/eclipse24-04-halpha.jpg)
+
 But why bother to see one at all?  Don't eclipses happen all the time?   Aren't they all the same? 
 
 Not at all, especially not with a TOTAL solar eclipse, which is always unique during its "totality" phase.  Moreover, it is an unforgettable, almost spiritual experience for many first time observers.   So if this appeals to you - and if you are anywhere along the eclipse path - then you really have no excuse to miss what could be a transformative and even life-altering event...and if it's not that, it will most certainly be strongly emotional, something you will remember the rest of your life.    
@@ -82,6 +89,9 @@ Unapologetically - I shouldn't have to beg - a solar system body entirely blocki
 The August 2017 Total Solar Eclipse shortly after it began. This image, taken with a dedicated solar telescope, shows solar features not normally seen via any other means. The ever-changing solar surface is never the same, second to second.
 The event will start slowly, where the moon's silhouette gradually robs us of sunlight, something that looks like the image above.  However, upon totality, you should expect an event of singular grandeur and spectacle unlike anything you will ever see in a life-time, similar to the image below. ​
 Here is the 2017 eclipse at totality, appearing very much the way we saw it with the "naked" eye, as this image was taken through a normal telescope with NO filters. The coronal streams escaping from the dark lunar disk is one of nature's most incredible spectacles. Expect something quite similar in April 2024!
+![Full corona without earthshine](./_images/eclipse24-05-corona.jpg)
+![A classic drawing of the sun with flames](./_images/eclipse24-06-sun-drawing.jpg)
+
 To interpret what we see here, let's consider this drawing of the sun.   This is a classic way to represent our nearest star according to traditional folklore, yet have you ever asked, "Why are their flames?"   Despite knowing that a star is a huge ball of flames, I never get the impression of such during sunset or sunrise when instead the sun looks like a glowing, circular orb.  In fact, if such flames exist, when would you actually witness them?   Surely it's all a fantasy, right?   Well, a total solar eclipse will show you otherwise!   
 The astonishing view shown in the picture is the ever-changing solar corona streaming out from behind the totally black moon. These streams of solar radiation extend out far beyond the surface of the sun itself, and during totality they appear to stretch across the sky!   The heat of these coronal flames are upwards of 2 million degrees Fahrenheit, which is exponentially more than the surface temperature of the sun itself (10,000 degrees Fahrenheit), a fact that is not yet understood by science.  Not only that, but there will be visible solar prominences to be seen as well.  These will appear visually as small, pink flames extending just outside the sun's moon-obstructed diameter.   These smaller flames are actually plasma loops that arc along the sun's magnetic field lines.  ​
 And the best part of all this is that THE SUN IS TOTALLY SAFE TO VIEW DURING TOTALITY.   There is no need for eye protection.  And in fact, I shot the above of the 2017 Total Solar Eclipse after removing the solar filter from my telescope.   It is safe because the moon blocks all visible, ultraviolet, and normally harmful light that, at every other time of your life, would be headed right toward your precious eyes. 
@@ -113,6 +123,8 @@ To conclude, solar safety should NOT be a concern in terms of participation.  T
 Quite simply, not only is it a transformative experience, it's just too much at the heart of what education is all about; that there is a universe worthy of exploration and understanding that goes far beyond ourselves.  
 "Quite simply, not only is [the eclipse] a transformative experience, it's just too much at the heart of what education is all about; that there is a universe worthy of exploration and understanding that goes far beyond ourselves."  
 Solar Eclipse Basics  
+![Eclipse geometry screenshot](./_images/eclipse24-07-screenshot2.jpg)
+
 A solar eclipse occurs when the moon blocks our view of the sun, either in part or in full.  This can happen during some "new moon" phases, when the moon and the sun are on the same side of the sky from our perspective (they are on opposite sides of the sky during a full moon).  Note that you will never see the moon when they are close together in the sky due to the brightness of the sun, but when the moon passes over the sun, its black silhouette will be seen over the sun's surface.   Most such events are only PARTIAL, meaning that the moon isn't perfectly aligned to block the entire solar "disk."  When this happens, the sun will look like a moon-shaped bite was taken out of it.   The size of the "bite" during "maximum eclipse" determines the percent of "partiality" for your location...and in some cases, you could travel a few hours to increase that number.  
 
 
@@ -127,6 +139,10 @@ Second Contact (C2) - When totality begins, approximately 77 minutes after "C1.
 Third Contact (C3) - The point at which is sun starts to reappear, marking the end of the totality phase.  This duration depends on where along the eclipse path you are and how close you are to the centerline, but it will be 3 to 4 minutes for most people.  Consult the table below for your location.
 Fourth Contact (C4) - The conclusion of the eclipse event when the sun fully escapes the moon's silhouette.  ​
  
+![2017 total solar eclipse path map](./_images/eclipse24-08-2017-map.gif)
+![2023 annular solar eclipse path map](./_images/eclipse24-09-2023-map.gif)
+![2024 total solar eclipse path map](./_images/eclipse24-10-2024-map.gif)
+
 Of course, during an eclipse event, the moon's shadow passes over the earth's surface, darkening the globe over a particular path, called the Path of Totality.   This path is known far in advance...because math...and planning for the event is easily done since getting to the path assures you will see the entire event, through all four contacts.   If you are NOT in the path, even if by a few feet, then you will not witness the second and third contact, missing totality.  It is important to understand more about the eclipse path so your can be there, with millions of others, to maximize your experience... 
 The Path of an Eclipse
 The path of a total solar eclipse is the area on the surface of the earth that will be under the moon's shadow throughout the event.  Mathematics predicts both the timing and the location of the shadow's path very precisely.   This is represented by the yellow curves on the motion maps below, which show three of the eclipses featured in this article.  Note that the dark, circular lunar shadow determines the overall path.  This shadow, the umbra, means there will be a TOTALLY eclipsed sun for anybody along the path.   Note also the circular shadow gradient extending from the umbra toward the large moving circle drawn on the maps.  This gradually lighter shadow, the penumbra, covers viewers across the continents where the eclipse will be seen only PARTIALLY.  As such, the closer one is to the solid umbral shadow, the more of the sun will be blocked by our moon. 
@@ -150,6 +166,9 @@ In the center map, we see the path for the ANNULAR solar eclipse which occurred 
 One aspect of being in the path that we should note is that being near the path's "centerline" offers the longest duration of totality.   Living in the Dallas-Fort Worth Metroplex, I know most people will try to view the event from their own backyard.  This affords convenience, of course, but it will shorten the total eclipse duration.   For example, the table above shows that Dallas will get 3m 47s of totality.  But notice that Fort Worth only gets 2m 34s.  Now this might be sufficient for you, but if you have plans to carefully observe or photograph the event using equipment other than a pair of binoculars or your solar glasses, then you will want to maximize that time.   
 
 ​Ironically, I grew up in a house near Eagle Mountain Lake just northwest of Fort Worth and it is TWO HOUSES outside of the edge of the eclipse path.  You will NOT see the show from there...you will miss it entirely.  Err on the side of caution and take a 10 minute drive to assure totality.  If you live in Denton, you should be heading south since you will also miss totality entirely if you stay there.   Same story with those living in the San Antonio and Austin areas.  Do NOT assume you are good to go!  You too will likely need to drive north or northwest to be within the path of totality.  
+![Regional map, Dallas area](./_images/eclipse24-11-dallas.jpg)
+![Regional map, San Antonio area](./_images/eclipse24-12-sanantonio.jpg)
+
 Because those huge cities are just on the edge of the eclipse path, there will be concerns about the amount of traffic on that day.  Traffic is bad enough on a typical Monday, but if you plan to drive near these cities while the eclipse is occurring, then you should expect a massive headache!  In Texas, specifically, Interstate 35 (especially East I-35 towards Dallas), State Hwy 67, and State Hwy 287 will be congested.  For this reason, many school districts within the path of totality, especially those along those highways, will cancel school on those days.  This is because the end of the eclipse happens to coincide right around 3PM, which is too close to the typical release time of many schools.    EDIT:  As of March 6, 2024, a large number of districts in Texas have canceled school already, including the ISDs of Hillsboro, Ennis, Corsicana, and Waxahachie.
 
 My advice is to arrive early in the morning to your setup destination.  If there is ever a time to wake-up at 3AM, this is that time!
@@ -161,6 +180,8 @@ Eclipse path close-up for the DFW and east Texas areas. Click to zoom.
 
 
 Eclipse path close-up for the Austin and San Antonio areas. Click to zoom.
+![Eclipse day travel estimate](./_images/eclipse24-13-eclipseday.jpg)
+
 Perhaps even better is this Interactive Google Map for the eclipse made by Xavier M. Jubier.  Click on your location anywhere on the map to see the particulars for your area, including times for all contact phases, time of totality, and time of partiality for those who are not in the path of totality. 
 Planning for the Eclipse
 During the Annular Eclipse this past October 2023, I stumbled upon this Eclipse Day activity at the Blakemore Planetarium in Midland, TX. I also acquired three free eclipse glasses at the Midland Visitor's Center. I stumbled upon this one by total chance and decided the next day to join it. How many more events will you find if you search around online beforehand?
@@ -190,6 +211,8 @@ https://www.teachingexpertise.com/classroom-ideas/eclipse-activities-for-middle-
 
 
 ​SIDEBAR: Equipment and Packing List
+![Solar eclipse viewing plan screenshot](./_images/eclipse24-14-screenshot3.jpg)
+
 If you have the luxury of witnessing the April 8th eclipse at home, then you shouldn't need to do anything special other than to make sure you have everything you need, have everything setup, and practice what you want to do in advance. 
 
 That said, you've chosen to enjoy the eclipse like a hermit!
@@ -207,6 +230,9 @@ Finally, an eclipse party isn't a lot of fun if you are the only one there. 
 I will mention this throughout the article multiple times to remind you that if you want to see the amazing views that totality brings, then you MUST remove your eclipse glasses and all filters from your optical devices. This is completely safe; don't be deterred by others telling you it is not!
 Methods for Observing the Eclipse
 An activity known as "Sharp and Fuzzy Shadows," objects with perpendicular (right angle) edges will cast shadows either sharply or softly depending on how it is oriented with the crescent shape created during the eclipse. Cutting out a sheet of paper with the right angles (or using a builder's framing square) will reveal shadows like you see here. Image courtesy of Smarter Every Day on YouTube.
+![10 ways to view the eclipse](./_images/eclipse24-15-10viewing.png)
+![Sharp vs fuzzy shadows during a partial eclipse](./_images/eclipse24-16-shadows.jpg)
+
 Once you've settled on your desired observation location, there are a variety of ways to enjoy the eclipse.   Many of these methods do require a little bit of planning, but for the most part are easily accomplished.   I will describe these methods from easiest to most complex, but you should know that even the most archaic method provides wonderful results.  
 
 Nature Observations
@@ -223,6 +249,8 @@ In a similar way, you might notice that your own shadow will look unexplainably 
 
 As such, without any other preparations, these phenomena become something wonderful to experience and require very little or nothing in the way of equipment or preparation.  The most special, "natural" events happen around totality, which I will talk about in its own section later in the article.  But if the entire event lasts nearly 3 hours, then rest assured there is plenty of fun to be had!
 The pinhole camera works because light travels in straight lines from the top and bottom part of the sun. So when light passes through any aperture (like a hole), the scene inverts itself on the "screen" of the camera. A shoe box works well. Cut an over-sized hole and tape aluminum foil over it. In this way, you can experiment with a variety of pinhole sizes without ruining the box. Put some plain white paper at the back of the box to serve as a screen. You can make the box light-tight by using the box lid and then making a "view-port" for the eye. I would put the view port on the side closer to the screen. A light-tight box perhaps can allow users to see any scene projected onto the screen, not just the sun. If photo-sensitive film is used over the screen, an image is permanently formed. This the nature of the "camera obscura," which were the first cameras ever invented.
+![Pinhole projection example](./_images/eclipse24-17-775899400.jpg)
+
 Indirect Observations
 
 It is quite easy to view the sun indirectly, which will always assure safety.  These methods involve the projection of the sun's image on a "screen" of some kind. 
@@ -242,6 +270,8 @@ What is terrific about being an actual, focusable telescope is that any sun-spot
 
 I've used this device many times in educational and public events.  It's a wonderful tool, especially since it is very safe.  Unlike a conventional telescope, there is no way for a kid to stick his or her head in the light path and risk blinding themselves, something that responsible adults must protect against if using a telescopic method.  It's this safety factor that makes me want to talk about it here, as it certainly is an indirect form of solar observation requiring very little in the way of setup, unlike a telescope.
 
+
+![Solar viewing glasses](./_images/eclipse24-18-723018921.jpg)
 
 Direct Observations
 
@@ -264,6 +294,10 @@ Concerning binocular use in general, models can vary in magnifying power, typica
 
 As I said, during totality - when the moon completely blocks the sun - no filter is required.  So if you are using binoculars, then remove the filters at totality.  This yields one of the best views of the totally eclipse sun that there is.  Those several minutes of unfiltered freedom with binoculars will be one of the most memorable experiences of your life.  Some people cheer.  Some people cry with unexpected shock and awe.   Others will drop to their knees in worship of a higher-power.   All people will enjoy it.   
 The left side of the image shows the sun's chromosphere taken with an h-alpha solar telescope. The right side is an image taken with a typical white light solar filter. The photosphere is the surface of the sun visible to our eyes when safely attenuated. The chromosphere, which lay above the photosphere, is revealed within the hydrogen-alpha spectrum. - Image courtesy of Alan Friedmann at avertedimagination.com
+![Eclipse glasses in use](./_images/eclipse24-19-img4279.jpg)
+![Eclipse glasses in use](./_images/eclipse24-20-img4278.jpg)
+![Eclipse glasses in use](./_images/eclipse24-21-img4283.jpg)
+
 Telescopic Observing
 
 For those with a telescope, you likely already know that it can be used safely to observe the sun if properly equipped with a solar filter.   While I would not go out and purchase a telescope in the months prior to the event - they can take awhile to figure out and such a singular celestial event is no time for troubleshooting equipment.  But perhaps such celestial events like this will encourage you to buy one AFTER the April 2024 event.   If you are around for the years 2044 and 2045, you will have two more chances to use it for total solar eclipses over the United States.   Seriously, telescopes are versatile instruments for viewing all types of celestial objects, including planets, stars, and deep sky objects such as nebulas and galaxies.   But if you had a telescope and ONLY ever viewed our moon, it would be totally worth the price.   
@@ -287,6 +321,8 @@ In some cases on the observing field, you may witness somebody using a telescope
 ​The effect is a view through the eyepiece similar to the white light view using typical glass or solar filter film on the aperture of the scope.  The advantage of the more expensive wedge is that it's far more durable and longer-lasting than Mylar filer "film" or Baader material and is far more unlikely to fall off the telescope like a typical front-fitting solar filter might.   And if it were to fall of the telescope, the entire eyepiece would go with it.  
 
 When you see such a thing among your eclipse observing contingent, be sure to ask the owner what filter he is using.  If he says the words, "Herschel Wedge," then you can shake your head in positive acceptance and then beg for a view!   
+![H-alpha chromosphere vs white light comparison, credit Alan Friedman](./_images/eclipse24-22-halpha-friedman.jpg)
+
 What's to See?
 
 Regardless of the type of white light solar filter being used, it will show the granulation of the sun's surface (the photosphere), which are very small rising and sinking convection cells.  You may also see cooler patches (AKA "sunspots") that might exist on that day.  Such sunspots are often seen in groups, which can be many times the size of our earth themselves.  Bright areas of concentrated magnetic energy known as faculae can also be seen with a typical white light solar filter.  
@@ -304,6 +340,8 @@ One more, very rare type of solar telescope uses a CaK or Calcium-K line filter.
 
 The combination of solar features and views you can see when around a typical gathering of eclipse seekers makes it well worth the effort to find a place where they might be.  Aside from the incredible views of the eclipse itself, I have yet to see a single person look though my telescopes, especially my h-alpha solar scope, and NOT be absolutely blown away by their first time glimpse showing them what the sun literally is...a huge, fiery star!
 An eyepiece projection setup is perfect for eclipse viewing, offering a large, detailed projection of the sun's photosphere in a safe manner. Details of sunspots and the eclipse's march towards totality can be monitored by all, acting almost like a television.
+![Telescope solar viewing screenshot](./_images/eclipse24-23-screenshot4.jpg)
+
 Typical Telescope Uses 
 
 The usual way to view the sun is the same way you would observe stars at night; that's to put your eye to the eyepiece.  But for the sun, such a scope must utilize a solar-filter while the eclipse is in any partial phase.  This would involve a setup similar to any of those mentioned in the last section.
@@ -320,6 +358,8 @@ Of course any camera being used has the potential to image something other than 
 
 Finally, one last form of telescope usage is an indirect method of observing the sun known as eyepiece projection (see right).  This involves the use of a refractor telescope WITHOUT a filter.  In this setup, the sun is permitted to go through the telescope; however, at the back end behind the eyepiece, an image of the sun is projected onto a white transparent screen, usually a see-through, translucent velium material.  The area between the eyepiece and the screen is often blocked off inside a cone so that people cannot wonder by and accidently stick their head where it doesn't belong.  Often at an eclipse event, you will see several such setups that project the sun throughout the event.  It's safe to view and allows for a large projection of the solar disk depending on the configuration of the equipment.   
 This is the sky map for the planets during totality for the April 2024 eclipse. Mercury, Venus, and Jupiter should be easily seen for most observers. Nepture and Uranus are telescopic objects even in dark skies, so don't try to look for them during the day. Saturn and Mars, easily visible at night, will be tough to see because they will likely have already set below the horizon. The exception is if you catch the eclipse when in Mexico...a morning totality means you might catch Saturn and Mars high in the sky, though you'd miss Jupiter in that case.
+![Telescope projection technique](./_images/eclipse24-24-post-image.png)
+
 Natural Observations at Totality
 
 Did you know that when the sun is totally covered in an eclipse, it will actually look dark outside?   Certainly, you shouldn't expect it to look like nighttime, but it does indeed get remarkably dark - and noticeably more cool -  enough to trigger the sensors of any street light around you, as well as any canine friend you brought with you!   Animals, especially insects and birds, are known to respond strangely to total solar eclipses!
@@ -388,6 +428,17 @@ At its most basic, try photographing your indirect observations that  I discuss
 "Don't let your compulsion
 (or obsession) to photograph the eclipse make you miss out on the
 ​spectacle of what is happening." 
+![2017 eclipse event photos](./_images/eclipse24-25-dsc0195.jpg)
+![2017 eclipse event photos](./_images/eclipse24-26-dsc0193.jpg)
+![2017 eclipse event photos](./_images/eclipse24-27-dsc0202.jpg)
+![2017 eclipse event photos](./_images/eclipse24-28-dsc0207.jpg)
+![2017 eclipse event photos](./_images/eclipse24-29-dsc0210.jpg)
+![2017 eclipse event photos](./_images/eclipse24-30-dsc0213.jpg)
+![2017 eclipse event photos](./_images/eclipse24-31-dsc0219.jpg)
+![2017 eclipse event photos](./_images/eclipse24-32-dsc0233.jpg)
+![2017 eclipse event photos](./_images/eclipse24-33-dsc0234.jpg)
+![2017 eclipse event photos](./_images/eclipse24-34-img2586.jpg)
+
 With a telescope, it's quite natural to put a phone up to eyepiece to take a picture of whatever you see.  If that's the moon, then you'd be amazed at what you can capture. Similarly, when you are observing an eclipse through a filtered-telescope, then why not snap some shots to take with you?   
 
 If you see me on eclipse day, just ask me and I'll let you do just that!  
@@ -399,6 +450,10 @@ With a camera phone, this type of composite image can be captured. 1) Make the c
 
 
 Using the same technique at left while using a camera with a lens, a scene like this can be captured and later composited together. This is especially true if you find yourself in a scenic vista closer to the ends of the eclipse path, when the eclipse happens closer to the horizon.
+
+![Eclipse photography with a phone](./_images/eclipse24-35-170825.jpg)
+![A hillside solar eclipse composite, credit Mike Mezeul](./_images/eclipse24-36-mezeul.jpg)
+![Camera setup for eclipse photography](./_images/eclipse24-37-img0656.jpg)
 
 Photography with a "Real" Camera
 
@@ -418,6 +473,8 @@ Let's look at some of the shots I would suggest using a camera capable of using 
 It also serves to nail down focusing, check exposure times, and test the alignment of a tracking telescope mount.  If using a telephoto lens, focus manually, as you do not want the camera to focus for you, especially since the solar disk might not be large and full-featured enough.  Many electronic cameras become confused by having nothing much to focus on. 
 
 
+![Focus check screenshot](./_images/eclipse24-38-screenshot5.jpg)
+
 Also, when manually focusing, do not assume that the "infinity" symbol means you are in-focus.  Focus is CRITICAL and the proper focus is usually found by going to "infinity" and then backing off a smidge. ​
 ​
 ​Experiment by "bracketing" several images around this point, moving the focus ring ever so slightly between each photo.  Similarly, most cameras have "Live-View" to let you zoom in and focus with more precision.  In that case, you will want a tripod to hold the camera stationary.  If using a camera directly connected to the telescope, you will be using the telescope's focuser, not the camera lenses, so again make sure auto-focusing is OFF.   Regardless, you will want to cover yourself and the camera (not the lens or telescope) with a dark blanket to let you see the camera's display.  Or, using stiff cardboard, cut a lens-sized hole and slip it over the base of the lens as you hold it up to the sun.  In this way, you have a natural solar shield and can more easily see the camera's settings and displays.   Large paper plates work well for this too.  Think Chinet!
@@ -432,6 +489,9 @@ Experiment with shutter speeds, which will be quite fast in the uneclipsed and e
 
 When establishing your shutter speed, understand that exposure time is not an exact science. Your results can vary from these values. So these are merely starting points to try. Experiment with the starting value before the start of the eclipse and use those camera settings to begin your exposure run when it really matters! Then consult the table, noting the difference between various eclipse stages and how it trends. So, once you establish a starting point, then your overall exposure sequence can become more predictable. This table is courtesy of Mr. Eclipse himself, Fred Espenak. He hasn't missed an eclipse, ever, and his site at www.mreclipse.com is well worth exploring.
 For those wanting to know everything there is to know about photographing the eclipse, try out this PDF guide from my friend, Alan Dyer. It's all of 11 bucks for 380 pages of detailed goodness. The download is immediate, so get started by clicking on the image to take you there!
+![Exposure guide for eclipse photography](./_images/eclipse24-39-exposure.gif)
+![Solar Eclipse Timer app screenshot](./_images/eclipse24-40-screenshot6.jpg)
+
 3) The diamond ring and Baily's beads - These fascinating events will not pose much a problem with regard to execution when using the camera.  You will shoot using your fast shutter speed (filter-less), same as that you began the day with near C1.  However, it's the timing that can pose the issues.  One sure way to nail the timing is to use a phone app for the countdown.  Perhaps my favorite is one called Solar Eclipse Timer which gives audible countdowns for the main events in the eclipse sequence based on GPS for your location.  Using this, you can time your removal of the solar filter just right - you must shoot these events without a filter - and make sure you've set your camera for the proper shutter speed.  
 
 Three other suggestions to help here...
@@ -447,6 +507,9 @@ Lastly, you might consider practicing on THE MOON.   Lunar photography simulat
 If you do decide to use our moon as a skill builder for the eclipse event, then be aware that it will be in its waning phase for two weeks prior.  This means the moon will only be available to you later in the evening and the early morning hours when no humans are awake.  So, my recommendation is to begin your lunar practice sessions around March 13, 2024, when the moon is available in the early evening just after sunset and is nearing its first quarter.  In this way, you can carry on a solid 10 to 12 nights of practice sessions, culminating around 5 days past the full moon, which is still early enough for you to reach bed before midnight. 
 During the August 2017 total solar eclipse, I actually missed Baily's beads in this eclipse sequence. Likewise, I failed to decrease the exposure length when I caught the Diamond Ring just past C3. This is why you prepare!
 I was very pleased to land my HDR composite image of the August 2017 Great American Eclipse on the cover of the Fall edition of Amateur Astronomy Magazine. Perhaps you can have your image of the 2024 Great American Eclipse on the cover of your favorite magazine too?
+![Diamond ring and Baily's beads sequence](./_images/eclipse24-41-sequence.jpg)
+![Eclipse magazine cover](./_images/eclipse24-42-magazine-cover.jpg)
+
 4) The coronal display - This, of course, is the money shot!  When C2 hits after Baily's beads, you can capture the beautiful display of the solar corona.  Be a little patient at first.  You have time to enjoy the shock and awe of the event first by just looking up and soaking it all in.  Then, get your game-face on and begin a series of images from where you left off with Baily's Beads, filter-less. 
 
 ​Remember, with the sun entirely behind the moon, it is dark-ish outside.  Not to the point you can't see, but certainly to the point where the camera's shutter speed will have to be adjusted throughout the sequence more than you might realize if you hope to capture the solar corona the way your eyes see it.   Our eyes are wildly capable of high dynamic range, meaning we can see extremely bright elements and dark elements simultaneously, as many as 20 "stops" or "doublings" of light intensity.  On the other hand, even the best cameras are capable of a maximum of 15 bits (stops), and likely much less depending on factors like camera quality, exposure time, signal/noise ratios, etc.   Said in the way most can understand, the camera cannot capture the WIDE range of darkness (the moon), extreme brightness (the solar limb and prominences) and the greatly diminishing darkness at the edges of the coronal boundaries that you can see visually.,,at least not in one image. 
@@ -484,6 +547,8 @@ Or, if you have a DRONE capable of shooting video, then perhaps you can figure a
 More than likely, if you have a heavy agenda of capturing other photographs, maybe you should just have a videographer with you, equipped with a camera phone or GoPro, and let him just go wild with shooting everything, like my buddy, Ross, did for me in 2017. 
 
 If you have done something right, perhaps you get people taking video OF YOU that you didn't expect, such as a local TV station wanting to interview you.  You can see my own interview during the 2017 eclipse below, at the end of the article!
+![A group eclipse-viewing selfie](./_images/eclipse24-43-img4301.png)
+
 Remaining thoughts...
 
 Hopefully if you have made it through this article, you will have been convinced that a total solar eclipse is something you do not want to miss.  If you need more convincing, check out Dustin Sandlin of "Smarter Every Day" in this video (at right).   It also highlights many of the activities I discussed here.  
