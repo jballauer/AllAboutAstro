@@ -14,19 +14,20 @@ const pickettItems = allSliderules
   .sort((a, b) => a.data.order - b.data.order);
 
 const currentPath = Astro.url.pathname;
+const isCurrent = (base: string) => currentPath === base || currentPath.startsWith(base);
 ---
 
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="site-title" href="/">All About Astro</a>
+    <a class="site-title" href="/">All About Astro.com</a>
     <nav aria-label="Primary">
       <ul>
         <li><a href="/" aria-current={currentPath === '/' ? 'page' : undefined}>Home</a></li>
-        <li><a href="/blog/" aria-current={currentPath === '/blog/' ? 'page' : undefined}>Blog</a></li>
-        <li><a href="/gallery/" aria-current={currentPath === '/gallery/' ? 'page' : undefined}>Astro Gallery</a></li>
+        <li><a href="/blog/" aria-current={isCurrent('/blog/') ? 'page' : undefined}>Blog</a></li>
+        <li><a href="/gallery/" aria-current={isCurrent('/gallery/') ? 'page' : undefined}>Astro Gallery</a></li>
 
         <li class="has-dropdown">
-          <a href="/gear/" aria-current={currentPath === '/gear/' ? 'page' : undefined}>Astro Gear</a>
+          <a href="/gear/" aria-current={isCurrent('/gear/') ? 'page' : undefined}>Astro Gear</a>
           <ul class="dropdown">
             {gearItems.map((item) => (
               <li><a href={`/gear/${item.id}/`}>{item.data.title}</a></li>
@@ -35,7 +36,7 @@ const currentPath = Astro.url.pathname;
         </li>
 
         <li class="has-dropdown">
-          <a href="/learning/" aria-current={currentPath === '/learning/' ? 'page' : undefined}>Learning</a>
+          <a href="/learning/" aria-current={isCurrent('/learning/') ? 'page' : undefined}>Learning</a>
           <ul class="dropdown">
             {learningItems.map((item) => (
               <li><a href={`/learning/${item.id}/`}>{item.data.title}</a></li>
@@ -46,7 +47,7 @@ const currentPath = Astro.url.pathname;
         <li><a href="/about-me/" aria-current={currentPath === '/about-me/' ? 'page' : undefined}>About Me</a></li>
 
         <li class="has-dropdown dropdown-right">
-          <a href="/sliderules/" aria-current={currentPath === '/sliderules/' ? 'page' : undefined}>Jay's Slide Rules</a>
+          <a href="/sliderules/" aria-current={isCurrent('/sliderules/') ? 'page' : undefined}>Jay's Slide Rules</a>
           <ul class="dropdown">
             {sliderulesTop.map((item) => (
               item.id === 'pickett' ? (
