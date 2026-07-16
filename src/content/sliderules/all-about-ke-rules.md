@@ -5,10 +5,12 @@ order: 4
 draft: false
 ---
 
-![A K&E Deci-Lon 10 slide rule](./_images/ke-banner-decilon.jpg)
+![A close-up of a K&E Deci-Lon slide rule](./_images/ke-banner-decilon5.jpg)
 
 <div class="ke-columns">
 <div class="ke-col-left">
+
+![The K&E logo](./_images/ke-logo-label.jpg)
 
 *Author's note: This, and most articles I write, are living documents. This article (or book) about K&E represents my research and understanding at the time of writing. It take a more narrative, story-driven approach to the topic. There are no targets with this writing, no thesis; no other purpose except to work my way through my own process of learning. The text will grow, change, and evolve slowly until, some day, a reader finds value in it. If that is you, and if that is today, thanks for taking the time to read it. Please forgive some of the "under construction" aspects of this writing, as things like annotations, the appendices and descriptions of items in the latter chapters might be incomplete or not fully documented. That will change the closer to "completeness" it gets. This article was last updated April 18, 2026. Many changes are being made to reflect a 1968 K&E Catalog Price List that was stumbled upon!*
 

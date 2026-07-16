@@ -5,6 +5,8 @@ order: 1
 draft: false
 ---
 
+![A K&E Deci-Lon 10 slide rule](./_images/ch1-01-decilon-art.jpg)
+
 Keuffel and Esser is the oldest major US slide rule maker, going back to 1867. Beginning as a supply house for anything engineering related, they are widely known for drawing supplies, surveying equipment, and of course, their long history and diverse models of slide rules. Famously, in 1891, they originated the "duplex" design of having scales on both sides of the rule with a dual indicator, beginning 70+ years of innovation and production in the slide rule business. The key to understanding K&E slide rule production is to pay attention to both their model naming convention as well as their cycles of serial numbers. I will attempt a healthy description of the histories here, which will also reveal much about the company on the whole. Likewise, we'll discuss slide rule construction, the major families of rules and their evolutions across model lines, and we'll wrap up with my own portfolio of K&E rules, which are the most numerous in my collection. The goal is to get the would-be collector up-to-speed on the K&E world of slide rules.
 
 ## Model Number Naming Conventions
