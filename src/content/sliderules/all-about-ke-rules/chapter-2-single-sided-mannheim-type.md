@@ -83,13 +83,13 @@ Subtly important is the catalog description which lacks indication of the wood t
 
 These rules, like all T-G and D&P rules known to this point, had horizontal "embellishment" lines, known by most today as "railroad" scales. By the end of the century, both of the rules had transitioned to mahogany construction. A 20" version of this rule called the 1748 was introduced in 1890, and a 5" version called the 1747 arrived in 1899. Of the 20" rule, K&E seems to be rather apologetic. Their catalog description in 1890, and as printed below in the 1895 catalog, states...
 
-<div class="ke-sidebar">
+<div class="ke-sidebar" data-float="none">
 
 ## Sidebar: Solving the Early Maker Mystery
 
 Until recently, and rather myopically, I made the assumption that K&E switched from the Model 479 series to the newer Model 17XX names in 1887 because of a change in suppliers. In self-defense, it is common among collectors to believe that Tavernier-Gravet was responsible for the early rules and Dennert & Pape supplied the later rules of the 19th century. Yet, we have evidence that the shifting of model designations was not because of a change of supplier, but rather that the sheer number of products sold by K&E necessitated a better system for cataloging their offerings. We note that below in the Preface to the 1892 catalog below...
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-right ke-figure-third">
 
 ![Preface page of the 1892 K&E catalog, noting the twentieth edition](./_images/ch2-04-1892-catalog-preface.jpg)
 
@@ -101,7 +101,7 @@ Most certainly, Tavernier-Gravet remained the chief supplier for the K&E Mannhei
 
 The timing seems about right. According to Hans Dennert, grandson of the founder of Dennert & Pape, it wouldn't be until 1888 until they had fully shifted to making slide rules with celluloid-laminations on mahogany. By 1890, we can see that the new slide rule designations and descriptions would have been easily justified. And given that K&E likely had extra inventory of the old Tavernier-Gravet Mannheims, it makes sense that they would continue to sell these old rules with the new model numbers until 1890, when the new D&P rules were stated to be available.
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-left ke-figure-third">
 
 ![An 8" Tavernier-Gravet slide rule bearing both Tavernier-Gravet and Keuffel & Esser markings](./_images/ch2-05-tavernier-gravet-1883.jpg)
 
@@ -113,7 +113,7 @@ Yet, the slide rule pictured above gives me reason to think that Tavernier-Grave
 
 Two markings on this rule pinpoint the sale date to much later than 1885. First, on the rule's back is stamped "Medailles d'or 1878 et 1889," indicating the gold medals their product won in the World's Fair in Paris those years, the later year famously marking the completion of the Eiffel Tower. While the slide rule was certainly produced early, Tavernier-Gravet likely added this stamp to their existing inventory and new slide rules after this 1889 date. Second, also notice the reference to "Chicago" on the rule's front.
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-right ke-figure-third">
 
 ![A page from K&E's 1892 Product Catalog, the first to list a Chicago office](./_images/ch2-06-1892-catalog-page.jpg)
 
@@ -135,7 +135,7 @@ Therefore, matching the catalog descriptions prior to 1890, Tavernier-Gravet mos
 
 To further complicate the scene, we have the slide rule shown below:
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-left ke-figure-third">
 
 ![A Tavernier-Gravet slide rule with celluloid facings, also stamped Chicago](./_images/ch2-07-tg-celluloid-rule.jpg)
 
@@ -145,7 +145,7 @@ To further complicate the scene, we have the slide rule shown below:
 
 We have evidence that K&E was offering celluloid-laminated slide rules as early as 1888, according to E.A. Gieseler in a March 9, 1888 article within "Railroad Gazette" (Volume 20, p. 149) where the author mentions these rules by name as current offerings.
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-right ke-figure-third">
 
 ![A clipping from the March 9, 1888 issue of Railroad Gazette](./_images/ch2-08-railroad-gazette-1888.jpg)
 
@@ -161,7 +161,7 @@ So what can be said about this early maker mystery?
 
 It is reasonable to believe that Tavernier-Gravet was responsible for the production of most boxwood rules prior to circa 1901, including those with celluloid-laminations. The exception would be the potential for the earliest rules to be made by Rabone and Sons, as Bob Otnes opined, and those possibly made in-house by K&E later in the century. This aligns well with some of the "Transitional models" and the "Favorite" rules to be discussed later in the chapter. Dennert & Pape, owner of the celluloid-on-wood patent in 1886, had shifted entirely to mahogany by 1888 according to Hans Dennert, so it is likely that all mahogany rules with celluloid after that date were made by D&P. Whether they also made boxwood rules special to K&E during the 1890s, or whether the T-G rules with celluloid were anything other than boxwood, is unknown; however, I would suggest that this could be a reasonable theory.
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-left ke-figure-third">
 
 ![A screenshot of the Oughtred Society's Rarities Gallery listing for the 8" Tavernier-Gravet/K&E rule](./_images/ch2-09-oughtred-rarities-screenshot.jpg)
 
@@ -616,7 +616,7 @@ As a slide rule user, I much prefer using the Post/Hemmi bamboo pocket rules, so
 
 <div class="ke-clear"></div>
 
-<div class="ke-sidebar">
+<div class="ke-sidebar" data-float="none">
 
 ## Sidebar: The 4088, an Ever-There, and the Mystery Rules
 
@@ -673,7 +673,7 @@ Therefore, the Ever-There series, beginning in 1931 and revamped in 1936, would 
 
 <div class="ke-clear"></div>
 
-<div class="ke-sidebar" data-side="right">
+<div class="ke-sidebar" data-float="none">
 
 ## Sidebar: The Doric Family of Rules
 
