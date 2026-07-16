@@ -76,6 +76,10 @@ Fortunately, many cameras have this capability.  But this is more true of the p
 
 
 
+![Interchangeable focusing screens for the Nikon F2](./_images/cam35-01-om4-screens.jpg)
+![The Olympus OM-4](./_images/cam35-02-oly-om4.jpg)
+![The Nikon F2 system](./_images/cam35-03-f2-system.jpg)
+
 Installing a screen is usually a snap. Removable prism cameras allow you to simply drop the screen through the top, as shown at right on my Nikon F2.  Such screens are framed nicely with a holder that fits specifically to each Nikon model.  The screen does have to be pushed down firmly, especially when changing prisms; otherwise, proper focus can be a bit off because the idea of a focus screen is to be placed at exactly the same distance in the optical train as the film plane itself.  Thus, WYSIWYG (what you see is what you get)!   Focus screens in most other cameras, such as my Olympus OM-4, seen below, can be accessed through the front. Normally, a lever is depressed and the screen drops down. 
 
 Once you know the focusing screen can be changed, the next, often difficult step, is finding the proper focusing screen for your camera, preferrably one of the "matte" type or non-etched screens.  Every camera maker produces a standard set of such screens for their cameras with such capabilities.  Knowing which one to get is difficult since many of these screens are model specific.  So often it takes some research to figure out which screen, if any, can be used for your camera.
@@ -146,6 +150,9 @@ Nikon 135mm f2.5 lens
 Single 10 minute exposure
 Nikon 300mm ED f2.8 lens 
 with 1.4x teleconverter
+![Lagoon Nebula region, 135mm](./_images/cam35-04-lagoon.jpg)
+![M24, 420mm](./_images/cam35-05-m24.jpg)
+
 The picture on the left, taken at the Texas Star Party in 2002, looks acceptable to most casual observers.  An excellent region of the sky full of terrific objects, I decided to piggyback my camera atop my LX200 to capture this field.  I used a 135mm, normal telephoto lens (yet one of high quality).  But the shot is filled with problems, and the problems get worse toward the edge of the field.  See for yourself (at right) in this expanded view of the upper left corner region, which includes the M25 open cluster.
 
 Ignoring the grain and noise in this unprocessed image, two aspects of the enlarged image immediately demonstrate the problems inherent in the lens.
@@ -156,6 +163,8 @@ What is important to note is that I took this shot stopped down from a possible 
 
 In the same way, take a look at the picture of M24 on the right of the Lagoon shot (below left).  This photo was taken at the Texas Star Party in 2003 with a rather nice, and expensive, Nikon 300mm f2.8 ED lens (using a teleconverter) taken piggyback atop the LX200.  Do you see any spherical aberrations or false color?  Take a look at the expanded view of the upper left corner of the image near M17, the Swan Nebula.
 
+
+![135mm lens problems near the field edge](./_images/cam35-06-135mm-problems.jpg)
 
 Shot with the lens fully open, with a teleconverter, the difference in the quality should be obvious.  
 
@@ -168,6 +177,9 @@ This speaks to a couple of great points regarding this set-up.  First, it perfo
 ​What you do not see in the above comparison is a significant amount of vignetting in both images.  The M24 shot was somewhat processed, but there was no need to correct for vignetting.  There is a slight amount of vignetting noticable in the above thumbnail (corrected for in the linked, final image).  But this amount of vignetting was only slight, even insignificant. Thus, both lenses are good performers here, especially the 300mm since a teleconverter has the tendency to also increase vignetting.
 
 But compare these images with a lens (and image) I am not very proud of (see below). 
+![300mm at good quality](./_images/cam35-07-300mm-good.jpg)
+![300mm beauty shot](./_images/cam35-08-300mm-beauty.jpg)
+
 This is an unprocessed shot of the constellation Orion taken with my Nikon 50mm f1.4 lens. Not only do you see very fat, astigmatic stars, even close to the center of the image, but the vignetting is so significant that it rendered the shot un-processable.  This combination of spherical aberrations, vignetting and false color (not noticable without enlarging) made this shot unsalvageable.  Incidently, the photograph was a 10 minute exposure (a bit too close to the horizon) taken with the lens wide open at f1.4.  Needless to say, if I shoot any more shots with this lense I will stop it down significantly, at least three stops to f4.  That should reduce both the astigmatism and vignetting.  How much, I do not know.
 
 Using the above examples, it is my hope that you now understand the importance in choosing good lenses for your 35mm camera. It's also why you shouldn't choose a camera body without giving some consideration to the lenses available for it.  Any lens can be made to work using certain techniques, like stopping down the aperture, or fixing problems in processing, but the idea behind a good lens is to give you the possibility of taking GREAT shots.  As a beginner, you might be satisfied with the above Orion shot since your techniques will take time to refine anyway.  But this shot, made by that 50mm lenses, is unfortunately typical of the results you can expect from most lens.  Once again, it may shoot pretty shots during the day, but there is no more critical test of a lens' capabilities than with long exposures of the night sky.
@@ -296,5 +308,8 @@ Then of course, there is the Olympus OM-1.  If you could only remove the prism
 Several other cameras I consider equal to the Olympus OM-1 because all of them have the features we need, except for the removable prism.  Among Nikon, the Nikon FE and Nikon FM-2 do everything the OM-1 can do and are almost just as compact.  In particular, the FM-2 can be equipped with a special 2X magnifying extension, similar to the Varimagni finder for the Olympus.  Though I've said that I'm not crazy about these devices because of lower light throughput and the low magnifications using the camera's eyepiece, the FM-2's viewfinder is actually magnified at ~4x to begin with.  Thus, the extension provides 8x magnication. This is just the power you need for precise focusing if the star is bright enough.  Choosing a bright star to focus on first and then swinging your camera to the object you want to photograph is a good method for using such a magnifying extension despite the lesser amount of light reaching the eye.
 
 Next in line are all the older model, manual shuttered cameras.  These include the Minolta SRT and Minolta X series, the Pentax K series, the Canon FT and Canon LT series, and the early Nikon-made Nikkormat FT series.  Usable because of their manual capabilities, these cameras do lack the ability to exchange focusing screens.  If you already own such a camera you might consider finding a suitable screen from another manufacturer and having the camera professionally modified at your local camera shop; however, the price to do something like this might be a bit steep. It is my recommendation to simply sell these cameras and purchase a used camera with such capabilities.  You'll end up with a better all-around camera and you'll spend less money to get it.
+![An unprocessed 50mm f1.4 shot showing vignetting and astigmatism](./_images/cam35-09-50mm-crap.jpg)
+![A Chinon CS camera body](./_images/cam35-10-chinon.jpg)
+
 A couple of camera bodies that might be intriguing were made by other manufacturers. Yashica makes some good manual cameras, like the Yashica YX-3 for example, and they even have the ability to use some of the Contax lenses made by Zeiss.  Ricoh, Mayima-Sekor, and Chinon also make decent, fully manual cameras with some of the capabilities we need in an astro camera.   Some, like my old Chinon CS, shown at right, even have screw mounted lenses, so a T-ring isn't necessary.   The aforementioned Leica Rseries cameras, made in collaboration with Minolta, might also be suitable. Likewise, if you can find a Contax RTS for a reasonable price, you might have something to work with.  
 I'll leave you to research some of these models, and other cameras I did not mention, but some of them, like the Leicas, will not be cheap!
