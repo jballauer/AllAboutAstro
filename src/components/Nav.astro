@@ -1,13 +1,17 @@
 ---
-const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Blog', href: '/blog/' },
-  { label: 'Astro Gallery', href: '/gallery/' },
-  { label: 'Astro Gear', href: '/gear/' },
-  { label: 'Learning', href: '/learning/' },
-  { label: 'About Me', href: '/about-me/' },
-  { label: "Jay's Slide Rules", href: '/sliderules/' },
-];
+import { getCollection } from 'astro:content';
+
+const gearItems = (await getCollection('gear')).sort((a, b) => a.data.order - b.data.order);
+const learningItems = (await getCollection('learning', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const allSliderules = await getCollection('sliderules');
+const sliderulesTop = allSliderules
+  .filter((item) => !item.id.includes('/'))
+  .sort((a, b) => a.data.order - b.data.order);
+const pickettItems = allSliderules
+  .filter((item) => item.id.startsWith('pickett/'))
+  .sort((a, b) => a.data.order - b.data.order);
 
 const currentPath = Astro.url.pathname;
 ---
@@ -17,16 +21,59 @@ const currentPath = Astro.url.pathname;
     <a class="site-title" href="/">All About Astro</a>
     <nav aria-label="Primary">
       <ul>
-        {navItems.map((item) => (
-          <li>
-            <a
-              href={item.href}
-              aria-current={currentPath === item.href ? 'page' : undefined}
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
+        <li><a href="/" aria-current={currentPath === '/' ? 'page' : undefined}>Home</a></li>
+        <li><a href="/blog/" aria-current={currentPath === '/blog/' ? 'page' : undefined}>Blog</a></li>
+        <li><a href="/gallery/" aria-current={currentPath === '/gallery/' ? 'page' : undefined}>Astro Gallery</a></li>
+
+        <li class="has-dropdown">
+          <details>
+            <summary>Astro Gear</summary>
+            <ul class="dropdown">
+              <li><a href="/gear/">Overview</a></li>
+              {gearItems.map((item) => (
+                <li><a href={`/gear/${item.id}/`}>{item.data.title}</a></li>
+              ))}
+            </ul>
+          </details>
+        </li>
+
+        <li class="has-dropdown">
+          <details>
+            <summary>Learning</summary>
+            <ul class="dropdown">
+              {learningItems.map((item) => (
+                <li><a href={`/learning/${item.id}/`}>{item.data.title}</a></li>
+              ))}
+            </ul>
+          </details>
+        </li>
+
+        <li><a href="/about-me/" aria-current={currentPath === '/about-me/' ? 'page' : undefined}>About Me</a></li>
+
+        <li class="has-dropdown dropdown-right">
+          <details>
+            <summary>Jay's Slide Rules</summary>
+            <ul class="dropdown">
+              {sliderulesTop.map((item) => (
+                item.id === 'pickett' ? (
+                  <li class="has-submenu">
+                    <details>
+                      <summary>{item.data.title}</summary>
+                      <ul class="dropdown submenu">
+                        <li><a href="/sliderules/pickett/">Overview</a></li>
+                        {pickettItems.map((sub) => (
+                          <li><a href={`/sliderules/${sub.id}/`}>{sub.data.title}</a></li>
+                        ))}
+                      </ul>
+                    </details>
+                  </li>
+                ) : (
+                  <li><a href={`/sliderules/${item.id}/`}>{item.data.title}</a></li>
+                )
+              ))}
+            </ul>
+          </details>
+        </li>
       </ul>
     </nav>
   </div>
@@ -36,6 +83,8 @@ const currentPath = Astro.url.pathname;
   .site-header {
     border-bottom: 1px solid #333;
     background: #0b0e14;
+    position: relative;
+    z-index: 100;
   }
   .site-header__inner {
     max-width: 1100px;
@@ -61,6 +110,9 @@ const currentPath = Astro.url.pathname;
     margin: 0;
     padding: 0;
   }
+  nav > ul > li {
+    position: relative;
+  }
   nav a {
     color: #b8c0d0;
     text-decoration: none;
@@ -70,4 +122,109 @@ const currentPath = Astro.url.pathname;
   nav a[aria-current='page'] {
     color: #e8ecf4;
   }
+
+  .has-dropdown summary {
+    color: #b8c0d0;
+    font-size: 0.95rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  .has-dropdown summary::-webkit-details-marker {
+    display: none;
+  }
+  .has-dropdown summary:hover {
+    color: #e8ecf4;
+  }
+  .has-dropdown summary::after {
+    content: ' ▾';
+    font-size: 0.7rem;
+  }
+  .has-dropdown > details[open] > summary {
+    color: #e8ecf4;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    background: #12151d;
+    border: 1px solid #2a2f3a;
+    border-radius: 6px;
+    padding: 0.5rem 0;
+    width: 260px;
+    display: block;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+  .dropdown li {
+    position: relative;
+  }
+  .dropdown a,
+  .dropdown summary {
+    display: block;
+    padding: 0.4rem 1rem;
+    white-space: normal;
+    line-height: 1.3;
+    font-size: 0.9rem;
+  }
+  .dropdown a:hover,
+  .dropdown summary:hover {
+    background: #1b2029;
+  }
+  .dropdown-right > .dropdown {
+    left: auto;
+    right: 0;
+  }
+  .has-submenu > details > summary::after {
+    content: ' ▸';
+  }
+  .submenu {
+    top: 0;
+    left: auto;
+    right: 100%;
+    margin-top: 0;
+    margin-right: 0.25rem;
+  }
+  .has-submenu > details > summary::after {
+    content: ' ◂';
+  }
+
+  @media (max-width: 720px) {
+    .dropdown {
+      position: static;
+      margin-top: 0.25rem;
+      margin-left: 1rem;
+      box-shadow: none;
+    }
+    .submenu {
+      margin-left: 1rem;
+    }
+  }
 </style>
+
+<script>
+  const allDetails = Array.from(document.querySelectorAll('.site-header details'));
+  for (const details of allDetails) {
+    details.addEventListener('toggle', () => {
+      if (!details.open) return;
+      const isSubmenu = details.closest('.has-submenu') !== null;
+      for (const other of allDetails) {
+        if (other === details) continue;
+        if (isSubmenu && details.parentElement?.closest('details') === other) continue;
+        if (!isSubmenu && other.closest('.has-submenu')) continue;
+        other.open = false;
+      }
+    });
+  }
+
+  document.addEventListener('click', (event) => {
+    const target = event.target as Node;
+    for (const details of allDetails) {
+      if (details.open && !details.contains(target)) {
+        details.open = false;
+      }
+    }
+  });
+</script>
