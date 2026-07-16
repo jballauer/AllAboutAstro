@@ -18,6 +18,9 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="description" content={description} />
     <title>{title} | All About Astro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <Nav />
@@ -31,6 +34,32 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
 <style is:global>
   :root {
     color-scheme: dark;
+
+    /* layout */
+    --container-width: 960px;
+
+    /* page chrome */
+    --color-bg: #0f0f0f;
+    --color-text: #dfe4ee;
+    --color-link-chrome: #7cb8ff;
+
+    /* prose/article typography (Weebly-confirmed) */
+    --font-heading: 'Titillium Web', sans-serif;
+    --font-heading-weight: 300;
+    --font-heading-size: 24px;
+    --color-heading: #ffffff;
+
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-body-size: 14px;
+    --prose-line-height: 1.5;
+    --color-prose-text: #aaaaaa;
+    --color-link: #359bdc;
+
+    /* aside/callout boxes (Weebly-confirmed) */
+    --aside-color-teal: rgba(51, 135, 162, 0.6);
+    --aside-color-orange: rgba(218, 128, 68, 0.6);
+    --aside-padding: 20px;
+    --aside-width-default: 420px;
   }
   * {
     box-sizing: border-box;
@@ -38,18 +67,22 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   body {
     margin: 0;
     font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-    background: #05070c;
-    color: #dfe4ee;
+    background-color: var(--color-bg);
+    background-image: url('/images/banner-footer.png');
+    background-repeat: repeat;
+    color: var(--color-text);
     line-height: 1.6;
   }
   main {
-    max-width: 1100px;
+    max-width: var(--container-width);
     margin: 0 auto;
     padding: 2rem 1.5rem;
     min-height: 60vh;
+    background-image: url('/images/body-bg.png');
+    background-repeat: repeat-x;
   }
   a {
-    color: #7cb8ff;
+    color: var(--color-link-chrome);
   }
   img {
     max-width: 100%;
@@ -75,5 +108,23 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin: 1.5rem 0;
     padding: 0.25rem 1.25rem;
     color: #b8c0d0;
+  }
+
+  /* shared callout-box visual (Weebly "colored box" widget) — used by
+     Aside.astro (floated, article prose) and by page-specific multi-column
+     layouts (e.g. the home page's "Most Recent Images" widget column) */
+  .callout-box {
+    padding: var(--aside-padding);
+    box-sizing: border-box;
+  }
+  .callout-box[data-color='teal'] { background: var(--aside-color-teal); }
+  .callout-box[data-color='orange'] { background: var(--aside-color-orange); }
+  .callout-box :global(h2),
+  .callout-box h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: var(--font-heading-size);
+    color: var(--color-heading);
+    margin-top: 0;
   }
 </style>

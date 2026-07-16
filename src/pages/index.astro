@@ -3,10 +3,57 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import heroImage from '../assets/home/hero.jpg';
+import eclipse01 from '../assets/home/eclipse/eclipse-01-ring-2nd-contact.jpg';
+import eclipse02 from '../assets/home/eclipse/eclipse-02-h-alpha-proms.jpg';
+import eclipse03 from '../assets/home/eclipse/eclipse-03-diamond-ring-3rd.jpg';
+import eclipse04 from '../assets/home/eclipse/eclipse-04-full-corona.jpg';
+import eclipse05 from '../assets/home/eclipse/eclipse-05-prom-closeups.jpg';
+import eclipse06 from '../assets/home/eclipse/eclipse-06-white-light-4th.jpg';
+import signatureImage from '../assets/home/signature.jpg';
+import highlight01 from '../assets/home/highlights/highlight-01.jpg';
+import highlight02 from '../assets/home/highlights/highlight-02.jpg';
+import highlight03 from '../assets/home/highlights/highlight-03.jpg';
+import highlight04 from '../assets/home/highlights/highlight-04.jpg';
+import highlight05 from '../assets/home/highlights/highlight-05.jpg';
+import highlight06 from '../assets/home/highlights/highlight-06.jpg';
+import highlight07 from '../assets/home/highlights/highlight-07.jpg';
+import highlight08 from '../assets/home/highlights/highlight-08.jpg';
+import highlight09 from '../assets/home/highlights/highlight-09.jpg';
+import highlight10 from '../assets/home/highlights/highlight-10.jpg';
+import highlight11 from '../assets/home/highlights/highlight-11.jpg';
+import highlight12 from '../assets/home/highlights/highlight-12.jpg';
+import highlight13 from '../assets/home/highlights/highlight-13.jpg';
+import highlight14 from '../assets/home/highlights/highlight-14.jpg';
+import highlight15 from '../assets/home/highlights/highlight-15.jpg';
+import highlight16 from '../assets/home/highlights/highlight-16.jpg';
+import highlight17 from '../assets/home/highlights/highlight-17.jpg';
+import highlight18 from '../assets/home/highlights/highlight-18.jpg';
+import highlight19 from '../assets/home/highlights/highlight-19.jpg';
+import highlight20 from '../assets/home/highlights/highlight-20.jpg';
 
-const recentImages = (await getCollection('gallery', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const eclipseSlides = [eclipse01, eclipse02, eclipse03, eclipse04, eclipse05, eclipse06];
+const highlightSlides = [
+  highlight01, highlight02, highlight03, highlight04, highlight05,
+  highlight06, highlight07, highlight08, highlight09, highlight10,
+  highlight11, highlight12, highlight13, highlight14, highlight15,
+  highlight16, highlight17, highlight18, highlight19, highlight20,
+];
+
+const recentImages = (await getCollection('gallery', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 5);
+
+const howToLearnLinks = [
+  { slug: 'how-to-learn-astrophotography', title: 'How to Learn Astrophotography' },
+  { slug: 'a-telescope-buyers-guide', title: "A Telescope Buyer's Guide" },
+  { slug: 'developing-a-plan-for-our-images', title: 'Developing a Plan for Our Images' },
+  { slug: 'do-dark-skies-really-matter', title: 'Do Dark Skies Really Matter?' },
+  { slug: 'the-task-of-image-processing', title: 'The Task of Image Processing' },
+  { slug: 'astronomy-and-the-weather', title: 'Astronomy and the Weather' },
+  { slug: 'best-data-acquisition-practices', title: 'Best Data Acquisition Practices' },
+  { slug: 'where-to-setup-your-telescope', title: 'Where to Setup Your Telescope' },
+  { slug: 'space-is-a-landscape', title: 'Space is a Landscape' },
+];
 
 const gear = {
   Telescopes: [
@@ -31,39 +78,75 @@ const gear = {
 
 <BaseLayout title="Home">
   <section class="hero">
-    <Image src={heroImage} alt="All About Astro" width={570} />
+    <Image src={heroImage} alt="All About Astro" width={460} />
     <div>
       <h1>Astrophotography by Jay Ballauer</h1>
       <p class="tagline">Images - Tutorials - Articles - Equipment</p>
     </div>
   </section>
 
-  <section>
-    <h2>Most Recent Images...</h2>
-    <div class="recent-grid">
-      {recentImages.map((entry) => (
-        <a class="recent-tile" href={`/gallery/${entry.id}/`}>
-          {entry.data.image && <Image src={entry.data.image} alt={entry.data.title} width={300} height={220} />}
-          <span>{entry.data.title}</span>
-        </a>
+  <section class="feature-columns">
+    <div class="col col-eclipse-news">
+      <div class="slideshow">
+        {eclipseSlides.map((src, i) => (
+          <Image src={src} alt="A sneak-peak image from the 2024 Total Solar Eclipse" width={340} class="slide" data-active={i === 0}
+          />
+        ))}
+      </div>
+      <p class="slideshow-caption">Here are some sneak-peaks of my images of the 2024 Total Solar Eclipse. I will add them to the gallery in more glorious detail later!</p>
+
+      <h2>2024 Eclipse News...</h2>
+      <p>In a week full of hopeful worry preceding the eclipse, you would have found me obsessing on weather models, practicing some solar image runs, and staying in contact with people who wanted my advice on what to do, where to do, and what to expect.</p>
+      <p>That worry took me to Conway, Arkansas, where the forecast for clearer skies yielded better odds. Yet, all along, the astronomy gods must have been laughing at me while most of Texas miraculously cleared up for the event.</p>
+      <p>And I am grateful for this, as I had left behind so many family and friends who I desperately wanted to witness their first total solar eclipse.</p>
+      <p>This was my second total solar eclipse. The second in 7 years. My images of the 2017 event are all over All About Astro, including within the 2024 Total Solar Eclipse Guide I published here in early March 2024.</p>
+      <p>Setup for such an eclipse is not trivial, and many things can and did go wrong while tracking and imaging the eclipse itself. But I couldn't have asked for better results and all the while, in between frantic moments, I was able to settle down and really take in the beauty of what I consider to be the most astonishing display of nature that there is.</p>
+      <p>Processing so many images takes time, so while I do that over the next many weeks, I've put a small slideshow at the top of quick images as a sneak peak.</p>
+      <p>I sincerely hope your eclipse experience was successful and, moreover, that it might have inspired you to appreciate astronomy all the more and, perhaps, even remember to LOOK UP on occasion!</p>
+    </div>
+
+    <div class="col col-eclipse-guide">
+      <h2>April 2024 Total Solar Eclipse Guide!!!</h2>
+      <p>I have completed an <a href="/learning/great-american-solar-eclipse-2024/">Eclipse Guide</a> for all you need to know with regard to the eclipse on April 8, 2024. The article is for everyone, but written in a way that teachers might appreciate!</p>
+
+      <hr />
+
+      <h2>How to Learn Other Stuff...</h2>
+      <p>Head on over to the Learning page and let's read through some of these articles...</p>
+      <ul class="link-list">
+        {howToLearnLinks.map((item) => (
+          <li><a href={`/learning/${item.slug}/`}>{item.title}</a></li>
+        ))}
+      </ul>
+
+      <hr />
+
+      <h2>Current Gear</h2>
+      {Object.entries(gear).map(([category, items]) => (
+        <div class="gear-group">
+          <h3>{category}...</h3>
+          <ul>
+            {items.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
       ))}
     </div>
-    <p><a href="/gallery/">View the Astro Gallery for more!</a></p>
-  </section>
 
-  <section>
-    <h2>Current Gear</h2>
-    {Object.entries(gear).map(([category, items]) => (
-      <div>
-        <h3>{category}...</h3>
-        <ul>
-          {items.map((item) => <li>{item}</li>)}
-        </ul>
+    <div class="col col-recent-images callout-box" data-color="teal">
+      <h2>Most Recent Images...</h2>
+      <div class="recent-grid">
+        {recentImages.map((entry) => (
+          <a class="recent-tile" href={`/gallery/${entry.id}/`}>
+            {entry.data.image && <Image src={entry.data.image} alt={entry.data.title} width={300} height={220} />}
+            <span>{entry.data.title}</span>
+          </a>
+        ))}
       </div>
-    ))}
+      <p><a href="/gallery/">View the Astro Gallery for more!</a></p>
+    </div>
   </section>
 
-  <section>
+  <section class="welcome">
     <h2>Welcome to All About Astro!</h2>
     <p>What you'll find here is a website that showcases some of my astrophotography, but more than that, it will show you how to do the same! I hope that you can use this site to help you learn a new hobby - or master it!</p>
 
@@ -83,6 +166,22 @@ const gear = {
 
     <p>But there are a couple of other reasons to express the hobby in such a way. First, the number of hardware and software options available to the hobbyist does not permit individual tutorials on specific software and hardware without also alienating the reader who has a different set of tools, or promoting only my favorite tools - I will do some of that, but only because I feel the tools are that good.</p>
 
+    <div class="highlights">
+      <div class="highlights-stage">
+        <button type="button" class="hl-pause" aria-label="Pause slideshow">Pause ❙❙</button>
+        <button type="button" class="hl-prev" aria-label="Previous image">‹</button>
+        <button type="button" class="hl-next" aria-label="Next image">›</button>
+        {highlightSlides.map((src, i) => (
+          <Image src={src} alt="A highlight image from All About Astro" width={620} class="hl-slide" data-index={i} data-active={i === 0} />
+        ))}
+      </div>
+      <div class="hl-thumbs">
+        {highlightSlides.map((src, i) => (
+          <Image src={src} alt="" width={90} class="hl-thumb" data-index={i} data-active={i === 0} />
+        ))}
+      </div>
+    </div>
+
     <p>Second, teaching WHAT to do in this hobby, in the long-run, will not be as effective as teaching WHY. The person who understands the concepts and philosophies will soon be able to make decisions outside the scope of this website. This will lead to an understanding that promotes progress and innovation within the hobby, making it more likely that the imager will be able to contribute back to the astroimaging community at large.</p>
 
     <p>Regardless of the reason you are in the hobby or the goals you hope to achieve, the problem with being a beginner is that we spend most of our time trying to figure out what questions we need to ask. Whereas there are many resources that can teach the hobby, I have found that too many of them leave me desiring for more, and more often than not, they leave us with apprehension about what is next.</p>
@@ -90,6 +189,8 @@ const gear = {
     <p>Therefore this website not only showcases some fine astrophotography, but will help you learn how to do the same. It will attempt to tell you what questions you need to ask and when you need to ask them. This way, you can research your inquiries, perhaps beginning with this website and finishing in the laboratory of experience. But in the end, as comprehensive as you might find the information contained herein, it is my desire that All About Astro.com will prove authoritative, not because some guy like me wrote it, but rather because you find success in the methods contained on these pages.</p>
 
     <p>Give a person a fish, and he feeds for a day...teach a person to fish, and...well...you get it. Pithy saying, but applicable.</p>
+
+    <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="signature" />
   </section>
 </BaseLayout>
 
@@ -98,20 +199,112 @@ const gear = {
     display: flex;
     gap: 2rem;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 2rem;
   }
-  .tagline {
-    color: #9aa4b8;
+  .hero :global(img) {
+    flex: 0 0 auto;
   }
-  section {
+  .hero h1 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: 1.75rem;
+    color: var(--color-heading);
+    margin: 0 0 0.5rem;
+  }
+
+  @media (max-width: 700px) {
+    .hero {
+      flex-wrap: wrap;
+    }
+  }
+  .tagline {
+    font-family: var(--font-body);
+    color: var(--color-prose-text);
+  }
+
+  .feature-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: start;
     margin-bottom: 3rem;
+  }
+  .col h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: var(--font-heading-size);
+    color: var(--color-heading);
+    margin: 1.5rem 0 0.75rem;
+  }
+  .col h2:first-child {
+    margin-top: 0;
+  }
+  .col h3 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-heading);
+    margin: 1rem 0 0.25rem;
+  }
+  .col p,
+  .col li {
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    line-height: var(--prose-line-height);
+    color: var(--color-prose-text);
+  }
+  .col a {
+    color: var(--color-link);
+  }
+  .col hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 1.5rem 0;
+  }
+  .link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .link-list li {
+    margin-bottom: 0.4rem;
+  }
+  .gear-group ul {
+    margin: 0 0 0.5rem;
+    padding-left: 1.1rem;
+  }
+
+  .slideshow {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  .slideshow :global(.slide) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+  }
+  .slideshow :global(.slide[data-active='true']) {
+    opacity: 1;
+  }
+  .slideshow-caption {
+    font-style: italic;
+  }
+
+  .col-recent-images {
+    align-self: stretch;
   }
   .recent-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.25rem;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
   .recent-tile {
     color: inherit;
@@ -120,6 +313,190 @@ const gear = {
   .recent-tile span {
     display: block;
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-prose-text);
+  }
+
+  .welcome h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: var(--font-heading-size);
+    color: var(--color-heading);
+  }
+  .welcome p {
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    line-height: var(--prose-line-height);
+    color: var(--color-prose-text);
+  }
+
+  .highlights {
+    float: left;
+    width: 620px;
+    max-width: 100%;
+    margin: 0 2rem 1.5rem 0;
+  }
+  .highlights-stage {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  .highlights-stage :global(.hl-slide) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .highlights-stage :global(.hl-slide[data-active='true']) {
+    opacity: 1;
+  }
+  .hl-pause,
+  .hl-prev,
+  .hl-next {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .hl-pause {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .hl-prev,
+  .hl-next {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    padding: 0.3rem 0.75rem;
+  }
+  .hl-prev {
+    left: 0.5rem;
+  }
+  .hl-next {
+    right: 0.5rem;
+  }
+
+  .hl-thumbs {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 90px;
+    gap: 6px;
+    overflow-x: auto;
+    margin-top: 6px;
+  }
+  .hl-thumbs :global(.hl-thumb) {
+    width: 90px;
+    height: 63px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .hl-thumbs :global(.hl-thumb[data-active='true']) {
+    opacity: 1;
+    outline: 2px solid var(--color-link);
+  }
+
+  .signature {
+    margin-left: auto;
+  }
+
+  @media (max-width: 900px) {
+    .feature-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 700px) {
+    .highlights {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+    }
   }
 </style>
+
+<script>
+  const slideshows = document.querySelectorAll('.slideshow');
+  for (const slideshow of slideshows) {
+    const slides = Array.from(slideshow.querySelectorAll('.slide'));
+    if (slides.length < 2) continue;
+    let current = 0;
+    setInterval(() => {
+      slides[current].setAttribute('data-active', 'false');
+      current = (current + 1) % slides.length;
+      slides[current].setAttribute('data-active', 'true');
+    }, 4000);
+  }
+
+  const highlights = document.querySelector('.highlights');
+  if (highlights) {
+    const stage = highlights.querySelector('.highlights-stage');
+    const slides = Array.from(stage.querySelectorAll('.hl-slide'));
+    const thumbs = Array.from(highlights.querySelectorAll('.hl-thumb'));
+    const pauseBtn = highlights.querySelector('.hl-pause');
+    const prevBtn = highlights.querySelector('.hl-prev');
+    const nextBtn = highlights.querySelector('.hl-next');
+    let current = 0;
+    let playing = true;
+    let timer: ReturnType<typeof setInterval> | undefined;
+
+    function show(index: number) {
+      slides[current].setAttribute('data-active', 'false');
+      thumbs[current].setAttribute('data-active', 'false');
+      current = (index + slides.length) % slides.length;
+      slides[current].setAttribute('data-active', 'true');
+      thumbs[current].setAttribute('data-active', 'true');
+      thumbs[current].scrollIntoView({ inline: 'nearest', block: 'nearest' });
+    }
+
+    function start() {
+      timer = setInterval(() => show(current + 1), 5000);
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+    }
+
+    start();
+
+    pauseBtn.addEventListener('click', () => {
+      playing = !playing;
+      pauseBtn.textContent = playing ? 'Pause ❙❙' : 'Play ►';
+      if (playing) {
+        start();
+      } else {
+        stop();
+      }
+    });
+    prevBtn.addEventListener('click', () => {
+      show(current - 1);
+      if (playing) { stop(); start(); }
+    });
+    nextBtn.addEventListener('click', () => {
+      show(current + 1);
+      if (playing) { stop(); start(); }
+    });
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener('click', () => {
+        show(i);
+        if (playing) { stop(); start(); }
+      });
+    });
+
+    const thumbsEl = highlights.querySelector('.hl-thumbs');
+    thumbsEl.addEventListener('wheel', (event: WheelEvent) => {
+      if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+        event.preventDefault();
+        thumbsEl.scrollLeft += event.deltaY;
+      }
+    });
+  }
+</script>
