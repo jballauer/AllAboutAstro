@@ -15,6 +15,10 @@ In this Telescope Buyer's Guide,  I'll talk a bit about each of these qualitie
 
 Finally, I will give recommendations based upon the kind of hobbyist you think you will be!     Let's get started...
 
+![Basic telescope mount options](./_images/guide-01-typical-mounts.png)
+
+![A large binoscope example](./_images/guide-02-sayres-binoscope.jpg)
+
 APERTURE
 
 ​​APERTURE size is important if you like deep sky objects (DSOs) like galaxies and globular clusters, or high resolution views of the planets.  Likewise, aperture size is important for the fastest photographic speed and when trying to see faint stuff from light polluted skies. 
@@ -71,6 +75,12 @@ While many of these advanced scopes  aren't considered by beginner's from a bud
 Regardless, when talking aperture, you will want at least 8" to 10" for visual observing of deep sky objects in dark skies.  This is widely considered the point at which galaxy details begin to appear.
 
 Most amateur astronomers will say that aperture size is the most important consideration when deciding on a scope. It's hard to disagree!
+
+![Central obstruction comparison](./_images/guide-03-central-obstruction.jpg)
+!["Triple Threat" - comparing three apo refractors](./_images/guide-04-triple-threat.jpg)
+![The Skywatcher Esprit refractor](./_images/guide-05-slider-esprit.jpg)
+![Telescope optical design diagram](./_images/guide-06-scope-design.png)
+![Zone of focus diagram](./_images/guide-07-zone-of-focus.jpg)
 
 OPTICAL PERFORMANCE
 
@@ -170,6 +180,9 @@ Astrophotographers of deep-sky targets would say that Maks do not make good imag
 
 Lastly, I feel that the only remaining negative to these scopes would be their general quality, especially their enclosures, and the increased likelihood that the scope's electronics gives it more reasons to find its way into the repair shop.  
 ​
+
+![A Takahashi FS-78 on a Losmandy GM-8 mount](./_images/guide-08-tak-fs78.jpg)
+![A Meade LX-50 telescope](./_images/guide-09-lx50.jpg)
 
 PORTABILITY
 
@@ -339,6 +352,15 @@ With motors, electronics, and heavy fork-arms (like with SCTs), the non-dobsonia
 A good EQ mount will typically be motorized on both axes, and when equipped with a electronics the positions of objects can be dialed in according to the (Right Ascension, Declination) coordinates for any given time.   EQ mounts require a beefier setup for greater accuracy and heavier payloads, and for this reason many of these lack the portability of a simple, motorless alt-az setup.  
 
 There is a smaller type of EQ mount popular today known as "tracker" mounts.  Such mounts allow for very small payloads like smaller refractor and camera lenses.  Motorized, these light-weight mounts can be quickly "polar aligned" and left to track an object all-night.   These will typically NOT be GOTO mounts, so be sure you know how to find the objects yourself.  
+![Celestron CG-3 mount](./_images/guide-10-celestron-cg3.jpg)
+![Explore Scientific EQ3 mount](./_images/guide-11-explore-sci-eq3.jpg)
+![Meade EQ3-class mount](./_images/guide-12-meade-eq3.jpg)
+![Orion EQ3-class mount](./_images/guide-13-orion-eq3.png)
+![Sky-Watcher EQ3 mount](./_images/guide-14-skywatcher-eq3.jpg)
+![Sky-Watcher and Orion 8" Dobsonians](./_images/guide-15-sw-orion-dobs.jpg)
+![A 10" Dobsonian telescope](./_images/guide-16-dob10.jpg)
+![Telescope mount comparison](./_images/guide-17-telescope-mounts2.jpg)
+
 SUMMING IT ALL UP
 
 We have outlined several things to consider before purchasing a scope, categories that EVERYBODY looks at when evaluating which scope meets their needs.    Of course, with a true beginner, seldom do you know what your needs are!     This is why, after all, choosing a scope can be so difficult when you first start in this hobby.    
@@ -838,7 +860,11 @@ Ease of Use
 
 
 Dobs are the easiest to use, followed by any small scope on an alt-az mount.   Other scopes typically come with electronics that can raise the learning curve.  Same with EQ mounts. 
-Priced at around $55, this Celestron Firstscope (Robert Reeves Signature Series) is a decent performer compared to a lot of the cheaper EQ setups you'd purchase for a little more. The nice thing, other than having the knowledge that Robert is a friend, is that you won't be greatly put-out if you are disappointed. It's simple and easy to use...and that makes scopes like this (and full-sized dobs) a safe choice for a first scope.
+Priced at around $55, ![The Celestron Firstscope, Robert Reeves Signature Series](./_images/guide-18-reeves-scope.jpg)
+
+
+
+this Celestron Firstscope (Robert Reeves Signature Series) is a decent performer compared to a lot of the cheaper EQ setups you'd purchase for a little more. The nice thing, other than having the knowledge that Robert is a friend, is that you won't be greatly put-out if you are disappointed. It's simple and easy to use...and that makes scopes like this (and full-sized dobs) a safe choice for a first scope.
 HOW TO CHOOSE?
 
 As I said, with all the choices, true beginners are at a disadvantage.  But you can start by asking yourself what it is you'd like to do and how much you are willing to pay for it?   When we ask this question of people online in various forums, the typical person will indicate that they want to "see everything and do some photography."  Hopefully, in my presentation to this point, you realize that the MORE you hope a scope will do, the more likely the price tag becomes something you fail to anticipate.   
@@ -939,6 +965,9 @@ But what I've learned over the many years is that my own understanding of things
 I will say this to you...keep learning...keep growing...keep sharing.   What I've discovered about this hobby, and my hobbies in general, is that things are cyclical.   Is doesn't take too many gray skies before we get side-tracked into other pastimes.  The nice part about astronomy is that the night sky is always there.    I find comfort in that, especially when I find myself away from the hobby because of life's other happenings. 
 
 ​Thanks for reading!
+![The Celestron NexStar Evolution](./_images/guide-19-nexstar-evolution.jpg)
+![A recommended telescope setup](./_images/guide-20-final-scope.jpg)
+
 CONCLUSION
 
 So, my advice is to understand as much as you can about this hobby before making any purchase.   Don't rely on one person's opinion, but definitely make sure that any advice you get comes from people with "skin's on the wall."  
