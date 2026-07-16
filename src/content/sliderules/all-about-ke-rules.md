@@ -14,20 +14,6 @@ draft: false
 
 *Author's note: This, and most articles I write, are living documents. This article (or book) about K&E represents my research and understanding at the time of writing. It take a more narrative, story-driven approach to the topic. There are no targets with this writing, no thesis; no other purpose except to work my way through my own process of learning. The text will grow, change, and evolve slowly until, some day, a reader finds value in it. If that is you, and if that is today, thanks for taking the time to read it. Please forgive some of the "under construction" aspects of this writing, as things like annotations, the appendices and descriptions of items in the latter chapters might be incomplete or not fully documented. That will change the closer to "completeness" it gets. This article was last updated April 18, 2026. Many changes are being made to reflect a 1968 K&E Catalog Price List that was stumbled upon!*
 
-### Table of Contents
-
-- [Chapter 1: Understandings and Conventions](/sliderules/all-about-ke-rules/chapter-1-understandings-and-conventions/)
-- [Chapter 2: Rules of the Single-Sided, Mannheim-Type](/sliderules/all-about-ke-rules/chapter-2-single-sided-mannheim-type/)
-- [Chapter 3: Rules of the Double-Sided, Duplex-Type](/sliderules/all-about-ke-rules/chapter-3-double-sided-duplex-type/)
-- [Chapter 4: The Specialty Rules](/sliderules/all-about-ke-rules/chapter-4-specialty-rules/)
-- [Chapter 5: Miscellaneous K&E Rules](/sliderules/all-about-ke-rules/chapter-5-miscellaneous-rules/)
-- [Chapter 6: Out of Catalog, Custom Rules](/sliderules/all-about-ke-rules/chapter-6-out-of-catalog-custom-rules/)
-- [Chapter 7: My Portfolio of K&E Slide Rules](/sliderules/all-about-ke-rules/chapter-7-portfolio/)
-- [Appendix 1: A Study of K&E Cases](/sliderules/all-about-ke-rules/appendix-1-study-of-cases/)
-- [Appendix 2: A Study of K&E Product Catalogs](/sliderules/all-about-ke-rules/appendix-2-study-of-product-catalogs/)
-- [Appendix 3: A K&E Cursor Study](/sliderules/all-about-ke-rules/appendix-3-cursor-study/)
-- [Appendix 4: Bibliography](/sliderules/all-about-ke-rules/appendix-4-bibliography/)
-
 </div>
 <div class="ke-col-right">
 

@@ -1,0 +1,84 @@
+---
+interface Props {
+  currentId: string;
+}
+const { currentId } = Astro.props;
+
+const items = [
+  { id: 'all-about-ke-rules', label: 'Introduction' },
+  { id: 'all-about-ke-rules/chapter-1-understandings-and-conventions', label: 'Chapter 1: Understandings and Conventions' },
+  { id: 'all-about-ke-rules/chapter-2-single-sided-mannheim-type', label: 'Chapter 2: Rules of the Single-Sided, Mannheim-Type' },
+  { id: 'all-about-ke-rules/chapter-3-double-sided-duplex-type', label: 'Chapter 3: Rules of the Double-Sided, Duplex-Type' },
+  { id: 'all-about-ke-rules/chapter-4-specialty-rules', label: 'Chapter 4: The Specialty Rules' },
+  { id: 'all-about-ke-rules/chapter-5-miscellaneous-rules', label: 'Chapter 5: Miscellaneous K&E Rules' },
+  { id: 'all-about-ke-rules/chapter-6-out-of-catalog-custom-rules', label: 'Chapter 6: Out of Catalog, Custom Rules' },
+  { id: 'all-about-ke-rules/chapter-7-portfolio', label: 'Chapter 7: My Portfolio of K&E Slide Rules' },
+  { id: 'all-about-ke-rules/appendix-1-study-of-cases', label: 'Appendix 1: A Study of K&E Cases' },
+  { id: 'all-about-ke-rules/appendix-2-study-of-product-catalogs', label: 'Appendix 2: A Study of K&E Product Catalogs' },
+  { id: 'all-about-ke-rules/appendix-3-cursor-study', label: 'Appendix 3: A K&E Cursor Study' },
+  { id: 'all-about-ke-rules/appendix-4-bibliography', label: 'Appendix 4: Bibliography' },
+];
+
+const hrefFor = (id: string) => id === 'all-about-ke-rules' ? '/sliderules/all-about-ke-rules/' : `/sliderules/${id}/`;
+---
+
+<nav class="ke-toc" aria-label="All About Keuffel & Esser Rules — table of contents">
+  <h2>Table of Contents</h2>
+  <ul>
+    {items.map((item) => (
+      <li>
+        <a href={hrefFor(item.id)} aria-current={item.id === currentId ? 'page' : undefined}>{item.label}</a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  .ke-toc {
+    background-color: #1d5f8a;
+    color: #fff;
+    padding: 20px;
+    margin: 0 0 1.5rem;
+    box-sizing: border-box;
+  }
+  .ke-toc h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  }
+  .ke-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 2rem;
+  }
+  .ke-toc li {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
+  }
+  .ke-toc a {
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    line-height: var(--prose-line-height);
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: underline;
+  }
+  .ke-toc a[aria-current='page'] {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  @media (max-width: 600px) {
+    .ke-toc ul {
+      columns: 1;
+    }
+  }
+</style>
