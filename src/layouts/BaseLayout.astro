@@ -146,11 +146,27 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     background-color: #1d5f8a;
     color: #fff;
     padding: 20px;
-    margin: 1.5rem 0;
+    margin: 0.3rem 0 1rem;
     box-sizing: border-box;
+    float: left;
+    width: 38%;
+    margin-right: 1.75rem;
   }
   .ke-sidebar[data-color='orange'] {
     background-color: #a85a2a;
+  }
+  .ke-sidebar[data-side='right'] {
+    float: right;
+    margin-right: 0;
+    margin-left: 1.75rem;
+  }
+  @media (max-width: 700px) {
+    .ke-sidebar {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
   .ke-sidebar :global(h2),
   .ke-sidebar h2 {
@@ -221,6 +237,69 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-gallery-captions .num {
     font-weight: 700;
     color: #fff;
+  }
+
+  /* K&E in-line floated figures — Jay's original Weebly build floated one
+     image per text box at half or third width, with text justifying
+     around it; this replicates that instead of full-width block images
+     breaking up a single column. */
+  .ke-figure {
+    margin-bottom: 1rem;
+  }
+  .ke-figure :global(img) {
+    margin: 0;
+  }
+  .ke-figure-caption {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--color-prose-text);
+    margin-top: 0.4rem;
+  }
+  .ke-figure-left {
+    float: left;
+    width: 46%;
+    margin: 0.3rem 1.5rem 1rem 0;
+  }
+  .ke-figure-right {
+    float: right;
+    width: 46%;
+    margin: 0.3rem 0 1rem 1.5rem;
+  }
+  .ke-figure-third.ke-figure-left,
+  .ke-figure-third.ke-figure-right {
+    width: 31%;
+  }
+  .ke-clear {
+    clear: both;
+  }
+  .ke-figure-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .ke-figure-row .ke-figure {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  article :global(h2),
+  article :global(h3) {
+    clear: both;
+  }
+
+  @media (max-width: 700px) {
+    .ke-figure-left,
+    .ke-figure-right {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .ke-figure-row {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   /* K&E landing-page two-column intro (title/author's note/TOC at left,
