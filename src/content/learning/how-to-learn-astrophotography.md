@@ -6,7 +6,11 @@ draft: false
 ---
 
 How to Learn Astrophotography
+![Chalkboard math](./_images/htl-01-chalkboard.jpg)
+
 FOREWORD
+
+![An example image](./_images/htl-02-e0972.jpg)
 
 You will not learn astrophotography over night.  You will not be able to read a single article, or even a single book, and think that you can accomplish some of what you see at All About Astro. 
 
@@ -66,6 +70,11 @@ Nothing to change now...there's one beer to be consumed between each focus run.�
 The ideal evening as an astro-imager has taken place.  You pack up in the morning after taking some "flats" with your EL panel, happy with the knowledge that you have so many fine sub-exposures of a great deep sky object.   
 After 23 years in this hobby, I'm still waiting for a night like that.   Not that I haven't been close.  I'm good enough now, my equipment reliable enough now, that I do pretty well on most nights.  But there's always something you didn't expect.  The astronomy gods always have a surprise, either weather or something mechanical or a stupid Windows update that you forgot to disable!  
 There isn't a huge challenge involved with an image like this. Taken in 2015, Devil's Tower in Wyoming is awesome, especially when you can catch the Big Dipper with it. Despite a full moon, knowing how to properly expose the image takes some practice. But practice aside, this type of image is a great way to start in this hobby. Taken with Nikon D810a DSLR on tripod.
+![Types of astrophotography images](./_images/htl-03-types-images.png)
+![A progression of imaging setups, FIGURE 2](./_images/htl-04-progression.jpg)
+![Car lights nightscape example](./_images/htl-05-carlights.jpg)
+![Fireworks example](./_images/htl-06-fireworks.png)
+
 FIGURING IT ALL OUT
 
 ​For today's beginner to the hobby, it seems less obvious that the learning curve with digital is far beyond that which us old timers experienced with film.   Those were the easy days. In fact for us, the earlier adopters to digital CCDs, we had a need to evolve and LEARN a whole new, complicated way of imaging the night sky.    More electronics, more cables, more things that could go wrong.   
@@ -89,6 +98,11 @@ Do you know how depressing it is to have your first 6 rolls of film developed an
 
 I say this because I find that most people are more interested in the end result rather than the "journey."   They see images like those in FIGURE 1 below and they don't realize how difficult it really is.  They buy a bunch of expensive equipment, assuming they'll have what it takes to use it, but it becomes a classic case of biting off more than they can chew.    ​​
 FIGURE 1 - The form of the Astrophotography you wish to learn can play a large role in the ease in which the learning occurs. While much of your choice in this area is dictated by equipment availability, budget, and location, the willing learner needs to understand the demands and complexities of each imaging form and how much time and effort you are willing to devote to having success. This goes beyond the scope of this article, but be sure to spend some time researching why some images are just a heckuva lot easier to take (and process) than others.
+
+![A piggyback camera setup](./_images/htl-07-piggyback-setup.jpg)
+![A piggyback mount configuration](./_images/htl-08-piggyback-mount.jpg)
+![Piggyback rig, credit Phil Jones](./_images/htl-09-phil-carrier.jpg)
+![Piggyback rig example](./_images/htl-10-fcya.jpg)
 
 A SENSIBLE PROGRESSION
 
@@ -129,6 +143,8 @@ My hope and my assumption, if you are reading this, is that you've already figur
 SPOILER ALERT:   All three approaches are necessary if you hope to learn in the most efficient of ways, regardless of where you are in your progression. For more about the overall process of learning just about anything, check out the Sidebar: How to Learn Anything.
 ​
 Wanna build a Starship Enterprise and don't know how to start? We'll click on this picture for a tutorial on how to make one!
+![SNR vs. seeing comparison, Rosette Nebula, FIGURE 3](./_images/htl-11-rosette-snr.jpg)
+
 THE TUTORIAL APPROACH
 
 If I want to build a model of something, let's say, the Starship Enterprise, then I wouldn't have a clue on how start it.  And for a scratch build, I wouldn't even know the right materials, even though I've seen people use balsa wood for stuff.  Nor would I know the appropriate tools, except for being able to use a digital multimeter to help wire an LED circuit.  
@@ -153,6 +169,8 @@ Step-by-step, inch-by-inch, you can accomplish the task.   Rinse.  Lather.  R
 It's been said that to master anything, we need to do it for 10,000 hours.   Practice, practice, practice!    And just about any tutorial can provide you with some kind of meaningful practice.  We don't even need to understand what we are doing in many cases...the recipe for success is on the Internet.  
 
 Hopefully you will strive to supplement your learning with some extra reading, but the Tutorial Approach does promote a good pathway to success, especially for those who don't have a clue how to start.  
+![Jason Ware's scratch-built Starship Enterprise model](./_images/htl-12-jason.jpg)
+
 THE THEORY APPROACH
 
 ​​What if you wanted to be a good basketball coach?   Would you win a lot of games if you ran the same plays as your own high school coach or if you watched a few videos on how to coach?   Well, perhaps for a while.  But what if your players change or the rules change or the competition and style of play changes?   Will you be able to adjust?  
@@ -193,6 +211,9 @@ Interestingly, with the rise in technology, more and more people think that an i
 What I've discovered as a teacher, albeit anecdotally, is that the use of devices in the classroom has only increased the performance gap between the strong students and the weak ones.    Better said, it can be a positive tool for a strong, motivated student, but a distraction and hindrance for a weak, unmotivated student.   And it's especially true in a subject like mathematics, where the presence of a teacher is critical to not only answer direct questions, but to redirect students when they stray off the most logical path of learning.   ​
 
 My digression into this topic above was meant to highlight ONE KEY THOUGHT - no matter who you are, you can always learn faster, be better, and grow stronger with a teacher.  Even an engineer with two PhDs could still benefit from the guidance of a mentor when learning astrophotography.  Certainly you can guide the process yourself (somewhat), but the complexity of everything requires that mentorship will give focus and efficiency to one's learning.  
+![A star party or workshop scene](./_images/htl-13-img1242.jpg)
+![Kolb's Learning Cycle](./_images/htl-14-kolb.jpg)
+
 RESOURCES
 
 ​A good mentor could lead you to good resources, but if you are reading this article, then it's likely you want the challenge of learning a few things all by yourself.   I am often asked what resources I believe have some educational value to them, so now let's discuss some of the more valuable resources available to you in your journey to be a good astro-imager.
@@ -263,6 +284,9 @@ Other books I find important would include astronomy-specific (non-imaging) type
 
 As far as magazines, Astronomy and Sky & Telescope are two of the biggest reasons that many people get involved in astronomy in the first place.   They deserve a place in your monthly reading list.   Others like Amateur Astronomy Magazine and ​Astronomy Technology Today, as well as non-American publications like SkyNews and Astronomy Now, serve the same types of information.  Monthly star charts, observing list and highlights, equipment reviews, current events, and tutorials are consistent features in all of these magazines.   And if nothing else, you need to experience the joy of having an image published in at least one of those magazine's image galleries!  
 Comanche Springs Astronomy Campus (CSAC) is the home of over 3500 acres designated by the Three Rivers Foundation for public science education. It is home of several observatories, with classrooms and bunkhouses that can accommodate groups up to 150 or so. Owner of the largest private collection of Obsession dobs, including a 30" on campus, CSAC hosts routine astronomy and astroimaging workshops. Unique is the ability to use actual equipment from Bortle Class 2 skies WHILE learning imaging in a workshop setting. Very special and unique. See www.3rf.org for information on future opportunities.
+![Inside PixInsight book cover](./_images/htl-15-inside-pixinsight.jpg)
+![The Comanche Springs Astronomy Campus dome](./_images/htl-16-ashdome.jpg)
+
 Workshops, Conventions, and Clubs
 
 Some of the best learning happens when you attend local, regional, or national imaging workshops and conventions.   It's as close as you might get to attending an actual imaging "school."   Most such workshops will be 3 to 5 days long, with an agenda of topics each day.   Depending on the event, the presentations could be wide ranging, for beginners to experts, covering a plethora of diverse areas of interest.  This is especially true in the two major national conferences here in the states...the Astronomical Imaging Conference (AIC) held each November in San Jose, California and the NorthEast AstroImaging Conference (NEAIC) held each April in Suffern, New York.   The latter conference is a part of a larger exposition known as the NorthEast Astronomy Forum (NEAF) which is the largest collection of amateur astronomy gear you will ever see in any one place.  
@@ -274,6 +298,9 @@ At the Three Rivers Foundation, we have been known to host imaging workshops ar
 Finally, most large cities in the states have astronomy clubs.  These clubs usually have Special Interest Groups (or SIGS) that meet periodically to focus on specific aspects of astronomy, including astro-imaging.   For example, here in the DFW area, a member of the Texas Astronomical Society of Dallas can attend a monthly astro-imaging SIG at a local library, where there are presentations, processing demonstrations/practice, and open question times.  Being in the club also keeps you connected with events that you might not have known about otherwise.  You should also remember that anything you do in astronomy can benefit your imaging as well, so be sure to plug into the club as an amateur observer too.  
 
 But I think, most importantly, workshops and astronomy clubs offer an opportunity to socially network (non-virtually) with other like minded, motivated astrophotographers and astronomers. These relationships can form the basis for future partnerships, mentorships, and other opportunities you would never have if you remained invisible.  At some point, such contacts can lead to your own chance to speak at conventions, make money from the hobby, and even rub elbows with some of your astro-imaging heroes.    
+![A downloaded resource example](./_images/htl-17-download.jpg)
+![The Lagoon Nebula processed by 16 world-class astroimagers](./_images/htl-18-m8multi.jpg)
+
 Online Forums/Social Media
 
 One of the very best parts of the early internet was the concept of a "bulletin board" or "user group."  The first true social media, people could gather virtually to ask questions and discuss a variety of aspects of over the hobby or hobbies.    Today, remnants of many still exist, such as the Yahoo Groups, which still serves as an excellent place to get user support over a variety of legacy (and current) equipment makes. 
@@ -295,6 +322,8 @@ Mr. 5-Star Poster: "Did you use our search bar before you asked that question?"
 
 Newbie: "Uh, no...I kinda hoped somebody would just answer my question without me needing to take 2 hours of time to read through a 150 page thread.  But thanks anyway." 
 If you want to process some data online, head over to Jim Misti's FITS site. Here are the results of his M8 data processed by 16 distinct hobbyists. It's nice to be able to process the data yourself and see how YOU compare!
+![Testing telescopes screenshot](./_images/htl-19-testing-telescopes.png)
+
 Data Repositories 
 
 You can learn to process astronomical images without taking a single image yourself.   This is possible because many people upload their own raw data (or master frames) to the Internet for ANYBODY to play with.   Unbelievably, you can even download Hubble Space Telescope data to practice on. Googling "HST public data" or "Hubble Legacy Archive" will get you started.   Digitized Sky Survey (DSS) data?   Yes, that too.   Even data from the James Webb Telescope can be downloaded and processed.   The Space Telescope Institute provides such access to an enormous amount of real telescope data.  
@@ -302,6 +331,8 @@ You can learn to process astronomical images without taking a single image yours
 One of my favorite amateur repositories has been provided by Jim Misti, who uploaded FITS data from a 32" Ritchey-Chrietien scope, as well as 4" apochromatic refractor data.  He even uploads your processed results to a page where you can compare it against others who did the same object.   It's amazing to see the differences in results among participants, even among some really talented amateur astrophotographers.  
 
 Somewhat conversely, it's good to make use of those around us to process our data for us, if only to compare their results with our own.  It's an excellent way to understand what is the limiting factor in your images...is it your processing...or is it just the data?   Getting buddy-buddy with some experienced and proven astronomy "forum-ites" or making a Facebook request is a good way to find people willing to do it; many of them are probably looking for something to do anyway since they just bought new equipment and will be socked in by clouds.  It's called the "equipment curse" and you should definitely take advantage of other people's misfortunes.      
+
+![Example astrophoto](./_images/htl-20-335256.jpg)
 
 Mentors/Consultants
 
@@ -318,6 +349,11 @@ But I make this latter point for a single reason...you never know when people mi
 ​I will often make myself available for email questions and assistance just because, by nature, I like to help.   And if you want to give me something for such services, beer doesn't hurt.    Just make sure you are gracious - don't take advantage of others and be willing to provide some compensation for those who are saving you tons of time and money with their advice.   
 
 Getting setup for a major star party in anticipation for great skies with a bunch of fellow imagers and astronomers is something everybody should experience. Shown here, I've brought out the big guns for the 2005 Texas Star Party. - Image credit Phil Jones
+![A Milky Way selfie](./_images/htl-21-milkyway-selfie.jpg)
+![The constellation Lyra](./_images/htl-22-lyra.jpg)
+![The Little Dipper with star magnitudes labeled](./_images/htl-23-little-dipper.jpg)
+![The Pleiades with star magnitudes labeled](./_images/htl-24-pleiades-mags.jpg)
+
 Star Parties
 
 Some of the greatest advancements in my own learning came from attending major star "parties."   These week long affairs are typically well hosted in very dark skies, accommodating hundreds of fellow amateur astronomers and imagers alike.   Not only can you setup scopes alongside other well schooled amateur astronomers, but the days will typically be filled with informative presentations and learning events.   Moreover, and most importantly, you have the opportunity to network and form relationships with others who might serve as mentors, partners, and friends.  
@@ -641,6 +677,17 @@ By Canadians, for Canadians, I suppose.
 Being led-on for over a year, like a girlfriend who would soon jilt me (lots of experience there) was bad enough.  But having my image replaced ultimately by one that I felt wasn't as "good" as mine felt worse.
 
 Just goes to show that we have to be careful when we prop ourselves up too high on those pedestals!
+
+![Markarian's Chain](./_images/htl-25-markarian.jpg)
+![An example astrophoto](./_images/htl-26-img0001.jpg)
+![The Lagoon Nebula](./_images/htl-27-lagoon.jpg)
+![M16 and M17](./_images/htl-28-m16-17.jpg)
+![NGC 7000, the North America Nebula](./_images/htl-29-ngc7000.jpg)
+![The Rho Ophiuchus/Antares region](./_images/htl-30-rho-antares.jpg)
+![M31, the Andromeda Galaxy](./_images/htl-31-m31.jpg)
+![A group photo at the Advanced Imaging Conference](./_images/htl-32-aic-group.jpg)
+![Formative vs. summative assessment](./_images/htl-33-formative-summative.png)
+![A postage-stamp sized comparison image](./_images/htl-34-postage-stamp.jpg)
 
 CONCLUSION
 
