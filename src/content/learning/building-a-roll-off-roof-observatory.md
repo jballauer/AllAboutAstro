@@ -5,6 +5,8 @@ order: 11
 draft: false
 ---
 
+![Ballauer Observatory](./_images/roof-01.jpg)
+
 This article was originally written in 2002 and has been uploaded due to the many requests I have received concerning this article. Please note that almost 15 years is an eternity in this hobby and many things have changed...even the way I would do things now.
 
 In fact, Ballauer Observatory, as originally built, no longer exists. However, the design principles should transfer to any of today's needs. Just do your own research whereas today's technology can improve your actual design. Your mileage may vary.
@@ -81,6 +83,8 @@ Before you begin building, draw some plans! Even if they are merely sketches, th
 
 But knowing that I drew the plan precisely on paper gave me a pretty good idea that changing the roof design mid-construction would still work for me. My suggestion to you is to know every nook and cranny of your structure before you build it. The only way to do this is by completing measured drawings of your observatory.
 
+![Floor plan layout](./_images/roof-02-floorplan.jpg)
+
 Ballauer Observatory is based on a 10 x 20 ft. floor plan. The control room covered an 8 x 10 area and the observing room a 12 x 10 area. The outer door is 32" and the inner door is 30". Keep in mind that the 20' width and 10' depth are measured from the outer walls, so the actual dimensions of each room are a bit less than advertised. When designing your own plan, make sure to account for the width of your wall frames, a standard 3.5 inches or the width of your studs.
 
 Knowing that you have a working floor plan, the next step is to figure out how the floor will come together. There are many ways to plan a floor, but whichever method you choose must account for a big hole in it, where your pier will be. Knowing this, I decided to plan my floor using 4x4s riding on cinder blocks and framing the floor joists with 2x6s on 16" centers. This works easily within my planned dimensions.
@@ -91,6 +95,8 @@ Therefore, you do not need to prepare a totally level ground for this structure.
 
 That's why I opted for using cinder blocks. Don't worry, the observatory will be plenty heavy enough to stay in place, at least here in Texas where earthquakes aren't much of a threat. High winds don't stand a chance either unless it suffers a direct hit from a tornado. But I figure if that happens I'll be building over from scratch anyway!
 
+![Floor grid layout](./_images/roof-03-floor-layout.jpg)
+
 After planning the floor, I had to give consideration to the elevations. Each side of the framing will be a very predictable length and spaced with studs on 24" centers; however, the height of each wall will depend upon your type of roof construction, the height of your telescope pier, or the amount of horizon you want access to while observing.
 
 For me, I didn't care too much about constructing short walls around the observing room since I figured I'd just compensate with a taller pier. But because I decided on a split roof, I knew that I'd need taller walls around the control room so that the rolling roof could easily tuck underneath the section of roof that is fixed. I planned for the walls of the control room to be of standard stud length to allow for a full 8' ceiling, keeping in mind that a single 2x4 plate will ride atop these wall frames. So I just had to decide how tall to make the walls around the observing room. I calculated a 12" difference (not including the top frame to be added later on only the taller part of the frame) to facilitate the necessary space for clearance of the rolling roof.
@@ -99,12 +105,18 @@ Unfortunately, this meant that the height of the door opening would be an inch s
 
 [Update: I wish I'd planned for a standard door in retrospect. Something I could have done by removing that additional brace at the top of the door opening. I just originally feared that the structure needed that extra brace since I was not going to be using a top plate.]
 
+![The shortened door framing](./_images/roof-04-door.jpg)
+
 Looking closely at the elevations, a few things stand out:
 
 1. Both East/West frames are reinforced with additional corner studs. This is because the length of these walls span exactly 10'. Therefore, the North/South walls span only 19' 5", seven inches short of 20'. Had I not taken 7" away from the North/South elevations (the width of two studs) then those walls would actually be 20' 7" in length. NOT GOOD considering you've already built your floor 20' along that dimension! Thus, the East/West frames extend the full width of the floor and the North/South frames butt into them.
 2. The East frame is taller than the West frame by 12". Remember that the control room does have a higher ceiling and roof than the observing room.
 3. The top 2x4 atop the West frame leaves a stud's width on both ends. That's to accommodate the 4x4 rails that will extend to the west, on which the roof will roll.
 4. The North/South frames feature a top 2x4 that extends beyond the stud 1.5" (the depth of a standard stud). It would normally have extended 3.5" so that it could be nailed precisely into the top of the West frame (no top plate so you have to nail your frames into something other than through the actual studs). I left some room so that I could notch the 4x4 rails and hammer them into the main structure. Because of height concerns of this section of the roof, I couldn't just run the top rail all the way across; therefore, I had to have a way to mount the rail. By notching the 4x4 it allowed me to hammer into the top of the West frame without raising above the top 2x4 of the North/South frames. So when the angle iron goes in later, it will ride atop the top 2x4s of both the North and South frames and then transition perfectly onto the 4x4 rails that rest on the support poles to the west.
+
+![West elevation](./_images/roof-05-west-elev.jpg)
+![East elevation](./_images/roof-06-east-elev.jpg)
+![South elevation](./_images/roof-07-south-elev.jpg)
 
 #### Framing 101
 
@@ -122,6 +134,9 @@ I toyed with the idea of building a window into this wall to allow me to see dir
 
 At this point consideration must be given to the roof trusses. The upper truss represents the rolling roof portion and the lower is for the permanent roof portion. 7 of the top truss type and 5 of the bottom will need to be built, set in place 24" on center. Building the permanent portion of the roof is pretty easy though I changed the design on the fly. Intending to bracket and toe-nail the top rafters together I discovered that I didn't want to build the trusses on the ground and then raise them into place. 2x6s were used exclusively so each truss can get a bit heavy. Instead, I ran a top 2x6 the entire length of the roof peak and then toenailed the rafters directly into it. This 2x6 extends an additional 12" on both sides to accommodate the eaves. I then notched the rafters to meet the walls and ran ceiling joists the full length of the truss, nailed flush to the rafters. This caused some extra joist to stick up above the top of the rafter but a reciprocating saw or hatchet makes quick work of that. Measuring the notch for the birdmouth is the tough part and took some trial and error. Once I had a standard template cut, I used it to quickly make the other rafters.
 
+![North/South wall framing](./_images/roof-08-ns-frame.jpg)
+![Interior wall framing](./_images/roof-09-interior-wall.jpg)
+
 The rolling roof structure came next. Since it's rather difficult to build such a roof atop a ladder, I built the frame on the ground and then lifted it into place. I originally planned using 2x6 rafters but later decided on 2x4s to lighten the roof. I also decided to build this part of the roof like the permanent roof in that I used a long 2x6 to nail the rafters into (actually since they don't make a 13' 2x6 - the width of the observation room plus a foot for the western eave - I used two 8' 2x6s pieced together). Likewise, I stacked 2x4s (3 high) together on each side of the truss to make a rail on to which the notched rafters would be attached. The wheels would then attach to these rails.
 
 I originally designed it this way because I feared that stacking the three 2x4s on top of each other would add too much height to the rolling roof and thus would not clear the eave of the other roof. After recalculating my measurements I decided I could stack the rails 3 high since I decided to pitch this portion of the roof slightly less (3/12) than that of the permanent roof (4/12). I did this because adding the 2x6 toeboard at the top of the permanent roof actually caused me to worry if the peak of the rolling roof would clear.
@@ -133,6 +148,9 @@ After that, everything else is accomplished on the fly. Additional drawings are 
 Once you have produced a working set of plans for your observatory, construction can begin. Part Two of this article documents the construction of Ballauer Observatory with pictures and explanations.
 
 ## Part 2
+
+![Interior wall detail](./_images/roof-10-interior-wall2.jpg)
+![Roof truss design](./_images/roof-11-truss.jpg)
 
 ### Introduction
 
@@ -158,13 +176,25 @@ After pier construction finished, then work begins on the foundation of your obs
 
 Because the flooring and concrete pier support are two separate systems, care must be made to assure that the floor joists clear the concrete. In this way, any vibrations made to the observatory floor do not translate to the pier itself, and consequently to the eyepiece or camera on your telescope. The floor is reinforced over the pier to provide utility access to the pier itself while giving additional support to this most walked-on area. Treated floor joists are nailed down to the 4x4 beams where possible. This is really the only place where treated wood is required over the entire project, the exception being the 4x4 roof piers that are constructed later.
 
+![Foundation forms](./_images/roof-12-foundation1.jpg)
+![Anchor bolts in place](./_images/roof-13-foundation2.jpg)
+![Poured concrete pier](./_images/roof-14-foundation3.jpg)
+
 Once the floor grid is complete, I used a layer of OSB followed by another layer of plywood as decking. I simply did not want a whole lot of flexure in my floor. As a result, this floor is indeed pretty solid. The foundation is then finished off by the base plate for the walls, unless you decide to fabricate the entire wall first. For me, I wanted to construct the walls from ground up in the event that my measurements were not precise. Better to replace a board at a time instead of a whole wall in the event of a mis-measurement.
 
 **I.I.D.I.O.T.**: Since I had a few pieces of particle board laying around I actually used them on the upper deck of the floor. Of course, particle board swells when it gets wet. I knew this, but I was willing to take the chance that I could get the structure waterproof before any rain fell. Of course I was wrong. The result is certainly not a tragedy but water did accumulate on some areas of the particle board. Not too big of a deal but it slightly diminishes an otherwise good and solid foundation.
 
 ### Wall Construction
 
+![Floor construction, cinder blocks and beams](./_images/roof-15-floor1.jpg)
+![Floor decked with OSB](./_images/roof-16-floor2.jpg)
+![Second layer of decking](./_images/roof-17-floor3.jpg)
+
 Once the floor is constructed, work can begin on the wall frames. Since I nailed down my base plate first, wall construction would have to be done from bottom to top. This would require toenailing wall studs into the floor plate. This can be avoided if you construct the entire wall individually but I find this method is no easier than the way I did it. And as I said, by working one stud at a time over the affixed plate I can better compensate for mistakes I might have made in pre-planning. In actuality, there really is no right and wrong when doing the framing. The biggest concern is stud placement so as to give yourself something to nail into when you put on your outer siding. Likewise, a properly planned wall frame will give you something to nail into if you decide on using interior siding or sheet rock. Of course that's why we take such care to set our studs on 16" or 24" centers in the first place.
+
+![Wall frames going up](./_images/roof-18-wall1.jpg)
+![Control room walls, taller than observing room](./_images/roof-19-wall2.jpg)
+![Diagonal bracing](./_images/roof-20-wall3.jpg)
 
 Walls are constructed and tested for squareness as they rise by measuring from corner to corner of each room. Equal measurement suggests that the walls are indeed square. Diagonal braces are notched into the walls to retain squareness and provide rigid support. This is a critical step, in my opinion. A before and after push on the wall frames suggests that without the diagonal braces the walls have entirely too much flexure. Though the exterior siding helps to maintain trueness and to give it strength, reinforcing the wall frames with diagonal braces helps to provide additional support and peace of mind.
 
@@ -180,9 +210,16 @@ Because I have windows, this is a good time to frame them into the walls. Likewi
 
 ### Roof Construction
 
+![Vapor barrier and framing](./_images/roof-21-siding1.jpg)
+![Exterior siding and windows](./_images/roof-22-siding2.jpg)
+
 Essentially, I have incorporated two independent roof structures into my design as you will see. For those of you building single room observatories with a single rolling roof, you should be able to focus only on the rolling roof portion of these construction notes. My concepts on this portion of the roof can be taken pretty directly into your own design, though you may have to devise a practical way of enclosing the eaves on the gable ends, when closed, while still allowing a freely rolling roof. That shouldn't pose too big of a problem for you anyway, plus my design can easily be modified in a way specific to your needs.
 
 Because of the difference in height of my walls between the control room and the observing room, a consideration which was pre-planned, I knew that I could construct my fixed roof prior to the rolling roof. So that is exactly what I did. The fixed roof portion was constructed with 2x6 rafters and 2x6 ceiling joists, because I planned to put a ceiling in my control room. Both the rafters and ceiling joists were placed on 24" centers. Rafters are nailed at the top into a peak board, another 2x6 in this case, and then notched at the bottom and nailed into the top plate of the walls. This leaves a gap of ~2.5" between roof coverings and top of wall plate, which will be covered by a "bird board" later in construction.
+
+![Permanent roof trusses](./_images/roof-23-roof1.jpg)
+![Gable fan enclosure](./_images/roof-24-roof2.jpg)
+![Interior ceiling joists and rafters](./_images/roof-25-roof3.jpg)
 
 Once the trusses are in place, I needed to trim a bit off the ends of the ceiling joists since they protruded beyond the top of the rafters. This is easily done with either a reciprocating saw or a hatchet.
 
@@ -192,7 +229,14 @@ The permanent portion of the roof is completed by constructing the eaves, enclos
 
 Once the main roof is constructed, the rolling roof portion of construction can start. Framing of this 10 x 12 foot roof is accomplished on the ground using 2x4s for trusses placed 24" on center. The same construction techniques are used as on the main, fixed roof. Rafters are nailed into a peak board and notched at the bottom around rails where the 4 inch 'V' grooved coasters are placed. Ceiling joists are not used because scope clearance is a concern. 1x4 braces are nailed into each truss to provide support.
 
+![Attic fan and roofing](./_images/roof-26-trusses1.jpg)
+![Rolling roof frame on the ground](./_images/roof-27-trusses2.jpg)
+![Interior view of the roof trusses](./_images/roof-28-trusses3.jpg)
+
 Once the rolling roof is framed it can be lifted into place atop the observing room. 1x4s are nailed to the interior of the top plate to prevent roof from falling off. The wheels will ride atop angle iron affixed to the top plate. Of course the angle iron cannot be placed until the roof rails and posts are in place, which is the next phase of construction. But first, aluminum roofing material is put into place, used because of its light weight.
+
+![Wheels and aluminum roof in place](./_images/roof-29-rolling1.jpg)
+![The rolling roof lifted into place](./_images/roof-30-rolling2.jpg)
 
 ### Roll-off Roof Supports
 
