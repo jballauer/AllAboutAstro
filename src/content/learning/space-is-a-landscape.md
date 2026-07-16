@@ -5,6 +5,8 @@ order: 3
 draft: false
 ---
 
+![Early photography](./_images/space-landscape-1.jpg)
+
 For as long as I can remember, I have been fascinated with photography, though my early recollections of it had more to do with clicking a button on a box and watching a piece of "plasticky" paper come out. The reward came after a minute of flapping the paper from side to side and then hesitating long enough to see a ghostly image gradually gaining in opacity and strength, soon turning into a fully-realized picture of some inartistic, yet heart-felt object of my affection – or more likely just a picture of my icky little sister.
 
 My Polaroid camera soon gave way to dreams of my first "real" camera. These were dreams that began when I first saw "it" in some of my uncle's mid-70s "Popular Photography" magazines. In fact, my first association with "sexy," despite my pre-pubescence, would have been that awesome Nikon F2 that graced those pages. Of course, back then, that camera cost more than a couple of my parents' monthly paychecks - so I was smart enough not to ask for one. I did manage to score a 110-format "brick" with disposable flash cubes though.
@@ -35,17 +37,27 @@ The last decade has certainly demonstrated that our concept of "space" has drast
 
 If we looked at the image data as the percentage of a range of brightness values, most people would expect to see tons of "black." Thus, a histogram of such images would be heavily concentrated to the left side of the graph, meaning that an overwhelming majority of the pixels in the image are almost an indistinguishable shades of boring darkness, as shown below...
 
+![A typical early astrophoto, mostly dark space with little signal](./_images/space-landscape-2.jpg)
+
 This is in direct contrast to that of a terrestrial landscape image, as it would appear to have a much more equal distribution of pixel values across the entire graph. If exposed correctly, the data will reveal the full dynamic range of the camera, where there is aesthetic value and meaning within all brightness "zones." This comes naturally with lunar shots when "zoomed" in to show the lunar surface exclusively, but not so much for deep-space, astronomical "targets," despite the fact that today's technology can actually achieve those levels of data acquisition on even deep-space objects.
 
 So, by intuition, I began to lift the black point in my images, seeking for other niceties that lurked just barely undetected in the shadows. I sought to master Curves in Photoshop and other methods of logarithmic "stretches" of my data, such as with Digital Development (DDP). I started choosing targets that yielded full chip coverage. I started to compose and crop my data logically, to maximize the amount of appealing objects in my images. After a while, most of my images began to yield an entire array of pixels containing meaningful photons of light, much like an Ansel Adams photograph or a typical Grand Canyon landscape. And the histograms below bear this out:
 
+![Histogram comparison, before](./_images/space-landscape-3.jpg)
+![Histogram comparison, after](./_images/space-landscape-4.jpg)
+
 Ultimately, a worthy goal is to acquire image data and process your images in such a way to render maximum details in the darker, but still useful portions of an image. This is based on the ideal notion that all regions of a photograph should portray something of interest. It is this philosophy that is foundational to everything else – at least I believe this to be true if you desire to impress anybody with your images other than yourself - or to give a modicum of integrity to the grandeur of the amazing creation you hope to capture. There are photons to be collected in all parts of space and they deserve to be seen.
+
+![Example image illustrating the landscape-in-space philosophy](./_images/space-landscape-5.jpg)
+![Example image illustrating the landscape-in-space philosophy](./_images/space-landscape-6.jpg)
 
 Of course, it is much easier to have a CCD chip covered in meaningful pixels when shooting large, extended nebulae and Milky Way vistas. But even when shooting smaller, isolated targets such as galaxies and star clusters, I believe it to be worthwhile to explore ways to infuse the same "landscape" philosophy into even those images. For example, as mentioned earlier, you could use your cropping tool to rid yourself of the disinteresting, often dark portions of an image. Or, focus entirely on a single area of interest.
 
 Better yet, why not just have an image FULL of meaningful pixels so that I can do something with ANY of it?
 
 What do you NOT see in these JRB (me) images of "space"? If you said "space" or "void" or "blackness," then you have the right idea. We need to first realize that there's a lot of light up there. "Space" isn't as dark as we always thought it was!
+
+![Example image illustrating the landscape-in-space philosophy](./_images/space-landscape-7.jpg)
 
 How can I make my all of my astrophotos more interesting, appealing to a broader audience of astronomers and non-astronomers alike? What practices can we develop in our techniques that can optimize pixel values to yield greater dynamic range and make for more interesting and impactful images?
 

@@ -9,7 +9,10 @@ Developing a Plan for Our Images
 
 Preface
 
-Once upon a time, I was a noob.  When I began in the hobby, I learned to find objects in the sky by star-hopping my 10" Meade LX50 telescope around the sky.   One of my favorite objects to view through that telescope was M104, the Sombrero Galaxy, shown at right.   
+Once upon a time, I was a noob.  When I began in the hobby, I learned to find objects in the sky by star-hopping my 10" Meade LX50 telescope around the sky.   One of my favorite objects to view through that telescope was M104, the Sombrero Galaxy, shown at right.
+
+![M104, the Sombrero Galaxy](./_images/plan-01-m104.jpg)
+![Space is a Landscape](./_images/plan-02-landscape-slide.jpg)   
 
 It seemed only natural to connect my SLR camera (note the lack of a "D" in that acronym) to the back of the telescope to attempt to image this favorite object.   And I have to tell you, I was never all that successful at it, especially with film. I struggled with that scope, as it was just too long (2500mm) and I was just too green.
 
@@ -115,6 +118,8 @@ Anybody can speed up their exposures by going to a "faster" f-ratio telescope, b
 
 Choose the tool to suit the subject, as much as you can, not vice versa.
 The Snake Nebula, designated as B72 in the Bernard catalog of dark nebulae, is quite familiar to most of us. Like all dark nebulae, they are seen because of the silhouette that is created by their brighter surroundings, in this case the zillions of stars in the Milky Way. Also captured here just to the left and below is B86, the Inkspot Nebula.
+
+![The Snake Nebula (B72) and the Inkspot Nebula (B86)](./_images/plan-03-snake.jpg)
 10.) Milky Way (ANY field size) - Short focal lengths scopes and camera lenses in RGB or H-alpha only - Tracked images for deep, clean fields when targeting narrower fields; piggyback-mode works well, autoguiding not needed; do not assume good focus, don't use the infinity mark on a lens; great for DSLRs using a fast ISO without compromising noise too much.  (DSLR - The Milky Way was made for your camera). 
 
 11.) Planets (10" to 50") - Barlowed, long focal instruments in RGB video; use a IR-cut filter and emission band filters for details; use grayscale video with filters for best resolution; catch object high in sky; find local area of good seeing; temperature-acclimated your gear; have Powermates handy; work quickly on Jupiter due to fast rotation.  (DSLR - Use in video mode.) 
@@ -143,6 +148,8 @@ Also note that DSLRs work really well for a large majority of subjects.   I th
 
 Machholz Meets M45 in this 2005 conjunction. The Magnitude 4 comet was a great target when it passed the brighter Pleiades. This was an LRGB image. I used three 5 minute unbinned images to capture enough of the Comet and M45 before blurring of the comet was evident (I guided on a star). I then took 15:9:15 RGB of 2x2 binned images to color the scene. Of course, the color of the comet was masked in later. In truth, this data deserves a revisit, as newer techniques might bring in more detail with the comet itself.
 
+![Machholz meets M45, a 2005 conjunction](./_images/plan-04-machholz-m45.jpg)
+
 ​So, in looking at the list of subjects, we take notice that larger objects, those that could stand on their own, typically approach 1/2 degree or larger.  As such, longer focal lengths, perhaps in excess of 2000mm, can yield great detail, allowing them to tell their own stories.   But does this mean that those with short refractors cannot shoot these subjects?  Of course not, but you should observe a few tips to make for the best composition:
 Smaller pixel sensors are your friend.   These provide an "image scale" which best captures the resolution that is made possible with your relatively short focal length.  The trade-off is increased noise and less sensitivity, so guard against too much compromise here, but DSLRs and CCDs with pixels in the 5 micron area make a nice match to wide-field, short focal length refractors.  There are some exciting developments today with clean sub-4-micron pixel sensors, which are good matches to short focal length refractors when you desire a little bit more detail in your subjects. 
 Crop your images.   Too many people feel that they must use the entire sensor area in their final images, but the virtue of having such a big sensor in the first place is the flexibility you gain in composition, as you have more real estate to pick and choose the portions of the image that tell the better story.   Don't leave a bunch of black space in your image...it's boring.  Avoid over-cropping, however.   At some point, you should just start saving up for that longer-focal length scope! 
@@ -154,6 +161,8 @@ Take a portion of bigger objects.  In the event that you lack the field of view
 
 Sidebar: Barlow up!
 I love stirring the pot of controversy in this hobby sometimes.  Because of the rules of thumb and simplified approaches, we historically limit ourselves to what can be accomplished.   
+
+![The Eskimo Nebula](./_images/plan-05-eskimo.jpg)
 
 Here is an example of where we've missed the boat. ​
 Take a look at my image of the Eskimo Nebula above.  Such objects, even when imaging at longer focal lengths (in this case with a 2857mm f/9 RCOS RC), the ending result is very small on the chip.  After all, at 48" in apparent size, it looks no bigger than Jupiter through a telescope (hence the term "planetary" nebula). 
@@ -172,7 +181,11 @@ Because here's the thing.  Any visual observer will tell you that to see the fa
 
 For the imager, you can accomplish the same thing.  While you must be careful since you have more pixels just barely above the noise floor, this can be counteracted by imaging at the optimal sub-frame exposure time, a condition known as the "sky-limit".   Or, just get a big aperture for the maximum in flexibility, f-ratio be dammed. 
 Taken with a 20" RC operating at f/17. So, here's the thing. Despite what you believe about f/17, big apertures like 20" throw a ton of light on the chip. Thus, using a Powermate to give more detail when the conditions allow for it is a great way to give yourself extra oomph on those really small planetaries. Credit: Suzie Erickson and Adam Block.
+
+![NGC 2392, the Eskimo Nebula, shot with a Powermate at f/17](./_images/plan-06-n2392.jpg)
 Located just off the plane of our Milky Way is the Corona Australis region, shown here. This is a nice subject for wide-field refractors due to the dust which spreads throughout the 4 degree field of view. But imagine the image without the dust? Targets like that reflection nebula and the globular cluster alone would make this a poor subject for that same scope, the Tak FSQ-106. At some point, unless you are willing to go extremely LONG with many of your images (to catch nebular dust that is there) or you are willing to CROP your images around smaller objects, then you begin to run out of good compositions at focal lengths that provide wide FOVs, especially during months when the Milky Way isn't prevalent in the night sky.
+
+![The Corona Australis region](./_images/plan-07-corona-australus.jpg)
 For the rest of the smaller objects, we try to group or cluster them together in our compositions, hopefully with connecting elements, like dust and nebula that allow the eye to travel naturally from one place to another.    At exceptionally short focal lengths, particularly with camera lenses where you are imaging large swathes of the sky, there isn't much difficulty in getting a good composition if you point somewhere in the Milky Way, which becomes less important anyway since the goal is generally to image EVERYTHING in the sky.   The tricky part is when trying to image objects outside of the Milky Way with short focal length refractors in the neighborhood of 300 to 600mm in focal length.  With today's chips, you will be dealing with 4 to 8 arc degrees of FOV, close enough to give some resolution of individual objects, but wide enough to make finding whole fields that show a nice stellar "landscape" somewhat difficult. 
 
 For example, I absolutely love my 4" Takahashi FSQ-106 apochromatic refractor.  I will probably be buried with it some day.  However, I when you consider the number of good compositions that you can get at 4 degrees (530mm focal length with a full-format CCD sensor), it's very difficult to develop multi-object compositions where totally black space doesn't dominate the scene.  For example, galaxy clusters are typical targets during the spring months here in North America, but most all single galaxies, even big ones like M33, look rather small on the chip.   Realizing this, you swing over and capture something like the Leo Trio of galaxies, where you can get three galaxies nicely arranged, as if they got together for a "selfie."   There's also Markarian's Chain in Virgo and the Deer Lick group in Pegasus and clusters of galaxies down in Fornax (which I cannot image from my home).   
@@ -182,9 +195,9 @@ After a while, you exhaust many of these options, unless you are willing to subs
 Of course, keeping to the "space is a landscape" philosophy, we know that there is inter-galactic flux nebula (IFN) regions all over the sky that can aid in good composition with short refractors IF you can only image long enough.  Even a single star like Polaris can be imaged amidst all the background IFN if you put days and days of time into your image.   But at this point, I think we come to the realization, after evaluating how big of a commitment that is, that it simply isn't reasonable to do unless you are somebody like Rogelio Bernal Andreo (www.deepskycolors.com) or JOhn Davis (www.bucksnortobservatory.com), who seem to live for such tasks.
 
 For the most part, you can shoot any "object" in the sky with any telescope or camera lenses.   For many, especially the beginner, it's thrilling to just catch ANYTHING on the chip.   As I mentioned in the Preface, would not deter such people from that enjoyment.   But if you are in this for the long haul, and if you really want to get good at this stuff, producing artful images that impress not only your family but also your astronomy peers, then perhaps some of these tips regarding object choices and image composition will be useful to you!
-The Rho-Ophiuchus/Antares Region
+![The Rho-Ophiuchus/Antares Region](./_images/plan-08-rho-antares.jpg)
 
-​ADVANCED APPROACHES
+## Advanced Approaches
 
 Taking a look at images on the internet taken by brethren in the hobby, it's easy to be amazed at some of the techniques that amateurs now employ.  Mosaics are plentiful, made possible with acquisition tools like TheSkyX and processing tools like PixInsight.  Multi-scale approaches are possible, where a wide-field image is masked-in with more detailed data from a higher resolution image taken with a longer focal length instrument.   In total, it seems like some of us have astro-imaging "superpowers," and in this section, we look at how we can add them to our super-hero skillset.  
 
@@ -217,8 +230,12 @@ Planning the Mosaic
 ​So here we go.   You have in mind a perfect region for a deep sky mosaic, something you intend to be a focal point art print on the wall of your living room.    You love the results you get from your wide-field refractor on single-frame images and you recognize that the area you've chosen would be prefer to fill up that empty wall above your sofa.  
 
 Let's look at the approach with a typical telescope/camera combination, the short focal length apochromatic refractor with full-frame CCD or DSLR sensor.   Let's look at a typical FOV indicator in TheSkyX Professional, shown here framing M45 with a 530mm Tak FSQ-106 and Nikon D810A (35mm sensor size)  for a 4 arc degree field of view.     
+![A typical FOV indicator in TheSkyX Professional, framing M45](./_images/plan-09-mosaic-screenshot.png)
+
 Interestingly, the Pleiades is part of a much larger complex that you think would be a great composition as a mosaic.  Shown below, let's use the Mosaic Grid tool in TheSkyX to show one possible way to layout your composition:
-There are a ton of goodies in this region, with intergalactic cirrus all over the region and a several other cataloged objects separating the two primary "targets."   Together, if executed well, a 12 frame mosaic would be a killer, museum quality work of art. The Mosaic Grid tool allows the user to duplicate the selected FOV indicator, which is the purple region shown here centered about the on-screen sky chart, counting sizing it to any dimension you want with a custom overlap.   Shown is at 5% overlap, which is likely no enough for your processing software to do its job (10 to 20% would be better), but the less overlap in the panels you have then then more FOV you will achieve in the composite.  
+There are a ton of goodies in this region, with intergalactic cirrus all over the region and a several other cataloged objects separating the two primary "targets."   Together, if executed well, a 12 frame mosaic would be a killer, museum quality work of art. The Mosaic Grid tool allows the user to duplicate the selected FOV indicator, which is the purple region shown here centered about the on-screen sky chart, counting sizing it to any dimension you want with a custom overlap.   Shown is at 5% overlap, which is likely no enough for your processing software to do its job (10 to 20% would be better), but the less overlap in the panels you have then then more FOV you will achieve in the composite.
+
+![The Mosaic Grid tool in TheSkyX, laying out an M45-to-California mosaic](./_images/plan-10-m45-california-mosaic.png)  
 
 
 Sidebar: Lunar Mosaics
@@ -239,9 +256,15 @@ Don't go too far, however.  No need to stack a bunch of DSLR images, which can 
 Again, just because everybody is doing it doesn't make it right.  Question everything; don't make the assumptions about a technique.   Think it through; learn the theory behind something; test it in the laboratory of experience.  
 Single CCD image prior to wavelets processing in Registax. Compare this with a mosaic (of matching image scale) of stacked images from a video cam prior to the same processing steps. Ask yourself if it looks as good as this prior to wavelet processing. If not, then you should probably evaluate your philosophy on this.
 
+![A single CCD image prior to wavelet processing in Registax](./_images/plan-11-moon-no-wavelets.jpg)
+
 
 Same lunar image WITH wavelets processing in Registax. Yields the look of a stacked mosaic in Registax with a single best image in series of lunar images. This should make you question why you are using a small chip video camera for lunar imaging. And if you insist on more native resolution, then use a 2x Powermate and take a 4-image mosaic!
+
+![The same lunar image with wavelet processing in Registax](./_images/plan-12-moon-wavelets.jpg)
 If you click on the image and squint hard enough, you can see the results of masking in a higher resolution image. Not practical with a webpage display, but perhaps you could imagine the improvements in the multi-scale result on the right. There is increase in detail on the Horsehead itself, but mostly notice the blue reflection nebulosity that was barely existent in the smaller scale image which is now detailed in the final image. Here, I used Photoshop CS6 to select, feather, and copy the 0.65"/pixel image as a new layer above the low res shot, manually aligned them, selected both layers together, and then used "Auto-Blend Layers" to match the shading and color automatically. You can further assist the process by matching levels in both image prior to the merge. I trusted Photoshop to do this entirely here and am fine with the result, being that I created this with JPGs merely to demonstrate the technique.
+
+![Multi-scale masking on the Horsehead Nebula](./_images/plan-13-multiscale-horsehead.jpg)
 Acquisition of Mosaic Data
 
 Clicking on the Mosaic plan above, you might notice that each mosaic panel has custom labels, A1 to A12.  This becomes useful when automating the mosaic sequence because the frames can be called upon one at a time by panel label.   TheSkyX now defines each label as an "object."  For example, once the A1 panel is finished, you can simply click and slew the instrument to the next panel by clicking on "Mosaic A2."   Truthfully, you may do the panels in any order.   I would likely work from right to left starting with the Pleiades first.  In this way, if you ever lose ambition on the project, you can choose to terminate it at any point, knowing that you still have M45 on the right side with some interesting cirrus nebulosity leading into it from the left.  
@@ -274,7 +297,9 @@ Working around star sizes is the trickiest aspect of this, but use of this techn
 
 One of the best uses of this technique would be when shooting galaxy clusters.   For example, supposing that you shoot the "Leo Trio" of galaxies with a wide-field refractor, you could easily take individual shots of the three galaxies with a longer focal length instrument.   Once all images are processed, you can match the scales through interpolation and then mask in the galaxy details.   Because the rest of the image is likely dust (if at all), there is no need for high-resolution data in those areas anyway.      
 
-Another multi-scale approach might be doing the inverse of this, taking advantage of the LRGB technique to add color data to a high-quality luminance image you already shot.    Let's say that you shot the M43 data posted below, but failed to get color data of the subject on the same night.  However, if a previous shot already has decent color, then perhaps you can make use of it to color this new luminance data?   The images do not have to be taken with the same telescope at the same image scale.   While it can be difficult to match wildly differing image scales (it takes practice), you might be surprised at both your ability to make it work AND the amazing flexibility you have with the color of our images.  Apply the same technique to those wide-field multi-panel mosaics and you'll save yourself lots of time.  
+Another multi-scale approach might be doing the inverse of this, taking advantage of the LRGB technique to add color data to a high-quality luminance image you already shot.    Let's say that you shot the M43 data posted below, but failed to get color data of the subject on the same night.
+
+![M43 luminance data, two frames](./_images/plan-14-m43-lum.jpg)  However, if a previous shot already has decent color, then perhaps you can make use of it to color this new luminance data?   The images do not have to be taken with the same telescope at the same image scale.   While it can be difficult to match wildly differing image scales (it takes practice), you might be surprised at both your ability to make it work AND the amazing flexibility you have with the color of our images.  Apply the same technique to those wide-field multi-panel mosaics and you'll save yourself lots of time.  
 
 Simply put, there's a tremendous leeway in the quality and type of color data that we can make work for us in our image...the luminance seems to do all the grunt work.  
 
@@ -295,6 +320,9 @@ NGC6888 - Crescent Nebula: A very versatile subject, the Crescent is roughly 20 
 The Leo Trio: When galaxies get down to 10 to 20 arc minutes each, they don't image well unless you go to longer focal lengths to get up close and person with them. But if you get a few of these together, then their juxtaposition within a single wide-field frame is delightful. In the "Leo Trio" of galaxies, M65, M66, and NGC 3628 are featured, each a stand-alone subject at long focal lengths. A few arc degrees separates them, so a good wide-field refractor makes these a terrific wide-field composition. Go longer to capture a stream of dust coming from NGC 3628, also known as the "Hamburger Galaxy." Plan to process the individual galaxies separately, as each one has something different to show off.
 
 North America and the Pelican Nebulas (NGC 7000 and IC 5067/70): This was the goto image for me early on, a shot that allowed me to monitor my progress in the hobby. A perfect wide-field nebular region in the Cygnus Milky Way, this tandem of nebulae fills in a large field of view, larger than 4 arc degrees.  The entire area could lend itself to a nice mosaic.  I delighted at my improvements year-to-year as my images turned from "targeted objects" to a true composition. There's not a dark pixel in the entire region if you shoot this correctly. Long focal length instruments can concentrate on key features in both nebulae.  Longer focal lengths allow you to focus on specific areas of detail, including the "Mexico coast" area of NGC 7000 and the Pelican's neck region of IC5067/70.  The region is H-alpha rich, meaning it can be captured using a variety of techniques, including LRGB, spectral band, mapped color, and even pure grayscale.   It's simply a wonderful subject to shoot.
+![North America and Pelican Nebulas over time](./_images/plan-15-ngc7000-overtime.jpg)
+![M45, a 60-minute stretched exposure](./_images/plan-16-m45-stretched.jpg)
+
 North America and Pelican Over Time - Here is a selection of images that I've taken over many years, starting with film and moving through both DSLRs and the most sophisticated astro CCDs with spectral band filters. The vast range of focal lengths used during my imaging career leads to many different takes on the same subject matter. Don't limit yourself to one perception of a subject. Most of the "recommended subjects" in this list can be taken in a plethora of ways!
 ​IC 1396 and Elephant Trunk: Again, it's hard to miss a good composition in the summer Milky Way, but this region in Cepheus is a versatile target. Focusing alone on VDB 142, the "Elephant Trunk" is a really pretty subject with a variety of RGB and mapped color possibilities with long-focal length instruments. Going, wider, we see that the Van de Bergh object is only a small part of a much larger complex of nebulosity, known as IC1396. It perfectly fills out a 4 degree field of view.
 
@@ -334,6 +362,8 @@ I finally got my M104, which was the fruition of something that I began years 
 
 Because I didn't know how to establish a great plan! 
 
+![Jupiter, 2009](./_images/plan-17-jupiter-m23.jpg)
+
 Probably my best Jupiter image from 2009. When you compare this to somebody's image like the one from Damian Peach from 2016 below, then you begin to understand what having a "realistic plan" truly means. I rarely shoot planets, just because I know I'm not blessed with the seeing conditions to do them as well as I'd like.
 As the astrophotographer gains quality experience, which often happens simultaneously with your addition of high-quality astro-imaging gear, you should see the ability to execute a plan become more and more of a likelihood.   At some point, Murphy has less of a say so in your final results, as you have learned how to formulate plans that are 1) realistic for the equipment you have, 2) workable within the situations in which you are presented, and 3) reachable because you know what is actually possible for your subject.  
 
@@ -344,6 +374,8 @@ Hopefully, I have been able to give you a glimpse at the types of things you CAN
 
 Therefore, planning means nothing without good execution and realistic expectations...and I hope you have learned that some subjects will be better than others in that regard. ​
 
+
+![Jupiter, credit Damian Peach, 2016](./_images/plan-18-2016-rgb.jpg)
 
 Credit Damian Peach at www.damianpeach.com
 Addendum - 4/10/2018
@@ -357,7 +389,9 @@ After a couple of weeks, I received the print in a solid wooden crate; well prot
 
 For me, I have always feared spending big money on "professional prints" only to have them disappoint me with bad color matching and wrong black/white-point levels.   I was not disappointed at all with Artbeat Studios.   And many other online print shops seem to get equally good reviews from fellow astrophotographers.  
 
-Since the first one, I have acquired a couple of more prints from them, as shown in the picture below.   They can be pricey, but the results are more than worth it. 
+Since the first one, I have acquired a couple of more prints from them, as shown in the picture below.
+
+![A collection of HD metal prints](./_images/plan-19-img0440.jpg)   They can be pricey, but the results are more than worth it. 
 
 It also has me reevaluating my thought on mosaics.   Now that I have the confidence in the final product, I can see how a massive wide-mosaic might be worth all the effort.   
 

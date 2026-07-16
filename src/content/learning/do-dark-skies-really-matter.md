@@ -5,6 +5,8 @@ order: 8
 draft: false
 ---
 
+![Hong Kong at night, an example of severe light pollution](./_images/dark-skies-hongkong.jpg)
+
 Hong Kong is bad. Do not live in Hong Kong.
 
 As somebody who gets asked a ton of questions in this hobby, the number one question I get is, "What can I see through my telescope?"
@@ -50,6 +52,8 @@ Allow me to share some anecdotal evidence, something I wrote many years ago afte
 > I then decided to couple my Nikon F2 (film) camera to the Tak to catch a shot of both galaxies in the same field. Since my Nikon has the 6x magnification prism attached to it I knew I could frame the objects easily on the camera's viewfinder. Much to my pleasure, BOTH galaxies were visible through the camera! I easily framed the shot, focused, and took a couple of 10 to 15 minute unguided exposures (I didn't have a way to use my STV with the Tak), hoping that my GM-8 mount was accurately polar aligned. The results of that experiment will be known after I get the E200 slides developed [update: it didn't work]. But I ask you, has anybody here ever seen a Messier galaxy (aside from M31) through the viewfinder of your camera? That's how dark these skies are.
 >
 > — written after the 2002 Texas Star Party near Fort Davis, Texas
+
+![Comparing light-gathering area across a range of mirror sizes](./_images/dark-skies-mirrors.png)
 
 There are a couple of points you should understand based on reading my statement here. First, notice that my evaluation of the quality of my skies used objective, data-driven language. At the point of making this observation, I was into my 6th year as an observer. By this time, I had been in the habit of documenting my observations based on my ability to see particular stars with the "naked eye." I had a good perspective with regard to what "poor," "average," and "great" means because I was using an actual, measurable standard (stellar magnitudes).
 
@@ -131,6 +135,8 @@ Thus, depending upon the sky conditions, you should expect the limiting magnitud
 
 My favorite dark sky site, CSAC near Crowell, Texas, equates to limiting magnitude skies in the 7.0 to 7.5 range. It's only 3.5 hours from my DFW residence. More than likely, truly dark skies are closer than you think.
 
+![A light pollution map showing CSAC near Crowell, Texas](./_images/dark-skies-map.png)
+
 There are several VALUABLE things we can derive from this table...
 
 The darker the skies that you can observe in, the more you can see. In fact, by driving from Mag 2 city skies to Mag 7 country skies you will have a 100-fold increase in the amount of WANTED signal you are collecting. If doubling the aperture size of your scope only yields a 4-fold signal increase, then what do you think has the greater impact...dark skies or more aperture? And you were ready to throw away your scope! For shame!
@@ -168,3 +174,7 @@ The difference between a 2 inch telescope and a 30 inch telescope is about 6 mag
 Therefore, the easiest way to get these lost magnitudes back, without spending extra money, is to find a darker site. Below you will see the Bortle Scale, which can help you evaluate the sky conditions you find yourself in. And if you can't find Mag 7 skies, then a quick drive into the suburbs might be all you need to make your telescope perform MUCH BIGGER.
 
 Don't sell that scope just yet. Give it a try and tell me I'm wrong!
+
+## Bortle Sky Chart
+
+![The Bortle Dark-Sky Scale chart](./_images/dark-skies-bortle-chart.jpg)
