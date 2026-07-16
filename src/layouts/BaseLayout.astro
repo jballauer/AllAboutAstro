@@ -30,8 +30,41 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
       <slot />
     </main>
     <Footer />
+    <div id="ke-lightbox" class="ke-lightbox" hidden>
+      <img id="ke-lightbox-img" alt="" />
+    </div>
   </body>
 </html>
+
+<script>
+  const overlay = document.getElementById('ke-lightbox') as HTMLDivElement;
+  const overlayImg = document.getElementById('ke-lightbox-img') as HTMLImageElement;
+
+  function openLightbox(fullSrc: string, alt: string) {
+    overlayImg.src = fullSrc;
+    overlayImg.alt = alt;
+    overlay.hidden = false;
+  }
+
+  function closeLightbox() {
+    overlay.hidden = true;
+    overlayImg.src = '';
+  }
+
+  document.querySelectorAll('article img').forEach((img) => {
+    img.classList.add('ke-zoomable');
+    img.addEventListener('click', () => {
+      const hiresHost = img.closest<HTMLElement>('[data-hires]');
+      const fullSrc = hiresHost?.dataset.hires || (img as HTMLImageElement).currentSrc || (img as HTMLImageElement).src;
+      openLightbox(fullSrc, (img as HTMLImageElement).alt);
+    });
+  });
+
+  overlay.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
 
 <style is:global>
   :root {
@@ -283,9 +316,31 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin-bottom: 0;
   }
 
-  article :global(h2),
-  article :global(h3) {
-    clear: both;
+  /* K&E click-to-enlarge (Weebly's default image-click behavior). Any
+     image inside an article is zoomable; wrap it in an element with
+     data-hires="/path.jpg" to show a separate higher-resolution file
+     instead of the (deliberately small/optimized) inline source. */
+  article :global(img.ke-zoomable) {
+    cursor: zoom-in;
+  }
+  .ke-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: zoom-out;
+    padding: 2rem;
+  }
+  .ke-lightbox[hidden] {
+    display: none;
+  }
+  .ke-lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
   }
 
   @media (max-width: 700px) {

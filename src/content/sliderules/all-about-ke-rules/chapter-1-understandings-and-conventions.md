@@ -53,13 +53,11 @@ Production rates were fairly linear, with around 66,000 units made prior to Worl
 
 There is also an extra wild-card where serial numbering is concerned. K&E used specific serial numbers for certain models as separate from the usual SN# chain, which was reserved for mostly their wood-constructed rules. As of 1947, any of the plastic rules are not included within the serial number line-up as they had their own series for numbering. There has been a recent attempt to rationalize K&E serial numbers to dates of manufacture among the plastic K&E rules by Mike Syphers, Eamonn Gormley, and Kurt Dietrich at Mike's Substack website here. It's an encouraging, yet still early look at serial number classification and considerations with most of K&E's plastic slide rules. Finally, as stated, slide rules made prior to 1922 did not have serial numbers at all. Thus, it's typically the post-1922 wooden rules that are more easily dated (not including the Beginner's 4058 rules that never had serial numbers).
 
-<div class="ke-clear"></div>
+<div class="ke-figure ke-figure-right ke-figure-third">
 
 ![K&E serial number and production dates chart, courtesy of Clark McCoy](./_images/ch1-02-serial-numbers-chart.jpg)
 
-<div class="ke-figure ke-figure-right">
-
-![The ISRM K&E Model Map](./_images/ch1-03-model-map.jpg)
+<p class="ke-figure-caption">K&E serial number and production dates chart, courtesy of Clark McCoy.</p>
 
 </div>
 
@@ -68,6 +66,14 @@ In dating my own slide rules, I typically use the chart above to give me an idea
 ## Slide Rule Construction
 
 Let's now establish some of the construction jargon that we will use. Slide rule bodies had very similar, common elements, those being two fixed, grooved rails (or stators) and a tongued slide, free to glide between the rails. The way the rails are fixed together determines the platform for the slide rule, either single-sided or double-sided.
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
+![A K&E single-sided rule showing formula and conversion charts on its back](./_images/ch1-03-single-sided-backs.jpg)
+
+<p class="ke-figure-caption">This shows a variety of K&E single-sided rules and the way conversion and formula charts can be laid out on the back of the rule, usually borrowed from the US Bureau of Standards, Circular 47 (1914). Such charts were typically pasted onto the back of their nicer wooden rules and screen printed to the back of their budget and plastic rules.</p>
+
+</div>
 
 Single-sided rules will have their rails affixed to a backing plate. The back side will typically have formula charts and conversion tables. For most wooden rules, this information was printed to a paper label, affixed to the rule with adhesive, and further protected with a lacquer finish. Less expensive wooden and plastic models would have screen printed (painted) the information to the rule's back. The data on these are generally consistent for a model over time, though small changes in some of the text from year to year can help to date the rule. The slide is free to glide between the rails. The slide is removable, typically with additional scales on the back of the slide. Often, there will be windows on the edges of the rule's backside to input values for those scales, reading the outputs off of the front side. This will be the case for the Mannheim types of rules made from wood. Other rules might allow the slide to be flipped over and used entirely on the front side. This will be the case for Mannheim rules made of plastic, especially the shorter pocket models. The void between rails is called the slide well. The slide well itself can have maker's marks and patent information, as well as a centimeter extension scale to extend the length of the slide rule for linear metric measurements. Other rules can integrate scales onto the slide well itself.
 
@@ -85,19 +91,6 @@ Once mahogany rules with celluloid laminations began to dominate the K&E product
 
 Regardless of construction, K&E made it a point of pride to produce high quality rules, and for the most part during their history they absolutely succeeded. Their slide rules even came with a life-time warranty, which is unheard of today (likely for good reason as we will discuss later). But as a collector, so many years after the fact and when judged over the course of time, there can be a variety of issues that make your sample less than mint. For more, please see "Sidebar: The Problems with K&E Rules" earlier in this chapter.
 
-<div class="ke-figure-row">
-<div class="ke-figure">
-
-![The K&E slide rule production timeline](./_images/ch1-04-timeline.jpg)
-
-</div>
-<div class="ke-figure">
-
-![A K&E 4082 Radio Special slide rule](./_images/ch1-05-4082-radio-special.jpg)
-
-</div>
-</div>
-
 ## Slide Rule Families vs. Slide Rule Series
 
 Understanding slide rule construction, which will be further discussed when talking about the individual slide rules, we now want to consider how K&E would organize their rules throughout their long history and the way they would market to consumers. What we will see is somewhat of an evolution in this regard. For the most part, from the inception of the company, slide rules were categorized according to their construction, whereby single-sided rules and double-sided rules served as the major differentiation, and within those extremely broad categories, they would be categorized according to purpose (a model line or a scale set). These are known as slide rule "families." This is very predictable in the first 50 years of K&E product catalogs. But around the 1930s, we begin to see certain models of rules sold in "series," a collection of rules with similar build and technology, yet with a diverse range of uses.
@@ -106,11 +99,27 @@ The way K&E thought about "pocket rules" is a good example of this. During the f
 
 Around 1930, with the introduction of plastics beyond celluloid/wood lamination, we see that K&E could (and did) change production techniques to produce their pocket rules, whereas any cost-savings could be passed onto the consumer. And because of this, product models that traditionally were NOT manufactured with a "pocket" version, could now be made at low production cost for a demanding consumer. As such, K&E would birth the "Ever-There" rules, a series of pocket models intended to supply users of their traditional model lines a more portable option of their favorite slide rules. Similarly, K&E produced several other "series" of rules once the technology became available to them, and this does not make it easy to sort individual rules into the traditional "family" of K&E slide rules in which they belong. Rules in a series are often the completion of an existing model line, or at least their spiritual successor. And this obfuscates how we could view the entire ecosystem of K&E rules.
 
+<div class="ke-figure" data-hires="/images/ke-rules/ch1-04-timeline-full.jpg">
+
+![Michael Frey's K&E Model Map, a timeline of K&E slide rule production from 1881 to 1975](./_images/ch1-04-timeline.jpg)
+
+<p class="ke-figure-caption">Michael Frey's K&E Model Map, charting slide rule families and models from 1881 to 1975. Courtesy of the International Slide Rule Museum and Clark McCoy. Click to enlarge.</p>
+
+</div>
+
 ## Article Conventions
 
 As such, attempts to organize K&E rules from today's collector's perspective, or to write a comprehensive article about K&E slide rules, is, therefore, complicated. But previous efforts are substantial and very much appreciated. For example, Michael Frey of the International Slide Rule Museum (ISRM) did a wonderful job of mapping K&E slide rules over history in his K&E Model Map (see image above). Here, we see used the three broad categories of Mannheim, Duplex, and Specialty. It's logical and, for the most part, mirrors the way K&E would have organed the rules themselves. It does take some interpretation however, which we will do shortly. But for me, a good discussion about K&E slide rules would not be possible just by moving straight down the K&E Model Map, even though I will stick mostly to that organizational structure until I feel it no longer suits me.
 
 In my writing, it should be noted that my thoughts about K&E and their rules comes primarily from firsthand experience, from my own use of the rules, gleaning of the available product catalogs, price lists, and supplementary product brochures, mostly as made available by Clark McCoy at his important resource website here. This, when coupled with a study of my own collection of K&E items, including slide rules, product manuals, and catalogs, yields a tremendous amount of understanding, especially in terms of product time-lines, product "families," and the evolution of the slide rules within individual model lines and series. This provides the initial framework of my writing, whereas I might conjecture about items within the broader context of what I've already gleaned. At that point, especially where many of the more rare models are concerned, extra research is conducted to fill in gaps of understanding or specifics about a product. This research begins first at the aforementioned ISRM, as well as the rich resource of materials made available by the Oughtred Society, in which I am a member. There are also many websites from fellow collectors available on the internet from which extra information can be gained. And finally, where applicable and available, any books, journals, or other published works are consulted. Most of these will appear as works cited within the body of this writing, though an Appendix (see the end of the article) eventually will list all support materials used.
+
+<div class="ke-figure ke-figure-left ke-figure-third">
+
+![A K&E Model 4082-3 Radio Special slide rule](./_images/ch1-05-4082-radio-special.jpg)
+
+<p class="ke-figure-caption">A slide rule in my collection, the Model 4082-3 "Radio Special," is a Specialty Rule made by K&E. But it shouldn't be dismissed as "miscellaneous" in our thoughts. Rules like this had a long history in the K&E product line. I will be equally excited to talk about the long history of Merchant's, Stadia, and Radio/Electrical rules later in the article, even if this author wouldn't necessarily see use in them compared to a general arithmetic slide rule.</p>
+
+</div>
 
 My approach in this article will be to itemize rules according to construction, followed by purpose, in the traditional sense. As such, major sections of the writing will be divided by "family" of rules. But where a "series" of rules could belong to multiple families, I will discuss the "collection" itself to gain a better understanding of that collection as a series. And then, if those rules are also the evolution of a traditional model line, I will discuss those also within that family context. For example, while the Model 4097C of the Ever-There is important to that "series" of rules, it functionally works as the fulfillment of a pocket rule for the Merchant's "family" of slide rules, and as such, will be highlighted in those conversations as well. In my mind, this is the best way to focus on the evolution or continuity of a product line, and perhaps give some insight into what K&E was thinking in this regard. Doing so in any other way would be too granular in terms of their slide rules, which weren't isolated from other rules, but rather part of an eco-system of K&E products. As we will see, this approach to describing their slide rules works well, even if we run the risk to talking about it in multiple places in this article. I would recommend getting in-depth looks at a specific rule from many of the wonderful resources on the Internet, especially the ISRM, the Slide Rule Universe, or the Oughtred Society. While you will get some individual product depth here, I want to make some sense of what K&E was thinking with the production of their rules, and not just make it about the rules themselves.
 
