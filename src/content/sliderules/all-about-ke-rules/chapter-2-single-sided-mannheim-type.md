@@ -181,6 +181,8 @@ Two more rules in the series arrived in 1897, including a glass cursor version o
 
 A 1744 duplex 10" rule (at a retail cost of $6.50) was also produced in this series (see The Duplex Family in a later chapter). This, known as the "Cox Patent Rule," was an important slide rule to the history of K&E, so it will be handled in the later context.
 
+<div class="ke-clear"></div>
+
 <div class="ke-sidebar" data-side="right">
 
 ## Sidebar: Mahogany vs. Boxwood
@@ -366,6 +368,8 @@ As such, they were likely imported rules up until the 1913 Product Catalog when 
 
 This model was introduced as the "Student's Slide Rule" from its inception, with that label also getting placed above the formula table on the back of the rule in 1923, this also coinciding with a change in formula charts to the familiar "US Bureau of Standards Circular No. 47" version.
 
+<div class="ke-clear"></div>
+
 <div class="ke-sidebar">
 
 ## Collector's Outlook: Single-sided K&E rules
@@ -498,6 +502,8 @@ Introduced in 1909 and pushed out in a variety of scale lengths a year later, th
 
 This family of Polyphase Mannheim rules was perhaps the least changed over K&E's production history, often varying from year to year with minor evolutionary changes, but never shifting model names beyond the addition of an "N" designation in 1925 to the 4053 model name. The Polyphase scale set itself would find itself on most of the more basic of K&E rules, eventually superseding the basic Mannheim scale set. It would also be translated for use on various duplex rules throughout K&E slide rule history. Members of this family include the following:
 
+<div class="ke-clear"></div>
+
 <div class="ke-sidebar" data-side="right">
 
 ## Sidebar: What's in a Name?
@@ -607,6 +613,8 @@ Finally, it is important to talk about the Ever-There series in terms of the com
 The chief competition for K&E state-side came from the Frederick Post Company, who began to compete for market-share with their sale of 4" and 5" Bamboo pocket rules, imported from the Sun-Hemmi company in Japan. Post would attack strongly in that market, producing no fewer than SEVEN pocket models by 1937. And, not surprisingly, Post would market these rules as both "Mannheim" and "Multiphase" rules, the latter a term Dietzgen gave to their rules.
 
 As a slide rule user, I much prefer using the Post/Hemmi bamboo pocket rules, something I freely admit. Though this speaks more to the longer-lasting nature of a bamboo constructed rule as compared to an early plastic rule some 80 years later. (I just love my bamboo Hemmi-built rules!)
+
+<div class="ke-clear"></div>
 
 <div class="ke-sidebar">
 
