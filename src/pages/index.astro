@@ -78,10 +78,12 @@ const gear = {
 
 <BaseLayout title="Home">
   <section class="hero">
-    <Image src={heroImage} alt="All About Astro" width={460} />
-    <div>
-      <h1>Astrophotography by Jay Ballauer</h1>
-      <p class="tagline">Images - Tutorials - Articles - Equipment</p>
+    <div class="hero-box">
+      <Image src={heroImage} alt="All About Astro" width={460} class="hero-image" />
+      <div>
+        <h1>Astrophotography by Jay Ballauer</h1>
+        <p class="tagline">Images - Tutorials - Articles - Equipment</p>
+      </div>
     </div>
   </section>
 
@@ -200,14 +202,20 @@ const gear = {
 
 <style>
   .hero {
+    margin-bottom: 2.5rem;
+  }
+  .hero-box {
     display: flex;
     gap: 2rem;
     align-items: center;
     flex-wrap: nowrap;
-    margin-bottom: 2rem;
+    background: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 4px;
   }
-  .hero :global(img) {
+  .hero-box :global(.hero-image) {
     flex: 0 0 auto;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.8);
   }
   .hero h1 {
     font-family: var(--font-heading);
@@ -218,7 +226,7 @@ const gear = {
   }
 
   @media (max-width: 700px) {
-    .hero {
+    .hero-box {
       flex-wrap: wrap;
     }
   }
@@ -463,6 +471,7 @@ const gear = {
     const stage = highlights.querySelector('.highlights-stage');
     const slides = Array.from(stage.querySelectorAll('.hl-slide'));
     const thumbs = Array.from(highlights.querySelectorAll('.hl-thumb'));
+    const thumbsEl = highlights.querySelector('.hl-thumbs') as HTMLElement;
     const pauseBtn = highlights.querySelector('.hl-pause');
     const prevBtn = highlights.querySelector('.hl-prev');
     const nextBtn = highlights.querySelector('.hl-next');
@@ -470,13 +479,25 @@ const gear = {
     let playing = true;
     let timer: ReturnType<typeof setInterval> | undefined;
 
+    function scrollThumbIntoView(thumb: HTMLElement) {
+      const thumbLeft = thumb.offsetLeft;
+      const thumbRight = thumbLeft + thumb.offsetWidth;
+      const viewLeft = thumbsEl.scrollLeft;
+      const viewRight = viewLeft + thumbsEl.clientWidth;
+      if (thumbLeft < viewLeft) {
+        thumbsEl.scrollLeft = thumbLeft;
+      } else if (thumbRight > viewRight) {
+        thumbsEl.scrollLeft = thumbRight - thumbsEl.clientWidth;
+      }
+    }
+
     function show(index: number) {
       slides[current].setAttribute('data-active', 'false');
       thumbs[current].setAttribute('data-active', 'false');
       current = (index + slides.length) % slides.length;
       slides[current].setAttribute('data-active', 'true');
       thumbs[current].setAttribute('data-active', 'true');
-      thumbs[current].scrollIntoView({ inline: 'nearest', block: 'nearest' });
+      scrollThumbIntoView(thumbs[current] as HTMLElement);
     }
 
     function start() {
@@ -512,7 +533,6 @@ const gear = {
       });
     });
 
-    const thumbsEl = highlights.querySelector('.hl-thumbs');
     thumbsEl.addEventListener('wheel', (event: WheelEvent) => {
       if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
         event.preventDefault();
