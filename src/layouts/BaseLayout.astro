@@ -1,6 +1,7 @@
 ---
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import UnderConstructionStamp from '../components/UnderConstructionStamp.astro';
 
 interface Props {
   title: string;
@@ -25,6 +26,7 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   <body>
     <Nav />
     <main>
+      <UnderConstructionStamp />
       <slot />
     </main>
     <Footer />
@@ -74,6 +76,7 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     line-height: 1.6;
   }
   main {
+    position: relative;
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 2rem 1.5rem;
