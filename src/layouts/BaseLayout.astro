@@ -193,6 +193,12 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin-right: 0;
     margin-left: 1.75rem;
   }
+  /* A wider variant (roughly two-thirds of the article) for sidebars with a
+     lot of their own content — cuts their rendered height by wrapping less,
+     while still leaving a real column of body text to run alongside it. */
+  .ke-sidebar[data-width='wide'] {
+    width: 58%;
+  }
   @media (max-width: 700px) {
     .ke-sidebar {
       float: none;

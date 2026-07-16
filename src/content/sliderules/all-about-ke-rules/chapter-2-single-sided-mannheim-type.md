@@ -15,41 +15,7 @@ So, what follows will be those historical K&E slide rules that are foundationall
 
 ## The Mannheim Family
 
-General-purpose rules obviously range in capabilities and were classified into several slide rule families. K&E's longest running family of rules, the basic Mannheim family, utilized the front side only with A, B, C, and D scales, and with formulas filling the back. S, L, and T were placed on the back of the slide and could be utilized with a small window indicator on the back of the rule. Pre-1900 models in this family were named "Engineers Slide Rules" within catalogs (shown below). But at the turn of the century, it's clear that K&E shifted the marketing of these rules toward the "everyman," showing that anybody could benefit from doing the basic arithmetic and trig operations made possible with the Mannheim rules. In 1901, K&E revamped their entire product line-up and marketing campaigns, pushing toward broader markets, including the in-house production of slide rules. They managed to hit every price point with their catalog of new slide rules, ranging from $1 for their budget "Beginner's rules," to as much as $12.50 for their new 20" Mannheim model. In 2022 money, that's $35 for the basic rules and as much as $420 for their flagship Mannheim model.
-
-Note that early on, K&E rolled out a revamped series of the Duplex and Specialty rules as well, which we will talk about in later sections.
-
-Earlier models in the Mannheim family of rules pose extraordinary degree of difficulty to describe. Mostly, we can thank the lack of surviving samples of these rules for this, as well as the absence of good descriptions or any firsthand, anecdotal, historical reports. But there will be a recurring theme until we get to the "flagship" Mannheim model in this family, the Model 4041 Series: up until the turn of the century, K&E seemed content to provide slide rules to customers using whatever was readily available to them, including from multiple suppliers, without too much rigid adherence to what the catalog stated was available.
-
-> "Early models in the Mannheim family of rules pose extraordinary degree of difficulty to describe...K&E seemed content to provide slide rules to customers using whatever was readily available to them...without too much rigid adherence to what the catalog stated was available."
-
-As we will see, the development of a standard celluloid-covered mahogany Mannheim side rule with the ever-so-familiar "K&E look" was most definitely a process!
-
-Ordered historically, the major slide rule models in the Mannheim family include:
-
-### The Model 479 Series
-
-Let's start with a description of these first slide rules offered by K&E before we get into the real issues of the rules' manufacture.
-
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![Catalog illustration of the K&E Model 479 Engineers Slide Rule](./_images/ch2-01-model479-catalog-ad.jpg)
-
-<p class="ke-figure-caption">The catalog illustration for the Model 479, K&E's first slide rule, produced 1881 to 1886.</p>
-
-</div>
-
-We see the catalog illustration for the Model 479, K&E's first slide rule produced from 1881 to 1886 here (above).
-
-The original, cursor-less 479 model, offered in 1881, was 10" long and 7/8" wide, made of boxwood and a real ivory slide. Known as the "Engineer's Slide Rule," this 479 was later classed as a "Gunter" version of the Mannheim, which featured only the A, B, C, and D scales and no indicator cursor (it was used with calipers). This now rare - seemingly mythical - rule was introduced at a cost of $3.50, which I am certain was an absolute fortune back then.
-
-In 1883, the 479 Gunter model became known as the 479-1, ditching the ivory slide. K&E also added two others to the line-up, the 479-2 and 479-5 rules. It's a curiosity, but the dash did not represent the length of the rule (a convention first appearing in 1911). Instead, all K&E slide rules were a Model 479, with the dash indicating a different product offered. The 479-2 and 479-5 were 10" and 8" models respectively that included trig functions on the back of the slide and a brass bracket indicator, also known informally today as a "chisel cursor." These were true Mannheim rules and grandparents of the future 4041 models that would be produced in-house by K&E after the turn of the century.
-
-Assuming their first Model 479 was sold in 1881, in keeping with the first product catalog, then there would be 20 years of slide rules sold by K&E that were either outsourced from a manufacturer and branded by K&E or re-sold by K&E with their own catalog designation. The distinction is important. At this point in history, K&E production capacity was on drafting tools and surveying equipment, filling out their catalog with other items while acting as a distributor. For these 20 years, most would agree that K&E functioned as a re-seller where slide rules were concerned, first gaining the notion of designing and manufacturing their own slide rules in the 1890s, but not gaining capacity to do so until the end of the century. While we will see throughout this writing that K&E might have begun in-house production of some models even as early as the Cox Duplex rule in 1894 or 1895, it wouldn't be until 1901 when full production capacity of most all slide rules was reached.
-
-It seems to be the general consensus that two companies were mostly responsible for providing slide rules to K&E during this time, French maker Tavernier-Gravet, during the Model 479 years, followed by German maker Dennert & Pape for most of the Model 17XX years. Working under the assumption that the shift to the newer models in 1887 also signified their shift in manufacturer, we should realize that their is evidence is to the contrary (please see Sidebar: Solving the Early Maker Mystery at left).
-
-<div class="ke-sidebar">
+<div class="ke-sidebar" data-width="wide">
 
 ## Sidebar: Solving the Early Maker Mystery
 
@@ -141,6 +107,40 @@ In conclusion, a picture of what was going on in the these early days at Keuffel
 
 </div>
 
+General-purpose rules obviously range in capabilities and were classified into several slide rule families. K&E's longest running family of rules, the basic Mannheim family, utilized the front side only with A, B, C, and D scales, and with formulas filling the back. S, L, and T were placed on the back of the slide and could be utilized with a small window indicator on the back of the rule. Pre-1900 models in this family were named "Engineers Slide Rules" within catalogs (shown below). But at the turn of the century, it's clear that K&E shifted the marketing of these rules toward the "everyman," showing that anybody could benefit from doing the basic arithmetic and trig operations made possible with the Mannheim rules. In 1901, K&E revamped their entire product line-up and marketing campaigns, pushing toward broader markets, including the in-house production of slide rules. They managed to hit every price point with their catalog of new slide rules, ranging from $1 for their budget "Beginner's rules," to as much as $12.50 for their new 20" Mannheim model. In 2022 money, that's $35 for the basic rules and as much as $420 for their flagship Mannheim model.
+
+Note that early on, K&E rolled out a revamped series of the Duplex and Specialty rules as well, which we will talk about in later sections.
+
+Earlier models in the Mannheim family of rules pose extraordinary degree of difficulty to describe. Mostly, we can thank the lack of surviving samples of these rules for this, as well as the absence of good descriptions or any firsthand, anecdotal, historical reports. But there will be a recurring theme until we get to the "flagship" Mannheim model in this family, the Model 4041 Series: up until the turn of the century, K&E seemed content to provide slide rules to customers using whatever was readily available to them, including from multiple suppliers, without too much rigid adherence to what the catalog stated was available.
+
+> "Early models in the Mannheim family of rules pose extraordinary degree of difficulty to describe...K&E seemed content to provide slide rules to customers using whatever was readily available to them...without too much rigid adherence to what the catalog stated was available."
+
+As we will see, the development of a standard celluloid-covered mahogany Mannheim side rule with the ever-so-familiar "K&E look" was most definitely a process!
+
+Ordered historically, the major slide rule models in the Mannheim family include:
+
+### The Model 479 Series
+
+Let's start with a description of these first slide rules offered by K&E before we get into the real issues of the rules' manufacture.
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
+![Catalog illustration of the K&E Model 479 Engineers Slide Rule](./_images/ch2-01-model479-catalog-ad.jpg)
+
+<p class="ke-figure-caption">The catalog illustration for the Model 479, K&E's first slide rule, produced 1881 to 1886.</p>
+
+</div>
+
+We see the catalog illustration for the Model 479, K&E's first slide rule produced from 1881 to 1886 here (above).
+
+The original, cursor-less 479 model, offered in 1881, was 10" long and 7/8" wide, made of boxwood and a real ivory slide. Known as the "Engineer's Slide Rule," this 479 was later classed as a "Gunter" version of the Mannheim, which featured only the A, B, C, and D scales and no indicator cursor (it was used with calipers). This now rare - seemingly mythical - rule was introduced at a cost of $3.50, which I am certain was an absolute fortune back then.
+
+In 1883, the 479 Gunter model became known as the 479-1, ditching the ivory slide. K&E also added two others to the line-up, the 479-2 and 479-5 rules. It's a curiosity, but the dash did not represent the length of the rule (a convention first appearing in 1911). Instead, all K&E slide rules were a Model 479, with the dash indicating a different product offered. The 479-2 and 479-5 were 10" and 8" models respectively that included trig functions on the back of the slide and a brass bracket indicator, also known informally today as a "chisel cursor." These were true Mannheim rules and grandparents of the future 4041 models that would be produced in-house by K&E after the turn of the century.
+
+Assuming their first Model 479 was sold in 1881, in keeping with the first product catalog, then there would be 20 years of slide rules sold by K&E that were either outsourced from a manufacturer and branded by K&E or re-sold by K&E with their own catalog designation. The distinction is important. At this point in history, K&E production capacity was on drafting tools and surveying equipment, filling out their catalog with other items while acting as a distributor. For these 20 years, most would agree that K&E functioned as a re-seller where slide rules were concerned, first gaining the notion of designing and manufacturing their own slide rules in the 1890s, but not gaining capacity to do so until the end of the century. While we will see throughout this writing that K&E might have begun in-house production of some models even as early as the Cox Duplex rule in 1894 or 1895, it wouldn't be until 1901 when full production capacity of most all slide rules was reached.
+
+It seems to be the general consensus that two companies were mostly responsible for providing slide rules to K&E during this time, French maker Tavernier-Gravet, during the Model 479 years, followed by German maker Dennert & Pape for most of the Model 17XX years. Working under the assumption that the shift to the newer models in 1887 also signified their shift in manufacturer, we should realize that their is evidence is to the contrary (please see Sidebar: Solving the Early Maker Mystery at left).
+
 If I had to hazard a guess who K&E chose to manufacture these early Model 479 Mannheim rules, then I would suggest Tavernier-Gravet. Comparisons of known samples of T-G rules with model illustrations in the K&E product catalogs should be all we need to be rather definitive about the provenance of these rules. There are enough samples of T-G rules around today, including one in my own collection, pictured below, that gives us a strong indication of what these Model 479 slide rules might have been.
 
 <div class="ke-figure ke-figure-right">
@@ -182,52 +182,6 @@ Two more rules in the series arrived in 1897, including a glass cursor version o
 A 1744 duplex 10" rule (at a retail cost of $6.50) was also produced in this series (see The Duplex Family in a later chapter). This, known as the "Cox Patent Rule," was an important slide rule to the history of K&E, so it will be handled in the later context.
 
 <div class="ke-clear"></div>
-
-<div class="ke-sidebar" data-side="right">
-
-## Sidebar: Mahogany vs. Boxwood
-
-As early as 1900, we see Keuffel & Esser shift the majority of its slide rule construction from boxwood to mahogany wood. This, following on the heels of their major supplier, Dennert & Pape, having done the same. Likewise, American competitor Dietzgen also followed suit.
-
-The exception to this great "mahogany migration" were K&E's Beginner's rules which I believe were some other wood, as I will contend later in our discussion of them. Likewise, the Favorite series would continue to utilize boxwood. Even so, within a short amount of time, every wooden slide rule manufactured by K&E would be made of mahogany.
-
-So, clearly, there is an aspect of mahogany that makes it the preferred wood for slide rules. I believe if we hope to understand K&E's mind on this, a deeper dive into the nature of these woods is required. As a woodworker myself, I think that perhaps I can bring some clarity.
-
-Boxwood is more of a shrub than it is a tree. While it can grow to 20 feet or more, it yields a trunk no more than about 6 feet on average, and is seldom straight. This means you could never really supply longer projects with it as it could never produce conventional "lumber" in lengths any more than a foot or two. Instead, any of the three European species that historically supplied rulers and slide rule makers in the 17th and 18th centuries - England was almost entirely the center of manufacturing during that era - would have been cut into logs like firewood and then milled up longitudinally to form short "blanks."
-
-These boxwood blanks would have been hard, much harder than mahogany, making the milling process a challenge. And while the wood has small pores, the grain of the wood does not always run straight. This causes something referred to as "grain run-out" which affects ones ability to smooth the blanks, as the boards tend to "tear out" if planed (smoothed by knifes) in the wrong direction. Additionally, multi-directional grain tends to lend to more seasonal wood movement along the entirety of the wood's surface, not only at the blank's end grain. This means the blanks will be prone to warping, bowing, or swelling if they take on increased moisture from the air, as well as end-grain "checking" or cracking during the drying/curing process.
-
-Wood with multi-directional grain may also hold tension, meaning that once milled, it will have a natural tendency to bend to another shape. So the procedure when working such wood is to cut pieces over-sized, wait a day or two, and then mill the wood to final dimensions after the board relaxes. Not only does this property require extra time in milling, but it can also make the boards bind against the blade during cutting operations as the wood releases its tension through the cut. This, coupled with its extreme hardness (there is no harder wood in Europe), makes working boxwood more risky than woodworking-friendly lumber, like mahogany.
-
-Another important point directly relevant here is that the properties of boxwood would not make it the best candidate to be laminated with celluloid, even if many rules did just that just prior to the turn of the century...but more on that shortly.
-
-But once well-seasoned (dry) and sealed, then boxwood tends to hold its shape. It also can be brought to a very smooth finish after sanding and polishing. For this reason, today, boxwood is considered a lovely wood when "turning" (with a lathe), for making small pens, chess pieces, small wind instruments, croquet mallets, wooden goblets, and bowls. It is seldom used for objects with flat dimensions since boxwood is not very "workable" beyond its use in turning.
-
-In the 19th century, when K&E first began offering slide rules, they would have taken their lead from Tavernier-Gravet, so it makes sense they would have continued with the European tradition of using boxwood until it became impractical to do so.
-
-On the other hand, mahogany is a very versatile and wonderful wood to work with. It too is a hardwood, though only moderately so. It is soft enough to work with relative ease. Orangish-brown in hue with large pores and a glimmering chatoyance in brighter light, this very straight-grained wood could be milled from very large stock as such trees grew quite large. The wood is known to be dimensionally stable, making it perfect for use in products like musical instruments, especially in guitars and for guitar necks. It's a woodworker's dream, as it can be easily milled flat with very little tear-out of the grain upon plaining. And it retains its shape once cut, with very little internal tension.
-
-The only point of curiosity with regard to slide rules is one of supply, particularly to Europe. True mahogany comes primarily from the tropical Americas, major sources being Honduras, Mexico, Cuba, Jamaica, West Indies, and many regions around the Caribbean, including Florida. There are many mahogany "knock-offs" - related species - that are marketed as such, but only African Mahogany (Khaya) would be close enough to have been possibly used in slide rule manufacture. I have heard it stated that D&P and, therefore, K&E received their mahogany supply from the German slide company, Nestler, though it begs the question of how Nestler was supplied?
-
-It's not beyond reason, if this is the case, that Nestler could have imported their lumber from the Americas, as the wood is plentiful enough to be reasonably priced. Likewise, a single board would have produced an enormous number of slide rule blanks without any waste, something that could not have been stated about boxwood. And once K&E began to manufacture their own mahogany slide rules, then finding a supplier in the United States would have been quite easy...and relatively cheap compared to the imported boxwood.
-
-By the turn of the 20th century, the shift from boxwood to mahogany was industry wide. We can speculate the reasons why. First, it is likely that boxwood just became increasingly more difficult to supply. It was most certainly becoming over-harvested. Combining this with its susceptibility to disease and moth infestation, a known problem to world supply over the past century, it would have made boxwood far too in demand...and therefore expensive. So the shift to the better mahogany supply would have been required.
-
-More importantly, since celluloid-lamination of wood was quickly becoming the desired construction for slide rules, then it would have made sense to use a wood-type that paired well with the plastic. As mentioned earlier, boxwood is not really the best candidate for that. We need look no further than with Dennert & Pape for evidence, whose first boxwood slide rule was introduced in 1872, yet a short 16 years later, D&P had shifted production almost exclusively to mahogany, coinciding almost exactly when their 1886 patent for celluloid coverings was granted.
-
-As such, two questions come to mind. First, why did K&E still offer boxwood with some of their rules, even after 1901 when many rules were mostly produced in-house? And, second, once K&E made their own rules, did they pay a royalty to D&P until 1906, when the original 1886 patent would have expired?
-
-To answer the first question, I believe K&E received their boxwood supply of both slide rules and blanks from Tavernier-Gravet. While the writing was on the wall for boxwood, they certainly could have had a back-stock of inventory needing to be sold. Remember that these slide rules were expensive for the time, and there wouldn't have been many people persuaded to need them yet.
-
-Although I have not heard it mentioned anywhere, K&E would have needed to have arrangements with D&P extending to 1906 even if rules were no longer supplied to them. There is no doubt that K&E would have honored the German patent (DRP 34583) and paid them a royalty for using their patented construction. This would seem to make sense as, next to 1901, 1906 was the next major catalog year, where K&E made a large number of changes to their slide rule lineup, as well as solidifying existing models, including their Mannheim and Duplex Family lineups.
-
-For this reason, D&P would likely be responsible almost entirely for the mahogany-based slide rules approaching the 20th century, with Tavernier-Gravet, certainly paying for that right, to make their own celluloid-laminated, boxwood rules. (I have not been able to confirm if they also produced such rules from mahogany.) So during this era, a picture develops of K&E receiving their supply of boxwood rules from Tavernier-Gravet and their supply of mahogany rules from Dennert & Pape. I could see 1901 as being a target for in-house manufacture for all slide rules, with inventory to burn until 1906, at which point they would no longer be under the contract with D&P and could build most all of their slide rules to a more uniform consistency.
-
-By that point, mahogany would have been the rule of choice for a variety of reasons, most importantly, price.
-
-Today, nothing has changed. Boxwood is very expensive, mostly because by today's standards, lumber mills see no value in putting in the extra work to prepare small blanks of wood for woodturners unless they can extract more value from them in the form of high prices.
-
-</div>
 
 Mahogany was not exclusively used for celluloid-faced rules during this time, as the Model 1748-3 was introduced to this series in 1899. This 10" boxwood Mannheim rule would become the Model 4054 "Favorite" rule in 1901; though there is no model number on the rule. However, the 1748-3 is described as "Favorite" in the 1899 catalog. To save time here, you can read about the 1748-3, it's construction and purpose, below within the section on The Favorites, since it essentially is the same rule.
 
@@ -283,11 +237,57 @@ Also important for collectors is the idea of standardization within the appearan
 
 ### Model 4041 Series
 
+<div class="ke-sidebar" data-side="right">
+
+## Sidebar: Mahogany vs. Boxwood
+
+As early as 1900, we see Keuffel & Esser shift the majority of its slide rule construction from boxwood to mahogany wood. This, following on the heels of their major supplier, Dennert & Pape, having done the same. Likewise, American competitor Dietzgen also followed suit.
+
+The exception to this great "mahogany migration" were K&E's Beginner's rules which I believe were some other wood, as I will contend later in our discussion of them. Likewise, the Favorite series would continue to utilize boxwood. Even so, within a short amount of time, every wooden slide rule manufactured by K&E would be made of mahogany.
+
+So, clearly, there is an aspect of mahogany that makes it the preferred wood for slide rules. I believe if we hope to understand K&E's mind on this, a deeper dive into the nature of these woods is required. As a woodworker myself, I think that perhaps I can bring some clarity.
+
+Boxwood is more of a shrub than it is a tree. While it can grow to 20 feet or more, it yields a trunk no more than about 6 feet on average, and is seldom straight. This means you could never really supply longer projects with it as it could never produce conventional "lumber" in lengths any more than a foot or two. Instead, any of the three European species that historically supplied rulers and slide rule makers in the 17th and 18th centuries - England was almost entirely the center of manufacturing during that era - would have been cut into logs like firewood and then milled up longitudinally to form short "blanks."
+
+These boxwood blanks would have been hard, much harder than mahogany, making the milling process a challenge. And while the wood has small pores, the grain of the wood does not always run straight. This causes something referred to as "grain run-out" which affects ones ability to smooth the blanks, as the boards tend to "tear out" if planed (smoothed by knifes) in the wrong direction. Additionally, multi-directional grain tends to lend to more seasonal wood movement along the entirety of the wood's surface, not only at the blank's end grain. This means the blanks will be prone to warping, bowing, or swelling if they take on increased moisture from the air, as well as end-grain "checking" or cracking during the drying/curing process.
+
+Wood with multi-directional grain may also hold tension, meaning that once milled, it will have a natural tendency to bend to another shape. So the procedure when working such wood is to cut pieces over-sized, wait a day or two, and then mill the wood to final dimensions after the board relaxes. Not only does this property require extra time in milling, but it can also make the boards bind against the blade during cutting operations as the wood releases its tension through the cut. This, coupled with its extreme hardness (there is no harder wood in Europe), makes working boxwood more risky than woodworking-friendly lumber, like mahogany.
+
+Another important point directly relevant here is that the properties of boxwood would not make it the best candidate to be laminated with celluloid, even if many rules did just that just prior to the turn of the century...but more on that shortly.
+
+But once well-seasoned (dry) and sealed, then boxwood tends to hold its shape. It also can be brought to a very smooth finish after sanding and polishing. For this reason, today, boxwood is considered a lovely wood when "turning" (with a lathe), for making small pens, chess pieces, small wind instruments, croquet mallets, wooden goblets, and bowls. It is seldom used for objects with flat dimensions since boxwood is not very "workable" beyond its use in turning.
+
+In the 19th century, when K&E first began offering slide rules, they would have taken their lead from Tavernier-Gravet, so it makes sense they would have continued with the European tradition of using boxwood until it became impractical to do so.
+
+On the other hand, mahogany is a very versatile and wonderful wood to work with. It too is a hardwood, though only moderately so. It is soft enough to work with relative ease. Orangish-brown in hue with large pores and a glimmering chatoyance in brighter light, this very straight-grained wood could be milled from very large stock as such trees grew quite large. The wood is known to be dimensionally stable, making it perfect for use in products like musical instruments, especially in guitars and for guitar necks. It's a woodworker's dream, as it can be easily milled flat with very little tear-out of the grain upon plaining. And it retains its shape once cut, with very little internal tension.
+
+The only point of curiosity with regard to slide rules is one of supply, particularly to Europe. True mahogany comes primarily from the tropical Americas, major sources being Honduras, Mexico, Cuba, Jamaica, West Indies, and many regions around the Caribbean, including Florida. There are many mahogany "knock-offs" - related species - that are marketed as such, but only African Mahogany (Khaya) would be close enough to have been possibly used in slide rule manufacture. I have heard it stated that D&P and, therefore, K&E received their mahogany supply from the German slide company, Nestler, though it begs the question of how Nestler was supplied?
+
+It's not beyond reason, if this is the case, that Nestler could have imported their lumber from the Americas, as the wood is plentiful enough to be reasonably priced. Likewise, a single board would have produced an enormous number of slide rule blanks without any waste, something that could not have been stated about boxwood. And once K&E began to manufacture their own mahogany slide rules, then finding a supplier in the United States would have been quite easy...and relatively cheap compared to the imported boxwood.
+
+By the turn of the 20th century, the shift from boxwood to mahogany was industry wide. We can speculate the reasons why. First, it is likely that boxwood just became increasingly more difficult to supply. It was most certainly becoming over-harvested. Combining this with its susceptibility to disease and moth infestation, a known problem to world supply over the past century, it would have made boxwood far too in demand...and therefore expensive. So the shift to the better mahogany supply would have been required.
+
+More importantly, since celluloid-lamination of wood was quickly becoming the desired construction for slide rules, then it would have made sense to use a wood-type that paired well with the plastic. As mentioned earlier, boxwood is not really the best candidate for that. We need look no further than with Dennert & Pape for evidence, whose first boxwood slide rule was introduced in 1872, yet a short 16 years later, D&P had shifted production almost exclusively to mahogany, coinciding almost exactly when their 1886 patent for celluloid coverings was granted.
+
+As such, two questions come to mind. First, why did K&E still offer boxwood with some of their rules, even after 1901 when many rules were mostly produced in-house? And, second, once K&E made their own rules, did they pay a royalty to D&P until 1906, when the original 1886 patent would have expired?
+
+To answer the first question, I believe K&E received their boxwood supply of both slide rules and blanks from Tavernier-Gravet. While the writing was on the wall for boxwood, they certainly could have had a back-stock of inventory needing to be sold. Remember that these slide rules were expensive for the time, and there wouldn't have been many people persuaded to need them yet.
+
+Although I have not heard it mentioned anywhere, K&E would have needed to have arrangements with D&P extending to 1906 even if rules were no longer supplied to them. There is no doubt that K&E would have honored the German patent (DRP 34583) and paid them a royalty for using their patented construction. This would seem to make sense as, next to 1901, 1906 was the next major catalog year, where K&E made a large number of changes to their slide rule lineup, as well as solidifying existing models, including their Mannheim and Duplex Family lineups.
+
+For this reason, D&P would likely be responsible almost entirely for the mahogany-based slide rules approaching the 20th century, with Tavernier-Gravet, certainly paying for that right, to make their own celluloid-laminated, boxwood rules. (I have not been able to confirm if they also produced such rules from mahogany.) So during this era, a picture develops of K&E receiving their supply of boxwood rules from Tavernier-Gravet and their supply of mahogany rules from Dennert & Pape. I could see 1901 as being a target for in-house manufacture for all slide rules, with inventory to burn until 1906, at which point they would no longer be under the contract with D&P and could build most all of their slide rules to a more uniform consistency.
+
+By that point, mahogany would have been the rule of choice for a variety of reasons, most importantly, price.
+
+Today, nothing has changed. Boxwood is very expensive, mostly because by today's standards, lumber mills see no value in putting in the extra work to prepare small blanks of wood for woodturners unless they can extract more value from them in the form of high prices.
+
+</div>
+
 Once K&E replaced the 1746 and 1748 rules, as well as having moved past their transition period of various and sundried slide rules mentioned above, the Mannheim product lineup solidified and standardized around the Model 4041 series, both in form and function. These rules described below were manufactured in-house by K&E and sold with a sewed leather sheath. Although many of these rules were listed in the 1901 catalog, what we will classify here as the Model 4041 "Series" will be those models listed in the 1906 catalog and moving forward.
 
 The most important aspect of this series that differentiates them from those I mentioned in the previous sections are that 1) all are made of mahogany and 2) all rules of this series are made to be adjustable, based on Keuffel's patent of the "Mannheim Adjustable Slide Rule Frame" in June, 1900.
 
-Regarding the shift to mahogany construction, I explore the reasons surrounding it in the "Sidebar: Mahogany vs. Boxwood" earlier in this chapter. Regarding adjustability, K&E long understood that weather could change the moisture content of the wood, causing seasonal swelling - remember their comment above regarding the tendency of the 20" Model 1748 to warp? So any rule without the patented adjustability, namely those made prior to 1901, would have been hard to use on occasion.
+Regarding the shift to mahogany construction, I explore the reasons surrounding it in the "Sidebar: Mahogany vs. Boxwood" alongside. Regarding adjustability, K&E long understood that weather could change the moisture content of the wood, causing seasonal swelling - remember their comment above regarding the tendency of the 20" Model 1748 to warp? So any rule without the patented adjustability, namely those made prior to 1901, would have been hard to use on occasion.
 
 As such, after 1901, all "flagship" models with the Mannheim frame, including the Model 4053 "Polyphase Mannheim" rules in the next section, would boast "adjustability" as a significant improvement, and they could justifiably charge more for it! Conversely, mid-tier and budget rules would not include the extra feature and could be viewed by the consumer as a cost saver.
 
@@ -540,9 +540,39 @@ And I'll give you one guess what that word means!
 
 ### The Model 4053
 
-<div class="ke-clear"></div>
+The original 1909 model of the 10 inch 4053 was similar in construction to its contemporary, the Model 4041, based on celluloid-covered mahogany wood and engine-divided scales. However this rule replaced the centimeter scale on the rule's edge with three-decades worth of "K" scale and squeezed in the "CI" scale in between the B and C on the slide. The cursor had an indicator on the bottom allowing easy reading of the K scale at the edge, a feature that K&E mentioned made the 4053 a "hybrid" of the Mannheim and Duplex style of rules.
 
-<div class="ke-sidebar">
+Two years after its introduction, the 1911 models came in many lengths using the "dash" system of model labelling, from an 8 inch rule with a 4053-2 designation, the normal 10" rule relabeled as the 4053-3, and a 20" variant known as the 4053-5. These models would take on an "N" prefix in 1922 when K&E removed the K-scale from the front edge of the rule and squeezed it (without regard to aesthetics) onto the bottom stator rail and gave users back their centimeter scale on the front edge. Interestingly, during this transition year in 1922, the printing of the "N" on the rule itself varied from outside of the bracket (as in N&lt;4053-3&gt;) to being above the bracketed model number. By the next model year, the prefix joined the model number inside the brackets.
+
+A finely-divided scale option of the 4053 was also produced (as they did with the Model 4041 Mannheim), which was designated as the Model 4053-3F. This model was "divided as finely as the 20" rule." As such it provided the precision of a larger rule. K&E produced this rule between 1911 and 1943, but is rather rare. Perhaps this is because the upgrade to finely-divided scales came with a $3.50 premium!
+
+In 1954, all 4053 versions to follow would employ semi-plastic construction - the back of the rule was now laminated with celluloid as well, making printing directly on the rule possible. The name of this model would drop the "N" prefix to reflect the major feature change. More plastic would be added over time, evolving to an all-plastic base with typical celluloid-covered mahogany rails and slide in 1962 and following. K&E also produced a variant of the rule for special use by the U.S. government known as the Model D4053-3 beginning in 1954. This rule, stamped "U.S. Government," came with manual, magnifying cursor, and custom leather case to also accommodate the higher-profile cursor. The "D" designed decimal trig scales, which was new to the Model 4053 rule (see Chapter 6 for more on this slide rule).
+
+There would also be discontinued rules in the series, including the 8" N4053-2, discontinued in 1938, and the aforementioned N4053-3F version in 1943. With the 1962 model year, when K&E changed the model numbering convention for all of their slide rules, the 10" 4053 would become the 68-1617 (with the military version called the D68-1617) and the 20" N4053-5 was issued model number 68-1607. Both rules could be upgraded to a chamois-lined leather case, known as the 68-1622 and 68-1612 respectively, but it did not change the model number on the rule, only on the shipping box and in the catalog.
+
+Cost for the original 4053 was $5.00 in 1909, or $0.50 more than the 4041 Mannheim. The K&E product line included both the 4053 and the 4041 for a surprising 35 years until the 4041 was finally dropped in 1943. I would have expected it sooner, since the 4053 largely replaces the capabilities of the 4041 for only a little more money. Then again in 1921, K&E seemed to realize this when they raised the price of the 4053-3 to $7.60, which was a full $1.10 more than the 4041.
+
+Likewise, they raised the price of the 8" model to $8.80, which put the price of the shorter rule above the 10" model. Recall that they did something similar to the 4041 family of rules that same year. This solidifies the notion I've mentioned previously that shorter rules in the single-sided Mannheim format were not inexpensive to make, and for consumers there was no such thing as a discount just because there was less of the slide rule to buy!
+
+The Model 4053, first introduced in 1909, would continue in production in some variety until the end of the slide rule era in 1975. It was easily K&E's longest, continuously running slide rule model.
+
+Model 4098 and 4097C "Ever-There" - These models of the Ever-There series could be slotted in here because they were Polyphase Mannheim pocket rules, but rather, I'll leave their full descriptions for the next section's complete discussion of the series. But for the long duration of the Model 4053, K&E had never produced a 5" pocket version. Never, as remarkable as that seems. But once new modern plastic rules could be built, it made sense to make a pocket rule based on the 4053 Polyphase Mannheim scale set. The Model 4098 was introduced in 1931, followed by the 4097C in 1936. Importantly, these rules provided the functionality of a rule that was always too costly to sell, which would begin a shifting in the way K&E thought about their products philosophically. It just took them a while to learn that sometimes form should follow function.
+
+### Model 4153
+
+K&E worked hard to find new plastic rules to replace the Ever-There series. They were successful. Coming a few years after the end of the Model 4097C, in 1957, a new model arrived to take on the role of the pocket Polyphase Mannheim. The rule had two options: either the Model 4051-3 with normal pocket sheath, or a new Model 4153C model featuring a leather slip-case with a leather-covered metal "clip." In 1958, cost for the 4153-1 would be $5.50, with $6.25 for the "C" model with the clip.
+
+Construction of these rules were very similar to many of the pocket rules K&E was producing at the time. In fact, the platform of this particular rules, with "Ivorite" (ABS plastic) and small clip-on "unbreakable" cursor, served duty in other slide rule families, including a "Merchants" pocket rule, Model 4150-1 (see Specialty Rules later in the article), and the Model 4161-1 pocket rule for the "Modern Polyphase" family of rules (see Modern Polyphase Rules in the next section). All three rules together are identical except for their scale sets.
+
+In 1962, the rules would be redesigned as the 68-1648 and 68-1643, for the non-clipped and clipped case versions respectively. They would hang around until the end of the slide rule era.
+
+### The Model 4054 Polyphase
+
+Earlier I mentioned that the original Model 4054 "Favorite" Mannheim model was discontinued in 1925. When it was reinstated in 1944, its role shifted to a more advanced model, a sister rule of the N4053-3. As such, this new Model 4054 variant would be marketed as a "Polyphase Slide Rule" and no longer associated with the "Favorite" series of slide rules. With improved glass cursor, the new 4054 rejected its basic Mannheim heritage to sport the same 4053 scale set, missing only the inch and centimeter scales on the sides. Equipped with mahogany instead of the original boxwood, this $5.50 model saved users $2.00 over the N4053-3 flagship Mannheim-type (single-sided) rule in 1944. Even so, that's almost double the price of the original 4054 model that was first introduced in 1901. That's inflation for you!
+
+The Polyphase version of the Model 4054 would last until 1953. It would seem that company and consumer interest was shifting toward the all-plastic rules at this price point, particularly the pocket rules, as K&E would discontinue no fewer than SIX of their traditional Mannheim and Polyphase based models between 1950 and 1954. Despite this, the Polyphase version of the Model 4054 is abundant on eBay. K&E most certainly sold a ton of them.
+
+<div class="ke-sidebar" data-width="wide">
 
 ## Sidebar: The 4088, an Ever-There, and the Mystery Rules
 
@@ -596,38 +626,6 @@ However, if there were ever a K&E slide rule that could be considered of questio
 Therefore, the Ever-There series, beginning in 1931 and revamped in 1936, would hang on until the early 1950s, when at that time newer plastic versions of these rules were finally introduced. Those models would be classified simply as "Pocket Slide Rules." But the Ever-There's had served their purpose of supplying all K&E family model lines an affordable, pocket version of their popular slide rules.
 
 </div>
-
-The original 1909 model of the 10 inch 4053 was similar in construction to its contemporary, the Model 4041, based on celluloid-covered mahogany wood and engine-divided scales. However this rule replaced the centimeter scale on the rule's edge with three-decades worth of "K" scale and squeezed in the "CI" scale in between the B and C on the slide. The cursor had an indicator on the bottom allowing easy reading of the K scale at the edge, a feature that K&E mentioned made the 4053 a "hybrid" of the Mannheim and Duplex style of rules.
-
-Two years after its introduction, the 1911 models came in many lengths using the "dash" system of model labelling, from an 8 inch rule with a 4053-2 designation, the normal 10" rule relabeled as the 4053-3, and a 20" variant known as the 4053-5. These models would take on an "N" prefix in 1922 when K&E removed the K-scale from the front edge of the rule and squeezed it (without regard to aesthetics) onto the bottom stator rail and gave users back their centimeter scale on the front edge. Interestingly, during this transition year in 1922, the printing of the "N" on the rule itself varied from outside of the bracket (as in N&lt;4053-3&gt;) to being above the bracketed model number. By the next model year, the prefix joined the model number inside the brackets.
-
-A finely-divided scale option of the 4053 was also produced (as they did with the Model 4041 Mannheim), which was designated as the Model 4053-3F. This model was "divided as finely as the 20" rule." As such it provided the precision of a larger rule. K&E produced this rule between 1911 and 1943, but is rather rare. Perhaps this is because the upgrade to finely-divided scales came with a $3.50 premium!
-
-In 1954, all 4053 versions to follow would employ semi-plastic construction - the back of the rule was now laminated with celluloid as well, making printing directly on the rule possible. The name of this model would drop the "N" prefix to reflect the major feature change. More plastic would be added over time, evolving to an all-plastic base with typical celluloid-covered mahogany rails and slide in 1962 and following. K&E also produced a variant of the rule for special use by the U.S. government known as the Model D4053-3 beginning in 1954. This rule, stamped "U.S. Government," came with manual, magnifying cursor, and custom leather case to also accommodate the higher-profile cursor. The "D" designed decimal trig scales, which was new to the Model 4053 rule (see Chapter 6 for more on this slide rule).
-
-There would also be discontinued rules in the series, including the 8" N4053-2, discontinued in 1938, and the aforementioned N4053-3F version in 1943. With the 1962 model year, when K&E changed the model numbering convention for all of their slide rules, the 10" 4053 would become the 68-1617 (with the military version called the D68-1617) and the 20" N4053-5 was issued model number 68-1607. Both rules could be upgraded to a chamois-lined leather case, known as the 68-1622 and 68-1612 respectively, but it did not change the model number on the rule, only on the shipping box and in the catalog.
-
-Cost for the original 4053 was $5.00 in 1909, or $0.50 more than the 4041 Mannheim. The K&E product line included both the 4053 and the 4041 for a surprising 35 years until the 4041 was finally dropped in 1943. I would have expected it sooner, since the 4053 largely replaces the capabilities of the 4041 for only a little more money. Then again in 1921, K&E seemed to realize this when they raised the price of the 4053-3 to $7.60, which was a full $1.10 more than the 4041.
-
-Likewise, they raised the price of the 8" model to $8.80, which put the price of the shorter rule above the 10" model. Recall that they did something similar to the 4041 family of rules that same year. This solidifies the notion I've mentioned previously that shorter rules in the single-sided Mannheim format were not inexpensive to make, and for consumers there was no such thing as a discount just because there was less of the slide rule to buy!
-
-The Model 4053, first introduced in 1909, would continue in production in some variety until the end of the slide rule era in 1975. It was easily K&E's longest, continuously running slide rule model.
-
-Model 4098 and 4097C "Ever-There" - These models of the Ever-There series could be slotted in here because they were Polyphase Mannheim pocket rules, but rather, I'll leave their full descriptions for the next section's complete discussion of the series. But for the long duration of the Model 4053, K&E had never produced a 5" pocket version. Never, as remarkable as that seems. But once new modern plastic rules could be built, it made sense to make a pocket rule based on the 4053 Polyphase Mannheim scale set. The Model 4098 was introduced in 1931, followed by the 4097C in 1936. Importantly, these rules provided the functionality of a rule that was always too costly to sell, which would begin a shifting in the way K&E thought about their products philosophically. It just took them a while to learn that sometimes form should follow function.
-
-### Model 4153
-
-K&E worked hard to find new plastic rules to replace the Ever-There series. They were successful. Coming a few years after the end of the Model 4097C, in 1957, a new model arrived to take on the role of the pocket Polyphase Mannheim. The rule had two options: either the Model 4051-3 with normal pocket sheath, or a new Model 4153C model featuring a leather slip-case with a leather-covered metal "clip." In 1958, cost for the 4153-1 would be $5.50, with $6.25 for the "C" model with the clip.
-
-Construction of these rules were very similar to many of the pocket rules K&E was producing at the time. In fact, the platform of this particular rules, with "Ivorite" (ABS plastic) and small clip-on "unbreakable" cursor, served duty in other slide rule families, including a "Merchants" pocket rule, Model 4150-1 (see Specialty Rules later in the article), and the Model 4161-1 pocket rule for the "Modern Polyphase" family of rules (see Modern Polyphase Rules in the next section). All three rules together are identical except for their scale sets.
-
-In 1962, the rules would be redesigned as the 68-1648 and 68-1643, for the non-clipped and clipped case versions respectively. They would hang around until the end of the slide rule era.
-
-### The Model 4054 Polyphase
-
-Earlier I mentioned that the original Model 4054 "Favorite" Mannheim model was discontinued in 1925. When it was reinstated in 1944, its role shifted to a more advanced model, a sister rule of the N4053-3. As such, this new Model 4054 variant would be marketed as a "Polyphase Slide Rule" and no longer associated with the "Favorite" series of slide rules. With improved glass cursor, the new 4054 rejected its basic Mannheim heritage to sport the same 4053 scale set, missing only the inch and centimeter scales on the sides. Equipped with mahogany instead of the original boxwood, this $5.50 model saved users $2.00 over the N4053-3 flagship Mannheim-type (single-sided) rule in 1944. Even so, that's almost double the price of the original 4054 model that was first introduced in 1901. That's inflation for you!
-
-The Polyphase version of the Model 4054 would last until 1953. It would seem that company and consumer interest was shifting toward the all-plastic rules at this price point, particularly the pocket rules, as K&E would discontinue no fewer than SIX of their traditional Mannheim and Polyphase based models between 1950 and 1954. Despite this, the Polyphase version of the Model 4054 is abundant on eBay. K&E most certainly sold a ton of them.
 
 ## The Ever-There Series
 
