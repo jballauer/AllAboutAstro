@@ -14,11 +14,17 @@ Just judging by all the pictures of equipment at All About Astro.com, you've no 
 
 Now that the mystery is out of the way, let's talk about why I - and so many others interested in serious astroimaging - will put so much money into one (or more) of the several Software Bisque mounts on either the new and used telescope market.  
 
+![The Aries instrument pier setup](./_images/sb-01-aries-pier.jpg)
+![A Celestron C11 Edge on a Paramount MX+ mount](./_images/sb-02-c11-mxplus.jpg)
+
 A LITTLE HISTORY
 
 My first use of Paramount came in January, 2005, when a Paramount ME entered my life (see SIDEBAR: My First Paramount Experience).  As a user of SB's planetarium software product, TheSky5 (at the time), I was familiar with their foray into the hardware mount arena a few years earlier, so I had anticipated this "dream" mount for quite a while. 
 
 But from Day 1, what has made an SB mount so unique was that it wasn't just a hardware solution like almost every other mount.  Rather, it's a total package of excellent hardware plus powerful software, and it's the integration of these two aspects that have always made Paramounts so awesome.  Paramounts come with the most current version of the The Sky software, seemingly custom written with the Paramount in mind.  Feature rich, current mounts are shipped with The Sky X Pro Software Suite.  This opens up a vast amount of capabilities that no other mount can really boast.   To make matters worst for non-Paramount buyers, you are probably going to want to purchase The Sky X Pro software anyway, especially if you are in an observatory setting and desire to run T-Point to refine the tracking and slewing performance of your own high-end mount.   T-Point is only one of the powerful tools that are a part of The Sky X Pro software suite.  
+
+![A Software Bisque Paramount](./_images/sb-03-17890.jpg)
+![A Paramount in use](./_images/sb-04-589952209.jpg)
 
 Coming in at a variety of price points - all high ones - Software Bisque offers three Paramount options to the typical amateur...the MyT, the MX+, and the ME II.  Also, for those with even deeper pockets and larger needs (read universities), SB has their fork-mount Taurus and Apollo Paramounts.    
 
@@ -269,6 +275,9 @@ For me, the utility of TheSkyX is such that it gets the job done; albeit not per
 
 ​But inevitably, when you have software as powerful as TheSkyX Pro, the user ends up neck deep in some pretty sophisticated stuff, far beyond that of ANY mount purchased today.   So, in short, if you expect to get the most from Paramount hardware, you are forced into learning in depth the Paramount software; unless, of course, you run your Paramount generically, as if it's like some other mount. 
 ​
+![Paramount model comparison](./_images/sb-05-supermodel.jpg)
+![A Paramount setup](./_images/sb-06-484795617.jpg)
+
 CONCLUSIONS
 
 Much has changed in the two decades that I've been doing astrophotography.   There are more choices and better tools available to take great pictures of the cosmos.   The good value choices do indeed make the hobby more accessible, especially to the average person who doesn't want to make too large of a commitment.  But it should be stated that mounts like the Software Bisque Paramounts are not for these people.  Moreover, because of the capabilities of mounts in the middle-price tiers, these mounts might be all you need.   Quite simply, you would never hear me say that a Paramount is a required tool.  

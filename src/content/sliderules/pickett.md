@@ -5,6 +5,10 @@ order: 3
 draft: false
 ---
 
+![The Pickett logo](./_images/pickett-logo.jpg)
+![A Pickett N4-T slide rule](./_images/pickett-hero-n4t.jpg)
+![A 1968 Pickett slide rule catalog](./_images/pickett-1968-catalog.jpg)
+
 Many people have a love or hate relationship with Pickett slide rules. This is because they are the only major maker who made them out of metal, almost exclusively. Early slide rules, beginning in post-war 1945 - rather late compared to most other major makers - used magnesium for their construction. But over a short time, remarkably within a decade of their introduction, the corrosive nature of that metal forced Pickett to shift entirely to aluminum. By the end of the slide rule era (EoE) in the early 1970s, Pickett had gone to plastic for their budget/student rules (as did most makers), whereas the photo-lithographed aluminum were reserved for their more powerful slide rules.
 
 Among the aluminum rules, Pickett typically made them in two colors...a white rule designated with a "T" at the end of the model number, and an "eyesaver" yellow rule designated as "ES". For example, the powerful N4 "VectorLog" slide rule had either N4-T (white) or N4-ES (yellow) models. If a smaller "pocket" rule version exists of a model, they typically append the letter "P" in the designation, such as the N4P-T slide rule, which would be Pickett's white "pocket" rule.
@@ -55,6 +59,9 @@ Here are Pickett slide rules that allow for basic to complex evaluation of mathe
 - N4P-ES Vector-Type Log Log Duplex
 
 ### Circular Rules
+![Pickett 103-ES circular rule](./_images/pickett-103es-1.jpg)
+
+
 - 111-ES Circular
 - Model 101-C Dial-Rule Circular
 - 110-ES Circular
@@ -86,6 +93,10 @@ These Pickett slide rules are "specialty" rules because they were designed or ma
 - N1090-ES Connor Spring Manufacturing Calculator
 
 ### Pocket Rules
+![Pickett Model 100 Douglas Sky Rule, front](./_images/pickett-model100-front.jpg)
+![Pickett Model 100 Douglas Sky Rule, back](./_images/pickett-model100-back.jpg)
+
+
 - Model 100 Douglas Sky Rule
 - Model 700 Aerial Photo USAF
 - Model 400 Business
