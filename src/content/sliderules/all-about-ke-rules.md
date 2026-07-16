@@ -17,7 +17,7 @@ Historically, there are rare slide rules of substantial value. Such can be the r
 
 So unlike any other makers, including Pickett, Hemmi, Faber-Castell, and Aristo, Keuffel and Esser - both the slide rules and the company - sparks curiosity in me. So much so that what follows here will be a written love-affair of not only the slide rules in my collection, but information and understanding about every other slide-rule-related fact to be unearthed about K&E.
 
-<div class="callout-box" data-color="teal">
+<div class="ke-sidebar">
 
 ## Sidebar: The Problems with K&E Rules
 
