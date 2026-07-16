@@ -47,7 +47,99 @@ In 1883, the 479 Gunter model became known as the 479-1, ditching the ivory slid
 
 Assuming their first Model 479 was sold in 1881, in keeping with the first product catalog, then there would be 20 years of slide rules sold by K&E that were either outsourced from a manufacturer and branded by K&E or re-sold by K&E with their own catalog designation. The distinction is important. At this point in history, K&E production capacity was on drafting tools and surveying equipment, filling out their catalog with other items while acting as a distributor. For these 20 years, most would agree that K&E functioned as a re-seller where slide rules were concerned, first gaining the notion of designing and manufacturing their own slide rules in the 1890s, but not gaining capacity to do so until the end of the century. While we will see throughout this writing that K&E might have begun in-house production of some models even as early as the Cox Duplex rule in 1894 or 1895, it wouldn't be until 1901 when full production capacity of most all slide rules was reached.
 
-It seems to be the general consensus that two companies were mostly responsible for providing slide rules to K&E during this time, French maker Tavernier-Gravet, during the Model 479 years, followed by German maker Dennert & Pape for most of the Model 17XX years. Working under the assumption that the shift to the newer models in 1887 also signified their shift in manufacturer, we should realize that their is evidence is to the contrary (please see Sidebar: Solving the Early Maker Mystery at right).
+It seems to be the general consensus that two companies were mostly responsible for providing slide rules to K&E during this time, French maker Tavernier-Gravet, during the Model 479 years, followed by German maker Dennert & Pape for most of the Model 17XX years. Working under the assumption that the shift to the newer models in 1887 also signified their shift in manufacturer, we should realize that their is evidence is to the contrary (please see Sidebar: Solving the Early Maker Mystery at left).
+
+<div class="ke-sidebar">
+
+## Sidebar: Solving the Early Maker Mystery
+
+Until recently, and rather myopically, I made the assumption that K&E switched from the Model 479 series to the newer Model 17XX names in 1887 because of a change in suppliers. In self-defense, it is common among collectors to believe that Tavernier-Gravet was responsible for the early rules and Dennert & Pape supplied the later rules of the 19th century. Yet, we have evidence that the shifting of model designations was not because of a change of supplier, but rather that the sheer number of products sold by K&E necessitated a better system for cataloging their offerings. We note that below in the Preface to the 1892 catalog below...
+
+<div class="ke-figure">
+
+![Preface page of the 1892 K&E catalog, noting the twentieth edition](./_images/ch2-04-1892-catalog-preface.jpg)
+
+<p class="ke-figure-caption">Please note that 1887 is the "twentieth edition" of their catalog.</p>
+
+</div>
+
+Most certainly, Tavernier-Gravet remained the chief supplier for the K&E Mannheim rules well past the 1887 date. This seems reflected in catalog descriptions, which are largely unchanged until the 1890 year, when celluloid-faced rules are described. It's also important to note that there is no provision for a non-celluloid, boxwood slide rule, with cursor, to be sold after 1890.
+
+The timing seems about right. According to Hans Dennert, grandson of the founder of Dennert & Pape, it wouldn't be until 1888 until they had fully shifted to making slide rules with celluloid-laminations on mahogany. By 1890, we can see that the new slide rule designations and descriptions would have been easily justified. And given that K&E likely had extra inventory of the old Tavernier-Gravet Mannheims, it makes sense that they would continue to sell these old rules with the new model numbers until 1890, when the new D&P rules were stated to be available.
+
+<div class="ke-figure">
+
+![An 8" Tavernier-Gravet slide rule bearing both Tavernier-Gravet and Keuffel & Esser markings](./_images/ch2-05-tavernier-gravet-1883.jpg)
+
+<p class="ke-figure-caption">This 8" slide rule, bearing both Tavernier-Gravet and Keuffel & Esser markings, is listed in the Rarities Gallery of the Oughtred Society with an estimated manufacture date of 1885 - yet markings on the rule point to a much later sale date.</p>
+
+</div>
+
+Yet, the slide rule pictured above gives me reason to think that Tavernier-Gravet slide rules were sold by K&E past the 1890 catalog date, and perhaps well past that date. This 8" slide rule, listed in the Rarities Gallery of the Oughtred Society, estimates a date of manufacture of 1885. This rule bears the name of both Tavernier-Gravet and Keuffel & Esser. An assumption of this date would indicate the rule as likely the Model 479-5, which was the 8" rule made prior to 1887. I believe it is more likely to be true that the date is approximately correct, but that the same model rule would have been sold for many years at a time without any evolutionary changes. The real point is not the manufacturing date, but rather the date that K&E would have sold it.
+
+Two markings on this rule pinpoint the sale date to much later than 1885. First, on the rule's back is stamped "Medailles d'or 1878 et 1889," indicating the gold medals their product won in the World's Fair in Paris those years, the later year famously marking the completion of the Eiffel Tower. While the slide rule was certainly produced early, Tavernier-Gravet likely added this stamp to their existing inventory and new slide rules after this 1889 date. Second, also notice the reference to "Chicago" on the rule's front.
+
+<div class="ke-figure">
+
+![A page from K&E's 1892 Product Catalog, the first to list a Chicago office](./_images/ch2-06-1892-catalog-page.jpg)
+
+<p class="ke-figure-caption">K&E's 1892 Product Catalog, the first to list a Chicago office, opened in 1891.</p>
+
+</div>
+
+Knowing that K&E did not have an office in Chicago until 1891, as also expressed in their 1892 Product Catalog imaged below, this is perplexing. K&E would have to be offering this rule for sale after 1891, despite not having a matching boxwood model in their catalog.
+
+Was there a line of boxwood only, T-G slide rules offered by K&E during the last decade of the century?
+
+I would date this boxwood rule to the mid 1880s, as did the Oughtred Society, which also falls in line with my Tavernier-Gravet sample pictured at left. The indication of "Chicago" on front, identifying the rule as post-1891, could have been stamped after the fact, akin to the additional stamping on the back of the rule by T-G. This might be the typical method of operation for K&E: importing the components of the rule unassembled, stamping on all the numbers and labels, and then building the rule in-house with their own end brackets and cursors. (See also the Cox Original Duplex rule in the next chapter).
+
+Likewise, it should be mentioned that early products offered by K&E were not required to have "Keuffel & Esser" stamped somewhere on the actual product. Often enough, K&E served as a distributor only. There is a fine line between products that K&E sold versus those that K&E wanted to be identified strongly with; yet, catalog entries for a product did not necessarily have to identify branded-products as from another maker. Likewise, it would have been sufficient enough if K&E wanted to "brand" such products, to personalize only the product packaging with their own "Keuffel & Esser" identifier. So, we shouldn't assume all samples sold by K&E to be clearly marked as such.
+
+At some point, K&E certainly understood the concept of product branding, whereas by the turn of the century there would no longer be slide rules and accessories that did NOT have the company name emblazoned upon their surfaces. And we see indication of this earlier, with samples where the old maker's mark is scratched away in favor of the K&E branding.
+
+Therefore, matching the catalog descriptions prior to 1890, Tavernier-Gravet most certainly supplied this boxwood Mannheim rule (shown in these pictures) as late Model 479 and early Model 1746 slide rules, with no real change in the rules appearance. The K&E stamped versions of the rule were undoubtedly offered after the catalogs stated that they were no longer available.
+
+To further complicate the scene, we have the slide rule shown below:
+
+<div class="ke-figure">
+
+![A Tavernier-Gravet slide rule with celluloid facings, also stamped Chicago](./_images/ch2-07-tg-celluloid-rule.jpg)
+
+<p class="ke-figure-caption">This is a Tavernier-Gravet slide rule with celluloid-facings of unknown wood choice. It has been assumed that Dennert & Pape was responsible for these early celluloid-faced rules since it is they who held the patent for the technology, but we see here that T-G also produced such rules for K&E, even into the 1890s as seen by the "Chicago" stamp also on this sample.</p>
+
+</div>
+
+We have evidence that K&E was offering celluloid-laminated slide rules as early as 1888, according to E.A. Gieseler in a March 9, 1888 article within "Railroad Gazette" (Volume 20, p. 149) where the author mentions these rules by name as current offerings.
+
+<div class="ke-figure">
+
+![A clipping from the March 9, 1888 issue of Railroad Gazette](./_images/ch2-08-railroad-gazette-1888.jpg)
+
+<p class="ke-figure-caption">E.A. Gieseler's article in the March 9, 1888 issue of Railroad Gazette (Vol. 20, p. 149), an early mention of K&E's celluloid-laminated slide rules.</p>
+
+</div>
+
+This matches well the 1890 catalog description and the three year gap between catalogs (from 1887 to 1890) whereas K&E could have been receiving rules from D&P. And without doubt, Dennert & Pape was around in 1891 for the production of the early duplex rules, particularly the Wm. Cox rule designed in 1891.
+
+A wildcard in need of further research regards the use of the horizontal longitudinal lines (railroad scales) on samples from both T-G and D&P. This feature seems consistent with T-G rules of the era. But it is noted by a few sources that D&P no longer used such scales on rules after 1888, particularly in the U.S. markets. However many samples, including the Otnes' "Rosetta Rule," are in conflict with this generalization as there is no question that D&P produced rules with that feature during the 1890s.
+
+So what can be said about this early maker mystery?
+
+It is reasonable to believe that Tavernier-Gravet was responsible for the production of most boxwood rules prior to circa 1901, including those with celluloid-laminations. The exception would be the potential for the earliest rules to be made by Rabone and Sons, as Bob Otnes opined, and those possibly made in-house by K&E later in the century. This aligns well with some of the "Transitional models" and the "Favorite" rules to be discussed later in the chapter. Dennert & Pape, owner of the celluloid-on-wood patent in 1886, had shifted entirely to mahogany by 1888 according to Hans Dennert, so it is likely that all mahogany rules with celluloid after that date were made by D&P. Whether they also made boxwood rules special to K&E during the 1890s, or whether the T-G rules with celluloid were anything other than boxwood, is unknown; however, I would suggest that this could be a reasonable theory.
+
+<div class="ke-figure">
+
+![A screenshot of the Oughtred Society's Rarities Gallery listing for the 8" Tavernier-Gravet/K&E rule](./_images/ch2-09-oughtred-rarities-screenshot.jpg)
+
+<p class="ke-figure-caption">A screenshot of the Oughtred Society's Rarities Gallery listing for this rule.</p>
+
+</div>
+
+It is also reasonable to believe that catalog offerings of K&E products prior to the early part of the 20th century should be taken with a measure of uncertainty. There are samples of slide rules that do not seem to conform to catalog descriptions. And the era was such that consumers would not have required the level of product certainty that we demand today. A box labelled "Mannheim rule with celluloid-facings" could have been filled with any number of products.
+
+In conclusion, a picture of what was going on in the these early days at Keuffel & Esser is incomplete today. But there is enough circumstantial evidence to see that they, in addition to building some rules in-house prior to the turn of the 20th century, sourced their slide rules simultaneously from both Tavernier-Gravet and Dennert & Pape, and perhaps even others if the opportunity availed itself.
+
+</div>
 
 If I had to hazard a guess who K&E chose to manufacture these early Model 479 Mannheim rules, then I would suggest Tavernier-Gravet. Comparisons of known samples of T-G rules with model illustrations in the K&E product catalogs should be all we need to be rather definitive about the provenance of these rules. There are enough samples of T-G rules around today, including one in my own collection, pictured below, that gives us a strong indication of what these Model 479 slide rules might have been.
 
@@ -75,105 +167,13 @@ So it should be noted that the Tavernier-Gravet rule in my collection could very
 
 ### The Model 17XX Series
 
-Officially replacing the Model 479 series in 1887, the new model numbers were necessitated by a better way to catalog K&E product offerings (see the Sidebar at right). So for a time, there is no evidence to suggest that these new models would be any different than those that preceded it. However, by 1890, these slide rules would include the likelihood of a shift to a new supplier; namely, the German maker Dennert & Pape (known later as Aristo).
+Officially replacing the Model 479 series in 1887, the new model numbers were necessitated by a better way to catalog K&E product offerings (see the Sidebar above). So for a time, there is no evidence to suggest that these new models would be any different than those that preceded it. However, by 1890, these slide rules would include the likelihood of a shift to a new supplier; namely, the German maker Dennert & Pape (known later as Aristo).
 
 The first two rules in the series were the Model 1745 and Model 1746 rules, both 10 inches. The Model 1745 retained the basic Gunter design, made of boxwood with engine-divided scales, and no indicator cursor. Similar in construction, the Model 1746, with brass cursor, was a true Mannheim rule, adding S, L, and T scales on the reverse of the slide, as well as inch and centimeter scales on the edges. It also had a centimeter extension rule in the slide well.
 
 Subtly important is the catalog description which lacks indication of the wood type. A pattern develops in these descriptions - when characteristics of the rule they will sell are certain, K&E will say it; but when uncertain, they leave the description intentionally vague. The wood type is suspiciously missing in the 1746 Mannheim descriptions all the way through the 1899 catalog. This should be an indication that K&E left open the possibility of a variety of slide rules that could meet the description, some boxwood and some mahogany.
 
 These rules, like all T-G and D&P rules known to this point, had horizontal "embellishment" lines, known by most today as "railroad" scales. By the end of the century, both of the rules had transitioned to mahogany construction. A 20" version of this rule called the 1748 was introduced in 1890, and a 5" version called the 1747 arrived in 1899. Of the 20" rule, K&E seems to be rather apologetic. Their catalog description in 1890, and as printed below in the 1895 catalog, states...
-
-<div class="ke-sidebar" data-float="none">
-
-## Sidebar: Solving the Early Maker Mystery
-
-Until recently, and rather myopically, I made the assumption that K&E switched from the Model 479 series to the newer Model 17XX names in 1887 because of a change in suppliers. In self-defense, it is common among collectors to believe that Tavernier-Gravet was responsible for the early rules and Dennert & Pape supplied the later rules of the 19th century. Yet, we have evidence that the shifting of model designations was not because of a change of supplier, but rather that the sheer number of products sold by K&E necessitated a better system for cataloging their offerings. We note that below in the Preface to the 1892 catalog below...
-
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![Preface page of the 1892 K&E catalog, noting the twentieth edition](./_images/ch2-04-1892-catalog-preface.jpg)
-
-<p class="ke-figure-caption">Please note that 1887 is the "twentieth edition" of their catalog.</p>
-
-</div>
-
-Most certainly, Tavernier-Gravet remained the chief supplier for the K&E Mannheim rules well past the 1887 date. This seems reflected in catalog descriptions, which are largely unchanged until the 1890 year, when celluloid-faced rules are described. It's also important to note that there is no provision for a non-celluloid, boxwood slide rule, with cursor, to be sold after 1890.
-
-The timing seems about right. According to Hans Dennert, grandson of the founder of Dennert & Pape, it wouldn't be until 1888 until they had fully shifted to making slide rules with celluloid-laminations on mahogany. By 1890, we can see that the new slide rule designations and descriptions would have been easily justified. And given that K&E likely had extra inventory of the old Tavernier-Gravet Mannheims, it makes sense that they would continue to sell these old rules with the new model numbers until 1890, when the new D&P rules were stated to be available.
-
-<div class="ke-figure ke-figure-left ke-figure-third">
-
-![An 8" Tavernier-Gravet slide rule bearing both Tavernier-Gravet and Keuffel & Esser markings](./_images/ch2-05-tavernier-gravet-1883.jpg)
-
-<p class="ke-figure-caption">This 8" slide rule, bearing both Tavernier-Gravet and Keuffel & Esser markings, is listed in the Rarities Gallery of the Oughtred Society with an estimated manufacture date of 1885 - yet markings on the rule point to a much later sale date.</p>
-
-</div>
-
-Yet, the slide rule pictured above gives me reason to think that Tavernier-Gravet slide rules were sold by K&E past the 1890 catalog date, and perhaps well past that date. This 8" slide rule, listed in the Rarities Gallery of the Oughtred Society, estimates a date of manufacture of 1885. This rule bears the name of both Tavernier-Gravet and Keuffel & Esser. An assumption of this date would indicate the rule as likely the Model 479-5, which was the 8" rule made prior to 1887. I believe it is more likely to be true that the date is approximately correct, but that the same model rule would have been sold for many years at a time without any evolutionary changes. The real point is not the manufacturing date, but rather the date that K&E would have sold it.
-
-Two markings on this rule pinpoint the sale date to much later than 1885. First, on the rule's back is stamped "Medailles d'or 1878 et 1889," indicating the gold medals their product won in the World's Fair in Paris those years, the later year famously marking the completion of the Eiffel Tower. While the slide rule was certainly produced early, Tavernier-Gravet likely added this stamp to their existing inventory and new slide rules after this 1889 date. Second, also notice the reference to "Chicago" on the rule's front.
-
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![A page from K&E's 1892 Product Catalog, the first to list a Chicago office](./_images/ch2-06-1892-catalog-page.jpg)
-
-<p class="ke-figure-caption">K&E's 1892 Product Catalog, the first to list a Chicago office, opened in 1891.</p>
-
-</div>
-
-Knowing that K&E did not have an office in Chicago until 1891, as also expressed in their 1892 Product Catalog imaged below, this is perplexing. K&E would have to be offering this rule for sale after 1891, despite not having a matching boxwood model in their catalog.
-
-Was there a line of boxwood only, T-G slide rules offered by K&E during the last decade of the century?
-
-I would date this boxwood rule to the mid 1880s, as did the Oughtred Society, which also falls in line with my Tavernier-Gravet sample pictured at left. The indication of "Chicago" on front, identifying the rule as post-1891, could have been stamped after the fact, akin to the additional stamping on the back of the rule by T-G. This might be the typical method of operation for K&E: importing the components of the rule unassembled, stamping on all the numbers and labels, and then building the rule in-house with their own end brackets and cursors. (See also the Cox Original Duplex rule in the next chapter).
-
-Likewise, it should be mentioned that early products offered by K&E were not required to have "Keuffel & Esser" stamped somewhere on the actual product. Often enough, K&E served as a distributor only. There is a fine line between products that K&E sold versus those that K&E wanted to be identified strongly with; yet, catalog entries for a product did not necessarily have to identify branded-products as from another maker. Likewise, it would have been sufficient enough if K&E wanted to "brand" such products, to personalize only the product packaging with their own "Keuffel & Esser" identifier. So, we shouldn't assume all samples sold by K&E to be clearly marked as such.
-
-At some point, K&E certainly understood the concept of product branding, whereas by the turn of the century there would no longer be slide rules and accessories that did NOT have the company name emblazoned upon their surfaces. And we see indication of this earlier, with samples where the old maker's mark is scratched away in favor of the K&E branding.
-
-Therefore, matching the catalog descriptions prior to 1890, Tavernier-Gravet most certainly supplied this boxwood Mannheim rule (shown in these pictures) as late Model 479 and early Model 1746 slide rules, with no real change in the rules appearance. The K&E stamped versions of the rule were undoubtedly offered after the catalogs stated that they were no longer available.
-
-To further complicate the scene, we have the slide rule shown below:
-
-<div class="ke-figure ke-figure-left ke-figure-third">
-
-![A Tavernier-Gravet slide rule with celluloid facings, also stamped Chicago](./_images/ch2-07-tg-celluloid-rule.jpg)
-
-<p class="ke-figure-caption">This is a Tavernier-Gravet slide rule with celluloid-facings of unknown wood choice. It has been assumed that Dennert & Pape was responsible for these early celluloid-faced rules since it is they who held the patent for the technology, but we see here that T-G also produced such rules for K&E, even into the 1890s as seen by the "Chicago" stamp also on this sample.</p>
-
-</div>
-
-We have evidence that K&E was offering celluloid-laminated slide rules as early as 1888, according to E.A. Gieseler in a March 9, 1888 article within "Railroad Gazette" (Volume 20, p. 149) where the author mentions these rules by name as current offerings.
-
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![A clipping from the March 9, 1888 issue of Railroad Gazette](./_images/ch2-08-railroad-gazette-1888.jpg)
-
-<p class="ke-figure-caption">E.A. Gieseler's article in the March 9, 1888 issue of Railroad Gazette (Vol. 20, p. 149), an early mention of K&E's celluloid-laminated slide rules.</p>
-
-</div>
-
-This matches well the 1890 catalog description and the three year gap between catalogs (from 1887 to 1890) whereas K&E could have been receiving rules from D&P. And without doubt, Dennert & Pape was around in 1891 for the production of the early duplex rules, particularly the Wm. Cox rule designed in 1891.
-
-A wildcard in need of further research regards the use of the horizontal longitudinal lines (railroad scales) on samples from both T-G and D&P. This feature seems consistent with T-G rules of the era. But it is noted by a few sources that D&P no longer used such scales on rules after 1888, particularly in the U.S. markets. However many samples, including the Otnes' "Rosetta Rule," are in conflict with this generalization as there is no question that D&P produced rules with that feature during the 1890s.
-
-So what can be said about this early maker mystery?
-
-It is reasonable to believe that Tavernier-Gravet was responsible for the production of most boxwood rules prior to circa 1901, including those with celluloid-laminations. The exception would be the potential for the earliest rules to be made by Rabone and Sons, as Bob Otnes opined, and those possibly made in-house by K&E later in the century. This aligns well with some of the "Transitional models" and the "Favorite" rules to be discussed later in the chapter. Dennert & Pape, owner of the celluloid-on-wood patent in 1886, had shifted entirely to mahogany by 1888 according to Hans Dennert, so it is likely that all mahogany rules with celluloid after that date were made by D&P. Whether they also made boxwood rules special to K&E during the 1890s, or whether the T-G rules with celluloid were anything other than boxwood, is unknown; however, I would suggest that this could be a reasonable theory.
-
-<div class="ke-figure ke-figure-left ke-figure-third">
-
-![A screenshot of the Oughtred Society's Rarities Gallery listing for the 8" Tavernier-Gravet/K&E rule](./_images/ch2-09-oughtred-rarities-screenshot.jpg)
-
-<p class="ke-figure-caption">A screenshot of the Oughtred Society's Rarities Gallery listing for this rule.</p>
-
-</div>
-
-It is also reasonable to believe that catalog offerings of K&E products prior to the early part of the 20th century should be taken with a measure of uncertainty. There are samples of slide rules that do not seem to conform to catalog descriptions. And the era was such that consumers would not have required the level of product certainty that we demand today. A box labelled "Mannheim rule with celluloid-facings" could have been filled with any number of products.
-
-In conclusion, a picture of what was going on in the these early days at Keuffel & Esser is incomplete today. But there is enough circumstantial evidence to see that they, in addition to building some rules in-house prior to the turn of the 20th century, sourced their slide rules simultaneously from both Tavernier-Gravet and Dennert & Pape, and perhaps even others if the opportunity availed itself.
-
-</div>
 
 Interesting that this statement is made a decade prior to 1901, when they would roll out their patent for the "adjustable slide rule."
 
@@ -540,6 +540,63 @@ And I'll give you one guess what that word means!
 
 ### The Model 4053
 
+<div class="ke-clear"></div>
+
+<div class="ke-sidebar">
+
+## Sidebar: The 4088, an Ever-There, and the Mystery Rules
+
+During a 20 year period, from 1930 to 1950, K&E produced a surprising amount of rules that didn't have a model number. I will speculate later on what I feel could be the origin of some of these rules, which are known by collectors as K&E Mystery Rules, but there are a few statements we could make about the Mystery Rules in general.
+
+First, these rules aren't necessarily rare, so you would be mistaken to think they were not produced in generous numbers. We can see this today by how often these rules come up for sale, which in my opinion seems to be "not often" rather than "rarely."
+
+Second, K&E did not show these Mystery rules in their catalogs, as they did not have a model number. We can judge from this that these rules were likely developed for a specialty or custom market, where K&E did not want the general public to think these rules were offerings they could purchase.
+
+Third, and more relevant here, is that the Mystery Rule scale set is almost identical to the Model 4088 Polyphase Duplex, which predated the Mystery variants by two decades or more, and the 4097D Ever-There pocket rule which would be introduced a few years after the first known instance of a Mystery rule. This "Improved Polyphase Mannheim" scale set, as it came to be known, is as follows:
+
+Front Side: inches // A DF [CF CI C] D K \ centimeters
+Back of Slide: [S B L T]
+
+Many rules are strikingly similar to the Model 4053, and some are indeed the exact same rule without the model number. But many of what we regard as these "mystery rules" have an unusually longer slide than the actual frame, so when indexed to the left, the slide protrudes perhaps 8mm from the right side of the frame. This was a feature of many Dietzgen models of the era which enables (arguably) easier manipulation of the slide when the rule is in the "closed" position (i.e. left indices are aligned).
+
+A single "K&E Co." maker-mark is placed on the right side of the slide, vertically in the fashion of the normal model number. Other mystery rules after 1947 might have only modern K&E logo. Yet others might contain nothing at all. Serial numbers on the rules match the production of all other wooden rules of the era, so they can be dated just like any other wooden K&E rule.
+
+To compare, collector Mike Syphers has started a detailed list of known "mystery" variants at his amazing website, Following the Rules.
+
+All of this all sounds odd, but we do know that K&E produced MANY custom slide rules for a variety of purposes and industries, a practice that Pickett would pick up on a half-century later with their own specialty types of rules. Many such K&E rules are so rare that their existence is likely lost to antiquity. Those we do know about will be discussed in Chapter 6, as there is a rich history of strange/custom K&E slide rules. But we should not be surprised that K&E would produce slide rules specifically for universities, among other places, perhaps even made to order.
+
+K&E's desire to reach out to the education markets was obvious. Jack Burton, former VP of Sales at K&E, confirms this (J.O.S., Spring 1999) by stating that all regional managers targeted university bookstores as potential distributors. Yet he also refers to the ones sold at these stores as "junky," not in terms of quality, but rather in terms of less functionality, like with the Mannheims and Polyphases.
+
+We also know that K&E began to print Educational Catalogs and price lists in the 30s, seemingly during the early production these Mystery rules. That speaks to K&E strongly focusing toward the educational markets, as I suggested. The real questions become, what type of rules would college students need and what type of rules could the company realistically offer them in terms of functionality and value?
+
+If I am a university professor wanting a powerful slide rule for my students, I'm more inclined to inquire about the Model 4092 Log Log Duplex or 4093 Log Log Vector rules, which were K&E's flagship models for many years. At least this is what I would have wanted as an engineering student. But that price point would have put them out of reach for most students. Knowing that the 4092 and 4093 have too many scales for a conversion to a one-sided platform, then I can see K&E pushing the less-expensive 4088 instead to the college market. As strange as it does seem that the Mystery rules do not appear in any of the educational catalogs, neither in 1933 nor 1936; however, the Model 4088 is indeed listed, while the 4092 and 4093 are not.
+
+So I could see K&E producing a variant of the 4088 on the less expensive one-sided platform, especially with the knowledge that the 4088 would be discontinued in the late 30s. While this would not give engineering students the power of the flagship rules complete with log-log scales, it most certainly does give more power than the "junky" rules described by Burton. If this happened, then I can see why such a Mystery rule would be excluded from product catalogs...if K&E was providing at-cost rules to engineering students in select engineering programs around the country, then they would not want general education markets (and the general consumer market) to think such slide rules were available to them as well.
+
+We shouldn't be surprised that perhaps the company didn't mind being charitable when it suited them, giving back to an education industry who would produce more engineers, builders, and slide rule buyers of the future. In fact, we have every indication that K&E understood the importance of quality and brand loyalty in all of their products, so making new loyal customers at the college level, those who would be most likely to buy their flagship slide rules in the future, makes a lot of sense to me.
+
+This theory sounds outlandish, but one of the first Mystery Rules produced - which had the standard Polyphase Mannheim scale set but without the 4053-3 model number - had a customized conversion chart on the back with a University of Washington College of Engineering insignia on it. This was around 1930. Perhaps surprisingly, the rule for Washington students would reappear around 1940, but this one with the "Improved Polyphase Mannheim" scale set.
+
+I have a similar sample, without a university name to it, with a 1937 serial number. This rule has "decimal keeping" instructions on the back of the rule, unique to general purpose rules found on the typical single-sided K&E rules (which focused more on unit conversions, weights, and measures). Several of this type are known as "Decimal Keeping Mystery rules." Yet others mystery rules have formula charts containing more classroom specific geometric formulae and calculus derivative/integral rules.
+
+Following through with the conjecture, it would make sense that the early 30s began with custom-built rules for a specific university book store and labeled as such; and yet, they also produced a more generic version for any university to sell. Such rules without the Washington connection do appear as early as 1931. The fact that there is also a Washington rule as late as 1940 should not be surprising, since K&E could always customize a rule for a university upon request.
+
+Additionally, there would appear 20" versions of a similar rule, but missing some of the newer Polyphase scales. These likely do not have a connection to education, though could have very well been to custom clients, or a niche group of consumers.
+
+As for the Ever-There 4097D, when K&E decided to merge their B and C variants of the 4097 into their "D" version of the rule in 1936, we had already seen this combination of scales in not only the 4088-3 Polyphase duplex rule that had been in regular production since before the 1st World War, but also in those Mystery rules produced for universities. Thus, with the 4097D, it is apparent that K&E was providing a budget-friendly, single-sided version of the 4088 for the regular consumer. At half the price of the duplex rule in 1936, this certainly had market demand.
+
+You might think that this rule would have stopped the manufacture of the "Mystery rule" based on the same scale set, but serial numbers indicate that those were likely made up until ~1950. This would seem to indicate that K&E was indeed comfortable providing even lower cost wooden rules to select clientele, as a $4.25 Ever-There was still a hard ask for a college-going student.
+
+And speaking as a collector, the Ever-There rules are somewhat hard to date. Their serial numbers seem to fall in line with the serial number scheme of the wooden rules, but McCoy indicates that the Ever-There's, as well as all-plastic rules later, had their own serial numbers sequences. Further research is required.
+
+But at the time, the Ever-There's were innovative rules, gaining a solid foothold in the pocket rule market in 1931, and redesigned in 1936 to match the diversity of the 1936 Post offerings. The 4098A matched the lowest price of the Post offerings at $1.75. And the 4097s sold well enough that K&E was not compelled to match price with the imported Post/Hemmi pocket rules, none of which cost buyers more than $2.70 according to the Post 1937 Catalog. K&E simply knew that their $4.25 4097D was going to sell a lot slide rules, especially since it was half the price of their 4088-1 duplex rule that pretty much offered the same capabilities.
+
+However, if there were ever a K&E slide rule that could be considered of questionable quality, especially in the longer-term, it would have to be the Ever-Theres (see the earlier Sidebar: The Problems with K&E Rules in Chapter 1). The Xylonite plastic was not long-lasting. It became brittle over time, prone to yellowing (as the clear Xylonite cursors did) and warping. K&E knew the plastic was not ideal and would seek alternatives to replace it after 15 years. This is a historically important distinction, as it's the impetus for some of the corporate decisions made after World War II in the late 1940s.
+
+Therefore, the Ever-There series, beginning in 1931 and revamped in 1936, would hang on until the early 1950s, when at that time newer plastic versions of these rules were finally introduced. Those models would be classified simply as "Pocket Slide Rules." But the Ever-There's had served their purpose of supplying all K&E family model lines an affordable, pocket version of their popular slide rules.
+
+</div>
+
 The original 1909 model of the 10 inch 4053 was similar in construction to its contemporary, the Model 4041, based on celluloid-covered mahogany wood and engine-divided scales. However this rule replaced the centimeter scale on the rule's edge with three-decades worth of "K" scale and squeezed in the "CI" scale in between the B and C on the slide. The cursor had an indicator on the bottom allowing easy reading of the K scale at the edge, a feature that K&E mentioned made the 4053 a "hybrid" of the Mannheim and Duplex style of rules.
 
 Two years after its introduction, the 1911 models came in many lengths using the "dash" system of model labelling, from an 8 inch rule with a 4053-2 designation, the normal 10" rule relabeled as the 4053-3, and a 20" variant known as the 4053-5. These models would take on an "N" prefix in 1922 when K&E removed the K-scale from the front edge of the rule and squeezed it (without regard to aesthetics) onto the bottom stator rail and gave users back their centimeter scale on the front edge. Interestingly, during this transition year in 1922, the printing of the "N" on the rule itself varied from outside of the bracket (as in N&lt;4053-3&gt;) to being above the bracketed model number. By the next model year, the prefix joined the model number inside the brackets.
@@ -604,7 +661,7 @@ The new Ever-There rules were as follows:
 
 To me, the intent of the "D" variant is obvious...to provide a cheap pocket version of the 4088 Polyphase Duplex rule (see Polyphase Duplex Rules below). Comparing the two, the only scale that the 4097D lacks is a CIF scale (folded, inverse C-scale) as found on the 4088 line of rules. And while K&E did manufacturer a pocket version of this Polyphase duplex rule with their 4088-1 model, it was exactly twice as expensive as the new 4097D Ever-There in 1936 prices ($8.50 versus $4.25 respectively). As a result, the 4088-1 would be discontinued within three years of the introduction of the 4097D.
 
-Note: There is much more to be said about this scale set historically, which I do in the Sidebar: The 4088, an Ever-There, and the Mystery Rules below.
+Note: There is much more to be said about this scale set historically, which I do in the Sidebar: The 4088, an Ever-There, and the Mystery Rules earlier in this section.
 
 As far as construction, the new Ever-There series did evolve from their preceding lineup, going to K&E's new-improved glass cursor, which they began using in all their slide rules beginning in 1936. They also tweaked the shape of the rules slightly, enough to appear dimensionally different from original 4097 and 4098. It is not known if K&E repackaged any of their old 4097 and 4098 stock into new 4097B and 4097C boxes, but it's definitely something I would have done. However, this will have to remain an inquiry in need of future research.
 
@@ -614,66 +671,21 @@ The chief competition for K&E state-side came from the Frederick Post Company, w
 
 As a slide rule user, I much prefer using the Post/Hemmi bamboo pocket rules, something I freely admit. Though this speaks more to the longer-lasting nature of a bamboo constructed rule as compared to an early plastic rule some 80 years later. (I just love my bamboo Hemmi-built rules!)
 
-<div class="ke-clear"></div>
+## The Modern Polyphase Family
 
-<div class="ke-sidebar" data-float="none">
+<div class="ke-figure ke-figure-right ke-figure-third">
 
-## Sidebar: The 4088, an Ever-There, and the Mystery Rules
+![A page from the 1952 K&E catalog grouping all pocket slide rules together](./_images/ch2-21-1952-catalog-pocket-rules.jpg)
 
-During a 20 year period, from 1930 to 1950, K&E produced a surprising amount of rules that didn't have a model number. I will speculate later on what I feel could be the origin of some of these rules, which are known by collectors as K&E Mystery Rules, but there are a few statements we could make about the Mystery Rules in general.
-
-First, these rules aren't necessarily rare, so you would be mistaken to think they were not produced in generous numbers. We can see this today by how often these rules come up for sale, which in my opinion seems to be "not often" rather than "rarely."
-
-Second, K&E did not show these Mystery rules in their catalogs, as they did not have a model number. We can judge from this that these rules were likely developed for a specialty or custom market, where K&E did not want the general public to think these rules were offerings they could purchase.
-
-Third, and more relevant here, is that the Mystery Rule scale set is almost identical to the Model 4088 Polyphase Duplex, which predated the Mystery variants by two decades or more, and the 4097D Ever-There pocket rule which would be introduced a few years after the first known instance of a Mystery rule. This "Improved Polyphase Mannheim" scale set, as it came to be known, is as follows:
-
-Front Side: inches // A DF [CF CI C] D K \ centimeters
-Back of Slide: [S B L T]
-
-Many rules are strikingly similar to the Model 4053, and some are indeed the exact same rule without the model number. But many of what we regard as these "mystery rules" have an unusually longer slide than the actual frame, so when indexed to the left, the slide protrudes perhaps 8mm from the right side of the frame. This was a feature of many Dietzgen models of the era which enables (arguably) easier manipulation of the slide when the rule is in the "closed" position (i.e. left indices are aligned).
-
-A single "K&E Co." maker-mark is placed on the right side of the slide, vertically in the fashion of the normal model number. Other mystery rules after 1947 might have only modern K&E logo. Yet others might contain nothing at all. Serial numbers on the rules match the production of all other wooden rules of the era, so they can be dated just like any other wooden K&E rule.
-
-To compare, collector Mike Syphers has started a detailed list of known "mystery" variants at his amazing website, Following the Rules.
-
-All of this all sounds odd, but we do know that K&E produced MANY custom slide rules for a variety of purposes and industries, a practice that Pickett would pick up on a half-century later with their own specialty types of rules. Many such K&E rules are so rare that their existence is likely lost to antiquity. Those we do know about will be discussed in Chapter 6, as there is a rich history of strange/custom K&E slide rules. But we should not be surprised that K&E would produce slide rules specifically for universities, among other places, perhaps even made to order.
-
-K&E's desire to reach out to the education markets was obvious. Jack Burton, former VP of Sales at K&E, confirms this (J.O.S., Spring 1999) by stating that all regional managers targeted university bookstores as potential distributors. Yet he also refers to the ones sold at these stores as "junky," not in terms of quality, but rather in terms of less functionality, like with the Mannheims and Polyphases.
-
-We also know that K&E began to print Educational Catalogs and price lists in the 30s, seemingly during the early production these Mystery rules. That speaks to K&E strongly focusing toward the educational markets, as I suggested. The real questions become, what type of rules would college students need and what type of rules could the company realistically offer them in terms of functionality and value?
-
-If I am a university professor wanting a powerful slide rule for my students, I'm more inclined to inquire about the Model 4092 Log Log Duplex or 4093 Log Log Vector rules, which were K&E's flagship models for many years. At least this is what I would have wanted as an engineering student. But that price point would have put them out of reach for most students. Knowing that the 4092 and 4093 have too many scales for a conversion to a one-sided platform, then I can see K&E pushing the less-expensive 4088 instead to the college market. As strange as it does seem that the Mystery rules do not appear in any of the educational catalogs, neither in 1933 nor 1936; however, the Model 4088 is indeed listed, while the 4092 and 4093 are not.
-
-So I could see K&E producing a variant of the 4088 on the less expensive one-sided platform, especially with the knowledge that the 4088 would be discontinued in the late 30s. While this would not give engineering students the power of the flagship rules complete with log-log scales, it most certainly does give more power than the "junky" rules described by Burton. If this happened, then I can see why such a Mystery rule would be excluded from product catalogs...if K&E was providing at-cost rules to engineering students in select engineering programs around the country, then they would not want general education markets (and the general consumer market) to think such slide rules were available to them as well.
-
-We shouldn't be surprised that perhaps the company didn't mind being charitable when it suited them, giving back to an education industry who would produce more engineers, builders, and slide rule buyers of the future. In fact, we have every indication that K&E understood the importance of quality and brand loyalty in all of their products, so making new loyal customers at the college level, those who would be most likely to buy their flagship slide rules in the future, makes a lot of sense to me.
-
-This theory sounds outlandish, but one of the first Mystery Rules produced - which had the standard Polyphase Mannheim scale set but without the 4053-3 model number - had a customized conversion chart on the back with a University of Washington College of Engineering insignia on it. This was around 1930. Perhaps surprisingly, the rule for Washington students would reappear around 1940, but this one with the "Improved Polyphase Mannheim" scale set.
-
-I have a similar sample, without a university name to it, with a 1937 serial number. This rule has "decimal keeping" instructions on the back of the rule, unique to general purpose rules found on the typical single-sided K&E rules (which focused more on unit conversions, weights, and measures). Several of this type are known as "Decimal Keeping Mystery rules." Yet others mystery rules have formula charts containing more classroom specific geometric formulae and calculus derivative/integral rules.
-
-Following through with the conjecture, it would make sense that the early 30s began with custom-built rules for a specific university book store and labeled as such; and yet, they also produced a more generic version for any university to sell. Such rules without the Washington connection do appear as early as 1931. The fact that there is also a Washington rule as late as 1940 should not be surprising, since K&E could always customize a rule for a university upon request.
-
-Additionally, there would appear 20" versions of a similar rule, but missing some of the newer Polyphase scales. These likely do not have a connection to education, though could have very well been to custom clients, or a niche group of consumers.
-
-As for the Ever-There 4097D, when K&E decided to merge their B and C variants of the 4097 into their "D" version of the rule in 1936, we had already seen this combination of scales in not only the 4088-3 Polyphase duplex rule that had been in regular production since before the 1st World War, but also in those Mystery rules produced for universities. Thus, with the 4097D, it is apparent that K&E was providing a budget-friendly, single-sided version of the 4088 for the regular consumer. At half the price of the duplex rule in 1936, this certainly had market demand.
-
-You might think that this rule would have stopped the manufacture of the "Mystery rule" based on the same scale set, but serial numbers indicate that those were likely made up until ~1950. This would seem to indicate that K&E was indeed comfortable providing even lower cost wooden rules to select clientele, as a $4.25 Ever-There was still a hard ask for a college-going student.
-
-And speaking as a collector, the Ever-There rules are somewhat hard to date. Their serial numbers seem to fall in line with the serial number scheme of the wooden rules, but McCoy indicates that the Ever-There's, as well as all-plastic rules later, had their own serial numbers sequences. Further research is required.
-
-But at the time, the Ever-There's were innovative rules, gaining a solid foothold in the pocket rule market in 1931, and redesigned in 1936 to match the diversity of the 1936 Post offerings. The 4098A matched the lowest price of the Post offerings at $1.75. And the 4097s sold well enough that K&E was not compelled to match price with the imported Post/Hemmi pocket rules, none of which cost buyers more than $2.70 according to the Post 1937 Catalog. K&E simply knew that their $4.25 4097D was going to sell a lot slide rules, especially since it was half the price of their 4088-1 duplex rule that pretty much offered the same capabilities.
-
-However, if there were ever a K&E slide rule that could be considered of questionable quality, especially in the longer-term, it would have to be the Ever-Theres (see the earlier Sidebar: The Problems with K&E Rules in Chapter 1). The Xylonite plastic was not long-lasting. It became brittle over time, prone to yellowing (as the clear Xylonite cursors did) and warping. K&E knew the plastic was not ideal and would seek alternatives to replace it after 15 years. This is a historically important distinction, as it's the impetus for some of the corporate decisions made after World War II in the late 1940s.
-
-Therefore, the Ever-There series, beginning in 1931 and revamped in 1936, would hang on until the early 1950s, when at that time newer plastic versions of these rules were finally introduced. Those models would be classified simply as "Pocket Slide Rules." But the Ever-There's had served their purpose of supplying all K&E family model lines an affordable, pocket version of their popular slide rules.
+<p class="ke-figure-caption">From the 1952 catalog. K&E would begin to rethink their "family" naming scheme for their slide rules. This is likely because if a consumer wanted a pocket rule, it would be easier to show all of their offerings on a single page. In 1972, the same catalog page would grow up to 6 distinct pocket rules, regardless of their construction.</p>
 
 </div>
 
+The history of the Mannheim platform evolved and endured over almost the company's entire history, from their basic outsourced rule in the beginning, to high-quality rules built in-house, to the advanced functionality of the Polyphase rules, and through the modern era of the company. Regardless of the rule, by the 1950s, the Polyphase Mannheim had become the desired scale set for non-duplex rules.
+
 <div class="ke-clear"></div>
 
-<div class="ke-sidebar" data-float="none">
+<div class="ke-sidebar">
 
 ## Sidebar: The Doric Family of Rules
 
@@ -728,20 +740,6 @@ As such, many collectors think of the Doric as synonymous with the lone 9068/416
 However we think of the Doric rules today, it was these slide rules that either directly spawned or inspired all "Modern Polyphase" and "Modern Duplex" rules that would follow in the 1960s and 1970s. And as such, when we discuss the newer "modern" rules, we fall back on the Doric Family of rules as their legacy.
 
 </div>
-
-<div class="ke-clear"></div>
-
-## The Modern Polyphase Family
-
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![A page from the 1952 K&E catalog grouping all pocket slide rules together](./_images/ch2-21-1952-catalog-pocket-rules.jpg)
-
-<p class="ke-figure-caption">From the 1952 catalog. K&E would begin to rethink their "family" naming scheme for their slide rules. This is likely because if a consumer wanted a pocket rule, it would be easier to show all of their offerings on a single page. In 1972, the same catalog page would grow up to 6 distinct pocket rules, regardless of their construction.</p>
-
-</div>
-
-The history of the Mannheim platform evolved and endured over almost the company's entire history, from their basic outsourced rule in the beginning, to high-quality rules built in-house, to the advanced functionality of the Polyphase rules, and through the modern era of the company. Regardless of the rule, by the 1950s, the Polyphase Mannheim had become the desired scale set for non-duplex rules.
 
 With the introduction of better plastics, most all slide rule manufacturers dabbled with all-plastic construction at some point. For a company like Pickett, plastic rules were mated to their entry-level, entry-priced types of slide rules. While a company like Sun-Hemmi would eventually use all-plastic construction for even some of their most sophisticated rules.
 
