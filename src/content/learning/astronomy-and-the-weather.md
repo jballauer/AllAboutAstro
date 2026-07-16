@@ -21,6 +21,8 @@ If that's not enough, the observatory handles this weather data intelligently an
 
 Back in 2003, I had the privilege of meeting Attila Danko at the Texas Star Party. Founder of the "Clear Sky Clock," Attila travelled from Canada to give a presentation about this great astronomy tool. As somebody with a newly-built home observatory, I loved that Attila was quick to generate my own clock.
 
+![Attila Danko's Clear Sky Clock example](./_images/weather-01-clear-sky-clock.gif)
+
 Today, the Clear Sky Chart remains an important, quick glance tool for forecasting your conditions within a day or two of an observation. Using an easy metric or blue blocks for clear (or stable) and white blocks for cloudy (or turbulent), not only is the chart readable, but I find it to be extraordinarily accurate.
 
 Owners of their own observatory can ask Attila to create a Clear Sky Clock by visiting www.cleardarksky.com/csk/ and then following the instructions.
@@ -42,6 +44,8 @@ When on a PC, I really like NOAA's Aviation Weather Center (aviationweather.gov/
 Another terrific site in a chart format similar to the Clear Sky Clock is clearoutside.com whereas you can see a similar display but with more items in the chart, including wind speed, a distinction in cloud levels, and even ISS passovers. It's billed as "astronomy weather by astronomers" and it seems as though they have done a good job of providing the information we need.
 
 Other sites that I've used are Weather.com, Weather Underground, Intellicast, and Accuweather. These are typically used for long range forecasts, your choice dictated by the site you feel is accurate most frequently, which means it likely changes depending on who you are. For the most part, we all tend to use multiple sources in this regard, usually seeking consensus or going with the majority rule. Due to the sheer difficulty of accurately predicting weather, that'd be my recommendation to you as well.
+
+![A rare snowy observing scene](./_images/weather-02-winter-scene.jpg)
 
 ## Making the Best of It
 
@@ -109,6 +113,8 @@ For a cleaning solution, I recommend 98% or greater isopropyl alcohol (from an e
 
 As for camera lenses, using the cleaner recommended by the manufacturer is a good idea. This is true of all optics, if you are ever in doubt.
 
+![Lightning at the Texas Star Party, 2004](./_images/weather-03-lightning.jpg)
+
 ### Rainy Conditions
 
 Sometimes, rain happens, despite your most optimistic of forecasts. When this happens, you should anticipate a few things.
@@ -163,6 +169,8 @@ Before an observatory can be setup with a weather "controller," it must be equip
 
 This is the key to remote observatory control, since you can "wake" up and shut down the equipment by cycling power over a simple software interface from anywhere in the world. This represents the first layer of control - which is namely a software interface to all of your power hardware.
 
+![Ambient Weather software showing current conditions](./_images/weather-04-ambient-vws.jpg)
+
 Secondly, you need a remote "pair of eyes" for knowing when and to what extent your control should happen. Network cameras, both inside and outside of the observatory, can give you a live visual for the state of the observatory and its equipment. When you send a slew command to a telescope, you will need immediate verification that it is doing as you anticipated. Else, your expensive telescope could wreck on its own instrument pier. When you place a camera showing the dome shutter or roll-off roof, you will know at a glance the status of the observatory. These cameras, typically requiring 12vDC power, require more than a typical 5vDC USB connection for power. I lean toward power over ethernet (PoE) cameras, which receive both their power and communications over the same CAT-5/6 ethernet cable. Some invest in PTZ cameras (pan-tilt-zoom) that can provide a variety of views in a remote setting, but these cameras are prohibitively expensive ($1000 or more). I prefer a fixed type, something like an all-weather (IP67 rated) Hikvision that costs around $120 to $150 each. The "all-weather" part of the equation is important, of course.
 
 Camera enclosures (among other electronics) are rated as either IP65, IP66, or IP67 (sometimes up to IP68 and IP69) depending on their level of "ingress protection (IP)." This IP rating measures ingress of both dust (first number) and water (second number). Thus, while all the aforementioned ratings have a "6" for dust rating (zero dust ingress), they vary in their water resistance. IP65 will protect against water spray, whereas IP66 will withstand a quick immersion in water. IP67 allows for immersion for longer than one minute at a depth of 1 meter. IP68 and IP69 can withstand higher pressures (water depths) over longer time periods. Because a typical IP (internet protocol) security camera will not be used under water, an enclosure built tougher than IP67 is not necessary for security applications.
@@ -176,6 +184,8 @@ Once the MPDU and cameras are in place, you now have the ability to control an o
 Now, if only you had access to live weather data at the observatory then you can shut everything down before the rain comes, as if you were actually there. This is why reliable data about weather is critical. Take it from me, seeing water on the observatory floor via the security camera is typically something you want to avoid. For this, I prefer the Davis Weather Station (DWS) Vantage Pro2, which gives me real-time access to current conditions while also providing the ability to archive the data. In this way, you can look for long-term weather trends for your site, as well as witness periodic weather cycles.
 
 But if it does start raining, there is going to be a lag between the time that the analog sensors on the DWS reports it and the time that the end-user can act on it. Thus, we need another level of automation as protection - a proactive way to sense an immediate change in condition (a shutdown event) and then interrupt normal operation to shut everything down automatically. While the DWS is entirely sufficient if you always monitor and provide oversight during a session, we cannot always be as vigilant as we would like.
+
+![Boltwood 2 cloud sensor output](./_images/weather-05-boltwood.gif)
 
 The great thing about sensors and micro-controllers is that it is not difficult to devise a way to monitor things like wind speed, moisture, and even cloud cover as they happen, and they are intelligent enough to send commands to the observatory control hardware to trigger automated shutdown. On its own, a Davis Weather Station cannot do this, since it's chiefly an analog data recorder. Instead, what is required is something digital, like a Boltwood 2 device or SkyAlert system, to bridge the gap between sensor feedback and the automated shutdown.
 

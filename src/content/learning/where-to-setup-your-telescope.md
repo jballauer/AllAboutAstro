@@ -13,6 +13,8 @@ But when my ambitions turn to quality views of the sky, then a whole new set of 
 
 In this article, we will discuss some of the factors that go through my mind. Everything that I believe you should factor into an observing site decision is itemized as follows, starting, of course, with the geographical location itself.
 
+![My favorite dark sky site near Crowell, Texas](./_images/setup-01-crowell-dark-skies.png)
+
 ## Location
 
 Whether you setup in your light polluted backyard or drive three hours to your chosen site, nothing will impact overall image quality more than this choice. Good location is as important in astronomy as it is in the real estate market.
@@ -75,6 +77,8 @@ While pole access makes it simple to set down a mount and get close to a good al
 
 But if you are new to a site and need to see Polaris to know where to point your mount's polar axis, then picking a location with an unobstructed horizon will be of some importance.
 
+![Jay's rainbow-liveried Airstream](./_images/setup-02-airstream.jpg)
+
 ## Anchoring Down
 
 Once a year, somebody at the Texas Star Party learns a very difficult lesson as a dust-devil captures their telescope, lifts it up in the air, and slams it down on the ground. Likewise, canopies rolling across the observing field are a regular occurrence.
@@ -84,6 +88,8 @@ Did you know that one year at Okie-Tex, some dude's RV awning detached from his 
 When you place tarps on the field, you stake them down. So too with your telescope, if you know that strong winds are a likelihood. NOTE: Don't use anti-vibration pads - they skid easily, they upset polar alignment on a simple bump, and they hinder your ability to anchor your telescope.
 
 This is not something you take a chance with. Anchor down your gear. Place tarps atop your gear for protection. Use a quality scope cover. Bungie cords, stakes, ratchet straps, and zip-ties are requirements in this hobby.
+
+![A packing list for a major star party trip](./_images/setup-03-packing-list.png)
 
 ## Transportation and Packing
 
@@ -179,6 +185,8 @@ As for other equipment, such as laptop computers, you might need an inverter any
 
 You won't see this kind of gear in the field very often, but when you do you'll likely see it powered off an extension cord instead of a battery. But an untidied mess of power bricks and cables can be bypassed with smart planning, no matter what you use or where you use it.
 
+![A tidy power rail setup](./_images/setup-04-img2046.jpg)
+
 ### The Power Rail System
 
 Bricks. They make great houses. And they let you use house current to power electronics. But one thing that ALL bricks have in common is that they are unwieldy blocks of unnecessary size, requiring twice as many cables as you likely need. How do you manage that? At one point on my setups, I've had two bricks for two Robofocusers, a brick for my scope controller, a brick for my USB hub, a brick for my mount, three bricks for cameras, and a brick for my laptop computer.
@@ -194,6 +202,8 @@ Route a USB cable through your mount and put a USB hub next to the Rigrunner alo
 The Rigrunners are available in many sizes and any number of outlets (I use 8 or 10 outlet versions).
 
 There's nothing preventing you from using Power Distribution tools like these when in the field, as it does make cable management easier. But it's not something you want to disassemble each time either. Thus, to make it portable, you would have to compensate for how you transport your telescopes, since the added attachments to your scopes and mounts are unlikely to fit in your instrument cases!
+
+![The power rail system in use](./_images/setup-05-img2587.jpg)
 
 ### Power Summary
 
@@ -221,6 +231,8 @@ You will be glad you did.
 
 **Quick Tip** - Don't spray deet around your equipment. It doesn't treat optical coatings very well, among other things.
 
+
+
 ## Weather and Communications
 
 You absolutely have to love cell phones. Internet and voice communications always with you; that is, right until you reach dark skies. That "unlimited data" plan you just got? Nope, no service. There is a spot on the stairs of one of the bunk houses at TSP where I can get a signal if I face the right direction. At Comanche Springs Astronomy Campus (CSAC) near Crowell, Texas (3RF), which is my normal dark sky hangout, I can now get decent signal with my Verizon iPhone, but I got nothing with AT&T.
@@ -229,6 +241,8 @@ Being in contact with civilization is important. You really should call your fam
 
 Of course, weather is not a respecter of persons, and it could care less if you have a cell phone or not. So what happens when you find yourself in bad weather?
 
+![A tornado warning during a CSAC camping trip](./_images/setup-06-tornado.jpg)
+
 In the spring of 2016, I brought my family and friends with me to CSAC for a weekend of camping and astronomy fun. Of course, some bad weather decided to meet us there. Tornadoes were in the area, a fact that I knew because I was in constant communication with my friend, Jeff Barton, who is the Director of Astronomy for the campus. Although we were spared of a tornado here, we all piled into the storm shelter until the weather had safely passed.
 
 Had this been an astronomy-specific trip, without family and friends, I would have likely stayed home in the first place. Being aware of the weather in the days before a trip can save you grief later. But you should have a plan in case you do get caught in the storm, not only for yourself, but for your equipment. Again, tarps and stakes are important, as are area shelters.
@@ -236,6 +250,8 @@ Had this been an astronomy-specific trip, without family and friends, I would ha
 Cold weather is something to plan for as well. I can't tell you how many times I've had to borrow a coat from Jeff because I wasn't properly prepared for plummeting temperatures in the drier west Texas fall and spring months. Winter is NOT the only time when you probably need a heavy coat. Also, be aware that equipment cannot wear a coat - extremely cold temperatures can cause lubricants to stiffen in mounts. Electronics have potential issues in frigid conditions. Eyepieces are difficult to hold with frozen hands. Also, imagers will need to focus their scopes more often as the temperature drops throughout the evening. Batteries definitely run out sooner in cold weather. There are a lot of factors to consider with cold weather, including who's bringing the hot chocolate!
 
 Heat is less of a problem for many people, but in Texas it can quickly become oppressive during a huge chunk of the year. Taking care of yourself is the most important task. Bring water to drink and sunscreen for the body. Be aware of critter activity as well, since warm weather brings them out in full force. Make sure your cooler has enough ice. Don't laugh - you don't want to be around me when the beer is warm.
+
+![Omega Centauri (NGC 5139)](./_images/setup-07-omega.jpg)
 
 ## Observation Plans
 
@@ -253,13 +269,19 @@ You've made it there. Everything is setup; ready to go. But then, a camera stops
 
 Perhaps, like me, you didn't check that you had BOTH of your DSLR adapters with you during the 2017 total solar eclipse and you were forced to switch cameras over just before totality - seriously, I missed the first 30 seconds of totality this past August because I switched too late from the h-alpha scope to the refractor and needed to get focused!
 
+
+
 ### Omega Adventures
 
 In 2003, I attended my 2nd Texas Star Party. I was an excited tent camper, ready to go with my 10" LX200 Classic and 3" Tak FS-78 with Losmandy GM-8 setups.
 
 I was transitioning at the time, beginning to experiment more with astro CCDs as dedicated imagers, rather than to "autoguide" my film images. Thus, my Nikon F2 SLR with Meade 208xt guider gave way to an SBIG STV, which I purchased to serve both duties, as well as to do live video observing for public outreach events.
 
+![Omega Centauri, first attempt](./_images/setup-08-omega-centauri.jpg)
+
 All kinds of faint objects become visible in those dark skies, but Omega Centauri (NGC 5139) becomes THE prime target for all TSP participants who more than likely travelled somewhere from the north to be there.
+
+![Omega Centauri, a later attempt](./_images/setup-09-omega-1600.jpg)
 
 If an object like Omega is a goal, then where you position yourself should be priority, since you will NOT want to re-align your equatorial setup when you realize that there's a big dob blocking your view. This was my situation.
 
@@ -268,6 +290,8 @@ But when all is good and you have clear access to the photons, you can enjoy the
 One friend, long-time astro-imager, Jason Ware, is fond of saying that, "Star parties are for working on equipment." He makes this statement always in jest - but when you are husband to a wife, father of sons and daughters, boss to employees, and servant of people around you, then TIME isn't always on your side. For many of us, the last time you actually did astronomy was at the last major star party - or, at least, it might be the last time we used our portable gear!
 
 If time under the stars is infrequent, then you have two choices before a major excursion - you can do a practice-run at home to assure that all your gear still does what you expect OR you can manage your expectations, accounting for the fact that something might go wrong and you might need to work on equipment the first night of the event. I have learned to do the latter and try not to get too upset when something isn't totally right!
+
+![Getting setup for a major star party](./_images/setup-10-jeff-vic.jpg)
 
 ## Have Great Friends
 
