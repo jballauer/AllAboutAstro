@@ -7,6 +7,8 @@ draft: false
 
 Best Data Acquisition Practices
 
+![Signal-to-noise ratio comparison, Rosette Nebula mosaic](./_images/dap-01-rosette-snr.jpg)
+
 ​Too often, beginning and intermediate astroimagers worry about all the wrong things.  They try their hands at autoguiding before getting good focus.  They try to take images with a haphazard polar alignment.  They fail to collimate their optics.  They have the wrong adapter or back-spacing and it cuts into the light cone.   
 
 And then, when things go wrong, they cannot figure out what's responsible for the poor performance.   
@@ -436,6 +438,8 @@ Second, making right decisions with permanent enclosures (or wind breaks at star
 Third, the primacy of the mount as your MOST IMPORTANT piece of gear is obvious here...so make a good decision in its purchase.  Don't skimp.
 
 But let me share an important tip...astroimagers, like all astronomers, are soon bitten by the equipment bug.   If you start this hobby thinking that one scope is all you need, then you are just being silly!   Directly correlated to "sampling rate" or "image scale," you will quickly learn that on nights when the wind doesn't let you shoot through the C-11, it doesn't mean that you cannot shoot with a Hyperstar.  Or if you are still worried that you Hyperstar-equipped C-11 is going to act like a big sail, then go "low-profile" with a 80ED apo refractor. ​   See FIGURE 3 below.
+![FIGURE 3 - A Paramount with a Takahashi refractor](./_images/dap-02-paramount-tak.jpg)
+
 Optical Setup - If you have dealt with Takahashi telescopes for any amount of time, you will know that there are exactly 133 adapters to be purchased with any telescope.  I might be over-exaggerating, but not by much!   Oh, and add another adapter (or four) when you decide to connect a camera.  
 
 And it's not just Takahashi.  For ANY setup, particularly when you add camera rotators, reducers, flatteners, filter wheels, off-axis guiders, or focusers to the optical train, you have a lot of math to do...and a lot of decisions to make.   
@@ -546,6 +550,8 @@ But mostly, if you KNOW the guide star movements are NOT occurring because of th
 
 Figure 4 - To PEC or Not? The Takahashi NJP (at left) with a Tak FSQ-106 and SBIG STL-11000M camera. Taken in 2005 at RMSS in Colorado. Despite a lack of PEC implementation, this Tak mount remains one of my all-time favorite performers.
 Sidebar: No PEC, Tak?  What the Heck? 
+![Setups at the Rocky Mountain Star Stare](./_images/dap-03-rmss-setups.jpg)
+
 Story time.   Back in 2004, I achieved some of my first real successes - in terms of consistency and quality - in CCD astroimaging with a Takahashi NJP mount.   It gave me rock-solid autoguiding for the first time in my life.  Its periodic error, measured around 7" peak to peak, was very smooth, with very little random errors.  It seemed a huge leap from my previous Celestron CGE (an erratic 18" peak-to-peak PE) which I struggled with controlling.   Used for several years, despite my successes, I decided to trade the NJP in for a Astro-Physics AP900 mount.   
 
 Why?   Because the AP had PEC.  The Tak did not. 
@@ -583,6 +589,8 @@ For example, there is a crucial mistake I see among narrow-band imagers shootin
 What is Color? When you realize that the details from an image are the grayscale luminance, then you begin to realize that color merely serves this finer data. Shown is an LRGB, that uses the luminance (center) and color (right). The severe 10 pixel radius blur is not enough to deter the luminance from doing its job. Thus, the applications here are enormous...why acquire hours of RGB data when you know that just a little (even blurred) might do the trick? Better yet, why spend hours on OIII or SII data when you know it'll only be used to color the image anyway?
 
 
+![Rho Ophiuchus sampling rate demonstration](./_images/dap-04-rho-oph-demo.jpg)
+
 But here is something you might not have thought about...did you know that you can "harvest" better quality data from either specific parts of individual color channels, or even sub-frames that you might have thrown out?   Here's a thought...since most of the nebulosity in your image is probably contained structurally in the red channel, then why not use it exclusively in your luminance (RRGB)?  Another thought...if you have reflection nebula that is getting lost in the channel merge, then why not map those areas contained only in the blue channel into the luminance as well using a mask?  Those lost, wasted sub-exposures?  Perhaps you can include their stars (as a mask) or their backgrounds into your stack (raising S/N in those areas), yet discard the elements that would otherwise ruin your stack?    Better yet, since color doesn't have to be perfect, why not use that data anyway, especially if it is gradient free?   See What is Color? at left. 
 
 Or, perhaps you separate the scale sizes within your image (with Pixinsight) and boost certain areas in processing independently...it's a good way to enhance IFN (intergalactic flux nebula) and other faint shadow nebulosity that you might not otherwise be able to bring out (ala Rogelio Bernal Andreo).
@@ -605,6 +613,9 @@ Your method for determining seeing should be to take a short exposure with your 
 
 Figure 5 - A stellar profile is the typical bell curve, whereas FWHM is measured half-way up the brightness scale. Notice that when the star core is saturated, you lose the ability to get accurate FWHM measurements.
 Sidebar: Star Profiles
+![FWHM as seen by the eye](./_images/dap-05-fwhm-eyeball.jpg)
+![FWHM and saturation](./_images/dap-06-fwhm-saturation.jpg)
+
 If a star profile measured in FWHM should be identical across your entire image, then what explains the slight differences when I get information about individual stars in m​y software?  
 
 First, understand that taking the width of the star at half its peak value REQUIRES an accurate peak measurement.  With a digital chip, it is easy to saturate the centers of stars with values that exceed their peaks.  Thus, you have to measure only stars that are less than the peak value at your camera's "full-well capacity," information you must know about your CCD or CMOS chip.   And then, you have to consider if your chip adds anti-blooming gates to bleed off photons to prevent blooming (cascading of extra electrons spilling out of the stars).   This "gating" of data doesn't occur when stars ARE full, but rather happens as they approach full-well capacity, which is perhaps 75% of saturation.  Thus, the stars you want to measure need to be safely less than this level.  See Figure 5 above.  
@@ -697,6 +708,8 @@ A quick opinion here:  it's really nice to be able to have an observatory confi
 
 But I believe that if you haven't genuinely struggled with these things, then you will never be able to appreciate just how difficult it is to do what we do.  So, in many cases, and with many amateurs, I feel less of a kindred spirit with those producing great images who didn't really "pay their dues."    Anybody can process great data; but not everybody can truly acquire it. 
 In the 1970s, Noel Burch wrote the Four Stages of Competence, which has become a learning model in many industrial and educational environments.  I feel that a good way to approach these tasks is to understand how we might feel about them using this model. 
+![Figure 6: The Four Stages of Competence](./_images/dap-07-learning-process.jpg)
+
 Figure 6. The Four Stages of Competence - To learn a skill, you can measure mastery by progressing through these four stages. For us, the more aspects of imaging in which we become "unconsciously competent," the better we become in our ability to acquire great data.
 
 

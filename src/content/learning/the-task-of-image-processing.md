@@ -18,7 +18,12 @@ To drive this point home, see the figure at right.  
 The goal of this article is to provide a broad overview of the TASK of IMAGE PROCESSING, so if you are learning via a video or a tutorial you can know why you are doing what you are doing.   
 
 
+![The Lagoon Nebula processed by 16 world-class astroimagers using the same Jim Misti archived data](./_images/tip-01-m8-multi.jpg)
+
 The Lagoon Nebula processed by 16 world-class astroimagers using the same Jim Misti archived data. Multiple interpretations here or merely diversity in techniques... feel free to discuss.
+
+![Balanced histograms after RGB merge](./_images/tip-02-balanced-histograms.png)
+
 Whenever it is that you decide to merge your RGB, you will strive to make similar adjustments to each of the color channels. The visual indicator for this will always be your histogram. Some variance in shape indicates that some localized or independent processing of a channel was done; here, I have hit the red channel with some saturation to boost the emission nebula in the Pinwheel Galaxy (M33). But the thickness of the "hill," as well as its starting and ending points should be very similar (with some exceptions when working with h-alpha data).
 To start, we need to form a distinction between image “data”  (that RAW data which comes from the camera) and the image itself (our final goal).   
 
@@ -67,13 +72,17 @@ Gone!   Poor!   Nevermore!   You lose data that never even had the opportu
 Whether you are choosing a file format, performing a "stretch," or trying to protect your data, you will need to pay attention to the histogram. "Clipping" is an indication that you've lost data on the upper and lower ends (the extreme faint and bright parts of the image). "Combing" typically occurs because the image lacks the dynamic range to perform the stretch you are trying to make.
 
 
-uch egregious errors typically result in a “combed” histogram (see left) at some point during processing, where the gaps in the data caused by truncation into the 8-bit format become very apparent...the data is gone (only 256 brightness levels remain) and there's not enough to fill out the histogram "hill."  So when you see a combed histogram, it's your signal that you went VERY WRONG some place in your processing.  
+![A "combed" histogram, a sign of 8-bit truncation errors](./_images/tip-03-histo-faults.jpg)
+
+Such egregious errors typically result in a “combed” histogram (see left) at some point during processing, where the gaps in the data caused by truncation into the 8-bit format become very apparent...the data is gone (only 256 brightness levels remain) and there's not enough to fill out the histogram "hill."  So when you see a combed histogram, it's your signal that you went VERY WRONG some place in your processing.  
  
 Another way to lose data is by choosing a file format that uses a “lossy” compression scheme, designed to reduce the file sizes.   GIFs and JPGs are the common examples of lossy file formats.    Thus, you will want to work in a TIFF format (when using Photoshop) or the original astronomical FITS when using dedicated astronomy processing software.   PixInsight users will likely want to use their proprietary XISF format (though FITS is typically fine). 
 
 However, a couple of comments concerning JPEGs need to be made here; and a myth that needs to be debunked. 
 
 The histogram corresponds to different zones in an image, as shown. When you "stretch your data," your goal is to maximize the content of the image, allowing all parts of the image to show its awesomeness. Noise will tend to crop up in the shadow areas first.
+![Tonal ranges in a compressed vs uncompressed image](./_images/tip-04-tonal-ranges.png)
+
 First, the amount of compression used in a JPEG is user-configurable.  It is possible to opt for a "compression-less" JPEG format, which does NOT lose information (and the size of the file will show it).   So, calling all JPEG files “lossy” is somewhat inaccurate.  Second, the JPEG does a smart job with its compression scheme.  It greatly reduces file size by eliminating much of the RGB data; however, before doing this, it takes luminance detail from the channels first.  Therefore, it is able to compress the three color channels substantially while retaining its total luminance.  Because of the way the eye perceives luminance data, nothing is lost once the color is recombined.  Thus, as much as people think that working in JPEG is a bad thing, it is very doubtful that even the most experienced processor would notice a difference.   In fact, many expert photographers work exclusively in JPEG for this reason...and they save storage space and processing power to boot.  ​
 ​
 THE SCREEN STRETCH
@@ -98,6 +107,10 @@ It is this understanding of "dynamic range" that ultimately makes you are better
 
 How much is too much? Click on the image and you will see how the data isn't sufficient enough to brighten up areas of detail without a severe noise hit. Will noise reduction work now or will you need better (more) data? Example here is shown in PixInsight.
 In Photoshop, you would use Curves (with Levels) to stretch your data. Shown is a typical curve, whereas shadow areas receive most of the boost. Guard the right side - make sure the input values match the output, else you will push the already bright values too far to the right. The consequence is a loss of color (especially stars) due to over-saturation (the brighter it gets, the more white it becomes).
+![Crater noise example](./_images/tip-05-crater-noise.jpg)
+
+![Proper curves adjustment](./_images/tip-06-proper-curves.png)
+
 Take a look at an example using an easy target like the moon (upper right).   Noise is always most evident in the faint areas of an image and it always becomes more objectionable when you attempt to show detail in those areas.    I would suggest that the center image, while demonstrating some noise, is likely something that a little noise reduction will handle.   While I like the brightness and contrast in the second image, there's just not enough quality in this range of data to stand up well to any noise reduction attempts.   I would reshoot the image striving for slightly longer exposures to make sure that the dynamic range in these areas have higher quality S/N.  
 
 Of course with an image of the moon, we are talking fraction-of-a-second images...so I likely could go quite a bit longer with the image without putting a lot of pressure on things like mount tracking, guiding, etc.  
@@ -247,6 +260,8 @@ Localized Contrast - The goal in image processing is typically to faithfully ren
 
 To accomplish this, a large radius "deconvolution" (sharpening) of the image is normally required.   The best way to simulate this is by opening an image, choosing the Unsharp Mask filter, setting your amount slider to around 20%, and then setting your radius slider anywhere from 5 to 100 pixels, or more.    Experimentation (with the settings) is good, but you probably want to apply this to an adjustment layer and on a selected/feathered area only.  Any sharpening method injects noise, so those same rules apply.    With an adjustment layer, you can come back and control the amount of contrast to apply, yet another one of those aspects that sets Photoshop apart from all the rest (see Sidebar: Photoshop Layers ​for more details).  
 
+![A PixInsight stretch example](./_images/tip-07-pixinsight-stretch.png)
+
 Within PixInsight, the LocalHistogramEqualization (LHE) process accomplishes something very similar, allowing the user to set a Kernel radius and amount of effect and a contrast limit.   Since the process is global (unless you have used a structure mask), care must be taken not to inject noise into parts of the image.  
 
 In some cases, I use the HDRMultiscaleTransform process in tandem with the LHE, since the latter will often boost the white point too much, something that can be regained with the former.   HDRMultiscaleTransform essentially increases dynamic range in an image, working to compress highlights (and boost shadows) and allowing you to see details that might be hidden in such areas of increased saturation (see image below). 
@@ -267,10 +282,14 @@ The most recent versions of Photoshop have taken Layers a step further, allowing
 
 Therefore, Photoshop's power comes in its intuitive feel of seeing the processes stacked in Layers.   This is what sets PS apart from all other software packages, even PixInsight.  Even if most of your pre-processing and stretching is accomplished in PixInsight, it's very likely that MOST people still do their finish work in Photoshop, something that I doubt will be changing anytime soon in our hobby. 
 
+![HDR and LHE applied in PixInsight](./_images/tip-08-hdr-lhe.png)
+
 Looking at how this Carboni's Photoshop Action works, I have used the exact same sub-frame of M31 as the above PixInsight example (see below).  
  I ran two instances of the Action, the results shown on the right of the above image.  I selected only the background (no stars), otherwise, the stars would take on hard edges and bloat.  I really like the Carboni action, which seems to also run noise rejection to counteract the rise of noise, which is the byproduct of any such boost to localized contrast.   It's very smart!
 
 QUICK TIP:  Be on the lookout for your stars.   Sometimes your feathered selection might still include a portion of the stars and they might be adversely affected anyway.   Don't make assumptions.  Verify the stars are as intended.   Your stars will lose color before they bloat...it's an early warning signal!
+
+![M31 after the Carboni action, processed in Photoshop](./_images/tip-09-m31-carboni.png)
 
 Luminance Merging - As I mentioned earlier, I typically run any detail processing, including local contrast enhancement on the luminance of an image, but this does not mean that you cannot run it on pure RGB, like in the above DSLR image of M31.   I just prefer to limit the side-effects of chrominance noise when I process luminance details.  This is the heart of the LRGB technique.  Since the L and RGB are vastly different in the way they should be handled, it makes a lot of sense to keep them separate for the entirety of the process.
 
@@ -308,6 +327,8 @@ You need to realize that just because you have a big canvas or CCD chip, you don
 
 
 Sidebar: The LLRGB Technique
+![Rho Ophiuchus luminance merging demonstration](./_images/tip-10-rho-oph-demo.jpg)
+
 Those familiar with LRGB probably understand the virtues of taking separate luminance data and applying it to the RGB color during processing.   But you may not fully realize how REAPPLICATION of the luminance (hence the "double-L") can drastically improve the color and overall quality of an image.
 
 Many who shoot color data do so in light polluted conditions, which puts a premium on total exposure time.   And typically, if you are like me, the color seems pretty weak as a result...the blue filter, especially, is the bane of my existence.  
@@ -328,6 +349,8 @@ The ramifications are LLRGB are many, meaning that you can work less hard to get
 
 But even if you do not take separate luminance data, the ability to perform similar actions on a synthetic luminance is a power all its own.   Learning to create such luminance from existing data is a great skill to know! 
 The golden ratio is an aesthetic that we are naturally comfortable with - which assures that you have images that resonate well with your audience. Key features should never be placed in the center, rather around the 2/5th mark. This is roughly analogous to the "rule of thirds," which is less anal about the percentages.
+![Relative chip sizes](./_images/tip-11-chip-sizes.jpg)
+
 The truth is, much of that space is likely unusable unless you have spent a TON of money on optics that are designed for big chips.  Thus, you probably need to plan around that, which makes cropping a huge part of our game plan.  
 
 But HOW you crop and HOW you rotate the image can really set your image apart.  A few tips in that regard:
@@ -353,6 +376,16 @@ So, I went back to my images to see if any of them merited an adjustment.  Coul
 When I revisited this image of the Cocoon, I noted how there was nothing but stars in the upper-left corner.  Perhaps you see that too?   Interestingly, it was the lower right corner that has something of interest - a bright blue star with perfect refractor spikes setting the scene for the reflection of its light off the background dust, which in turn cascades like a river toward the turbulent center.   So, I decided to rotate and slight crop the image further, as shown at right.  
 
 Perhaps you do not agree, but I feel that the image improved DRASTICALLY by this one simple move.  8 hours of data acquisition followed by another 8 hours (or more) in data processing...and it took 30 seconds to do what is arguably the single most impactful thing for my image!  
+![The golden ratio applied to composition](./_images/tip-12-golden-ratio.png)
+
+![Cropping example, M27](./_images/tip-13-m27-cropping.png)
+
+![Cocoon Nebula, wider crop](./_images/tip-14-cocoon1.jpg)
+
+![Cocoon Nebula, tighter crop](./_images/tip-15-cocoon2.jpg)
+
+![How to crop M16](./_images/tip-16-crop-m16.png)
+
 How are your images consumed?  - When I first began imaging with a telescope in 1997, Facebook was still 7 years away.   The first iPhone was 10 years away.   
 
 When I finally went digital, moving from film to CCDs, it was around 2002, first using CCDs to "autoguide" my film images, and then progressing totally to CCD once I purchases my SBIG ST-7E with the KAF-0400 chip (see the blue chip in the above chip comparison diagram).  Talk about small by today's standards, but my goodness did it produce good images!   (See Sidebar: CCD Choices below for further thoughts on this.) 
