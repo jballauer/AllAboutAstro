@@ -102,6 +102,8 @@ These Pickett slide rules are "specialty" rules because they were designed or ma
 - Model 400 Business
 
 ### Circular Rules
+![Pickett 103-ES circular rule](./_images/pickett-103es-2.jpg)
+
 - 103-ES Mark-Up
 - 106C Proportional Scale
 - 105-C Profit Rule

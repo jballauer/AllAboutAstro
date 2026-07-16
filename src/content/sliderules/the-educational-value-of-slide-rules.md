@@ -59,6 +59,14 @@ Look up any state standards for a math class and you will see the idea of a "mat
 Dig into your state's course objectives and you'll see process standards as required for student success. In Texas, this is what the "TEKS" are for Precalculus, which includes not only the concept of the manipulative, but also "mental math, estimation, and number sense" as techniques. (Note as well "reasonableness of the solution" in P.1.B above it.) The slide rule is a perfect "manipulative" because it requires those techniques when using it. I would advocate the use of slide rules in modern education as a way to not only meet all of these requirements, but to help improve this skill deficiency in our students.
 But replacing manipulatives with calculators is exactly what happened!
 
+![Slide rule classroom photo](./_images/edu-01.jpg)
+![Slide rule classroom photo](./_images/edu-02.jpg)
+![Slide rule classroom photo](./_images/edu-03.jpg)
+![Slide rule classroom photo](./_images/edu-04.jpg)
+![Slide rule classroom photo](./_images/edu-05.jpg)
+![Slide rule classroom photo](./_images/edu-06.png)
+
+
 The idea of a manipulative was tossed by the wayside in favor of, first calculators, and then smart-devices.  In this new paradigm, technology BECAME the manipulative.  And it continues to this day.   In fact, when my administrators assess my teaching formally, they only care about seeing that I'm using a form of technology, and not even as a part of a specific lesson plan.   As long as I have the specific learning objective written on the board; good enough, it seems!  
 
 Technology replacing manipulatives; it all started with good intentions.  In fact, I remember being rewarded with a trip to the elementary school library in the late 1970s where I could play a Star War's themed text-based adventure game on the school's only Apple II Computer.  To be honest, it didn't teach me to read, but it did encourage it.   But this is quickly what technology became...let's trick students into learning through educational video games!   
@@ -198,6 +206,14 @@ This is where students of yesteryear would have known inherently something that 
 Of course this is the restriction with slide rules, since the real answer is 4404, which is out of the typical three significant digits of resolution.  But the 4400 approximation would have been considered accurate enough in that era of slide rule usage.  However, the typical student would not have let that stop them...he or she would have known the last digit had to be a 4 simply because in the original problem, when the last digits of the numbers are multiplied, it would have required the last digit to be a 4.   Thus, 4404 is the result most students would have achieved with the slide rule! 
 
 When is the last time YOUR student used scientific notation so elegantly? 
+
+![Slide rule classroom photo](./_images/edu-07.png)
+![Slide rule classroom photo](./_images/edu-08.jpg)
+![Slide rule classroom photo](./_images/edu-09.png)
+![Slide rule classroom photo](./_images/edu-10.png)
+![Slide rule classroom photo](./_images/edu-11.jpg)
+![Slide rule classroom photo](./_images/edu-12.jpg)
+
 
 As a teacher of any level of math, it is important to have students evaluate their solutions for reasonableness.  In many cases now, as opposed to earlier in my career, this has become a missing skill for an alarming number of my students.  I wish I didn't have to keep reminding them to watch their mode in the calculator when doing trigonometry; but alas, unless they know the answer in advance, most students don't catch the mistake. So, in my world of Precalculus, having some understanding of what a reasonable solution looks like is a skill that you do not want to be without.  A slide rule serves as a lovely and fun way to give students an inherent awareness of the magnitude or size of a computation! 
 Improved Numeracy
@@ -395,6 +411,14 @@ log(30)=log(3×10)=log3+log10=0.477(mantissa)+1(characteristic)=1.477
 =
 1.477
 
+![Slide rule classroom photo](./_images/edu-13.jpg)
+![Slide rule classroom photo](./_images/edu-14.png)
+![Slide rule classroom photo](./_images/edu-15.png)
+![Slide rule classroom photo](./_images/edu-16.jpg)
+![Slide rule classroom photo](./_images/edu-17.jpg)
+![Slide rule classroom photo](./_images/edu-18.jpg)
+
+
 log(300)=log(3×100)=log3+log100=0.477(mantissa)+2(characteristic)=2.477
 𝑙
 𝑜
@@ -512,6 +536,14 @@ log(3000)=log(3×1000)=log3+log1000=0.477(mantissa)+3(characteristic)=3.477
 )
 =
 3.477
+
+![Slide rule classroom photo](./_images/edu-19.jpg)
+![Slide rule classroom photo](./_images/edu-20.png)
+![Slide rule classroom photo](./_images/edu-21.jpg)
+![Slide rule classroom photo](./_images/edu-22.jpg)
+![Slide rule classroom photo](./_images/edu-23.jpg)
+![Slide rule classroom photo](./_images/edu-24.jpg)
+
 
 Of course, the calculator inputs this value directly, assuming we are using the correct log base on the calculator (not always a given with students).  However, the association between these values, the pattern, will not be obvious to students unless I have a reason as a teacher to show it to them.  Doing so helps the students with a perspective of the magnitude of the logs themselves, giving them expectations for which they can provide estimates and check for reasonableness of solution.   Likewise, the pattern reinforces this very important Product Rule for Logs, which my students are required to know.  This gives students a visual and practical application for this rule, and for logarithms themselves.
 
@@ -641,6 +673,14 @@ log(2)+log(3)=log(2×3)=log(6)
 6
 )
 
+![Slide rule classroom photo](./_images/edu-25.jpg)
+![Slide rule classroom photo](./_images/edu-26.jpg)
+![Slide rule classroom photo](./_images/edu-27.jpg)
+![Slide rule classroom photo](./_images/edu-28.jpg)
+![Slide rule classroom photo](./_images/edu-29.jpg)
+![Slide rule classroom photo](./_images/edu-30.jpg)
+
+
 Therefore, a slide rule is the physical manifestation of the Product Rule of Logs.   
 
 On a typical slide rule these two scales are typically labeled "C" and "D", and they are used to do both multiplication and division operations.  
@@ -767,6 +807,14 @@ Note that  
 22
 7
  is usually given by many teachers as a rational number approximation for pi.  We see it here clearly on the slide rule!  
+
+![Slide rule classroom photo](./_images/edu-31.jpg)
+![Slide rule classroom photo](./_images/edu-32.jpg)
+![Slide rule classroom photo](./_images/edu-33.jpg)
+![Slide rule classroom photo](./_images/edu-34.jpg)
+![Slide rule classroom photo](./_images/edu-35.jpg)
+![Slide rule classroom photo](./_images/edu-36.jpg)
+
 
 Oh, and if it is helpful, 
 710
@@ -938,6 +986,14 @@ y
 1
  equation, allowing you to find one leg when given the other if the hypotenuse is 1.  So again, by dividing all triangle sides by the hypotenuse to begin with, then the slide rule makes quick work of solving right triangles.  
 
+![Slide rule classroom photo](./_images/edu-37.jpg)
+![Slide rule classroom photo](./_images/edu-38.jpg)
+![Slide rule classroom photo](./_images/edu-39.jpg)
+![Slide rule classroom photo](./_images/edu-40.jpg)
+![Slide rule classroom photo](./_images/edu-41.jpg)
+![Slide rule classroom photo](./_images/edu-42.jpg)
+
+
 And perhaps it's not escaped your notice that if you can solve triangles in this fashion, then you can also use the P scale to compute the trig identity:
 
 si
@@ -1061,6 +1117,14 @@ e
 20
  (20.085 with calculator).
 Figure 2 - Here, we have the rule set at the hairline with the right index (10) of the C scale aligned with 2.0 on the LL2 scale. From this setting, any power with base 2 can be seen on the rule, with the input on the C scale (in yellow) and the answer read off the LL3 scale. In the circled areas, from left to right, we see 2, 3, 4, and 5 on the C scale with outputs on LL2 as 4, 8, 16, and 32 respectively.
+
+![Slide rule classroom photo](./_images/edu-43.jpg)
+![Slide rule classroom photo](./_images/edu-44.jpg)
+![Slide rule classroom photo](./_images/edu-45.jpg)
+![Slide rule classroom photo](./_images/edu-46.jpg)
+![Slide rule classroom photo](./_images/edu-47.jpg)
+![Slide rule classroom photo](./_images/edu-48.jpg)
+
 
 
 The implication of this should be obvious.  If used in a fixed position without the slide, then the position of the cursor on D (which is identical to C), shows the value of base 
@@ -1187,6 +1251,14 @@ log(4.1)
 )
 . The solution will be found on the back of the rule in Figure 4. Of special note is the magnifying cursor, which many makers used on rules that are otherwise too small to read.
 Figure 4 - Many rules like this have scales on the back of the slide. Here, the middle L scale is for base 10 logs. The result is read off of the red hairline on the small back window, 0.613 as shown here. For basic rules without Log Log scales, log problems always have to be converted to base 10 using the "change of base" rule. If the problem is already base 10, yet for arguments less than 1, then other log rules will apply, by necessity.
+
+![Slide rule classroom photo](./_images/edu-49.jpg)
+![Slide rule classroom photo](./_images/edu-50.jpg)
+![Slide rule classroom photo](./_images/edu-51.jpg)
+![Slide rule classroom photo](./_images/edu-52.jpg)
+![Slide rule classroom photo](./_images/edu-53.jpg)
+![Slide rule classroom photo](./_images/edu-54.jpg)
+
 
 
 Figure 5 - Despite being a base 10 problem, the 
@@ -1323,6 +1395,13 @@ Likewise, there are also what is called "folded" scales on a slide rule, as we t
 √
 10
  depending on the manufacturer), is lifted off the scale and reapplied at the end.  This yields a single index at the center of the rule.   As such, if folded at pi, it can either be used to automatically multiply a number by pi (making circle computations knowing the radius a breeze), but also can be used instead of the C and D scales for multiplication operations to assure an index is always on the rule.   This promotes the idea that there's more than one way to do things, and some ways are more efficient than others.   This is something my students today seem to struggle with. 
+
+![Slide rule classroom photo](./_images/edu-55.jpg)
+![Slide rule classroom photo](./_images/edu-56.jpg)
+![Slide rule classroom photo](./_images/edu-57.jpg)
+![Slide rule classroom photo](./_images/edu-58.jpg)
+![Slide rule classroom photo](./_images/edu-59.jpg)
+
 
 Speaking of efficiency, a slide rule can also be used as a function table to do multiple operations at once.   For example, with the slide rule at left, when the middle slide is removed inputs on the D scale can be read as outputs on the L, K, and A scales by just moving the hairline.  This slide rule, as are many of the European slide rules, are also "self-documenting," putting the functions they perform on the right side of the scale (see also above).   As such, logs, cubes, and squares can be quickly read almost simultaneously, all without really needing to decipher what the L, K, and A scales actually mean.
 
@@ -1510,6 +1589,9 @@ Figure 4 - When the sum has "carry-over" digits, spilling into a 4 digit sum, th
 +
 847
  by aligning 714 up with the right index of the bottom scale. Borrowing a glass cursor from a real slide rule, you can see the sum on the hairline of the top scale. Of course, students would need to know to add another digit to the computation when the right index is used like this.
+
+
+
 
 
 ​Method 2:  If logarithmic scales can perform multiplication and division, then what kind of scales can do addition and subtraction?  If you said linear scales, like a ruler, then you certainly know what you can do next...have students use two rulers and show them how to compare those distances to do addition and subtraction operations.   
