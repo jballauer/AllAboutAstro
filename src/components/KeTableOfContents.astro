@@ -20,42 +20,66 @@ const items = [
 ];
 
 const hrefFor = (id: string) => id === 'all-about-ke-rules' ? '/sliderules/all-about-ke-rules/' : `/sliderules/${id}/`;
+const currentItem = items.find((item) => item.id === currentId);
 ---
 
-<nav class="ke-toc" aria-label="All About Keuffel & Esser Rules — table of contents">
-  <h2>Table of Contents</h2>
-  <ul>
-    {items.map((item) => (
-      <li>
-        <a href={hrefFor(item.id)} aria-current={item.id === currentId ? 'page' : undefined}>{item.label}</a>
-      </li>
-    ))}
-  </ul>
-</nav>
+<details class="ke-toc">
+  <summary>
+    Table of Contents
+    {currentItem && <span class="ke-toc-current">— {currentItem.label}</span>}
+  </summary>
+  <nav aria-label="All About Keuffel & Esser Rules — table of contents">
+    <ul>
+      {items.map((item) => (
+        <li>
+          <a href={hrefFor(item.id)} aria-current={item.id === currentId ? 'page' : undefined}>{item.label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</details>
 
 <style>
   .ke-toc {
     background-color: #1d5f8a;
     color: #fff;
-    padding: 20px;
     margin: 0 0 1.5rem;
     box-sizing: border-box;
   }
-  .ke-toc h2 {
+  .ke-toc summary {
+    cursor: pointer;
+    padding: 0.75rem 1.1rem;
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.06em;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #fff;
-    margin: 0 0 0.9rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+    list-style: none;
+  }
+  .ke-toc summary::-webkit-details-marker {
+    display: none;
+  }
+  .ke-toc summary::before {
+    content: '▸ ';
+  }
+  .ke-toc[open] summary::before {
+    content: '▾ ';
+  }
+  .ke-toc-current {
+    font-family: var(--font-body);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .ke-toc nav {
+    padding: 0 1.1rem 1.1rem;
   }
   .ke-toc ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-top: 0.6rem;
+    border-top: 2px dotted rgba(255, 255, 255, 0.5);
     columns: 2;
     column-gap: 2rem;
   }
