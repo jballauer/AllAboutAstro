@@ -31,13 +31,21 @@ Thus, technology for this rule was nothing new, as they'd been developing upon t
 
 The back side, with only a CI scale on the bottom of the slide and another D scale on the bottom rail, allows users to invert their multiplications to work more like a division problem, without any distractions from other scales. Strangely, with only two scales on the back there is a conspicuous amount of empty space on the rule. K&E intended for users who do commonly performed conversions or computations to use this void on the rule to mark their own "gauge-points" to align with the index marks. Seems like a great idea, though it does make for a sparse presentation on the back side of the rule.
 
+<div class="ke-figure ke-figure-left ke-figure-third">
+
+![The back of the Model 4095-3 Merchant's Duplex slide rule](./_images/ch4-02-4094-merchants-mannheim.jpg)
+
+<p class="ke-figure-caption">The back of the Model 4095-3 Merchant's Duplex — just the CI and D scales, with the conspicuous empty space K&E left for owners to mark their own gauge-points.</p>
+
+</div>
+
 The Model 4095 came with a frameless glass indicator and a "Morocco" case (box) at a cost of $4.50, which was also the cost of the Model 4041 Mannheim. For further perspective, this is the least expensive duplex rule when it was introduced in 1915, with the Model 4088 priced at $7.00 and the Model 4092 at a dollar more. The older Duplex Family of rules, two years before being discontinued, were also available in 1915 at 50 cents more for the base version and $2.00 more for the "T" or trig version. The 4095 also beat the Model 4053-3 Polyphase Mannheim in cost, coming in at 50 cents less.
 
 In 1922, the year of the introduction of serial numbers and the celluloid-wrapped edges, the 4095 was renamed the Model 4095-3, with 5" and 20" rules being added, the Model 4095-1 and Model 4095-5 respectively. The 4095-3 was $5.50 that year, with the case-upgraded "S" version at $6.35. The 4095-5 and 4095-5S were $13.00 and $14.50. The 4095-1 only came in as an S version, priced the same as the 10" model (with basic case). This 20" Model 4095-5 rule would only last 4 years and is a quite rare rule, with only two of them popping up on eBay since 1999 at a cost of ~$50, though because one hasn't been listed in a dozen years, it might sell for as much as a Chevy. The 5" Model 4095-1 would endure alongside the 10" version until 1943; however, it is almost as rare as the 20" version, popping up on eBay every couple of years, though with an average cost of around $75.
 
 A year after the 4095-5 was discontinued, it would return in a different guise in 1927 as the Model 4096 Desk rule for $18. Enclosed in a nice wooden case, and able to be worked IN the case, the Mannheim-style rule was much larger in cross-section than the typical Mannheim, with attached metal feet that lifted the rule off of the table at an angle, yet solid enough to be worked with one hand (freeing a hand to write down computations). A knob on the slide allowed for slide movement. The scales were a repeat of the Model 4095's front side, with DF [CF, C] D. There were no scales on the back of the slide. In 1930, the desk rule would become the Model N4096 when it added a CI to the middle of the slide. This made it a more complete Merchant's model, though it wouldn't not be classified as such in catalogs.
 
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-right">
 
 ![The Model N4096 Desk rule, enclosed in its wooden case with metal feet](./_images/ch4-04-n4096-desk-rule.jpg)
 
@@ -54,14 +62,6 @@ If we go by the product catalogs, then the Merchant's Model 4094 was born in 193
 ![The Model 4094 Merchant's Mannheim slide rule (top) alongside the front of the Model 4095-3 Merchant's Duplex (bottom)](./_images/ch4-03-4095-3-merchants-duplex.jpg)
 
 <p class="ke-figure-caption">The Model 4094 Merchant's Mannheim (top, stamped &lt;4094&gt;) alongside the front of its duplex sibling, the Model 4095-3 (bottom, stamped &lt;4095-3&gt;), both from the author's collection. The 4094 alone carries a CI scale — the 4095-3's front omits it, reserving CI for the back.</p>
-
-</div>
-
-<div class="ke-figure">
-
-![The back of the Model 4095-3 Merchant's Duplex slide rule](./_images/ch4-02-4094-merchants-mannheim.jpg)
-
-<p class="ke-figure-caption">The back of the Model 4095-3 Merchant's Duplex — just the CI and D scales, with the conspicuous empty space K&E left for owners to mark their own gauge-points.</p>
 
 </div>
 
