@@ -53,7 +53,7 @@ Production rates were fairly linear, with around 66,000 units made prior to Worl
 
 There is also an extra wild-card where serial numbering is concerned. K&E used specific serial numbers for certain models as separate from the usual SN# chain, which was reserved for mostly their wood-constructed rules. As of 1947, any of the plastic rules are not included within the serial number line-up as they had their own series for numbering. There has been a recent attempt to rationalize K&E serial numbers to dates of manufacture among the plastic K&E rules by Mike Syphers, Eamonn Gormley, and Kurt Dietrich at Mike's Substack website here. It's an encouraging, yet still early look at serial number classification and considerations with most of K&E's plastic slide rules. Finally, as stated, slide rules made prior to 1922 did not have serial numbers at all. Thus, it's typically the post-1922 wooden rules that are more easily dated (not including the Beginner's 4058 rules that never had serial numbers).
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![K&E serial number and production dates chart, courtesy of Clark McCoy](./_images/ch1-02-serial-numbers-chart.jpg)
 
@@ -67,7 +67,7 @@ In dating my own slide rules, I typically use the chart above to give me an idea
 
 Let's now establish some of the construction jargon that we will use. Slide rule bodies had very similar, common elements, those being two fixed, grooved rails (or stators) and a tongued slide, free to glide between the rails. The way the rails are fixed together determines the platform for the slide rule, either single-sided or double-sided.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![A K&E single-sided rule showing formula and conversion charts on its back](./_images/ch1-03-single-sided-backs.jpg)
 

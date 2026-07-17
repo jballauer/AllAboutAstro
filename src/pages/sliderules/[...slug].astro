@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import KeTableOfContents from '../../components/KeTableOfContents.astro';
 import signatureImage from '../../assets/home/signature-transparent.png';
 import { getCollection, render } from 'astro:content';
+import { getLastUpdated } from '../../utils/lastUpdated.js';
 
 export async function getStaticPaths() {
   const entries = await getCollection('sliderules');
@@ -20,11 +21,18 @@ const isKeSubPage = entry.id.startsWith('all-about-ke-rules/');
 // chapter/appendix pages — the closing signature belongs only at the true
 // end of an article, not at the bottom of every split-out page.
 const isKePage = entry.id === 'all-about-ke-rules' || isKeSubPage;
+const isKeLandingPage = entry.id === 'all-about-ke-rules';
+const keLastUpdated = isKeLandingPage
+  ? getLastUpdated('src/content/sliderules/all-about-ke-rules')
+  : null;
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <article>
     <h1>{entry.data.title}</h1>
+    {keLastUpdated && (
+      <p class="ke-last-updated">Last updated: {keLastUpdated}</p>
+    )}
     {isKeSubPage && <KeTableOfContents currentId={entry.id} />}
     <Content />
     {!isKePage && (
@@ -40,5 +48,17 @@ const isKePage = entry.id === 'all-about-ke-rules' || isKeSubPage;
   .article-signature {
     display: block;
     margin: 1.5rem 0 0 auto;
+  }
+
+  .ke-last-updated {
+    display: inline-block;
+    margin: 0 0 1.25rem;
+    padding: 0.35rem 0.85rem;
+    border-left: 4px solid #b3261e;
+    background: #fdf1ef;
+    color: #6b1410;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
   }
 </style>
