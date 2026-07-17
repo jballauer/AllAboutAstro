@@ -35,8 +35,6 @@ The Model 4095 came with a frameless glass indicator and a "Morocco" case (box) 
 
 In 1922, the year of the introduction of serial numbers and the celluloid-wrapped edges, the 4095 was renamed the Model 4095-3, with 5" and 20" rules being added, the Model 4095-1 and Model 4095-5 respectively. The 4095-3 was $5.50 that year, with the case-upgraded "S" version at $6.35. The 4095-5 and 4095-5S were $13.00 and $14.50. The 4095-1 only came in as an S version, priced the same as the 10" model (with basic case). This 20" Model 4095-5 rule would only last 4 years and is a quite rare rule, with only two of them popping up on eBay since 1999 at a cost of ~$50, though because one hasn't been listed in a dozen years, it might sell for as much as a Chevy. The 5" Model 4095-1 would endure alongside the 10" version until 1943; however, it is almost as rare as the 20" version, popping up on eBay every couple of years, though with an average cost of around $75.
 
-A year after the 4095-5 was discontinued, it would return in a different guise in 1927 as the Model 4096 Desk rule for $18. Enclosed in a nice wooden case, and able to be worked IN the case, the Mannheim-style rule was much larger in cross-section than the typical Mannheim, with attached metal feet that lifted the rule off of the table at an angle, yet solid enough to be worked with one hand (freeing a hand to write down computations). A knob on the slide allowed for slide movement. The scales were a repeat of the Model 4095's front side, with DF [CF, C] D. There were no scales on the back of the slide. In 1930, the desk rule would become the Model N4096 when it added a CI to the middle of the slide. This made it a more complete Merchant's model, though it wouldn't not be classified as such in catalogs.
-
 <div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![The Model N4096 Desk rule, enclosed in its wooden case with metal feet](./_images/ch4-04-n4096-desk-rule.jpg)
@@ -44,6 +42,8 @@ A year after the 4095-5 was discontinued, it would return in a different guise i
 <p class="ke-figure-caption">The Model N4096 Desk rule, K&E's 1927 reworking of the discontinued 20" Model 4095-5 into a large, table-mounted Mannheim-style rule.</p>
 
 </div>
+
+A year after the 4095-5 was discontinued, it would return in a different guise in 1927 as the Model 4096 Desk rule for $18. Enclosed in a nice wooden case, and able to be worked IN the case, the Mannheim-style rule was much larger in cross-section than the typical Mannheim, with attached metal feet that lifted the rule off of the table at an angle, yet solid enough to be worked with one hand (freeing a hand to write down computations). A knob on the slide allowed for slide movement. The scales were a repeat of the Model 4095's front side, with DF [CF, C] D. There were no scales on the back of the slide. In 1930, the desk rule would become the Model N4096 when it added a CI to the middle of the slide. This made it a more complete Merchant's model, though it wouldn't not be classified as such in catalogs.
 
 Note: This rule is not to be confused with a very early All-Metal Mannheim Model 4096, a rule we will discuss toward the end of our text. It is an absolute unicorn and has nothing to do with the Merchant rules.
 
