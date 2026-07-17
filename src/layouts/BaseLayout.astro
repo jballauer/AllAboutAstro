@@ -150,6 +150,29 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     padding: 0.25rem 1.25rem;
     color: #b8c0d0;
   }
+  /* Magazine-style pull-quote: a call-out repeating/summarizing a nearby
+     line, set apart with rules above and below and a much larger size —
+     not a typical indented quotation block. Opt in with class="ke-callout";
+     the plain blockquote above stays the default for genuine quotations
+     (e.g. a long anecdote or a historical rule inscription) where this
+     large centered treatment would be wrong. */
+  blockquote.ke-callout {
+    border-left: none;
+    margin: 2rem 0;
+    padding: 1.1rem 0.5rem;
+    border-top: 2px solid var(--color-heading);
+    border-bottom: 2px solid var(--color-heading);
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--color-heading);
+  }
+  blockquote.ke-callout :global(p) {
+    margin: 0;
+  }
 
   /* shared callout-box visual (Weebly "colored box" widget) — used by
      Aside.astro (floated, article prose) and by page-specific multi-column
@@ -312,6 +335,33 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-figure-third.ke-figure-left,
   .ke-figure-third.ke-figure-right {
     width: 31%;
+  }
+  /* Smaller preset for a figure that must float opposite a sidebar that's
+     still active nearby — a "third" is too wide once a sidebar has also
+     claimed part of the row, squeezing body text into the leftover middle
+     strip. This leaves enough room for real wrapped text beside both. */
+  .ke-figure-quarter.ke-figure-left,
+  .ke-figure-quarter.ke-figure-right {
+    width: 22%;
+  }
+  /* A plain (non-floated) figure is a block-level replaced element that
+     stays anchored to the container's own edge regardless of width — it
+     does not shift sideways to sit beside an active float, so narrowing it
+     alone still leaves it overlapping a wide sidebar and gets deferred
+     below it entirely (relocating the "void" rather than fixing it). This
+     variant floats instead, at a width just under the space left over next
+     to a `data-width="wide"` sidebar (~58% + gutter, leaving ~39%), so it
+     tucks in beside the sidebar immediately, full-width of that remaining
+     column, with too little left over for body text to wrap into a
+     cramped sliver beside it. */
+  .ke-figure-column {
+    float: left;
+    /* Match the column left over next to a wide sidebar (100% - 58% - its
+       1.75rem gutter) as closely as possible — a narrower figure leaves a
+       useless sliver next to it that body text still tries to wrap into,
+       recreating the one-word-per-line bug this class exists to avoid. */
+    width: calc(42% - 1.75rem - 2px);
+    margin: 0.3rem 0 1rem 0;
   }
   .ke-clear {
     clear: both;

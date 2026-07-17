@@ -16,6 +16,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const isKeSubPage = entry.id.startsWith('all-about-ke-rules/');
+// The K&E Rules piece is one article split across a landing page + many
+// chapter/appendix pages — the closing signature belongs only at the true
+// end of an article, not at the bottom of every split-out page.
+const isKePage = entry.id === 'all-about-ke-rules' || isKeSubPage;
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -23,8 +27,12 @@ const isKeSubPage = entry.id.startsWith('all-about-ke-rules/');
     <h1>{entry.data.title}</h1>
     {isKeSubPage && <KeTableOfContents currentId={entry.id} />}
     <Content />
-    <div class="ke-clear"></div>
-    <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="article-signature" />
+    {!isKePage && (
+      <>
+        <div class="ke-clear"></div>
+        <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="article-signature" />
+      </>
+    )}
   </article>
 </BaseLayout>
 

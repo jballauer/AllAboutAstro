@@ -113,7 +113,11 @@ Note that early on, K&E rolled out a revamped series of the Duplex and Specialty
 
 Earlier models in the Mannheim family of rules pose extraordinary degree of difficulty to describe. Mostly, we can thank the lack of surviving samples of these rules for this, as well as the absence of good descriptions or any firsthand, anecdotal, historical reports. But there will be a recurring theme until we get to the "flagship" Mannheim model in this family, the Model 4041 Series: up until the turn of the century, K&E seemed content to provide slide rules to customers using whatever was readily available to them, including from multiple suppliers, without too much rigid adherence to what the catalog stated was available.
 
-> "Early models in the Mannheim family of rules pose extraordinary degree of difficulty to describe...K&E seemed content to provide slide rules to customers using whatever was readily available to them...without too much rigid adherence to what the catalog stated was available."
+<blockquote class="ke-callout">
+
+"Early models in the Mannheim family of rules pose extraordinary degree of difficulty to describe...K&E seemed content to provide slide rules to customers using whatever was readily available to them...without too much rigid adherence to what the catalog stated was available."
+
+</blockquote>
 
 As we will see, the development of a standard celluloid-covered mahogany Mannheim side rule with the ever-so-familiar "K&E look" was most definitely a process!
 
@@ -123,7 +127,7 @@ Ordered historically, the major slide rule models in the Mannheim family include
 
 Let's start with a description of these first slide rules offered by K&E before we get into the real issues of the rules' manufacture.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-column">
 
 ![Catalog illustration of the K&E Model 479 Engineers Slide Rule](./_images/ch2-01-model479-catalog-ad.jpg)
 
@@ -143,7 +147,7 @@ It seems to be the general consensus that two companies were mostly responsible 
 
 If I had to hazard a guess who K&E chose to manufacture these early Model 479 Mannheim rules, then I would suggest Tavernier-Gravet. Comparisons of known samples of T-G rules with model illustrations in the K&E product catalogs should be all we need to be rather definitive about the provenance of these rules. There are enough samples of T-G rules around today, including one in my own collection, pictured below, that gives us a strong indication of what these Model 479 slide rules might have been.
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure ke-figure-column">
 
 ![A Tavernier-Gravet Mannheim slide rule with brass chisel indicator](./_images/ch2-02-tavernier-gravet-479.jpg)
 
@@ -157,9 +161,7 @@ I credit Taverner-Gravet with the majority of the production of the Model 479, c
 
 So it should be noted that the Tavernier-Gravet rule in my collection could very well have been the same rule sold by K&E during this era, despite not having a K&E maker's mark on the rule. I feel this might be especially true in the early years of the company when K&E seemed urgent to increase their catalog offerings as rapidly as possible. This would also explain the absence today of these older K&E slide rules. I do find it difficult to believe that these rules are so rare, as known rules from other manufacturers of the era are not. Rather, today, I believe these older Model 479 slide rules might have gone "incognito," bouncing around today in a different guise.
 
-<div class="ke-clear"></div>
-
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure ke-figure-column">
 
 ![Three celluloid-faced slide rules from the collection of the late Bob Otnes, connecting Dennert & Pape with K&E](./_images/ch2-03-dp-ke-early-rules.jpg)
 
@@ -243,7 +245,7 @@ Once K&E replaced the 1746 and 1748 rules, as well as having moved past their tr
 
 The most important aspect of this series that differentiates them from those I mentioned in the previous sections are that 1) all are made of mahogany and 2) all rules of this series are made to be adjustable, based on Keuffel's patent of the "Mannheim Adjustable Slide Rule Frame" in June, 1900.
 
-<div class="ke-sidebar" data-side="right">
+<div class="ke-sidebar" data-side="right" data-width="wide">
 
 ## Sidebar: Mahogany vs. Boxwood
 
@@ -308,9 +310,7 @@ The rule retained a similar font and scale design as the earlier 4030 models for
 
 Throughout the history of the Model 4041, a few custom versions appeared as special order rules. Interestingly, and mysteriously, a sample of the Model 4041 appeared around 1910 with railroad track scales. This seems to pay homage to the old days of the D&P rules, as it was otherwise similar to the typical K&E-made 4041 being produced at that time. Even so, it's a real curiosity, and should not be a surprise to us given the amount of experimentation going on all throughout the early part of the 20th century. This version is not listed in a catalog. This 4041 rule was also produced between 1906 to 1935 with a finely-divided scale option known as the N4041F (a $3.50 upgrade). These rules included engine-divided inch and centimeter rulers on the sides (and a centimeter extension rule in the slide-well up until 1912). Likewise, during almost the entirety of the 1920s, a version of the rule could be ordered with decimal-reminders; "Quotient +" and "Quotient -" labels on the end of the slide. This option is not listed in any catalog of which I am aware.
 
-<div class="ke-clear"></div>
-
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure ke-figure-column">
 
 ![An original Model 4041 next to the 1925 N-4041, showing the 3mm width difference](./_images/ch2-11-4041-n-comparison.jpg)
 
@@ -410,7 +410,7 @@ In 1930, another rule was added, giving buyers the option of three grades of the
 
 The newest model, with white-painted face, also utilized the wooden-rail cursor. In 1937, the new 4058W took on a metal framed indicator lasting until 1950 when it would get an all-plastic cursor. This series would go through a variety of cursor types among its variants. For more specifics, I reference you to Appendix 3: A K&E Cursor Study.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![A 1941 university newspaper advertisement about the wartime shortage of K&E slide rules](./_images/ch2-15-no-slide-rules-for-sale-ad.jpg)
 
