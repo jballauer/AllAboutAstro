@@ -35,6 +35,10 @@ The Model 4095 came with a frameless glass indicator and a "Morocco" case (box) 
 
 In 1922, the year of the introduction of serial numbers and the celluloid-wrapped edges, the 4095 was renamed the Model 4095-3, with 5" and 20" rules being added, the Model 4095-1 and Model 4095-5 respectively. The 4095-3 was $5.50 that year, with the case-upgraded "S" version at $6.35. The 4095-5 and 4095-5S were $13.00 and $14.50. The 4095-1 only came in as an S version, priced the same as the 10" model (with basic case). This 20" Model 4095-5 rule would only last 4 years and is a quite rare rule, with only two of them popping up on eBay since 1999 at a cost of ~$50, though because one hasn't been listed in a dozen years, it might sell for as much as a Chevy. The 5" Model 4095-1 would endure alongside the 10" version until 1943; however, it is almost as rare as the 20" version, popping up on eBay every couple of years, though with an average cost of around $75.
 
+A year after the 4095-5 was discontinued, it would return in a different guise in 1927 as the Model 4096 Desk rule for $18. Enclosed in a nice wooden case, and able to be worked IN the case, the Mannheim-style rule was much larger in cross-section than the typical Mannheim, with attached metal feet that lifted the rule off of the table at an angle, yet solid enough to be worked with one hand (freeing a hand to write down computations). A knob on the slide allowed for slide movement. The scales were a repeat of the Model 4095's front side, with DF [CF, C] D. There were no scales on the back of the slide. In 1930, the desk rule would become the Model N4096 when it added a CI to the middle of the slide. This made it a more complete Merchant's model, though it wouldn't not be classified as such in catalogs.
+
+Note: This rule is not to be confused with a very early All-Metal Mannheim Model 4096, a rule we will discuss toward the end of our text. It is an absolute unicorn and has nothing to do with the Merchant rules.
+
 <div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![The Model N4096 Desk rule, enclosed in its wooden case with metal feet](./_images/ch4-04-n4096-desk-rule.jpg)
@@ -43,25 +47,21 @@ In 1922, the year of the introduction of serial numbers and the celluloid-wrappe
 
 </div>
 
-A year after the 4095-5 was discontinued, it would return in a different guise in 1927 as the Model 4096 Desk rule for $18. Enclosed in a nice wooden case, and able to be worked IN the case, the Mannheim-style rule was much larger in cross-section than the typical Mannheim, with attached metal feet that lifted the rule off of the table at an angle, yet solid enough to be worked with one hand (freeing a hand to write down computations). A knob on the slide allowed for slide movement. The scales were a repeat of the Model 4095's front side, with DF [CF, C] D. There were no scales on the back of the slide. In 1930, the desk rule would become the Model N4096 when it added a CI to the middle of the slide. This made it a more complete Merchant's model, though it wouldn't not be classified as such in catalogs.
-
-Note: This rule is not to be confused with a very early All-Metal Mannheim Model 4096, a rule we will discuss toward the end of our text. It is an absolute unicorn and has nothing to do with the Merchant rules.
-
 If we go by the product catalogs, then the Merchant's Model 4094 was born in 1930. However, there are samples with serif-font that date as early as 1927, albeit not in the 1927 catalog or 1928 price list. This was a standard Mannheim-formatted build out of celluloid-covered mahogany, like the current Model N4041-3, only with the Merchant's scale set. In fact, it was essentially the same rule as the N4041-3 in all regards except the scale set, DF [CF, CI, C] D. Inch and centimeter rules were on the top and bottom celluloid-covered edges of the rule. There were no scales on the back of the slide. Price of the rule was $5.00, which was 50 cents less than the N4041-3 for that year.
 
 <div class="ke-figure">
 
-![The Model 4094 Merchant's Mannheim slide rule](./_images/ch4-02-4094-merchants-mannheim.jpg)
+![The Model 4094 Merchant's Mannheim slide rule (top) alongside the front of the Model 4095-3 Merchant's Duplex (bottom)](./_images/ch4-03-4095-3-merchants-duplex.jpg)
 
-<p class="ke-figure-caption">The Model 4094 Merchant's Mannheim, with its simplified DF [CF, CI, C] D scale set, from the author's collection.</p>
+<p class="ke-figure-caption">The Model 4094 Merchant's Mannheim (top, stamped &lt;4094&gt;) alongside the front of its duplex sibling, the Model 4095-3 (bottom, stamped &lt;4095-3&gt;), both from the author's collection. The 4094 alone carries a CI scale — the 4095-3's front omits it, reserving CI for the back.</p>
 
 </div>
 
 <div class="ke-figure">
 
-![The Model 4095-3 Merchant's Duplex slide rule](./_images/ch4-03-4095-3-merchants-duplex.jpg)
+![The back of the Model 4095-3 Merchant's Duplex slide rule](./_images/ch4-02-4094-merchants-mannheim.jpg)
 
-<p class="ke-figure-caption">Its duplex sibling, the Model 4095-3 Merchant's Duplex — both slide rules pictured here share the family's spare, four-scale front presentation.</p>
+<p class="ke-figure-caption">The back of the Model 4095-3 Merchant's Duplex — just the CI and D scales, with the conspicuous empty space K&E left for owners to mark their own gauge-points.</p>
 
 </div>
 
