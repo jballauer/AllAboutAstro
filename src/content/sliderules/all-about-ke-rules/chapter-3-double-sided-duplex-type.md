@@ -798,15 +798,7 @@ But if the real intent for the new plastic rules was not known, I think with a l
 
 As such, the Model 4181-3 Log Log Duplex Deci-Trig, first introduced as a repackaged Doric N9081-3 in 1952, would prove to be one of K&E's most important rules. Priced initially at $15 in the 1952 catalog, compared to the $22.50 price of the N4080-3 and N4081-3 models, we can see the savings to be had with all-plastic production.
 
-Shown in the September "Slide Rules" only revision of the 1955 catalog, the rule would be transformed from the familiar Doric N9081 characteristics to that which we would become more familiar with, dropping the N-prefix, dispensing with the Doric label, and adding red ink for the labels and the inverse scales. The catalog description for this rule (and the plastic pocket rules) states that "Ivorite" construction is used. "Ivorite" is trademarked here, which might simply mean that K&E, while their rules were already transitioned to Ivorite with the Doric rules, could now be safely called what they wanted all along. They seem proud.
-
-Judging between the N9081-3 and newer 4181-3 versions of this Log Log Duplex slide rule, they are slightly different in feel. The former seems heavier, stiffer, smoother, more glossy, and more square, and the latter would appear to be lighter, thinner, and more beveled. The color of my samples of these rules are slightly different, with the N9081-3 Doric retaining more of a pure white tone, though I would not make judgments about whether or not this is true across all samples of these rules. Regardless, they appear to use a slightly different plastic, both of which are leagues removed from the white Xylonite advertised by K&E as used in their Ever-There rules beginning in the early 1930s.
-
-Of course, as talked about with the Doric rules and as we witness here, it becomes hard to find consensus in what the actual plastic composition is. My thoughts on this, and a little more about plastics in general, can be found in the Sidebar: A Little About Plastics below.
-
-Scales for this rule were identical to the wooden 4081-3 rule, and would continue to adopt the same scale evolution as it also changed. The N4181-3 (9081 Doric) version of the rule was based on the 1947 Model 4081 scale set, with the newer 4181-3, described in the 1955 supplementary catalog, taking on the same revised, "non-N" 4081 scale set that moved the L scale to the top rail and put a DI scale on the bottom.
-
-<div class="ke-sidebar">
+<div class="ke-sidebar" data-width="wide">
 
 ## Sidebar: A Little About Plastics
 
@@ -828,11 +820,25 @@ For this author, lacking scientific methods for determining exact composition of
 
 </div>
 
+Shown in the September "Slide Rules" only revision of the 1955 catalog, the rule would be transformed from the familiar Doric N9081 characteristics to that which we would become more familiar with, dropping the N-prefix, dispensing with the Doric label, and adding red ink for the labels and the inverse scales. The catalog description for this rule (and the plastic pocket rules) states that "Ivorite" construction is used. "Ivorite" is trademarked here, which might simply mean that K&E, while their rules were already transitioned to Ivorite with the Doric rules, could now be safely called what they wanted all along. They seem proud.
+
+Judging between the N9081-3 and newer 4181-3 versions of this Log Log Duplex slide rule, they are slightly different in feel. The former seems heavier, stiffer, smoother, more glossy, and more square, and the latter would appear to be lighter, thinner, and more beveled. The color of my samples of these rules are slightly different, with the N9081-3 Doric retaining more of a pure white tone, though I would not make judgments about whether or not this is true across all samples of these rules. Regardless, they appear to use a slightly different plastic, both of which are leagues removed from the white Xylonite advertised by K&E as used in their Ever-There rules beginning in the early 1930s.
+
+Of course, as talked about with the Doric rules and as we witness here, it becomes hard to find consensus in what the actual plastic composition is. My thoughts on this, and a little more about plastics in general, can be found in the Sidebar: A Little About Plastics above.
+
+Scales for this rule were identical to the wooden 4081-3 rule, and would continue to adopt the same scale evolution as it also changed. The N4181-3 (9081 Doric) version of the rule was based on the 1947 Model 4081 scale set, with the newer 4181-3, described in the 1955 supplementary catalog, taking on the same revised, "non-N" 4081 scale set that moved the L scale to the top rail and put a DI scale on the bottom.
+
 This new rule would be renamed the "Jet-Log" in 1960, referred to as such in a pocket slide rule brochure in that same year as the big brother of the Model 4181-1 "Jet-Log Jr.," a very important pocket rule that deserves its own discussion next. Two years later it would receive the Model 68-1251 designation. It would hang around until the end of the era, becoming the sole Deci-Trig option once all the wooden slide rules disappeared in the 1972 catalog. Despite filing for bankruptcy and ending all slide rule production that same year, the importance of this rule as K&E's lone successor of the long Log Log Duplex line demonstrates how good this rule had become. As the end of that line, I could have presented it entirely under the Log Log Duplex family of rules. But because of its new construction, I have slotted it into the Modern Duplex category.
 
 ### Model 4181-1 Pocket Log Log Deci-Trig (Jet-Log Jr.)
 
 The pocket version of the 10" Model 4181-3, this 5" Model 4181-1, in many ways, became the more successful rule. This is largely because as a pocket rule, it is just really good!
+
+<div class="ke-figure ke-figure-right">
+
+![A close-up art shot of the 4181-1 slide showing the copyright imprint and C/CI/CIF/CF scale engravings](./_images/ch3-21-4181-1-art-shot-slide.jpg)
+
+</div>
 
 Like the big brother, the Doric version of it was described early on in the 1949 catalog. But unlike the 9081-3 Doric, the 9081-1 was never actually produced, at least not to our knowledge. It would come into production in finished form, described in the 1953 Educational Products Catalog, looking very much like a smaller 4181-3 (non-Doric version). (Note: The 4181-3 in that same catalog is described as the Doric version.) And by finished form, I mean complete with dual-color scales, red K&E logo, and unbreakable indicator. There is some indication from internet sources that the 4181-1 initially appeared without a model number on the rule; however, I have not seen this to be the case myself. This would also conflict with the aforementioned 1953 catalog, which is shown pictured with 4181-1 on the slide.
 
@@ -857,14 +863,6 @@ Note: The Post Versalog 1461 would seem to be a response to K&E's excellent 4181
 <p class="ke-figure-caption">4181-1 Pocket Log Log Deci-Trig - Back</p>
 
 </div>
-
-</div>
-
-<div class="ke-figure ke-figure-left ke-figure-quarter">
-
-![A close-up art shot of the 4181-1 slide showing the copyright imprint and C/CI/CIF/CF scale engravings](./_images/ch3-21-4181-1-art-shot-slide.jpg)
-
-<p class="ke-figure-caption">A closer look at the 4181-1's slide, showing the copyright imprint alongside the C, CI, CIF, and CF scale engravings.</p>
 
 </div>
 
