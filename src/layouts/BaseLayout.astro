@@ -384,6 +384,52 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin-bottom: 0;
   }
 
+  /* Unified "feature" gallery: several related photos (e.g. front/back/manual
+     of one product) arranged in a single row inside a light frame, sharing
+     ONE caption instead of each repeating context in its own — used when no
+     single image is tall enough to fill a column on its own, so floating
+     each individually just leaves a void beside the short ones. */
+  .ke-image-feature {
+    clear: both;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  .ke-image-feature-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .ke-image-feature-row .ke-image-feature-item {
+    flex: 1;
+    min-width: 110px;
+  }
+  .ke-image-feature-row :global(img) {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  .ke-image-feature-caption {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--color-prose-text);
+    text-align: center;
+    margin: 0.75rem 0 0;
+  }
+  @media (max-width: 700px) {
+    .ke-image-feature-row {
+      flex-direction: column;
+    }
+    .ke-image-feature-row .ke-image-feature-item {
+      min-width: 0;
+    }
+  }
+
   /* K&E click-to-enlarge (Weebly's default image-click behavior). Any
      image inside an article is zoomable; wrap it in an element with
      data-hires="/path.jpg" to show a separate higher-resolution file

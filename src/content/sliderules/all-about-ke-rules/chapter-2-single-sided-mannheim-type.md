@@ -310,6 +310,8 @@ The rule retained a similar font and scale design as the earlier 4030 models for
 
 Throughout the history of the Model 4041, a few custom versions appeared as special order rules. Interestingly, and mysteriously, a sample of the Model 4041 appeared around 1910 with railroad track scales. This seems to pay homage to the old days of the D&P rules, as it was otherwise similar to the typical K&E-made 4041 being produced at that time. Even so, it's a real curiosity, and should not be a surprise to us given the amount of experimentation going on all throughout the early part of the 20th century. This version is not listed in a catalog. This 4041 rule was also produced between 1906 to 1935 with a finely-divided scale option known as the N4041F (a $3.50 upgrade). These rules included engine-divided inch and centimeter rulers on the sides (and a centimeter extension rule in the slide-well up until 1912). Likewise, during almost the entirety of the 1920s, a version of the rule could be ordered with decimal-reminders; "Quotient +" and "Quotient -" labels on the end of the slide. This option is not listed in any catalog of which I am aware.
 
+As I mention in the Collector's Outlook (see below), the 10" Model 4041 is quite ubiquitous; however, the length variations of the 4041 are quite hard to find, as is the N4041F, "finely-divided" model of this series, as too the railroad track and decimal-reminder variants.
+
 <div class="ke-figure ke-figure-column">
 
 ![An original Model 4041 next to the 1925 N-4041, showing the 3mm width difference](./_images/ch2-11-4041-n-comparison.jpg)
@@ -317,8 +319,6 @@ Throughout the history of the Model 4041, a few custom versions appeared as spec
 <p class="ke-figure-caption">With the original Model 4041 on the right, we see the 3mm difference with the new 1925 N- version of the model (left).</p>
 
 </div>
-
-As I mention in the Collector's Outlook (see below), the 10" Model 4041 is quite ubiquitous; however, the length variations of the 4041 are quite hard to find, as is the N4041F, "finely-divided" model of this series, as too the railroad track and decimal-reminder variants.
 
 I would conjecture fewer of the variations of the 4041 were sold due to the pricing structure. $4.50 could have bought the consumer any of the 5", 8", or 10" models, as they were all equally priced. One might question why this is the case, but it makes sense when we consider that production time and cost would have been similar regardless of the rules' length. And most consumers of the day would have only been able to choose one such slide rule due to the high cost, not feeling compelled to have, for example, a pocket model to go with their full-scale daily driver. Similarly, the 16" Model 4045 and the 20" Model 4051 were priced $10 and $12.50 respectively. Those prices represent a rather steep requirement for slide rules that wouldn't have been significant functional upgrades to the 10" rule.
 
@@ -472,31 +472,31 @@ My sample of the Model 4098 pocket rule, shown below, is in very good condition 
 
 Of another note, the Ever-There rules allowed the slide to be reversed, although they were not intended to be used that way. The 4098A has non-symmetrical tongue & groove construction on the slide, which means that physically reversing of the slide is impossible. Reason for the distinction? Perhaps if the buyer knew the slide was not reversible, then he or she wouldn't attempt to do so and then complain to K&E that the rule was broken and didn't work? It might seem silly, but there are many anecdotes of K&E serving customers who made such complaints. We do see a similar thing occur with the Deci-Lon rules which we discuss in Chapter 3. Those rules too began their run with a physically reversible slide, only to be altered to non-reversible later in the production run.
 
-<div class="ke-figure-row">
+<div class="ke-image-feature">
 
-<div class="ke-figure">
+<div class="ke-image-feature-row">
+
+<div class="ke-image-feature-item">
 
 ![The Model 4098A pocket slide rule, front side](./_images/ch2-16-4098a-front.jpg)
 
-<p class="ke-figure-caption">The Model 4098A, front side, with simple Mannheim scale set. The real leather sheath is embossed with "K&E Co," a label typical of the era.</p>
-
 </div>
 
-<div class="ke-figure">
+<div class="ke-image-feature-item">
 
 ![The Model 4098A pocket slide rule, back side](./_images/ch2-17-4098a-back.jpg)
 
-<p class="ke-figure-caption">The back side of the rule, with inch and centimeter rulers. Note the S, L, and T scales on the back of the slide. The trig functions set the angle through the indicator notched on the back and the value is then read off to the B scale on front. The log scale sets the input off of the right index on the D scale and reads the value off of the back.</p>
-
 </div>
 
-</div>
-
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-image-feature-item">
 
 ![The cover of the 1936 Ever-There instruction manual](./_images/ch2-18-evertheres-manual-1936.jpg)
 
-<p class="ke-figure-caption">Once the A suffix was added to the 4098 model number, it ceased being a part of the Ever-There family, as we see with the 1936 instruction manual. This would be the first rule advertised simply as a "pocket slide rule."</p>
+</div>
+
+</div>
+
+<p class="ke-image-feature-caption">Left to right: the Model 4098A's front side, with its simple Mannheim scale set and leather sheath embossed "K&E Co."; the back side, with inch and centimeter rulers and the S, L, and T scales (the trig functions set an angle via the notched back indicator, then read off to the front's B scale; the log scale reads its input off the D scale's right index and its value off the back); and the cover of the 1936 instruction manual — once the A suffix was added, the 4098A left the Ever-There family behind to become the first rule advertised simply as a "pocket slide rule."</p>
 
 </div>
 
