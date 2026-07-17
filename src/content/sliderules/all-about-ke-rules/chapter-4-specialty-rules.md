@@ -37,8 +37,6 @@ In 1922, the year of the introduction of serial numbers and the celluloid-wrappe
 
 A year after the 4095-5 was discontinued, it would return in a different guise in 1927 as the Model 4096 Desk rule for $18. Enclosed in a nice wooden case, and able to be worked IN the case, the Mannheim-style rule was much larger in cross-section than the typical Mannheim, with attached metal feet that lifted the rule off of the table at an angle, yet solid enough to be worked with one hand (freeing a hand to write down computations). A knob on the slide allowed for slide movement. The scales were a repeat of the Model 4095's front side, with DF [CF, C] D. There were no scales on the back of the slide. In 1930, the desk rule would become the Model N4096 when it added a CI to the middle of the slide. This made it a more complete Merchant's model, though it wouldn't not be classified as such in catalogs.
 
-Note: This rule is not to be confused with a very early All-Metal Mannheim Model 4096, a rule we will discuss toward the end of our text. It is an absolute unicorn and has nothing to do with the Merchant rules.
-
 <div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![The Model N4096 Desk rule, enclosed in its wooden case with metal feet](./_images/ch4-04-n4096-desk-rule.jpg)
@@ -46,6 +44,8 @@ Note: This rule is not to be confused with a very early All-Metal Mannheim Model
 <p class="ke-figure-caption">The Model N4096 Desk rule, K&E's 1927 reworking of the discontinued 20" Model 4095-5 into a large, table-mounted Mannheim-style rule.</p>
 
 </div>
+
+Note: This rule is not to be confused with a very early All-Metal Mannheim Model 4096, a rule we will discuss toward the end of our text. It is an absolute unicorn and has nothing to do with the Merchant rules.
 
 If we go by the product catalogs, then the Merchant's Model 4094 was born in 1930. However, there are samples with serif-font that date as early as 1927, albeit not in the 1927 catalog or 1928 price list. This was a standard Mannheim-formatted build out of celluloid-covered mahogany, like the current Model N4041-3, only with the Merchant's scale set. In fact, it was essentially the same rule as the N4041-3 in all regards except the scale set, DF [CF, CI, C] D. Inch and centimeter rules were on the top and bottom celluloid-covered edges of the rule. There were no scales on the back of the slide. Price of the rule was $5.00, which was 50 cents less than the N4041-3 for that year.
 
@@ -637,14 +637,6 @@ Morrison's design continues to the back side whereas, according to manual, the n
 
 </div>
 
-<div class="ke-figure">
-
-![The Model 4082-3 "Radio Special" slide rule](./_images/ch4-21-4082-3-radio-special.jpg)
-
-<p class="ke-figure-caption">The Model 4082-3 "Radio Special" within my collection. Note the unique "F" scale, which replaces the "K" scale of the Model 4081 from which the 4082 is derived. This is a rare rule, with very few changing hands on eBay.</p>
-
-</div>
-
 <div class="ke-clear"></div>
 
 ### Model 4082-3 Radio Special
@@ -664,13 +656,13 @@ Curiously, this slide rule would not appear in any K&E catalog, so it is unknown
 
 Regardless, it should be noted that K&E made two versions of this slide rule. The first rule in 1937 had the words "Radio Special" presented on the rule itself, or so it has been said by K&E collector Clark McCoy, who offered the scan of the manual referenced above. I have seen no images of this earlier rule and they are not offered by McCoy.
 
-This rule would be updated in 1939, also according to McCoy, but removes the "Radio Special" moniker from the rule itself. This second version also makes one alteration of the scales by switching LL00 and LL0 on the back side of the rule. This rule, as shown in my own collection, might have been offered at least through 1943, though my own sample has a serial number that corresponds to 1941.
+This rule would be updated in 1939, also according to McCoy, but removes the "Radio Special" moniker from the rule itself. This second version also makes one alteration of the scales by switching LL00 and LL0 on the back side of the rule. This rule, from my own collection, might have been offered at least through 1943, though my own sample has a serial number that corresponds to 1941.
 
 <div class="ke-figure">
 
-![The front side of the Model 4139 Cooke Radio Rule](./_images/ch4-22-4139-cooke-radio-front.jpg)
+![The Model 4082-3 "Radio Special" slide rule](./_images/ch4-21-4082-3-radio-special.jpg)
 
-<p class="ke-figure-caption">The Model 4139 Cooke Radio Rule - showing the front side of my more recent sample of two, this slide rule has a 1954 serial number. Significant in that it exhibits the &lt;4139&gt; model number and the rounded Cooke Radio emblem, which the earliest Cooke rules did not have, as well as the exposed mahogany edges.</p>
+<p class="ke-figure-caption">The Model 4082-3 "Radio Special" within my collection. Note the unique "F" scale, which replaces the "K" scale of the Model 4081 from which the 4082 is derived. This is a rare rule, with very few changing hands on eBay.</p>
 
 </div>
 
@@ -702,6 +694,14 @@ The Cooke rule was most certainly the latest of all radio rules based on it bein
 As for the Cooke, the slide rule seems successful, as it's not scarce, especially after so many years of production. Its evolution can be easily traced over the nearly three decades of production, appearing in as many as six variants over its life-span (Journal of the Oughtred Society, Vol. 24, No. 2, 2015, p. 36). Four of these variants have covered celluloid edges and two have the inlayed celluloid, exposed mahogany edges beginning around 1952.
 
 The first four variants were created by alterations and movement of the texts and emblems on the rule. For example, the <4139> model indication would not appear on the first variation of the rule, which included all samples up to ~852,000 in serial number, dating to somewhere in 1941. Likewise, the circular "Cooke Radio" badge is on the back of the side with the earliest model, unlike most of the later variants. I will spare the reader the tedium of each variant, but a few other notes are worth stating:
+
+<div class="ke-figure">
+
+![The front side of the Model 4139 Cooke Radio Rule](./_images/ch4-22-4139-cooke-radio-front.jpg)
+
+<p class="ke-figure-caption">The Model 4139 Cooke Radio Rule - showing the front side of my more recent sample of two, this slide rule has a 1954 serial number. Significant in that it exhibits the &lt;4139&gt; model number and the rounded Cooke Radio emblem, which the earliest Cooke rules did not have, as well as the exposed mahogany edges.</p>
+
+</div>
 
 - The ST scale would be replaced with an SRT scale around 1956, just as with all other Deci-Trig slide rule models.
 - The circular K&E logo, which was dropped from other slide rules around 1945, persisted from beginning to end with the Cooke Radio Rule.
