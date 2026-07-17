@@ -266,7 +266,7 @@ As for the 20" Model 4102 Surveyor's Duplex, this is where the front side, astro
 
 The astrometric scales are designed to compute the formula:
 
-cos(azimuth) = (sin d - tan h * tan l) / (cos h * cos l)
+cos(azimuth) = sin(d) / (cos(h) * cos(l)) - tan(h) * tan(l)
 
 In this formula, "l" is the latitude of the observation obtained by either map or direct observation, "d" is the declination of the sun as provided by ephemeris data, and "h" is the sun's altitude taken from transit observation and corrected for atmospheric refraction. According to the catalog description, it computes this with an accuracy of 1 arc minute, with the length of the rule giving more sub-divisions for increased precision. The manual did ship with the slide rule to provide instructions for use.
 
