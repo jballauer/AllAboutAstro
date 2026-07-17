@@ -443,6 +443,102 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     }
   }
 
+  /* K&E "AI-generated placeholder" — for a cataloged model Jay has never
+     owned/verified and hasn't researched yet (as opposed to a genuine
+     first-hand write-up). Deliberately NOT styled like `.ke-sidebar`
+     (solid color = Jay's own confident narrative voice) — dashed border
+     and a quiet violet accent (a 4th hue distinct from the sidebar's blue/
+     orange and the site-status red stamp) mark this as a different kind
+     of voice: AI-synthesized, unverified, a research starting point only.
+     Only use for entries with no real first-hand description — never as
+     a substitute for/addition to a section Jay has already written. */
+  .ke-ai-stub {
+    position: relative;
+    background-color: #1c1a24;
+    background-image: linear-gradient(rgba(143, 127, 224, 0.08), rgba(143, 127, 224, 0.08));
+    border: 2px dashed #6b5fa8;
+    border-radius: 6px;
+    padding: 1.4rem 1.4rem 1.2rem;
+    margin: 1.5rem 0 2rem;
+    clear: both;
+  }
+  .ke-ai-stub-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #8f7fe0;
+    color: #16131f;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    margin-bottom: 0.9rem;
+  }
+  .ke-ai-stub-facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.9rem;
+    row-gap: 0.35rem;
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    margin: 0 0 1rem;
+  }
+  .ke-ai-stub-facts dt {
+    color: #8f7fe0;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-top: 0.15rem;
+  }
+  .ke-ai-stub-facts dd {
+    margin: 0;
+    color: var(--color-text);
+    line-height: var(--prose-line-height);
+  }
+  .ke-ai-stub-desc {
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    line-height: var(--prose-line-height);
+    color: var(--color-prose-text);
+    font-style: italic;
+    margin: 0 0 1.1rem;
+  }
+  .ke-ai-stub-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    border: 1px dashed #6b5fa8;
+    border-radius: 4px;
+    color: #6b5fa8;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0 0 1.1rem;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  .ke-ai-stub-footer {
+    border-top: 1px dashed #6b5fa8;
+    padding-top: 0.7rem;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    color: #6b5fa8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+  }
+  .ke-ai-stub-footer a {
+    color: #8f7fe0;
+  }
+  .ke-ai-stub-footer span.tag {
+    color: var(--color-prose-text);
+  }
+
   /* K&E click-to-enlarge (Weebly's default image-click behavior). Any
      image inside an article is zoomable; wrap it in an element with
      data-hires="/path.jpg" to show a separate higher-resolution file
