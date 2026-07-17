@@ -472,7 +472,9 @@ My sample of the Model 4098 pocket rule, shown below, is in very good condition 
 
 Of another note, the Ever-There rules allowed the slide to be reversed, although they were not intended to be used that way. The 4098A has non-symmetrical tongue & groove construction on the slide, which means that physically reversing of the slide is impossible. Reason for the distinction? Perhaps if the buyer knew the slide was not reversible, then he or she wouldn't attempt to do so and then complain to K&E that the rule was broken and didn't work? It might seem silly, but there are many anecdotes of K&E serving customers who made such complaints. We do see a similar thing occur with the Deci-Lon rules which we discuss in Chapter 3. Those rules too began their run with a physically reversible slide, only to be altered to non-reversible later in the production run.
 
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure-row">
+
+<div class="ke-figure">
 
 ![The Model 4098A pocket slide rule, front side](./_images/ch2-16-4098a-front.jpg)
 
@@ -480,9 +482,7 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 
 </div>
 
-<div class="ke-clear"></div>
-
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure">
 
 ![The Model 4098A pocket slide rule, back side](./_images/ch2-17-4098a-back.jpg)
 
@@ -490,7 +490,7 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 
 </div>
 
-<div class="ke-clear"></div>
+</div>
 
 <div class="ke-figure ke-figure-left ke-figure-third">
 
@@ -499,6 +499,8 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 <p class="ke-figure-caption">Once the A suffix was added to the 4098 model number, it ceased being a part of the Ever-There family, as we see with the 1936 instruction manual. This would be the first rule advertised simply as a "pocket slide rule."</p>
 
 </div>
+
+<div class="ke-clear"></div>
 
 ## The Polyphase Mannheim Family
 
@@ -649,6 +651,7 @@ The Model 4098 stepped in as a true Polyphase Mannheim pocket rule, filling the 
 
 Both rules uses a clear Xylonite cursor, which also appeared on the Model 4058 Beginner's rules. Starting clear, these cursors did not stand up well to UV light radiation, and so turned yellow over time.
 
+
 ### Model 4097B, 4097C, and 4097D
 
 The Ever-There series proved to be much thinner, lighter, and budget-friendly than all slide-rule technologies that preceded them. Not stopping there, five years after their introduction, K&E revamped the Ever-There line-up in 1936 to offer more choices to consumers and to increase their profit margins by selling these easy-to-manufacture slide rules.
@@ -687,9 +690,7 @@ The history of the Mannheim platform evolved and endured over almost the company
 
 </div>
 
-<div class="ke-clear"></div>
-
-<div class="ke-sidebar" data-width="wide">
+<div class="ke-sidebar" data-width="widest">
 
 ## Sidebar: The Doric Family of Rules
 

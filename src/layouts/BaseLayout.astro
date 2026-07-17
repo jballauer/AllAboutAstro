@@ -226,6 +226,13 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-sidebar[data-width='wide'] {
     width: 58%;
   }
+  /* Wider still, for a sidebar so packed with content that even "wide"
+     leaves it trailing below the article's actual last line of body text —
+     Jay's rule is that main text should always be what's "left over" at
+     the bottom, never a sidebar hanging past it. */
+  .ke-sidebar[data-width='widest'] {
+    width: 68%;
+  }
   @media (max-width: 700px) {
     .ke-sidebar {
       float: none;
@@ -321,6 +328,7 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     font-style: italic;
     color: var(--color-prose-text);
     margin-top: 0.4rem;
+    text-align: center;
   }
   .ke-figure-left {
     float: left;
