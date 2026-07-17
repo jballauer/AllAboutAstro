@@ -12,7 +12,7 @@ draft: false
 
 ![The K&E logo](./_images/ke-logo-label.jpg)
 
-*Author's note: This, and most articles I write, are living documents. This article (or book) about K&E represents my research and understanding at the time of writing. It take a more narrative, story-driven approach to the topic. There are no targets with this writing, no thesis; no other purpose except to work my way through my own process of learning. The text will grow, change, and evolve slowly until, some day, a reader finds value in it. If that is you, and if that is today, thanks for taking the time to read it. Please forgive some of the "under construction" aspects of this writing, as things like annotations, the appendices and descriptions of items in the latter chapters might be incomplete or not fully documented. That will change the closer to "completeness" it gets. This article was last updated April 18, 2026. Many changes are being made to reflect a 1968 K&E Catalog Price List that was stumbled upon!*
+*Author's note: This, and most articles I write, are living documents. This article (or book) about K&E represents my research and understanding at the time of writing. It take a more narrative, story-driven approach to the topic. There are no targets with this writing, no thesis; no other purpose except to work my way through my own process of learning. The text will grow, change, and evolve slowly until, some day, a reader finds value in it. If that is you, and if that is today, thanks for taking the time to read it. Please forgive some of the "under construction" aspects of this writing, as things like annotations, the appendices and descriptions of items in the latter chapters might be incomplete or not fully documented. That will change the closer to "completeness" it gets. This article was last updated April 18, 2026. Many changes are being made to reflect a 1968 K&E Catalog Price List that was stumbled upon! See the [Version History](/sliderules/all-about-ke-rules/appendix-5-version-history/) appendix to check what's changed since your last visit.*
 
 ### Table of Contents
 
@@ -28,6 +28,7 @@ draft: false
 - [Appendix 2: A Study of K&E Product Catalogs](/sliderules/all-about-ke-rules/appendix-2-study-of-product-catalogs/)
 - [Appendix 3: A K&E Cursor Study](/sliderules/all-about-ke-rules/appendix-3-cursor-study/)
 - [Appendix 4: Bibliography](/sliderules/all-about-ke-rules/appendix-4-bibliography/)
+- [Appendix 5: Version History](/sliderules/all-about-ke-rules/appendix-5-version-history/)
 
 </div>
 <div class="ke-col-right">
