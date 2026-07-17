@@ -9,6 +9,10 @@ Like the rest of this site, *All About Keuffel & Esser Rules* is a living docume
 
 Version 1.0 is the book as it existed on the original Weebly site before this migration began; everything since is the in-progress rebuild here on the new site. Version 2.0 is reserved for the day this rebuild reaches full parity with — and surpasses — that original: all seven chapters and every appendix complete and out of "under construction."
 
+### Version 1.4 — July 17, 2026
+
+- Added Chapter 4: The Specialty Rules, covering the Merchant's, Stadia, Chemical, Steam Power, Radio and Electrical, Sector, and Demonstration families.
+
 ### Version 1.3 — July 17, 2026
 
 - Added Chapter 3: Rules of the Double-Sided, Duplex-Type, covering the Original Duplex, Polyphase Duplex, Log Log Duplex, Log Log Vector Duplex, and Modern Duplex families.
