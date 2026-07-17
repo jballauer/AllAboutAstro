@@ -13,17 +13,17 @@ To differentiate this chapter from the one that follows, Chapter 4 focuses on Sp
 
 As we discuss the Merchant's Family of rules first, which comprises the 4094, 4095, and 4096 models, it will be easier to discuss them in a narrative form rather than by a rule-by-rule breakdown, mostly because there are so few models to describe. However, other families will breakout each slide rule by individual model type.
 
-<div class="ke-figure">
+## The Merchant's Family
+
+In 1915, K&E introduced a new duplex rule for those that might be confused by so many scales. Seriously, this is what they state in the catalog. They suggest that businessmen, accountants, merchants, mechanics, foremens, and the like, need a rule that doesn't detract from what they need the slide rule to do, namely "multiplication, division, and proportions." The Merchant's duplex rule, the Model 4095, was designed to do this. 10" long and built with the same form factor of the Model 4088 Polyphase Duplex introduced just two years before, the 4095 sports a very simplified scale set of DF [CF, C] D on the front side and only two scales, the CI and D on the back. This scale set is essentially patterned after the "règle des écoles" rule that Tavernier-Gravet introduced nearer the turn of the century.
+
+<div class="ke-figure ke-figure-right ke-figure-third">
 
 ![The cover of an old K&E instructional manual](./_images/ch4-01-merchants-manual.jpg)
 
 <p class="ke-figure-caption">Not likely the original manual for the Merchant's Family of slide rules, but can we be so sure?</p>
 
 </div>
-
-## The Merchant's Family
-
-In 1915, K&E introduced a new duplex rule for those that might be confused by so many scales. Seriously, this is what they state in the catalog. They suggest that businessmen, accountants, merchants, mechanics, foremens, and the like, need a rule that doesn't detract from what they need the slide rule to do, namely "multiplication, division, and proportions." The Merchant's duplex rule, the Model 4095, was designed to do this. 10" long and built with the same form factor of the Model 4088 Polyphase Duplex introduced just two years before, the 4095 sports a very simplified scale set of DF [CF, C] D on the front side and only two scales, the CI and D on the back. This scale set is essentially patterned after the "règle des écoles" rule that Tavernier-Gravet introduced nearer the turn of the century.
 
 Of course, this scale arrangement focuses only on C and D scales, which are the multiplication and division scales. These are enhanced by folded scales on the front side, which allows any such computation to have an index that is always at the center of the slide rule, which assures that a product or quotient is not "off the rule," a common happening on rules without CF and DF scales. And naturally the C and D scales can do conversions and proportions by virtue of being one decade logarithmic scales. This four scale arrangement on the front of the rule allows for chains of multiplication and division operations to be done more efficiently and quickly, seemingly something that merchants might want to do. This includes the three-number multiplication technique mentioned earlier in my writing.
 
