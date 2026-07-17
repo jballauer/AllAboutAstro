@@ -117,6 +117,10 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     background-color: var(--color-bg);
     background-image: url('/images/body-bg.png');
     background-repeat: repeat-x;
+    /* Contain any floated sidebars/figures left active by an article so the
+       footer that follows always starts full-width below them, never beside
+       a still-open float. */
+    display: flow-root;
   }
   a {
     color: var(--color-link-chrome);

@@ -1,6 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import KeTableOfContents from '../../components/KeTableOfContents.astro';
+import signatureImage from '../../assets/home/signature-transparent.png';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -21,5 +23,14 @@ const isKeSubPage = entry.id.startsWith('all-about-ke-rules/');
     <h1>{entry.data.title}</h1>
     {isKeSubPage && <KeTableOfContents currentId={entry.id} />}
     <Content />
+    <div class="ke-clear"></div>
+    <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="article-signature" />
   </article>
 </BaseLayout>
+
+<style>
+  .article-signature {
+    display: block;
+    margin: 1.5rem 0 0 auto;
+  }
+</style>

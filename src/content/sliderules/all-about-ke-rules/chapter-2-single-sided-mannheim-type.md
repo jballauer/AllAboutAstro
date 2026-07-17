@@ -15,6 +15,8 @@ So, what follows will be those historical K&E slide rules that are foundationall
 
 ## The Mannheim Family
 
+General-purpose rules obviously range in capabilities and were classified into several slide rule families. K&E's longest running family of rules, the basic Mannheim family, utilized the front side only with A, B, C, and D scales, and with formulas filling the back. S, L, and T were placed on the back of the slide and could be utilized with a small window indicator on the back of the rule. Pre-1900 models in this family were named "Engineers Slide Rules" within catalogs (shown below). But at the turn of the century, it's clear that K&E shifted the marketing of these rules toward the "everyman," showing that anybody could benefit from doing the basic arithmetic and trig operations made possible with the Mannheim rules. In 1901, K&E revamped their entire product line-up and marketing campaigns, pushing toward broader markets, including the in-house production of slide rules. They managed to hit every price point with their catalog of new slide rules, ranging from $1 for their budget "Beginner's rules," to as much as $12.50 for their new 20" Mannheim model. In 2022 money, that's $35 for the basic rules and as much as $420 for their flagship Mannheim model.
+
 <div class="ke-sidebar" data-width="wide">
 
 ## Sidebar: Solving the Early Maker Mystery
@@ -107,8 +109,6 @@ In conclusion, a picture of what was going on in the these early days at Keuffel
 
 </div>
 
-General-purpose rules obviously range in capabilities and were classified into several slide rule families. K&E's longest running family of rules, the basic Mannheim family, utilized the front side only with A, B, C, and D scales, and with formulas filling the back. S, L, and T were placed on the back of the slide and could be utilized with a small window indicator on the back of the rule. Pre-1900 models in this family were named "Engineers Slide Rules" within catalogs (shown below). But at the turn of the century, it's clear that K&E shifted the marketing of these rules toward the "everyman," showing that anybody could benefit from doing the basic arithmetic and trig operations made possible with the Mannheim rules. In 1901, K&E revamped their entire product line-up and marketing campaigns, pushing toward broader markets, including the in-house production of slide rules. They managed to hit every price point with their catalog of new slide rules, ranging from $1 for their budget "Beginner's rules," to as much as $12.50 for their new 20" Mannheim model. In 2022 money, that's $35 for the basic rules and as much as $420 for their flagship Mannheim model.
-
 Note that early on, K&E rolled out a revamped series of the Duplex and Specialty rules as well, which we will talk about in later sections.
 
 Earlier models in the Mannheim family of rules pose extraordinary degree of difficulty to describe. Mostly, we can thank the lack of surviving samples of these rules for this, as well as the absence of good descriptions or any firsthand, anecdotal, historical reports. But there will be a recurring theme until we get to the "flagship" Mannheim model in this family, the Model 4041 Series: up until the turn of the century, K&E seemed content to provide slide rules to customers using whatever was readily available to them, including from multiple suppliers, without too much rigid adherence to what the catalog stated was available.
@@ -156,6 +156,8 @@ However, renowned collector Bob Otnes conjectured that this rule could have been
 I credit Taverner-Gravet with the majority of the production of the Model 479, conceding that Rabone could have made the earliest version of this rule prior to T-G. And that tends to conform well to the way K&E did business during this time, as it seems that K&E would have sold anything to the public if there was money to be made. Because the catalog descriptions and illustrations are wildly generic, the actual rule being sold could have been anything that fit in a K&E wrapper.
 
 So it should be noted that the Tavernier-Gravet rule in my collection could very well have been the same rule sold by K&E during this era, despite not having a K&E maker's mark on the rule. I feel this might be especially true in the early years of the company when K&E seemed urgent to increase their catalog offerings as rapidly as possible. This would also explain the absence today of these older K&E slide rules. I do find it difficult to believe that these rules are so rare, as known rules from other manufacturers of the era are not. Rather, today, I believe these older Model 479 slide rules might have gone "incognito," bouncing around today in a different guise.
+
+<div class="ke-clear"></div>
 
 <div class="ke-figure ke-figure-left ke-figure-third">
 
@@ -227,7 +229,7 @@ Beginning with 1901, most collectors sort the Mannheim Family of rules into thre
 
 Also important for collectors is the idea of standardization within the appearance of K&E rules, and as such, what follows is mostly a strong commonality in the look and feel of K&E's wood rules that would dominate the next half-century. As such, next, I will focus on aspects of the Model 4041 Series that are typical of what we picture when we talk about these rules, as well as what we can realistically expect when we purchase them more than 100 years after they are made.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-left ke-figure-third">
 
 ![A page from the 1906 K&E product catalog describing their adjustable Mannheim rules](./_images/ch2-10-mannheim-1906-catalog.jpg)
 
@@ -236,6 +238,10 @@ Also important for collectors is the idea of standardization within the appearan
 </div>
 
 ### Model 4041 Series
+
+Once K&E replaced the 1746 and 1748 rules, as well as having moved past their transition period of various and sundried slide rules mentioned above, the Mannheim product lineup solidified and standardized around the Model 4041 series, both in form and function. These rules described below were manufactured in-house by K&E and sold with a sewed leather sheath. Although many of these rules were listed in the 1901 catalog, what we will classify here as the Model 4041 "Series" will be those models listed in the 1906 catalog and moving forward.
+
+The most important aspect of this series that differentiates them from those I mentioned in the previous sections are that 1) all are made of mahogany and 2) all rules of this series are made to be adjustable, based on Keuffel's patent of the "Mannheim Adjustable Slide Rule Frame" in June, 1900.
 
 <div class="ke-sidebar" data-side="right">
 
@@ -283,21 +289,9 @@ Today, nothing has changed. Boxwood is very expensive, mostly because by today's
 
 </div>
 
-Once K&E replaced the 1746 and 1748 rules, as well as having moved past their transition period of various and sundried slide rules mentioned above, the Mannheim product lineup solidified and standardized around the Model 4041 series, both in form and function. These rules described below were manufactured in-house by K&E and sold with a sewed leather sheath. Although many of these rules were listed in the 1901 catalog, what we will classify here as the Model 4041 "Series" will be those models listed in the 1906 catalog and moving forward.
-
-The most important aspect of this series that differentiates them from those I mentioned in the previous sections are that 1) all are made of mahogany and 2) all rules of this series are made to be adjustable, based on Keuffel's patent of the "Mannheim Adjustable Slide Rule Frame" in June, 1900.
-
 Regarding the shift to mahogany construction, I explore the reasons surrounding it in the "Sidebar: Mahogany vs. Boxwood" alongside. Regarding adjustability, K&E long understood that weather could change the moisture content of the wood, causing seasonal swelling - remember their comment above regarding the tendency of the 20" Model 1748 to warp? So any rule without the patented adjustability, namely those made prior to 1901, would have been hard to use on occasion.
 
 As such, after 1901, all "flagship" models with the Mannheim frame, including the Model 4053 "Polyphase Mannheim" rules in the next section, would boast "adjustability" as a significant improvement, and they could justifiably charge more for it! Conversely, mid-tier and budget rules would not include the extra feature and could be viewed by the consumer as a cost saver.
-
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![An original Model 4041 next to the 1925 N-4041, showing the 3mm width difference](./_images/ch2-11-4041-n-comparison.jpg)
-
-<p class="ke-figure-caption">With the original Model 4041 on the right, we see the 3mm difference with the new 1925 N- version of the model (left).</p>
-
-</div>
 
 Despite early questions about what all their Mannheim rules looked like in 1901, the Model 4041 would be the flagship model for this Mannheim series, most certainly in the eyes of modern day collectors. This Mannheim rule ($4.50 in 1901 and 1906) was a lovely 10" mahogany rule covered in celluloid with engine-divided scales and glass cursor (evolving over time). The original 4041 rules would have no model number until around 1912, at which point it would print the model number vertically in red at the end of the slide, as has become familiar with most all K&E rules.
 
@@ -310,9 +304,19 @@ The rule would also have a centimeter extension scale in the slide well on lamin
 
 Speaking of which, let's look at how the 10" 4041 model evolved over time:
 
-The rule retained a similar font and scale design as the earlier 4030 models for the first year or two, but changed between 1902 and 1904, while also adding red ink to the maker's mark. In 1904, the 4041 added a centimeter to the rule's physical length, making for a 27 cm format. This solved the issue of the indices being too close to the ends of the rule, and therefore fixed the problem with the cursor hanging off the end. Even so, K&E would continue to sell the two-hairline cursor, designated the 4052 D.L until beyond 1916. Note: K&E would also sell the magnifying cursor (4053 M) and a "decimal keeper" cursor (4052 DP) through 1906 (as shown above), being discontinued by 1909. With the extra space at the ends of the slide, the vertical, bracketed model number &lt;4041&gt; appeared in 1912. The centimeter extension scale in the slide well disappeared as well. This left only the June 9, 1900 patent notice remaining on the celluloid-covered slide well, still in black ink. In 1914 or 1915, the metal-framed cursor gave way to the "frameless" all-glass indicator, first with metal rails, and then with celluloid plastic rails in 1916. In 1917, the celluloid-lamination in the slide well disappeared and the patent notice moved to the front of the rule, in red. In 1921, it is interesting to note that the pricing of the 5" and 8" models was raised to $7.30 and $7.70 respectively, whereas the 10" charged $6.50. This indicates that the shorter rules were more expensive to make, likely because they were deemed to be "divided as finely" as the 10" version. If extra labor or tooling was involved to make that happen, it's curious why it took 20 years before this was reflected in the pricing? In 1922, like all K&E wood rules, serial numbers appeared on all models of the series. The 4041 (and 4035) added the "N" designation in 1925 with a slightly wider frame (see above) - growing from 32mm to 35mm wide - as well as scale labels. The 4035 model followed suit two years later. In 1936, like almost all K&E rules, the improved-glass, metal framed cursor was introduced. The scale designations were shown on the front of the rule. In 1939, the 16" and 20" versions are discontinued. In 1941, only the N4041 is left in the catalog, disappearing itself in the 1943 catalog.
+The rule retained a similar font and scale design as the earlier 4030 models for the first year or two, but changed between 1902 and 1904, while also adding red ink to the maker's mark. In 1904, the 4041 added a centimeter to the rule's physical length, making for a 27 cm format. This solved the issue of the indices being too close to the ends of the rule, and therefore fixed the problem with the cursor hanging off the end. Even so, K&E would continue to sell the two-hairline cursor, designated the 4052 D.L until beyond 1916. Note: K&E would also sell the magnifying cursor (4053 M) and a "decimal keeper" cursor (4052 DP) through 1906 (as shown above), being discontinued by 1909. With the extra space at the ends of the slide, the vertical, bracketed model number &lt;4041&gt; appeared in 1912. The centimeter extension scale in the slide well disappeared as well. This left only the June 9, 1900 patent notice remaining on the celluloid-covered slide well, still in black ink. In 1914 or 1915, the metal-framed cursor gave way to the "frameless" all-glass indicator, first with metal rails, and then with celluloid plastic rails in 1916. In 1917, the celluloid-lamination in the slide well disappeared and the patent notice moved to the front of the rule, in red. In 1921, it is interesting to note that the pricing of the 5" and 8" models was raised to $7.30 and $7.70 respectively, whereas the 10" charged $6.50. This indicates that the shorter rules were more expensive to make, likely because they were deemed to be "divided as finely" as the 10" version. If extra labor or tooling was involved to make that happen, it's curious why it took 20 years before this was reflected in the pricing? In 1922, like all K&E wood rules, serial numbers appeared on all models of the series. The 4041 (and 4035) added the "N" designation in 1925 with a slightly wider frame (see below) - growing from 32mm to 35mm wide - as well as scale labels. The 4035 model followed suit two years later. In 1936, like almost all K&E rules, the improved-glass, metal framed cursor was introduced. The scale designations were shown on the front of the rule. In 1939, the 16" and 20" versions are discontinued. In 1941, only the N4041 is left in the catalog, disappearing itself in the 1943 catalog.
 
 Throughout the history of the Model 4041, a few custom versions appeared as special order rules. Interestingly, and mysteriously, a sample of the Model 4041 appeared around 1910 with railroad track scales. This seems to pay homage to the old days of the D&P rules, as it was otherwise similar to the typical K&E-made 4041 being produced at that time. Even so, it's a real curiosity, and should not be a surprise to us given the amount of experimentation going on all throughout the early part of the 20th century. This version is not listed in a catalog. This 4041 rule was also produced between 1906 to 1935 with a finely-divided scale option known as the N4041F (a $3.50 upgrade). These rules included engine-divided inch and centimeter rulers on the sides (and a centimeter extension rule in the slide-well up until 1912). Likewise, during almost the entirety of the 1920s, a version of the rule could be ordered with decimal-reminders; "Quotient +" and "Quotient -" labels on the end of the slide. This option is not listed in any catalog of which I am aware.
+
+<div class="ke-clear"></div>
+
+<div class="ke-figure ke-figure-left ke-figure-third">
+
+![An original Model 4041 next to the 1925 N-4041, showing the 3mm width difference](./_images/ch2-11-4041-n-comparison.jpg)
+
+<p class="ke-figure-caption">With the original Model 4041 on the right, we see the 3mm difference with the new 1925 N- version of the model (left).</p>
+
+</div>
 
 As I mention in the Collector's Outlook (see below), the 10" Model 4041 is quite ubiquitous; however, the length variations of the 4041 are quite hard to find, as is the N4041F, "finely-divided" model of this series, as too the railroad track and decimal-reminder variants.
 
@@ -476,7 +480,9 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 
 </div>
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-clear"></div>
+
+<div class="ke-figure ke-figure-left ke-figure-third">
 
 ![The Model 4098A pocket slide rule, back side](./_images/ch2-17-4098a-back.jpg)
 
@@ -671,6 +677,8 @@ As a slide rule user, I much prefer using the Post/Hemmi bamboo pocket rules, so
 
 ## The Modern Polyphase Family
 
+The history of the Mannheim platform evolved and endured over almost the company's entire history, from their basic outsourced rule in the beginning, to high-quality rules built in-house, to the advanced functionality of the Polyphase rules, and through the modern era of the company. Regardless of the rule, by the 1950s, the Polyphase Mannheim had become the desired scale set for non-duplex rules.
+
 <div class="ke-figure ke-figure-right ke-figure-third">
 
 ![A page from the 1952 K&E catalog grouping all pocket slide rules together](./_images/ch2-21-1952-catalog-pocket-rules.jpg)
@@ -679,11 +687,9 @@ As a slide rule user, I much prefer using the Post/Hemmi bamboo pocket rules, so
 
 </div>
 
-The history of the Mannheim platform evolved and endured over almost the company's entire history, from their basic outsourced rule in the beginning, to high-quality rules built in-house, to the advanced functionality of the Polyphase rules, and through the modern era of the company. Regardless of the rule, by the 1950s, the Polyphase Mannheim had become the desired scale set for non-duplex rules.
-
 <div class="ke-clear"></div>
 
-<div class="ke-sidebar">
+<div class="ke-sidebar" data-width="wide">
 
 ## Sidebar: The Doric Family of Rules
 
