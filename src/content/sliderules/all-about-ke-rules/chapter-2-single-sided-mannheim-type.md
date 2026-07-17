@@ -476,6 +476,8 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 
 <div class="ke-image-feature-row">
 
+<div class="ke-image-feature-col">
+
 <div class="ke-image-feature-item">
 
 ![The Model 4098A pocket slide rule, front side](./_images/ch2-16-4098a-front.jpg)
@@ -488,6 +490,8 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 
 </div>
 
+</div>
+
 <div class="ke-image-feature-item">
 
 ![The cover of the 1936 Ever-There instruction manual](./_images/ch2-18-evertheres-manual-1936.jpg)
@@ -496,7 +500,7 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 
 </div>
 
-<p class="ke-image-feature-caption">Left to right: the Model 4098A's front side, with its simple Mannheim scale set and leather sheath embossed "K&E Co."; the back side, with inch and centimeter rulers and the S, L, and T scales (the trig functions set an angle via the notched back indicator, then read off to the front's B scale; the log scale reads its input off the D scale's right index and its value off the back); and the cover of the 1936 instruction manual — once the A suffix was added, the 4098A left the Ever-There family behind to become the first rule advertised simply as a "pocket slide rule."</p>
+<p class="ke-image-feature-caption">Top and bottom, the Model 4098A's front side, with its simple Mannheim scale set and leather sheath embossed "K&E Co.," and its back side, with inch and centimeter rulers and the S, L, and T scales (the trig functions set an angle via the notched back indicator, then read off to the front's B scale; the log scale reads its input off the D scale's right index and its value off the back); rightmost, the cover of the 1936 instruction manual — once the A suffix was added, the 4098A left the Ever-There family behind to become the first rule advertised simply as a "pocket slide rule."</p>
 
 </div>
 
