@@ -25,7 +25,7 @@ The duplex rule would evolve over the 70+ years of its manufacture, which I will
 
 Collector's Note: For the most part, the dimensions of the duplex rules remained the same as well. Where there are differences in a rule's length within a model line, the thickness of the stock did change as a function of its length. For example, the 5" version of these rules will be right at 1/5", the standard 10" rules are always 1/4" thick, and the 20" versions of the rules are approximately 1/3". The profile of the cursor block was made thicker to compensate so that the same frames and glass could be used. This is important for today's collector looking for replacement cursors for the longer slide rules, since cursors from the company are not interchangeable between rules of differing lengths. As a new collector, I once thought that maybe a 10" cursor from a donor 10" rule might fit on the much more rare long-scale version, but this is not the case. However, such a cursor can be customized by shimming the cursor blocks with other material, like an old credit card.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter">
+<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-02-rule-thickness-cross-sections-full.png">
 
 ![A diagram comparing the cross-sectional thickness of the 5-inch, 10-inch, and 20-inch duplex rules](./_images/ch3-02-rule-thickness-cross-sections.png)
 
@@ -131,7 +131,7 @@ Also known as the "Wm. Cox rule," the 1744 was the first "duplex" rule ever prod
 
 There has been some debate about these early rules being constructed by K&E, but collector Bob Otnes has stated that he was informed of the likely happenings by Hans Dennert of the D&P/Aristo company lineage. Dennert confirmed that the celluloid-laminated, wooden components with completed scales were sent unassembled to K&E so as to avoid the US duty tax. K&E then finished the rules by stamping the labels and numbers to the scales, affixing the body of the rule together with end brackets, and then supplying the chisel metal cursor. He further stated that the rules have no D&P markings on the rule. According to the Oughtred Society, which relates what I just told you here, there are only two known samples of the rule in existence.
 
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch3-05-1744-rule-sample-full.jpg">
 
 ![A surviving sample of the Model 1744 Wm. Cox rule](./_images/ch3-05-1744-rule-sample.jpeg)
 
@@ -178,7 +178,7 @@ This series of rules would morph slightly over the next 15 years, beginning with
 
 Speaking of 1906, while recovering from a fire to one of their Hoboken, NJ, warehouses the year earlier, K&E was undeterred from making a plethora of changes to the 4071 series of slide rules, streamlining some of the models while also adding many others, including a variety of 8" and 16" rules. Additionally, K&E shifted away from shipping both slides with their rules, going back to single-slide, arithmetic and trigonometric options. Where they did this, the models were denoted with an "N" suffix. These retained the $1.50 higher price tag over the arithmetic-only rules despite no longer shipping with two slides. This is because K&E found a way to add the trig scales to the arithmetic slide, with A [B S C] D on the front side and A [BI T CI] D on the back, with the L-scale on the edge of the rule. The cursor was modified to provide an indicator for the rule's edge. This was true for both cursor options, which remained the same for the models, except "metal" was substituted for brass in the non-glass variants. And like the models before it, all slide rules would come with a sewed-leather case and directions.
 
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch3-06-hoboken-site-today-full.png">
 
 ![The site of K&E's 1906 Hoboken, NJ office building and factory, as it appears on Google Earth today](./_images/ch3-06-hoboken-site-today.png)
 
@@ -328,7 +328,7 @@ Made entirely of plastic, but no plastic like the Ever-There rules, the Model 90
 
 The 9071-3 Doric is quite rare from a collector's perspective as it doesn't pop up often at auction. It is certainly attainable, however, and reasonably so, as it won't be confused by many as a high-dollar collector's rule, with an average price of maybe $25 dollars on eBay when it does come up. However, very few have come up for sale over the last 5 years and may be valued higher for that reason.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter">
+<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-08-9071-3-doric-rule-full.jpg">
 
 ![The Model 9071-3 Doric Polyphase Duplex slide rule](./_images/ch3-08-9071-3-doric-rule.jpg)
 
@@ -476,7 +476,7 @@ The first thing to observe with the new scale set is the emphasis on trigonometr
 
 This is the only implementation of the extended sine scales S1 and S2 on a K&E slide rule, though their Log Log Vector Duplex rule introduced 4 years prior had inverted S1, S2, and T scales. As we will see in our discussion of that rule, there is an interesting backstory there. But suffice it to say, there might be another reason that K&E would re-label these scales for the next version of this slide rule 4 years later.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch3-09-4080-5-4081-5-full.jpg">
 
 ![Two rules from the collection: the 4080-5 Trig and 4081-5 Deci-Trig](./_images/ch3-09-4080-5-4081-5-trig-decitrig.jpg)
 
@@ -592,7 +592,7 @@ Their rules would continue being produced through the modern era, advertised as 
 
 This Doric model, introduced in 1948 and appearing in the 1949 catalog as one of the three members of the Doric family, was an exact conversion of the Model 4081-3 scales into a plastic rule. Interesting to me, there was no "N9080-3" version of this same Doric rule. We could make a judgment about the Trig vs. Deci-Trig choices being made during this era of slide rules. K&E's own choice of the "decimal degree" version of the rule instead of the DMS version likely demonstrates which version was the best seller. As such, the Model N4081-3 Deci-Trig was deserving of being rewarded a doppelganger rule.
 
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/ke-rules/ch3-11-4080-4081-4083-collection-full.jpg">
 
 ![Three rules from the collection: the 4080 Trig, 4081 Deci-Trig, and 4083 Log Log Vector](./_images/ch3-11-4080-4081-4083-collection.jpg)
 
@@ -677,7 +677,7 @@ Weinbach loved the new design, submitted a couple of minor suggestions, and upda
 
 The quality that Weinbach loved most about the new version of his rule was that it would improve the scale set to make it more capable in a general math sense. He saw this rule as one that non-engineers might actually buy, and any opportunity to cut into the sales of the Deci-Trig was favorable to him.
 
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/ke-rules/ch3-14-log-log-vector-duplex-pair-full.jpg">
 
 ![Two Log Log Duplex Vector rules from the collection](./_images/ch3-14-log-log-vector-duplex-pair.jpg)
 
@@ -742,7 +742,7 @@ Like the rest of the K&E duplexes, the N4083 models would also shift to the inla
 
 Another major change to the scale set would occur in 1954, significant enough to drop the N-prefix from the models. As you might recall, all of the Log Log rules (both Duplex and Vector families) dropped the N-prefix that year, which I speculated earlier might have been because of the new 4181-3 introduction of the Ivorite rule that lacked the "N," where K&E revamped the Log Log Duplex rules to match its scale set.
 
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch3-12-4083-vector-scales-full.jpg">
 
 ![A close-up of the vector scales on a 4083 Log Log Duplex Vector rule](./_images/ch3-12-4083-vector-scales-closeup.jpg)
 
@@ -764,7 +764,7 @@ By the 1950s, leading high-end slide rule makers of the age, especially Faber-Ca
 
 But by this point, wooden rules were not high profit items. And for K&E, it is debatable if they ever were. Wooden rules, from the first day, were costly to build, especially in smaller sizes where the labor hours were mostly the same regardless of the size of the rule. This meant lower profit margins for wooden pocket rules and fewer customers that saw value in them. Many that K&E did produce over time, particularly the pocket versions (e.g. Models 4031, 4053-2, and 4088-1), would likely have been sold nearly at cost, just so they could fill market expectations.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch3-15-68-series-conversion-chart-full.jpg">
 
 ![A conversion chart from the 1962 K&E catalog mapping old model numbers to new 68-1XXX designations](./_images/ch3-15-68-series-number-conversion-chart.jpg)
 
@@ -880,7 +880,7 @@ I find it ironic that K&E would hang on as long as possible to their all-wooden 
 
 Without knowing this upfront, it would be one of the most curious slide rules of the modern era in my estimation. It might still be. Regardless, it is certainly a very functional and attractive rule.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter">
+<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-22-gp12-front-full.png">
 
 ![The K&E GP-12, front side](./_images/ch3-22-gp12-front.png)
 
@@ -899,7 +899,7 @@ For the front side, it seems like it was created by taking as many scales as you
 
 But the back side of the rule is quite different. It is populated with "Conversion Scales and Factors," but it has a logarithmic scale on the top rail and an L linear scale on the bottom, with centimeter and inch rulers along the edges of the slide. These scales, however, are not calibrated to the front face, nor is a cursor needed.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch3-23-gp12-back-closeup-full.jpg">
 
 ![A close-up of the back of the GP-12 showing the inch/centimeter conversion and logarithmic scales](./_images/ch3-23-gp12-back-closeup.jpg)
 
@@ -921,7 +921,7 @@ The more that the GP-12 is used and held, the more that this user can appreciate
 
 Shifting to a new model numbering scheme wasn't the only thing that K&E accomplished in 1962. They also introduced, arguably, their best slide rule in company history. It came in both pocket and full-sized versions: the Deci-Lon 5 (68-1300) and the Deci-Lon 10 (68-1100).
 
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch3-24-decilon-5-art-shot-full.jpg">
 
 ![A close-up art shot of the Deci-Lon 5 pocket slide rule](./_images/ch3-24-decilon-5-art-shot.jpg)
 
@@ -933,7 +933,7 @@ The Deci-Lons were the fulfillment of everything K&E had learned about making sl
 
 This rule throws out tradition entirely. Gone are the right angles and the conservative approach to design.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter">
+<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-16-decilon-10-art-shot-full.jpg">
 
 ![A close-up art shot of the Deci-Lon 10, full-sized slide rule](./_images/ch3-16-decilon-10-art-shot.jpg)
 
@@ -1012,7 +1012,7 @@ One of the more unusual slide rules ever produced, and certainly a pinnacle rule
 
 With A, B, C, and D scales in their traditional places, the rule was populated with 7 other scales: three U scales on the slide and 2 V scales on each of the rails. These U and V scales had any of 30 different dimensional and physics variables (with a legend for these on the back side of the rule). These could be used to confirm the formulas that comprise those variables. In other words, it helps keep dimensional units straight when you do lengthy computations. At a more basic level, a formula like F (force) = M (mass) × A (acceleration) can be confirmed on the Analon by placing the C-index at "M" on the bottom rail's V scale, moving the cursor to "A" on the slide's U scale, and reading "F" off of the same V scale, thus confirming the formula.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch3-25-analon-miguel-ramirez-full.png">
 
 ![The K&E 68-1400 Analon slide rule](./_images/ch3-25-analon-miguel-ramirez.png)
 
