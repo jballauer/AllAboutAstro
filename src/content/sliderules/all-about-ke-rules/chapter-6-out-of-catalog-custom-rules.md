@@ -9,7 +9,7 @@ At this point, we turn to short-lived slide rules that never appeared in a K&E c
 
 ### D4053-3 Government-Issue Rule
 
-<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch6-01-d4053-rule-full.jpg">
+<div class="ke-figure ke-figure-right" data-hires="/images/ke-rules/ch6-01-d4053-rule-full.jpg">
 
 ![The author's D4053-3 rule, showing the U.S. LUTZ stamp on the rule's body](./_images/ch6-01-d4053-rule.jpg)
 
@@ -23,7 +23,7 @@ The "D" designation represented the decimal trig scales that had found it's way 
 
 Appearance-wise, this rule was either entirely normal except for the "D" designation, stamped "U.S." on the rule's body in one iteration, labelled "U.S. Government" in another version, and "US LUTZ" in the **Model D68-1617** version post-1962. Most such versions would come with a manual, magnifying cursor, and custom leather case to also accommodate the higher-profile cursor. The typical case was the same as provided with a stock 4053 rule sans any government-use identifiers. It is unknown at the moment of this writing if the packaging and documentation was customized.
 
-<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch6-02-us-lutz-slide-rule-full.jpg">
+<div class="ke-figure ke-figure-right" data-hires="/images/ke-rules/ch6-02-us-lutz-slide-rule-full.jpg">
 
 ![A closer view of a leather case and identification tag from a U.S.-marked D4053-3 rule](./_images/ch6-02-us-lutz-slide-rule.jpg)
 
@@ -57,7 +57,7 @@ The distinguishing trait of this rule as compared with the previous government r
 
 As for K&E's role in the rule's production, there is no doubt of their manufacturing behind two versions of the rule, one carrying K&E labelling (as the Model 4108) and another marked as offered by the "American Blueprint Co, Inc," also of New York (see above). But beyond it's manufacturer, there would be no other documentation by K&E for this rule, nor was it mentioned in any product catalog. The instruction manual was produced by the U.S Military, titled "[TM 6-240](http://www.mccoys-kecatalogs.com/KEManuals/TM6-240/TM6-240manual.htm), War Department Technical Manual, RULE, SLIDE, MILITARY." (Link to the manual courtesy of Clark McCoy at www.mccoys-kecatalogs.com).
 
-<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch6-04-4108-documentation-full.jpg">
+<div class="ke-figure ke-figure-right" data-hires="/images/ke-rules/ch6-04-4108-documentation-full.jpg">
 
 ![The cover of TM 6-240, the War Department's technical manual for the Rule, Slide, Military, Field Artillery, With Case, 10-Inch](./_images/ch6-04-4108-documentation.jpg)
 
@@ -95,7 +95,7 @@ The relationship between K&E and the American Blueprint Company is unclear, but 
 
 ### Model 4110 Power Trig
 
-<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch6-05-4110-power-trig-ebay-full.png">
+<div class="ke-figure ke-figure-right" data-hires="/images/ke-rules/ch6-05-4110-power-trig-ebay-full.png">
 
 ![An eBay listing photo of the Model 4110 Power Trig rule with its original box](./_images/ch6-05-4110-power-trig-ebay.png)
 
