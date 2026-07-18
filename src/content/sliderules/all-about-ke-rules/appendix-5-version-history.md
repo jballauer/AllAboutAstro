@@ -11,7 +11,7 @@ Version 1.0 is the book as it existed on the original Weebly site before this mi
 
 ### Version 1.7 — July 18, 2026
 
-- Added Chapter 7: My Portfolio of K&E Slide Rules, a category-by-category catalog of rules in the author's own collection, each entry expanding in place to show a photo, write-up, and recorded stats (scale length, purpose, material, dates/serials, front/rear scale sets). Covers 37 rules; the author's full collection is larger, so expect this catalog to keep growing.
+- Added Chapter 7: My Portfolio of K&E Slide Rules, a category-by-category catalog of rules in the author's own collection, each entry expanding in place to show a photo, write-up, and recorded stats (scale length, purpose, material, dates/serials, front/rear scale sets) where available, or an honest placeholder where not. Covers 57 rules; the author's full collection is larger, so expect this catalog to keep growing.
 
 ### Version 1.6 — July 18, 2026
 

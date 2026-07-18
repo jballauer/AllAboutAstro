@@ -7,7 +7,7 @@ draft: false
 
 K&E rules are the most numerous in my collection, and this chapter is my attempt to catalog them properly, one entry per rule (or closely related set of samples), organized the same way as the rest of this book: Single-Sided Mannheim, Double-Sided Duplex, Specialty, Miscellaneous, and Out-of-Catalog/Custom. Click a rule's name to expand it and see its photo and story. Many of these entries repeat and condense stories already told in earlier chapters; a few are only mentioned here for the first time.
 
-This chapter is a living framework. Every rule below already has a first-hand write-up, since I've built the list so far from what I've already documented elsewhere in the book. But my actual collection is considerably larger than what's written up here, so expect this catalog to keep growing.
+This chapter is a living framework. Every rule listed below is one I own — some already have a full write-up, photo, and stats, while others are still just placeholders marked "check back as this catalog grows" until I get around to properly documenting them. My actual collection is considerably larger than even this list, so expect it to keep growing on both fronts.
 
 ## Single-Sided Mannheim
 
@@ -153,6 +153,181 @@ The all-plastic "Modern Polyphase" evolution of the 4053, considered the spiritu
 <dt>Front</dt><dd><code>Inches || K, DF [CF, L, CI, C] D, A || Centimeter</code></dd>
 <dt>Back of Slide</dt><dd><code>[T, ST, S, C]</code></dd>
 </dl>
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4041 Mannheim</span></summary>
+
+<div class="ke-portfolio-detail">
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4054 Polyphase Mannheim</span></summary>
+
+<div class="ke-portfolio-detail">
+
+Not to be confused with the early boxwood "Favorite" 4054 above — this is the later, more common all-mahogany version, reinstated in 1944 as a budget option alongside the N4053 Polyphase Mannheim. I own this rule but haven't written up its details yet — check back as this catalog grows.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4055 Favorite</span></summary>
+
+<div class="ke-portfolio-detail">
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4158/68-1892 "K-12 Prep"</span></summary>
+
+<div class="ke-portfolio-detail">
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4161-1 Polyphase Mannheim (5" pocket)</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The 5" pocket sibling of the 4161-3 above. I own this rule but haven't written up its details yet — check back as this catalog grows.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4051 Mannheim (20")</span></summary>
+
+<div class="ke-portfolio-detail">
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4045 Mannheim (16")</span></summary>
+
+<div class="ke-portfolio-detail">
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E "Decimal Keeping" Mystery Polyphase Mannheim Rule</span></summary>
+
+<div class="ke-portfolio-detail">
+
+One of K&E's unnumbered "Mystery" rules — a university-market slide rule built on the "Improved Polyphase Mannheim" scale set, sold without any catalog model number. Unlike the university-branded mystery rules also known among collectors, my sample has "decimal keeping" instructions printed on the back instead of a university insignia, placing it among what collectors call "Decimal Keeping Mystery rules." Mine carries a 1937 serial number.
+
+<dl class="ke-portfolio-stats">
+<dt>Front</dt><dd><code>Inches // A, DF [CF, CI, C] D, K \ Centimeters</code></dd>
+<dt>Back of Slide</dt><dd><code>[S, B, L, T]</code></dd>
+<dt>Date / Serial</dt><dd>1937</dd>
+</dl>
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4031 Mannheim (5" pocket)</span></summary>
+
+<div class="ke-portfolio-detail">
+
+<div class="ke-portfolio-photo">
+
+![A size comparison of K&E 4041-series Mannheim rules, including the diminutive 5-inch Model 4031](./_images/ch2-12-4041-series-size-comparison.jpg)
+
+<p class="ke-figure-caption">Part of a 4041-series size comparison — my 4031 sample, missing its cursor, is the smallest rule shown.</p>
+
+</div>
+
+The diminutive 5" pocket member of the 4041 Mannheim family. My sample is missing its cursor, so finding a period-correct replacement could be a challenge.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4097C Ever-There</span></summary>
+
+<div class="ke-portfolio-detail">
+
+<div class="ke-portfolio-photos">
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4097C Ever-There pocket slide rule, front side](./_images/ch7-23-4097c-front.jpg)
+
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4097C Ever-There pocket slide rule, back side](./_images/ch7-24-4097c-back.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
+
+</div>
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4097D Ever-There</span></summary>
+
+<div class="ke-portfolio-detail">
+
+<div class="ke-portfolio-photos">
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4097D Ever-There pocket slide rule, front side](./_images/ch7-25-4097d-front.jpg)
+
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4097D Ever-There pocket slide rule, back side](./_images/ch7-26-4097d-back.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
+
+</div>
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
 
 </div>
 
@@ -374,6 +549,49 @@ A full plastic Doric conversion of the flagship Log Log Duplex Deci-Trig scale s
 </details>
 
 <details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4181-1 Pocket Log Log Deci-Trig ("Jet-Log Jr.")</span></summary>
+
+<div class="ke-portfolio-detail">
+
+<div class="ke-portfolio-photos">
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4181-1 Pocket Log Log Deci-Trig, front side](./_images/ch7-21-4181-1-front.jpg)
+
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4181-1 Pocket Log Log Deci-Trig, back side](./_images/ch7-22-4181-1-back.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
+
+</div>
+
+The pocket version of the 10" Model 4181-3, and in many ways the more successful of the two — as a pocket rule, it's just really good. Its scale set matched the full-sized rule, making it the most powerful pocket slide rule on the market at its 1953 introduction, regardless of maker. From 1960 it was marketed as the "Jet-Log Jr." (the 10" version becoming simply the "Jet-Log"), and both outlasted the wooden 4080/4081 legacy rules, remaining in the catalog through 1972.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Scale Length</dt><dd>5"</dd>
+<dt>Purpose</dt><dd>General Mathematics</dd>
+<dt># of Scales</dt><dd>20</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Ivorite (all-plastic)</dd>
+<dt>Dates / Serials</dt><dd>undetermined (SN 193281), undetermined (SN 003427)</dd>
+<dt>Front</dt><dd><code>LL02, LL03, DF [CF, CIF, CI, C] D, LL3, LL2</code></dd>
+<dt>Rear</dt><dd><code>LL01, L, K, A [B, T, SRT, S] D, DI, LL1</code></dd>
+</dl>
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">K&E Deci-Lon 10 (68-1100)</span></summary>
 
 <div class="ke-portfolio-detail">
@@ -448,6 +666,61 @@ The pocket sibling of the Deci-Lon 10, and quite possibly the best pocket slide 
 </div>
 
 A curious "simplex" rule — duplex construction with plastic end brackets, but printed for one-sided use — whose back doubles as both a log-scale calculator and an inch/centimeter ruler. At $6.50 in 1968, it struck me as a lot of capability for the price when I first came across mine.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model N4070-3 Polyphase Duplex Trig</span></summary>
+
+<div class="ke-portfolio-detail">
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4088-3 Polyphase Duplex (10")</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The 10" member of the Polyphase Duplex family, distinct from the 5" 4088-1 above. I own this rule but haven't written up its details yet — check back as this catalog grows.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4181-3 Log Log Duplex Deci-Trig ("Jet-Log")</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The all-plastic "Ivorite" successor to the flagship wooden 4081-3 Log Log Duplex Deci-Trig, later marketed as the "Jet-Log." I own samples of both this and its Doric-labeled N9081-3 predecessor, and comparing them side by side is telling: the N9081-3 is heavier, stiffer, glossier, more square, and more purely white, while the 4181-3 is lighter, thinner, more beveled, and a slightly different shade — evidence of K&E refining the plastic formula between the two.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model N4092-5 Log Log Duplex (20")</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The 20" member of the 4092 Log Log Duplex family, distinct from the original/4092-3 samples above. I own this rule but haven't written up its details yet — check back as this catalog grows.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model N4088-5 Polyphase Duplex (20")</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The 20" member of the Polyphase Duplex family, distinct from the 5" 4088-1 above. I own this rule but haven't written up its details yet — check back as this catalog grows.
 
 </div>
 
@@ -746,6 +1019,39 @@ A 6.5-foot redwood classroom demonstrator modeling the full Deci-Lon 10 scale se
 <dt>Front</dt><dd><code>Sq1, Sq2, DF [CF, CIF, L, CI, C] D, Ln0, Ln1, Ln2, Ln3</code></dd>
 <dt>Rear</dt><dd><code>Ln-3, Ln-2, Ln-1, Ln-0, A [B, T, SRT, S, C] D, DI, K</code></dd>
 </dl>
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4163-1</span></summary>
+
+<div class="ke-portfolio-detail">
+
+*I own this rule but haven't written up its details yet — check back as this catalog grows.*
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4100 Stadia Rule</span></summary>
+
+<div class="ke-portfolio-detail">
+
+Part of K&E's longest-running product line, distinct from the 20" N4101 above. I own this rule but haven't written up its details yet — check back as this catalog grows.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model N4100 Stadia Rule</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The 1925 upgrade of the 4100 Stadia Rule above, adding an HC scale and later converting to semi-plastic construction in 1956. I own this rule but haven't written up its details yet — check back as this catalog grows.
 
 </div>
 
