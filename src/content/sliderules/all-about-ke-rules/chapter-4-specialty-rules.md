@@ -31,7 +31,7 @@ Thus, technology for this rule was nothing new, as they'd been developing upon t
 
 The back side, with only a CI scale on the bottom of the slide and another D scale on the bottom rail, allows users to invert their multiplications to work more like a division problem, without any distractions from other scales. Strangely, with only two scales on the back there is a conspicuous amount of empty space on the rule. K&E intended for users who do commonly performed conversions or computations to use this void on the rule to mark their own "gauge-points" to align with the index marks. Seems like a great idea, though it does make for a sparse presentation on the back side of the rule.
 
-<div class="ke-figure ke-figure-left">
+<div class="ke-figure ke-figure-left" data-hires="/images/ke-rules/ch4-02-4095-3-back-full.jpg">
 
 ![The back of the Model 4095-3 Merchant's Duplex slide rule](./_images/ch4-02-4094-merchants-mannheim.jpg)
 
@@ -57,7 +57,7 @@ Note: This rule is not to be confused with a very early **All-Metal Mannheim Mod
 
 If we go by the product catalogs, then the Merchant's **Model 4094** was born in 1930. However, there are samples with serif-font that date as early as 1927, albeit not in the 1927 catalog or 1928 price list. This was a standard Mannheim-formatted build out of celluloid-covered mahogany, like the current **Model N4041-3**, only with the Merchant's scale set. In fact, it was essentially the same rule as the N4041-3 in all regards except the scale set, DF [CF, CI, C] D. Inch and centimeter rules were on the top and bottom celluloid-covered edges of the rule. There were no scales on the back of the slide. Price of the rule was $5.00, which was 50 cents less than the N4041-3 for that year.
 
-<div class="ke-figure">
+<div class="ke-figure" data-hires="/images/ke-rules/ch4-03-4094-4095-3-front-full.jpg">
 
 ![The Model 4094 Merchant's Mannheim slide rule (top) alongside the front of the Model 4095-3 Merchant's Duplex (bottom)](./_images/ch4-03-4095-3-merchants-duplex.jpg)
 
@@ -130,7 +130,7 @@ The scale set is unknown, though based on drawings in the 1901 catalog of the su
 
 In 1901, the Model 1749 Mannheim Stadia was re-designated as the **Model 4101 Stadia**. This 20" model would endure until 1952. But it would be the 10" version, added that same year that would become K&E's longest lasting slide rule, being produced in some form until 1960.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch4-06-n4101-stadia-full.jpg">
 
 ![The 20-inch N4101 Stadia Surveyor's Rule with its case](./_images/ch4-06-n4101-stadia-surveyors-rule.jpg)
 
@@ -190,7 +190,7 @@ inches // R1 [V1/H/V3, HC, V2] R2 \\ centimeters
 
 </div>
 
-<div class="ke-image-feature-item">
+<div class="ke-image-feature-item" data-hires="/images/ke-rules/ch4-09-4143-kissam-back-full.jpg">
 
 ![The back of the Model 4143 Kissam Stadia's slide, void of scales](./_images/ch4-09-4143-kissam-back-of-slide.jpg)
 
@@ -220,7 +220,7 @@ Value for the collector is strong, though it seems to vary. As with the Model 41
 
 Patented by Branch H. Colby of St. Louis, and one of two devices known as "Colby's Computers" licensed to K&E for sale, the **Model 1749-3 Stadia** is pictured in the 1897 catalog. The rule is for an office desktop, at a massive 50 inches in length. It is comprised of an upright slide riding in a vertical, perpendicular groove. Advertised for stadia reductions, computing the difference of elevations between two points if the Stadia reading (delta-y) and vertical angle (theta) are known.
 
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch4-11-colbys-stadia-catalog-full.jpg">
 
 ![The 1897 catalog illustration of the Model 1749-3 Colby's Stadia](./_images/ch4-11-1749-3-colbys-stadia-catalog.jpg)
 
@@ -463,7 +463,7 @@ In 1922, K&E completely changed the format of this slide rule, adding the "N" pr
 
 Essentially and functionally, the new format worked the same as the old, except stroke length and RPM are switched on the slide relative to the earlier version, and the cursor replaces the need for dual slides. This rule would last appear in the 1937 catalog and the 1938 price list at the price of $10. Of note, 1938 catalog pricing for the 4088-1 polyphase duplex pocket rule, from which the N4135 was derived, was $9.50.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch4-14-4135-catalog-full.jpg">
 
 ![A 1921 K&E catalog description of the Model 4135 Power Computer](./_images/ch4-14-4135-power-computer-catalog.jpg)
 
@@ -479,7 +479,7 @@ Keeping to the theme of "steam" power, the **Model 4142 Allan Friction Head Slid
 
 The detailed illustrations in the 1921 catalog show a very clearly labeled and well thought-out slide rule. I would certainly love to see a scan or image of this rule, or better yet, the real deal in person. Alas, there is simply no internet record of an actual sample anywhere. More searching (and research) is necessary.
 
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/ke-rules/ch4-15-4142-catalog-full.jpg">
 
 ![A 1921 K&E catalog illustration of the Model 4142 Allan Friction Head Duplex](./_images/ch4-15-4142-allan-friction-head-catalog.jpg)
 
@@ -538,7 +538,7 @@ Additionally, there is a scale beneath the slide on the main body with columns o
 
 An example for the use of the Roylance rule is shown below.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter">
+<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch4-17-roylance-example-full.png">
 
 ![An example worksheet for the use of the Model 4133 Roylance rule](./_images/ch4-17-4133-roylance-example-use.png)
 
@@ -682,7 +682,7 @@ Regardless, it should be noted that K&E made two versions of this slide rule. Th
 
 This rule would be updated in 1939, also according to McCoy, but removes the "Radio Special" moniker from the rule itself. This second version also makes one alteration of the scales by switching LL00 and LL0 on the back side of the rule. This rule, from my own collection, might have been offered at least through 1943, though my own sample has a serial number that corresponds to 1941.
 
-<div class="ke-figure">
+<div class="ke-figure" data-hires="/images/ke-rules/ch4-21-4082-3-full.jpg">
 
 ![The Model 4082-3 "Radio Special" slide rule](./_images/ch4-21-4082-3-radio-special.jpg)
 
@@ -723,7 +723,7 @@ As for the Cooke, the slide rule seems successful, as it's not scarce, especiall
 
 The first four variants were created by alterations and movement of the texts and emblems on the rule. For example, the <4139> model indication would not appear on the first variation of the rule, which included all samples up to ~852,000 in serial number, dating to somewhere in 1941. Likewise, the circular "Cooke Radio" badge is on the back of the side with the earliest model, unlike most of the later variants. I will spare the reader the tedium of each variant, but a few other notes are worth stating:
 
-<div class="ke-figure">
+<div class="ke-figure" data-hires="/images/ke-rules/ch4-22-cooke-radio-front-full.jpg">
 
 ![The front side of the Model 4139 Cooke Radio Rule](./_images/ch4-22-4139-cooke-radio-front.jpg)
 
@@ -748,7 +748,7 @@ Note: This slide rule might be better talked about later in Chapter 7 where we d
 
 Often referred to as the **National Union Radio Reactance Computer**, I have shortened it to the name found on the 4 page instruction pamphlet that came with this slide rule. We will talk about dating this rule shortly, but we should note here that the instructions state that the rule was "designed and Copyright 1937 by National Union Radio Corporation." This business, based in Newark, New Jersey, and formed in 1929, constructed radio (vacuum) tubes prior to researching and developing some transistors in the 50s prior to closing down in 1954. Keeping these dates in mind, let's look at the slide rule itself.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch4-23-national-union-full.png">
 
 ![The National Union Radio Reactance Computer slide rule](./_images/ch4-23-national-union-radio-rule.png)
 
@@ -865,7 +865,7 @@ For the collector, these rules are obviously display pieces. They are rare to fi
 
 Created to demonstrate the Mannheim, Polyphase Mannheim, and Beginner's series single-sided rules, the Model 100 Demonstration Rule was likely K&E's first such rule. Its placement in the first educational catalog of 1933 tells us its purpose. The Model 4041, 4053 and 4058 rules were those supported, which were the K&E rules for the most basic of general math use, likely finding themselves in many classrooms. The catalog description tells us, "It's appearance will add to that of any classroom in which it may be placed."
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch4-24-model-100-demo-full.jpg">
 
 ![The earlier Model 101 demonstration rule made of thick, light-colored softwood](./_images/ch4-24-model-100-demo-rule.jpg)
 
