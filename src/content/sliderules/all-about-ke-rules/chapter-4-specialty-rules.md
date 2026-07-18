@@ -751,7 +751,7 @@ The first four variants were created by alterations and movement of the texts an
 
 ![The front side of the Model 4139 Cooke Radio Rule](./_images/ch4-22-4139-cooke-radio-front.jpg)
 
-<p class="ke-figure-caption">The Model 4139 Cooke Radio Rule - showing the front side of my more recent sample of two, this slide rule has a 1954 serial number. Significant in that it exhibits the &lt;4139&gt; model number and the rounded Cooke Radio emblem, which the earliest Cooke rules did not have, as well as the exposed mahogany edges.</p>
+<p class="ke-figure-caption">The Model 4139 Cooke Radio Rule - showing the front side of one of my three samples, this one carrying a 1954 serial number. Significant in that it exhibits the &lt;4139&gt; model number and the rounded Cooke Radio emblem, which the earliest Cooke rules did not have, as well as the exposed mahogany edges.</p>
 
 </div>
 

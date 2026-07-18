@@ -677,7 +677,7 @@ A rare, never-cataloged rule built on the 4081 Log Log Duplex Deci-Trig with an 
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">K&E Model 4139 Cooke Radio Rule (two samples)</span></summary>
+<summary><span class="ke-portfolio-name">K&E Model 4139 Cooke Radio Rule (three samples)</span></summary>
 
 <div class="ke-portfolio-detail">
 
@@ -701,7 +701,7 @@ A rare, never-cataloged rule built on the 4081 Log Log Duplex Deci-Trig with an 
 
 </div>
 
-K&E's longest-enduring electronics rule, designed by Navy Chief Radio Electrician Nelson Cooke. I own two samples spanning nearly the rule's full production run: an early one with an unusually early 1938 serial number, and this 1954 example, showing the later exposed-mahogany-edge construction and rounded "Cooke Radio" emblem.
+K&E's longest-enduring electronics rule, designed by Navy Chief Radio Electrician Nelson Cooke. I own three samples spanning nearly the rule's full production run: an early one with an unusually early 1938 serial number, this 1954 example (pictured), showing the later exposed-mahogany-edge construction and rounded "Cooke Radio" emblem, and a third from 1959.
 
 <dl class="ke-portfolio-stats">
 <dt>Made By</dt><dd>K&E</dd>
