@@ -272,8 +272,12 @@ In this formula, "l" is the latitude of the observation obtained by either map o
 
 Scale layout is as follows:
 
-Front Side: D, sin d [ cos l & h, C, tan ] tan l, Az
-Back Side: Vert, A [B, CI, C] D, Vert/Horiz
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front Side</span><span class="ke-scale-set-scales">D, sin d [ cos l & h, C, tan ] tan l, Az</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back Side</span><span class="ke-scale-set-scales">Vert, A [B, CI, C] D, Vert/Horiz</span></div>
+
+</div>
 
 This 20" duplex formatted rule first appeared in the 1915 product catalog with frameless indicator and Morocco boxed case for $18. It would adopt the N- prefix in 1927, with the only apparent alteration, other than a $24 price tag, being the change to a non-serif font (which happened across all K&E slide rules in 1927, without exception). It would upgrade to the improved-glass indicator (metal frame) in 1936. In the 1952 catalog, the N4102 was listed as "Temp. Disc." and would disappear entirely by 1954.
 
@@ -421,8 +425,12 @@ The rule has two slides which move independently between two fixed stator rails,
 
 Scales for the Hudson rules are as follows...
 
-Front Side: Indicated Horsepower [RPM] [Stroke Mean Pressure] Cylinder Diameter
-Back Side: Mean Pressure Scale
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front Side</span><span class="ke-scale-set-scales">Indicated Horsepower [RPM] [Stroke Mean Pressure] Cylinder Diameter</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back Side</span><span class="ke-scale-set-scales">Mean Pressure Scale</span></div>
+
+</div>
 
 The slide rule works on the principle that if you know any two of an engine's piston speed, its displacement size, or its power, then you can compute the third quantity. Displacement size would be a product of the stroke length and its cylinder diameter, giving 4 total inputs, which makes the dual slides a necessity in a cursor-less design. 700 RPMs is shown as the maximum measurement, as such would be for slow revving engines of the day, most usually steam engines, but not necessarily.
 
@@ -446,8 +454,12 @@ Indicated Horsepower [RPM] [Stroke Mean Pressure] Cylinder Diameter
 
 In 1922, K&E completely changed the format of this slide rule, adding the "N" prefix. The new model **N4135** was converted to the **4088-1** model body, also introduced that same year. Thus, it was a normal 5" pocket duplex style using typical celluloid-covered mahogany. This rule added a glass cursor. Scales were as follows:
 
-Front Side: A [B, CI, C] D
-Back Side: P [R, W] D, where P = horsepower, R = Stroke, W = RPM, and D = Cylinder Diameter
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front Side</span><span class="ke-scale-set-scales">A [B, CI, C] D</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back Side</span><span class="ke-scale-set-scales">P [R, W] D, where P = horsepower, R = Stroke, W = RPM, and D = Cylinder Diameter</span></div>
+
+</div>
 
 Essentially and functionally, the new format worked the same as the old, except stroke length and RPM are switched on the slide relative to the earlier version, and the cursor replaces the need for dual slides. This rule would last appear in the 1937 catalog and the 1938 price list at the price of $10. Of note, 1938 catalog pricing for the 4088-1 polyphase duplex pocket rule, from which the N4135 was derived, was $9.50.
 
@@ -493,15 +505,19 @@ The first question that arises is the origin of the name, "Roylance." Many place
 
 Secondly, this rule cannot be taken out of the context in which it was introduced, during the time when the world was first becoming "electrified." Creating the infrastructure for running electricity in every home took place in the early part of the century, and that required running an enormous amount of copper wire. Determining the amount and type of copper wire needed to run from AC transformer to AC transformer is the focus of this slide rule. As such, it allows for the computation of amperage limits for a particular gauge and type of copper wiring, as well as wire temperatures at particular power draws. The rule's exact construction is based on the **4035 Mannheim** rule in its format, with scales as follows...
 
-Front Scales: Inches || A [ B, C ] D || B&S Gauge
-Back of Slide Scales: [ S, L, T ]
-Back Scales: Centimeters
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front Scales</span><span class="ke-scale-set-scales">Inches || A [ B, C ] D || B&S Gauge</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back of Slide Scales</span><span class="ke-scale-set-scales">[ S, L, T ]</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back Scales</span><span class="ke-scale-set-scales">Centimeters</span></div>
+
+</div>
 
 <div class="ke-figure ke-figure-right ke-figure-third">
 
 ![The Model 4133 Roylance Electrical slide rule](./_images/ch4-16-4133-roylance-sample.jpg)
 
-<p class="ke-figure-caption">The **Model 4133 Roylance** sample in my collection. Its overall shape and size, use of celluloid on the rule's back, the "B&S Gauge" on the front edge, the utilization of the slide well, and the purpose of the rule itself all contribute to its uniqueness.</p>
+<p class="ke-figure-caption">The <strong>Model 4133 Roylance</strong> sample in my collection. Its overall shape and size, use of celluloid on the rule's back, the "B&S Gauge" on the front edge, the utilization of the slide well, and the purpose of the rule itself all contribute to its uniqueness.</p>
 
 </div>
 
@@ -616,8 +632,12 @@ One year after the 4091-3 Special, K&E came to market with a radio rule that cus
 
 Designed by J.F. Morrison of Bell Labs and produced by K&E in 1938, the rule accomplishes what the Model 4091-3 Spec does, yet adds specialized scales to compute the propagation of radio frequencies (RF). Because of this, the Model 4138 is one of the more unique of K&E's rules in terms of its look and scale set...
 
-Front side: L, F, A [B, CI, C] D, T, ST, S
-Back side: 9, 8 [7, 6, 5, 4] 3, 2, 1
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front side</span><span class="ke-scale-set-scales">L, F, A [B, CI, C] D, T, ST, S</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back side</span><span class="ke-scale-set-scales">9, 8 [7, 6, 5, 4] 3, 2, 1</span></div>
+
+</div>
 
 Most of the general-purpose scales are placed on the front of the rule, while nine numbered scales are located from bottom to top on the back. The F scale in this implementation is a single inverted "D" scale folded at 1/(2*pi). It is self-documented on the right side of the scale with "FREQ." label. This allows for the fast computation of inductance or capacitance of a circuit for a given frequency when read off of the A scale (result would be given in ohms). This is the typical A scale, but it is self-documented on the right side with the "LC" label, which indicates that the rule is setup to work problems that use the resonant frequency formula, or LC = 1/(2*pi*f)^2. Note that the A scale, being 2 decades, accounts for the squared quotient of that formula.
 
@@ -647,8 +667,12 @@ One might be inclined to wonder why K&E did not just offer a version of the 4091
 
 And, second, you should also remember my disdain when discussing the Model 4090 and 4091 earlier, as I felt using it is quite cumbersome. Therefore, it made sense to build a new "special" rule not on the 4091 design, but rather on the improved 4081 model that would come out in 1937. And thus, we have the Model 4082-3 Radio Special, a slide rule based on the excellent design of the Model 4081 Log Log Duplex Deci-Trig (because electronic engineering requires decimal trig) with the important addition of the "F" scale as discussed in the Morrison rule.
 
-Front Scale: L, LL1, DF [ CF, CIF, CI, C ] D, LL3, LL2
-Back Scale: LL00, LL0, A [ B, T Cot, ST, S Cos ] D, DI, F
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front Scale</span><span class="ke-scale-set-scales">L, LL1, DF [ CF, CIF, CI, C ] D, LL3, LL2</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back Scale</span><span class="ke-scale-set-scales">LL00, LL0, A [ B, T Cot, ST, S Cos ] D, DI, F</span></div>
+
+</div>
 
 A typewritten manual was supplied with the original rule. Instructions for computing capacitive and inductive reactance of a circuit at any frequency are presented just as with the instructions given for the Morrison Radio rule. However, the Radio Special's manual also gives instructions for other electronically-related applications using the general-purpose scales. For example, it shows how when 10 on the LL3 scale is aligned to the index on the C scale, then by setting the cursor on any "power ratio" on the log-log scales will read the decibel conversion across the hairline on the D scale.
 
@@ -680,8 +704,12 @@ Because the maker's mark, patent information, and "Made in USA" label occupy a l
 
 With this configuration, the scale set is as follows:
 
-Front Side: L, DF [CF, CIF, CI, C] D, 2*pi
-Back Side: LC, A [B, T, ST, S] D, DI
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front Side</span><span class="ke-scale-set-scales">L, DF [CF, CIF, CI, C] D, 2*pi</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back Side</span><span class="ke-scale-set-scales">LC, A [B, T, ST, S] D, DI</span></div>
+
+</div>
 
 If you noted that the non-inverted, folded 2*pi scale is not the inverted and folded 2*pi "F" scale that I described earlier, then hopefully you also noticed the DI on the bottom stator of the back of the rule? If the "F" scale on the "Radio Special" was read from the D scale, then here on the Cooke the 2*pi scale would work with the DI scale. So in practice, the user simply has to flip the rule over to read between 2*pi and DI. This allows similar use to compute the reactance formulas discussed earlier.
 
@@ -730,8 +758,12 @@ Often referred to as the **National Union Radio Reactance Computer**, I have sho
 
 The scale set is simple:
 
-Front side: 4 [3, 2] 1
-Back of slide: [extended 2 and 3 scales from front]
+<div class="ke-scale-set">
+
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Front side</span><span class="ke-scale-set-scales">4 [3, 2] 1</span></div>
+<div class="ke-scale-set-row"><span class="ke-scale-set-label">Back of slide</span><span class="ke-scale-set-scales">[extended 2 and 3 scales from front]</span></div>
+
+</div>
 
 The purpose of the rule from these scales is clear...only provide scales that allow for the computation of inductive reactance, capacitive reactance, and resonant frequency without any other math operation.
 

@@ -443,6 +443,56 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     }
   }
 
+  /* K&E "scale set" box — Jay's rules routinely quote a scale layout like
+     "Front Side: DF [CF, C] D" / "Back Side: CI, D". These previously
+     rendered as plain flowing prose (a literal newline in the markdown,
+     which HTML collapses to a space — the "two lines" only ever appeared
+     by incidental text-wrap at narrow widths). This gives that reference
+     data its own quiet, technical-reading treatment: a translucent tint of
+     the site's existing teal aside color (distinct from the confident solid
+     `.ke-sidebar` blue and the violet `.ke-ai-stub`), monospace for the
+     scale notation itself, and one guaranteed line per side regardless of
+     viewport width. */
+  .ke-scale-set {
+    background-color: rgba(51, 135, 162, 0.12);
+    border: 1px solid rgba(51, 135, 162, 0.45);
+    border-radius: 6px;
+    padding: 0.9rem 1.1rem;
+    margin: 1.25rem 0;
+    /* Deliberately no `clear: both` — unlike `.ke-image-feature` (always a
+       deliberate full-width break), a scale-set box can legitimately fall
+       while a `.ke-sidebar` is still active nearby, same as the plain
+       paragraph it replaces. Clearing here would force a wait for the
+       sidebar's full height even when the right-hand column still has real
+       body text to squeeze beside — see feedback-ke-layout-rules rule 12. */
+  }
+  .ke-scale-set-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    line-height: var(--prose-line-height);
+  }
+  .ke-scale-set-row + .ke-scale-set-row {
+    margin-top: 0.4rem;
+  }
+  .ke-scale-set-label {
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #7dd3e8;
+    padding-top: 0.2rem;
+  }
+  .ke-scale-set-scales {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    letter-spacing: 0.01em;
+  }
+
   /* K&E "AI-generated placeholder" — for a cataloged model Jay has never
      owned/verified and hasn't researched yet (as opposed to a genuine
      first-hand write-up). Deliberately NOT styled like `.ke-sidebar`
