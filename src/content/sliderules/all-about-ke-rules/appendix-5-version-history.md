@@ -9,6 +9,10 @@ Like the rest of this site, *All About Keuffel & Esser Rules* is a living docume
 
 Version 1.0 is the book as it existed on the original Weebly site before this migration began; everything since is the in-progress rebuild here on the new site. Version 2.0 is reserved for the day this rebuild reaches full parity with — and surpasses — that original: all seven chapters and every appendix complete and out of "under construction."
 
+### Version 1.5 — July 18, 2026
+
+- Added Chapter 5: Miscellaneous K&E Rules, covering the Cylindrical and Circular Rules (Thacher, Fuller, Charpentier), Pocket Watch Rules (the Boucher Calculator and its Chatelain/Calculigraphe rivals), Rare Linear Rules (the Triangular Metal Rule and Universal Rule), and Mechanical Calculators/Charts categories.
+
 ### Version 1.4 — July 17, 2026
 
 - Added Chapter 4: The Specialty Rules, covering the Merchant's, Stadia, Chemical, Steam Power, Radio and Electrical, Sector, and Demonstration families.
