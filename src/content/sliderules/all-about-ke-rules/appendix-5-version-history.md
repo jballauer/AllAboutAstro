@@ -9,6 +9,10 @@ Like the rest of this site, *All About Keuffel & Esser Rules* is a living docume
 
 Version 1.0 is the book as it existed on the original Weebly site before this migration began; everything since is the in-progress rebuild here on the new site. Version 2.0 is reserved for the day this rebuild reaches full parity with — and surpasses — that original: all seven chapters and every appendix complete and out of "under construction."
 
+### Version 1.7 — July 18, 2026
+
+- Added Chapter 7: My Portfolio of K&E Slide Rules, a category-by-category catalog of rules in the author's own collection, each entry expanding in place to show a photo and write-up. Framework covers all 32 rules already documented elsewhere in the book; the author's full collection is larger, so expect this catalog to keep growing.
+
 ### Version 1.6 — July 18, 2026
 
 - Added Chapter 6: Out of Catalog, Custom Rules, covering the D4053-3 Government-Issue Rule, Model 4108 Military Rule, Model 4110 Power Trig ("Annapolis Rule"), Belleville Spring Washer Computor, Brick-O-Meter, the K&E Chemco and Dr. Prince Refracting Rule (American Optical), and a run of rare custom-industry rules known only by name.

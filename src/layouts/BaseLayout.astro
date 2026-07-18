@@ -52,6 +52,10 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   }
 
   document.querySelectorAll('article img').forEach((img) => {
+    // Portfolio thumbnails live inside a <summary> and their click should
+    // only toggle the accordion, not fight it for the same click by also
+    // popping the lightbox open.
+    if (img.closest('summary')) return;
     img.classList.add('ke-zoomable');
     img.addEventListener('click', () => {
       const hiresHost = img.closest<HTMLElement>('[data-hires]');
@@ -680,5 +684,121 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     .ke-col-right {
       flex-basis: auto;
     }
+  }
+
+  /* K&E portfolio catalog (Chapter 7) — a per-category list of owned rules,
+     each a native <details>/<summary> disclosure so a plain name row
+     expands in place to reveal its photo and write-up, no JS required.
+     Entries with no write-up yet render as a plain, non-interactive
+     placeholder row instead of an empty accordion, so the framework can
+     list every rule up front while content is filled in over time. */
+  .ke-portfolio-category {
+    margin: 1.75rem 0 2.25rem;
+  }
+  .ke-portfolio-category > h2 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #7dd3e8;
+    border-bottom: 1px solid rgba(125, 211, 232, 0.35);
+    padding-bottom: 0.5rem;
+    margin: 0 0 0.9rem;
+  }
+  .ke-portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .ke-portfolio-item {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .ke-portfolio-item summary {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.65rem 0.9rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  .ke-portfolio-item summary::-webkit-details-marker {
+    display: none;
+  }
+  .ke-portfolio-item summary::before {
+    content: '\25B8';
+    flex-shrink: 0;
+    width: 0.7rem;
+    color: #7dd3e8;
+    transition: transform 0.15s ease;
+  }
+  .ke-portfolio-item[open] > summary::before {
+    transform: rotate(90deg);
+  }
+  .ke-portfolio-name {
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.35;
+  }
+  .ke-portfolio-item[open] > summary {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .ke-portfolio-detail {
+    padding: 1rem 1.1rem 1.2rem;
+  }
+  .ke-portfolio-detail p {
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    line-height: var(--prose-line-height);
+    color: var(--color-prose-text);
+    margin: 0 0 0.75rem;
+  }
+  .ke-portfolio-detail p:last-child {
+    margin-bottom: 0;
+  }
+  .ke-portfolio-photo {
+    text-align: center;
+    margin: 0 0 0.9rem;
+  }
+  .ke-portfolio-photo img {
+    display: block;
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: zoom-in;
+  }
+  .ke-portfolio-photo .ke-figure-caption {
+    margin-top: 0.4rem;
+  }
+  /* A listed-but-not-yet-written-up entry — a plain static row, not a
+     clickable disclosure, since there's nothing yet to expand into. */
+  .ke-portfolio-item-pending {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.65rem 0.9rem;
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+    color: var(--color-prose-text);
+  }
+  .ke-portfolio-item-pending .ke-portfolio-name {
+    color: var(--color-prose-text);
+    font-weight: 400;
+  }
+  .ke-portfolio-item-pending .ke-portfolio-pending-tag {
+    margin-left: auto;
+    flex-shrink: 0;
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-prose-text);
+    opacity: 0.7;
   }
 </style>
