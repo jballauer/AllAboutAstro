@@ -100,6 +100,64 @@ The 4053 Polyphase Mannheim was K&E's least-changed model over its entire run â€
 
 </details>
 
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4053-3F (Fine) Polyphase Mannheim</span></summary>
+
+<div class="ke-portfolio-detail">
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4053-3F fine-divided Polyphase Mannheim slide rule](./_images/ch7-20-4053-3f-fine.jpg)
+
+<p class="ke-figure-caption">My Model 4053-3F, an early (1914) fine-divided sample.</p>
+
+</div>
+
+The fine-divided option of the standard 4053, "divided as finely as the 20\" rule," at a $3.50 premium â€” produced between 1911 and 1943 but rare, since most buyers were happy with the standard division. My sample dates to 1914, very early in the option's run.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Style</dt><dd>Single-sided, Mannheim-type</dd>
+<dt>Scale Length</dt><dd>10"</dd>
+<dt>Purpose</dt><dd>General Mathematics</dd>
+<dt># of Scales</dt><dd>13</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany</dd>
+<dt>Date</dt><dd>1914</dd>
+<dt>Production Number</dt><dd>721</dd>
+<dt>Condition</dt><dd>C5</dd>
+<dt>Front</dt><dd><code>Inches || A [B, CI, C] D || K</code></dd>
+<dt>Back of Slide</dt><dd><code>[S, T, L]</code></dd>
+</dl>
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4161-3 Polyphase Mannheim</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The all-plastic "Modern Polyphase" evolution of the 4053, considered the spiritual successor to the classic wooden rule at a heavy discount, with an ST scale in decimal degrees. My sample dates to 1954.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Scale Length</dt><dd>10"</dd>
+<dt>Purpose</dt><dd>General Mathematics</dd>
+<dt># of Scales</dt><dd>12</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Ivorite (all-plastic)</dd>
+<dt>Date / Serial</dt><dd>1954 (SN 001480)</dd>
+<dt>Condition</dt><dd>C3</dd>
+<dt>Front</dt><dd><code>Inches || K, DF [CF, L, CI, C] D, A || Centimeter</code></dd>
+<dt>Back of Slide</dt><dd><code>[T, ST, S, C]</code></dd>
+</dl>
+
+</div>
+
+</details>
+
 </div>
 
 ## Double-Sided Duplex
