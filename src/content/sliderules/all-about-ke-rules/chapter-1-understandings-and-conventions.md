@@ -5,7 +5,7 @@ order: 1
 draft: false
 ---
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure ke-figure-right" data-hires="/images/ke-rules/ch1-01-decilon-art-full.jpg">
 
 ![A K&E Deci-Lon 10 slide rule](./_images/ch1-01-decilon-art.jpg)
 
@@ -67,7 +67,7 @@ In dating my own slide rules, I typically use the chart above to give me an idea
 
 Let's now establish some of the construction jargon that we will use. Slide rule bodies had very similar, common elements, those being two fixed, grooved rails (or stators) and a tongued slide, free to glide between the rails. The way the rails are fixed together determines the platform for the slide rule, either single-sided or double-sided.
 
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch1-03-single-sided-backs-full.jpg">
 
 ![A K&E single-sided rule showing formula and conversion charts on its back](./_images/ch1-03-single-sided-backs.jpg)
 
@@ -113,7 +113,7 @@ As such, attempts to organize K&E rules from today's collector's perspective, or
 
 In my writing, it should be noted that my thoughts about K&E and their rules comes primarily from firsthand experience, from my own use of the rules, gleaning of the available product catalogs, price lists, and supplementary product brochures, mostly as made available by Clark McCoy at his important resource website here. This, when coupled with a study of my own collection of K&E items, including slide rules, product manuals, and catalogs, yields a tremendous amount of understanding, especially in terms of product time-lines, product "families," and the evolution of the slide rules within individual model lines and series. This provides the initial framework of my writing, whereas I might conjecture about items within the broader context of what I've already gleaned. At that point, especially where many of the more rare models are concerned, extra research is conducted to fill in gaps of understanding or specifics about a product. This research begins first at the aforementioned ISRM, as well as the rich resource of materials made available by the Oughtred Society, in which I am a member. There are also many websites from fellow collectors available on the internet from which extra information can be gained. And finally, where applicable and available, any books, journals, or other published works are consulted. Most of these will appear as works cited within the body of this writing, though an Appendix (see the end of the article) eventually will list all support materials used.
 
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/ke-rules/ch1-05-4082-radio-special-full.jpg">
 
 ![A K&E Model 4082-3 Radio Special slide rule](./_images/ch1-05-4082-radio-special.jpg)
 

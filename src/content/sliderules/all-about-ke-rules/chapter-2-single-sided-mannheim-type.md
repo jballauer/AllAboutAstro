@@ -35,7 +35,7 @@ Most certainly, Tavernier-Gravet remained the chief supplier for the K&E Mannhei
 
 The timing seems about right. According to Hans Dennert, grandson of the founder of Dennert & Pape, it wouldn't be until 1888 until they had fully shifted to making slide rules with celluloid-laminations on mahogany. By 1890, we can see that the new slide rule designations and descriptions would have been easily justified. And given that K&E likely had extra inventory of the old Tavernier-Gravet Mannheims, it makes sense that they would continue to sell these old rules with the new model numbers until 1890, when the new D&P rules were stated to be available.
 
-<div class="ke-figure">
+<div class="ke-figure" data-hires="/images/ke-rules/ch2-05-tavernier-gravet-1883-full.jpg">
 
 ![An 8" Tavernier-Gravet slide rule bearing both Tavernier-Gravet and Keuffel & Esser markings](./_images/ch2-05-tavernier-gravet-1883.jpg)
 
@@ -127,7 +127,7 @@ Ordered historically, the major slide rule models in the Mannheim family include
 
 Let's start with a description of these first slide rules offered by K&E before we get into the real issues of the rules' manufacture.
 
-<div class="ke-figure ke-figure-column">
+<div class="ke-figure ke-figure-column" data-hires="/images/ke-rules/ch2-01-model479-catalog-ad-full.png">
 
 ![Catalog illustration of the K&E Model 479 Engineers Slide Rule](./_images/ch2-01-model479-catalog-ad.jpg)
 
@@ -161,7 +161,7 @@ I credit Taverner-Gravet with the majority of the production of the Model 479, c
 
 So it should be noted that the Tavernier-Gravet rule in my collection could very well have been the same rule sold by K&E during this era, despite not having a K&E maker's mark on the rule. I feel this might be especially true in the early years of the company when K&E seemed urgent to increase their catalog offerings as rapidly as possible. This would also explain the absence today of these older K&E slide rules. I do find it difficult to believe that these rules are so rare, as known rules from other manufacturers of the era are not. Rather, today, I believe these older Model 479 slide rules might have gone "incognito," bouncing around today in a different guise.
 
-<div class="ke-figure ke-figure-column">
+<div class="ke-figure ke-figure-column" data-hires="/images/ke-rules/ch2-03-dp-ke-early-rules-full.png">
 
 ![Three celluloid-faced slide rules from the collection of the late Bob Otnes, connecting Dennert & Pape with K&E](./_images/ch2-03-dp-ke-early-rules.jpg)
 
@@ -231,7 +231,7 @@ Beginning with 1901, most collectors sort the Mannheim Family of rules into thre
 
 Also important for collectors is the idea of standardization within the appearance of K&E rules, and as such, what follows is mostly a strong commonality in the look and feel of K&E's wood rules that would dominate the next half-century. As such, next, I will focus on aspects of the Model 4041 Series that are typical of what we picture when we talk about these rules, as well as what we can realistically expect when we purchase them more than 100 years after they are made.
 
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/ke-rules/ch2-10-mannheim-1906-catalog-full.jpg">
 
 ![A page from the 1906 K&E product catalog describing their adjustable Mannheim rules](./_images/ch2-10-mannheim-1906-catalog.jpg)
 
@@ -312,7 +312,7 @@ Throughout the history of the Model 4041, a few custom versions appeared as spec
 
 As I mention in the Collector's Outlook (see below), the 10" Model 4041 is quite ubiquitous; however, the length variations of the 4041 are quite hard to find, as is the N4041F, "finely-divided" model of this series, as too the railroad track and decimal-reminder variants.
 
-<div class="ke-figure ke-figure-column">
+<div class="ke-figure ke-figure-column" data-hires="/images/ke-rules/ch2-11-4041-n-comparison-full.jpg">
 
 ![An original Model 4041 next to the 1925 N-4041, showing the 3mm width difference](./_images/ch2-11-4041-n-comparison.jpg)
 
@@ -322,7 +322,7 @@ As I mention in the Collector's Outlook (see below), the 10" Model 4041 is quite
 
 I would conjecture fewer of the variations of the 4041 were sold due to the pricing structure. $4.50 could have bought the consumer any of the 5", 8", or 10" models, as they were all equally priced. One might question why this is the case, but it makes sense when we consider that production time and cost would have been similar regardless of the rules' length. And most consumers of the day would have only been able to choose one such slide rule due to the high cost, not feeling compelled to have, for example, a pocket model to go with their full-scale daily driver. Similarly, the 16" Model 4045 and the 20" Model 4051 were priced $10 and $12.50 respectively. Those prices represent a rather steep requirement for slide rules that wouldn't have been significant functional upgrades to the 10" rule.
 
-<div class="ke-figure">
+<div class="ke-figure" data-hires="/images/ke-rules/ch2-12-4041-series-size-comparison-full.jpg">
 
 ![A size comparison of rules in the Model 4041 series, without cursors](./_images/ch2-12-4041-series-size-comparison.jpg)
 
@@ -492,7 +492,7 @@ Of another note, the Ever-There rules allowed the slide to be reversed, although
 
 </div>
 
-<div class="ke-image-feature-item">
+<div class="ke-image-feature-item" data-hires="/images/ke-rules/ch2-18-evertheres-manual-1936-full.jpg">
 
 ![The cover of the 1936 Ever-There instruction manual](./_images/ch2-18-evertheres-manual-1936.jpg)
 
@@ -542,7 +542,7 @@ And I'll give you one guess what that word means!
 
 </div>
 
-<div class="ke-figure">
+<div class="ke-figure" data-hires="/images/ke-rules/ch2-19-n4053-collection-full.jpg">
 
 ![A collection of N4053 Polyphase Mannheim rules in 8, 10, and 20 inch lengths](./_images/ch2-19-n4053-collection.jpg)
 
@@ -686,7 +686,7 @@ As a slide rule user, I much prefer using the Post/Hemmi bamboo pocket rules, so
 
 The history of the Mannheim platform evolved and endured over almost the company's entire history, from their basic outsourced rule in the beginning, to high-quality rules built in-house, to the advanced functionality of the Polyphase rules, and through the modern era of the company. Regardless of the rule, by the 1950s, the Polyphase Mannheim had become the desired scale set for non-duplex rules.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch2-21-1952-catalog-pocket-rules-full.jpg">
 
 ![A page from the 1952 K&E catalog grouping all pocket slide rules together](./_images/ch2-21-1952-catalog-pocket-rules.jpg)
 
