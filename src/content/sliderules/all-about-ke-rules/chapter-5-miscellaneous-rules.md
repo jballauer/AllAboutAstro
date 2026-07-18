@@ -53,15 +53,13 @@ In 1927, along with many aesthetic changes that K&E was making to their slide ru
 
 This scaling off of production was precipitous after the war, with the last known serial number ending just below 7000. As such, in all, there are less than 7000 of these devices out there despite the 70 year production run. Most are in rather bad shape today, coming up in auctions and on eBay typically priced between $600 to $1000 in a condition where the triangular scales will be only partially intact. Great samples, especially earlier Type I versions, are exceedingly rare and would carry a much higher premium. Mine is in quite good condition, especially the wooden case, and could sell for $2000 or more.
 
-<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/ke-rules/ch5-02-thacher-art-shot-full.jpg">
+<div class="ke-figure" data-hires="/images/ke-rules/ch5-02-thacher-art-shot-full.jpg">
 
 ![A decorative close-up photograph of the Thacher Calculator's box, case, and drum](./_images/ch5-02-thacher-art-shot.jpg)
 
 <p class="ke-figure-caption">The author's Thacher Calculator, tucked into its box-jointed mahogany case.</p>
 
 </div>
-
-<div class="ke-clear"></div>
 
 ### Fuller Calculator (Models 1742 and 4015)
 
