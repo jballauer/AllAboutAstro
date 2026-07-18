@@ -9,6 +9,10 @@ Like the rest of this site, *All About Keuffel & Esser Rules* is a living docume
 
 Version 1.0 is the book as it existed on the original Weebly site before this migration began; everything since is the in-progress rebuild here on the new site. Version 2.0 is reserved for the day this rebuild reaches full parity with — and surpasses — that original: all seven chapters and every appendix complete and out of "under construction."
 
+### Version 1.8 — July 18, 2026
+
+- Added Appendix 2: A Study of K&E Product Catalogs, covering the 1881 debut catalog, the company's growth from a Nassau Street storefront to the Hoboken and Fulton Street facilities, catalog edition/timeline conventions, Clark McCoy's catalog reference resource, and a gallery of catalog covers across the decades.
+
 ### Version 1.7 — July 18, 2026
 
 - Added Chapter 7: My Portfolio of K&E Slide Rules, a category-by-category catalog of rules in the author's own collection, each entry expanding in place to show a photo, write-up, and recorded stats (scale length, purpose, material, dates/serials, front/rear scale sets) where available, or an honest placeholder where not. Covers 57 rules; the author's full collection is larger, so expect this catalog to keep growing.
