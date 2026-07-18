@@ -327,17 +327,7 @@ Functionally, this new Chatelain rule can spin the front dial using the "crown" 
 
 Essentially, other than the similarities in scale sets, these rules are mechanically nothing like each other. So it is very doubtful that Boucher would object, nor could he object if Chatelain had waited 18 years before selling his own design. Nor do I see the need, as the Chatelain design infringes so little on Boucher's patent rights. If the Chatelain-designed Calculigraphe had come out nearer to the 1878-80 date that many people have suggested, it most certainly would have not been authorized by Alex Boucher himself, nor would it be a rule that Boucher would wish to represent him. But if Boucher licensed him to make those early rules in an arrangement like he did with Morin, Stanley, and Manloves, then certainly there should be no problem.
 
-<div class="ke-clear"></div>
-
 But there would be no fixing the confusion caused by Chatelain calling the original Boucher-version the "Calculigraphe" and then calling his OWN designed rule the "new-improved Calculigraphe" almost two decades later.
-
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![A page from Dietzgen's 1931 catalog still offering the Boucher (Calculigraphe) calculator](./_images/ch5-14-dietzgen-1931-catalog-boucher.jpg)
-
-<p class="ke-figure-caption">From Dietzgen's 1931 catalog, the Boucher was still being sold. Note the type, which is the Calculigraphe or clutched-version, since the main stem moves both the main face and the pointers. Dietzgen would sell this rule through 1936. They never sold a true Boucher-designed rule.</p>
-
-</div>
 
 1894 seems to be a crucial year in the story, as not only do we see a Chatelain catalog with this new rule, but many print publications, company catalogs, and advertisements begin to showcase it as well. And this would blur the lines between what was a true Boucher-type rule and what was not. Some companies would continue to offer the Boucher rules, yet also refer to them as Calculigraphes. Other resellers of both rules would hardly attempt to differentiate between the two, including K&E.
 
@@ -368,6 +358,14 @@ Unless the instructions survive, then there would be no way to know who sold the
 Incidentally, there are versions in the wild that are branded on the dial face by resellers of these rules, so it's not impossible to have done so. But it appears very likely that both K&E and Dietzgen (among others) opted NOT to spend extra time and money to brand their supply of imported Bouchers.
 
 The idea that K&E could have manufactured their own Boucher rule should be put to rest, as once again there are no samples to prove it so. Likewise, the Boucher was short-lived, being replaced in 1908 by the **Sperry Calculator** and in 1909 by the **K&E Pocket Watch Calculator**, both of which were made in-house by K&E and both of which we will discuss shortly. (Dietzgen would continue to sell the Calculigraphe version until 1936, calling it the Boucher, of course.)
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
+![A page from Dietzgen's 1931 catalog still offering the Boucher (Calculigraphe) calculator](./_images/ch5-14-dietzgen-1931-catalog-boucher.jpg)
+
+<p class="ke-figure-caption">From Dietzgen's 1931 catalog, the Boucher was still being sold. Note the type, which is the Calculigraphe or clutched-version, since the main stem moves both the main face and the pointers. Dietzgen would sell this rule through 1936. They never sold a true Boucher-designed rule.</p>
+
+</div>
 
 Further complicating everything, by 1903, K&E would present four model offerings in their catalog. Those models, with some speculation of the suppliers, are as follows:
 
