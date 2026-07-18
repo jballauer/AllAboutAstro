@@ -9,6 +9,14 @@ Like the rest of this site, *All About Keuffel & Esser Rules* is a living docume
 
 Version 1.0 is the book as it existed on the original Weebly site before this migration began; everything since is the in-progress rebuild here on the new site. Version 2.0 is reserved for the day this rebuild reaches full parity with — and surpasses — that original: all seven chapters and every appendix complete and out of "under construction."
 
+### Version 1.9 — July 18, 2026
+
+- Added Appendix 3: A K&E Cursor Study, a chronological timeline of K&E's cursor designs from the 1883 all-metal chisel indicator through the 1953 Unbreakable Indicator and the K12/GP-12 runner.
+- Added Appendix 4: Bibliography, listing sources cited throughout the book.
+- Added Appendix 1: A Study of K&E Cases — for now, a collected survey of case and box details already scattered across the chapters (leather grades, slip-case clips, box-jointed mahogany cases, government/institutional cases, and case-as-dating-tool), pending a fuller dedicated study.
+- Fixed the in-article table of contents (`KeTableOfContents.astro`), which was missing a link to this Appendix 5.
+- With this, every chapter and appendix now has real content — though Appendix 1's case study and Appendix 3's cursor timeline are both flagged in-page as starting points rather than finished research, so Version 2.0 is still being held back for that deeper pass.
+
 ### Version 1.8 — July 18, 2026
 
 - Added Appendix 2: A Study of K&E Product Catalogs, covering the 1881 debut catalog, the company's growth from a Nassau Street storefront to the Hoboken and Fulton Street facilities, catalog edition/timeline conventions, Clark McCoy's catalog reference resource, and a gallery of catalog covers across the decades.
