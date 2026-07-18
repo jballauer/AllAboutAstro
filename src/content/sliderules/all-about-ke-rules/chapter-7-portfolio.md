@@ -122,15 +122,39 @@ I own four samples spanning the evolution of K&E's first flagship duplex rule: t
 
 <div class="ke-portfolio-detail">
 
+<div class="ke-portfolio-photos">
+
 <div class="ke-portfolio-photo">
 
-![Celluloid edge delamination on a K&E 4088-1 and 4090-3 duplex rule](./_images/ch3-10-edge-delamination-4088-4090.jpg)
+![The K&E Model 4088-1 Polyphase Duplex, front side](./_images/ch7-01-4088-1-front.jpg)
 
-<p class="ke-figure-caption">Delamination at the edges, as shown with the 4088-1 and 4090-3 rules in my collection.</p>
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4088-1 Polyphase Duplex, back side](./_images/ch7-02-4088-1-back.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
 
 </div>
 
 A 5" Polyphase Duplex (4088-1) and a 10" Log Log Duplex Trig (4090-3), the latter from the short-lived 1933–1937 trig-scale redesign. I keep this pair together as a cautionary example of celluloid edge lamination failing over time — likely part of why K&E abandoned full-edge lamination for inlaid celluloid strips in 1952.
+
+<dl class="ke-portfolio-stats">
+<dt>Sample</dt><dd>4088-1, Polyphase Duplex</dd>
+<dt>Scale Length</dt><dd>5"</dd>
+<dt>Purpose</dt><dd>General mathematics</dd>
+<dt># of Scales</dt><dd>13</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany</dd>
+<dt>Dates / Serials</dt><dd>1924 (SN 106311), 1924 (SN 106624)</dd>
+<dt>Front</dt><dd><code>DF [CF, CIF, C] D</code></dd>
+<dt>Rear</dt><dd><code>K, A [B, S, T, CI] D, L</code></dd>
+</dl>
 
 </div>
 
@@ -194,19 +218,98 @@ A genuinely rare plastic Doric-family rule, never described in an actual K&E cat
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">K&E Doric Family Duplex Group (N9081-3, 4168 Celcon, 9068/4168, 4150-1)</span></summary>
+<summary><span class="ke-portfolio-name">K&E Model 9068/4168 Polyphase Duplex Doric</span></summary>
+
+<div class="ke-portfolio-detail">
+
+<div class="ke-portfolio-photos">
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 9068/4168 Polyphase Duplex Doric, front side](./_images/ch7-03-4168-duplex-front.jpg)
+
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 9068/4168 Polyphase Duplex Doric, back side](./_images/ch7-04-4168-duplex-back.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
+
+</div>
+
+One of the small run of "Doric" plastic rules K&E briefly badged with a 9XXX model number starting around 1948 — this little 5" pocket duplex outlived every other Doric model, carrying the Doric name all the way to the end of the slide rule era in 1975.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Scale Length</dt><dd>5"</dd>
+<dt>Purpose</dt><dd>General Mathematics</dd>
+<dt># of Scales</dt><dd>13</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany</dd>
+<dt>Date / Serial</dt><dd>1951 (SN 001463)</dd>
+<dt>Condition</dt><dd>C4</dd>
+<dt>Front</dt><dd><code>DF [C, CF, CI, C] D, L</code></dd>
+<dt>Rear</dt><dd><code>K, A [B, ST, S] D, T</code></dd>
+</dl>
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4168 Celanese Celcon (68-1555)</span></summary>
 
 <div class="ke-portfolio-detail">
 
 <div class="ke-portfolio-photo">
 
-![Four Doric family slide rules from the collection, top to bottom: N9081-3, 4168 Celanese Celcon, 4168 Polyphase Duplex, and the 4150-1 Merchant's Pocket Rule](./_images/ch2-20-doric-family-rules.jpg)
+![The K&E Model 4168 Celanese Celcon slide rule](./_images/ch7-05-celanese-celcon.jpg)
 
-<p class="ke-figure-caption">Pictured top to bottom: the N9081-3, the 4168 Celanese Celcon (originally the 9068), the 4168 Polyphase Duplex (also the 9068), and the 4150-1 Merchant's Pocket Rule (formerly the 9050-1).</p>
+<p class="ke-figure-caption">The Celanese Celcon variant of the 9068/4168 pocket duplex.</p>
 
 </div>
 
-Four of the small run of "Doric" plastic rules K&E briefly badged with a 9XXX model number starting around 1948, before folding most of them back into the 4XXX naming scheme. The N9081-3 is a full plastic Doric conversion of the flagship Log Log Duplex Deci-Trig scale set; the 4168 pair are two takes on the little 5" pocket duplex that outlived every other Doric model, including a one-year-only (1968) green "Celcon" resin variant made for the Celanese Company; and the 4150-1 is the Doric-era Merchant's pocket rule. I'm still hunting for the 9071-3 and 9061-1 to round out the full known Doric family.
+A one-year-only (1968) variant of the same 9068/4168 pocket duplex, made from green "Celcon" acetal co-polymer resin for the Celanese Company — reportedly the first commercial use of Celcon in a product.
+
+<dl class="ke-portfolio-stats">
+<dt>Made For</dt><dd>Celanese, by K&E</dd>
+<dt>Scale Length</dt><dd>5"</dd>
+<dt>Purpose</dt><dd>General Mathematics</dd>
+<dt># of Scales</dt><dd>13</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celcon resin (made by Celanese)</dd>
+<dt>Date / Serial</dt><dd>1968 (SN 007000)</dd>
+<dt>Condition</dt><dd>C2</dd>
+<dt>Front</dt><dd><code>DF [C, CF, CI, C] D, L</code></dd>
+<dt>Rear</dt><dd><code>K, A [B, ST, S] D, T</code></dd>
+</dl>
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model 4150-1 Merchant's Pocket Rule (Doric)</span></summary>
+
+<div class="ke-portfolio-detail">
+
+The Doric-era Merchant's pocket rule (formerly the 9050-1) — very few known samples exist. I still need to re-photograph and re-record proper stats for my own sample; the entry I had for it turned out to be data from an unrelated rule, copied over by mistake.
+
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&E Model N9081-3 Log Log Duplex Deci-Trig (Doric)</span></summary>
+
+<div class="ke-portfolio-detail">
+
+A full plastic Doric conversion of the flagship Log Log Duplex Deci-Trig scale set, offered in 1948 as a lower-cost alternative to the mahogany 4081-3. I'm still hunting for the 9071-3 and 9061-1 to round out the full known Doric family.
 
 </div>
 
@@ -236,15 +339,38 @@ Widely considered — by me included — the best general-purpose slide rule K&E
 
 <div class="ke-portfolio-detail">
 
-<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch3-24-decilon-5-art-shot-full.jpg">
+<div class="ke-portfolio-photos">
 
-![A K&E Deci-Lon 5 pocket slide rule](./_images/ch3-24-decilon-5-art-shot.jpg)
+<div class="ke-portfolio-photo">
 
-<p class="ke-figure-caption">One of my Deci-Lon 5 pocket rules.</p>
+![A K&E Deci-Lon 5 pocket slide rule, front side with case](./_images/ch7-06-decilon5-front.jpg)
+
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![A K&E Deci-Lon 5 pocket slide rule, back side with case](./_images/ch7-07-decilon5-back.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
 
 </div>
 
 The pocket sibling of the Deci-Lon 10, and quite possibly the best pocket slide rule ever made — futuristic-looking, full of irony given it's also one of the last rules K&E ever produced. I hold two dated samples (serial numbers 011482 and 021968) that happen to bracket a running change to the slide's joint, letting me pin down roughly when K&E stopped allowing the slide to be inverted.
+
+<dl class="ke-portfolio-stats">
+<dt>Scale Length</dt><dd>5"</dd>
+<dt>Purpose</dt><dd>General Mathematics</dd>
+<dt># of Scales</dt><dd>26</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Ivorite all-plastic (ABS); unbreakable indicator</dd>
+<dt>Dates / Serials</dt><dd>1967 (SN 011482), 1967 (SN 021968)</dd>
+<dt>Front</dt><dd><code>Sq1, Sq2, DF [CF, CIF, L, CI, C] D, Ln0, Ln1, Ln2, Ln3</code></dd>
+<dt>Rear</dt><dd><code>Ln-3, Ln-2, Ln-1, Ln-0, A [B, T, SRT, S, C] D, DI, K</code></dd>
+</dl>
 
 </div>
 
@@ -310,15 +436,29 @@ A hand-held version of K&E's 20" Merchant's desk rule, introduced in 1939 minus 
 
 <div class="ke-portfolio-detail">
 
-<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch4-06-n4101-stadia-full.jpg">
+<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch7-08-n4101-stadia-full.jpg">
 
-![The K&E N4101 Stadia Surveyor's Rule](./_images/ch4-06-n4101-stadia-surveyors-rule.jpg)
+![The K&E N4101 Stadia Surveyor's Rule](./_images/ch7-08-n4101-stadia.jpg)
 
 <p class="ke-figure-caption">The 20" N4101 Stadia Surveyor's Rule, a mint find with its original case.</p>
 
 </div>
 
 Part of K&E's longest-running product line (1901–1960 in various forms), this 20" single-sided stadia rule of mine dates to 1943 and still carries a U.S. Geological Survey asset sticker on the back — a small, documented piece of wartime federal surveying history, and one I stumbled onto in near-mint condition with its original case.
+
+<dl class="ke-portfolio-stats">
+<dt>Scale Length</dt><dd>20"</dd>
+<dt>Purpose</dt><dd>Stadia Surveying</dd>
+<dt># of Scales</dt><dd>7</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany; single-sided</dd>
+<dt>Date / Serial</dt><dd>1943 (SN 964789)</dd>
+<dt>Condition</dt><dd>C1 (all mint) — no box or documents</dd>
+<dt>Front</dt><dd><code>Inches // R [H, HC, V] A \\ Centimeters</code></dd>
+<dt>Rear Slide</dt><dd><code>[B, C]</code></dd>
+<dt>Extras</dt><dd>Orange leather case (S-version)</dd>
+<dt>Notes</dt><dd>Inventory tag — US Geological Survey #W-200092</dd>
+</dl>
 
 </div>
 
@@ -329,15 +469,39 @@ Part of K&E's longest-running product line (1901–1960 in various forms), this 
 
 <div class="ke-portfolio-detail">
 
+<div class="ke-portfolio-photos">
+
 <div class="ke-portfolio-photo">
 
-![The K&E Model 4143 Kissam Stadia slide rule](./_images/ch4-07-4143-kissam-stadia-front.jpg)
+![The K&E Model 4143 Kissam Stadia slide rule, front side, with a strip showing the slide's underside](./_images/ch7-09-4143-kissam-a.jpg)
 
-<p class="ke-figure-caption">The Model 4143 Kissam Stadia in my collection, likely purchased around 1962.</p>
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4143 Kissam Stadia slide rule, back side with conversion factors table](./_images/ch7-10-4143-kissam-b.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
 
 </div>
 
 The all-plastic spiritual successor to the Model 4100 Stadia, named for Princeton surveying professor Phillip Kissam, trading general-math capability on the back of the slide for an expanded R1/R2 scale set. My sample still has its slide, plastic instructional insert, and case intact, right down to the maker's marks in the slide well.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Scale Length</dt><dd>10"</dd>
+<dt>Purpose</dt><dd>Stadia Surveying</dd>
+<dt># of Scales</dt><dd>5</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Ivorite (all-plastic)</dd>
+<dt>Date / Serial</dt><dd>1960 (SN 396407)</dd>
+<dt>Condition</dt><dd>C3</dd>
+<dt>Front</dt><dd><code>Inches || R1 [V1/H/V3, HC, V2] R2 || Centimeters</code></dd>
+</dl>
 
 </div>
 
@@ -350,13 +514,25 @@ The all-plastic spiritual successor to the Model 4100 Stadia, named for Princeto
 
 <div class="ke-portfolio-photo">
 
-![The K&E N4102 Surveyor's Duplex slide rule, displayed on the author's classroom wall](./_images/ch4-12-n4102-surveyors-duplex.jpg)
+![The K&E N4102 Surveyor's Duplex slide rule](./_images/ch7-11-n4102-surveyors-duplex.jpg)
 
-<p class="ke-figure-caption">My sample of the N4102 Surveyor's Duplex, as displayed on my classroom wall.</p>
+<p class="ke-figure-caption">My sample of the N4102 Surveyor's Duplex.</p>
 
 </div>
 
 A 20" duplex rule unique for pairing traditional stadia-reduction scales with astrometric scales for computing true north from a solar transit observation. My 1937-dated sample was an auction find for under $100 — well below the $400+ this rule usually commands on eBay — with a cracked cursor rail repaired with cyanoacrylate glue, a common failure of rules from that era.
+
+<dl class="ke-portfolio-stats">
+<dt>Scale Length</dt><dd>20"</dd>
+<dt>Purpose</dt><dd>Stadia Surveying</dd>
+<dt># of Scales</dt><dd>15</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany; metal end brackets</dd>
+<dt>Date / Serial</dt><dd>1937 (SN 598125)</dd>
+<dt>Condition</dt><dd>C5</dd>
+<dt>Front</dt><dd><code>D, sin d [cos²α &amp; h, C, tan] tan I, Az</code></dd>
+<dt>Rear</dt><dd><code>VERT (½ sin 2α), A [B, CI, C] D, VERT (½ sin 2α)/HOR (cos²α)</code></dd>
+</dl>
 
 </div>
 
@@ -367,15 +543,43 @@ A 20" duplex rule unique for pairing traditional stadia-reduction scales with as
 
 <div class="ke-portfolio-detail">
 
+<div class="ke-portfolio-photos">
+
 <div class="ke-portfolio-photo">
 
-![The K&E Model 4133 Roylance electrical slide rule](./_images/ch4-16-4133-roylance-sample.jpg)
+![The K&E Model 4133 Roylance electrical slide rule, front side with leather case](./_images/ch7-12-4133-roylance-a.jpg)
 
-<p class="ke-figure-caption">The Model 4133 Roylance sample in my collection.</p>
+<p class="ke-figure-caption">Front, with case</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4133 Roylance electrical slide rule, back side with conversion table](./_images/ch7-13-4133-roylance-b.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
 
 </div>
 
 An 8" single-sided rule for electrical infrastructure work, built on the 4035 Mannheim frame with a Brown &amp; Sharpe wire-gauge scale and a distinctive three-hairline cursor for direct circle-area computation. My sample has an unusual back-of-bottom-stator celluloid centimeter strip — as far as I know, the only known instance of that feature on a single-sided wooden Mannheim rule.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Scale Length</dt><dd>8"</dd>
+<dt>Purpose</dt><dd>Electrical</dd>
+<dt># of Scales</dt><dd>13</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany</dd>
+<dt>Date / Serial</dt><dd>1924 (SN 75755)</dd>
+<dt>Condition</dt><dd>C5</dd>
+<dt>Front</dt><dd><code>Inches || A [B, C] D || B&amp;S Gauge</code></dd>
+<dt>Back of Slide</dt><dd><code>[S, L, T]</code></dd>
+<dt>Back of Rule</dt><dd>Centimeters</dd>
+<dt>Slide Well</dt><dd>Amp carrying capacity</dd>
+<dt>Extra</dt><dd>Wire temperature in red on the B scale; 748 gauge mark for Watts/HP on the C scale; double hairline cursor</dd>
+</dl>
 
 </div>
 
@@ -386,15 +590,29 @@ An 8" single-sided rule for electrical infrastructure work, built on the 4035 Ma
 
 <div class="ke-portfolio-detail">
 
-<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch4-21-4082-3-full.jpg">
+<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch7-14-4082-3-radio-special-full.jpg">
 
-![The K&E Model 4082-3 Radio Special slide rule](./_images/ch4-21-4082-3-radio-special.jpg)
+![The K&E Model 4082-3 Radio Special slide rule](./_images/ch7-14-4082-3-radio-special.jpg)
 
 <p class="ke-figure-caption">The Model 4082-3 "Radio Special" within my collection.</p>
 
 </div>
 
 A rare, never-cataloged rule built on the 4081 Log Log Duplex Deci-Trig with an added "F" (frequency) scale for reactance calculations, believed to have been developed for the U.S. Naval Academy. My sample is the second, post-1939 variant, and its serial number dates it to 1941.
+
+<dl class="ke-portfolio-stats">
+<dt>Made For</dt><dd>US Naval Academy, by K&E</dd>
+<dt>Style</dt><dd>Double-sided, duplex type</dd>
+<dt>Scale Length</dt><dd>10"</dd>
+<dt>Purpose</dt><dd>Radio Engineering</dd>
+<dt># of Scales</dt><dd>20</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany</dd>
+<dt>Date / Serial</dt><dd>1941 (SN 834375)</dd>
+<dt>Condition</dt><dd>C5</dd>
+<dt>Front</dt><dd><code>L, LL1, DF [CF, CIF, CI, C] D, LL3, LL2</code></dd>
+<dt>Rear</dt><dd><code>LL0, LL00, A [B, T, ST, S] D, DI, F</code></dd>
+</dl>
 
 </div>
 
@@ -405,15 +623,39 @@ A rare, never-cataloged rule built on the 4081 Log Log Duplex Deci-Trig with an 
 
 <div class="ke-portfolio-detail">
 
-<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch4-22-cooke-radio-front-full.jpg">
+<div class="ke-portfolio-photos">
 
-![The K&E Model 4139 Cooke Radio Rule, front side](./_images/ch4-22-4139-cooke-radio-front.jpg)
+<div class="ke-portfolio-photo">
 
-<p class="ke-figure-caption">The front side of my more recent Cooke Radio sample, with a 1954 serial number.</p>
+![The K&E Model 4139 Cooke Radio Rule, front side](./_images/ch7-16-4139-cooke-front.jpg)
+
+<p class="ke-figure-caption">Front</p>
+
+</div>
+
+<div class="ke-portfolio-photo">
+
+![The K&E Model 4139 Cooke Radio Rule, back side](./_images/ch7-15-4139-cooke-back.jpg)
+
+<p class="ke-figure-caption">Back</p>
+
+</div>
 
 </div>
 
 K&E's longest-enduring electronics rule, designed by Navy Chief Radio Electrician Nelson Cooke. I own two samples spanning nearly the rule's full production run: an early one with an unusually early 1938 serial number, and this 1954 example, showing the later exposed-mahogany-edge construction and rounded "Cooke Radio" emblem.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Scale Length</dt><dd>10"</dd>
+<dt>Purpose</dt><dd>Radio/Electrical Engineering</dd>
+<dt># of Scales</dt><dd>16</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Celluloid-covered mahogany</dd>
+<dt>Dates / Serials</dt><dd>1938 (SN 686538), 1954 (SN 775526), 1959 (SN 350464)</dd>
+<dt>Front</dt><dd><code>LC, A [B, T, ST, S] D, DI</code></dd>
+<dt>Rear</dt><dd><code>L, DF [CF, CIF, CI, C] D</code></dd>
+</dl>
 
 </div>
 
@@ -426,13 +668,26 @@ K&E's longest-enduring electronics rule, designed by Navy Chief Radio Electricia
 
 <div class="ke-portfolio-photo">
 
-![The author's Model 68-1929 Deci-Lon Demonstrator, a 6.5-foot redwood rule hanging in his classroom](./_images/ch4-26-deci-lon-demonstrator-1.jpg)
+![The author's Model 68-1929 Deci-Lon Demonstrator, a 6.5-foot redwood rule hanging in his classroom](./_images/ch7-17-decilon10-demonstrator.jpg)
 
 <p class="ke-figure-caption">My Model 68-1929 Deci-Lon Demonstrator, a 6.5-foot redwood rule, hanging in my classroom.</p>
 
 </div>
 
 A 6.5-foot redwood classroom demonstrator modeling the full Deci-Lon 10 scale set, with a gravity-held plexiglass cursor rather than the real rule's Ivorite construction. I found this one on Craigslist in Austin — it still carries a Mineola ISD metal asset-inventory tag — and it hangs proudly in my own classroom today.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Scale Length</dt><dd>1.5 meters</dd>
+<dt>Purpose</dt><dd>Demonstration/Training/Classroom</dd>
+<dt># of Scales</dt><dd>26</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Redwood</dd>
+<dt>Date</dt><dd>1962 to 1967</dd>
+<dt>Condition</dt><dd>C4</dd>
+<dt>Front</dt><dd><code>Sq1, Sq2, DF [CF, CIF, L, CI, C] D, Ln0, Ln1, Ln2, Ln3</code></dd>
+<dt>Rear</dt><dd><code>Ln-3, Ln-2, Ln-1, Ln-0, A [B, T, SRT, S, C] D, DI, K</code></dd>
+</dl>
 
 </div>
 
@@ -449,15 +704,26 @@ A 6.5-foot redwood classroom demonstrator modeling the full Deci-Lon 10 scale se
 
 <div class="ke-portfolio-detail">
 
-<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch5-02-thacher-art-shot-full.jpg">
+<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch7-18-thacher-calculator-full.jpg">
 
-![The K&E Model 4012 Thacher Calculator](./_images/ch5-02-thacher-art-shot.jpg)
+![The K&E Model 4012 Thacher Calculator](./_images/ch7-18-thacher-calculator.jpg)
 
 <p class="ke-figure-caption">The Model 4012 Thacher Calculator in my collection, serial number 2758.</p>
 
 </div>
 
 A monumental cylindrical calculator — a 4" diameter, 18"-long rotating drum bearing the equivalent of an 80" logarithmic scale — and one of the most historically significant analog computers K&E ever sold. My sample, serial number 2758 (c. 1910–1912), came through the F. Weber Co. of Philadelphia and is in unusually good condition, box-jointed mahogany case included.
+
+<dl class="ke-portfolio-stats">
+<dt>Made By</dt><dd>K&E</dd>
+<dt>Type</dt><dd>Cylindrical</dd>
+<dt>Scale Length</dt><dd>30 feet</dd>
+<dt>Purpose</dt><dd>High-resolution computation</dd>
+<dt># of Scales</dt><dd>3</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Brass frame on wood base; paper-covered scales</dd>
+<dt>Date / Serial</dt><dd>1910 (SN 2758)</dd>
+</dl>
 
 </div>
 
@@ -607,15 +873,27 @@ A custom rule commissioned by the Associated Spring Corporation in 1967 for desi
 
 <div class="ke-portfolio-detail">
 
-<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch6-09-brick-o-meter-full.jpg">
+<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch7-19-brick-o-meter-full.jpg">
 
-![The Brick-O-Meter, a custom-etched K&E rule for the Mackensen C. Co. Inc., showing the Q, M, H, and L scales](./_images/ch6-09-brick-o-meter.jpg)
+![The Brick-O-Meter, a custom-etched K&E rule for the Mackensen C. Co. Inc., showing the Q, M, H, and L scales](./_images/ch7-19-brick-o-meter.jpg)
 
 <p class="ke-figure-caption">My Brick-O-Meter, a unique custom K&E rule for computing construction materials.</p>
 
 </div>
 
 A custom rule commissioned by the Mackensen C. Co. Inc. for quickly computing brick, tile, or gypsum board quantities against a job's square footage, built on the same white-painted boxwood stock as the 4058W Beginner's Rule. No K&E model number, no serial number, no catalog appearance — just a rare and delightfully specific piece of trade history.
+
+<dl class="ke-portfolio-stats">
+<dt>Made For</dt><dd>Mackensen C. Co. Inc., by K&E</dd>
+<dt>Scale Length</dt><dd>10"</dd>
+<dt>Purpose</dt><dd>Construction</dd>
+<dt># of Scales</dt><dd>4</dd>
+<dt>Country</dt><dd>USA</dd>
+<dt>Material</dt><dd>Unidentified, moderate hardwood</dd>
+<dt>Date</dt><dd>1938–1942</dd>
+<dt>Condition</dt><dd>C3</dd>
+<dt>Front</dt><dd><code>Q-Quantity [M-Material, H-Height] L-Length</code></dd>
+</dl>
 
 </div>
 

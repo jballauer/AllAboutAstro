@@ -776,6 +776,59 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-portfolio-photo .ke-figure-caption {
     margin-top: 0.4rem;
   }
+  /* Wraps 2+ .ke-portfolio-photo blocks (e.g. Front/Back) side by side
+     instead of each stacking full-width. */
+  .ke-portfolio-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 0 0.9rem;
+  }
+  .ke-portfolio-photos .ke-portfolio-photo {
+    flex: 1 1 200px;
+    max-width: 260px;
+    margin: 0;
+  }
+  /* Jay's own recorded stats for a portfolio rule (scale length, purpose,
+     material, dates/serials, front/rear scale sets) — reuses the same
+     teal "reference data" treatment as .ke-scale-set elsewhere in the
+     book, as a definition list so field/value stay paired regardless of
+     line wrapping. */
+  .ke-portfolio-stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.9rem;
+    row-gap: 0.4rem;
+    background-color: rgba(51, 135, 162, 0.12);
+    border: 1px solid rgba(51, 135, 162, 0.45);
+    border-radius: 6px;
+    padding: 0.9rem 1.1rem;
+    margin: 0.9rem 0 0;
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+  }
+  .ke-portfolio-stats dt {
+    color: #7dd3e8;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-top: 0.15rem;
+  }
+  .ke-portfolio-stats dd {
+    margin: 0;
+    color: var(--color-text);
+    line-height: var(--prose-line-height);
+  }
+  .ke-portfolio-stats dd code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    background: none;
+    letter-spacing: 0.01em;
+  }
   /* A listed-but-not-yet-written-up entry — a plain static row, not a
      clickable disclosure, since there's nothing yet to expand into. */
   .ke-portfolio-item-pending {
