@@ -412,14 +412,6 @@ But I think, most importantly, workshops and astronomy clubs offer an opportunit
 
 ### Online Forums/Social Media
 
-One of the very best parts of the early internet was the concept of a "bulletin board" or "user group."  The first true social media, people could gather virtually to ask questions and discuss a variety of aspects of over the hobby or hobbies.    Today, remnants of many still exist, such as the Yahoo Groups, which still serves as an excellent place to get user support over a variety of legacy (and current) equipment makes. 
-
-Once the "web" fully developed, internet "forums" began to take over, yielding a better user experience and interface, with features often including chat and private messaging, and greater participation.   Cloudy Nights is likely the best known of these running today, but there are several others like Ice in Space and Astromart that provide similar online communities.   As with any community, it's a good chance ask a question, which inevitably yields no end to responses, ranging from the ridiculous to the extremely helpful.  More than that, it gives you the chance to search through archives of previous "threads," to see your question has already been answered.  Or, it gives you the chance to post an image to get feedback.    
-
-The biggest issue I have with internet forums is the extreme noise level, where you will have to filter through the blow-hards and phonies and egos, as well as dealing with the inevitable "Mr.-Did-You-Search-First-Before-Asking-Us Guy."   I always found it amusing the number of people on Cloudy Nights who are members of the "community," yet aren't willing to give personalized and customized help for those in need.   
-
-The other alternative to the community forum is via Facebook or Facebook-related groups.   Personally, I've enjoyed accepting friend requests from thousands of astronomers and astrophotographers, and then watching them post images, opinions, and questions that pop up in my "news feed."  As with any social media, the noise level can be extremely high when dealing with those opining about politics and religion, but a well administrated, astronomy-specific Facebook group can be a joy to use.   Just watch out for NASA-bashers and flat-earth conspiracists!
-
 <div class="ke-sidebar" data-side="right">
 
 ## Conversation Heard Frequently at All Internet Forums...
@@ -437,6 +429,14 @@ Newbie: "Uh, no...I kinda hoped somebody would just answer my question without m
 </div>
 
 </div>
+
+One of the very best parts of the early internet was the concept of a "bulletin board" or "user group."  The first true social media, people could gather virtually to ask questions and discuss a variety of aspects of over the hobby or hobbies.    Today, remnants of many still exist, such as the Yahoo Groups, which still serves as an excellent place to get user support over a variety of legacy (and current) equipment makes. 
+
+Once the "web" fully developed, internet "forums" began to take over, yielding a better user experience and interface, with features often including chat and private messaging, and greater participation.   Cloudy Nights is likely the best known of these running today, but there are several others like Ice in Space and Astromart that provide similar online communities.   As with any community, it's a good chance ask a question, which inevitably yields no end to responses, ranging from the ridiculous to the extremely helpful.  More than that, it gives you the chance to search through archives of previous "threads," to see your question has already been answered.  Or, it gives you the chance to post an image to get feedback.    
+
+The biggest issue I have with internet forums is the extreme noise level, where you will have to filter through the blow-hards and phonies and egos, as well as dealing with the inevitable "Mr.-Did-You-Search-First-Before-Asking-Us Guy."   I always found it amusing the number of people on Cloudy Nights who are members of the "community," yet aren't willing to give personalized and customized help for those in need.   
+
+The other alternative to the community forum is via Facebook or Facebook-related groups.   Personally, I've enjoyed accepting friend requests from thousands of astronomers and astrophotographers, and then watching them post images, opinions, and questions that pop up in my "news feed."  As with any social media, the noise level can be extremely high when dealing with those opining about politics and religion, but a well administrated, astronomy-specific Facebook group can be a joy to use.   Just watch out for NASA-bashers and flat-earth conspiracists!
 
 If you want to process some data online, head over to Jim Misti's FITS site. Here are the results of his M8 data processed by 16 distinct hobbyists. It's nice to be able to process the data yourself and see how YOU compare!
 
