@@ -271,9 +271,9 @@ When you attempt to learn ANYTHING without a teacher or mentor, no matter who yo
 
 ![Jason Ware's scratch-built starship model](./_images/htl-12-jason.jpg)
 
-</div>
+<p class="ke-figure-caption">My fellow astroimaging friend, Jason Ware, makes scratch-built scale models of NCC-1701A, which geeks know as the Starship Enterprise. If I were to build one, I'd definitely need his help. It'd sure save a ton of time! Maybe I should consider budgeting for him to be my mentor, considering that the extra thousand hours of trying to learn it all by myself are worth money too!</p>
 
-My fellow astroimaging friend, Jason Ware, makes scratch-built scale models of NCC-1701A, which geeks know as the Starship Enterprise. If I were to build one, I'd definitely need his help. It'd sure save a ton of time! Maybe I should consider budgeting for him to be my mentor, considering that the extra thousand hours of trying to learn it all by myself are worth money too!
+</div>
 
 Unlike when I started the hobby, there are plenty of people available today to serve as teachers/mentors to your learning...some free...some paid...but all of which have value.  And even without a specific individual to serve in a mentoring capacity, bringing in people at various stages - if only to "show me a few things" or to answer important questions - can cut into the learning curve substantially.  
 
