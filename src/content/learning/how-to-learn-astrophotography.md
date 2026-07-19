@@ -438,15 +438,15 @@ Newbie: "Uh, no...I kinda hoped somebody would just answer my question without m
 
 </div>
 
-<div class="ke-clear"></div>
-
 If you want to process some data online, head over to Jim Misti's FITS site. Here are the results of his M8 data processed by 16 distinct hobbyists. It's nice to be able to process the data yourself and see how YOU compare!
 
-<div class="ke-figure ke-figure-left" data-hires="/images/learning/htl-18-m8multi-full.jpg">
+<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/learning/htl-18-m8multi-full.jpg">
 
 ![The Lagoon Nebula processed by 16 world-class astroimagers](./_images/htl-18-m8multi.jpg)
 
 </div>
+
+<div class="ke-clear"></div>
 
 ### Data Repositories 
 
