@@ -438,23 +438,23 @@ The biggest issue I have with internet forums is the extreme noise level, where 
 
 The other alternative to the community forum is via Facebook or Facebook-related groups.   Personally, I've enjoyed accepting friend requests from thousands of astronomers and astrophotographers, and then watching them post images, opinions, and questions that pop up in my "news feed."  As with any social media, the noise level can be extremely high when dealing with those opining about politics and religion, but a well administrated, astronomy-specific Facebook group can be a joy to use.   Just watch out for NASA-bashers and flat-earth conspiracists!
 
-If you want to process some data online, head over to Jim Misti's FITS site. Here are the results of his M8 data processed by 16 distinct hobbyists. It's nice to be able to process the data yourself and see how YOU compare!
-
-<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/learning/htl-18-m8multi-full.jpg">
-
-![The Lagoon Nebula processed by 16 world-class astroimagers](./_images/htl-18-m8multi.jpg)
-
-</div>
-
-<div class="ke-clear"></div>
-
 ### Data Repositories 
 
 You can learn to process astronomical images without taking a single image yourself.   This is possible because many people upload their own raw data (or master frames) to the Internet for ANYBODY to play with.   Unbelievably, you can even download Hubble Space Telescope data to practice on. Googling "HST public data" or "Hubble Legacy Archive" will get you started.   Digitized Sky Survey (DSS) data?   Yes, that too.   Even data from the James Webb Telescope can be downloaded and processed.   The Space Telescope Institute provides such access to an enormous amount of real telescope data.  
 
 One of my favorite amateur repositories has been provided by Jim Misti, who uploaded FITS data from a 32" Ritchey-Chrietien scope, as well as 4" apochromatic refractor data.  He even uploads your processed results to a page where you can compare it against others who did the same object.   It's amazing to see the differences in results among participants, even among some really talented amateur astrophotographers.  
 
+<div class="ke-figure ke-figure-left" data-hires="/images/learning/htl-18-m8multi-full.jpg">
+
+![The Lagoon Nebula processed by 16 world-class astroimagers](./_images/htl-18-m8multi.jpg)
+
+<p class="ke-figure-caption">If you want to process some data online, head over to Jim Misti's FITS site. Here are the results of his M8 data processed by 16 distinct hobbyists. It's nice to be able to process the data yourself and see how YOU compare!</p>
+
+</div>
+
 Somewhat conversely, it's good to make use of those around us to process our data for us, if only to compare their results with our own.  It's an excellent way to understand what is the limiting factor in your images...is it your processing...or is it just the data?   Getting buddy-buddy with some experienced and proven astronomy "forum-ites" or making a Facebook request is a good way to find people willing to do it; many of them are probably looking for something to do anyway since they just bought new equipment and will be socked in by clouds.  It's called the "equipment curse" and you should definitely take advantage of other people's misfortunes.      
+
+<div class="ke-clear"></div>
 
 ### Mentors/Consultants
 
