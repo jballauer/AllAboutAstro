@@ -311,12 +311,6 @@ YouTube is a terrific resource when you want astronomy-related information and i
 
 Finally, there are a couple of regular astronomy and astrophotography podcasts out there.   Podcasts specific to imaging are not typically long-lasting.  However,  you will discover via google search many single or guest episode podcasts that have been archived featuring some really nice content from some solid astrophotographers.   They should not be ignored. 
 
-<div class="ke-figure">
-
-![A star party or workshop scene](./_images/htl-13-img1242.jpg)
-
-</div>
-
 ### Books and Magazines
 
 There's nothing like reading a good book.  The tactile feel of paper pages cannot be replaced by digital...and there are several references out there worth your time.    
@@ -326,6 +320,14 @@ But if there were one book that was instrumental in helping me build a foundatio
 One author, Robert Reeves, has produced a variety of books through Wilmann-Bell, covering a number of topics in astrophotography.  Pictured at left in FIGURE 4 is my favorite, Introduction to Digital Astrophotography, albeit I'm a little biased (see pages 3 to 5 for my contribution to it).  His other texts about lunar and planetary imaging are an absolute must read for those interested in video imaging.  Robert is the foremost expert on our moon among amateurs, and as of December 2023 he has a new book available, Exploring the Moon, which is an absolute must-own. 
 
 Canadian authors Terence Dickinson and Alan Dyer have some excellent texts as well, my all-time favorite being The Backyard Astronomers Guide (check out pp. 302-303 in the 3rd Edition for my contribution). Dickinson also delivered to us Nightwatch, which is considered a classic.   Dickinson recently passed away, but Dyer still cranks out many books, magazine articles, and web-tutorials that are wonderful resources.   He, like Robert, are great guys and helpful to hobbyists, even face-to-face.  You'll likely run into them at any Imaging Conference or major star-party.  
+
+<div class="ke-figure ke-figure-left" data-hires="/images/learning/htl-13-img1242-full.jpg">
+
+![Eight of the author's favorite astrophotography books laid out on a table](./_images/htl-13-img1242.jpg)
+
+<p class="ke-figure-caption">FIGURE 4 - Some of my favorite books, even ones not specifically about imaging, have significant value to the overall process to what we do as imagers. Pictured here are eight such books, also written about in the text of the article. It's not a conclusive list, as I have other favorites not pictured. But any text that makes you a better astronomer will also make you a better imager.</p>
+
+</div>
 
 Comanche Springs Astronomy Campus (CSAC) is the home of over 3500 acres designated by the Three Rivers Foundation for public science education. It is home of several observatories, with classrooms and bunkhouses that can accommodate groups up to 150 or so. Owner of the largest private collection of Obsession dobs, including a 30" on campus, CSAC hosts routine astronomy and astroimaging workshops. Unique is the ability to use actual equipment from Bortle Class 2 skies WHILE learning imaging in a workshop setting. Very special and unique. See www.3rf.org for information on future opportunities.
 
@@ -470,11 +472,11 @@ But I make this latter point for a single reason...you never know when people mi
 
 ​I will often make myself available for email questions and assistance just because, by nature, I like to help.   And if you want to give me something for such services, beer doesn't hurt.    Just make sure you are gracious - don't take advantage of others and be willing to provide some compensation for those who are saving you tons of time and money with their advice.   
 
-Getting setup for a major star party in anticipation for great skies with a bunch of fellow imagers and astronomers is something everybody should experience. Shown here, I've brought out the big guns for the 2005 Texas Star Party. - Image credit Phil Jones
-
 <div class="ke-figure" data-hires="/images/learning/htl-19-testing-telescopes-full.png">
 
 ![Setting up for the 2005 Texas Star Party](./_images/htl-19-testing-telescopes.png)
+
+<p class="ke-figure-caption">Getting setup for a major star party in anticipation for great skies with a bunch of fellow imagers and astronomers is something everybody should experience. Shown here, I've brought out the big guns for the 2005 Texas Star Party. - Image credit Phil Jones</p>
 
 </div>
 
