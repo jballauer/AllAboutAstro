@@ -19,7 +19,7 @@ On the contrary, one article will be quite enough to inform you just how much ed
 
 Where to start?  For this reason, having a plan is important.   This article, in addition to suggested resources, will outline a plan or approach to your learning.  Some of you likely lack a complete clue about what it is that an astroimager actually does...so we will also illustrate a picture of what it's like to be an imager.   What is involved with a typical night under the stars?  What types of skills do we need to process our images?
 
-<div class="ke-sidebar" data-side="right">
+<div class="ke-sidebar" data-color="orange" data-side="right">
 
 ## Jumping in with the Articles at All About Astro...
 
@@ -281,7 +281,7 @@ Workshops and other forums (online or not) become valuable in that regard, even 
 
 So, for the beginning learner of Astrophotography, you should consider how much of your learning will involve a mentor and how much will you be willing to budget to learn from others?  ​
 
-<div class="ke-sidebar" data-side="right">
+<div class="ke-sidebar" data-color="orange" data-side="right">
 
 ## Aside...
 
@@ -414,7 +414,7 @@ But I think, most importantly, workshops and astronomy clubs offer an opportunit
 
 ### Online Forums/Social Media
 
-<div class="ke-sidebar" data-side="right">
+<div class="ke-sidebar" data-color="orange" data-side="right">
 
 ## Conversation Heard Frequently at All Internet Forums...
 

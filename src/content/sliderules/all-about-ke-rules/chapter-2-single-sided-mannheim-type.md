@@ -374,7 +374,7 @@ This model was introduced as the "Student's Slide Rule" from its inception, with
 
 <div class="ke-clear"></div>
 
-<div class="ke-sidebar">
+<div class="ke-sidebar" data-color="orange">
 
 ## Collector's Outlook: Single-sided K&E rules
 

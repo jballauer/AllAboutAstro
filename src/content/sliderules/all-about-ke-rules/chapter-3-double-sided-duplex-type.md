@@ -608,7 +608,7 @@ Of course the 9071-3 Doric quickly disappeared with no modern plastic version, s
 
 Notwithstanding, history would show that the N9081-3 rule was very much transitional, but an important slide rule historically. Its replacement, the Model 4181-3, would become the first "Modern Duplex" rule for the company. It will be discussed fully in that section.
 
-<div class="ke-sidebar" data-width="wide">
+<div class="ke-sidebar" data-color="orange" data-width="wide">
 
 ## Collector's Outlook: Double-sided, Duplex-Type K&E rules
 

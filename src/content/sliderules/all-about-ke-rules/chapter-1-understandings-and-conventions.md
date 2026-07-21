@@ -55,9 +55,9 @@ There is also an extra wild-card where serial numbering is concerned. K&E used s
 
 <div class="ke-figure ke-figure-right ke-figure-quarter">
 
-![K&E serial number and production dates chart, courtesy of Clark McCoy](./_images/ch1-02-serial-numbers-chart.jpg)
+![K&E serial number and production dates chart, showing the "rollover" of the serial number every one million rules](./_images/ch1-02-serial-numbers-chart.jpg)
 
-<p class="ke-figure-caption">K&E serial number and production dates chart, courtesy of Clark McCoy.</p>
+<p class="ke-figure-caption">This chart shows the pattern of serial numbers of most K&E slide rules on a year-by-year basis. Note the "rollover" of the serial number as they manufacture each one-million slide rules. - courtesy of <a href="https://www.mccoys-kecatalogs.com/" target="_blank">mccoys-kecatalogs.com</a></p>
 
 </div>
 
@@ -101,9 +101,9 @@ Around 1930, with the introduction of plastics beyond celluloid/wood lamination,
 
 <div class="ke-figure" data-hires="/images/ke-rules/ch1-04-timeline-full.jpg">
 
-![Michael Frey's K&E Model Map, a timeline of K&E slide rule production from 1881 to 1975](./_images/ch1-04-timeline.jpg)
+![The K&E Model Map, a timeline and categorization of K&E slide rule models over time](./_images/ch1-04-timeline.jpg)
 
-<p class="ke-figure-caption">Michael Frey's K&E Model Map, charting slide rule families and models from 1881 to 1975. Courtesy of the International Slide Rule Museum and Clark McCoy. Click to enlarge.</p>
+<p class="ke-figure-caption">The K&E Model Map - A timeline and categorization of K&E slide rule models over time - courtesy of Michael Frey of the International Slide Rule Museum.</p>
 
 </div>
 
