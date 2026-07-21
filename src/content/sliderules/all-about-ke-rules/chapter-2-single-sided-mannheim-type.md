@@ -93,14 +93,6 @@ So what can be said about this early maker mystery?
 
 It is reasonable to believe that Tavernier-Gravet was responsible for the production of most boxwood rules prior to circa 1901, including those with celluloid-laminations. The exception would be the potential for the earliest rules to be made by Rabone and Sons, as Bob Otnes opined, and those possibly made in-house by K&E later in the century. This aligns well with some of the "Transitional models" and the "Favorite" rules to be discussed later in the chapter. Dennert & Pape, owner of the celluloid-on-wood patent in 1886, had shifted entirely to mahogany by 1888 according to Hans Dennert, so it is likely that all mahogany rules with celluloid after that date were made by D&P. Whether they also made boxwood rules special to K&E during the 1890s, or whether the T-G rules with celluloid were anything other than boxwood, is unknown; however, I would suggest that this could be a reasonable theory.
 
-<div class="ke-figure">
-
-![A screenshot of the Oughtred Society's Rarities Gallery listing for the 8" Tavernier-Gravet/K&E rule](./_images/ch2-09-oughtred-rarities-screenshot.jpg)
-
-<p class="ke-figure-caption">A screenshot of the Oughtred Society's Rarities Gallery listing for this rule.</p>
-
-</div>
-
 It is also reasonable to believe that catalog offerings of K&E products prior to the early part of the 20th century should be taken with a measure of uncertainty. There are samples of slide rules that do not seem to conform to catalog descriptions. And the era was such that consumers would not have required the level of product certainty that we demand today. A box labelled "Mannheim rule with celluloid-facings" could have been filled with any number of products.
 
 In conclusion, a picture of what was going on in the these early days at Keuffel & Esser is incomplete today. But there is enough circumstantial evidence to see that they, in addition to building some rules in-house prior to the turn of the 20th century, sourced their slide rules simultaneously from both Tavernier-Gravet and Dennert & Pape, and perhaps even others if the opportunity availed itself.
@@ -176,6 +168,14 @@ The first two rules in the series were the Model 1745 and Model 1746 rules, both
 Subtly important is the catalog description which lacks indication of the wood type. A pattern develops in these descriptions - when characteristics of the rule they will sell are certain, K&E will say it; but when uncertain, they leave the description intentionally vague. The wood type is suspiciously missing in the 1746 Mannheim descriptions all the way through the 1899 catalog. This should be an indication that K&E left open the possibility of a variety of slide rules that could meet the description, some boxwood and some mahogany.
 
 These rules, like all T-G and D&P rules known to this point, had horizontal "embellishment" lines, known by most today as "railroad" scales. By the end of the century, both of the rules had transitioned to mahogany construction. A 20" version of this rule called the 1748 was introduced in 1890, and a 5" version called the 1747 arrived in 1899. Of the 20" rule, K&E seems to be rather apologetic. Their catalog description in 1890, and as printed below in the 1895 catalog, states...
+
+<div class="ke-figure">
+
+![A clipping from the 1895 K&E catalog describing the advantages and drawbacks of the 20-inch slide rules](./_images/ch2-09-1895-catalog-20in-quote.jpg)
+
+<p class="ke-figure-caption">"The 20 in. Slide Rules have the great advantage that they admit of finer divisions and consequent closer reading than the 10 in. Of course the longer rules are more liable to warp, and thereby give rise to complaint, but they are nevertheless preferred on account of the advantages of the finer divisions."</p>
+
+</div>
 
 Interesting that this statement is made a decade prior to 1901, when they would roll out their patent for the "adjustable slide rule."
 
