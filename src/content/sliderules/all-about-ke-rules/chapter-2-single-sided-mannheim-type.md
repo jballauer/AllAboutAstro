@@ -39,13 +39,15 @@ The timing seems about right. According to Hans Dennert, grandson of the founder
 
 ![An 8" Tavernier-Gravet slide rule bearing both Tavernier-Gravet and Keuffel & Esser markings](./_images/ch2-05-tavernier-gravet-1883.jpg)
 
-<p class="ke-figure-caption">This 8" slide rule, bearing both Tavernier-Gravet and Keuffel & Esser markings, is listed in the Rarities Gallery of the Oughtred Society with an estimated manufacture date of 1885 - yet markings on the rule point to a much later sale date.</p>
-
 </div>
 
 Yet, the slide rule pictured above gives me reason to think that Tavernier-Gravet slide rules were sold by K&E past the 1890 catalog date, and perhaps well past that date. This 8" slide rule, listed in the Rarities Gallery of the Oughtred Society, estimates a date of manufacture of 1885. This rule bears the name of both Tavernier-Gravet and Keuffel & Esser. An assumption of this date would indicate the rule as likely the Model 479-5, which was the 8" rule made prior to 1887. I believe it is more likely to be true that the date is approximately correct, but that the same model rule would have been sold for many years at a time without any evolutionary changes. The real point is not the manufacturing date, but rather the date that K&E would have sold it.
 
 Two markings on this rule pinpoint the sale date to much later than 1885. First, on the rule's back is stamped "Medailles d'or 1878 et 1889," indicating the gold medals their product won in the World's Fair in Paris those years, the later year famously marking the completion of the Eiffel Tower. While the slide rule was certainly produced early, Tavernier-Gravet likely added this stamp to their existing inventory and new slide rules after this 1889 date. Second, also notice the reference to "Chicago" on the rule's front.
+
+Knowing that K&E did not have an office in Chicago until 1891, as also expressed in their 1892 Product Catalog imaged below, this is perplexing. K&E would have to be offering this rule for sale after 1891, despite not having a matching boxwood model in their catalog.
+
+Was there a line of boxwood only, T-G slide rules offered by K&E during the last decade of the century?
 
 <div class="ke-figure">
 
@@ -54,10 +56,6 @@ Two markings on this rule pinpoint the sale date to much later than 1885. First,
 <p class="ke-figure-caption">K&E's 1892 Product Catalog, the first to list a Chicago office, opened in 1891.</p>
 
 </div>
-
-Knowing that K&E did not have an office in Chicago until 1891, as also expressed in their 1892 Product Catalog imaged below, this is perplexing. K&E would have to be offering this rule for sale after 1891, despite not having a matching boxwood model in their catalog.
-
-Was there a line of boxwood only, T-G slide rules offered by K&E during the last decade of the century?
 
 I would date this boxwood rule to the mid 1880s, as did the Oughtred Society, which also falls in line with my Tavernier-Gravet sample pictured at left. The indication of "Chicago" on front, identifying the rule as post-1891, could have been stamped after the fact, akin to the additional stamping on the back of the rule by T-G. This might be the typical method of operation for K&E: importing the components of the rule unassembled, stamping on all the numbers and labels, and then building the rule in-house with their own end brackets and cursors. (See also the Cox Original Duplex rule in the next chapter).
 
