@@ -28,6 +28,15 @@ const gearReviewThumbnails: Record<string, ImageMetadata> = {
   'software-bisque-mounts': grThumbSoftwareBisque,
 };
 
+// Pulled out of the carousel and placed inline with the essay text below,
+// matching where this photo sat on the original page.
+const eq08Photo = {
+  src: eq08,
+  hires: '/images/gear/eq-08-toa150-ap900-stl11000m.jpg',
+  alt: 'A Takahashi TOA-150 on an AP900 mount with an SBIG STL-11000m astro camera',
+  caption: 'TOA-150, AP900, and SBIG STL-11000m astro camera.',
+};
+
 const equipmentPhotos = [
   {
     src: eq01,
@@ -78,12 +87,6 @@ const equipmentPhotos = [
       'Setup for the Great Solar Eclipse on August 21, 2019. Coronado Solar Max 90mm Double-Stacked Telescope, Takahashi FSQ-85ED refractor, and Takahashi NJP Temma 2 mount.',
   },
   {
-    src: eq08,
-    hires: '/images/gear/eq-08-toa150-ap900-stl11000m.jpg',
-    alt: 'A Takahashi TOA-150 on an AP900 mount with an SBIG STL-11000m astro camera',
-    caption: 'TOA-150, AP900, and SBIG STL-11000m astro camera.',
-  },
-  {
     src: eq09,
     hires: '/images/gear/eq-09-trunk-or-treat-2017.jpg',
     alt: 'Telescope setup for a "Trunk or Treat" outreach event at a friend\'s church, October 2017',
@@ -117,53 +120,58 @@ const equipmentPhotos = [
   <h1>Astro Gear</h1>
   <p class="tagline">Equipment - Imaging Gear - Tools - Reviews</p>
 
-  <h2>Gear Reviews</h2>
-  {items.map((item) => {
-    const thumb = gearReviewThumbnails[item.id];
-    return (
-      <div class="ke-gear-review">
-        {thumb && (
-          <a href={`/gear/${item.id}/`} class="ke-gear-review-thumb">
-            <Image src={thumb} alt={item.data.title} width={150} height={150} />
-          </a>
-        )}
-        <p class="ke-gear-review-text">
-          <a href={`/gear/${item.id}/`}><strong>{item.data.title}</strong></a>
-          {item.data.description && <> - {item.data.description}</>}
-        </p>
+  <div class="gear-left-col">
+    <h2>Gear Reviews</h2>
+    {items.map((item) => {
+      const thumb = gearReviewThumbnails[item.id];
+      return (
+        <div class="ke-gear-review">
+          {thumb && (
+            <a href={`/gear/${item.id}/`} class="ke-gear-review-thumb">
+              <Image src={thumb} alt={item.data.title} width={150} height={150} />
+            </a>
+          )}
+          <p class="ke-gear-review-text">
+            <a href={`/gear/${item.id}/`}><strong>{item.data.title}</strong></a>
+            {item.data.description && <> - {item.data.description}</>}
+          </p>
+        </div>
+      );
+    })}
+
+    <h2>Equipment Images...</h2>
+    <p>A snapshot history of just some of the gear that I have employed.</p>
+
+    <div class="gear-carousel">
+      <div class="gc-stage">
+        <button type="button" class="gc-pause" aria-label="Pause slideshow">Pause ❙❙</button>
+        <button type="button" class="gc-prev" aria-label="Previous image">‹</button>
+        <button type="button" class="gc-next" aria-label="Next image">›</button>
+        {equipmentPhotos.map((photo, i) => (
+          <figure class="gc-slide" data-index={i} data-active={i === 0} data-hires={photo.hires} data-caption={photo.caption}>
+            <Image src={photo.src} alt={photo.alt} width={700} />
+          </figure>
+        ))}
       </div>
-    );
-  })}
-
-  <h2>Equipment Images...</h2>
-  <p>A snapshot history of just some of the gear that I have employed.</p>
-
-  <div class="gear-carousel">
-    <div class="gc-stage">
-      <button type="button" class="gc-pause" aria-label="Pause slideshow">Pause ❙❙</button>
-      <button type="button" class="gc-prev" aria-label="Previous image">‹</button>
-      <button type="button" class="gc-next" aria-label="Next image">›</button>
-      {equipmentPhotos.map((photo, i) => (
-        <figure class="gc-slide" data-index={i} data-active={i === 0} data-hires={photo.hires} data-caption={photo.caption}>
-          <Image src={photo.src} alt={photo.alt} width={700} />
-        </figure>
-      ))}
-    </div>
-    <p class="gc-caption">{equipmentPhotos[0].caption}</p>
-    <div class="gc-thumbs no-lightbox">
-      {equipmentPhotos.map((photo, i) => (
-        <Image src={photo.src} alt="" width={90} class="gc-thumb" data-index={i} data-active={i === 0} />
-      ))}
+      <p class="gc-caption">{equipmentPhotos[0].caption}</p>
+      <div class="gc-thumbs no-lightbox">
+        {equipmentPhotos.map((photo, i) => (
+          <Image src={photo.src} alt="" width={90} class="gc-thumb" data-index={i} data-active={i === 0} />
+        ))}
+      </div>
     </div>
   </div>
+
+  <figure class="ke-figure ke-figure-quarter ke-figure-right" data-hires={eq08Photo.hires}>
+    <Image src={eq08Photo.src} alt={eq08Photo.alt} width={300} />
+    <figcaption class="ke-figure-caption">{eq08Photo.caption}</figcaption>
+  </figure>
 
   <p>This hobby is a battlefield, a war in which the attrition rate overwhelms strategic planning and ultimately loses out to the larger force. This is where photon-cannons lose sight of the target amidst sporadically cloudy skies. Where deep-space artillery and targeting scopes, with their sophisticated command software, come together to form a combined-arms attack, only to be demoralized by the more powerful forces of mount error, light pollution, atmospheric anomalies, and light mechanical imprecision – where poorly outfitted armies, bad supplies lies, and dreadful reinforcements are overwhelmed by the shock and awe of a pervasive attack by the enemy on all fronts. Ground to air forces made ineffective against the air superiority of the adversary, leaving the gear to be sold off of Astromart to the highest third-world bidder.</p>
 
   <p>Astronomy classifieds are like an orphanage, where poor, helpless youths stand in line for adoption by new, prospective parents, only to be redeemed and rejected once again when these children prove too unruly, too time-consuming to handle. Otherwise soulful kids marketed and bargained about like meaningless objects, bouncing from foster home to foster home without ever achieving full potential.</p>
 
   <p>A more apt description of the difficulties within this hobby you will never find!</p>
-
-  <div class="ke-clear"></div>
 
   <p>The reasons for the high turnover rate with astronomy gear and the exit from the hobby by well-intentioned, motivated individuals is ultimately very personal, sometimes sad. But the excuses all come from one overriding factor, a lineage that can be traced back to the first branch of the astrophotographic family tree – astroimaging is highly complex and highly variable.</p>
 
@@ -223,10 +231,13 @@ const equipmentPhotos = [
     margin: 1.5rem 0;
   }
 
-  .gear-carousel {
+  .gear-left-col {
     float: left;
     width: 66%;
-    margin: 0.3rem 1.5rem 1rem 0;
+    margin: 0 1.5rem 1rem 0;
+  }
+  .gear-carousel {
+    margin: 0.3rem 0 1rem;
   }
   .gc-stage {
     position: relative;
@@ -234,10 +245,10 @@ const equipmentPhotos = [
     overflow: hidden;
   }
   @media (max-width: 700px) {
-    .gear-carousel {
+    .gear-left-col {
       float: none;
       width: 100%;
-      margin: 1rem 0 1.5rem;
+      margin: 0 0 1rem;
     }
   }
   .gc-stage :global(.gc-slide) {
