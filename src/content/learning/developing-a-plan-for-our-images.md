@@ -455,12 +455,6 @@ For more detail in presenting your final images, check out the PRESENTATION sect
 
 ## Conclusion
 
-At the end of the day, if you are happy with the progress you've made as an astrophotographer, then you've gained more than any ONE single thing.   While it's nice to be able to shoot good data, the most satisfying aspects of this hobby seems to be in formulating a plan and then going out and executing that plan. Murphy's law was invented due to this hobby - if something can go wrong, more than likely it will.    So its with great satisfaction when we are successful, especially in the beginning.    
-
-I finally got my M104, which was the fruition of something that I began years before.   Why so long?  
-
-Because I didn't know how to establish a great plan! 
-
 <div class="ke-figure ke-figure-right">
 
 ![Jupiter, 2009](./_images/plan-17-jupiter-m23.jpg)
@@ -469,14 +463,15 @@ Because I didn't know how to establish a great plan!
 
 </div>
 
+At the end of the day, if you are happy with the progress you've made as an astrophotographer, then you've gained more than any ONE single thing.   While it's nice to be able to shoot good data, the most satisfying aspects of this hobby seems to be in formulating a plan and then going out and executing that plan. Murphy's law was invented due to this hobby - if something can go wrong, more than likely it will.    So its with great satisfaction when we are successful, especially in the beginning.    
+
+I finally got my M104, which was the fruition of something that I began years before.   Why so long?  
+
+Because I didn't know how to establish a great plan! 
+
 As the astrophotographer gains quality experience, which often happens simultaneously with your addition of high-quality astro-imaging gear, you should see the ability to execute a plan become more and more of a likelihood.   At some point, Murphy has less of a say so in your final results, as you have learned how to formulate plans that are 1) realistic for the equipment you have, 2) workable within the situations in which you are presented, and 3) reachable because you know what is actually possible for your subject.  
 
 Moreover, perhaps you just need a cold dose of reality.  If your "plan" is to take an image of Jupiter at opposition and make it looks like a Damian Peach image, then you had better NOT be in Denver, Colorado when you attempt it!   I tried it once from Dallas.   Once. ​
-
-In a similar way, I hope you have understood that not all subjects are to be treated equal.   In fact, there are millions of things to shoot, but there are likely only a COUPLE of subjects on any given night that will yield your best chance of success.  For example, if your plan involves going DEEP to fill up the entire frame with meaningful pixels, then you will be looking for optimum conditions for shooting that object.  Moonless nights might be a necessity.  You might need to wait for the right time of year where the object is high in the sky.   The seeing might be poor and you might need to go with a different plan on a different object with a wide-field instrument.   Nobody said having only ONE plan is sufficient...you certainly need alternatives!
-Hopefully, I have been able to give you a glimpse at the types of things you CAN accomplish, subjects that make best use of your time and energies, those that give you the best opportunity to be successful from the start.   In the end, having a good plan helps to ensure that you can put quality data on your computer, which yields more ultimate power in processing that data.   Garbage in; garbage out.  
-
-Therefore, planning means nothing without good execution and realistic expectations...and I hope you have learned that some subjects will be better than others in that regard.
 
 <div class="ke-figure ke-figure-right">
 
@@ -485,6 +480,11 @@ Therefore, planning means nothing without good execution and realistic expectati
 <p class="ke-figure-caption">Credit Damian Peach at www.damianpeach.com</p>
 
 </div>
+
+In a similar way, I hope you have understood that not all subjects are to be treated equal.   In fact, there are millions of things to shoot, but there are likely only a COUPLE of subjects on any given night that will yield your best chance of success.  For example, if your plan involves going DEEP to fill up the entire frame with meaningful pixels, then you will be looking for optimum conditions for shooting that object.  Moonless nights might be a necessity.  You might need to wait for the right time of year where the object is high in the sky.   The seeing might be poor and you might need to go with a different plan on a different object with a wide-field instrument.   Nobody said having only ONE plan is sufficient...you certainly need alternatives!
+Hopefully, I have been able to give you a glimpse at the types of things you CAN accomplish, subjects that make best use of your time and energies, those that give you the best opportunity to be successful from the start.   In the end, having a good plan helps to ensure that you can put quality data on your computer, which yields more ultimate power in processing that data.   Garbage in; garbage out.  
+
+Therefore, planning means nothing without good execution and realistic expectations...and I hope you have learned that some subjects will be better than others in that regard.
 
 <div class="ke-sidebar" data-color="orange" data-width="full">
 

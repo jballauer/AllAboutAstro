@@ -206,7 +206,7 @@ Finally, another refractor design, also apochromatic, is the 4-element Petzval d
 
 </div>
 
-<div class="ke-figure ke-figure-right" data-hires="/images/learning/guide-08-tak-fs78-full.jpg">
+<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/learning/guide-08-tak-fs78-full.jpg">
 
 ![A Takahashi FS-78 on a Losmandy GM-8 mount](./_images/guide-08-tak-fs78.jpg)
 
@@ -666,17 +666,17 @@ Be persistent; have a growth mindset; enjoy the process AND the results.
 
 I hope you found this Guide helpful!
 
-<div class="ke-sidebar" data-color="orange" data-width="full">
+<div class="ke-sidebar" data-color="orange" data-width="half">
 
 ## Recommendations for Aspiring AstroImagers...
 
-<div class="ke-figure" data-hires="/images/learning/guide-21-camera-tripod-full.png">
+### Tripod + Camera
+
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/learning/guide-21-camera-tripod-full.png">
 
 ![A camera on a tripod with an intervalometer](./_images/guide-21-camera-tripod.png)
 
 </div>
-
-### Tripod + Camera
 
 If you have a camera, then it might be welcome news to you that you do not need a telescope to do night sky imaging.   Your starting point, especially if you already have something like a DSLR with its own lenses, is to prop the camera up on a tripod (or a rock), bump up the ISO a little, dial in a long exposure speed, and shoot!
 
@@ -686,25 +686,25 @@ Do the same thing for lightning storms, aurora, constellations, star trails, or 
 
 Taken a step further, the purchase of an "intervalometer" (as shown above) allows for automation of a sequence of such exposures, meaning you can create wonderful time lapse videos.  It also doubles as a shutter release cable, meaning you can get longer exposures than the maximum time setting allowed by the camera.
 
-<div class="ke-figure" data-hires="/images/learning/guide-22-tracker-mount-full.jpg">
+### The "Tracker" Mount
+
+<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/learning/guide-22-tracker-mount-full.jpg">
 
 ![A Sky-Watcher Star Adventurer tracker mount](./_images/guide-22-tracker-mount.jpg)
 
 </div>
 
-### The "Tracker" Mount
-
 Taking the tripod technique a step further, you are not far away from being able to move the camera with the stars.   All it requires is a way to "track" them.  "Tracker" mounts exist to do exactly that.  Attached between the tripod and the camera, these boxy little mounts have a motor that moves at the same rate that the earth spins.   As long as you are "polar aligned," it will track for any amount of exposure time.   This lets you shoot longer images of wide-fields, going even "deeper" with your Milky Way and constellation shots.   It also lets you use longer lenses (up to practical mount payload and tripod stability) without needed to worry about the Rule of 500.
 
 This form of imaging also allows you to begin "stacking" individual exposures to form a single, deeper image.  It's this technique that is the foundation of all other more advanced forms of digital astrophotography...the more you "stack," the better the signal/noise ratio (or the cleaner the image).
 
-<div class="ke-figure" data-hires="/images/learning/guide-23-piggyback-fsq-full.jpg">
+### "Piggybacking"
+
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/learning/guide-23-piggyback-fsq-full.jpg">
 
 ![An FSQ refractor piggybacked for wide-field imaging](./_images/guide-23-piggyback-fsq.jpg)
 
 </div>
-
-### "Piggybacking"
 
 Many might be surprised that I'd choose an all-in-one SCT (fork-mounted) for a good many people.  They are reasonably priced and versatile... and it's this latter point that makes it so great, since you can use it as a tracking platform (if equipped with a "wedge").  This is known as "piggyback" imaging.  Using camera lenses (or small scopes) while using the SCT as a tracking platform is powerful, especially since an SCT is an uncompromised visual instrument as well.
 
@@ -714,13 +714,13 @@ But "piggybacking" doesn't require an SCT with a wedge...it can be any equatoria
 
 The advantages of this technique when compared to a "tracker" is that greater payloads are possible, as well as greater degrees of accuracy, since many such mounts will be very accurately aligned and more precise.
 
-<div class="ke-figure" data-hires="/images/learning/guide-24-tak106-njp-full.jpg">
+### Short Focal Length
+
+<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/learning/guide-24-tak106-njp-full.jpg">
 
 ![A Takahashi 106 on an NJP mount for short focal length imaging](./_images/guide-24-tak106-njp.jpg)
 
 </div>
-
-### Short Focal Length
 
 The most difficult aspect of imaging is getting good tracking and precision that can "freeze" the stars in your picture, a fact that become increasing true the longer the lens or telescope becomes.  This means that you must be able to align the mount properly...and you need a mount refined enough to not "wobble" as the shutter is open.
 
@@ -732,13 +732,13 @@ However, nothing says you have to spend that much on a mount.  There are many op
 
 You should know that such a setup is the typical, first serious imaging setup of most who desire to image the cosmos through actual telescopes.  You just need to know that the quality of the mount MUST increase with the focal length of the scope.   Keeping under 500mm or so is important if you hope to have success with less expensive mounts.  But I'd recommend at least an EQ-5 type of mount...which starts to push the $1000 threshold.   But at this point, you will be required to spend money on a "guiding" solution as well.
 
-<div class="ke-figure" data-hires="/images/learning/guide-20-final-scope-full.jpeg">
+### The RASA
+
+<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/learning/guide-20-final-scope-full.jpeg">
 
 ![The 11" Celestron RASA Astrograph](./_images/guide-20-final-scope.jpg)
 
 </div>
-
-### The RASA
 
 ​Not a cheap option, but a powerful one, is the 11" Celestron RASA Astrograph.  A special design similar to an SCT, this scope puts the camera at exactly where it's shown in the picture (known as "prime" focus). This shortens the focal length dramatically while funneling a tremendous amount of light onto the focal plane - f/2.2 for you focal-ratio-minded people.
 

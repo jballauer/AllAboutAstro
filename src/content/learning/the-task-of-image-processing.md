@@ -335,7 +335,7 @@ Therefore, Photoshop's power comes in its intuitive feel of seeing the processes
 
 Looking at how this Carboni's Photoshop Action works, I have used the exact same sub-frame of M31 as the above PixInsight example (see below).
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-left ke-figure-third">
 
 ![M31 after the Carboni action, processed in Photoshop](./_images/tip-09-m31-carboni.png)
 
@@ -447,27 +447,35 @@ So, why not just focus on shorter images with a smaller field of view?   Hack aw
 
 </div>
 
-<div class="ke-figure ke-figure-right" data-hires="/images/learning/tip-14-cocoon1-full.jpg">
-
-![Cocoon Nebula, wider crop](./_images/tip-14-cocoon1.jpg)
-
-</div>
-
 **Reading the Image** - Unless you were born in the Middle East, most of us read from right to left.    Quite naturally, we tend to look at everything the same way.   Images are like a story and we visually like to "read them" from right to left.
 
-Witness the shot of the Cocoon Nebula at upper right.  It's a fantastic image, by almost all accounts.  For years, I put this image on my webpage exactly as shown.
+Witness the shot of the Cocoon Nebula below.  It's a fantastic image, by almost all accounts.  For years, I put this image on my webpage exactly as shown (left).
 
 But one day at the Advanced Imaging Conference (AIC) in San Jose, Tony Hallas shared this tip with us.   He said that we want to think of movement in the scene, going from upper left to center.  And he was right.   It makes for a more active scene, where our eye catches the initial movement in the upper left (where our eyes naturally start) and then we are drawn toward the main parts of the image.
 
-<div class="ke-figure ke-figure-right" data-hires="/images/learning/tip-15-cocoon2-full.jpeg">
+So, I went back to my images to see if any of them merited an adjustment.  Could I any of my images be rotated in such a way that put something of interest in the upper left corner?    Could any of my images benefit from being "read like a book"?
+
+When I revisited this image of the Cocoon, I noted how there was nothing but stars in the upper-left corner.  Perhaps you see that too?   Interestingly, it was the lower right corner that has something of interest - a bright blue star with perfect refractor spikes setting the scene for the reflection of its light off the background dust, which in turn cascades like a river toward the turbulent center.   So, I decided to rotate and slight crop the image further, as shown at right (below).
+
+<div class="ke-image-feature">
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item" data-hires="/images/learning/tip-14-cocoon1-full.jpg">
+
+![Cocoon Nebula, wider crop](./_images/tip-14-cocoon1.jpg)
+
+<p>BEFORE - original orientation</p>
+
+</div>
+<div class="ke-image-feature-item" data-hires="/images/learning/tip-15-cocoon2-full.jpeg">
 
 ![Cocoon Nebula, tighter crop](./_images/tip-15-cocoon2.jpg)
 
+<p>AFTER - rotated and cropped to "read" left to right</p>
+
 </div>
-
-So, I went back to my images to see if any of them merited an adjustment.  Could I any of my images be rotated in such a way that put something of interest in the upper left corner?    Could any of my images benefit from being "read like a book"?
-
-When I revisited this image of the Cocoon, I noted how there was nothing but stars in the upper-left corner.  Perhaps you see that too?   Interestingly, it was the lower right corner that has something of interest - a bright blue star with perfect refractor spikes setting the scene for the reflection of its light off the background dust, which in turn cascades like a river toward the turbulent center.   So, I decided to rotate and slight crop the image further, as shown at right.
+</div>
+<p class="ke-image-feature-caption">Same data, two different presentations. Rotating and slightly cropping the image moved the bright blue star and its refractor spikes into the upper-left, giving the eye a natural entry point into the scene instead of starting in an empty corner.</p>
+</div>
 
 Perhaps you do not agree, but I feel that the image improved DRASTICALLY by this one simple move.  8 hours of data acquisition followed by another 8 hours (or more) in data processing...and it took 30 seconds to do what is arguably the single most impactful thing for my image!
 

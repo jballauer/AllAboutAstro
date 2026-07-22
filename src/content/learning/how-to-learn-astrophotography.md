@@ -894,16 +894,35 @@ As a high school teacher, it's easy to know which kids are the most successful..
 
 As you gain confidence and ability in the hobby, more and more people will naturally want to know how you got to where you are.   They will bestow upon YOU the titles of MASTER and MENTOR.  It serves as confirmation that you've achieved a certain level of success.  I find this peer recognition to be MUCH more satisfying than the awesome images themselves.  See SIDEBAR: Oh, Canada!  for an interesting anecdote.
 
-<div class="ke-sidebar" data-side="right">
+While having people fawn all over your images is nice, we need to be careful about using the opinions of others when it comes to evaluating our astrophotography — but I'll save that story for the end of the article (see Sidebar: Oh, Canada! below).
+
+At first, becoming a teacher of others isn't going to be natural...and, early on, you shouldn't seek opportunities to teach others, except maybe via a few points here and there on an Internet forum.   But as you grow in the hobby, more and more people will seek you out - which is both wonderful and terrible at the same time.   It feels good to know that people think highly of your knowledge to seek you out, but it's scary to know that how you communicate that knowledge can greatly shape the learning of others, hopefully for good, but sometimes for bad.   
+
+It's easy to become dogmatic about certain things we believe in the hobby.   Some of this, like our opinions about politics and religion, need to be kept in check until you've paid your dues and are recognized by OTHERS for being an expert in what you do.   So keeping a sense of humility as a teacher of others is critical.   There's no place for ego in the business of being a teacher.   And there's no place for acting like "Mr. Know-It-All" as an astronomy mentor.   
+
+Walk quietly and carry a big stick, but let others compliment you on the, ahem, size of your stick!  ​
+
+## Conclusion
+
+​Astrophotographers can become obsessive.   This is good, as it drives learning forward.  But the quest for taking great images can be all-consuming, which also means that the inevitable struggles become more frustrating; more stressful.    Keep in mind that the nature of imaging - and astronomy on the whole - is highly unpredictable.   As much as we want things to be on our time table, it never really is.  If you don't believe me, then purchase a new imaging rig and just watch the clouds roll in.   Astronomers joke that the weather will absolutely SUCK 1 week for each inch of aperture in your new instrument.  So, buy a Celestron C-11 and it'll feel like 3 months before you can use the blasted thing!  
+
+We've talked about things you can do in the meantime.   Things that can still make for some productive learning experiences.   
+
+But remember that that you don't HAVE to be productive or driven or competitive.   It's alright to realize that taking imaging of the cosmos is a great accomplishment and you will likely achieve it very consistently someday.   But don't allow your ego to make it more than it is.  Your self-worth shouldn't be tied too tightly to your hobby.   Too many people feel worthless because they fail and even more people act overly self-important when they succeed.  
+
+To avoid this, commit yourself to having fun, whatever stage of the process.  Surround yourself with great people you enjoy being around.  Teach others the hobby.  Kick back with a cold one every now and then instead of being "Mr. Alcohol-affects-your-night-vision Guy."   Get some sleep on night 4 of a week long star party.  ​ 
+
+Mostly, enjoy your learning.   Fall in love with the night skies.   Be an advocate for important causes like dark sky preservation and science education.  Celebrate all the small successes you have and share them with those you love.    And then, after many years of hard practice and results, celebrate your success by the number of people you've influenced positively with your hobby!
+
+<div class="ke-sidebar" data-width="half">
 
 ## Sidebar: Oh, Canada!
 
-While having people fawn all over your images is nice, we need to be careful about using the opinions of others when it comes to evaluating our astrophotography.    Here's an amusing story about what happens when you get too prideful...
+Here's an amusing story about what happens when you get too prideful about people fawning over your images...
 
 The year was 2009.  I was contacted by Canada Post...you know, of the country Canada.    They had seen my 2005 APOD image of the Rosette Nebula and requested to use this image on a new postage stamp, one of two in a series of stamps to be released in April, 2009 that would commemorate Astronomy in Canada. 
 
 At that time, the irony that I am an American (moreover, a genuine Texan) did not escape me, but I figured that if they didn't care, then neither did I.  I mean, how exciting is that? How many other astrophotographers have had their work commemorated on something like that?
-​
 
 I was even surprised by how proactive they were. More than a year before the project goes to print, and they already had a working design for my stamp, as shown below:
 
@@ -926,21 +945,3 @@ Being led-on for over a year, like a girlfriend who would soon jilt me (lots of 
 Just goes to show that we have to be careful when we prop ourselves up too high on those pedestals!
 
 </div>
-
-At first, becoming a teacher of others isn't going to be natural...and, early on, you shouldn't seek opportunities to teach others, except maybe via a few points here and there on an Internet forum.   But as you grow in the hobby, more and more people will seek you out - which is both wonderful and terrible at the same time.   It feels good to know that people think highly of your knowledge to seek you out, but it's scary to know that how you communicate that knowledge can greatly shape the learning of others, hopefully for good, but sometimes for bad.   
-
-It's easy to become dogmatic about certain things we believe in the hobby.   Some of this, like our opinions about politics and religion, need to be kept in check until you've paid your dues and are recognized by OTHERS for being an expert in what you do.   So keeping a sense of humility as a teacher of others is critical.   There's no place for ego in the business of being a teacher.   And there's no place for acting like "Mr. Know-It-All" as an astronomy mentor.   
-
-Walk quietly and carry a big stick, but let others compliment you on the, ahem, size of your stick!  ​
-
-## Conclusion
-
-​Astrophotographers can become obsessive.   This is good, as it drives learning forward.  But the quest for taking great images can be all-consuming, which also means that the inevitable struggles become more frustrating; more stressful.    Keep in mind that the nature of imaging - and astronomy on the whole - is highly unpredictable.   As much as we want things to be on our time table, it never really is.  If you don't believe me, then purchase a new imaging rig and just watch the clouds roll in.   Astronomers joke that the weather will absolutely SUCK 1 week for each inch of aperture in your new instrument.  So, buy a Celestron C-11 and it'll feel like 3 months before you can use the blasted thing!  
-
-We've talked about things you can do in the meantime.   Things that can still make for some productive learning experiences.   
-
-But remember that that you don't HAVE to be productive or driven or competitive.   It's alright to realize that taking imaging of the cosmos is a great accomplishment and you will likely achieve it very consistently someday.   But don't allow your ego to make it more than it is.  Your self-worth shouldn't be tied too tightly to your hobby.   Too many people feel worthless because they fail and even more people act overly self-important when they succeed.  
-
-To avoid this, commit yourself to having fun, whatever stage of the process.  Surround yourself with great people you enjoy being around.  Teach others the hobby.  Kick back with a cold one every now and then instead of being "Mr. Alcohol-affects-your-night-vision Guy."   Get some sleep on night 4 of a week long star party.  ​ 
-
-Mostly, enjoy your learning.   Fall in love with the night skies.   Be an advocate for important causes like dark sky preservation and science education.  Celebrate all the small successes you have and share them with those you love.    And then, after many years of hard practice and results, celebrate your success by the number of people you've influenced positively with your hobby!

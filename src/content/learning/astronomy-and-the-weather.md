@@ -33,13 +33,13 @@ Or to take it a step further, how about an observatory management system that ca
 
 But regardless of how avid you are, even if you don't have a permanent observatory, in the very least, it's difficult to get by without learning how to read the Clear Sky Clock (see Sidebar: The Clear Sky Clock) for your area!
 
-<div class="ke-clear"></div>
-
 ## Internet Weather Tools
 
 There are obviously many ways to skin this cat, and the weapon(s) of choice often comes down to what the end user is most comfortable with.
 
 On my phone, I prefer the Weatherbug app. I find the single click radar with cloud overlay to be very quick, as well as quite accurate. Looping the radar works well, with very few gaps in the data. This is a pet-peeve of mine, as nothing frustrates me more than to wait for all the weather frames to download and then watch the animation jump all over the place.
+
+<div class="ke-clear"></div>
 
 For a glimpse of the cloud cover, regardless of the app, you will need to choose a "visible" cloud overlay during the day and the "infrared (IR)" overlay when it's dark. If you loop this animation, you get a good glimpse at potential holes in the clouds, allowing you to know about when the conditions should clear up again.
 
@@ -61,11 +61,11 @@ Other sites that I've used are Weather.com, Weather Underground, Intellicast, an
 
 So you've done your forecasting and have decided to setup a telescope anyway. Of course, weather doesn't always conform to your expectations. At that point, you will need to be both protective and productive given the circumstances. The following are some tips and recommendations for various types of weather conditions that might happen upon you during a night of observing.
 
-<div class="ke-clear"></div>
-
 ### Cold Weather
 
 Good protective clothing is key to enjoying a night in the cold conditions. Unfortunately, it's taken me years to figure this out and I'm not sure I'm ever adequately prepared for the worst of what winter can throw at you. A few tips in bullet form might be appreciated:
+
+<div class="ke-clear"></div>
 
 - Dressing in layers is my default approach to combating the widely varying temperature changes we can get at my favorite west Texas observing site. I typically have my undershirt, a fleece pull-over, a wind-breaker (or light zip-up jacket) and a heavy coat with hood, as needed. A balaclava or toboggan is standard fare in extremely cold conditions, but more often than not, I just use a ball-cap and pull a hood over my head to protect my neck. As a quick tip, the ball cap allows me to cinch up the hood tightly without it dropping over my eyes. Add a clip-on red light and you are good to go.
 - I typically do a bad job of layering below the waist, as I feel it's difficult to accomplish due to the bulky, restrictive feel of it. I'm not a fan of long-underwear, but a good set of thermals is a good base layer for most people. I typically wear shorts (being the Texan I am), followed by jeans, and if needed I will throw some loose fitting "sweats" over the top. Regardless, I think a good blanket or quilt is important to cover the legs if you are sitting down for most of the evening, which is typical of us astro-imagers.
@@ -223,13 +223,13 @@ Typically, the result will be a background that isn't very good (since they are 
 
 Secondly, you need a remote "pair of eyes" for knowing when and to what extent your control should happen. Network cameras, both inside and outside of the observatory, can give you a live visual for the state of the observatory and its equipment. When you send a slew command to a telescope, you will need immediate verification that it is doing as you anticipated. Else, your expensive telescope could wreck on its own instrument pier. When you place a camera showing the dome shutter or roll-off roof, you will know at a glance the status of the observatory. These cameras, typically requiring 12vDC power, require more than a typical 5vDC USB connection for power. I lean toward power over ethernet (PoE) cameras, which receive both their power and communications over the same CAT-5/6 ethernet cable. Some invest in PTZ cameras (pan-tilt-zoom) that can provide a variety of views in a remote setting, but these cameras are prohibitively expensive ($1000 or more). I prefer a fixed type, something like an all-weather (IP67 rated) Hikvision that costs around $120 to $150 each. The "all-weather" part of the equation is important, of course.
 
-<div class="ke-clear"></div>
-
 Camera enclosures (among other electronics) are rated as either IP65, IP66, or IP67 (sometimes up to IP68 and IP69) depending on their level of "ingress protection (IP)." This IP rating measures ingress of both dust (first number) and water (second number). Thus, while all the aforementioned ratings have a "6" for dust rating (zero dust ingress), they vary in their water resistance. IP65 will protect against water spray, whereas IP66 will withstand a quick immersion in water. IP67 allows for immersion for longer than one minute at a depth of 1 meter. IP68 and IP69 can withstand higher pressures (water depths) over longer time periods. Because a typical IP (internet protocol) security camera will not be used under water, an enclosure built tougher than IP67 is not necessary for security applications.
 
 An important camera to have is an "all-sky camera." While many types exist on the market, many users have built their own using a 180 degree "fisheye" lens paired to a typical IP camera. A custom weather-proof enclosure must be created for DIY solutions like this, but they work just like any other IP camera, with the ability to link or embed its feed within webpages and other software interfaces.
 
 At CSAC, we placed our all-sky camera atop a 12 foot mast, keeping the cabling runs short. It needs periodic cleaning, since the clear dome gets dirty in our environment, but it gives us a quick view of the night-time sky. We embed the current sky view (updated each 5 minutes) on our web page at www.3rf.org.
+
+<div class="ke-clear"></div>
 
 Once the MPDU and cameras are in place, you now have the ability to control an observatory via PC or device anywhere in the world manually. This is typically done via the same RDC software I mentioned earlier. At this point, if you want to open the dome shutter, you push the button. If you want to slew the telescope, you push "slew." It works exactly as if you were on-site, since you are mirroring the observatory's PC anywhere in the world.
 

@@ -6,7 +6,8 @@ draft: false
 ---
 
 Choosing a 35mm Film Camera (written in 2003)
-FOREWORD
+
+## FOREWORD
 
 The following article was written a long time ago during the age of the SLR (no "D").   At one point, we used something called "film" to do our astrophotography.    I include the article here, in October 2017, for a couple of reasons:
 I believe it's important to know something about our hobby's origins in order to be able to appreciate what we can do today.  
@@ -15,13 +16,13 @@ For the sake of posterity...there is a lot of history written about here...about
 Because there are principles here that underlie all of astro imaging - so you can gain key insights when you realize that as much as things have changed, they've also stayed mostly the same.  
 So, as you read through this well-researched article (I used to know quite a bit about this stuff), look for the nuggets of information that you can apply to today's astrophotography.   Enjoy! 
 ​
-​INTRODUCTION
-​
+## INTRODUCTION
+
 Since I assume that you are interested in astrophotography for the long-haul, I've got some concrete ideas about the way you should proceed in finding a 35mm SLR suitable for astrophotography.  You see, if you are in it as a long-term hobby, then you should understand the demands of that camera system.  It may be enough for you at first to take some decent photos of star fields and constellations, but you soon hope to shoot for more. You get narrower and narrower; longer and longer with your exposures.  You begin to look for superior lens/scope systems, with long focal lengths, fast speeds, flat fields, no spherical aberrations/vignetting, and good color correction.  You look for ways to be more critical with your focus in an attempt to achieve the tightest star images possible. You look for the best films available to astrophotography and even resort to stocking up tens of roles at a time and perhaps even purchasing a hypering rig.  You keep Kodak and Fuji email addresses handy because you know that they are about to change you favorite emulsion for the worst and you need to let off some steam.
 
 So first of all, you need to ask yourself if you are interested in purchasing a single camera that will best fit a life-time program of imaging.  Or, perhaps you just want a camera that will get you started hoping to upgrade in the future.  Well, I'm going to assume the former rather than the latter.  Afterall, isn't this question about finding the best astro camera available? Since I believe it is, I'll try to answer by giving qualities of good cameras, including some specific examples of cameras that I believe may be the best.  I'll also demonstrate what you might expect from such cameras and lenses with examples from actual images.  With that framework, I'll trust you to determine if you want to spend the money for that camera or choose one that you can "live with."
  
-FIRST THINGS FIRST
+## FIRST THINGS FIRST
 
 The common misconception is that you simply need a camera to connect to the back of a telescope.  Sorry to disappoint you, but if that is where you plan to start you've got some headaches on the road ahead.   Astrophotography should start at shorter focal lengths and go up from there as you gain experience and equipment.  That means using the cameras existing lenses instead of your telescope, at least for a while.  The reason for this is that as you go up in focal length, taking pictures becomes almost exponentially more difficult.  You may be impressed with some of the pictures you see in my own galleries, but as of the writing of this article in June, 2003, you should note that not many of them are taken through the telescope at "prime focus."  Everything you see in color is a piggyback shot (or shots) with existing camera lenses.  I've taken tons of color images through the scope, but I don't feel that any of them are worthy of displaying.  That's because I haven't perfected the techniques of shooting at such long focal lengths, and I still haven't worked the bugs out of my equipment. Both factors work against me in producing prime focus images.  They will work against you as well.
 Connecting that camera to a telescope before you know what you are doing (or what to expect) might make you throw that camera into the closet.  Or back into the closet should you already have a decent astro camera.
@@ -30,11 +31,11 @@ If not hooking up to the telescope, then where do we start?  Easy...we start wi
 
 So it's really not a camera we are looking for...it is a camera system.  With that knowledge we will explore what to look for in a good 35mm astrophotographic system.
  
-ASPECTS OF THE CAMERA
+## ASPECTS OF THE CAMERA
 
 This is what you wanted to know...what makes for the best 35mm camera for use in astrophotography?  I'll tell you the most important aspects in order of importance; therefore, if you can't afford a certain camera that I mention you can compare these aspects with a camera you can afford.
 
-It's all about the glass...
+### It's all about the glass...
 
 The best camera for you, regardless of all other aspects of the camera body itself, are the ones that give you the access to the best lenses.  Generally speaking, Canon and Nikon are heads of the class here.  Now that's not to say that good lenses cannot be found for other brandnames.  Minolta, Pentax, and Olympus (among others) all have various lines of lenses that produce superior results, but Canon and Nikon have a greater consistency of great lenses in all existing lines.  But it stands to reason that the best lenses for astrophotography have the same qualities as good photographic telescopes.  Such lenses, regardless of manufacturer, will have some type of ED (extra-low dispersion) glass or even fluorite coatings.  
 
@@ -44,7 +45,7 @@ Initially, you will not start out with these great lenses, unless of course you 
 
 But don't be disheartened.  You may already have some lenses that will work acceptably. Lenses, as with telescopes, vary greatly in their performance. Some lenses, like my regular Nikon Nikkor 135mm f2.5 lens works acceptably well as I'll demonstrate later.  Others, like my Nikon Nikkor-Q 200mm f4 lens, which costs more incidently, produces much worse images, as does my normal 50mm f/1.4 lens.  Plus, stopping down the aperture of any lens, thus avoiding some of the aberrations inherent at the edge of lens,  just might give you some surprising results.
 
-Dump the electronics...
+### Dump the electronics...
 
 The electronic revolution in cameras took a big leap in the mid-70s with the proliferation of electronic through-the-lens (TTL) metering and electromechanical shutters.  The three camera models that put together complete electrical systems of these types were the Pentax ME (1975), the Contax RTS (1975), and the Minolta XD-7 (1976).   They were the first to utilize full aperture and shutter priority modes. In response to these systems, the other major makers stepped up their electronic features in a major way.  Incidently, all of these cameras utilize a full-manual backup in bulb mode.  
 The second major revolution in the camera industry occurred with the utilization of auto-focus (AF) capabilities.  The Pentax ME-F (1981) was the precursor of this design utilizing a focus-assist capability where an LED light indicated true focus on their current lenses.  From there, Nikon incorporated complete motorized focusing in a version on their Nikon F3AF in 1985, with Canon jumping into the act with their Canon T-80 in the same year. New AF lenses were introduced for these models over this time, though they still maintained compatibility with older lenses.  But it was Minolta who developed the first truly integrated AF system, that is, a camera body with a complete set of AF lenses and no backward lenses compatibility.  This was the Minolta Maxxum 7000 introduced in 1985. At this point, Nikon countered with their F4 and Canon with their EOS system, both in 1988.
@@ -69,7 +70,7 @@ Since we are searching for the perfect 35mm astrocamera, the first thing we shou
 
 So based on the prerequisite need for a manual focus camera, we've already narrowed down our search considerably.
 
-Interchangeable focusing screens...
+### Interchangeable focusing screens...
 
 This might be more important than a fully manual shutter, but I'll place it here.
  
@@ -111,7 +112,7 @@ Outside of Nikon and Olympus, you'll have to do your research on the best screen
 
 It should be noted that the use of an alternative focusing technique like knife-edge focusers, Hartmann masks, and Ronchi gratings can allow accurate focusing with cameras that do not have bright focusing screens.  But even so, you will lose the ability to accurately frame the object that you wish to capture on film, something I consider imperative in the "perfect" 35mm astro camera.
 
-The ability to blow your top...
+### The ability to blow your top...
 
 I rank this higher than others do.  For me, the perfect astro camera MUST have a removable or interchangeable prism.   It means the difference between focusing through the camera or needing some other focusing aid, like a knife edge focuser, Ronchi screen, or Hartmann mask.  It also means the ability to easily frame your object in the camera.
 
@@ -132,7 +133,7 @@ Pentax LX
 
 However, since the Nikon F4 and F5 are fully autofocus and electronically shuttered, these have already been excluded.  So, in my mind, these remaining camera bodies are the only true choices for the "best" 35mm astro camera.  Of course, the Nikon F3, the Canon and the Pentax are expensive for second-hand cameras.  Which tends to make the Nikon F and Nikon F2 the best cameras on this criteria alone just from a price/performance aspect, though these models can be a bit expensive as well, especially if equipped with special prisms.
 
-Mirror Lock-up, shmock up...
+### Mirror Lock-up, shmock up...
 
 Overrated.  That's my thought on this feature.
 
@@ -144,9 +145,9 @@ Mirror Lock-up sounds good in theory, but not in practicality.  There is not an
 
 Those who do film photography, via eyepiece projection techniques, would definitely have a need for the mirror lock-up function.  It becomes critical to time properly these short exposures of brighter objects.   But with the shift toward digital photography for solar system objects, which can be accomplished much more effectively than with film, mirror lock-up is hardly necessary in a good astro camera.  
  
-ASPECTS OF THE LENS
+## ASPECTS OF THE LENS
 
-Remember, it's all about the glass...
+### Remember, it's all about the glass...
 
 For this reason, if you are going to be picky about purchasing something, make sure it is the lens.  Later I'll give you some specific camera models that are commonly used to produce great astrophotos, but for now allow me to describe what makes a good lens for astrophotography.
 
@@ -232,7 +233,7 @@ One final thought on lenses.  Many people have zoom lenses that they would like
 
 You can certainly take some satisfying photos of the night sky with zoom lenses, just be sure you understand that you will be limited by the quality of that lens, not necessarily your techniques.  This happens to be true of any lens.
  
-ACCESSORIZING YOUR SYSTEM
+## ACCESSORIZING YOUR SYSTEM
 
 Since you should be searching for a camera SYSTEM, let me make note of some of the things that you might need:
 T-rings and T-adapters - If you plan on connecting your camera to your telescope, you will need a T-ring fitted to your camera and some type of T-adapter connected to your scope (bypassing the cameras normal lenses).  These two devices then connect together themselves to allow your camera to fit firmly to the scope.  All cameras have a different type of bayonet mounting system specific to its make.  Therefore, if you have an Olympus camera you will require an Olympus T-ring.  Likewise, all scopes have a different way of connecting to the T-ring. You will require a T-adapter made for the visual back or focuser of your telescope.
@@ -247,7 +248,7 @@ A word of warning:  camera makers sometimes make different models of teleconver
 
 Eyepiece Projection Adapter - In the event that you insist on taking film shots of the moon, sun (with proper filter), and planets, one of these is a necessity.  This device allows you to connect your telescope to the scope while using an eyepiece as well. Doing so gives extra magnification of the image.  Total system focal length is therefore increased (and slowed) allowing magnified images of these objects to the film plane.  The focal length of the eyepiece and the distance of the camera's film plane to the eyepiece determines the amount of magnification provided (the entire system focal length).  Therefore, only smaller (physically) eyepieces tend to fit in the adapter.  Manufacturers make these devices in both fixed and sliding varieties.  The difference is that the sliding variety allows the camera to be placed anywhere behind the eyepiece, thus providing for a range of magnifications and focal ratios.  The fixed version gives only one possible magnification and focal ratios per eyepiece.  And by the way, you don't use your camera's own lens with an eyepiece projection adapter.  It threads straight to the t-mount on your camera.
 
-PURCHASING A CAMERA
+## PURCHASING A CAMERA
 
 There are several (ten) guidelines for purchasing a camera system that should be heeded:
 
@@ -283,11 +284,11 @@ If you do purchase a zoom lens, make sure the zoom is firm, but not too firm (pr
 
 10.)  Know which focal length lenses you need for the objects you want to shoot.  A good deal on a 200mm lens might be sweet, but you'll soon find that 200mm is in an area that doesn't capture a lot of good objects.  Between 135mm and 300mm, most objects are too large or too small.  Likewise, don't expect to take great pictures of M51, the Whirlpool Galaxy, with a 135mm lens.  You need to know the angular measure that a lens provides at a given focal length and apply that to objects that are framed well within it.  Doing this research will prevent you from spending money on extra lenses in a package just because you would ordinarily get a good deal.  Unless you are planning to use such a camera system for daylight photography as well, many of these lenses will do you little good.
  
-MAJOR 35mm CAMERAS
+## MAJOR 35mm CAMERAS
 
 Knowing what we need in an astro camera, let's look at some (not all) of the models from the major makers of 35mm cameras throughout the years.   Let's see if we can find out where the camera models became too "electronic" for our hobby and which models have the features we seek.
 
-Nikon
+### Nikon
 The most popular Nikon camera line is their professional line of "F" series cameras.  Five model classes of the F-series have been made over the years beginning with the original Nikon F in 1959 and ending with the current camera, the Nikon F5.  The Nikon F had a manual shutter, as did its successor, the Nikon F2, arriving in 1971.  However, the F2 (and later Nikon F models) began to use batteries to power a variety of light-metering prisms.  So even though the cameras used batteries, they only powered the light-meter, a function unnecessary, actually useless, to astrophotography anyway.  When the F2 was replaced by the Nikon F3 in 1980, it featured a battery powered shutter in all modes except the all important bulb mode (well, almost true...a couple of other modes, of no use to the astrophotographer, were non-powered as well).  The subsequent Nikon F4 and Nikon F5 models went to full battery power and autofocus in all modes.
 
 Therefore, any of the Nikon camera predating the F3, including those such as the Nikon FM series (1977), the Nikon FE series (1978), and the  Nikkormat FT series (1965), in the less expensive, consumer oriented product lines, have some form of manual shutter/manual focus modes making them a candidate for a good astrophotography camera.  It should be noted, however, that most in the FM series and the Nikkormats do not have removable focus screens nor interchangeable prisms.  The FE series does have interchangeable focus screens which, in my opinion, makes this Nikon model the next best choice to the early F-series cameras among the Nikon product lines.
@@ -300,19 +301,19 @@ Incidently, you should know that all Nikon "F" bodies are the same within their
 
 One last point: all the Nikon models mentioned can be mounted with the same lenses regardless how old or new the lenses are.  Even the new, all digital SLRs like the super Nikon D1x can use the old Ai/Ai-S and non-AI lenses from the original Nikon F. Conversely, most any new lense, even autofocus lenses, can be used with older, manual focus SLRs.  This backward and foreward compatibility is unique among all other 35mm camera makers and it gives a tremendous selection of lenses regardless of the model, the best of which are the ED-types made with extra-low dispersion glass.  These ED lenses are some of the best lenses around.  
 
-Olympus
+### Olympus
 Among Olympus cameras, the progress of electronic development can be traced as well. The most popular, again professional, line of cameras are the "OM" series. Several models have been produced beginning with the venerable Olympus OM-1 (1972) and continuing past the powerful Olympus OM-4 (which I use as a backup to my Nikon F2) into some forgetful models (for astrophotography) like the Olympus OM-10 and the Olympus OM-PC (I've got one of these as well; the first 35mm camera I ever purchased).  The OM-1 was fully manual, followed by the Olympus OM-2 which was manual in only the "B" and "T" modes, as was the aforementioned OM-4.  Interestingly, the Olympus OM-3 was fully electronic.  Therpredate the OM-4, except for thefore, any of the Olympus cameras that e OM-3, can be put to use for long exposure astrophotography.  
 
 The real intrigue to the Olympus OM series is their compact, light weight.  Attached to a telescope, these cameras (except the OM-3 as mentioned above) add less extra weight than any other camera suitable to photography, except for maybe the Pentax MX (1976), a super-light weight camera in its own right.  For this reason, and because they all have manual modes and interchangeable screens, the OMs are regarded by many as the best astro camera.
  
 Though I feel these cameras are a great value, they are far from the best for our purposes.  Their lack of a removable prism means that you will need to achieve critical focus of your camera with a method other than visual, such as with knife-edge or Ronchi devices. However, these methods of focusing are highly accurate, if not expensive, complex, and time consuming.  For those who prefer this method of focusing, the Olympus OM series cameras might be just the camera you are looking for.  Plus, current OM models are compatible with the same Zuiko lenses as the older ones, so the Olympus system is backward and forward compatible.
 
-Minolta
+### Minolta
 Minolta has been making fine, innovative 35mm cameras for a long time.  Older cameras, like the Minolta SR series of the early 60s and the Minolta SRT series of the late 60s, are tremendous, completely manual cameras, as are the professional Minolta X series cameras beginning in 1974.  But with the aforementioned, groundbreaking Minolta XD-7 and Minolta XD-11, electronic usage began to increase.  The XD-7/11 do have manual backups in bulb mode, however, so they should not be excluded as useful astrocameras. Likewise for the Minolta-made Leica models, the Leica R3, the Leica R4, and the Leica R5, all produced in 1976, the result of a brief Minolta and Leica collaboration.  But beginning in 1981 with the Minolta X-700 (an otherwise very fine camera...I own one) and later in the aforementioned Maxxum series, Minolta cameras became unsuitable for astrophotography.   Of all the camera lines I mentioned, and did not mention, none of the models have an interchangeable prism and most (if not all) do not have interchangeable screens (though the normal screens in many of the cameras are considered bright by normal standards). Therefore, like the Olympus OM series, any Minolta will likely require an alternative method of achieving critical focus.
 
 Some of the Minolta Rokkor lenses are very nice, especially those geared for professionals with the need for good, fast glass.  These "APO" designated lenses, especially the longer telephotos, are some of the better lenses ever made.
 
-Pentax
+### Pentax
 It's difficult to say anything bad about Pentax 35mm cameras.  They too have a longtime, and prolific, history of making compact and elegant, yet powerful cameras.  But in following their timeline we can differentiate those models suitable to our purpose.
 
 Parent company Asahi Co. of Japan produced their first SLR in 1952 with the Asahiflex I. But in 1957 they produced the first eye-level viewing SLR centered around the world's first pentaprism viewfinder.  This camera, the Asahi Pentax, gave birth to the Pentax name; meaning "PENTAprism- refleX."  
@@ -326,7 +327,7 @@ But with the introduction of the Pentax ME (1975), electronics took presidenc
 
 Any of the "K"-series are well-suited for astrophotography, with the K1000 model being the most widely used (because it was the lowest priced consumer model among all camera makes and models during those days) despite a lack of interchangeable focus screens and removable prisms. But the professional Pentax LX, meaning "60" in honor of Asahi's 60th anniversary, can do everything the astrophotographer needs.  Taking advantage of the Super-Multi-Coated (SMC) lenses introduced in 1971 under the "Takumar" name, or the several Zeiss-compatible lenses, the Pentax LX might be be best camera available for astrophotography.
 
-Canon
+### Canon
 Those old enough to remember the version of Andre Agassi with hair remembers well the commericials he did for the new EOS Rebel autofocusing camera in the late 1980s. Unfortunately, any camera that he advertised will be unsuitable for astrophotography.
 
 Perhaps the most popular Canon cameras of all-time are the consumer marketed Canon AE-1 (1976), of which I own three (don't ask why), and the Canon A-1 (1978), an elegant camera which provided 5 modes of operation.  Unfortunately, these are not great cameras for astrophotography because they are fully electronic, including "B" mode.  Other cameras in the "A"-series, the Canon AT-1 (1978), the Canon AV-1 (1979), and the Canon AL-1(1982) are all variations on that theme.
@@ -339,7 +340,7 @@ Unlike the Nikons, various models are limited in the lenses they may use.  The 
 
 An interesting sidenote: the Canon F-1 was produced in response to the Nikon F2, which dominated the photojournalist market.  Instead of cutting into that market, Canon went after the professional, wild-life photography crowd.  Thus, the F-1 still enjoys a dominance among this market of photographers.
 
-CONCLUSIONS
+## CONCLUSIONS
 
 As you can tell, I'm rather partial to Nikon cameras.  Much of this comes from my childhood dreams of owning a cool looking Nikon F or Nikon F2 camera, a dream that I fulfilled three years ago. But the main reason I am high on these Nikon cameras, including the more current Nikon F3, is that they have every feature you could want in an astro camera, the only negative of which is that they are generally built like tanks!  But I'll take a bit of extra weight for the satisfaction of owning a premier astrophotography, and conventional, film camera.  Equipped with one of Nikon's superb, manual focus, ED lenses and a magnifying prism...it's a system that can give astro images close in quality to that of an apochromatic refractor in a similar focal length.  Then again, some of these lenses are equally as expensive.  Likewise, it's been said that Nikon has never produced a bad 185mm or 300mm lens.   Like I said, it's all in the glass...
 

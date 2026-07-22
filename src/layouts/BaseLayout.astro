@@ -249,8 +249,19 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin-left: 0;
     margin-right: 0;
   }
+  /* Centered, non-floated half-width variant — for a closing box that
+     shouldn't span the full article width (that's reserved for plain body
+     text, per site rule) but also has nothing left to wrap beside it. */
+  .ke-sidebar[data-width='half'] {
+    float: none;
+    clear: both;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media (max-width: 700px) {
-    .ke-sidebar {
+    .ke-sidebar,
+    .ke-sidebar[data-width='half'] {
       float: none;
       width: 100%;
       margin-right: 0;
