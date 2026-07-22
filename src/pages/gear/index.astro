@@ -28,11 +28,10 @@ const gearReviewThumbnails: Record<string, ImageMetadata> = {
   'software-bisque-mounts': grThumbSoftwareBisque,
 };
 
-const equipmentPhotosTop = [
+const equipmentPhotos = [
   {
     src: eq01,
     hires: '/images/gear/eq-01-tsp-2005-rcos-fsq106.jpg',
-    float: 'left',
     alt: 'A 12.5" RCOS RC and 4" Takahashi FSQ-106 on a Paramount ME at the 2005 Texas Star Party',
     caption:
       'At the 2005 Texas Star Party - Shown is the 12.5" RCOS RC and 4" Tak FSQ-106 on a Paramount ME. Camera is a SBIG STL-6303E. As of 2017, this exact setup is located in the 3RF Conley Observatory on the Comanche Springs Astronomy Campus near Crowell, Texas.',
@@ -40,7 +39,6 @@ const equipmentPhotosTop = [
   {
     src: eq02,
     hires: '/images/gear/eq-02-cruzen-boys-observatory.jpg',
-    float: 'left',
     alt: 'A Paramount ME2 and Planewave CDK17 with a dog standing watch, for the Cruzen Boys Black Hills Observatory',
     caption:
       'Equipment for the Cruzen Boys Black Hills Observatory - Shut down due to the death of my client, the equipment for the build will be re-purposed. My Greyhound keeps watchful eye on a Paramount ME2 and Planewave CDK17.',
@@ -48,14 +46,12 @@ const equipmentPhotosTop = [
   {
     src: eq03,
     hires: '/images/gear/eq-03-eldorado-2005-collimating.jpg',
-    float: 'left',
     alt: 'Collimating a 12.5" RCOS RC telescope at the 2005 Eldorado Star Party',
     caption: '2005 Eldorado Star Party: Collimating the 12.5" RCOS RC.',
   },
   {
     src: eq04,
     hires: '/images/gear/eq-04-triple-threat.jpg',
-    float: 'left',
     alt: 'A Takahashi TOA-150, Astro-Physics AP160 Starfire, and Sky-Watcher Esprit 150 side by side',
     caption:
       '"Triple Threat" - Having fun with three 6" apos. Shown (from left to right) are a Takahashi TOA-150, Astro-Physics AP160 Starfire, and the Sky-Watcher Esprit 150. I was comparing the Tak and the Sky-Watcher for a Sky-Watcher USA advertisement using the same cameras simultaneously. The AP was the guidescope! Photo taken at CSAC (3RF) near Crowell, Texas.',
@@ -63,7 +59,6 @@ const equipmentPhotosTop = [
   {
     src: eq05,
     hires: '/images/gear/eq-05-toa150-fsq106-piggyback.jpg',
-    float: 'left',
     alt: 'A Takahashi TOA-150 with FSQ-106 riding piggyback, both on an AP-900 mount',
     caption:
       'Takahashi TOA-150 with FSQ-106 riding piggyback, both on a AP-900 mount. Taken at Okie-Star Party around 2006 (I think).',
@@ -71,7 +66,6 @@ const equipmentPhotosTop = [
   {
     src: eq06,
     hires: '/images/gear/eq-06-parme-toa150-esprit120.jpg',
-    float: 'left',
     alt: 'A Paramount ME with a 6" Takahashi TOA-150 and a 5" Sky-Watcher Esprit 120',
     caption:
       'Paramount ME, 6" Tak TOA-150 and a 5" Sky-Watcher Esprit 120. The Tak is my old standby, but I\'m impressed by the value of the Sky-Watcher APOs. A ton of bang for the buck!',
@@ -79,7 +73,6 @@ const equipmentPhotosTop = [
   {
     src: eq07,
     hires: '/images/gear/eq-07-eclipse-2019-setup.jpg',
-    float: 'left',
     alt: 'A Coronado Solar Max 90mm double-stacked telescope and Takahashi FSQ-85ED on a Takahashi NJP Temma 2 mount, set up for the 2019 solar eclipse',
     caption:
       'Setup for the Great Solar Eclipse on August 21, 2019. Coronado Solar Max 90mm Double-Stacked Telescope, Takahashi FSQ-85ED refractor, and Takahashi NJP Temma 2 mount.',
@@ -87,17 +80,12 @@ const equipmentPhotosTop = [
   {
     src: eq08,
     hires: '/images/gear/eq-08-toa150-ap900-stl11000m.jpg',
-    float: 'right',
     alt: 'A Takahashi TOA-150 on an AP900 mount with an SBIG STL-11000m astro camera',
     caption: 'TOA-150, AP900, and SBIG STL-11000m astro camera.',
   },
-];
-
-const equipmentPhotosBottom = [
   {
     src: eq09,
     hires: '/images/gear/eq-09-trunk-or-treat-2017.jpg',
-    float: 'left',
     alt: 'Telescope setup for a "Trunk or Treat" outreach event at a friend\'s church, October 2017',
     caption:
       'October 29, 2017 - This will be the setup for "Trunk or Treat" tonight at a friend\'s church. Pictured is the Takahashi TOA-150 for visual and Takahashi FSQ-85 "Baby-Q" with the Nikon D810A, all atop the Takahashi NJP mount. The Nikon, set on LiveView and fed to the laptop display, will give people an idea of what they will see before looking through the eyepiece. This might be the best configuration I can think of for portable, outreach events. Below is the setup at the actual event.',
@@ -105,21 +93,18 @@ const equipmentPhotosBottom = [
   {
     src: eq09b,
     hires: '/images/gear/eq-09b-trunk-or-treat-actual-event.jpg',
-    float: 'right',
     alt: 'The Trunk or Treat outreach setup in use at the actual event',
     caption: '',
   },
   {
     src: eq10,
     hires: '/images/gear/eq-10-rasa11-parme2.jpg',
-    float: 'left',
     alt: 'An 11" Celestron RASA atop a Paramount ME2',
     caption: '11" Celestron RASA atop a Paramount ME2, awaiting some time under the stars.',
   },
   {
     src: eq11,
     hires: '/images/gear/eq-11-c11edge-mxplus-lespaul.jpg',
-    float: 'right',
     alt: 'A Celestron C-11 Edge SCT on a Paramount MX+ mount, with a Gibson Les Paul guitar nearby',
     caption:
       'Celestron C-11 Edge SCT with Paramount MX+ mount. Yes, that\'s a 1979 Gibson Les Paul Standard.',
@@ -153,12 +138,24 @@ const equipmentPhotosBottom = [
   <h2>Equipment Images...</h2>
   <p>A snapshot history of just some of the gear that I have employed.</p>
 
-  {equipmentPhotosTop.map((photo) => (
-    <figure class:list={['ke-figure', photo.float === 'left' ? 'ke-figure-left' : 'ke-figure-right']} data-hires={photo.hires}>
-      <Image src={photo.src} alt={photo.alt} width={500} />
-      <figcaption class="ke-figure-caption">{photo.caption}</figcaption>
-    </figure>
-  ))}
+  <div class="gear-carousel">
+    <div class="gc-stage">
+      <button type="button" class="gc-pause" aria-label="Pause slideshow">Pause ❙❙</button>
+      <button type="button" class="gc-prev" aria-label="Previous image">‹</button>
+      <button type="button" class="gc-next" aria-label="Next image">›</button>
+      {equipmentPhotos.map((photo, i) => (
+        <figure class="gc-slide" data-index={i} data-active={i === 0} data-hires={photo.hires} data-caption={photo.caption}>
+          <Image src={photo.src} alt={photo.alt} width={700} />
+        </figure>
+      ))}
+    </div>
+    <p class="gc-caption">{equipmentPhotos[0].caption}</p>
+    <div class="gc-thumbs no-lightbox">
+      {equipmentPhotos.map((photo, i) => (
+        <Image src={photo.src} alt="" width={90} class="gc-thumb" data-index={i} data-active={i === 0} />
+      ))}
+    </div>
+  </div>
 
   <p>This hobby is a battlefield, a war in which the attrition rate overwhelms strategic planning and ultimately loses out to the larger force. This is where photon-cannons lose sight of the target amidst sporadically cloudy skies. Where deep-space artillery and targeting scopes, with their sophisticated command software, come together to form a combined-arms attack, only to be demoralized by the more powerful forces of mount error, light pollution, atmospheric anomalies, and light mechanical imprecision – where poorly outfitted armies, bad supplies lies, and dreadful reinforcements are overwhelmed by the shock and awe of a pervasive attack by the enemy on all fronts. Ground to air forces made ineffective against the air superiority of the adversary, leaving the gear to be sold off of Astromart to the highest third-world bidder.</p>
 
@@ -188,20 +185,9 @@ const equipmentPhotosBottom = [
 
   <p>The solution is to know your imaging gear. This can indeed reduce the amplitude and frequency of your errors. Likewise, more experience, particularly with software tools designed to provide objective methods for troubleshooting your hardware, can allow the astroimager to reduce the impact of most imaging variables.</p>
 
-  <div class="ke-clear"></div>
-
   <p class="ke-signature">
     <Image src={eqSig} alt="Jay Ballauer's signature" width={220} />
   </p>
-
-  {equipmentPhotosBottom.map((photo) => (
-    <figure class:list={['ke-figure', photo.float === 'left' ? 'ke-figure-left' : 'ke-figure-right']} data-hires={photo.hires}>
-      <Image src={photo.src} alt={photo.alt} width={500} />
-      {photo.caption && <figcaption class="ke-figure-caption">{photo.caption}</figcaption>}
-    </figure>
-  ))}
-
-  <div class="ke-clear"></div>
   </article>
 </BaseLayout>
 
@@ -234,4 +220,172 @@ const equipmentPhotosBottom = [
     text-align: center;
     margin: 1.5rem 0;
   }
+
+  .gear-carousel {
+    margin: 1.5rem 0 2rem;
+  }
+  .gc-stage {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    max-width: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .gc-stage :global(.gc-slide) {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+  }
+  .gc-stage :global(.gc-slide[data-active='true']) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .gc-stage :global(.gc-slide img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+  }
+  .gc-pause,
+  .gc-prev,
+  .gc-next {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .gc-pause {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .gc-prev,
+  .gc-next {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    padding: 0.3rem 0.75rem;
+  }
+  .gc-prev {
+    left: 0.5rem;
+  }
+  .gc-next {
+    right: 0.5rem;
+  }
+  .gc-caption {
+    max-width: 700px;
+    margin: 0.6rem auto 0;
+    font-style: italic;
+    color: #9aa4b8;
+    text-align: center;
+    min-height: 1.4em;
+  }
+  .gc-thumbs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+    max-width: 700px;
+    margin: 0.6rem auto 0;
+  }
+  .gc-thumbs :global(.gc-thumb) {
+    flex-shrink: 0;
+    width: 90px;
+    height: 63px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .gc-thumbs :global(.gc-thumb[data-active='true']) {
+    opacity: 1;
+    outline: 2px solid var(--color-link);
+  }
 </style>
+
+<script>
+  const carousel = document.querySelector('.gear-carousel');
+  if (carousel) {
+    const stage = carousel.querySelector('.gc-stage') as HTMLElement;
+    const slides = Array.from(stage.querySelectorAll<HTMLElement>('.gc-slide'));
+    const thumbs = Array.from(carousel.querySelectorAll<HTMLElement>('.gc-thumb'));
+    const thumbsEl = carousel.querySelector('.gc-thumbs') as HTMLElement;
+    const captionEl = carousel.querySelector('.gc-caption') as HTMLElement;
+    const pauseBtn = carousel.querySelector('.gc-pause') as HTMLButtonElement;
+    const prevBtn = carousel.querySelector('.gc-prev') as HTMLButtonElement;
+    const nextBtn = carousel.querySelector('.gc-next') as HTMLButtonElement;
+    let current = 0;
+    let playing = true;
+    let timer: ReturnType<typeof setInterval> | undefined;
+
+    function scrollThumbIntoView(thumb: HTMLElement) {
+      const thumbLeft = thumb.offsetLeft;
+      const thumbRight = thumbLeft + thumb.offsetWidth;
+      const viewLeft = thumbsEl.scrollLeft;
+      const viewRight = viewLeft + thumbsEl.clientWidth;
+      if (thumbLeft < viewLeft) {
+        thumbsEl.scrollLeft = thumbLeft;
+      } else if (thumbRight > viewRight) {
+        thumbsEl.scrollLeft = thumbRight - thumbsEl.clientWidth;
+      }
+    }
+
+    function show(index: number) {
+      slides[current].setAttribute('data-active', 'false');
+      thumbs[current].setAttribute('data-active', 'false');
+      current = (index + slides.length) % slides.length;
+      slides[current].setAttribute('data-active', 'true');
+      thumbs[current].setAttribute('data-active', 'true');
+      captionEl.textContent = slides[current].dataset.caption || '';
+      scrollThumbIntoView(thumbs[current]);
+    }
+
+    function start() {
+      timer = setInterval(() => show(current + 1), 5000);
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+    }
+
+    start();
+
+    pauseBtn.addEventListener('click', () => {
+      playing = !playing;
+      pauseBtn.textContent = playing ? 'Pause ❙❙' : 'Play ►';
+      if (playing) {
+        start();
+      } else {
+        stop();
+      }
+    });
+    prevBtn.addEventListener('click', () => {
+      show(current - 1);
+      if (playing) { stop(); start(); }
+    });
+    nextBtn.addEventListener('click', () => {
+      show(current + 1);
+      if (playing) { stop(); start(); }
+    });
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener('click', () => {
+        show(i);
+        if (playing) { stop(); start(); }
+      });
+    });
+
+    thumbsEl.addEventListener('wheel', (event: WheelEvent) => {
+      if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+        event.preventDefault();
+        thumbsEl.scrollLeft += event.deltaY;
+      }
+    });
+  }
+</script>

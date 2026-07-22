@@ -56,6 +56,9 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     // only toggle the accordion, not fight it for the same click by also
     // popping the lightbox open.
     if (img.closest('summary')) return;
+    // Carousel thumbnail strips (e.g. the gear-page slideshow) navigate the
+    // carousel on click rather than opening the full-res zoom.
+    if (img.closest('.no-lightbox')) return;
     img.classList.add('ke-zoomable');
     img.addEventListener('click', () => {
       const hiresHost = img.closest<HTMLElement>('[data-hires]');
