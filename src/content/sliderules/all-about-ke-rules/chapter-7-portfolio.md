@@ -1275,4 +1275,4 @@ A custom rule commissioned by the Mackensen C. Co. Inc. for quickly computing br
 
 </div>
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Appendix 1: A Study of K&E Cases](/sliderules/all-about-ke-rules/appendix-1-study-of-cases/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)

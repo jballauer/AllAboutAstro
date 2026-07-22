@@ -1029,4 +1029,4 @@ The Deci-Lon overhead-projector rule, supporting the 68-1100 scale set, for clas
 
 </div>
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Chapter 5: Miscellaneous K&E Rules](/sliderules/all-about-ke-rules/chapter-5-miscellaneous-rules/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)

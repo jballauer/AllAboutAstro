@@ -18,4 +18,4 @@ Sources (note: many sources are documented in the text instead of here. At some 
 - O.E. Van Poelje — "Stadia or Tachymetrical Slide Rules," *UKSRC Gazette* Nr. 6, August 2005. [PDF](https://www.rechenschieber.org/stadia.pdf)
 - *The Pitt News*, Oct. 24, 1947, p. 4
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Appendix 5: Version History](/sliderules/all-about-ke-rules/appendix-5-version-history/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)

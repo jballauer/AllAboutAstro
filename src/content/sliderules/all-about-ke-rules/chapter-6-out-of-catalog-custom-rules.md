@@ -620,4 +620,4 @@ The Brick-O-Meter is quite rare, coming up on eBay at a frequency of maybe once 
 
 </div>
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Chapter 7: My Portfolio of K&E Slide Rules](/sliderules/all-about-ke-rules/chapter-7-portfolio/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)

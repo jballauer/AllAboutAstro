@@ -19,4 +19,4 @@ This appendix is meant to eventually be a proper, dedicated study of K&E's case 
 
 As the rest of the collection gets photographed and cataloged in more depth, expect this appendix to grow into an actual side-by-side study of case materials, hardware, and linings across the decades — rather than just a set of pointers back into the chapters.
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Appendix 2: A Study of K&E Product Catalogs](/sliderules/all-about-ke-rules/appendix-2-study-of-product-catalogs/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)

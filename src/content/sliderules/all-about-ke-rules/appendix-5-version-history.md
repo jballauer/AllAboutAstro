@@ -54,4 +54,4 @@ Version 1.0 is the book as it existed on the original Weebly site before this mi
 
 - The complete book as it existed on the original Weebly site, last dated April 18, 2026 in the author's note.
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Back to Table of Contents](/sliderules/all-about-ke-rules/)

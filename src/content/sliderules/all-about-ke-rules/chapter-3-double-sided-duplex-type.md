@@ -1042,4 +1042,4 @@ Introducing my recent find of the 1968 price list to subscribers over on the "Sl
 
 I appreciate Bob's candor on this, as it becomes easy to see how a boxed-set of those items, costing collectively around $25 in 1968, would have increased by $10 by the end of the 70s. Bob confesses that he "wasn't searching for an analytical rule" and that he bought it "as kind of a novelty." Apparently, what Analons remained by the end of the 70s were already being considered collector's items shortly after the death knell to slide rules sounded.
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Chapter 4: The Specialty Rules](/sliderules/all-about-ke-rules/chapter-4-specialty-rules/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)

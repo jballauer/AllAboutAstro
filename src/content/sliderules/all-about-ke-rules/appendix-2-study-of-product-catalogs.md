@@ -209,4 +209,4 @@ For those collecting catalogs, a cover timeline can be useful. What follows is a
 
 </div>
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Appendix 3: A K&E Cursor Study](/sliderules/all-about-ke-rules/appendix-3-cursor-study/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)

@@ -29,4 +29,4 @@ This is presently a running timeline rather than a full write-up — as with the
 - Custom glass indicators (see the 1936 catalog)
 - K12/GP-12 runner
 
-[Back to All About Keuffel & Esser Rules](/sliderules/all-about-ke-rules/)
+[Continue to Appendix 4: Bibliography](/sliderules/all-about-ke-rules/appendix-4-bibliography/) · [Back to Table of Contents](/sliderules/all-about-ke-rules/)
