@@ -25,17 +25,17 @@ The duplex rule would evolve over the 70+ years of its manufacture, which I will
 
 Collector's Note: For the most part, the dimensions of the duplex rules remained the same as well. Where there are differences in a rule's length within a model line, the thickness of the stock did change as a function of its length. For example, the 5" version of these rules will be right at 1/5", the standard 10" rules are always 1/4" thick, and the 20" versions of the rules are approximately 1/3". The profile of the cursor block was made thicker to compensate so that the same frames and glass could be used. This is important for today's collector looking for replacement cursors for the longer slide rules, since cursors from the company are not interchangeable between rules of differing lengths. As a new collector, I once thought that maybe a 10" cursor from a donor 10" rule might fit on the much more rare long-scale version, but this is not the case. However, such a cursor can be customized by shimming the cursor blocks with other material, like an old credit card.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-02-rule-thickness-cross-sections-full.png">
-
-![A diagram comparing the cross-sectional thickness of the 5-inch, 10-inch, and 20-inch duplex rules](./_images/ch3-02-rule-thickness-cross-sections.png)
-
-<p class="ke-figure-caption">Cross-sections of the 5", 10", and 20" duplex rules, showing the increasing stock thickness - roughly 1/5", 1/4", and 1/3" respectively - used to keep a consistent cursor profile across lengths.</p>
-
-</div>
-
 K&E rules of this type are easy to compare to those from other manufacturers, particularly the bamboo-constructed rules made by Hemmi in Japan and the metallic rules from Pickett. As collectors, we love them all, but in general the K&E rules are absolutely ubiquitous in the United States, so without too many exceptions these slide rules are easily acquired on this side of the world. As such, beyond those older rules of the Original Duplex Family, which are mostly all scarce, much of what we will talk about in this chapter is not necessarily rare, or with extraordinary value, except for one notable exception in the Modern Duplex era.
 
-It, and other K&E duplex rules, will now be fully discussed, broken down by historical "family" type. The innovative Duplex design allows access to both sides of the middle slide simultaneously. If the indicator/cursor covers both sides of the slide rule, then a single setting of the slide can allow access to double the number of scales versus the single-sided, Mannheim design.
+It, and other K&E duplex rules, will now be fully discussed, broken down by historical "family" type.
+
+<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-02-mannheim-vs-duplex-cross-section-full.png">
+
+![A 19th century K&E catalog diagram comparing the cross-section of a Mannheim rule to a Duplex rule](./_images/ch3-02-mannheim-vs-duplex-cross-section.png)
+
+<p class="ke-figure-caption">The innovative Duplex design allows access to both sides of the middle slide simultaneously. If the indicator/cursor covers both sides of the slide rule, then a single setting of the slide can allow access to double the number of scales versus the single-sided, Mannheim design.</p>
+
+</div>
 
 <div class="ke-clear"></div>
 
@@ -129,15 +129,7 @@ Also known as the "Wm. Cox rule," the 1744 was the first "duplex" rule ever prod
 
 </div>
 
-There has been some debate about these early rules being constructed by K&E, but collector Bob Otnes has stated that he was informed of the likely happenings by Hans Dennert of the D&P/Aristo company lineage. Dennert confirmed that the celluloid-laminated, wooden components with completed scales were sent unassembled to K&E so as to avoid the US duty tax. K&E then finished the rules by stamping the labels and numbers to the scales, affixing the body of the rule together with end brackets, and then supplying the chisel metal cursor. He further stated that the rules have no D&P markings on the rule. According to the Oughtred Society, which relates what I just told you here, there are only two known samples of the rule in existence.
-
-<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch3-05-1744-rule-sample-full.jpg">
-
-![A surviving sample of the Model 1744 Wm. Cox rule](./_images/ch3-05-1744-rule-sample.jpeg)
-
-<p class="ke-figure-caption">One of only two known samples of the Model 1744 Wm. Cox rule known to exist today.</p>
-
-</div>
+There has been some debate about these early rules being constructed by K&E, but collector Bob Otnes has stated that he was informed of the likely happenings by Hans Dennert of the D&P/Aristo company lineage. Dennert confirmed that the celluloid-laminated, wooden components with completed scales were sent unassembled to K&E so as to avoid the US duty tax. K&E then finished the rules by stamping the labels and numbers to the scales, affixing the body of the rule together with end brackets, and then supplying the chisel metal cursor. He further stated that the rules have no D&P markings on the rule. According to the Oughtred Society, which relates what I just told you here, there are only two known samples of the rule in existence - one shown above, and the other shown at that link.
 
 The construction is similar to the imported Mannheim rules made of celluloid-covered boxwood and with cursors and end brackets made either of brass or metal-framed glass. It was added to the 17XX line-up of rules (which included the Mannheims) in 1895, costing buyers $6.50.
 
@@ -178,11 +170,23 @@ This series of rules would morph slightly over the next 15 years, beginning with
 
 Speaking of 1906, while recovering from a fire to one of their Hoboken, NJ, warehouses the year earlier, K&E was undeterred from making a plethora of changes to the 4071 series of slide rules, streamlining some of the models while also adding many others, including a variety of 8" and 16" rules. Additionally, K&E shifted away from shipping both slides with their rules, going back to single-slide, arithmetic and trigonometric options. Where they did this, the models were denoted with an "N" suffix. These retained the $1.50 higher price tag over the arithmetic-only rules despite no longer shipping with two slides. This is because K&E found a way to add the trig scales to the arithmetic slide, with A [B S C] D on the front side and A [BI T CI] D on the back, with the L-scale on the edge of the rule. The cursor was modified to provide an indicator for the rule's edge. This was true for both cursor options, which remained the same for the models, except "metal" was substituted for brass in the non-glass variants. And like the models before it, all slide rules would come with a sewed-leather case and directions.
 
-<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch3-06-hoboken-site-today-full.png">
+<div class="ke-figure-row">
+
+<div class="ke-figure">
+
+![An early engraving of K&E's General Office and Factories in Hoboken, NJ](./_images/ch3-05-hoboken-general-office-factories.jpg)
+
+<p class="ke-figure-caption">The left building was K&E's new office building in Hoboken, NJ as built in 1906, next door to their largest factory on the right.</p>
+
+</div>
+
+<div class="ke-figure" data-hires="/images/ke-rules/ch3-06-hoboken-site-today-full.png">
 
 ![The site of K&E's 1906 Hoboken, NJ office building and factory, as it appears on Google Earth today](./_images/ch3-06-hoboken-site-today.png)
 
-<p class="ke-figure-caption">K&E's new office building, built in Hoboken, NJ in 1906, stood next door to their largest factory. This is what the site looks like today, as shown on Google Earth.</p>
+<p class="ke-figure-caption">And this is what it looks like today, as shown on Google Earth.</p>
+
+</div>
 
 </div>
 
@@ -217,14 +221,6 @@ This would change with the introduction of the Model 4088, the first rule in the
 In 1913, four years after the introduction of the Model 4053 Polyphase Mannheim slide rule but also four years prior to the death of the 4071 series, K&E introduced what they called the Polyphase Duplex slide rule design. Before we discuss each of these models though, let's continue our exploration of what K&E offered to that point and why these rules represented the more complete fulfillment of the promises of the duplex design.
 
 The 1913 catalog, which is copyrighted 1912 incidentally, has a few addendum pages pasted within to reflect newer products in 1913 at the time the catalog went to press. The new Polyphase Duplex Model 4088 rule was described on one of those addendum pages.
-
-<div class="ke-figure ke-figure-right ke-figure-quarter">
-
-![A clipping from the 1913 K&E catalog addendum describing the new Polyphase Duplex rule](./_images/ch3-17-1913-catalog-polyphase-duplex-quote.jpg)
-
-<p class="ke-figure-caption">The 1913 catalog addendum page describing the new Model 4088 Polyphase Duplex.</p>
-
-</div>
 
 The first sentence reads, "The Polyphase Duplex Slide Rule is a combination of the Polyphase and the Duplex Rules, with the addition of several special scales."
 
@@ -332,8 +328,6 @@ The 9071-3 Doric is quite rare from a collector's perspective as it doesn't pop 
 
 ![The Model 9071-3 Doric Polyphase Duplex slide rule](./_images/ch3-08-9071-3-doric-rule.jpg)
 
-<p class="ke-figure-caption">The Model 9071-3 Polyphase Duplex Doric, acquired for the collection in 2023.</p>
-
 </div>
 
 Edit: I acquired this rule in 2023. More description coming soon.
@@ -364,8 +358,6 @@ The K&E 9068/4168 was far from the only pocket duplex rule of its exact shape an
 <div class="ke-figure">
 
 ![Four nearly identical pocket duplex rules: the Bruning No. 2398, the Dietzgen No. 1776 Redirule, the K&E Doric 4168 Polyphase Duplex, and the K&E Celanese Celcon variant](./_images/ch3-07-four-pocket-duplex-clones.jpg)
-
-<p class="ke-figure-caption">Top to bottom: the Bruning No. 2398, the Dietzgen No. 1776 Redirule, the K&E Doric 4168 Polyphase Duplex, and the one-time Celanese Celcon variant of the same K&E rule.</p>
 
 </div>
 
@@ -788,9 +780,9 @@ In the 1952 catalog, K&E writes, "Nothing has been found to surpass the combinat
 
 <div class="ke-figure ke-figure-right ke-figure-quarter">
 
-![A clipping from the 1952 K&E catalog preface](./_images/ch3-18-1952-catalog-mahogany-xylonite-quote.jpg)
+![A clipping from the 1952 K&E catalog preface describing their all-plastic rules](./_images/ch3-17-1952-catalog-allplastic-quote.jpg)
 
-<p class="ke-figure-caption">The 1952 catalog preface, still praising the mahogany-and-xylonite construction of K&E's "highest quality" rules even as the all-plastic era was about to begin.</p>
+<p class="ke-figure-caption">For slide rule users who are satisfied with less expensive rules without all the quality features and requirements of the first grade K&E rules, K&E make all-plastic rules, with scale arrangements similar to their highest grade counterparts. These rules are also fully guaranteed as to materials and workmanship, just as are the highest quality rules.</p>
 
 </div>
 
@@ -820,7 +812,17 @@ For this author, lacking scientific methods for determining exact composition of
 
 </div>
 
-Shown in the September "Slide Rules" only revision of the 1955 catalog, the rule would be transformed from the familiar Doric N9081 characteristics to that which we would become more familiar with, dropping the N-prefix, dispensing with the Doric label, and adding red ink for the labels and the inverse scales. The catalog description for this rule (and the plastic pocket rules) states that "Ivorite" construction is used. "Ivorite" is trademarked here, which might simply mean that K&E, while their rules were already transitioned to Ivorite with the Doric rules, could now be safely called what they wanted all along. They seem proud.
+<div class="ke-clear"></div>
+
+Shown in the September "Slide Rules" only revision of the 1955 catalog, the rule would be transformed from the familiar Doric N9081 characteristics to that which we would become more familiar with, dropping the N-prefix, dispensing with the Doric label, and adding red ink for the labels and the inverse scales. The catalog description for this rule (and the plastic pocket rules) states that "Ivorite" construction is used. We see this description also in an edited version of the preface that we saw in the previous 1952 catalog (see below). "Ivorite" is trademarked here, which might simply mean that K&E, while their rules were already transitioned to Ivorite with the Doric rules, could now be safely called what they wanted all along. They seem proud.
+
+<div class="ke-figure ke-figure-right ke-figure-quarter">
+
+![A clipping from the 1955 K&E catalog preface, edited to describe Ivorite construction](./_images/ch3-18-1955-catalog-ivorite-quote.jpg)
+
+<p class="ke-figure-caption">For slide rule users who are satisfied with less expensive rules without all the quality features and requirements of the first grade K&E rules, K&E make rules of Ivorite*, with scale arrangements similar to their highest grade counterparts. These rules are also fully guaranteed as to materials and workmanship, just as are the highest quality rules.</p>
+
+</div>
 
 Judging between the N9081-3 and newer 4181-3 versions of this Log Log Duplex slide rule, they are slightly different in feel. The former seems heavier, stiffer, smoother, more glossy, and more square, and the latter would appear to be lighter, thinner, and more beveled. The color of my samples of these rules are slightly different, with the N9081-3 Doric retaining more of a pure white tone, though I would not make judgments about whether or not this is true across all samples of these rules. Regardless, they appear to use a slightly different plastic, both of which are leagues removed from the white Xylonite advertised by K&E as used in their Ever-There rules beginning in the early 1930s.
 
@@ -834,7 +836,7 @@ This new rule would be renamed the "Jet-Log" in 1960, referred to as such in a p
 
 The pocket version of the 10" Model 4181-3, this 5" Model 4181-1, in many ways, became the more successful rule. This is largely because as a pocket rule, it is just really good!
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure">
 
 ![A close-up art shot of the 4181-1 slide showing the copyright imprint and C/CI/CIF/CF scale engravings](./_images/ch3-21-4181-1-art-shot-slide.jpg)
 
@@ -921,7 +923,7 @@ The more that the GP-12 is used and held, the more that this user can appreciate
 
 Shifting to a new model numbering scheme wasn't the only thing that K&E accomplished in 1962. They also introduced, arguably, their best slide rule in company history. It came in both pocket and full-sized versions: the Deci-Lon 5 (68-1300) and the Deci-Lon 10 (68-1100).
 
-<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/ke-rules/ch3-24-decilon-5-art-shot-full.jpg">
+<div class="ke-figure" data-hires="/images/ke-rules/ch3-24-decilon-5-art-shot-full.jpg">
 
 ![A close-up art shot of the Deci-Lon 5 pocket slide rule](./_images/ch3-24-decilon-5-art-shot.jpg)
 
@@ -933,11 +935,9 @@ The Deci-Lons were the fulfillment of everything K&E had learned about making sl
 
 This rule throws out tradition entirely. Gone are the right angles and the conservative approach to design.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-16-decilon-10-art-shot-full.jpg">
+<div class="ke-figure" data-hires="/images/ke-rules/ch3-16-decilon-10-art-shot-full.jpg">
 
 ![A close-up art shot of the Deci-Lon 10, full-sized slide rule](./_images/ch3-16-decilon-10-art-shot.jpg)
-
-<p class="ke-figure-caption">The Deci-Lon 10 - angular, deep-bodied, muscular, and even angry, as if it has something to say.</p>
 
 </div>
 
