@@ -1,13 +1,104 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+import eq01 from '../../content/gear/_images/eq-01-tsp-2005-rcos-fsq106.jpg';
+import eq02 from '../../content/gear/_images/eq-02-cruzen-boys-observatory.jpg';
+import eq03 from '../../content/gear/_images/eq-03-eldorado-2005-collimating.jpg';
+import eq04 from '../../content/gear/_images/eq-04-triple-threat.jpg';
+import eq05 from '../../content/gear/_images/eq-05-toa150-fsq106-piggyback.jpg';
+import eq06 from '../../content/gear/_images/eq-06-parme-toa150-esprit120.jpg';
+import eq07 from '../../content/gear/_images/eq-07-eclipse-2019-setup.jpg';
+import eq08 from '../../content/gear/_images/eq-08-toa150-ap900-stl11000m.jpg';
+import eq09 from '../../content/gear/_images/eq-09-trunk-or-treat-2017.jpg';
+import eq10 from '../../content/gear/_images/eq-10-rasa11-parme2.jpg';
+import eq11 from '../../content/gear/_images/eq-11-c11edge-mxplus-lespaul.jpg';
 
 const items = (await getCollection('gear', ({ data }) => !data.draft)).sort(
   (a, b) => a.data.order - b.data.order
 );
+
+const equipmentPhotos = [
+  {
+    src: eq01,
+    hires: '/images/gear/eq-01-tsp-2005-rcos-fsq106.jpg',
+    alt: 'A 12.5" RCOS RC and 4" Takahashi FSQ-106 on a Paramount ME at the 2005 Texas Star Party',
+    caption:
+      'At the 2005 Texas Star Party - Shown is the 12.5" RCOS RC and 4" Tak FSQ-106 on a Paramount ME. Camera is a SBIG STL-6303E. As of 2017, this exact setup is located in the 3RF Conley Observatory on the Comanche Springs Astronomy Campus near Crowell, Texas.',
+  },
+  {
+    src: eq02,
+    hires: '/images/gear/eq-02-cruzen-boys-observatory.jpg',
+    alt: 'A Paramount ME2 and Planewave CDK17 with a dog standing watch, for the Cruzen Boys Black Hills Observatory',
+    caption:
+      'Equipment for the Cruzen Boys Black Hills Observatory - Shut down due to the death of my client, the equipment for the build will be re-purposed. My Greyhound keeps watchful eye on a Paramount ME2 and Planewave CDK17.',
+  },
+  {
+    src: eq03,
+    hires: '/images/gear/eq-03-eldorado-2005-collimating.jpg',
+    alt: 'Collimating a 12.5" RCOS RC telescope at the 2005 Eldorado Star Party',
+    caption: '2005 Eldorado Star Party: Collimating the 12.5" RCOS RC.',
+  },
+  {
+    src: eq04,
+    hires: '/images/gear/eq-04-triple-threat.jpg',
+    alt: 'A Takahashi TOA-150, Astro-Physics AP160 Starfire, and Sky-Watcher Esprit 150 side by side',
+    caption:
+      '"Triple Threat" - Having fun with three 6" apos. Shown (from left to right) are a Takahashi TOA-150, Astro-Physics AP160 Starfire, and the Sky-Watcher Esprit 150. I was comparing the Tak and the Sky-Watcher for a Sky-Watcher USA advertisement using the same cameras simultaneously. The AP was the guidescope! Photo taken at CSAC (3RF) near Crowell, Texas.',
+  },
+  {
+    src: eq05,
+    hires: '/images/gear/eq-05-toa150-fsq106-piggyback.jpg',
+    alt: 'A Takahashi TOA-150 with FSQ-106 riding piggyback, both on an AP-900 mount',
+    caption:
+      'Takahashi TOA-150 with FSQ-106 riding piggyback, both on a AP-900 mount. Taken at Okie-Star Party around 2006 (I think).',
+  },
+  {
+    src: eq06,
+    hires: '/images/gear/eq-06-parme-toa150-esprit120.jpg',
+    alt: 'A Paramount ME with a 6" Takahashi TOA-150 and a 5" Sky-Watcher Esprit 120',
+    caption:
+      'Paramount ME, 6" Tak TOA-150 and a 5" Sky-Watcher Esprit 120. The Tak is my old standby, but I\'m impressed by the value of the Sky-Watcher APOs. A ton of bang for the buck!',
+  },
+  {
+    src: eq07,
+    hires: '/images/gear/eq-07-eclipse-2019-setup.jpg',
+    alt: 'A Coronado Solar Max 90mm double-stacked telescope and Takahashi FSQ-85ED on a Takahashi NJP Temma 2 mount, set up for the 2019 solar eclipse',
+    caption:
+      'Setup for the Great Solar Eclipse on August 21, 2019. Coronado Solar Max 90mm Double-Stacked Telescope, Takahashi FSQ-85ED refractor, and Takahashi NJP Temma 2 mount.',
+  },
+  {
+    src: eq08,
+    hires: '/images/gear/eq-08-toa150-ap900-stl11000m.jpg',
+    alt: 'A Takahashi TOA-150 on an AP900 mount with an SBIG STL-11000m astro camera',
+    caption: 'TOA-150, AP900, and SBIG STL-11000m astro camera.',
+  },
+  {
+    src: eq09,
+    hires: '/images/gear/eq-09-trunk-or-treat-2017.jpg',
+    alt: 'Telescope setup for a "Trunk or Treat" outreach event at a friend\'s church, October 2017',
+    caption:
+      'October 29, 2017 - This will be the setup for "Trunk or Treat" tonight at a friend\'s church.',
+  },
+  {
+    src: eq10,
+    hires: '/images/gear/eq-10-rasa11-parme2.jpg',
+    alt: 'An 11" Celestron RASA atop a Paramount ME2',
+    caption: '11" Celestron RASA atop a Paramount ME2, awaiting some time under the stars.',
+  },
+  {
+    src: eq11,
+    hires: '/images/gear/eq-11-c11edge-mxplus-lespaul.jpg',
+    alt: 'A Celestron C-11 Edge SCT on a Paramount MX+ mount, with a Gibson Les Paul guitar nearby',
+    caption:
+      'Celestron C-11 Edge SCT with Paramount MX+ mount. Yes, that\'s a 1979 Gibson Les Paul Standard.',
+  },
+];
 ---
 
 <BaseLayout title="Astro Gear" description="Equipment - Imaging Gear - Tools - Reviews">
+  <article>
   <h1>Astro Gear</h1>
   <p class="tagline">Equipment - Imaging Gear - Tools - Reviews</p>
 
@@ -23,6 +114,15 @@ const items = (await getCollection('gear', ({ data }) => !data.draft)).sort(
 
   <h2>Equipment Images...</h2>
   <p>A snapshot history of just some of the gear that I have employed.</p>
+
+  <div class="ke-photo-grid">
+    {equipmentPhotos.map((photo) => (
+      <figure class="ke-figure" data-hires={photo.hires}>
+        <Image src={photo.src} alt={photo.alt} width={500} />
+        <figcaption class="ke-figure-caption">{photo.caption}</figcaption>
+      </figure>
+    ))}
+  </div>
 
   <p>This hobby is a battlefield, a war in which the attrition rate overwhelms strategic planning and ultimately loses out to the larger force. This is where photon-cannons lose sight of the target amidst sporadically cloudy skies. Where deep-space artillery and targeting scopes, with their sophisticated command software, come together to form a combined-arms attack, only to be demoralized by the more powerful forces of mount error, light pollution, atmospheric anomalies, and light mechanical imprecision – where poorly outfitted armies, bad supplies lies, and dreadful reinforcements are overwhelmed by the shock and awe of a pervasive attack by the enemy on all fronts. Ground to air forces made ineffective against the air superiority of the adversary, leaving the gear to be sold off of Astromart to the highest third-world bidder.</p>
 
@@ -51,10 +151,24 @@ const items = (await getCollection('gear', ({ data }) => !data.draft)).sort(
   <p>The only solution to this interplay of unpredictable circumstances is to know enough about your imaging system in order to identify the roots causes, diminish their effects, or eliminate them entirely. This assumes, of course, that those factors can be addressed at all – Murphy's Law was invented for a reason.</p>
 
   <p>The solution is to know your imaging gear. This can indeed reduce the amplitude and frequency of your errors. Likewise, more experience, particularly with software tools designed to provide objective methods for troubleshooting your hardware, can allow the astroimager to reduce the impact of most imaging variables.</p>
+  </article>
 </BaseLayout>
 
 <style>
   .tagline {
     color: #9aa4b8;
+  }
+  .ke-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .ke-photo-grid .ke-figure {
+    margin-bottom: 0;
+  }
+  .ke-photo-grid .ke-figure img {
+    width: 100%;
+    height: auto;
   }
 </style>
