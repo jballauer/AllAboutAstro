@@ -550,22 +550,6 @@ Good practices should also take place when processing images, or working on equi
 
 ​In light of the above, you have to change your view of what "success" looks like.   When I first started, I felt like an abject failure if my image data didn't meet my expectations in a way that would turn into a final image.   If I didn't execute, I got pretty hard on myself.   To make matters worse, at least half the time I would be disappointed that the imaging gods didn't find it sufficient to give me good skies for my efforts. 
 
-In a hobby where most everything is going to work against producing a good image, you will want to QUIT the hobby if you define success solely on getting good images.  Because of this, you need to realize that learning something positive about the hobby can happen on ANY night.   If you really care about getting BETTER at this stuff, then try some of the things I've listed in Sidebar:  What to Do During "Wasted" Nights? ​at right. 
-
-For example, when a telescope breaks down, it doesn't have to be an end to your night.   Successful imagers are typically also mechanical engineers, not by choice but by necessity, and that's an aspect of your education you better embrace.   My friend, Jason Ware is fond of saying that star parties are made for working on equipment - and I don't disagree!
-
-Or if you haven't had clear skies in what seems like a decade, there are still lots of ways you can practice getting better during the down time.   Processing online data or reprocessing your old data or rebuilding your webpage presentations makes for good learning opportunities.   
-
-It's often said in this hobby that cloudy nights are for taking "dark frames."  In other words, there's always something to do even if the skies don't cooperate. 
-
-In fact, when you think about it...how good are you really getting when everything is going perfect on a given night?   
-
-​Are you really learning what getting good focus means if you only ever rely upon a robotic focuser?  If you use a GOTO mount or planetarium software every time you image, then will you be able to properly frame a wide-field DSLR shot on a tripod? In a way, becoming better requires a concerted effort, an interaction with the process even IF all your imaging processes are automated. 
-
-​Simply put, a great image doesn't means you've learned. 
-
-So when the clouds prevent you from getting good data, be sure to have a Plan B to get the most from your night.   This redeems every cloudy evening as a productive night. 
-
 <div class="ke-sidebar" data-side="right" data-width="widest">
 
 ## Sidebar: What to Do During "Wasted" Nights
@@ -605,6 +589,22 @@ So here, before you tear-down all that gear, let's think of some ways that you c
 some clouds rolling past the Milky Way through the evening or make it track on the radiant of a meteor shower. Paint yourself amidst a Milky Way backdrop for the ultimate "selfie"  see left.   For more tips on shooting the weather, see my article  "Astronomy and the Weather."
 
 </div>
+
+In a hobby where most everything is going to work against producing a good image, you will want to QUIT the hobby if you define success solely on getting good images.  Because of this, you need to realize that learning something positive about the hobby can happen on ANY night.   If you really care about getting BETTER at this stuff, then try some of the things I've listed in Sidebar:  What to Do During "Wasted" Nights? ​at right. 
+
+For example, when a telescope breaks down, it doesn't have to be an end to your night.   Successful imagers are typically also mechanical engineers, not by choice but by necessity, and that's an aspect of your education you better embrace.   My friend, Jason Ware is fond of saying that star parties are made for working on equipment - and I don't disagree!
+
+Or if you haven't had clear skies in what seems like a decade, there are still lots of ways you can practice getting better during the down time.   Processing online data or reprocessing your old data or rebuilding your webpage presentations makes for good learning opportunities.   
+
+It's often said in this hobby that cloudy nights are for taking "dark frames."  In other words, there's always something to do even if the skies don't cooperate. 
+
+In fact, when you think about it...how good are you really getting when everything is going perfect on a given night?   
+
+​Are you really learning what getting good focus means if you only ever rely upon a robotic focuser?  If you use a GOTO mount or planetarium software every time you image, then will you be able to properly frame a wide-field DSLR shot on a tripod? In a way, becoming better requires a concerted effort, an interaction with the process even IF all your imaging processes are automated. 
+
+​Simply put, a great image doesn't means you've learned. 
+
+So when the clouds prevent you from getting good data, be sure to have a Plan B to get the most from your night.   This redeems every cloudy evening as a productive night. 
 
 ### Don't Be Merely an Imager...
 
@@ -682,34 +682,6 @@ The universe doesn't revolve around you, "Mr. Fancy Photographer."   So try to r
 
 As a corollary to the previous point, it stands to reason that knowledge of the sky can help you choose which objects to capture.   In my article called "Developing a Plan for Our Images," I talked about thinking of astrophotography as shooting "subjects," in much the same way we do any other type of photography.  This allows us to think more artistically about our images, rather than acting like we are skeet shooting sporting clays.   And certainly, in that article, I talked a lot about the typical photographic subjects that are worth your time from the standpoint of being "artistic."  
 
-But much of being an astronomer is very much "object-oriented."   We learn about objects that are visual treats.  We go after Astronomical League observing lists, in hopes of completing them for certificates of accomplishment.   We categorize our images by object type, whether it be galaxies or emission nebulae or globulars or planetaries.    As such, the astronomer always has something to shoot, just like we always have something to view through our eyepieces.    And this is just fine...if you know something is there and are curious about what it looks like with your camera, then give it try!
-
-But there are two aspects to having a real advantage as an astronomer here.  
-
-First, you will know how certain objects might look from the standpoint of "angle of view" within the image, as being defined as the amount of space any given object takes up on the sensor (in arc measure).   As an astronomer, we easily learn the angular size of most of the things we observe.  For example,  the galaxies listed as Messier's are typically 12 arc minutes or bigger.   A few of them extend to around 30 arc minutes or 1/2 degree (which approximates the angular size of the full moon).   One of them (M31), is over 3 arc degrees in size.    But how about the other one-zillion galaxies up there?   Well, the vast majority of those we deem worthy of imaging will be between 5 to 10 arc minutes.   Put into perspective, they all begin to look like the galaxies in FIGURE 5 above.   In fact, the largest of those galaxies in that image (from our perspective), the lenticular galaxy M86, is not even 9 arc minutes in size.  What this means is that if you like to image galaxies, you better consider working up to some longer focal length instruments if you hope to catch good detail in many of them.  
-
-Or perhaps you realize that if the Pleiades (M45) looks the best through large binoculars, then perhaps you will realize that it will be a good candidate for imaging with your wide-field refractor, especially if you are familiar with the dust in the surrounding reflection nebula (or "galactic cirrus") and know that you might even be able to piece together a mosaic of the entire field.  
-
-Second, you will know the best times to shoot any given object.   While we have software available to us to help us plan our images, including large, multi-frame mosaics, an astronomer has the advantage of needing nothing to plan his or her nightly agenda.   For example, the northern hemisphere imager may have learned that spring-time is typically about galaxies and globular clusters in any around Virgo and Leo.   Summertime will be all about the Milky Way.   Winter is all about Orion the Hunter, his hunting companion, and his adversary.   The Fall will be Andromeda's time to shine, including her mate, Perseus, and their magical winged horse, Pegasus.   
-
-These become quickly obvious to most imagers, but astronomers learn pretty quickly when other objects are available as well.   For example, in the spring months you know objects such as M13 in Hercules and M81/82 in Ursa Major will be taking up a large part of your evening agenda.   But you also will know that around 3AM becomes time for some Milky Way targets and you might get some nice glimpses of M13 and M31 if you persist until the dawn hours.   It also allows you to take images of objects when it makes the most sense to capture them.   Something like the Constellation of Cepheus will be visible for most of the night during the fall months, but an astronomer knows that something like the Iris Nebula (NGC 7023) will likely not be worth attempting beyond 3AM...and if it is, you'll definitely want to be shooting red filtered images (as opposed to blue or luminance with an astro-camera).   This knowledge gives you the ability to plan for an entire night, optimizing the quality of the captured data at all times, especially if you plan on nursing your images all the way from dusk to dawn. 
-
-More than that, I cannot tell you how many of my imaging compatriots and astronomy friends pointed in the sky to ask ME what the object was that they knew was "somewhere over there."   It's nice to be able to tell them the object by name so that they can search it within their planetarium software.
-
-### Being Able to "Point and Shoot"
-
-One of the things I've enjoyed recently as an imager is going back to the basics.   While I've been using big-boy tools for literally decades now, like 2857mm scopes on mounts that really need to be polar-aligned using T-Point modeling runs - which also assures accurate pointing within TheSkyX planetarium software - at some point it's nice to get portable, roll out your equipment in a new place, and be imaging long exposure DSOs within 15 minutes of pulling up the car.  
-
-Consider using a DSLR with a small apochromatic refractor on a German Equatorial mount WITHOUT a computer.   At that point, you just need a mount that can be quickly and accurately polar-aligned and enough knowledge of the sky to know where to point your telescope. 
-
-See FIGURE 6 below for 5 images taken over two nights in June 2018.  These are examples of what can be attained by not only understanding the capabilities of the equipment, but also by simply knowing where to point a telescope "the old fashioned way."    The best part about these images is that I didn't have to oversee any aspect of the data collection.   Once framed and focused, I just programmed the camera with an intervalometer and fired the sequence.    In the meantime, I was teaching a group of students using the big-boy equipment in the observatory next to me.  ​
-
-For more about what you need to take your own easy images, take a look at Sidebar: The "Point and Shoot" DSO setup.  
-
-The take-away point here is that you need to know the sky if you want to use a manual, "non-GOTO" imaging rig like the setup mentioned above.  I can point straight to the objects in each of the above images.  No computer needed, unless I want one.  No finding a guide-star, unless I want to. 
-
-After a while, you could do the same.  
-
 <div class="ke-sidebar" data-side="right" data-width="widest">
 
 ## Sidebar: The "Point and Shoot" DSO Setup
@@ -746,6 +718,34 @@ And because of the mount's low periodic error (typically around 6 to 8 arc secon
 </div>
 
 </div>
+
+But much of being an astronomer is very much "object-oriented."   We learn about objects that are visual treats.  We go after Astronomical League observing lists, in hopes of completing them for certificates of accomplishment.   We categorize our images by object type, whether it be galaxies or emission nebulae or globulars or planetaries.    As such, the astronomer always has something to shoot, just like we always have something to view through our eyepieces.    And this is just fine...if you know something is there and are curious about what it looks like with your camera, then give it try!
+
+But there are two aspects to having a real advantage as an astronomer here.  
+
+First, you will know how certain objects might look from the standpoint of "angle of view" within the image, as being defined as the amount of space any given object takes up on the sensor (in arc measure).   As an astronomer, we easily learn the angular size of most of the things we observe.  For example,  the galaxies listed as Messier's are typically 12 arc minutes or bigger.   A few of them extend to around 30 arc minutes or 1/2 degree (which approximates the angular size of the full moon).   One of them (M31), is over 3 arc degrees in size.    But how about the other one-zillion galaxies up there?   Well, the vast majority of those we deem worthy of imaging will be between 5 to 10 arc minutes.   Put into perspective, they all begin to look like the galaxies in FIGURE 5 above.   In fact, the largest of those galaxies in that image (from our perspective), the lenticular galaxy M86, is not even 9 arc minutes in size.  What this means is that if you like to image galaxies, you better consider working up to some longer focal length instruments if you hope to catch good detail in many of them.  
+
+Or perhaps you realize that if the Pleiades (M45) looks the best through large binoculars, then perhaps you will realize that it will be a good candidate for imaging with your wide-field refractor, especially if you are familiar with the dust in the surrounding reflection nebula (or "galactic cirrus") and know that you might even be able to piece together a mosaic of the entire field.  
+
+Second, you will know the best times to shoot any given object.   While we have software available to us to help us plan our images, including large, multi-frame mosaics, an astronomer has the advantage of needing nothing to plan his or her nightly agenda.   For example, the northern hemisphere imager may have learned that spring-time is typically about galaxies and globular clusters in any around Virgo and Leo.   Summertime will be all about the Milky Way.   Winter is all about Orion the Hunter, his hunting companion, and his adversary.   The Fall will be Andromeda's time to shine, including her mate, Perseus, and their magical winged horse, Pegasus.   
+
+These become quickly obvious to most imagers, but astronomers learn pretty quickly when other objects are available as well.   For example, in the spring months you know objects such as M13 in Hercules and M81/82 in Ursa Major will be taking up a large part of your evening agenda.   But you also will know that around 3AM becomes time for some Milky Way targets and you might get some nice glimpses of M13 and M31 if you persist until the dawn hours.   It also allows you to take images of objects when it makes the most sense to capture them.   Something like the Constellation of Cepheus will be visible for most of the night during the fall months, but an astronomer knows that something like the Iris Nebula (NGC 7023) will likely not be worth attempting beyond 3AM...and if it is, you'll definitely want to be shooting red filtered images (as opposed to blue or luminance with an astro-camera).   This knowledge gives you the ability to plan for an entire night, optimizing the quality of the captured data at all times, especially if you plan on nursing your images all the way from dusk to dawn. 
+
+More than that, I cannot tell you how many of my imaging compatriots and astronomy friends pointed in the sky to ask ME what the object was that they knew was "somewhere over there."   It's nice to be able to tell them the object by name so that they can search it within their planetarium software.
+
+### Being Able to "Point and Shoot"
+
+One of the things I've enjoyed recently as an imager is going back to the basics.   While I've been using big-boy tools for literally decades now, like 2857mm scopes on mounts that really need to be polar-aligned using T-Point modeling runs - which also assures accurate pointing within TheSkyX planetarium software - at some point it's nice to get portable, roll out your equipment in a new place, and be imaging long exposure DSOs within 15 minutes of pulling up the car.  
+
+Consider using a DSLR with a small apochromatic refractor on a German Equatorial mount WITHOUT a computer.   At that point, you just need a mount that can be quickly and accurately polar-aligned and enough knowledge of the sky to know where to point your telescope. 
+
+See FIGURE 6 below for 5 images taken over two nights in June 2018.  These are examples of what can be attained by not only understanding the capabilities of the equipment, but also by simply knowing where to point a telescope "the old fashioned way."    The best part about these images is that I didn't have to oversee any aspect of the data collection.   Once framed and focused, I just programmed the camera with an intervalometer and fired the sequence.    In the meantime, I was teaching a group of students using the big-boy equipment in the observatory next to me.  ​
+
+For more about what you need to take your own easy images, take a look at Sidebar: The "Point and Shoot" DSO setup.  
+
+The take-away point here is that you need to know the sky if you want to use a manual, "non-GOTO" imaging rig like the setup mentioned above.  I can point straight to the objects in each of the above images.  No computer needed, unless I want one.  No finding a guide-star, unless I want to. 
+
+After a while, you could do the same.  
 
 <div class="ke-image-feature">
 <div class="ke-image-feature-row">
@@ -902,18 +902,6 @@ It's easy to become dogmatic about certain things we believe in the hobby.   Som
 
 Walk quietly and carry a big stick, but let others compliment you on the, ahem, size of your stick!  ​
 
-## Conclusion
-
-​Astrophotographers can become obsessive.   This is good, as it drives learning forward.  But the quest for taking great images can be all-consuming, which also means that the inevitable struggles become more frustrating; more stressful.    Keep in mind that the nature of imaging - and astronomy on the whole - is highly unpredictable.   As much as we want things to be on our time table, it never really is.  If you don't believe me, then purchase a new imaging rig and just watch the clouds roll in.   Astronomers joke that the weather will absolutely SUCK 1 week for each inch of aperture in your new instrument.  So, buy a Celestron C-11 and it'll feel like 3 months before you can use the blasted thing!  
-
-We've talked about things you can do in the meantime.   Things that can still make for some productive learning experiences.   
-
-But remember that that you don't HAVE to be productive or driven or competitive.   It's alright to realize that taking imaging of the cosmos is a great accomplishment and you will likely achieve it very consistently someday.   But don't allow your ego to make it more than it is.  Your self-worth shouldn't be tied too tightly to your hobby.   Too many people feel worthless because they fail and even more people act overly self-important when they succeed.  
-
-To avoid this, commit yourself to having fun, whatever stage of the process.  Surround yourself with great people you enjoy being around.  Teach others the hobby.  Kick back with a cold one every now and then instead of being "Mr. Alcohol-affects-your-night-vision Guy."   Get some sleep on night 4 of a week long star party.  ​ 
-
-Mostly, enjoy your learning.   Fall in love with the night skies.   Be an advocate for important causes like dark sky preservation and science education.  Celebrate all the small successes you have and share them with those you love.    And then, after many years of hard practice and results, celebrate your success by the number of people you've influenced positively with your hobby!
-
 <div class="ke-sidebar" data-width="half">
 
 ## Sidebar: Oh, Canada!
@@ -945,3 +933,15 @@ Being led-on for over a year, like a girlfriend who would soon jilt me (lots of 
 Just goes to show that we have to be careful when we prop ourselves up too high on those pedestals!
 
 </div>
+
+## Conclusion
+
+​Astrophotographers can become obsessive.   This is good, as it drives learning forward.  But the quest for taking great images can be all-consuming, which also means that the inevitable struggles become more frustrating; more stressful.    Keep in mind that the nature of imaging - and astronomy on the whole - is highly unpredictable.   As much as we want things to be on our time table, it never really is.  If you don't believe me, then purchase a new imaging rig and just watch the clouds roll in.   Astronomers joke that the weather will absolutely SUCK 1 week for each inch of aperture in your new instrument.  So, buy a Celestron C-11 and it'll feel like 3 months before you can use the blasted thing!  
+
+We've talked about things you can do in the meantime.   Things that can still make for some productive learning experiences.   
+
+But remember that that you don't HAVE to be productive or driven or competitive.   It's alright to realize that taking imaging of the cosmos is a great accomplishment and you will likely achieve it very consistently someday.   But don't allow your ego to make it more than it is.  Your self-worth shouldn't be tied too tightly to your hobby.   Too many people feel worthless because they fail and even more people act overly self-important when they succeed.  
+
+To avoid this, commit yourself to having fun, whatever stage of the process.  Surround yourself with great people you enjoy being around.  Teach others the hobby.  Kick back with a cold one every now and then instead of being "Mr. Alcohol-affects-your-night-vision Guy."   Get some sleep on night 4 of a week long star party.  ​ 
+
+Mostly, enjoy your learning.   Fall in love with the night skies.   Be an advocate for important causes like dark sky preservation and science education.  Celebrate all the small successes you have and share them with those you love.    And then, after many years of hard practice and results, celebrate your success by the number of people you've influenced positively with your hobby!
