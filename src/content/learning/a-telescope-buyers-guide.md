@@ -666,7 +666,7 @@ Be persistent; have a growth mindset; enjoy the process AND the results.
 
 I hope you found this Guide helpful!
 
-<div class="ke-sidebar" data-color="orange" data-side="right" data-width="wide">
+<div class="ke-sidebar" data-color="orange" data-width="full">
 
 ## Recommendations for Aspiring AstroImagers...
 

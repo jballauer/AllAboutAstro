@@ -894,12 +894,6 @@ As a high school teacher, it's easy to know which kids are the most successful..
 
 As you gain confidence and ability in the hobby, more and more people will naturally want to know how you got to where you are.   They will bestow upon YOU the titles of MASTER and MENTOR.  It serves as confirmation that you've achieved a certain level of success.  I find this peer recognition to be MUCH more satisfying than the awesome images themselves.  See SIDEBAR: Oh, Canada!  for an interesting anecdote.
 
-At first, becoming a teacher of others isn't going to be natural...and, early on, you shouldn't seek opportunities to teach others, except maybe via a few points here and there on an Internet forum.   But as you grow in the hobby, more and more people will seek you out - which is both wonderful and terrible at the same time.   It feels good to know that people think highly of your knowledge to seek you out, but it's scary to know that how you communicate that knowledge can greatly shape the learning of others, hopefully for good, but sometimes for bad.   
-
-It's easy to become dogmatic about certain things we believe in the hobby.   Some of this, like our opinions about politics and religion, need to be kept in check until you've paid your dues and are recognized by OTHERS for being an expert in what you do.   So keeping a sense of humility as a teacher of others is critical.   There's no place for ego in the business of being a teacher.   And there's no place for acting like "Mr. Know-It-All" as an astronomy mentor.   
-
-Walk quietly and carry a big stick, but let others compliment you on the, ahem, size of your stick!  ​
-
 <div class="ke-sidebar" data-side="right">
 
 ## Sidebar: Oh, Canada!
@@ -932,6 +926,12 @@ Being led-on for over a year, like a girlfriend who would soon jilt me (lots of 
 Just goes to show that we have to be careful when we prop ourselves up too high on those pedestals!
 
 </div>
+
+At first, becoming a teacher of others isn't going to be natural...and, early on, you shouldn't seek opportunities to teach others, except maybe via a few points here and there on an Internet forum.   But as you grow in the hobby, more and more people will seek you out - which is both wonderful and terrible at the same time.   It feels good to know that people think highly of your knowledge to seek you out, but it's scary to know that how you communicate that knowledge can greatly shape the learning of others, hopefully for good, but sometimes for bad.   
+
+It's easy to become dogmatic about certain things we believe in the hobby.   Some of this, like our opinions about politics and religion, need to be kept in check until you've paid your dues and are recognized by OTHERS for being an expert in what you do.   So keeping a sense of humility as a teacher of others is critical.   There's no place for ego in the business of being a teacher.   And there's no place for acting like "Mr. Know-It-All" as an astronomy mentor.   
+
+Walk quietly and carry a big stick, but let others compliment you on the, ahem, size of your stick!  ​
 
 ## Conclusion
 
