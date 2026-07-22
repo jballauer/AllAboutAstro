@@ -55,10 +55,15 @@ First, you won't be needing a camera with an electromechanical shutter.  Such a
 Secondly, what good is "Auto-Focus" if there is nothing bright enough to focus on? Therefore, these types of cameras can be eliminated completely unless they are backward compatible with older, manual focus lenses and they have retained a manual shutter in bulb mode.  The Nikon F3AF, made in 1982, is a perfect example of such a camera.  ​
 
 
-Important Aside:
-​
-Some auto-focusing cameras can still work for astrophotography by using them in manual mode.  But because we are attempting to find the perfect 35mm astrocamera, I choose to eliminate them from consideration.  However, it should be noted that these cameras (and any camera we eliminate) can still be used with some level of effectiveness in taking pictures of the heavens.
-​Therefore, you are looking for an older camera with both a manual (mechanical) shutter and manual lenses.  That's a good thing because these types of cameras can be picked up for a song, used, of course. Alternatively, you could pick up a more recent electromechanical shuttered camera that allows for no power usage in the bulb setting, while functioning normally on other shutter speeds.  You will be using settings other than bulb on occasion, like on the moon and sun, but those shots are short enough to prevent battery drain.  So cameras like this can still be excellent for astrophotography.
+<div class="ke-sidebar" data-color="orange" data-side="right">
+
+## Important Aside
+
+Some auto-focusing cameras can still work for astrophotography by using them in manual mode. But because we are attempting to find the perfect 35mm astrocamera, I choose to eliminate them from consideration. However, it should be noted that these cameras (and any camera we eliminate) can still be used with some level of effectiveness in taking pictures of the heavens.
+
+</div>
+
+Therefore, you are looking for an older camera with both a manual (mechanical) shutter and manual lenses.  That's a good thing because these types of cameras can be picked up for a song, used, of course. Alternatively, you could pick up a more recent electromechanical shuttered camera that allows for no power usage in the bulb setting, while functioning normally on other shutter speeds.  You will be using settings other than bulb on occasion, like on the moon and sun, but those shots are short enough to prevent battery drain.  So cameras like this can still be excellent for astrophotography.
 
 Since we are searching for the perfect 35mm astrocamera, the first thing we should do is eliminate all "non-manual" shutter and "non-manual" focus cameras, and at the minimum, we should eliminate those that do not provide a completely manual setting in bulb mode. Therefore, to know what these cameras are, an awareness of the cameras produced by the major camera manufacturers is helpful.  At the end of the article I will provide a timeline of cameras among each of these major makers with an emphasis on the point when their cameras became too "electronic."
 
@@ -76,9 +81,23 @@ Fortunately, many cameras have this capability.  But this is more true of the p
 
 
 
+<div class="ke-figure ke-figure-right ke-figure-third">
+
 ![Interchangeable focusing screens for the Nikon F2](./_images/cam35-01-om4-screens.jpg)
+
+</div>
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
 ![The Olympus OM-4](./_images/cam35-02-oly-om4.jpg)
+
+</div>
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
 ![The Nikon F2 system](./_images/cam35-03-f2-system.jpg)
+
+</div>
 
 Installing a screen is usually a snap. Removable prism cameras allow you to simply drop the screen through the top, as shown at right on my Nikon F2.  Such screens are framed nicely with a holder that fits specifically to each Nikon model.  The screen does have to be pushed down firmly, especially when changing prisms; otherwise, proper focus can be a bit off because the idea of a focus screen is to be placed at exactly the same distance in the optical train as the film plane itself.  Thus, WYSIWYG (what you see is what you get)!   Focus screens in most other cameras, such as my Olympus OM-4, seen below, can be accessed through the front. Normally, a lever is depressed and the screen drops down. 
 
@@ -138,20 +157,30 @@ Don't think that all lenses are suitable for astrophotography.  There is not a 
 The essence of action and nature photography is that objects tend to move very quickly and you often need to take these shots from quite a distance away.  Therefore, there is a tremendous market among photographers for lenses that are not only long in the focal lengths they need (to give the magnifications or field of view), but also "fast" enough to allow objects to be captured on film without a blurring of the image, especially in low light situations such as in nighttime sporting events or indoors.  These same aspects of a lens required by action photographers are also the exact same requirements of astrophotographers. Photographing a night time sky on film requires the ability to put as much light on the film in the least amount of time.  And it has to be able to accomplish this with a minimal amount of aberrations, vignetting, and false color.  Like I said, a field of stars is a pretty mean test for any lens!
 For a minute, let me describe the difference between photos taken with a "garden variety" lens and one that is considered to be better suited for astrophotography.  Observe the following shots:
 
-​Lagoon Nebula Region
-135mm @ f4  
-Single 15 minute exposure
-Nikon 135mm f2.5 lens
+<div class="ke-clear"></div>
 
+<div class="ke-figure-row">
+<div class="ke-figure">
 
-
-​M24
-420mm@ f4  
-Single 10 minute exposure
-Nikon 300mm ED f2.8 lens 
-with 1.4x teleconverter
 ![Lagoon Nebula region, 135mm](./_images/cam35-04-lagoon.jpg)
+
+<p class="ke-figure-caption">Lagoon Nebula Region. 135mm @ f4. Single 15 minute exposure. Nikon 135mm f2.5 lens.</p>
+
+</div>
+<div class="ke-figure">
+
 ![M24, 420mm](./_images/cam35-05-m24.jpg)
+
+<p class="ke-figure-caption">M24. 420mm @ f4. Single 10 minute exposure. Nikon 300mm ED f2.8 lens with 1.4x teleconverter.</p>
+
+</div>
+</div>
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
+![135mm lens problems near the field edge](./_images/cam35-06-135mm-problems.jpg)
+
+</div>
 
 The picture on the left, taken at the Texas Star Party in 2002, looks acceptable to most casual observers.  An excellent region of the sky full of terrific objects, I decided to piggyback my camera atop my LX200 to capture this field.  I used a 135mm, normal telephoto lens (yet one of high quality).  But the shot is filled with problems, and the problems get worse toward the edge of the field.  See for yourself (at right) in this expanded view of the upper left corner region, which includes the M25 open cluster.
 
@@ -163,8 +192,11 @@ What is important to note is that I took this shot stopped down from a possible 
 
 In the same way, take a look at the picture of M24 on the right of the Lagoon shot (below left).  This photo was taken at the Texas Star Party in 2003 with a rather nice, and expensive, Nikon 300mm f2.8 ED lens (using a teleconverter) taken piggyback atop the LX200.  Do you see any spherical aberrations or false color?  Take a look at the expanded view of the upper left corner of the image near M17, the Swan Nebula.
 
+<div class="ke-figure ke-figure-left ke-figure-third">
 
-![135mm lens problems near the field edge](./_images/cam35-06-135mm-problems.jpg)
+![300mm at good quality](./_images/cam35-07-300mm-good.jpg)
+
+</div>
 
 Shot with the lens fully open, with a teleconverter, the difference in the quality should be obvious.  
 
@@ -172,13 +204,23 @@ First of all, the stars are only slighty elongated, something which can be expec
 
 Secondly, do you see false color?  No.  White stars are decidedly white.  In other words, this super Nikon ED lens, as shown at right, made with extra-low dispersion glass like many apo and near-apo refractors, is well corrected for color.  This despite the fact that the lense was taken wide open (again, not something widely practiced because of limitations of most lenses), and despite the fact that I used a teleconverter, which normally increases both aberrations and false color in an image.
 
+<div class="ke-figure ke-figure-right ke-figure-third">
+
+![300mm beauty shot](./_images/cam35-08-300mm-beauty.jpg)
+
+</div>
+
 This speaks to a couple of great points regarding this set-up.  First, it performs very similarly to the best apochromatic refractors of a similar focal length and aperture, and it does so at much faster speeds.  Therefore, purchasing a good lens will certainly provide better shots than shooting at the prime focus of a short-tube, achromatic (achro) refractor. And secondly, the Nikon teleconverter is one of the best ever made.  It is perfectly matched for this lens.
 
 ​What you do not see in the above comparison is a significant amount of vignetting in both images.  The M24 shot was somewhat processed, but there was no need to correct for vignetting.  There is a slight amount of vignetting noticable in the above thumbnail (corrected for in the linked, final image).  But this amount of vignetting was only slight, even insignificant. Thus, both lenses are good performers here, especially the 300mm since a teleconverter has the tendency to also increase vignetting.
 
-But compare these images with a lens (and image) I am not very proud of (see below). 
-![300mm at good quality](./_images/cam35-07-300mm-good.jpg)
-![300mm beauty shot](./_images/cam35-08-300mm-beauty.jpg)
+But compare these images with a lens (and image) I am not very proud of (see below).
+
+<div class="ke-figure ke-figure-left ke-figure-third">
+
+![An unprocessed 50mm f1.4 shot showing vignetting and astigmatism](./_images/cam35-09-50mm-crap.jpg)
+
+</div>
 
 This is an unprocessed shot of the constellation Orion taken with my Nikon 50mm f1.4 lens. Not only do you see very fat, astigmatic stars, even close to the center of the image, but the vignetting is so significant that it rendered the shot un-processable.  This combination of spherical aberrations, vignetting and false color (not noticable without enlarging) made this shot unsalvageable.  Incidently, the photograph was a 10 minute exposure (a bit too close to the horizon) taken with the lens wide open at f1.4.  Needless to say, if I shoot any more shots with this lense I will stop it down significantly, at least three stops to f4.  That should reduce both the astigmatism and vignetting.  How much, I do not know.
 
@@ -308,8 +350,12 @@ Then of course, there is the Olympus OM-1.  If you could only remove the prism
 Several other cameras I consider equal to the Olympus OM-1 because all of them have the features we need, except for the removable prism.  Among Nikon, the Nikon FE and Nikon FM-2 do everything the OM-1 can do and are almost just as compact.  In particular, the FM-2 can be equipped with a special 2X magnifying extension, similar to the Varimagni finder for the Olympus.  Though I've said that I'm not crazy about these devices because of lower light throughput and the low magnifications using the camera's eyepiece, the FM-2's viewfinder is actually magnified at ~4x to begin with.  Thus, the extension provides 8x magnication. This is just the power you need for precise focusing if the star is bright enough.  Choosing a bright star to focus on first and then swinging your camera to the object you want to photograph is a good method for using such a magnifying extension despite the lesser amount of light reaching the eye.
 
 Next in line are all the older model, manual shuttered cameras.  These include the Minolta SRT and Minolta X series, the Pentax K series, the Canon FT and Canon LT series, and the early Nikon-made Nikkormat FT series.  Usable because of their manual capabilities, these cameras do lack the ability to exchange focusing screens.  If you already own such a camera you might consider finding a suitable screen from another manufacturer and having the camera professionally modified at your local camera shop; however, the price to do something like this might be a bit steep. It is my recommendation to simply sell these cameras and purchase a used camera with such capabilities.  You'll end up with a better all-around camera and you'll spend less money to get it.
-![An unprocessed 50mm f1.4 shot showing vignetting and astigmatism](./_images/cam35-09-50mm-crap.jpg)
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
 ![A Chinon CS camera body](./_images/cam35-10-chinon.jpg)
+
+</div>
 
 A couple of camera bodies that might be intriguing were made by other manufacturers. Yashica makes some good manual cameras, like the Yashica YX-3 for example, and they even have the ability to use some of the Contax lenses made by Zeiss.  Ricoh, Mayima-Sekor, and Chinon also make decent, fully manual cameras with some of the capabilities we need in an astro camera.   Some, like my old Chinon CS, shown at right, even have screw mounted lenses, so a T-ring isn't necessary.   The aforementioned Leica Rseries cameras, made in collaboration with Minolta, might also be suitable. Likewise, if you can find a Contax RTS for a reasonable price, you might have something to work with.  
 I'll leave you to research some of these models, and other cameras I did not mention, but some of them, like the Leicas, will not be cheap!
