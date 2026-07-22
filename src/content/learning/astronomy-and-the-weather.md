@@ -17,19 +17,23 @@ Control panels and sensors for temperature, humidity, wind speed, rain fall. Cha
 
 If that's not enough, the observatory handles this weather data intelligently and interactively by providing protections and interrupts; both proactive and reactive measures to guard against unsuitable and potentially damaging weather conditions. Programmable shut-down events are standard practice now, such as automated shutter closing at 30 mph wind gusts or equipment shutdown when the temperature is 3 degrees from the dewpoint.
 
-### The Clear Sky Clock
+<div class="ke-sidebar" data-side="right">
 
-Back in 2003, I had the privilege of meeting Attila Danko at the Texas Star Party. Founder of the "Clear Sky Clock," Attila travelled from Canada to give a presentation about this great astronomy tool. As somebody with a newly-built home observatory, I loved that Attila was quick to generate my own clock.
+## Sidebar: The Clear Sky Clock
+
+Back in 2003, I had the privilege of meeting Attila Danko at the Texas Star Party. Founder of the "Clear Sky Clock," Attila travelled from Canada to give a presentation about this great astronomy tool. As somebody with a newly-built home observatory, I loved that Attila was quick to generate my own clock, shown below.
 
 ![Attila Danko's Clear Sky Clock example](./_images/weather-01-clear-sky-clock.gif)
 
-Today, the Clear Sky Chart remains an important, quick glance tool for forecasting your conditions within a day or two of an observation. Using an easy metric or blue blocks for clear (or stable) and white blocks for cloudy (or turbulent), not only is the chart readable, but I find it to be extraordinarily accurate.
+Today, the Clear Sky Chart remains an important, quick glance tool for forecasting your conditions within a day or two of an observation. Using an easy metric or blue blocks for clear (or stable) and white blocks for cloudy (or turbulent), not only is the chart readable, but I find it to be extraordinarily accurate. Owners of their own observatory can ask Attila to create a Clear Sky Clock by visiting www.cleardarksky.com/csk/ and then following the instructions.
 
-Owners of their own observatory can ask Attila to create a Clear Sky Clock by visiting www.cleardarksky.com/csk/ and then following the instructions.
+</div>
 
 Or to take it a step further, how about an observatory management system that can automate educational research requests, whereas observations can be queued according to a wide ranging list of priorities and triggered by particular weather conditions. So, for example, the system uses its transparency sensors to rate the sky based on a set of criteria and then it chooses the queued observation to best take advantage of the conditions. Or perhaps it opts to delay a deep sky imaging session when the system realizes, based on cloud sensor data, that other shorter observations (taking star spectra or measuring a variable star brightness) will be a more efficient use of the evening.
 
-But regardless of how avid you are, even if you don't have a permanent observatory, in the very least, it's difficult to get by without learning how to read the Clear Sky Clock for your area!
+But regardless of how avid you are, even if you don't have a permanent observatory, in the very least, it's difficult to get by without learning how to read the Clear Sky Clock (see Sidebar: The Clear Sky Clock) for your area!
+
+<div class="ke-clear"></div>
 
 ## Internet Weather Tools
 
@@ -45,11 +49,19 @@ Another terrific site in a chart format similar to the Clear Sky Clock is clearo
 
 Other sites that I've used are Weather.com, Weather Underground, Intellicast, and Accuweather. These are typically used for long range forecasts, your choice dictated by the site you feel is accurate most frequently, which means it likely changes depending on who you are. For the most part, we all tend to use multiple sources in this regard, usually seeking consensus or going with the majority rule. Due to the sheer difficulty of accurately predicting weather, that'd be my recommendation to you as well.
 
+<div class="ke-figure ke-figure-right">
+
 ![A rare snowy observing scene](./_images/weather-02-winter-scene.jpg)
+
+<p class="ke-figure-caption">Rare winter snow at Ballauer Observatory in 2002.</p>
+
+</div>
 
 ## Making the Best of It
 
 So you've done your forecasting and have decided to setup a telescope anyway. Of course, weather doesn't always conform to your expectations. At that point, you will need to be both protective and productive given the circumstances. The following are some tips and recommendations for various types of weather conditions that might happen upon you during a night of observing.
+
+<div class="ke-clear"></div>
 
 ### Cold Weather
 
@@ -91,9 +103,11 @@ Moving the air around our optics is important to good seeing, which is why we te
 
 There's a reason why Texas is littered with huge windmills that pepper the landscape - we have the highest sustained wind speeds of anywhere in the country. What this means to the Texas astronomer is that red, west Texas dirt gets EVERYWHERE - inside observatories, within the grease of our telescope gears, and all over our optics. In fact, dirt is such a problem with our efforts at CSAC that we must double our efforts when it comes to our facilities and our telescopes - observatories must be routinely cleaned and our optics must be inspected, cleaned, and recoated with greater frequency. While it's good to be proactive about the dirt, perhaps enclosing as many of our structures as much as possible, the reality is that we can only deter a small percentage of it.
 
-As the owners of much valued and prized astronomy gear, it means that we need to be equal parts astronomer, meteorologist, and mechanical engineer! User serviceable components should be a consideration when we purchase our gear, particularly mounts. Bearings in our dob must be routinely maintained. A can of compressed air should be close at hand to blow off optics and inside of CCD cameras. You will need to be comfortable disassembling the filter wheel inside your camera.
+As the owners of much valued and prized astronomy gear, it means that we need to be equal parts astronomer, meteorologist, and mechanical engineer! User serviceable components should be a consideration when we purchase our gear, particularly mounts. Bearings in our dob must be routinely maintained. A can of compressed air should be close at hand to blow off optics and inside of CCD cameras. You will need to be comfortable disassembling the filter wheel inside your camera. You shouldn't be too worried about cleaning optics if you know how to do it the correct way for all of your telescopes, binoculars and filters (see Sidebar: Cleaning Optics).
 
-### Cleaning Optics
+<div class="ke-sidebar" data-side="right" data-width="wide">
+
+## Sidebar: Cleaning Optics
 
 One of the trickier and scarier aspects to owning telescopes is how we handle our optics, especially when it comes to cleaning them.
 
@@ -113,9 +127,17 @@ For a cleaning solution, I recommend 98% or greater isopropyl alcohol (from an e
 
 As for camera lenses, using the cleaner recommended by the manufacturer is a good idea. This is true of all optics, if you are ever in doubt.
 
-![Lightning at the Texas Star Party, 2004](./_images/weather-03-lightning.jpg)
+</div>
 
 ### Rainy Conditions
+
+<div class="ke-figure ke-figure-left" data-hires="/images/learning/weather-03-lightning-full.jpg">
+
+![Lightning at the Texas Star Party, 2004](./_images/weather-03-lightning.jpg)
+
+<p class="ke-figure-caption">Location: Texas Star Party 2004 near Ft. Davis, Texas. Date: May 20, 2004. Transparency: Pretty terrible! Seeing: A bit unstable! Equipment: Canon Digital Rebel (300D) on a tripod. Exposure Information: Two 25 second shots @ ISO 100. Processing Information: Aligned, combined, cropping and levels adjustment in Photoshop CS.</p>
+
+</div>
 
 Sometimes, rain happens, despite your most optimistic of forecasts. When this happens, you should anticipate a few things.
 
@@ -130,6 +152,8 @@ When you find yourself in cloudy and raining conditions, then you definitely sho
 I have come to expect about half of my nights being cloudy or rainy at star parties. When I first started in the hobby, it was heartbreaking - absolutely devastating to be clouded out of an eclipse, planetary opposition, transiting event or a meteor shower. Unless it's a total eclipse - you have every right to cry when weather ruins those - then I've learned it's just the nature of the beast; something that I now take in stride.
 
 A little rain never hurts anybody. In fact, I usually welcome some rain during the middle of a week-long event just to give me a chance to catch up on sleep. Similarly, in west Texas, rain is good to provide for a little vegetation and hold down the dirt a little bit. Just keep your equipment protected and enjoy the earth renewing itself.
+
+<div class="ke-clear"></div>
 
 ### Inclement Weather
 
@@ -169,9 +193,37 @@ Before an observatory can be setup with a weather "controller," it must be equip
 
 This is the key to remote observatory control, since you can "wake" up and shut down the equipment by cycling power over a simple software interface from anywhere in the world. This represents the first layer of control - which is namely a software interface to all of your power hardware.
 
+<div class="ke-sidebar" data-side="right">
+
+## Sidebar: How to Shoot Lightning
+
+So, instead of seeing stars, you find yourself in a lightning storm. This happens quite frequently during those nights with the buddies. Surprise, or no surprise, wouldn't it be nice to make the best of the situation and capture some of the lightning with the camera? How do you do it?
+
+In theory, lightning is no different than shooting star trails. All you do is setup the camera on a tripod, open up the shutter for a long exposure, and hope that nature puts on a good show. And at night, this is pretty much the way you do it. The better the show, the more lightning you can get in a single frame.
+
+But how about during the day? It stands to reason that you might want to set your camera lenses at its smaller aperture and the ISO at the smallest sensitivity, but even then it can be difficult to hold the shutter open without over-saturating the chip. Even so, the great thing about digital is that you can take any number of individual frames and then composite them later in processing.
+
+My recommendation would be to simply take as long of an exposure as you can at your lowest ISO (typically around 100) and aperture opening (typically around f/22). Then, take a ton of them. People who do time lapses use intervalometers, which allows you to automate a sequence of images so that the camera does all the work. The Nikon D810A actually has this feature built in.
+
+The lightning shot shown above was taken during the day with a DSLR, and I still got 25 second exposures. Modern DSLRs will be more sensitive, but you can extend that time by using neutral density (ND filters) on your lenses.
+
+Once you have all the images loaded to the computer, toss all the frames that do NOT have lightning. Then, open them in Photoshop, copying and pasting them in layers within a single document. At this point, there are a few approaches, but generally you will align the layers on the scenery and apply a "lighten" blending mode to each image. This lets the brightest part of each individual image stand out.
+
+Typically, the result will be a background that isn't very good (since they are stacked), so you can mask over the single best background taken in one of your many images. Usually, you would plan this in advance and setup the camera so that you capture a good background shot.
+
+</div>
+
+<div class="ke-figure ke-figure-left ke-figure-third">
+
 ![Ambient Weather software showing current conditions](./_images/weather-04-ambient-vws.jpg)
 
+<p class="ke-figure-caption">Software for the Davis Weather System provides us with current data of conditions, a nice quick glance of all relatively important information, including an embedded feed to our all-sky camera.</p>
+
+</div>
+
 Secondly, you need a remote "pair of eyes" for knowing when and to what extent your control should happen. Network cameras, both inside and outside of the observatory, can give you a live visual for the state of the observatory and its equipment. When you send a slew command to a telescope, you will need immediate verification that it is doing as you anticipated. Else, your expensive telescope could wreck on its own instrument pier. When you place a camera showing the dome shutter or roll-off roof, you will know at a glance the status of the observatory. These cameras, typically requiring 12vDC power, require more than a typical 5vDC USB connection for power. I lean toward power over ethernet (PoE) cameras, which receive both their power and communications over the same CAT-5/6 ethernet cable. Some invest in PTZ cameras (pan-tilt-zoom) that can provide a variety of views in a remote setting, but these cameras are prohibitively expensive ($1000 or more). I prefer a fixed type, something like an all-weather (IP67 rated) Hikvision that costs around $120 to $150 each. The "all-weather" part of the equation is important, of course.
+
+<div class="ke-clear"></div>
 
 Camera enclosures (among other electronics) are rated as either IP65, IP66, or IP67 (sometimes up to IP68 and IP69) depending on their level of "ingress protection (IP)." This IP rating measures ingress of both dust (first number) and water (second number). Thus, while all the aforementioned ratings have a "6" for dust rating (zero dust ingress), they vary in their water resistance. IP65 will protect against water spray, whereas IP66 will withstand a quick immersion in water. IP67 allows for immersion for longer than one minute at a depth of 1 meter. IP68 and IP69 can withstand higher pressures (water depths) over longer time periods. Because a typical IP (internet protocol) security camera will not be used under water, an enclosure built tougher than IP67 is not necessary for security applications.
 
@@ -185,7 +237,13 @@ Now, if only you had access to live weather data at the observatory then you can
 
 But if it does start raining, there is going to be a lag between the time that the analog sensors on the DWS reports it and the time that the end-user can act on it. Thus, we need another level of automation as protection - a proactive way to sense an immediate change in condition (a shutdown event) and then interrupt normal operation to shut everything down automatically. While the DWS is entirely sufficient if you always monitor and provide oversight during a session, we cannot always be as vigilant as we would like.
 
+<div class="ke-figure ke-figure-right" data-hires="/images/learning/weather-05-boltwood-full.gif">
+
 ![Boltwood 2 cloud sensor output](./_images/weather-05-boltwood.gif)
+
+<p class="ke-figure-caption">The Boltwood 2 not only provides automated shutdown for an observatory, it gives a nice output of the most recent sensor data. For us, wind is the issue, and as the graph indicates, 20 to 30 mph gusts (or greater) are common place in west Texas.</p>
+
+</div>
 
 The great thing about sensors and micro-controllers is that it is not difficult to devise a way to monitor things like wind speed, moisture, and even cloud cover as they happen, and they are intelligent enough to send commands to the observatory control hardware to trigger automated shutdown. On its own, a Davis Weather Station cannot do this, since it's chiefly an analog data recorder. Instead, what is required is something digital, like a Boltwood 2 device or SkyAlert system, to bridge the gap between sensor feedback and the automated shutdown.
 
@@ -194,6 +252,8 @@ I favor the Boltwood 2, as it interfaces with most observatory control hardware,
 For us, if we have a power outage due to a storm, our system will maintain power (via UPS battery backup) and hardware-level control automates the shut-down sequence. For us (and many others), we have a "park" position sensor (like a garage door laser sensor) that must be "closed" (connected) before our roof is allowed to close. This protects the telescope, which projects above the roof line when it's operational. Thus, our system knows to "park" the scope, wait for the "closed" home position sensor, and then close the roof, avoiding a catastrophic collision with the telescope AND protecting it against the weather threat. Our roof cannot be moved, even manually, unless the telescope's park sensor is closed.
 
 The Boltwood 2 provides immediate feedback on several events, including wind speed, moisture, and cloud cover. Thus, the potential for automated "interrupts" to normal operation are plenty. For example, you can setup the system to shutdown automatically if it detects wind at a certain threshold. Better yet, it can prevent opening the observatory if those conditions exist. Of course, rain triggers immediate shutdown, as it should. Interestingly, you can even set shutdown events based on cloud cover. Since the Boltwood 2 can determine the amount of cloudiness in the sky, you can opt to shutdown the observatory if it detects more than 75% clouds, if that's something you want to do.
+
+<div class="ke-clear"></div>
 
 A software-level control is typically employed for the astronomy-part of what we do. We use TheSkyX Professional to drive our telescopes and camera systems. In a dome, TheSkyX can control the dome by monitoring telescope movement (most domes "slave" to the mount positioning data). This is the way a dome is "driven," and such software can also provide an interface to "home" the dome's position, as well as to open and close the shutter.
 
