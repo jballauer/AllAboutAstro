@@ -27,8 +27,6 @@ This is the **Model 4012 Thacher Calculator** in my collection, serial number 27
 
 ![A four-panel mosaic of the author's Model 4012 Thacher Calculator: the F. Weber Co. box label, the drum's engraved patent text, the magnifying glass and cage, and the base with instruction plate](./_images/ch5-01-thacher-mosaic.jpg)
 
-<p class="ke-figure-caption">Views of the author's Model 4012 Thacher Calculator, serial number 2758 — the F. Weber & Co. box label (top left), the drum's engraved "divided by Edwin Thacher, C.E." text (top right), the magnifying cage (bottom left), and the base with its instruction plate (bottom right).</p>
-
 </div>
 
 We start with this device because of its importance to history — and not just K&E history. The **Thacher Calculator** was first patented by Edwin Thacher in 1881 and manufactured by Stanley Ltd. in England. K&E arranged to have it distributed in the USA beginning around 1884, which is the copyright date of the first instruction manual produced by K&E. The device would first appear in the 1887 Catalog, known as the **Model 1740**. K&E likely imported the first Thacher Calculators, and shortly thereafter worked in partnership with Stanley to build them, with Stanley producing the scales and K&E building the rest, including the lovely box-jointed carry cases in which they came. There are slight variations in the construction of the earliest samples, enough to make me believe that there was indeed a transition between the earliest Stanley-made Thachers and those that would be made almost entirely by K&E.
@@ -57,8 +55,6 @@ This scaling off of production was precipitous after the war, with the last know
 
 ![A decorative close-up photograph of the Thacher Calculator's box, case, and drum](./_images/ch5-02-thacher-art-shot.jpg)
 
-<p class="ke-figure-caption">The author's Thacher Calculator, tucked into its box-jointed mahogany case.</p>
-
 </div>
 
 ### Fuller Calculator (Models 1742 and 4015)
@@ -76,8 +72,6 @@ In other words, it's conceivable that customers wealthy enough to afford them co
 <div class="ke-figure ke-figure-right ke-figure-third">
 
 ![A page from K&E's 1895 product catalog showing the Fuller's Spiral Slide Rule, listed as No. 1742](./_images/ch5-03-fuller-1895-catalog.jpg)
-
-<p class="ke-figure-caption">A page from K&E's 1895 product catalog: "1742. Fuller's Spiral Slide Rule, in mahogany box... $28.00."</p>
 
 </div>
 
@@ -112,8 +106,6 @@ Built in Liechtenstein until the early 1970s, the Curta cost $125 when it first 
 <div class="ke-figure">
 
 ![The Curta Type I and Type II mechanical calculators shown side by side for comparison](./_images/ch5-05-curta-exploded.jpg)
-
-<p class="ke-figure-caption">Not an exploded view after all, but a useful comparison: the Curta Type I (left) alongside the larger Type II (right), showing how little changed cosmetically between the two despite the jump from 11 to 15 significant figures of precision.</p>
 
 </div>
 
@@ -184,8 +176,6 @@ This slide rule, made by G. Charpentier based on both French and English patents
 <div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch5-10-charpentier-authors-sample-full.jpg">
 
 ![The author's own Charpentier calculimètre sample, missing its fob](./_images/ch5-10-charpentier-authors-sample.jpg)
-
-<p class="ke-figure-caption">The author's calculimètre, acquired July 2024.</p>
 
 </div>
 
@@ -279,8 +269,6 @@ By 1891, Fryer was dropped from the company name (he died in 1892) but had taken
 
 ![An 1891 Manlove, Alliott & Co. Limited letterhead spelling out the company's telegraphic address as 'Manloves, Nottingham'](./_images/ch5-18-manloves-telegraphic-address.jpg)
 
-<p class="ke-figure-caption">An 1891 Manlove, Alliott & Co., Limited letterhead, spelling out the company's telegraphic address — "Manloves, Nottingham" — the same shorthand identity that would eventually become their own advertising logo.</p>
-
 </div>
 
 A second, more important question that arises is whether M.A.F. might have fabricated the earliest A. Boucher version of the rule?
@@ -345,9 +333,9 @@ Moreover, comparing the Dietzgen advertisement with the K&E version in the 1906 
 
 <div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch5-15-hopp-collection-calculigraphes-full.png">
 
-![Two rose-gold-toned HC Calculigraphe pocket watch rules from Peter Hopp's collection, front and back, with no K&E badge but accompanied by K&E-branded instructions](./_images/ch5-15-hopp-collection-calculigraphes.png)
+![One of the HC Calculigraphe pocket watch rules from Peter Hopp's collection alongside its K&E-branded 'Boucher Calculators (Calculigraphs)' instruction booklet](./_images/ch5-15-hopp-collection-calculigraphes.png)
 
-<p class="ke-figure-caption">Two samples in Peter Hopp's collection, typical "HC Calculigraphes" with no K&E badge, yet both accompanied with K&E branded instructions.</p>
+<p class="ke-figure-caption">A sample from Peter Hopp's collection, a typical "HC Calculigraphe" with no K&E badge, shown with the K&E-branded "Boucher Calculators (Calculigraphs)" instruction booklet that accompanied it.</p>
 
 </div>
 
@@ -470,8 +458,6 @@ Internet research has proven inconclusive with regard to other samples of the Tr
 <div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch5-20-ebay-4095-listing-full.png">
 
 ![The eBay listing photo for the author's 4th-known-sample Model 4095 Triangular Metal Rule](./_images/ch5-20-ebay-4095-listing.png)
-
-<p class="ke-figure-caption">The eBay listing for this 4th known sample of the Model 4095 Triangular Metal Rule — described only as a "rare slide rule," Keuffel & Esser, brass and nickel silver.</p>
 
 </div>
 
