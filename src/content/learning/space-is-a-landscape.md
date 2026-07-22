@@ -5,7 +5,11 @@ order: 3
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left">
+
 ![Early photography](./_images/space-landscape-1.jpg)
+
+</div>
 
 For as long as I can remember, I have been fascinated with photography, though my early recollections of it had more to do with clicking a button on a box and watching a piece of "plasticky" paper come out. The reward came after a minute of flapping the paper from side to side and then hesitating long enough to see a ghostly image gradually gaining in opacity and strength, soon turning into a fully-realized picture of some inartistic, yet heart-felt object of my affection – or more likely just a picture of my icky little sister.
 
@@ -27,7 +31,7 @@ Signal to noise ratios. Dynamic range. Photon flux. Calibration frames. Shot noi
 
 Most certainly, we are in a whole new kind of imaging. And so began my indoctrination into the idea that astrophotography bears no resemblance to real-life, ordinary photography in almost every traditional aspect of the discipline. Consequently, my results over the next several years would seem to confirm those differences – namely, lots of dark, wasted pixels of barren space, wholly framing a singular cosmic target.
 
-But is this all there is?
+*But is this all there is?*
 
 Like many in this hobby, I began my imaging career by working my way through progressively longer focal length lenses with my film camera to the current, prime focus images taken with some of the best tools available to amateur imagers, namely cooled astronomical CCD cameras on high dollar scopes and mounts. But my early struggles in digital astroimaging made me suspect that there must be something more, especially in light of some of the more positive results I began to see from my contemporaries.
 
@@ -35,29 +39,63 @@ Not surprisingly, most of my early CCD efforts looked, well, amateurish - lots o
 
 The last decade has certainly demonstrated that our concept of "space" has drastically changed, so people breaking in to the hobby today have less trailblazing to do. But even so, "space" remains synonymous with "blackness," largely mysterious to us.
 
-If we looked at the image data as the percentage of a range of brightness values, most people would expect to see tons of "black." Thus, a histogram of such images would be heavily concentrated to the left side of the graph, meaning that an overwhelming majority of the pixels in the image are almost an indistinguishable shades of boring darkness, as shown below...
+<div class="ke-figure ke-figure-left">
 
 ![A typical early astrophoto, mostly dark space with little signal](./_images/space-landscape-2.jpg)
+
+</div>
+
+If we looked at the image data as the percentage of a range of brightness values, most people would expect to see tons of "black." Thus, a histogram of such images would be heavily concentrated to the left side of the graph, meaning that an overwhelming majority of the pixels in the image are almost an indistinguishable shades of boring darkness, as shown below...
+
+<div class="ke-clear"></div>
+
+<div class="ke-figure-row">
+<div class="ke-figure">
+
+![Histogram comparison, before](./_images/space-landscape-3.jpg)
+
+</div>
+<div class="ke-figure">
+
+![Histogram comparison, after](./_images/space-landscape-4.jpg)
+
+</div>
+</div>
 
 This is in direct contrast to that of a terrestrial landscape image, as it would appear to have a much more equal distribution of pixel values across the entire graph. If exposed correctly, the data will reveal the full dynamic range of the camera, where there is aesthetic value and meaning within all brightness "zones." This comes naturally with lunar shots when "zoomed" in to show the lunar surface exclusively, but not so much for deep-space, astronomical "targets," despite the fact that today's technology can actually achieve those levels of data acquisition on even deep-space objects.
 
 So, by intuition, I began to lift the black point in my images, seeking for other niceties that lurked just barely undetected in the shadows. I sought to master Curves in Photoshop and other methods of logarithmic "stretches" of my data, such as with Digital Development (DDP). I started choosing targets that yielded full chip coverage. I started to compose and crop my data logically, to maximize the amount of appealing objects in my images. After a while, most of my images began to yield an entire array of pixels containing meaningful photons of light, much like an Ansel Adams photograph or a typical Grand Canyon landscape. And the histograms below bear this out:
 
-![Histogram comparison, before](./_images/space-landscape-3.jpg)
-![Histogram comparison, after](./_images/space-landscape-4.jpg)
-
 Ultimately, a worthy goal is to acquire image data and process your images in such a way to render maximum details in the darker, but still useful portions of an image. This is based on the ideal notion that all regions of a photograph should portray something of interest. It is this philosophy that is foundational to everything else – at least I believe this to be true if you desire to impress anybody with your images other than yourself - or to give a modicum of integrity to the grandeur of the amazing creation you hope to capture. There are photons to be collected in all parts of space and they deserve to be seen.
 
+<div class="ke-clear"></div>
+
+<div class="ke-figure-row">
+<div class="ke-figure">
+
 ![Example image illustrating the landscape-in-space philosophy](./_images/space-landscape-5.jpg)
+
+</div>
+<div class="ke-figure">
+
 ![Example image illustrating the landscape-in-space philosophy](./_images/space-landscape-6.jpg)
+
+</div>
+</div>
 
 Of course, it is much easier to have a CCD chip covered in meaningful pixels when shooting large, extended nebulae and Milky Way vistas. But even when shooting smaller, isolated targets such as galaxies and star clusters, I believe it to be worthwhile to explore ways to infuse the same "landscape" philosophy into even those images. For example, as mentioned earlier, you could use your cropping tool to rid yourself of the disinteresting, often dark portions of an image. Or, focus entirely on a single area of interest.
 
 Better yet, why not just have an image FULL of meaningful pixels so that I can do something with ANY of it?
 
-What do you NOT see in these JRB (me) images of "space"? If you said "space" or "void" or "blackness," then you have the right idea. We need to first realize that there's a lot of light up there. "Space" isn't as dark as we always thought it was!
+<div class="ke-clear"></div>
+
+<div class="ke-figure ke-figure-left">
 
 ![Example image illustrating the landscape-in-space philosophy](./_images/space-landscape-7.jpg)
+
+<p class="ke-figure-caption">What do you NOT see in these JRB (me) images of "space"? If you said "space" or "void" or "blackness," then you have the right idea. We need to first realize that there's a lot of light up there. "Space" isn't as dark as we always thought it was!</p>
+
+</div>
 
 How can I make my all of my astrophotos more interesting, appealing to a broader audience of astronomers and non-astronomers alike? What practices can we develop in our techniques that can optimize pixel values to yield greater dynamic range and make for more interesting and impactful images?
 
@@ -120,3 +158,11 @@ Beginning around 2005, I began presenting this philosophy to many groups of inte
 And whether or not they've vocalized it, just looking at the astro-galleries of the masters among us can tell you everything you need to know about their belief in this philosophy. Take a look at Rob Gendler's work and see how many images, among the extensive catalog of his images, include a bunch black space. Even around single galaxy images where some black is unavoidable you will see how the galaxy itself fills the image as much as possible.
 
 The numerous images in my own gallery, as well as all of the writings here focus on this philosophy as a core principle. In fact, the writings on the "Learning" page here at All About Astro originally came from a book I was writing about astrophotography, where this article you are finishing was my "Chapter 1." So, when you explore my articles like Best Data Acquisition Practices, Developing a Plan for Our Images, and some of the future articles about image "noise" and data processing, be sure to remember the underlying philosophy at play.
+
+<div class="ke-figure ke-figure-right ke-figure-quarter">
+
+![Author's signature](./_images/space-landscape-8-signature.jpg)
+
+</div>
+
+<div class="ke-clear"></div>
