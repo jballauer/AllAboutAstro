@@ -35,8 +35,6 @@ The back side, with only a CI scale on the bottom of the slide and another D sca
 
 ![The back of the Model 4095-3 Merchant's Duplex slide rule](./_images/ch4-02-4094-merchants-mannheim.jpg)
 
-<p class="ke-figure-caption">The back of the Model 4095-3 Merchant's Duplex — just the CI and D scales, with the conspicuous empty space K&E left for owners to mark their own gauge-points.</p>
-
 </div>
 
 The Model 4095 came with a frameless glass indicator and a "Morocco" case (box) at a cost of $4.50, which was also the cost of the **Model 4041 Mannheim**. For further perspective, this is the least expensive duplex rule when it was introduced in 1915, with the Model 4088 priced at $7.00 and the **Model 4092** at a dollar more. The older Duplex Family of rules, two years before being discontinued, were also available in 1915 at 50 cents more for the base version and $2.00 more for the "T" or trig version. The 4095 also beat the **Model 4053-3 Polyphase Mannheim** in cost, coming in at 50 cents less.
@@ -48,8 +46,6 @@ A year after the 4095-5 was discontinued, it would return in a different guise i
 <div class="ke-figure ke-figure-right">
 
 ![The Model N4096 Desk rule, enclosed in its wooden case with metal feet](./_images/ch4-04-n4096-desk-rule.jpg)
-
-<p class="ke-figure-caption">The Model N4096 Desk rule, K&E's 1927 reworking of the discontinued 20" Model 4095-5 into a large, table-mounted Mannheim-style rule.</p>
 
 </div>
 
@@ -130,7 +126,7 @@ The scale set is unknown, though based on drawings in the 1901 catalog of the su
 
 In 1901, the Model 1749 Mannheim Stadia was re-designated as the **Model 4101 Stadia**. This 20" model would endure until 1952. But it would be the 10" version, added that same year that would become K&E's longest lasting slide rule, being produced in some form until 1960.
 
-<div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/ke-rules/ch4-06-n4101-stadia-full.jpg">
+<div class="ke-figure" data-hires="/images/ke-rules/ch4-06-n4101-stadia-full.jpg">
 
 ![The 20-inch N4101 Stadia Surveyor's Rule with its case](./_images/ch4-06-n4101-stadia-surveyors-rule.jpg)
 
@@ -224,8 +220,6 @@ Patented by Branch H. Colby of St. Louis, and one of two devices known as "Colby
 
 ![The 1897 catalog illustration of the Model 1749-3 Colby's Stadia](./_images/ch4-11-1749-3-colbys-stadia-catalog.jpg)
 
-<p class="ke-figure-caption">The Model 1749-3 Colby's Stadia, pictured in the 1897 K&E catalog.</p>
-
 </div>
 
 The July 30, 1895 patent for the device describes a "Log Scale" on the base of the rule to be three decades of logarithmic scale (an extended R scale) numbered 1 to 1000. The vertical slide is labeled "Arc Scale," keyed to the Log, based on angles of elevation from 0 to 18 degrees relative to the distances on the base scale according to the formula for vertical displacement. The device has indexes for meters, yards, and feet, covering any unit by which a survey could have been measured.
@@ -252,7 +246,7 @@ In 1915, despite already producing 3 other stadia slide rules, K&E introduced th
 
 The stadia functions of the rule cover the back side, giving the same functionality as a typical stadia rule.
 
-<div class="ke-figure ke-figure-left ke-figure-third">
+<div class="ke-figure">
 
 ![The author's N4102 Surveyor's Duplex, displayed on a classroom wall](./_images/ch4-12-n4102-surveyors-duplex.jpg)
 
@@ -491,8 +485,6 @@ Essentially and functionally, the new format worked the same as the old, except 
 
 ![A 1921 K&E catalog description of the Model 4135 Power Computer](./_images/ch4-14-4135-power-computer-catalog.jpg)
 
-<p class="ke-figure-caption">Description from my 1921 K&E Catalog. Click on the image for a close-up of the scales for this rule. Note front and back scales are denoted A, B [C, D, E] F, G, adjusted for steam pipe calculations on the front and water pipe calculations on the rear.</p>
-
 </div>
 
 ### The Model 4142 Allan Friction Head Duplex
@@ -507,7 +499,7 @@ The detailed illustrations in the 1921 catalog show a very clearly labeled and w
 
 ![A 1921 K&E catalog illustration of the Model 4142 Allan Friction Head Duplex](./_images/ch4-15-4142-allan-friction-head-catalog.jpg)
 
-<p class="ke-figure-caption">The detailed illustrations of the Model 4142 Allan Friction Head Duplex in the 1921 catalog.</p>
+<p class="ke-figure-caption">Description from my 1921 K&E Catalog. Click on the image for a close-up of the scales for this rule. Note front and back scales are denoted A, B [C, D, E] F, G, adjusted for steam pipe calculations on the front and water pipe calculations on the rear.</p>
 
 </div>
 
