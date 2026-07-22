@@ -7,7 +7,7 @@ draft: false
 
 In the early days of this galaxy's birth, did you know that the Milky Way was likely more spherical in shape? Not like the 2 dimensional disks in which we marvel through telescopes and pictures, but rather 3 dimensional spheroids that mimic the much larger elliptical galaxies we see in places like Virgo's Markarian Chain. You know, the boring looking ones.
 
-No, our beautiful galaxy, which we reckon would look a lot like the neighboring Andromeda Galaxy, wasn't always a grand spiral with spinning arms spreading out like a whirlpool. Today, if we could view it from the side, it would most certainly look like the thin silvers of NGC4565, NGC 891, or the famous M104 Sombrero. However, billions of years ago, the Milky's Way side would have looked much like it's front, with nothing to hint at the spinning arms of a galactic grand spiral that we love today.
+No, our beautiful galaxy, which we reckon would look a lot like the neighboring Andromeda Galaxy, wasn't always a grand spiral with spinning arms spreading out like a whirlpool. Today, if we could view it from the side, it would most certainly look like the thin silvers of NGC4565, NGC 891, or the famous M104 Sombrero. However, billions of years ago, the Milky's Way *side* would have looked much like it's *front*, with nothing to hint at the spinning arms of a galactic grand spiral that we love today.
 
 So, how do galaxies like ours decide that they don't wish to be a big M87-like elliptical forever?
 
@@ -21,7 +21,7 @@ But interestingly, not everything heeds the galaxy's spin. Some of the stuff is 
 
 Instead, these "globs" of stars, now numbering together in the thousands, have enough pull of their own to resist a move into the galaxy's arms and remain on the same path they've always traveled.
 
-These globs of stars, known today as globular clusters, wandering their own paths around the galactic halo, have persisted all these eons of time. Over 150 such globulars are known in the Milky Way galaxy, many of which reside further away from the galactic center than our own solar system does. Thus, if you think that the galactic "halo" extends only to the top of the "sombrero," then you are likely mistaken. Although much of the galactic mass is bound together in the spinning arms, the dimensions of the galaxy are still very much elliptical, a testimony to those old clusters of stars that bucked the odds, or just decided together that they didn't need galaxy arms to be pretty.
+These globs of stars, known today as ***globular clusters***, wandering their own paths around the galactic halo, have persisted all these eons of time. Over 150 such globulars are known in the Milky Way galaxy, many of which reside further away from the galactic center than our own solar system does. Thus, if you think that the galactic "halo" extends only to the top of the "sombrero," then you are likely mistaken. Although much of the galactic mass is bound together in the spinning arms, the dimensions of the galaxy are still very much elliptical, a testimony to those old clusters of stars that bucked the odds, or just decided together that they didn't need galaxy arms to be pretty.
 
 In fact, through a telescope, globular clusters are not just pretty. They are gorgeous! Often looking like powdered sugar against the blackness of space, they are an explosion of tens of thousands of stars, concealing well their total numbers.
 
