@@ -868,41 +868,7 @@ When working with data, it's hard to stray from the fact that YOUR development a
 
 Burn-out is a real thing.   My father never let me play Pee-wee football.  Why?  Because as a high school football coach, he'd seen too many kids burn-out.   And while I didn't understand it at the time, he was right.   By the time I got to 11th grade, I wasn't looking forward to those hot Texas two-a-day practices!   
 
-Highly technical hobbies have a similar affect on us.   In our discussion regarding being data-driven, the beginners among you probably got a little scared.  Well, it's really not that bad if you handle it in stride.   Take it in bite-sized chunks and look for others to fill in the gaps for you.    It's manageable, even for those who are less technical.  
-
-But actually, the greatest robber of our imaging "MOJO" will not be the weather or the technology or the math.   Instead, it's the VARIABLES.  
-
-As you are looking to evaluate or troubleshoot your on-screen data, it becomes apparent that there will be several possible causes for something like trailed stars.  Let's see, what could have happened?   Was it a bad cable?   A snagged cable?   A slightly off polar alignment?   Improperly balanced scope?  Aggressive autoguider?  Field rotation?   Wrong tracking speed for the given object?  
-
-How do you even approach finding a correction for such issues?    How do you react?  
-
-Rest assured, you'll naturally learn to make distinctions between cause and effect for the various problems that arise, even when it doesn't seem possible.  When you see something happen enough times, you'll learn how to fix it and recognize it every time it happens.  
-
-Furthermore, you'll learn the most likely causes for any given type of error.   It's strange really.  One day you'll wonder why the same black specks are littering your calibrated images only to realize that it's happening because you've resisted doing a "master" dark frame.   After that, you'll never have those specks again!   
-
-That's a simplistic example, but it's true with so much of how data acquisition works.   Quite often, it won't really make sense to you until you've fixed enough of those problems yourself.   LIke an electronics expert who can trace down a flaw in a circuit to a specific chip, you too will have troubleshooting skills you didn't expect when you first started.   It's reactive...and you become able to fix the things you don't like. 
- 
-But there's one irrefutable fact to know - GOOD practices inherently eliminate the variables.   This begins to happens when you prioritze the learning of skills that impact data the most.  When you get good at a skill, the errors associated with that skill becomes a thing of the past.   
-
-In other words, the most important thing you can do to get better is to be proactive in the hobby.   This is why we talk about "best" practices in the first place. 
-
-In the end, you will be a veteran to both eliminating the problems you see and avoiding the problems you don't want.    And because of that, the whole journey starts getting easier.   Not only will your images improve, but you'll wonder what made it so difficult in the first place.  And it's at that point when you realize how valuable all that practice truly was! ​
-
-### Become a Teacher of Others
-
-As a high school teacher, it's easy to know which kids are the most successful...they will be the kids teaching the OTHER kids.    
-
-As you gain confidence and ability in the hobby, more and more people will naturally want to know how you got to where you are.   They will bestow upon YOU the titles of MASTER and MENTOR.  It serves as confirmation that you've achieved a certain level of success.  I find this peer recognition to be MUCH more satisfying than the awesome images themselves.  See SIDEBAR: Oh, Canada!  for an interesting anecdote.
-
-While having people fawn all over your images is nice, we need to be careful about using the opinions of others when it comes to evaluating our astrophotography — but I'll save that story for the end of the article (see Sidebar: Oh, Canada! below).
-
-At first, becoming a teacher of others isn't going to be natural...and, early on, you shouldn't seek opportunities to teach others, except maybe via a few points here and there on an Internet forum.   But as you grow in the hobby, more and more people will seek you out - which is both wonderful and terrible at the same time.   It feels good to know that people think highly of your knowledge to seek you out, but it's scary to know that how you communicate that knowledge can greatly shape the learning of others, hopefully for good, but sometimes for bad.   
-
-It's easy to become dogmatic about certain things we believe in the hobby.   Some of this, like our opinions about politics and religion, need to be kept in check until you've paid your dues and are recognized by OTHERS for being an expert in what you do.   So keeping a sense of humility as a teacher of others is critical.   There's no place for ego in the business of being a teacher.   And there's no place for acting like "Mr. Know-It-All" as an astronomy mentor.   
-
-Walk quietly and carry a big stick, but let others compliment you on the, ahem, size of your stick!  ​
-
-<div class="ke-sidebar" data-width="half">
+<div class="ke-sidebar" data-side="right" data-width="wide">
 
 ## Sidebar: Oh, Canada!
 
@@ -933,6 +899,40 @@ Being led-on for over a year, like a girlfriend who would soon jilt me (lots of 
 Just goes to show that we have to be careful when we prop ourselves up too high on those pedestals!
 
 </div>
+
+Highly technical hobbies have a similar affect on us.   In our discussion regarding being data-driven, the beginners among you probably got a little scared.  Well, it's really not that bad if you handle it in stride.   Take it in bite-sized chunks and look for others to fill in the gaps for you.    It's manageable, even for those who are less technical.  
+
+But actually, the greatest robber of our imaging "MOJO" will not be the weather or the technology or the math.   Instead, it's the VARIABLES.  
+
+As you are looking to evaluate or troubleshoot your on-screen data, it becomes apparent that there will be several possible causes for something like trailed stars.  Let's see, what could have happened?   Was it a bad cable?   A snagged cable?   A slightly off polar alignment?   Improperly balanced scope?  Aggressive autoguider?  Field rotation?   Wrong tracking speed for the given object?  
+
+How do you even approach finding a correction for such issues?    How do you react?  
+
+Rest assured, you'll naturally learn to make distinctions between cause and effect for the various problems that arise, even when it doesn't seem possible.  When you see something happen enough times, you'll learn how to fix it and recognize it every time it happens.  
+
+Furthermore, you'll learn the most likely causes for any given type of error.   It's strange really.  One day you'll wonder why the same black specks are littering your calibrated images only to realize that it's happening because you've resisted doing a "master" dark frame.   After that, you'll never have those specks again!   
+
+That's a simplistic example, but it's true with so much of how data acquisition works.   Quite often, it won't really make sense to you until you've fixed enough of those problems yourself.   LIke an electronics expert who can trace down a flaw in a circuit to a specific chip, you too will have troubleshooting skills you didn't expect when you first started.   It's reactive...and you become able to fix the things you don't like. 
+ 
+But there's one irrefutable fact to know - GOOD practices inherently eliminate the variables.   This begins to happens when you prioritze the learning of skills that impact data the most.  When you get good at a skill, the errors associated with that skill becomes a thing of the past.   
+
+In other words, the most important thing you can do to get better is to be proactive in the hobby.   This is why we talk about "best" practices in the first place. 
+
+In the end, you will be a veteran to both eliminating the problems you see and avoiding the problems you don't want.    And because of that, the whole journey starts getting easier.   Not only will your images improve, but you'll wonder what made it so difficult in the first place.  And it's at that point when you realize how valuable all that practice truly was! ​
+
+### Become a Teacher of Others
+
+As a high school teacher, it's easy to know which kids are the most successful...they will be the kids teaching the OTHER kids.    
+
+As you gain confidence and ability in the hobby, more and more people will naturally want to know how you got to where you are.   They will bestow upon YOU the titles of MASTER and MENTOR.  It serves as confirmation that you've achieved a certain level of success.  I find this peer recognition to be MUCH more satisfying than the awesome images themselves.  See SIDEBAR: Oh, Canada!  for an interesting anecdote.
+
+While having people fawn all over your images is nice, we need to be careful about using the opinions of others when it comes to evaluating our astrophotography — but I already told that story a bit earlier (see Sidebar: Oh, Canada! above).
+
+At first, becoming a teacher of others isn't going to be natural...and, early on, you shouldn't seek opportunities to teach others, except maybe via a few points here and there on an Internet forum.   But as you grow in the hobby, more and more people will seek you out - which is both wonderful and terrible at the same time.   It feels good to know that people think highly of your knowledge to seek you out, but it's scary to know that how you communicate that knowledge can greatly shape the learning of others, hopefully for good, but sometimes for bad.   
+
+It's easy to become dogmatic about certain things we believe in the hobby.   Some of this, like our opinions about politics and religion, need to be kept in check until you've paid your dues and are recognized by OTHERS for being an expert in what you do.   So keeping a sense of humility as a teacher of others is critical.   There's no place for ego in the business of being a teacher.   And there's no place for acting like "Mr. Know-It-All" as an astronomy mentor.   
+
+Walk quietly and carry a big stick, but let others compliment you on the, ahem, size of your stick!  ​
 
 ## Conclusion
 
