@@ -19,6 +19,10 @@ Once upon a time, I was a noob.  When I began in the hobby, I learned to find ob
 
 It seemed only natural to connect my SLR camera (note the lack of a "D" in that acronym) to the back of the telescope to attempt to image this favorite object.   And I have to tell you, I was never all that successful at it, especially with film. I struggled with that scope, as it was just too long (2500mm) and I was just too green.
 
+I would eventually get a nice apochromatic refractor and some better lenses to piggyback atop that scope, and I achieved some nice successes with film on many subjects.  But galaxies?  I really never impressed myself with film, regardless of the focal length I used.  
+
+In fact, even when I switched to CCD imaging, it still took a while to learn how to capture galaxy photons on the chip.
+
 <div class="ke-figure ke-figure-right">
 
 ![Space is a Landscape](./_images/plan-02-landscape-slide.jpg)
@@ -26,10 +30,6 @@ It seemed only natural to connect my SLR camera (note the lack of a "D" in that 
 <p class="ke-figure-caption">Whether you say that the images have something interesting in each area or that "north" wasn't necessarily "up," a well done image speaks as much about the astrophotographer as it does the object. These objects have been taken a thousand times by your peers, but thinking of them a subjects and not merely "targets" can set your images apart.</p>
 
 </div>
-
-I would eventually get a nice apochromatic refractor and some better lenses to piggyback atop that scope, and I achieved some nice successes with film on many subjects.  But galaxies?  I really never impressed myself with film, regardless of the focal length I used.  
-
-In fact, even when I switched to CCD imaging, it still took a while to learn how to capture galaxy photons on the chip.
 
 Take M104 for example.   I would come back to it several times over a couple of years, using a Meade 208xt and then an SBIG STV and then an SBIG ST-7E.   While encouraged by some of the results I was getting, I still hadn't gotten an M104 shot that I was particularly proud of.    But around 2004, I got an SBIG ST-10xme and paired it with a 3" Takahashi FS-78 refractor on a Losmandy GM-8 mount.  The result is the picture of M104 up there.   Talk about being proud!   Perhaps it was the good focus or the fact that I caught the "Hammerhead" asterism with it?  Not sure, but I know that I was pleased.   So pleased, in fact, that I began the website, Allaboutastro, as way to show others how excited I was!  
 
@@ -415,15 +415,15 @@ North America and the Pelican Nebulas (NGC 7000 and IC 5067/70): This was the go
 
 </div>
 
+IC 1396 and Elephant Trunk: Again, it's hard to miss a good composition in the summer Milky Way, but this region in Cepheus is a versatile target. Focusing alone on VDB 142, the "Elephant Trunk" is a really pretty subject with a variety of RGB and mapped color possibilities with long-focal length instruments. Going, wider, we see that the Van de Bergh object is only a small part of a much larger complex of nebulosity, known as IC1396. It perfectly fills out a 4 degree field of view.
+
+​IC 1805 and IC 1848 - Heart and Soul Nebulas: Laying just close enough to each other to fit in a 6 x 8 degree section of the sky, it is a perfect field for a mosaic or 300mm scope. Or, each can be taken individually, almost filling up a 4 degrees wide chip. The versatility continues with harrow field instruments by focusing on either the center "Mellotte" cluster of the Heart or the interesting hydrogen formations in the "soul" (AKA the Embryo Nebula).
+
 <div class="ke-figure ke-figure-left" data-hires="/images/learning/plan-16-m45-stretched-full.jpg">
 
 ![M45, a 60-minute stretched exposure](./_images/plan-16-m45-stretched.jpg)
 
 </div>
-
-IC 1396 and Elephant Trunk: Again, it's hard to miss a good composition in the summer Milky Way, but this region in Cepheus is a versatile target. Focusing alone on VDB 142, the "Elephant Trunk" is a really pretty subject with a variety of RGB and mapped color possibilities with long-focal length instruments. Going, wider, we see that the Van de Bergh object is only a small part of a much larger complex of nebulosity, known as IC1396. It perfectly fills out a 4 degree field of view.
-
-​IC 1805 and IC 1848 - Heart and Soul Nebulas: Laying just close enough to each other to fit in a 6 x 8 degree section of the sky, it is a perfect field for a mosaic or 300mm scope. Or, each can be taken individually, almost filling up a 4 degrees wide chip. The versatility continues with harrow field instruments by focusing on either the center "Mellotte" cluster of the Heart or the interesting hydrogen formations in the "soul" (AKA the Embryo Nebula).
 
 M45 - The Pleiades: The most beautiful star cluster in the sky cannot be topped for its blue reflections against the tremendous amount of background dust. A four degree field of view captures the cluster surrounded by a rich field of dust, which can be extended way out to the east (left in the traditional view) to capture NGC1499, the California Nebula, as shown in the Mosaic Framing above. If your instruction yields a half-degree field of view, you can single out the nebulously around individual stars, especially Merope. Use an instrument with a spider secondary to produce gorgeous diffraction spikes on the stars (​see left).   ​If using a refractor, you can simulate the spikes by taping on some thin string to the front of the aperture.
 
@@ -486,7 +486,7 @@ Therefore, planning means nothing without good execution and realistic expectati
 
 </div>
 
-<div class="ke-sidebar" data-color="orange" data-side="right">
+<div class="ke-sidebar" data-color="orange" data-width="full">
 
 ## Addendum - 4/10/2018
 
