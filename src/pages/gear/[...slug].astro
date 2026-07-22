@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
 import { getCollection, render } from 'astro:content';
+import softwareBisqueMountsBanner from '../../assets/banners/gear-software-bisque-mounts-banner.jpg';
+
+const pageBanners: Record<string, { src: ImageMetadata; alt: string }> = {
+  'software-bisque-mounts': { src: softwareBisqueMountsBanner, alt: 'Software Bisque Paramount telescope mounts' },
+};
 
 export async function getStaticPaths() {
   const items = await getCollection('gear');
@@ -12,10 +18,12 @@ export async function getStaticPaths() {
 
 const { item } = Astro.props;
 const { Content } = await render(item);
+const banner = pageBanners[item.id];
 ---
 
 <BaseLayout title={item.data.title} description={item.data.description}>
   <article>
+    {banner && <PageBanner src={banner.src} alt={banner.alt} />}
     <h1>{item.data.title}</h1>
     <Content />
   </article>

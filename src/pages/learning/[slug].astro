@@ -1,6 +1,36 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
 import { getCollection, render } from 'astro:content';
+import telescopeBuyersGuideBanner from '../../assets/banners/learning-a-telescope-buyers-guide-banner.jpeg';
+import astronomyAndTheWeatherBanner from '../../assets/banners/learning-astronomy-and-the-weather-banner.jpeg';
+import bestDataAcquisitionPracticesBanner from '../../assets/banners/learning-best-data-acquisition-practices-banner.png';
+import choosingA35mmFilmCameraBanner from '../../assets/banners/learning-choosing-a-35mm-film-camera-banner.jpeg';
+import developingAPlanForOurImagesBanner from '../../assets/banners/learning-developing-a-plan-for-our-images-banner.png';
+import doDarkSkiesReallyMatterBanner from '../../assets/banners/learning-do-dark-skies-really-matter-banner.png';
+import globularClustersBanner from '../../assets/banners/learning-globular-clusters-banner.jpeg';
+import greatAmericanSolarEclipse2024Banner from '../../assets/banners/learning-great-american-solar-eclipse-2024-banner.jpg';
+import howToLearnAstrophotographyBanner from '../../assets/banners/learning-how-to-learn-astrophotography-banner.png';
+import spaceIsALandscapeBanner from '../../assets/banners/learning-space-is-a-landscape-banner.jpg';
+import theTaskOfImageProcessingBanner from '../../assets/banners/learning-the-task-of-image-processing-banner.jpeg';
+import whereToSetupYourTelescopeBanner from '../../assets/banners/learning-where-to-setup-your-telescope-banner.jpeg';
+
+// Per-article header banner, matching each article's own banner on the
+// original site (building-a-roll-off-roof-observatory had none there either).
+const pageBanners: Record<string, { src: ImageMetadata; alt: string }> = {
+  'a-telescope-buyers-guide': { src: telescopeBuyersGuideBanner, alt: 'A lineup of beginner telescopes' },
+  'astronomy-and-the-weather': { src: astronomyAndTheWeatherBanner, alt: 'A panoramic weather view over an observing site' },
+  'best-data-acquisition-practices': { src: bestDataAcquisitionPracticesBanner, alt: 'A chart illustrating star trailing/tracking errors' },
+  'choosing-a-35mm-film-camera': { src: choosingA35mmFilmCameraBanner, alt: 'A Nikon F2 35mm film camera' },
+  'developing-a-plan-for-our-images': { src: developingAPlanForOurImagesBanner, alt: 'An imaging setup for the M31 mosaic project' },
+  'do-dark-skies-really-matter': { src: doDarkSkiesReallyMatterBanner, alt: 'A dark-sky map' },
+  'globular-clusters': { src: globularClustersBanner, alt: 'The Omega Centauri globular cluster' },
+  'great-american-solar-eclipse-2024': { src: greatAmericanSolarEclipse2024Banner, alt: 'A composite map of the 2024 total solar eclipse path' },
+  'how-to-learn-astrophotography': { src: howToLearnAstrophotographyBanner, alt: 'An exposure calculation chart' },
+  'space-is-a-landscape': { src: spaceIsALandscapeBanner, alt: 'A signal-to-noise comparison image' },
+  'the-task-of-image-processing': { src: theTaskOfImageProcessingBanner, alt: 'A processing curve applied to a cone nebula image' },
+  'where-to-setup-your-telescope': { src: whereToSetupYourTelescopeBanner, alt: 'A telescope set up in the field' },
+};
 
 export async function getStaticPaths() {
   const articles = await getCollection('learning');
@@ -12,10 +42,12 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await render(article);
+const banner = pageBanners[article.id];
 ---
 
 <BaseLayout title={article.data.title} description={article.data.description}>
   <article>
+    {banner && <PageBanner src={banner.src} alt={banner.alt} />}
     <h1>{article.data.title}</h1>
     <Content />
   </article>
