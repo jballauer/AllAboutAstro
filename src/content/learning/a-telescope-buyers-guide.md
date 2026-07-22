@@ -608,11 +608,11 @@ Also, the scope shown at left, and many other scopes that are electronically-equ
 
 These connections lead for greater infrastructure possibilities, whereas these scopes become the centerpiece of an actual robotic observatory or an unattended, remote-controlled setup.  Whether its a backyard setup controlled from the comfort or a warm living room or an observatory located hundreds of miles away, this connectivity leverages powerful software to control the scope, camera, and any other accessories needed for hands-free operation, such as guiding cameras, auto-focusers, dew-heaters, and cooling fans.
 
-<div class="ke-clear"></div>
-
 **THE BEGINNING ASTROIMAGER** -  A true beginner typically does not buy a telescope specifically to take pictures; however, a "beginning astroimager" is also full of questions regarding what gear they should buy.
 
 To help with these crucial decisions, you should know one principle, first and foremost...the longer the focal length of your scope/lenses, the more difficult it is.   And it's not a linear relationship either; the difficulty goes up exponentially with focal length.   This puts a strong premium on the mount, which in turn puts a strong demand on your pocketbook!
+
+<div class="ke-clear"></div>
 
 It should probably be stated that a beginner to astroimaging should probably get some experience using their own DSLR with camera lenses, either on a tripod or a small "tracker" mount.    But once you have done this, an imaging telescope becomes inevitable.
 
