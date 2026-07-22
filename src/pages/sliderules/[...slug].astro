@@ -51,8 +51,8 @@ const banner = pageBanners[entry.id];
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <article>
-    <h1>{entry.data.title}</h1>
     {banner && <PageBanner src={banner.src} alt={banner.alt} />}
+    <h1>{entry.data.title}</h1>
     {keLastUpdated && (
       <p class="ke-last-updated">Last updated: {keLastUpdated}</p>
     )}
