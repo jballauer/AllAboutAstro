@@ -5,9 +5,13 @@ order: 8
 draft: false
 ---
 
+<div class="ke-figure ke-figure-right">
+
 ![Hong Kong at night, an example of severe light pollution](./_images/dark-skies-hongkong.jpg)
 
-Hong Kong is bad. Do not live in Hong Kong.
+<p class="ke-figure-caption">Hong Kong is bad. Do not live in Hong Kong.</p>
+
+</div>
 
 As somebody who gets asked a ton of questions in this hobby, the number one question I get is, "What can I see through my telescope?"
 
@@ -53,7 +57,13 @@ Allow me to share some anecdotal evidence, something I wrote many years ago afte
 >
 > — written after the 2002 Texas Star Party near Fort Davis, Texas
 
+<div class="ke-figure ke-figure-right ke-figure-quarter">
+
 ![Comparing light-gathering area across a range of mirror sizes](./_images/dark-skies-mirrors.png)
+
+<p class="ke-figure-caption">When a variety of mirror sizes are stacked like this, it's easier to see how much more area there is to collect light with bigger "apertures." Doubling the diameter yields 4x more light grasp.</p>
+
+</div>
 
 There are a couple of points you should understand based on reading my statement here. First, notice that my evaluation of the quality of my skies used objective, data-driven language. At the point of making this observation, I was into my 6th year as an observer. By this time, I had been in the habit of documenting my observations based on my ability to see particular stars with the "naked eye." I had a good perspective with regard to what "poor," "average," and "great" means because I was using an actual, measurable standard (stellar magnitudes).
 
@@ -62,6 +72,8 @@ Second, I knew how to find objects (star-hopping) and I had expectations that ca
 Finally, I had a variety of instruments with which to conduct my observations. I had a 10" SCT, a 3" refractor, two "finder scopes," a camera viewfinder, not to mention a pair of binoculars on the side. Thus, my understanding of what I was seeing was based on the size of the APERTURE being used...and when used together on a given night I had the perspective of what each instrument delivers.
 
 The take away point for you, the reader, is that it takes time to build this perspective of what you can see through a scope and what dark skies can do for you. It also means that you need a framework for objectively evaluating your observations if you hope to make everything practical.
+
+<div class="ke-clear"></div>
 
 ## Objective Evidence
 
@@ -135,7 +147,13 @@ Thus, depending upon the sky conditions, you should expect the limiting magnitud
 
 My favorite dark sky site, CSAC near Crowell, Texas, equates to limiting magnitude skies in the 7.0 to 7.5 range. It's only 3.5 hours from my DFW residence. More than likely, truly dark skies are closer than you think.
 
+<div class="ke-figure ke-figure-right" data-hires="/images/learning/dark-skies-map-full.png">
+
 ![A light pollution map showing CSAC near Crowell, Texas](./_images/dark-skies-map.png)
+
+<p class="ke-figure-caption">My favorite dark sky site, CSAC near Crowell, Texas, shown on a light pollution map. This equates to limiting magnitude skies in the 7.0 to 7.5 range. It's only 3.5 hours from my DFW residence. More than likely, truly dark skies are closer than you think.</p>
+
+</div>
 
 There are several VALUABLE things we can derive from this table...
 
@@ -152,6 +170,8 @@ Limiting magnitude determines if the light can be detected. Factors such as reso
 Truly dark skies will be pushing 8th magnitude, so if your skies are darker than 7, just make the necessary adjustments to the magnitude scale above. As a reference, I use Mag 7 since this is a more realistic representation of what is available to us. Magnitude 8 is a world-class, rare, hard-to reach site for the vast majority of people. Mag 7 can be found by driving a few hours away from larger metropolitan areas, unless you are in the eastern part of the U.S. - my apologies to others around the world; just look at a dark sky map. For example, my favorite dark sky site, Comanche Springs Astronomy Campus (3RF) near Crowell, Texas is 3.5 hours from my central DFW home. This puts me in Bortle Class 2 skies between 7.1 and 7.5 magnitude. See a Dark Sky Map for my favorite way of finding dark skies for yourself!
 
 The worst skies according the Bortle scale are stated at less than 4th magnitude. But I find that 4th magnitude in a big metropolitan areas isn't very realistic. Perhaps that would be true IF all localized, direct sources of light are OFF and if I am looking straight at the zenith. In my central DFW home (a Bortle Class 8 or 9 site), I can barely make out Polaris (mag 2) on a typical, moon-free night. And because you have little control over street lights and other sky-robbing light pollution, I find that an all-sky Magnitude 4 would be impossibly generous. A casual look at the stars, like a newbie observer might experience for their first light views, are probably being limited to quite a bit worse than 4th magnitude, practically speaking. Hence, representing city skies as something close to 2nd magnitude in my own magnitude chart seems to make much more sense to me.
+
+<div class="ke-clear"></div>
 
 ## How to Apply This Information
 
@@ -177,4 +197,8 @@ Don't sell that scope just yet. Give it a try and tell me I'm wrong!
 
 ## Bortle Sky Chart
 
+<div class="ke-figure">
+
 ![The Bortle Dark-Sky Scale chart](./_images/dark-skies-bortle-chart.jpg)
+
+</div>
