@@ -11,18 +11,28 @@ import eq05 from '../../content/gear/_images/eq-05-toa150-fsq106-piggyback.jpg';
 import eq06 from '../../content/gear/_images/eq-06-parme-toa150-esprit120.jpg';
 import eq07 from '../../content/gear/_images/eq-07-eclipse-2019-setup.jpg';
 import eq08 from '../../content/gear/_images/eq-08-toa150-ap900-stl11000m.jpg';
+import eqSig from '../../content/gear/_images/eq-sig-signature.jpg';
 import eq09 from '../../content/gear/_images/eq-09-trunk-or-treat-2017.jpg';
+import eq09b from '../../content/gear/_images/eq-09b-trunk-or-treat-actual-event.jpg';
 import eq10 from '../../content/gear/_images/eq-10-rasa11-parme2.jpg';
 import eq11 from '../../content/gear/_images/eq-11-c11edge-mxplus-lespaul.jpg';
+import grThumbSoftwareBisque from '../../content/gear/_images/gr-thumb-software-bisque.jpg';
 
 const items = (await getCollection('gear', ({ data }) => !data.draft)).sort(
   (a, b) => a.data.order - b.data.order
 );
 
-const equipmentPhotos = [
+// Thumbnails for the Gear Reviews cards, keyed by content-collection id.
+// Reviews without an entry here fall back to a plain text link.
+const gearReviewThumbnails: Record<string, ImageMetadata> = {
+  'software-bisque-mounts': grThumbSoftwareBisque,
+};
+
+const equipmentPhotosTop = [
   {
     src: eq01,
     hires: '/images/gear/eq-01-tsp-2005-rcos-fsq106.jpg',
+    float: 'left',
     alt: 'A 12.5" RCOS RC and 4" Takahashi FSQ-106 on a Paramount ME at the 2005 Texas Star Party',
     caption:
       'At the 2005 Texas Star Party - Shown is the 12.5" RCOS RC and 4" Tak FSQ-106 on a Paramount ME. Camera is a SBIG STL-6303E. As of 2017, this exact setup is located in the 3RF Conley Observatory on the Comanche Springs Astronomy Campus near Crowell, Texas.',
@@ -30,6 +40,7 @@ const equipmentPhotos = [
   {
     src: eq02,
     hires: '/images/gear/eq-02-cruzen-boys-observatory.jpg',
+    float: 'left',
     alt: 'A Paramount ME2 and Planewave CDK17 with a dog standing watch, for the Cruzen Boys Black Hills Observatory',
     caption:
       'Equipment for the Cruzen Boys Black Hills Observatory - Shut down due to the death of my client, the equipment for the build will be re-purposed. My Greyhound keeps watchful eye on a Paramount ME2 and Planewave CDK17.',
@@ -37,12 +48,14 @@ const equipmentPhotos = [
   {
     src: eq03,
     hires: '/images/gear/eq-03-eldorado-2005-collimating.jpg',
+    float: 'left',
     alt: 'Collimating a 12.5" RCOS RC telescope at the 2005 Eldorado Star Party',
     caption: '2005 Eldorado Star Party: Collimating the 12.5" RCOS RC.',
   },
   {
     src: eq04,
     hires: '/images/gear/eq-04-triple-threat.jpg',
+    float: 'left',
     alt: 'A Takahashi TOA-150, Astro-Physics AP160 Starfire, and Sky-Watcher Esprit 150 side by side',
     caption:
       '"Triple Threat" - Having fun with three 6" apos. Shown (from left to right) are a Takahashi TOA-150, Astro-Physics AP160 Starfire, and the Sky-Watcher Esprit 150. I was comparing the Tak and the Sky-Watcher for a Sky-Watcher USA advertisement using the same cameras simultaneously. The AP was the guidescope! Photo taken at CSAC (3RF) near Crowell, Texas.',
@@ -50,6 +63,7 @@ const equipmentPhotos = [
   {
     src: eq05,
     hires: '/images/gear/eq-05-toa150-fsq106-piggyback.jpg',
+    float: 'left',
     alt: 'A Takahashi TOA-150 with FSQ-106 riding piggyback, both on an AP-900 mount',
     caption:
       'Takahashi TOA-150 with FSQ-106 riding piggyback, both on a AP-900 mount. Taken at Okie-Star Party around 2006 (I think).',
@@ -57,6 +71,7 @@ const equipmentPhotos = [
   {
     src: eq06,
     hires: '/images/gear/eq-06-parme-toa150-esprit120.jpg',
+    float: 'left',
     alt: 'A Paramount ME with a 6" Takahashi TOA-150 and a 5" Sky-Watcher Esprit 120',
     caption:
       'Paramount ME, 6" Tak TOA-150 and a 5" Sky-Watcher Esprit 120. The Tak is my old standby, but I\'m impressed by the value of the Sky-Watcher APOs. A ton of bang for the buck!',
@@ -64,6 +79,7 @@ const equipmentPhotos = [
   {
     src: eq07,
     hires: '/images/gear/eq-07-eclipse-2019-setup.jpg',
+    float: 'left',
     alt: 'A Coronado Solar Max 90mm double-stacked telescope and Takahashi FSQ-85ED on a Takahashi NJP Temma 2 mount, set up for the 2019 solar eclipse',
     caption:
       'Setup for the Great Solar Eclipse on August 21, 2019. Coronado Solar Max 90mm Double-Stacked Telescope, Takahashi FSQ-85ED refractor, and Takahashi NJP Temma 2 mount.',
@@ -71,25 +87,39 @@ const equipmentPhotos = [
   {
     src: eq08,
     hires: '/images/gear/eq-08-toa150-ap900-stl11000m.jpg',
+    float: 'right',
     alt: 'A Takahashi TOA-150 on an AP900 mount with an SBIG STL-11000m astro camera',
     caption: 'TOA-150, AP900, and SBIG STL-11000m astro camera.',
   },
+];
+
+const equipmentPhotosBottom = [
   {
     src: eq09,
     hires: '/images/gear/eq-09-trunk-or-treat-2017.jpg',
+    float: 'left',
     alt: 'Telescope setup for a "Trunk or Treat" outreach event at a friend\'s church, October 2017',
     caption:
-      'October 29, 2017 - This will be the setup for "Trunk or Treat" tonight at a friend\'s church.',
+      'October 29, 2017 - This will be the setup for "Trunk or Treat" tonight at a friend\'s church. Pictured is the Takahashi TOA-150 for visual and Takahashi FSQ-85 "Baby-Q" with the Nikon D810A, all atop the Takahashi NJP mount. The Nikon, set on LiveView and fed to the laptop display, will give people an idea of what they will see before looking through the eyepiece. This might be the best configuration I can think of for portable, outreach events. Below is the setup at the actual event.',
+  },
+  {
+    src: eq09b,
+    hires: '/images/gear/eq-09b-trunk-or-treat-actual-event.jpg',
+    float: 'right',
+    alt: 'The Trunk or Treat outreach setup in use at the actual event',
+    caption: '',
   },
   {
     src: eq10,
     hires: '/images/gear/eq-10-rasa11-parme2.jpg',
+    float: 'left',
     alt: 'An 11" Celestron RASA atop a Paramount ME2',
     caption: '11" Celestron RASA atop a Paramount ME2, awaiting some time under the stars.',
   },
   {
     src: eq11,
     hires: '/images/gear/eq-11-c11edge-mxplus-lespaul.jpg',
+    float: 'right',
     alt: 'A Celestron C-11 Edge SCT on a Paramount MX+ mount, with a Gibson Les Paul guitar nearby',
     caption:
       'Celestron C-11 Edge SCT with Paramount MX+ mount. Yes, that\'s a 1979 Gibson Les Paul Standard.',
@@ -103,26 +133,32 @@ const equipmentPhotos = [
   <p class="tagline">Equipment - Imaging Gear - Tools - Reviews</p>
 
   <h2>Gear Reviews</h2>
-  <ul>
-    {items.map((item) => (
-      <li>
-        <a href={`/gear/${item.id}/`}>{item.data.title}</a>
-        {item.data.description && <> - {item.data.description}</>}
-      </li>
-    ))}
-  </ul>
+  {items.map((item) => {
+    const thumb = gearReviewThumbnails[item.id];
+    return (
+      <div class="ke-gear-review">
+        {thumb && (
+          <a href={`/gear/${item.id}/`} class="ke-gear-review-thumb">
+            <Image src={thumb} alt={item.data.title} width={150} height={150} />
+          </a>
+        )}
+        <p class="ke-gear-review-text">
+          <a href={`/gear/${item.id}/`}><strong>{item.data.title}</strong></a>
+          {item.data.description && <> - {item.data.description}</>}
+        </p>
+      </div>
+    );
+  })}
 
   <h2>Equipment Images...</h2>
   <p>A snapshot history of just some of the gear that I have employed.</p>
 
-  <div class="ke-photo-grid">
-    {equipmentPhotos.map((photo) => (
-      <figure class="ke-figure" data-hires={photo.hires}>
-        <Image src={photo.src} alt={photo.alt} width={500} />
-        <figcaption class="ke-figure-caption">{photo.caption}</figcaption>
-      </figure>
-    ))}
-  </div>
+  {equipmentPhotosTop.map((photo) => (
+    <figure class:list={['ke-figure', photo.float === 'left' ? 'ke-figure-left' : 'ke-figure-right']} data-hires={photo.hires}>
+      <Image src={photo.src} alt={photo.alt} width={500} />
+      <figcaption class="ke-figure-caption">{photo.caption}</figcaption>
+    </figure>
+  ))}
 
   <p>This hobby is a battlefield, a war in which the attrition rate overwhelms strategic planning and ultimately loses out to the larger force. This is where photon-cannons lose sight of the target amidst sporadically cloudy skies. Where deep-space artillery and targeting scopes, with their sophisticated command software, come together to form a combined-arms attack, only to be demoralized by the more powerful forces of mount error, light pollution, atmospheric anomalies, and light mechanical imprecision – where poorly outfitted armies, bad supplies lies, and dreadful reinforcements are overwhelmed by the shock and awe of a pervasive attack by the enemy on all fronts. Ground to air forces made ineffective against the air superiority of the adversary, leaving the gear to be sold off of Astromart to the highest third-world bidder.</p>
 
@@ -151,6 +187,21 @@ const equipmentPhotos = [
   <p>The only solution to this interplay of unpredictable circumstances is to know enough about your imaging system in order to identify the roots causes, diminish their effects, or eliminate them entirely. This assumes, of course, that those factors can be addressed at all – Murphy's Law was invented for a reason.</p>
 
   <p>The solution is to know your imaging gear. This can indeed reduce the amplitude and frequency of your errors. Likewise, more experience, particularly with software tools designed to provide objective methods for troubleshooting your hardware, can allow the astroimager to reduce the impact of most imaging variables.</p>
+
+  <div class="ke-clear"></div>
+
+  <p class="ke-signature">
+    <Image src={eqSig} alt="Jay Ballauer's signature" width={220} />
+  </p>
+
+  {equipmentPhotosBottom.map((photo) => (
+    <figure class:list={['ke-figure', photo.float === 'left' ? 'ke-figure-left' : 'ke-figure-right']} data-hires={photo.hires}>
+      <Image src={photo.src} alt={photo.alt} width={500} />
+      {photo.caption && <figcaption class="ke-figure-caption">{photo.caption}</figcaption>}
+    </figure>
+  ))}
+
+  <div class="ke-clear"></div>
   </article>
 </BaseLayout>
 
@@ -158,17 +209,29 @@ const equipmentPhotos = [
   .tagline {
     color: #9aa4b8;
   }
-  .ke-photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.5rem;
-    margin: 1.5rem 0 2rem;
+  .ke-gear-review {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
   }
-  .ke-photo-grid .ke-figure {
-    margin-bottom: 0;
+  .ke-gear-review-thumb {
+    flex-shrink: 0;
+    display: block;
   }
-  .ke-photo-grid .ke-figure img {
-    width: 100%;
-    height: auto;
+  .ke-gear-review-thumb img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .ke-gear-review-text {
+    margin: 0;
+  }
+  .ke-signature {
+    clear: both;
+    text-align: center;
+    margin: 1.5rem 0;
   }
 </style>
