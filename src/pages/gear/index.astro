@@ -163,6 +163,8 @@ const equipmentPhotos = [
 
   <p>A more apt description of the difficulties within this hobby you will never find!</p>
 
+  <div class="ke-clear"></div>
+
   <p>The reasons for the high turnover rate with astronomy gear and the exit from the hobby by well-intentioned, motivated individuals is ultimately very personal, sometimes sad. But the excuses all come from one overriding factor, a lineage that can be traced back to the first branch of the astrophotographic family tree – astroimaging is highly complex and highly variable.</p>
 
   <p>To have success in this hobby, time, motivation, commitment, and talent are key factors, but NOTHING is more important than solid, reliable equipment. Together, a fusion results, a recipe for winning over the complexities and variables in this hobby.</p>
@@ -222,14 +224,21 @@ const equipmentPhotos = [
   }
 
   .gear-carousel {
-    margin: 1.5rem 0 2rem;
+    float: left;
+    width: 66%;
+    margin: 0.3rem 1.5rem 1rem 0;
   }
   .gc-stage {
     position: relative;
     aspect-ratio: 4 / 3;
-    max-width: 700px;
     overflow: hidden;
-    margin: 0 auto;
+  }
+  @media (max-width: 700px) {
+    .gear-carousel {
+      float: none;
+      width: 100%;
+      margin: 1rem 0 1.5rem;
+    }
   }
   .gc-stage :global(.gc-slide) {
     position: absolute;
@@ -282,8 +291,7 @@ const equipmentPhotos = [
     right: 0.5rem;
   }
   .gc-caption {
-    max-width: 700px;
-    margin: 0.6rem auto 0;
+    margin: 0.6rem 0 0;
     font-style: italic;
     color: #9aa4b8;
     text-align: center;
@@ -294,8 +302,7 @@ const equipmentPhotos = [
     flex-wrap: nowrap;
     gap: 6px;
     overflow-x: auto;
-    max-width: 700px;
-    margin: 0.6rem auto 0;
+    margin: 0.6rem 0 0;
   }
   .gc-thumbs :global(.gc-thumb) {
     flex-shrink: 0;
