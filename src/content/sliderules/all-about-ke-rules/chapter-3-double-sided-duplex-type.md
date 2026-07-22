@@ -324,12 +324,6 @@ Made entirely of plastic, but no plastic like the Ever-There rules, the Model 90
 
 The 9071-3 Doric is quite rare from a collector's perspective as it doesn't pop up often at auction. It is certainly attainable, however, and reasonably so, as it won't be confused by many as a high-dollar collector's rule, with an average price of maybe $25 dollars on eBay when it does come up. However, very few have come up for sale over the last 5 years and may be valued higher for that reason.
 
-<div class="ke-figure ke-figure-left ke-figure-quarter" data-hires="/images/ke-rules/ch3-08-9071-3-doric-rule-full.jpg">
-
-![The Model 9071-3 Doric Polyphase Duplex slide rule](./_images/ch3-08-9071-3-doric-rule.jpg)
-
-</div>
-
 Edit: I acquired this rule in 2023. More description coming soon.
 
 ### The Model 9068 (4168) Polyphase Duplex Pocket Doric

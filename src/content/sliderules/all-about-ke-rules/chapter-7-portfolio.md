@@ -419,15 +419,7 @@ The 20" member of the Polyphase Duplex family, distinct from the 5" 4088-1 above
 
 <div class="ke-portfolio-detail">
 
-<div class="ke-portfolio-photo" data-hires="/images/ke-rules/ch3-08-9071-3-doric-rule-full.jpg">
-
-![The K&E Model 9071-3 Polyphase Duplex Doric slide rule](./_images/ch3-08-9071-3-doric-rule.jpg)
-
-<p class="ke-figure-caption">The Model 9071-3 Polyphase Duplex Doric, acquired for the collection in 2023.</p>
-
-</div>
-
-A genuinely rare plastic Doric-family rule, never described in an actual K&E catalog — only in a 1949 parts list — and likely produced for just two or three years around 1947–1949. I picked this one up in 2023; it typically runs about $25 when it shows up at all, though good samples have become harder to find in recent years.
+A genuinely rare plastic Doric-family rule, never described in an actual K&E catalog — only in a 1949 parts list — and likely produced for just two or three years around 1947–1949. I picked this one up in 2023; it typically runs about $25 when it shows up at all, though good samples have become harder to find in recent years. I haven't photographed my own sample yet — check back as this catalog grows.
 
 </div>
 
