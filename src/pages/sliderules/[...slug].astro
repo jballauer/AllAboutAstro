@@ -1,10 +1,31 @@
 ---
 import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
 import KeTableOfContents from '../../components/KeTableOfContents.astro';
 import signatureImage from '../../assets/home/signature-transparent.png';
+import myFavoriteSlideRulesBanner from '../../assets/banners/my-favorite-slide-rules-banner.jpg';
+import pickettBanner from '../../assets/banners/pickett-banner.jpg';
+import educationalValueBanner from '../../assets/banners/educational-value-banner.jpg';
 import { getCollection, render } from 'astro:content';
 import { getLastUpdated } from '../../utils/lastUpdated.js';
+
+// Landing/article pages that had their own distinct header banner on the
+// original site (K&E's is embedded in its markdown content instead).
+const pageBanners: Record<string, { src: ImageMetadata; alt: string }> = {
+  'my-favorite-slide-rules': {
+    src: myFavoriteSlideRulesBanner,
+    alt: 'A close-up of a Keuffel & Esser Celanese Celcon slide rule',
+  },
+  pickett: {
+    src: pickettBanner,
+    alt: 'A close-up of the back of a Pickett Model C-19 slide rule',
+  },
+  'the-educational-value-of-slide-rules': {
+    src: educationalValueBanner,
+    alt: 'A close-up of a slide rule',
+  },
+};
 
 export async function getStaticPaths() {
   const entries = await getCollection('sliderules');
@@ -25,11 +46,13 @@ const isKeLandingPage = entry.id === 'all-about-ke-rules';
 const keLastUpdated = isKeLandingPage
   ? getLastUpdated('src/content/sliderules/all-about-ke-rules')
   : null;
+const banner = pageBanners[entry.id];
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <article>
     <h1>{entry.data.title}</h1>
+    {banner && <PageBanner src={banner.src} alt={banner.alt} />}
     {keLastUpdated && (
       <p class="ke-last-updated">Last updated: {keLastUpdated}</p>
     )}

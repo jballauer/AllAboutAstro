@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<div class="page-banner">
+  <Image src={src} alt={alt} width={1000} />
+</div>
+
+<style>
+  .page-banner {
+    margin: 1.25rem 0 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  .page-banner :global(img) {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+  }
+  @media (max-width: 700px) {
+    .page-banner :global(img) {
+      height: 130px;
+    }
+  }
+</style>

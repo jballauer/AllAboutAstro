@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
 import { getCollection } from 'astro:content';
+import learningBanner from '../../assets/banners/learning-banner.png';
 
 const articles = (await getCollection('learning', ({ data }) => !data.draft)).sort(
   (a, b) => a.data.order - b.data.order
@@ -9,6 +11,7 @@ const articles = (await getCollection('learning', ({ data }) => !data.draft)).so
 
 <BaseLayout title="Learning">
   <h1>Learning</h1>
+  <PageBanner src={learningBanner} alt="A close-up collage of the Pillars of Creation in the Eagle Nebula" />
   <ul>
     {articles.map((article) => (
       <li>

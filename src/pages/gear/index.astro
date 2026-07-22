@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 
+import gearBanner from '../../assets/banners/gear-banner.jpg';
 import eq01 from '../../content/gear/_images/eq-01-tsp-2005-rcos-fsq106.jpg';
 import eq02 from '../../content/gear/_images/eq-02-cruzen-boys-observatory.jpg';
 import eq03 from '../../content/gear/_images/eq-03-eldorado-2005-collimating.jpg';
@@ -120,6 +122,8 @@ const equipmentPhotos = [
   <h1>Astro Gear</h1>
   <p class="tagline">Equipment - Imaging Gear - Tools - Reviews</p>
 
+  <PageBanner src={gearBanner} alt="A close-up of the Optical Systems logo and lens cap" />
+
   <div class="gear-left-col">
     <h2>Gear Reviews</h2>
     {items.map((item) => {
@@ -162,8 +166,8 @@ const equipmentPhotos = [
     </div>
   </div>
 
-  <figure class="ke-figure ke-figure-quarter ke-figure-right" data-hires={eq08Photo.hires}>
-    <Image src={eq08Photo.src} alt={eq08Photo.alt} width={300} />
+  <figure class="ke-figure ke-figure-third ke-figure-right" data-hires={eq08Photo.hires}>
+    <Image src={eq08Photo.src} alt={eq08Photo.alt} width={400} />
     <figcaption class="ke-figure-caption">{eq08Photo.caption}</figcaption>
   </figure>
 
@@ -233,7 +237,7 @@ const equipmentPhotos = [
 
   .gear-left-col {
     float: left;
-    width: 66%;
+    width: 50%;
     margin: 0 1.5rem 1rem 0;
   }
   .gear-carousel {

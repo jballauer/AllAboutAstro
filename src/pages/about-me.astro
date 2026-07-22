@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageBanner from '../components/PageBanner.astro';
 import { Image } from 'astro:assets';
 import jayPhoto from '../assets/about/jay-with-telescope.jpg';
+import aboutMeBanner from '../assets/banners/about-me-banner.jpg';
 ---
 
 <BaseLayout title="About Me" description="About Jay Ballauer — high school math teacher, astrophotographer, and founding Director of Astronomy for the Three Rivers Foundation.">
   <h1>About Me</h1>
+
+  <PageBanner src={aboutMeBanner} alt="A close-up of the Moon's cratered surface" />
 
   <Image src={jayPhoto} alt="Jay Ballauer with his telescope" width={700} />
 
