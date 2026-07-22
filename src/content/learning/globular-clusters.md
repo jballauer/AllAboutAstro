@@ -30,3 +30,11 @@ The stars within globular clusters look old, mostly red giants in their later st
 "Hell, no, we won't go," the juvenile stars cry!
 
 They make their neighbors proud.
+
+<div class="ke-figure ke-figure-right ke-figure-quarter">
+
+![Author's signature](./_images/globular-01-signature.jpg)
+
+</div>
+
+<div class="ke-clear"></div>
