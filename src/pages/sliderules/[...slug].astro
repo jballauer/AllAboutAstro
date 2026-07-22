@@ -7,11 +7,13 @@ import signatureImage from '../../assets/home/signature-transparent.png';
 import myFavoriteSlideRulesBanner from '../../assets/banners/my-favorite-slide-rules-banner.jpg';
 import pickettBanner from '../../assets/banners/pickett-banner.jpg';
 import educationalValueBanner from '../../assets/banners/educational-value-banner.jpg';
+import keBanner from '../../content/sliderules/_images/ke-banner-decilon5.jpg';
 import { getCollection, render } from 'astro:content';
 import { getLastUpdated } from '../../utils/lastUpdated.js';
 
 // Landing/article pages that had their own distinct header banner on the
-// original site (K&E's is embedded in its markdown content instead).
+// original site. Every one of these must render above the <h1>, immediately
+// below the navbar — same rule for every page site-wide.
 const pageBanners: Record<string, { src: ImageMetadata; alt: string }> = {
   'my-favorite-slide-rules': {
     src: myFavoriteSlideRulesBanner,
@@ -24,6 +26,10 @@ const pageBanners: Record<string, { src: ImageMetadata; alt: string }> = {
   'the-educational-value-of-slide-rules': {
     src: educationalValueBanner,
     alt: 'A close-up of a slide rule',
+  },
+  'all-about-ke-rules': {
+    src: keBanner,
+    alt: 'A close-up of a K&E Deci-Lon slide rule',
   },
 };
 

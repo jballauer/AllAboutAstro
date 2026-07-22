@@ -5,8 +5,6 @@ order: 4
 draft: false
 ---
 
-![A close-up of a K&E Deci-Lon slide rule](./_images/ke-banner-decilon5.jpg)
-
 <div class="ke-columns">
 <div class="ke-col-left">
 
