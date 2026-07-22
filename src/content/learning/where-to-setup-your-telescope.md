@@ -13,7 +13,13 @@ But when my ambitions turn to quality views of the sky, then a whole new set of 
 
 In this article, we will discuss some of the factors that go through my mind. Everything that I believe you should factor into an observing site decision is itemized as follows, starting, of course, with the geographical location itself.
 
+<div class="ke-figure ke-figure-left" data-hires="/images/learning/setup-01-crowell-dark-skies-full.png">
+
 ![My favorite dark sky site near Crowell, Texas](./_images/setup-01-crowell-dark-skies.png)
+
+<p class="ke-figure-caption">My favorite dark sky site, the Comanche Springs Astronomy Campus near Crowell, Texas, is less than 4 hours from my DFW home. This puts me in magnitude 7+ skies. The first step to "where" has to consider darker skies. Everything else pales in comparison when you are serious about getting the most from your telescope.</p>
+
+</div>
 
 ## Location
 
@@ -23,7 +29,7 @@ For the serious astronomer, it's ALL about dark skies. We need photons from the 
 
 How big is this handicap?
 
-More than you probably know. To find out how much, take a gander at my article, "Do Dark Skies Really Matter." But for a quick synopsis, let me just summarize it this way: more than likely if you drive 3 hours away with your 3" scope, you'd get better views than if you had stayed at home with your 20" scope. City dwellers...leave home!
+More than you probably know. To find out how much, take a gander at my article, ["Do Dark Skies Really Matter."](/learning/do-dark-skies-really-matter) But for a quick synopsis, let me just summarize it this way: more than likely if you drive 3 hours away with your 3" scope, you'd get better views than if you had stayed at home with your 20" scope. City dwellers...leave home!
 
 Once you've picked a direction to head, there are other factors that will come into play. Elevation isn't a key player, unless you can be WAY up there. As an example, my 3 hour drive to dark skies has better atmospheric seeing than a 10 hour drive to the almost mile-high Texas Star Party. Though if you could go 1000 feet higher in the Davis Mountains, the seeing improves dramatically because you would have climbed above the "inversion layer," where warm air tends to settle above the cooler air trapped below it.
 
@@ -77,7 +83,11 @@ While pole access makes it simple to set down a mount and get close to a good al
 
 But if you are new to a site and need to see Polaris to know where to point your mount's polar axis, then picking a location with an unobstructed horizon will be of some importance.
 
+<div class="ke-figure ke-figure-right">
+
 ![Jay's rainbow-liveried Airstream](./_images/setup-02-airstream.jpg)
+
+</div>
 
 ## Anchoring Down
 
@@ -89,7 +99,13 @@ When you place tarps on the field, you stake them down. So too with your telesco
 
 This is not something you take a chance with. Anchor down your gear. Place tarps atop your gear for protection. Use a quality scope cover. Bungie cords, stakes, ratchet straps, and zip-ties are requirements in this hobby.
 
+<div class="ke-figure ke-figure-right" data-hires="/images/learning/setup-03-packing-list-full.png">
+
 ![A packing list for a major star party trip](./_images/setup-03-packing-list.png)
+
+<p class="ke-figure-caption">When you have a TON of stuff to carry, especially if you want to carry three setups, two for imaging and one for observing, then the conditions are ripe for forgetting something. It may be helpful to make a list.</p>
+
+</div>
 
 ## Transportation and Packing
 
@@ -111,13 +127,9 @@ Because finding dark sky sites might also mean off-roading, a durable vehicle is
 
 As the hobby has gotten more technical over the past couple of decades, more and more people find themselves in need of power. Imagers seem in dire need of it, more than others. So, let's look at some considerations, as this does affect how you choose a site.
 
-In order to determine how much power your gear needs, you should add up all of your equipment's current draw (in amps) and estimate the maximum amount of power you might need at any given time.
+<div class="ke-sidebar" data-color="orange" data-side="right">
 
-Of course, it's nothing more than an estimate, since not everything will be running all at once. Imaging cameras and dew heaters are the big power monsters, which means 10 amps of power continuously. A slewing mount can be 3 amps. All the USB powered gear will be 0.5 amps a piece. A focuser and/or scope controller could demand an extra 2 or 3 amps when they run. And if your laptop is running off its power "brick," it will need another 1.5 amps itself.
-
-Thus, at this point, a serious imager with heavy-duty gear running a dew heater (which is either fully on or fully off) could conceivably need 15 to 20 amps of constant power at any given time...more if you are running two scopes and cameras simultaneously! Whether setting up in the field or planning an observatory, those figures are important for you!
-
-### Table of Typical Power Needs
+## Table of Typical Power Needs
 
 | Item | Amp Draw (constant/peak) |
 |---|---|
@@ -131,6 +143,14 @@ Thus, at this point, a serious imager with heavy-duty gear running a dew heater 
 | Rotator | 1 amp / 1 amp |
 | Scope Controller | 1.5 amps / 1.5 amps |
 
+</div>
+
+In order to determine how much power your gear needs, you should add up all of your equipment's current draw (in amps) and estimate the maximum amount of power you might need at any given time. See the Table of Typical Power Needs for an imaging setup at right.
+
+Of course, it's nothing more than an estimate, since not everything will be running all at once. Imaging cameras and dew heaters are the big power monsters, which means 10 amps of power continuously. A slewing mount can be 3 amps. All the USB powered gear will be 0.5 amps a piece. A focuser and/or scope controller could demand an extra 2 or 3 amps when they run. And if your laptop is running off its power "brick," it will need another 1.5 amps itself.
+
+Thus, at this point, a serious imager with heavy-duty gear running a dew heater (which is either fully on or fully off) could conceivably need 15 to 20 amps of constant power at any given time...more if you are running two scopes and cameras simultaneously! Whether setting up in the field or planning an observatory, those figures are important for you!
+
 Now, understand that the type of power really doesn't matter. You can go AC or DC, whatever you have available, but running on DC power with batteries becomes somewhat impractical when you have big power needs, unless you have a permanent, remote observatory with a battery bank and solar-power!
 
 On the other hand, visual observers have so little need in this regard, so any power requirements are easily met with a little "jump start" battery, which is sufficient enough to power things like mirror fans and stepper drives.
@@ -139,27 +159,9 @@ Either way, once the total current requirements are known you are in a position 
 
 ### DC Power Needs
 
-For the most part, there's not a single power requirement we have that cannot be run off of a battery; thus, having a good portable solution to provide DC power, enough to last through the night, might be all you need. If that's the case, then you can pretty much setup anywhere; go anywhere. So for the MOST flexibility in where you setup, having your own supply of DC power is a great idea. Heck, even if there is AC power at a big star party, it's often nice to stay off the grid, especially when a breaker trips because of all the dew-slaying hair dryers.
+<div class="ke-sidebar" data-side="right" data-width="wide">
 
-The real advantage of DC power is that voltage supply is consistent, a requirement of modern electronics. But make no mistake, there's not a single piece of equipment that you cannot run off of batteries. In fact, even if the mount comes with an AC/DC adapter so you can plug it into the wall - such "bricks" rectify and filter the current into smooth DC for the electronics - you can usually bypass them entirely and get power straight off of batteries instead. Or, you can power them off an AC/DC inverter.
-
-I am a fan of group size 24 and 27 "marine" or "deep-cycle" batteries (AKA "wet cell" or "flooded") due to their reasonable cost and heavy load capacities in the area of 105 amp hours or more. This means that the battery can run a 1A load for 105 hours (or a 105A load for 1 hour). This is plenty of power for a consistent 10 amp current requirement (easily accomplished as long as you aren't running dew heaters). That yields an estimated 10.5 hours of power - enough to get you easily through a night of fantastic imaging. You do not see these often in the observing field due to their weight (perhaps 70 or 80 lbs.) but the price is right, typically around the ballpark of $100 to $120. But if you go to star parties that do not have AC power (like Rocky Mountain Star Stare), then you'd probably take TWO big batteries, just like me!
-
-Incidentally, these batteries usually serve double-duty in my RV or boat, so keep that in mind.
-
-For less capacity, many people use smaller "gel" cell or AGM batteries. For example, a casual search on Amazon shows a 12V gel cell battery with 7ah capacity for $10. Many people will buy several such batteries, place them in a battery box, and connect them in parallel. For example, 5 of the aforementioned batteries hooked up like this would yield 12vDC power for 35ah worth of capacity, in a size and weight that many find manageable. These are non-serviceable batteries unlike the "flooded" batteries, and do require better chargers (with temperature monitoring). Likewise, you have to be careful not to deep-cycle these batteries. As long as you don't run them past 50% capacity, you will have more charge cycles. They generally run better in cold conditions than flooded batteries, which is worth remembering.
-
-Alternatively, if you are Mr. Money Bags then you'll probably go for some lightweight but expensive Lithium batteries. Greater care must be taken with them, but they are the future trend.
-
-Whichever way you go, whether it's an off the shelf "jumpstart" battery or a complete DIY solution, be sure to do your research and get what your equipment requires, not neglecting chargers, connectors, and a good method of transporting heavy batteries across the observing field!
-
-### AC Power Needs
-
-Almost every piece of astronomy gear that I have purchased runs off a cable that I can plug into the wall. This means that the kind manufacturers of my equipment have seen fit to give me the appropriate AC/DC adapters that let me run everything off of AC electricity. How nice of them!
-
-So for many of us, it's just too darn convenient to setup in a civilized location, perhaps in a state park with nice, AC powered campsites, at your observing club's dark sky site, or even in your own observatory out in your backyard. It's a quick solution, requiring no game planning or fancy systems. I carry a UPS (to give constant, clean power and surge protection), but otherwise it's a piece of cake. Just manage all the cables a bit and you are good to go for as long as you want.
-
-### Non-12vDC Equipment
+## Sidebar: Non-12vDC Equipment?
 
 You might not realize this, but if you are an imager and if you've been around long enough, you've probably witnessed a few "portable" mounts that need more than 12vDC power to run.
 
@@ -183,9 +185,41 @@ Interestingly, some users of DC only equipment might be better off powering thei
 
 As for other equipment, such as laptop computers, you might need an inverter anyway, unless their internal batteries have enough power to last you through the night.
 
-You won't see this kind of gear in the field very often, but when you do you'll likely see it powered off an extension cord instead of a battery. But an untidied mess of power bricks and cables can be bypassed with smart planning, no matter what you use or where you use it.
+</div>
+
+For the most part, there's not a single power requirement we have that cannot be run off of a battery; thus, having a good portable solution to provide DC power, enough to last through the night, might be all you need. If that's the case, then you can pretty much setup anywhere; go anywhere. So for the MOST flexibility in where you setup, having your own supply of DC power is a great idea. Heck, even if there is AC power at a big star party, it's often nice to stay off the grid, especially when a breaker trips because of all the dew-slaying hair dryers.
+
+The real advantage of DC power is that voltage supply is consistent, a requirement of modern electronics. But make no mistake, there's not a single piece of equipment that you cannot run off of batteries. In fact, even if the mount comes with an AC/DC adapter so you can plug it into the wall - such "bricks" rectify and filter the current into smooth DC for the electronics - you can usually bypass them entirely and get power straight off of batteries instead. Or, you can power them off an AC/DC inverter (see Sidebar: Non-12vDC Equipment? at right).
+
+I am a fan of group size 24 and 27 "marine" or "deep-cycle" batteries (AKA "wet cell" or "flooded") due to their reasonable cost and heavy load capacities in the area of 105 amp hours or more. This means that the battery can run a 1A load for 105 hours (or a 105A load for 1 hour). This is plenty of power for a consistent 10 amp current requirement (easily accomplished as long as you aren't running dew heaters). That yields an estimated 10.5 hours of power - enough to get you easily through a night of fantastic imaging. You do not see these often in the observing field due to their weight (perhaps 70 or 80 lbs.) but the price is right, typically around the ballpark of $100 to $120. But if you go to star parties that do not have AC power (like Rocky Mountain Star Stare), then you'd probably take TWO big batteries, just like me!
+
+Incidentally, these batteries usually serve double-duty in my RV or boat, so keep that in mind.
+
+For less capacity, many people use smaller "gel" cell or AGM batteries. For example, a casual search on Amazon shows a 12V gel cell battery with 7ah capacity for $10. Many people will buy several such batteries, place them in a battery box, and connect them in parallel. For example, 5 of the aforementioned batteries hooked up like this would yield 12vDC power for 35ah worth of capacity, in a size and weight that many find manageable. These are non-serviceable batteries unlike the "flooded" batteries, and do require better chargers (with temperature monitoring). Likewise, you have to be careful not to deep-cycle these batteries. As long as you don't run them past 50% capacity, you will have more charge cycles. They generally run better in cold conditions than flooded batteries, which is worth remembering.
+
+Alternatively, if you are Mr. Money Bags then you'll probably go for some lightweight but expensive Lithium batteries. Greater care must be taken with them, but they are the future trend.
+
+Whichever way you go, whether it's an off the shelf "jumpstart" battery or a complete DIY solution, be sure to do your research and get what your equipment requires, not neglecting chargers, connectors, and a good method of transporting heavy batteries across the observing field!
+
+<div class="ke-clear"></div>
+
+### AC Power Needs
+
+Almost every piece of astronomy gear that I have purchased runs off a cable that I can plug into the wall. This means that the kind manufacturers of my equipment have seen fit to give me the appropriate AC/DC adapters that let me run everything off of AC electricity. How nice of them!
+
+So for many of us, it's just too darn convenient to setup in a civilized location, perhaps in a state park with nice, AC powered campsites, at your observing club's dark sky site, or even in your own observatory out in your backyard. It's a quick solution, requiring no game planning or fancy systems. I carry a UPS (to give constant, clean power and surge protection), but otherwise it's a piece of cake. Just manage all the cables a bit and you are good to go for as long as you want.
+
+### Non-12vDC Equipment
+
+You might not realize this, but if you are an imager and if you've been around long enough, you've probably witnessed a few "portable" mounts that need more than 12vDC power to run. See Sidebar: Non-12vDC Equipment? above for details on running such gear in the field.
+
+<div class="ke-figure ke-figure-right" data-hires="/images/learning/setup-04-img2046-full.jpg">
 
 ![A tidy power rail setup](./_images/setup-04-img2046.jpg)
+
+<p class="ke-figure-caption">You won't see this kind of gear in the field very often, but when you do you'll likely see it powered off an extension cord instead of a battery. But an untidied mess of power bricks and cables can be bypassed with smart planning, no matter what you use or where you use it.</p>
+
+</div>
 
 ### The Power Rail System
 
@@ -195,7 +229,7 @@ All because I'm trying to tap into AC power to run all of my DC gear!
 
 When I just have a scope in the field, I tend to let cables and bricks hang everywhere, perhaps tied back with a few zip-ties. But if your setup is at least semi-permanent, then it might be a great idea to get rid of all the bricks and power your devices straight from DC. It reduces the total number of cables, allows for shorter runs, and yields an opportunity for a neat and tidy solution.
 
-For my permanent setups, it's hard to beat a Powerwerx RigRunner Power Distribution Rail. It receives input power from your AC/DC power supply (I use Pyramid 10 to 20 amp supplies and route power cables through the Paramount). It routes the power through individual in-line fuses and provides Anderson "power pole" connectors for output to all your DC powered devices. Modifications and/or DIY cabling terminated with the same power pole connectors is required. The Rigrunner is mounted on a rail attached to the saddle plate of the mount, hugging the tube (OTA) of the telescope itself. This puts a supply of safe, reliable power RIGHT NEXT TO all of your power hungry devices. This means short and tidy cable runs, all of which spin around with the telescope.
+For my permanent setups, it's hard to beat a Powerwerx RigRunner Power Distribution Rail. It receives input power from your AC/DC power supply (I use Pyramid 10 to 20 amp supplies and route power cables through the Paramount, shown at left below). It routes the power through individual in-line fuses and provides Anderson "power pole" connectors for output to all your DC powered devices. Modifications and/or DIY cabling terminated with the same power pole connectors is required. The Rigrunner is mounted on a rail attached to the saddle plate of the mount, hugging the tube (OTA) of the telescope itself. This puts a supply of safe, reliable power RIGHT NEXT TO all of your power hungry devices. This means short and tidy cable runs, all of which spin around with the telescope.
 
 Route a USB cable through your mount and put a USB hub next to the Rigrunner alongside your dew heater and autofocuser controllers and you've got a slick, pretty, cable free set-up.
 
@@ -203,13 +237,19 @@ The Rigrunners are available in many sizes and any number of outlets (I use 8 or
 
 There's nothing preventing you from using Power Distribution tools like these when in the field, as it does make cable management easier. But it's not something you want to disassemble each time either. Thus, to make it portable, you would have to compensate for how you transport your telescopes, since the added attachments to your scopes and mounts are unlikely to fit in your instrument cases!
 
+<div class="ke-figure ke-figure-left" data-hires="/images/learning/setup-05-img2587-full.jpeg">
+
 ![The power rail system in use](./_images/setup-05-img2587.jpg)
+
+<p class="ke-figure-caption">2017 Total Solar Eclipse Setup - First, notice the box on the tripod tray. That is an AC/DC Inverter, run from a big deep-cycle RV battery (not shown). My inverter is 3000W, which is overkill. A good 500 to 1000W would be good enough for this setup. Second, notice that the Takahashi is missing a camera. I had another DSLR, but I left my second camera adapter at home. Thus, I missed capturing the first part of totality because I had to switch cameras on the fly. "Be Prepared" is not just a Boy Scout motto!</p>
+
+</div>
 
 ### Power Summary
 
 As you can see, there are many variables to how you might want to supply power to your setups in the observing field. No doubt, you can see how important it is to consider such requirements when you choose a site.
 
-As a veteran of transporting all types of gear all over the place, setting up in a wide-variety of both powered and non-powered sites, I discovered that setting up with DC power in the field is a real chore with my gear. Because of this, I will always opt to find an AC outlet somewhere for my typical imaging setup. For my solar gear, or simple deep space photography with a DSLR, I will sometimes bring a big battery and inverter, running everything from the inverter. This was my setup for the 2017 total solar eclipse...cable management be damned.
+As a veteran of transporting all types of gear all over the place, setting up in a wide-variety of both powered and non-powered sites, I discovered that setting up with DC power in the field is a real chore with my gear. Because of this, I will always opt to find an AC outlet somewhere for my typical imaging setup. For my solar gear, or simple deep space photography with a DSLR, I will sometimes bring a big battery and inverter, running everything from the inverter (see the 2017 total solar eclipse setup above). This was my setup for the 2017 total solar eclipse...cable management be damned.
 
 For visual observing or public observing, if I need power (with my EQ mounted refractors) I will find an outlet. If I know I will not have power, I typically will bring a Dobsonian scope...or an SCT with battery.
 
@@ -231,7 +271,7 @@ You will be glad you did.
 
 **Quick Tip** - Don't spray deet around your equipment. It doesn't treat optical coatings very well, among other things.
 
-
+<div class="ke-clear"></div>
 
 ## Weather and Communications
 
@@ -241,9 +281,15 @@ Being in contact with civilization is important. You really should call your fam
 
 Of course, weather is not a respecter of persons, and it could care less if you have a cell phone or not. So what happens when you find yourself in bad weather?
 
+In the spring of 2016, I brought my family and friends with me to CSAC for a weekend of camping and astronomy fun. Of course, some bad weather decided to meet us there, as shown below:
+
+<div class="ke-figure">
+
 ![A tornado warning during a CSAC camping trip](./_images/setup-06-tornado.jpg)
 
-In the spring of 2016, I brought my family and friends with me to CSAC for a weekend of camping and astronomy fun. Of course, some bad weather decided to meet us there. Tornadoes were in the area, a fact that I knew because I was in constant communication with my friend, Jeff Barton, who is the Director of Astronomy for the campus. Although we were spared of a tornado here, we all piled into the storm shelter until the weather had safely passed.
+</div>
+
+Tornadoes were in the area, a fact that I knew because I was in constant communication with my friend, Jeff Barton, who is the Director of Astronomy for the campus. Although we were spared of a tornado here, we all piled into the storm shelter until the weather had safely passed.
 
 Had this been an astronomy-specific trip, without family and friends, I would have likely stayed home in the first place. Being aware of the weather in the days before a trip can save you grief later. But you should have a plan in case you do get caught in the storm, not only for yourself, but for your equipment. Again, tarps and stakes are important, as are area shelters.
 
@@ -251,13 +297,43 @@ Cold weather is something to plan for as well. I can't tell you how many times I
 
 Heat is less of a problem for many people, but in Texas it can quickly become oppressive during a huge chunk of the year. Taking care of yourself is the most important task. Bring water to drink and sunscreen for the body. Be aware of critter activity as well, since warm weather brings them out in full force. Make sure your cooler has enough ice. Don't laugh - you don't want to be around me when the beer is warm.
 
+<div class="ke-figure ke-figure-left" data-hires="/images/learning/setup-07-omega-full.jpeg">
+
 ![Omega Centauri (NGC 5139)](./_images/setup-07-omega.jpg)
+
+<p class="ke-figure-caption">Taken at the 2012 Texas Star Party with the 6" Tak TOA-150 and SBIG STL-6303e.</p>
+
+</div>
+
+<div class="ke-sidebar" data-side="right" data-width="wide">
+
+## Sidebar: Omega Adventures
+
+In 2003, I attended my 2nd Texas Star Party. I was an excited tent camper, ready to go with my 10" LX200 Classic and 3" Tak FS-78 with Losmandy GM-8 setups.
+
+![Omega Centauri, first attempt](./_images/setup-08-omega-centauri.jpg)
+
+I was transitioning at the time, beginning to experiment more with astro CCDs as dedicated imagers, rather than to "autoguide" my film images. Thus, my Nikon F2 SLR with Meade 208xt guider gave way to an SBIG STV, which I purchased to serve both duties, as well as to do live video observing for public outreach events.
+
+All kinds of faint objects become visible in those dark skies, but Omega Centauri (NGC 5139) becomes THE prime target for all TSP participants who more than likely travelled somewhere from the north to be there.
+
+Pictured above is my shot of the object, taken during the event with the STV through the SCT on "super-wedge" with f/6.3 reducer. Obviously, the image above is nothing to be tremendously proud of, at least by today's standards. But, it's mine, and I was happy to capture it!
+
+If an object like Omega is a goal, then where you position yourself should be priority, since you will NOT want to re-align your equatorial setup when you realize that there's a big dob blocking your view. This was my situation for the above image.
+
+But when all is good and you have clear access to the photons, you can enjoy the year-to-year adventure of capturing or viewing a spectacular object like NGC 5139 every year. Here's a couple more shots of Omega. A lot of progress can be made over the years. Just takes practice...and knowing where to setup your scope in the first place!
+
+![Omega Centauri, a later attempt](./_images/setup-09-omega-1600.jpg)
+
+<p class="ke-figure-caption">Taken one year after the above version at the 2004 Texas Star Party.</p>
+
+</div>
 
 ## Observation Plans
 
 If you are doing solar observing - or moon and planets for public outreach - then WHERE you setup isn't important. But for the dedicated observer or astro-imager, your location and specific site should account for the specific things that you want to see. For example, many people who come to TSP for the first time are excited to see Omega Centauri, since it rises an amazing 11 degrees above the southern horizon. But it's only amazing if you position your telescope away from enough trees and mountains to actually see it.
 
-Not just that, but at a star party, it's very likely that your dob might be blocked by the telescopes of people setting up around you. You will need direct line of sight to such objects. Speaking of Omega Centauri, I am excited to see it every year at TSP, but my first efforts to image it digitally were briefly thwarted. After aligning my telescope carefully for what seems half of the night, I didn't realize that I would be blocked by my neighbor's 6" refractor.
+Not just that, but at a star party, it's very likely that your dob might be blocked by the telescopes of people setting up around you. You will need direct line of sight to such objects. Speaking of Omega Centauri, I am excited to see it every year at TSP, but my first efforts to image it digitally were briefly thwarted. After aligning my telescope carefully for what seems half of the night, I didn't realize that I would be blocked by my neighbor's 6" refractor. See Sidebar: Omega Adventures at right.
 
 Many people, hoping to optimize their time under the skies, have their observing lists and imaging targets before they start. At TSP, you might be gunning for some observing pins. Perhaps you are going after your Messiers or Herschels for your Astronomical League certificate? How about doing a Messier marathon, where you orchestrate observations of all 110 Messiers on the same night?
 
@@ -267,31 +343,23 @@ I'm not a list guy. I'm a wing-it guy, though I probably have a few imaging targ
 
 You've made it there. Everything is setup; ready to go. But then, a camera stops working. Or, you forgot about a required update to your astronomy program. Or, a USB/serial adapter goes down. Or, a USB cable fails.
 
-Perhaps, like me, you didn't check that you had BOTH of your DSLR adapters with you during the 2017 total solar eclipse and you were forced to switch cameras over just before totality - seriously, I missed the first 30 seconds of totality this past August because I switched too late from the h-alpha scope to the refractor and needed to get focused!
+Perhaps, like me, you didn't check that you had BOTH of your DSLR adapters with you during the 2017 total solar eclipse and you were forced to switch cameras over just before totality - seriously, I missed the first 30 seconds of totality this past August because I switched too late from the h-alpha scope to the refractor and needed to get focused! (See the 2017 Total Solar Eclipse Setup image above.)
 
+<div class="ke-clear"></div>
 
-
-### Omega Adventures
-
-In 2003, I attended my 2nd Texas Star Party. I was an excited tent camper, ready to go with my 10" LX200 Classic and 3" Tak FS-78 with Losmandy GM-8 setups.
-
-I was transitioning at the time, beginning to experiment more with astro CCDs as dedicated imagers, rather than to "autoguide" my film images. Thus, my Nikon F2 SLR with Meade 208xt guider gave way to an SBIG STV, which I purchased to serve both duties, as well as to do live video observing for public outreach events.
-
-![Omega Centauri, first attempt](./_images/setup-08-omega-centauri.jpg)
-
-All kinds of faint objects become visible in those dark skies, but Omega Centauri (NGC 5139) becomes THE prime target for all TSP participants who more than likely travelled somewhere from the north to be there.
-
-![Omega Centauri, a later attempt](./_images/setup-09-omega-1600.jpg)
-
-If an object like Omega is a goal, then where you position yourself should be priority, since you will NOT want to re-align your equatorial setup when you realize that there's a big dob blocking your view. This was my situation.
-
-But when all is good and you have clear access to the photons, you can enjoy the year-to-year adventure of capturing or viewing a spectacular object like NGC 5139 every year. A lot of progress can be made over the years. Just takes practice...and knowing where to setup your scope in the first place!
+Or, you assumed that you had plenty of mylar solar filter material and could make all your filters the week before the eclipse, "No problem!" You guessed it...I had no white-light filters for the eclipse either, since you can't really find the filter material at the last minute!
 
 One friend, long-time astro-imager, Jason Ware, is fond of saying that, "Star parties are for working on equipment." He makes this statement always in jest - but when you are husband to a wife, father of sons and daughters, boss to employees, and servant of people around you, then TIME isn't always on your side. For many of us, the last time you actually did astronomy was at the last major star party - or, at least, it might be the last time we used our portable gear!
 
 If time under the stars is infrequent, then you have two choices before a major excursion - you can do a practice-run at home to assure that all your gear still does what you expect OR you can manage your expectations, accounting for the fact that something might go wrong and you might need to work on equipment the first night of the event. I have learned to do the latter and try not to get too upset when something isn't totally right!
 
+<div class="ke-figure ke-figure-left" data-hires="/images/learning/setup-10-jeff-vic-full.jpg">
+
 ![Getting setup for a major star party](./_images/setup-10-jeff-vic.jpg)
+
+<p class="ke-figure-caption">At TSP 2007, pictured from left to right are Vic Maris (Stellarvue), Jeff Barton, and Don Hopkins. Guys like these make the hobby so much more fun.</p>
+
+</div>
 
 ## Have Great Friends
 
@@ -313,7 +381,7 @@ Although I later built my own observatory in 2001 out in the DFW suburbs, I soon
 
 Your needs will be different than my needs, but I have written this article with the objective of helping you to find the best place to setup a telescope, trying to account for all the variables; all of your potential needs. But I think there is a progression in this hobby, where your needs grow more and more about people and less about the tasks at hand.
 
-For example, I have discovered that I really don't enjoy being by myself under the stars. I need somebody to share the skies with - the joy of seeing something together and the stories you can share as a result - these things are what drives me most.
+For example, I have discovered that I really don't enjoy being by myself under the stars. I need somebody to share the skies with - the joy of seeing something together and the stories you can share as a result - these things are what drives me most. See ["Rocket Fuel Dump"](/gallery/delta-iv-fuel-dump) as an example of what I am talking about.
 
 Wherever you end up setting up your telescope, my number one piece of advice is to share it with others. I've seen scores of amazing things under some of the darkest skies imaginable - but those memories fade over time. What hasn't faded are the experiences I've shared with others - the zaniness of a friend making you laugh all night long - the oohs and aahs of people seeing Saturn through your scope for the first time - the rattlesnakes you've sneaked up on and your friends who have devised new methods of killing them.
 
