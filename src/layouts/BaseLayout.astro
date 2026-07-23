@@ -44,6 +44,16 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     overlayImg.src = fullSrc;
     overlayImg.alt = alt;
     overlay.hidden = false;
+    overlayImg.addEventListener(
+      'load',
+      () => {
+        // Center the initial view on the middle of the image rather than
+        // its top-left corner, since it can be much larger than the viewport.
+        overlay.scrollLeft = (overlayImg.scrollWidth - overlay.clientWidth) / 2;
+        overlay.scrollTop = (overlayImg.scrollHeight - overlay.clientHeight) / 2;
+      },
+      { once: true }
+    );
   }
 
   function closeLightbox() {
@@ -67,7 +77,49 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     });
   });
 
-  overlay.addEventListener('click', closeLightbox);
+  // Click-and-drag panning: the zoomed image can be larger than the
+  // viewport, so dragging scrolls the overlay rather than the page.
+  let isPanning = false;
+  let didPan = false;
+  let panStartX = 0;
+  let panStartY = 0;
+  let panScrollLeft = 0;
+  let panScrollTop = 0;
+
+  overlayImg.addEventListener('mousedown', (e) => {
+    isPanning = true;
+    didPan = false;
+    panStartX = e.pageX;
+    panStartY = e.pageY;
+    panScrollLeft = overlay.scrollLeft;
+    panScrollTop = overlay.scrollTop;
+    overlayImg.classList.add('ke-panning');
+    e.preventDefault();
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isPanning) return;
+    const dx = e.pageX - panStartX;
+    const dy = e.pageY - panStartY;
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) didPan = true;
+    overlay.scrollLeft = panScrollLeft - dx;
+    overlay.scrollTop = panScrollTop - dy;
+  });
+
+  window.addEventListener('mouseup', () => {
+    isPanning = false;
+    overlayImg.classList.remove('ke-panning');
+  });
+
+  overlay.addEventListener('click', () => {
+    // A drag that ends still fires a click; swallow that one so panning
+    // doesn't also close the lightbox.
+    if (didPan) {
+      didPan = false;
+      return;
+    }
+    closeLightbox();
+  });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLightbox();
   });
@@ -652,19 +704,28 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     inset: 0;
     background: rgba(0, 0, 0, 0.85);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* No align-items/justify-content here — centering is done via the
+       image's own `margin: auto` below, which is the standard fix for
+       "flexbox can center content but then you can't scroll to its
+       start edge" when the content overflows the container. */
+    overflow: auto;
     z-index: 1000;
     cursor: zoom-out;
-    padding: 2rem;
   }
   .ke-lightbox[hidden] {
     display: none;
   }
   .ke-lightbox img {
-    max-width: 100%;
-    max-height: 100%;
+    /* Overrides the site-wide `img { max-width: 100% }` reset above: the
+       image renders at native resolution and can spill past the viewport;
+       drag or scroll to pan. */
+    max-width: none;
+    margin: auto;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    cursor: grab;
+  }
+  .ke-lightbox img.ke-panning {
+    cursor: grabbing;
   }
 
   @media (max-width: 700px) {
