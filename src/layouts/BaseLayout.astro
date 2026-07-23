@@ -30,7 +30,7 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
       <slot />
     </main>
     <Footer />
-    <div id="ke-lightbox" class="ke-lightbox" hidden>
+    <div id="ke-lightbox" class="ke-lightbox">
       <img id="ke-lightbox-img" alt="" />
     </div>
   </body>
@@ -40,25 +40,44 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   const overlay = document.getElementById('ke-lightbox') as HTMLDivElement;
   const overlayImg = document.getElementById('ke-lightbox-img') as HTMLImageElement;
 
-  function openLightbox(fullSrc: string, alt: string) {
+  function clamp(value: number, min: number, max: number) {
+    return Math.max(min, Math.min(max, value));
+  }
+
+  // fracX/fracY (0-1) is where the user clicked within the thumbnail —
+  // the zoomed view opens centered on that same point in the full image,
+  // and grows smoothly outward from it rather than popping in centered.
+  function openLightbox(fullSrc: string, alt: string, fracX: number, fracY: number) {
+    // Snap the image to its pre-grow scale with transitions off, so setting
+    // the starting state doesn't itself animate.
+    overlayImg.classList.add('ke-zoom-instant', 'ke-zoom-start');
+    overlayImg.style.transformOrigin = `${fracX * 100}% ${fracY * 100}%`;
     overlayImg.src = fullSrc;
     overlayImg.alt = alt;
-    overlay.hidden = false;
+    overlay.classList.add('ke-open');
+    void overlayImg.offsetWidth; // force layout so the instant snap applies
+    overlayImg.classList.remove('ke-zoom-instant');
+
     overlayImg.addEventListener(
       'load',
       () => {
-        // Center the initial view on the middle of the image rather than
-        // its top-left corner, since it can be much larger than the viewport.
-        overlay.scrollLeft = (overlayImg.scrollWidth - overlay.clientWidth) / 2;
-        overlay.scrollTop = (overlayImg.scrollHeight - overlay.clientHeight) / 2;
+        // Position scroll first — transform doesn't affect layout, so the
+        // clicked point is already centered before the grow animation runs.
+        overlay.scrollLeft = clamp(fracX * overlayImg.scrollWidth - overlay.clientWidth / 2, 0, overlayImg.scrollWidth - overlay.clientWidth);
+        overlay.scrollTop = clamp(fracY * overlayImg.scrollHeight - overlay.clientHeight / 2, 0, overlayImg.scrollHeight - overlay.clientHeight);
+        requestAnimationFrame(() => {
+          overlayImg.classList.remove('ke-zoom-start');
+        });
       },
       { once: true }
     );
   }
 
   function closeLightbox() {
-    overlay.hidden = true;
-    overlayImg.src = '';
+    overlay.classList.remove('ke-open');
+    window.setTimeout(() => {
+      overlayImg.src = '';
+    }, 250);
   }
 
   document.querySelectorAll('article img').forEach((img) => {
@@ -70,10 +89,13 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     // carousel on click rather than opening the full-res zoom.
     if (img.closest('.no-lightbox')) return;
     img.classList.add('ke-zoomable');
-    img.addEventListener('click', () => {
+    img.addEventListener('click', (e) => {
       const hiresHost = img.closest<HTMLElement>('[data-hires]');
       const fullSrc = hiresHost?.dataset.hires || (img as HTMLImageElement).currentSrc || (img as HTMLImageElement).src;
-      openLightbox(fullSrc, (img as HTMLImageElement).alt);
+      const rect = (img as HTMLImageElement).getBoundingClientRect();
+      const fracX = clamp((e.clientX - rect.left) / rect.width, 0, 1);
+      const fracY = clamp((e.clientY - rect.top) / rect.height, 0, 1);
+      openLightbox(fullSrc, (img as HTMLImageElement).alt, fracX, fracY);
     });
   });
 
@@ -699,6 +721,14 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   article img.ke-zoomable {
     cursor: zoom-in;
   }
+  .ke-zoom-hint {
+    margin-top: 0.4rem;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--color-prose-text);
+    text-align: center;
+  }
   .ke-lightbox {
     position: fixed;
     inset: 0;
@@ -711,9 +741,15 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     overflow: auto;
     z-index: 1000;
     cursor: zoom-out;
+    /* Replaces the [hidden] attribute so open/close can fade smoothly —
+       display:none can't transition. */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease;
   }
-  .ke-lightbox[hidden] {
-    display: none;
+  .ke-lightbox.ke-open {
+    opacity: 1;
+    visibility: visible;
   }
   .ke-lightbox img {
     /* Overrides the site-wide `img { max-width: 100% }` reset above: the
@@ -723,9 +759,20 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin: auto;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
     cursor: grab;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
   }
   .ke-lightbox img.ke-panning {
     cursor: grabbing;
+  }
+  /* Grow-from-click-point animation: transform-origin is set inline (in JS)
+     to the fraction of the thumbnail that was clicked, so the zoomed image
+     appears to expand outward from wherever the user clicked. */
+  .ke-lightbox img.ke-zoom-start {
+    transform: scale(0.15);
+  }
+  .ke-lightbox img.ke-zoom-instant {
+    transition: none;
   }
 
   @media (max-width: 700px) {

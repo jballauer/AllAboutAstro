@@ -24,13 +24,16 @@ const hires = hiresMap[entry.id];
   <article>
     <h1>{entry.data.title}</h1>
     {entry.data.image && (
-      hires ? (
-        <span data-hires={hires}>
+      <>
+        {hires ? (
+          <span data-hires={hires}>
+            <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
+          </span>
+        ) : (
           <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
-        </span>
-      ) : (
-        <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
-      )
+        )}
+        <p class="ke-zoom-hint">Click to Zoom</p>
+      </>
     )}
     {entry.data.equipment && <p><strong>Equipment:</strong> {entry.data.equipment}</p>}
     {entry.data.exposure && <p><strong>Exposure:</strong> {entry.data.exposure}</p>}
