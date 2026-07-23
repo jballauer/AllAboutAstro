@@ -92,21 +92,29 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
 
     const state: ZoomState = { zoomed: false, scale: 1, frameW: 0, frameH: 0 };
 
-    // Preload the hi-res file's real dimensions ahead of time (page load,
-    // not click time) so the very first zoom already knows the correct
-    // final scale — otherwise it has to guess using the small inline
-    // image's natural size, then correct itself once the hi-res file
-    // loads, which reads as a jump partway through the zoom instead of
-    // one continuous motion.
+    // Preload AND fully decode the hi-res file ahead of time (page load,
+    // not click time). `load` only means the bytes finished downloading —
+    // the browser can still take a noticeable moment to decode a large
+    // JPEG into a paintable bitmap, and if that decode is still pending
+    // when the zoom-in transform starts, the viewer sees the small blurry
+    // image visibly grow and then *pop* to sharp once decoding finally
+    // catches up — a jump, even though the scale animation itself is
+    // smooth. `decode()` resolves only once a bitmap is actually ready to
+    // paint, so waiting on it (both here and again on the visible <img>
+    // below) is what makes the swap invisible.
     const hiresHost = img.closest<HTMLElement>('[data-hires]');
     const hiresSrc = hiresHost?.dataset.hires;
     let hiresNaturalWidth = 0;
+    let hiresDecoded: Promise<void> = Promise.resolve();
     if (hiresSrc) {
       const preload = new Image();
-      preload.addEventListener('load', () => {
-        hiresNaturalWidth = preload.naturalWidth;
-      });
       preload.src = hiresSrc;
+      hiresDecoded = preload
+        .decode()
+        .catch(() => new Promise<void>((resolve) => preload.addEventListener('load', () => resolve(), { once: true })))
+        .then(() => {
+          hiresNaturalWidth = preload.naturalWidth;
+        });
     }
 
     // x/y are cursor position in frame-local px (0..frameW / 0..frameH).
@@ -139,34 +147,27 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
 
       const resolvedHiresUrl = hiresSrc ? new URL(hiresSrc, location.href).href : null;
 
-      function applyScale() {
-        // Already-known hi-res dimensions (from the preload above) win —
-        // this is what lets the very first zoom animate directly to the
-        // correct final scale in one motion instead of a rough guess that
-        // then jumps once the hi-res file loads.
+      function animateToScale() {
         const natural = hiresNaturalWidth || img.naturalWidth || rect.width * 2.5;
         state.scale = clamp(natural / rect.width, 1.4, 6);
-        // Always animated (never instant) — even the rare cold-load case,
-        // where the preload hasn't finished by click time, should read as
-        // one continuous zoom correcting itself, not a snap.
         positionAt(clickX, clickY, state.scale, false);
       }
 
       if (resolvedHiresUrl && img.src !== resolvedHiresUrl) {
-        if (hiresNaturalWidth) {
-          // Preload already finished — swap straight to the hi-res file
-          // (already decoded/cached) and animate directly to the true scale.
-          img.src = hiresSrc as string;
-          applyScale();
-        } else {
-          // Preload still in flight: start the animation now with the best
-          // guess available, then correct smoothly once it resolves.
-          applyScale();
-          img.addEventListener('load', applyScale, { once: true });
-          img.src = hiresSrc as string;
-        }
+        img.src = hiresSrc as string;
+        // Wait for the swapped-in <img> itself to finish decoding (not
+        // just the earlier background preload) before starting the zoom,
+        // so the transform never reveals a still-decoding/blurry frame —
+        // this is what makes the swap read as one continuous zoom instead
+        // of a jump to the hi-res version partway through.
+        const imgDecoded = img.decode
+          ? img.decode().catch(() => new Promise<void>((resolve) => img.addEventListener('load', () => resolve(), { once: true })))
+          : new Promise<void>((resolve) => img.addEventListener('load', () => resolve(), { once: true }));
+        Promise.all([hiresDecoded, imgDecoded]).then(() => {
+          if (state.zoomed) animateToScale();
+        });
       } else {
-        applyScale();
+        animateToScale();
       }
 
       img.style.cursor = 'zoom-out';
