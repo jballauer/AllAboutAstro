@@ -182,62 +182,64 @@ const presentations = [
         wonderful advances to their understanding of both themselves AND the universe, ultimately giving us, the
         astroimager, more reasons to do what we do.
       </p>
+      <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="learn-sidebar-signature" />
     </div>
 
     <h2>Articles</h2>
-    <h3>Philosophy - Theory - Big Picture Stuff</h3>
-    <p>
-      In the mid-oughts, I began writing a book, <em>All About Astroimaging</em>, which never really got finished.
-      Being a comprehensive and detailed look at the hobby, driven by my own sense of thoroughness, there became no
-      way to ever call it "finished." So, instead of hoarding away the material while persisting toward an end that
-      would never come, I decided to begin converting the chapters and topics into the articles below.
-    </p>
-    <p>
-      Keep in mind that many of the articles are lengthy. There will be stories and humor and illustrations. I like
-      to write, so the articles might even come across as being a bit pretentious. But remember, they were once
-      chapters of a book.
-    </p>
-    <p>
-      Thus, take your time with the articles and try to imagine you are reading your favorite novel. Hopefully you
-      will find the writing both illuminating and enjoyable...
-    </p>
+    <div class="learn-articles">
+      <h3>Philosophy - Theory - Big Picture Stuff</h3>
+      <p>
+        In the mid-oughts, I began writing a book, <em>All About Astroimaging</em>, which never really got finished.
+        Being a comprehensive and detailed look at the hobby, driven by my own sense of thoroughness, there became no
+        way to ever call it "finished." So, instead of hoarding away the material while persisting toward an end that
+        would never come, I decided to begin converting the chapters and topics into the articles below.
+      </p>
+      <p>
+        Keep in mind that many of the articles are lengthy. There will be stories and humor and illustrations. I like
+        to write, so the articles might even come across as being a bit pretentious. But remember, they were once
+        chapters of a book.
+      </p>
+      <p>
+        Thus, take your time with the articles and try to imagine you are reading your favorite novel. Hopefully you
+        will find the writing both illuminating and enjoyable...
+      </p>
 
-    {categories.map((category) => (
-      <>
-        <h3>{category.title}</h3>
-        {category.items.map((item) => {
-          const article = byId[item.id];
-          return (
-            <div class="learn-list-item">
-              <a href={`/learning/${item.id}/`} class="learn-list-thumb">
-                <Image src={item.thumb} alt="" width={150} height={110} />
-              </a>
-              <p class="learn-list-text">
-                <a href={`/learning/${item.id}/`}><strong>{article.data.title}</strong></a>
-                {article.data.description && <> - {article.data.description}</>}
-              </p>
-            </div>
-          );
-        })}
-      </>
-    ))}
+      {categories.map((category) => (
+        <>
+          <h3>{category.title}</h3>
+          {category.items.map((item) => {
+            const article = byId[item.id];
+            return (
+              <div class="learn-list-item">
+                <a href={`/learning/${item.id}/`} class="learn-list-thumb">
+                  <Image src={item.thumb} alt="" width={150} height={110} />
+                </a>
+                <p class="learn-list-text">
+                  <a href={`/learning/${item.id}/`}><strong>{article.data.title}</strong></a>
+                  {article.data.description && <> - {article.data.description}</>}
+                </p>
+              </div>
+            );
+          })}
+        </>
+      ))}
 
-    <h3>Presentations</h3>
-    {presentations.map((pres) => (
-      <div class="learn-list-item">
-        <a href={pres.href} class="learn-list-thumb">
-          <Image src={pres.thumb} alt="" width={150} height={110} />
-        </a>
-        <p class="learn-list-text">
-          <a href={pres.href}><strong>{pres.title}</strong></a>
-          <br />
-          {pres.subtitle} - {pres.description}
-        </p>
-      </div>
-    ))}
+      <h3>Presentations</h3>
+      {presentations.map((pres) => (
+        <div class="learn-list-item">
+          <a href={pres.href} class="learn-list-thumb">
+            <Image src={pres.thumb} alt="" width={150} height={110} />
+          </a>
+          <p class="learn-list-text">
+            <a href={pres.href}><strong>{pres.title}</strong></a>
+            <br />
+            {pres.subtitle} - {pres.description}
+          </p>
+        </div>
+      ))}
+    </div>
 
     <div class="ke-clear"></div>
-    <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="article-signature" />
   </article>
 </BaseLayout>
 
@@ -275,6 +277,24 @@ const presentations = [
     }
   }
 
+  .learn-sidebar-signature {
+    display: block;
+    margin: 1.25rem 0 0 auto;
+  }
+
+  /* Fixed width so the article list wraps identically for every entry,
+     whether or not the sidebar essay is still floated alongside it at
+     that point in the page. */
+  .learn-articles {
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+  @media (max-width: 700px) {
+    .learn-articles {
+      max-width: 100%;
+    }
+  }
+
   .learn-list-item {
     display: flex;
     align-items: flex-start;
@@ -294,9 +314,5 @@ const presentations = [
   }
   .learn-list-text {
     margin: 0;
-  }
-  .article-signature {
-    display: block;
-    margin: 1.5rem 0 0 auto;
   }
 </style>
