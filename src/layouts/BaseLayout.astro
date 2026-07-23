@@ -92,6 +92,23 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
 
     const state: ZoomState = { zoomed: false, scale: 1, frameW: 0, frameH: 0 };
 
+    // Preload the hi-res file's real dimensions ahead of time (page load,
+    // not click time) so the very first zoom already knows the correct
+    // final scale — otherwise it has to guess using the small inline
+    // image's natural size, then correct itself once the hi-res file
+    // loads, which reads as a jump partway through the zoom instead of
+    // one continuous motion.
+    const hiresHost = img.closest<HTMLElement>('[data-hires]');
+    const hiresSrc = hiresHost?.dataset.hires;
+    let hiresNaturalWidth = 0;
+    if (hiresSrc) {
+      const preload = new Image();
+      preload.addEventListener('load', () => {
+        hiresNaturalWidth = preload.naturalWidth;
+      });
+      preload.src = hiresSrc;
+    }
+
     // x/y are cursor position in frame-local px (0..frameW / 0..frameH).
     // The point at that same fraction across the image ends up positioned
     // right at (x, y) — this is what keeps a star glued under the cursor
@@ -120,24 +137,36 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
       frame.style.height = `${rect.height}px`;
       img.classList.add('ke-zoom-img-active');
 
-      const hiresHost = img.closest<HTMLElement>('[data-hires]');
-      const hiresSrc = hiresHost?.dataset.hires;
       const resolvedHiresUrl = hiresSrc ? new URL(hiresSrc, location.href).href : null;
 
-      function applyScale(instant: boolean) {
-        const natural = img.naturalWidth || rect.width * 2.5;
+      function applyScale() {
+        // Already-known hi-res dimensions (from the preload above) win —
+        // this is what lets the very first zoom animate directly to the
+        // correct final scale in one motion instead of a rough guess that
+        // then jumps once the hi-res file loads.
+        const natural = hiresNaturalWidth || img.naturalWidth || rect.width * 2.5;
         state.scale = clamp(natural / rect.width, 1.4, 6);
-        positionAt(clickX, clickY, state.scale, instant);
+        // Always animated (never instant) — even the rare cold-load case,
+        // where the preload hasn't finished by click time, should read as
+        // one continuous zoom correcting itself, not a snap.
+        positionAt(clickX, clickY, state.scale, false);
       }
 
       if (resolvedHiresUrl && img.src !== resolvedHiresUrl) {
-        // Grow immediately using the already-loaded small image, then
-        // refine the scale once the hi-res file finishes loading.
-        applyScale(false);
-        img.addEventListener('load', () => applyScale(true), { once: true });
-        img.src = hiresSrc as string;
+        if (hiresNaturalWidth) {
+          // Preload already finished — swap straight to the hi-res file
+          // (already decoded/cached) and animate directly to the true scale.
+          img.src = hiresSrc as string;
+          applyScale();
+        } else {
+          // Preload still in flight: start the animation now with the best
+          // guess available, then correct smoothly once it resolves.
+          applyScale();
+          img.addEventListener('load', applyScale, { once: true });
+          img.src = hiresSrc as string;
+        }
       } else {
-        applyScale(false);
+        applyScale();
       }
 
       img.style.cursor = 'zoom-out';
