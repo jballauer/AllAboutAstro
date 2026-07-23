@@ -104,10 +104,12 @@ const banner = pageBanners[entry.id];
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <article>
     {banner && <PageBanner src={banner.src} alt={banner.alt} />}
-    <h1>{entry.data.title}</h1>
-    {keLastUpdated && (
-      <p class="ke-last-updated">Last updated: {keLastUpdated}</p>
-    )}
+    <div class="ke-title-row">
+      <h1>{entry.data.title}</h1>
+      {keLastUpdated && (
+        <p class="ke-last-updated">Last updated: {keLastUpdated}</p>
+      )}
+    </div>
     {isKeSubPage && <KeTableOfContents currentId={entry.id} />}
     <Content />
     {entry.id === 'my-favorite-slide-rules' && (
@@ -132,6 +134,17 @@ const banner = pageBanners[entry.id];
     margin: 1.5rem 0 0 auto;
   }
 
+  .ke-title-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .ke-title-row h1 {
+    margin-bottom: 0;
+  }
+
   .ke-last-updated {
     display: inline-block;
     margin: 0 0 1.25rem;
@@ -142,5 +155,6 @@ const banner = pageBanners[entry.id];
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 0.95rem;
+    white-space: nowrap;
   }
 </style>
