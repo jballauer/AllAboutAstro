@@ -490,6 +490,11 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     width: auto;
     margin: 0;
   }
+  /* .ke-sidebar p defaults to the smaller K&E body-text size; here it sits
+     beside plain-default-size prose in .ke-two-col-specs, so match that. */
+  .ke-sidebar.ke-two-col-about p {
+    font-size: 1rem;
+  }
 
   /* K&E numbered image gallery — a grouped set of related photos inside
      a .ke-sidebar, each tagged with a number that matches its caption
