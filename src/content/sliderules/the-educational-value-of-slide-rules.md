@@ -1,7 +1,7 @@
 ---
 title: The Educational Value of Slide Rules
 description: Ten ways slide rules can enhance student learning and performance in mathematics, with classroom activities for teachers.
-order: 5
+order: 3
 draft: false
 ---
 
