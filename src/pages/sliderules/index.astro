@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageBanner from '../../components/PageBanner.astro';
-import { getCollection } from 'astro:content';
 import sliderulesBanner from '../../assets/banners/sliderules-index-banner.jpg';
 import celconArtShot from '../../content/sliderules/_images/my-favorites/art-shot-k-e-celanese-celcon-2400px_orig.jpg';
 import additionDemo from '../../content/sliderules/_images/landing/addition-demo-rulers.jpg';
@@ -22,21 +21,32 @@ import logoPickett from '../../content/sliderules/_images/landing/maker-logos/pi
 import logoPost from '../../content/sliderules/_images/landing/maker-logos/post.jpg';
 import logoHemmi from '../../content/sliderules/_images/landing/maker-logos/hemmi.jpg';
 import logoSic from '../../content/sliderules/_images/landing/maker-logos/sic.jpg';
-
-const entries = (await getCollection('sliderules', ({ data }) => !data.draft)).sort(
-  (a, b) => a.data.order - b.data.order
-);
+import newHyperlog from '../../content/sliderules/_images/landing/new-to-collection/aristo-0972-hyperlog.jpg';
+import new4095 from '../../content/sliderules/_images/landing/new-to-collection/ke-4095-triangular.jpeg';
+import newCalculimetre from '../../content/sliderules/_images/landing/new-to-collection/charpentier-calculimetre.jpg';
+import newMilitary from '../../content/sliderules/_images/landing/new-to-collection/military-american-blueprint.jpg';
+import newN4101 from '../../content/sliderules/_images/landing/new-to-collection/ke-n4101-stadia.jpg';
+import newPickett6T from '../../content/sliderules/_images/landing/new-to-collection/pickett-6-t.jpg';
 
 const makerLogos = [
-  { src: logoAristo, alt: 'Dennert & Pape / Aristo logo' },
-  { src: logoDietzgen, alt: 'Dietzgen logo' },
+  { src: logoAristo, alt: 'Dennert & Pape / Aristo logo', href: '/sliderules/aristo/' },
+  { src: logoDietzgen, alt: 'Dietzgen logo', href: '/sliderules/dietzgen/' },
   { src: logoKe, alt: 'Keuffel & Esser logo', href: '/sliderules/all-about-ke-rules/' },
-  { src: logoFaberCastell, alt: 'Faber-Castell logo' },
-  { src: logoNestler, alt: 'Albert Nestler logo' },
+  { src: logoFaberCastell, alt: 'Faber-Castell logo', href: '/sliderules/faber-castell/' },
+  { src: logoNestler, alt: 'Albert Nestler logo', href: '/sliderules/nestler/' },
   { src: logoPickett, alt: 'Pickett logo', href: '/sliderules/pickett/' },
-  { src: logoPost, alt: 'Post logo' },
-  { src: logoHemmi, alt: "Hemmi's Bamboo Slide Rule logo" },
-  { src: logoSic, alt: 'Scientific Instruments Company logo' },
+  { src: logoPost, alt: 'Post logo', href: '/sliderules/post/' },
+  { src: logoHemmi, alt: "Hemmi's Bamboo Slide Rule logo", href: '/sliderules/hemmi/' },
+  { src: logoSic, alt: 'Scientific Instruments Company logo', href: '/sliderules/sic/' },
+];
+
+const newAcquisitions = [
+  { src: newHyperlog, caption: 'Aristo 0972 HyperLog', date: 'acquired August 23, 2024' },
+  { src: new4095, caption: 'K&E Model 4095 Triangular Metal Rule', date: 'acquired August 12, 2024' },
+  { src: newCalculimetre, caption: 'Charpentier Calculimetre', date: 'acquired August 5, 2024' },
+  { src: newMilitary, caption: 'Military Slide Rule, American Blueprint Company', date: 'acquired July 26, 2024' },
+  { src: newN4101, caption: '20" K&E N4101 Stadia Surveying Rule', date: 'acquired on July 19, 2024' },
+  { src: newPickett6T, caption: 'Pickett Model 6-T Statistical Quality Control Rule', date: 'acquired on July 18, 2024' },
 ];
 ---
 
@@ -51,7 +61,7 @@ const makerLogos = [
 
   <p>What follows is documentation; a written and picture record of my collection. But more than that, it'll be a place where I can explore the slide rule universe and contribute something back to it. Articles on the site, much like my Astronomy articles, are more like books than they are blog posts or essays. Read them a little, digest some of it, and then come back for more.</p>
 
-  <p>Each of the major slide rule manufacturers will likely have their own dedicated webpage, full of historical information and samples of slide rules from my own collection. These individual pages have the potential to turn into something far more ambitious, as has happened to my page about Keuffel & Esser (K&E). As such, these pages will always be under construction, as they represent a living, changing documentation of my own learning. At any time, you could consider such pages "complete," but you should know that they often go through many revisions over time.</p>
+  <p>Each of the major slide rule manufacturers will likely have their own dedicated webpage, full of historical information and samples of slide rules from my own collection — you can jump to any of them from the nine manufacturer logos near the bottom of this page. These individual pages have the potential to turn into something far more ambitious, as has happened to my page about Keuffel & Esser (K&E). As such, these pages will always be under construction, as they represent a living, changing documentation of my own learning. At any time, you could consider such pages "complete," but you should know that they often go through many revisions over time.</p>
 
   <div class="ke-figure">
     <Image src={celconArtShot} alt="Close-up of a K&E Celanese Celcon slide rule with Jay's cursive signature" />
@@ -63,35 +73,41 @@ const makerLogos = [
 
   <p>I've written an entire article about what I'm talking about here, called <a href="/sliderules/the-educational-value-of-slide-rules/">"The Educational Value of Slide Rules."</a> Click on the link to open a new window, where you will learn ten specific ways that slide rules can enhance student learning and performance in mathematics. And for teachers, the article is FILLED with activities to use with your own students. You'll probably even be able to use a slide rule after reading it!</p>
 
-  <h2>My Favorite Slide Rules</h2>
-  <p>My favorite thing about slide rules is how they feel in your hands. It's much like a telescope or a guitar in that regard...if you like the way it feels - the heft, the action, the smoothness - then you are more likely to want to use a slide rule. And these become the ones you like the most. As a collector, perhaps your favorites will be those that were harder to come by. Maybe its the rare rule in your collection that is also your most valuable. But for me, it's the one I enjoy holding the most.</p>
+  <div class="ke-sidebar" data-side="right">
+    <h2>My Favorite Slide Rules</h2>
+    <p>My favorite thing about slide rules is how they feel in your hands. It's much like a telescope or a guitar in that regard...if you like the way it feels - the heft, the action, the smoothness - then you are more likely to want to use a slide rule. And these become the ones you like the most. As a collector, perhaps your favorites will be those that were harder to come by. Maybe its the rare rule in your collection that is also your most valuable. But for me, it's the one I enjoy holding the most.</p>
 
-  <p>Well, that's partially true. This slide rule barely fits in your hand...</p>
+    <p>Well, that's partially true. This slide rule barely fits in your hand...</p>
 
-  <div class="ke-figure">
-    <Image src={decilon5Truck} alt="A 6.5 foot K&E Deci-Lon demonstration slide rule laid diagonally across a truck bed" />
-  </div>
+    <div class="ke-figure">
+      <Image src={decilon5Truck} alt="A 6.5 foot K&E Deci-Lon demonstration slide rule laid diagonally across a truck bed" />
+    </div>
 
-  <p>Found on Craigslist in Austin and picked up by my cousin, Brady, this is my K&E Deci-Lon demonstration slide rule. Once property of Mineola ISD here in Texas, as shown on the still affixed inventory tag, this 6.5 foot slide rule used to hang in a high school classroom. Many such rules exist, including two Picketts, the N1010-ES and N902-ES demonstration rules that I also own. But this one is just cool...and quite rare. It now hangs in my OWN math classroom.</p>
+    <p>Found on Craigslist in Austin and picked up by my cousin, Brady, this is my K&E Deci-Lon demonstration slide rule. Once property of Mineola ISD here in Texas, as shown on the still affixed inventory tag, this 6.5 foot slide rule used to hang in a high school classroom. Many such rules exist, including two Picketts, the N1010-ES and N902-ES demonstration rules that I also own. But this one is just cool...and quite rare. It now hangs in my OWN math classroom.</p>
 
-  <p>Many of my slide rules have similar stories which endear them to me beyond how they feel in my hand. These too become favorites.</p>
+    <p>Many of my slide rules have similar stories which endear them to me beyond how they feel in my hand. These too become favorites.</p>
 
-  <p>I'll be adding all of my collection to this site at some point, but for now, if you want to know what my favorites are, then let's just jump right into them from here...<a href="/sliderules/my-favorite-slide-rules/">MY FAVORITE SLIDE RULES</a>.</p>
+    <div class="ke-figure">
+      <Image src={classroomWall} alt="Jay's slide rule collection mounted on display across a classroom wall" />
+      <p class="ke-figure-caption">My slide rule collection on full display in my classroom.</p>
+    </div>
 
-  <div class="ke-figure">
-    <Image src={classroomWall} alt="Jay's slide rule collection mounted on display across a classroom wall" />
-    <p class="ke-figure-caption">My slide rule collection on full display in my classroom.</p>
+    <p>I'll be adding all of my collection to this site at some point, but for now, if you want to know what my favorites are, take a look here.</p>
+
+    <p><a href="/sliderules/my-favorite-slide-rules/">My Favorite Slide Rules →</a></p>
   </div>
 
   <h2>New to the Collection...</h2>
-  <ul>
-    <li>Aristo 0972 HyperLog - acquired August 23, 2024</li>
-    <li>K&E Model 4095 Triangular Metal Rule - acquired August 12, 2024</li>
-    <li>Charpentier Calculimetre - acquired August 5, 2024</li>
-    <li>Military Slide Rule, American Blueprint Company - acquired July 26, 2024</li>
-    <li>20" K&E N4101 Stadia Surveying Rule - acquired on July 19, 2024</li>
-    <li>Pickett Model 6-T Statistical Quality Control Rule - acquired on July 18, 2024</li>
-  </ul>
+  <div class="ke-collection-gallery">
+    {newAcquisitions.map((item) => (
+      <div class="ke-collection-item">
+        <Image src={item.src} alt={item.caption} />
+        <p class="ke-collection-caption">{item.caption}<br /><span>{item.date}</span></p>
+      </div>
+    ))}
+  </div>
+
+  <div class="ke-clear"></div>
 
   <h2>Slide Rule Basics</h2>
   <p>With two rulers, who needs a fancy calculator to add numbers? Clearly, from the image shown at right...</p>
@@ -183,14 +199,5 @@ const makerLogos = [
       )
     )}
   </div>
-
-  <h2>All Pages</h2>
-  <ul>
-    {entries.map((entry) => (
-      <li>
-        <a href={`/sliderules/${entry.id}/`}>{entry.data.title}</a>
-      </li>
-    ))}
-  </ul>
   </article>
 </BaseLayout>

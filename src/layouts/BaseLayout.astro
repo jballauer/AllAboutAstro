@@ -911,4 +911,48 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   a.ke-maker-logo:focus-visible {
     box-shadow: 0 2px 12px rgba(255, 255, 255, 0.35);
   }
+
+  /* Small photo-gallery grid (e.g. "New to the Collection" on Jay's Slide
+     Rules landing page) — 2 columns so it stays comfortable in the column
+     left over beside an active .ke-sidebar, rather than the 3+ columns a
+     full-width gallery could support. */
+  .ke-collection-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .ke-collection-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .ke-collection-item img {
+    display: block;
+    flex-shrink: 0;
+    width: 50%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .ke-collection-caption {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--color-prose-text);
+    margin: 0;
+  }
+  .ke-collection-caption span {
+    opacity: 0.7;
+    font-size: 0.75rem;
+  }
+  @media (max-width: 500px) {
+    .ke-collection-item {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .ke-collection-item img {
+      width: 100%;
+    }
+  }
 </style>
