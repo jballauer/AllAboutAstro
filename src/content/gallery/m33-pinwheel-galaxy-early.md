@@ -1,6 +1,6 @@
 ---
-title: "M33 - The Pinwheel Galaxy"
-description: M33, the Triangulum Galaxy, an earlier image from Jay's archive.
+title: "M33 - The Pinwheel Galaxy (LRGB)"
+description: M33, the Triangulum Galaxy, an earlier LRGB image from Jay's archive.
 pubDate: 2017-10-09
 image: ./_images/m33-pinwheel-galaxy-early.jpg
 draft: false

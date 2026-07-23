@@ -1,5 +1,5 @@
 ---
-title: M33 - The Pinwheel Galaxy in Triangulum
+title: M33 - The Pinwheel Galaxy in Triangulum (HaRGB)
 description: An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies.
 pubDate: 2017-11-22
 image: ./_images/m33-pinwheel-galaxy.jpg
