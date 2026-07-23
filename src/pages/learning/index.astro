@@ -1,22 +1,302 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageBanner from '../../components/PageBanner.astro';
 import { getCollection } from 'astro:content';
 import learningBanner from '../../assets/banners/learning-banner.png';
+import signatureImage from '../../assets/home/signature-transparent.png';
 
-const articles = (await getCollection('learning', ({ data }) => !data.draft)).sort(
-  (a, b) => a.data.order - b.data.order
-);
+import thumbHowToLearn from '../../content/learning/_images/thumbs/how-to-learn-astrophotography.jpg';
+import thumbSpaceIsALandscape from '../../content/learning/_images/thumbs/space-is-a-landscape.jpg';
+import thumbDevelopingAPlan from '../../content/learning/_images/thumbs/developing-a-plan-for-our-images.png';
+import thumbRollOffRoof from '../../content/learning/_images/thumbs/building-a-roll-off-roof-observatory.jpg';
+import thumbBestDataAcquisition from '../../content/learning/_images/thumbs/best-data-acquisition-practices.jpg';
+import thumbTelescopeBuyersGuide from '../../content/learning/_images/thumbs/a-telescope-buyers-guide.jpg';
+import thumb35mmFilmCamera from '../../content/learning/_images/thumbs/choosing-a-35mm-film-camera.jpg';
+import thumbImageProcessing from '../../content/learning/_images/thumbs/the-task-of-image-processing.jpg';
+import thumbAstronomyAndWeather from '../../content/learning/_images/thumbs/astronomy-and-the-weather.jpg';
+import thumbWhereToSetup from '../../content/learning/_images/thumbs/where-to-setup-your-telescope.jpg';
+import thumbDoDarkSkies from '../../content/learning/_images/thumbs/do-dark-skies-really-matter.jpg';
+import thumbGlobularClusters from '../../content/learning/_images/thumbs/globular-clusters.jpg';
+import thumbEclipse from '../../content/learning/_images/eclipse24-01-hero.jpg';
+
+import thumbPresFwas from '../../content/learning/_images/thumbs/pres-fwas-2015.jpg';
+import thumbPresNeaic from '../../content/learning/_images/thumbs/pres-neaic-2015.jpg';
+import thumbPresPhotoshop from '../../content/learning/_images/thumbs/pres-photoshop-workflows.png';
+import thumbPresMath from '../../content/learning/_images/thumbs/pres-math-in-astronomy.png';
+
+const articles = await getCollection('learning', ({ data }) => !data.draft);
+const byId = Object.fromEntries(articles.map((a) => [a.id, a]));
+
+// Categorized groupings and thumbnails match the original Weebly page's
+// "Articles" list exactly (not the `order` frontmatter field, which was
+// assigned during migration and doesn't reflect these categories).
+const categories = [
+  {
+    title: 'Imaging Theory - Resources for Learning - Casual Reading',
+    items: [
+      { id: 'how-to-learn-astrophotography', thumb: thumbHowToLearn },
+      { id: 'space-is-a-landscape', thumb: thumbSpaceIsALandscape },
+      { id: 'developing-a-plan-for-our-images', thumb: thumbDevelopingAPlan },
+      { id: 'building-a-roll-off-roof-observatory', thumb: thumbRollOffRoof },
+    ],
+  },
+  {
+    title: 'Data Acquisition - Equipment - Techniques',
+    items: [
+      { id: 'best-data-acquisition-practices', thumb: thumbBestDataAcquisition },
+      { id: 'a-telescope-buyers-guide', thumb: thumbTelescopeBuyersGuide },
+      { id: 'choosing-a-35mm-film-camera', thumb: thumb35mmFilmCamera },
+    ],
+  },
+  {
+    title: 'Processing - Software - Techniques - Tips',
+    items: [{ id: 'the-task-of-image-processing', thumb: thumbImageProcessing }],
+  },
+  {
+    title: 'Astronomy - The Night Sky - Observing',
+    items: [
+      { id: 'astronomy-and-the-weather', thumb: thumbAstronomyAndWeather },
+      { id: 'where-to-setup-your-telescope', thumb: thumbWhereToSetup },
+      { id: 'do-dark-skies-really-matter', thumb: thumbDoDarkSkies },
+      { id: 'globular-clusters', thumb: thumbGlobularClusters },
+      // Added after the original Weebly page was archived; grouped here
+      // since it's an observing guide like its neighbors in this category.
+      { id: 'great-american-solar-eclipse-2024', thumb: thumbEclipse },
+    ],
+  },
+];
+
+// External talks/slide decks, never migrated onto this site — original
+// files are large (up to 135MB) and stay hosted on the legacy domain
+// rather than being committed into this repo.
+const presentations = [
+  {
+    title: '"Astroimaging Tricks of the Trade"',
+    subtitle: 'Fort Worth Astronomical Society, January 2004',
+    description:
+      "A good guide for showing the capabilities for today's amateur imager and some tips for making amazing astroimages.",
+    href: 'https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/fwas_january_2015.ppt',
+    thumb: thumbPresFwas,
+  },
+  {
+    title: '"How to Build an Astroimager"',
+    subtitle: 'NEAIC 2014',
+    description:
+      'Originally presented in 4 sessions, this is the most comprehensive treatment of astrophotography that you will likely find.',
+    href: 'https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/neaic_sessions_2015.pptm',
+    thumb: thumbPresNeaic,
+  },
+  {
+    title: '"Photoshop Workflows"',
+    subtitle: 'Texas Star Party, April 2014',
+    description: 'Steps you through the Photoshop Workflow, including processing tips, philosophy, and art advice.',
+    href: 'https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/photoshop_workflows_tsp_2015.ppsx',
+    thumb: thumbPresPhotoshop,
+  },
+  {
+    title: '"Math in Astronomy"',
+    subtitle: 'Mansfield ISD, June 2014',
+    description: 'Given to district Astronomy teacher providing ways to connect to math outside of textbook instruction.',
+    href: 'https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/math_in_astronomy_june_2015.pptx',
+    thumb: thumbPresMath,
+  },
+];
 ---
 
-<BaseLayout title="Learning">
-  <PageBanner src={learningBanner} alt="A close-up collage of the Pillars of Creation in the Eagle Nebula" />
-  <h1>Learning</h1>
-  <ul>
-    {articles.map((article) => (
-      <li>
-        <a href={`/learning/${article.id}/`}>{article.data.title}</a>
-      </li>
+<BaseLayout title="Learning" description="Articles, presentations, and resources for learning astrophotography.">
+  <article>
+    <PageBanner src={learningBanner} alt="A close-up collage of the Pillars of Creation in the Eagle Nebula" />
+    <h1>Learning</h1>
+
+    <div class="learn-sidebar" data-color="orange" style="width: 45%">
+      <h2>Learning Astrophotography</h2>
+      <p>
+        At present, we are in a golden age for astronomy. Technology has provided marvelous glimpses into our past by
+        allowing scientists to capture photons and waves as perfectly preserved time capsules, a treasure chest full
+        of our origins and beginnings. Large telescopes, both land-based and space-based, both optical and radio,
+        have greatly enhanced our understanding of the universe.
+      </p>
+      <p>
+        Amazingly, these same technologies have now funneled into the hands of amateurs, who currently possess the
+        tools to take over much of the astronomical science that is traditionally the function of major
+        observatories. Measuring changes in the illuminations of variable stars, double star research, supernovae
+        detection, asteroid and minor planet tracking, exo-planet detection, and even all-sky surveys are NOW
+        prominently the domain of amateur astronomers.
+      </p>
+      <p>
+        There is something wonderful about connecting to the scientific community, a source of pride in being a part
+        of the only real science that allows an amateur to make a meaningful contribution.
+      </p>
+      <p>But let's be honest here.</p>
+      <p>
+        Despite the name, "All About Astro," this is a site about astrophotography. You are a newbie who's just
+        getting started. Or perhaps you are reading this page because you desire to produce better pictures? Maybe
+        you just want to make round stars with your CG-5-type mount - or understand more about Curves in Photoshop -
+        or learn about the acceptable use of color in an image.
+      </p>
+      <p>You want an answer to the question, "How artsy is too artsy?"</p>
+      <p>
+        You are the essence of the modern day amateur astrophotographer - a person who was likely impacted by the
+        visceral thrill of Hubble images (and now the James Webb Telescope) and who has always loved both astronomy
+        and photography - the merger was inevitable - and now, you, a most special breed of photographer, is looking
+        to do it a little better.
+      </p>
+      <p>
+        Put another way - you want to create space images, using science as a method or basis for an acceptable,
+        satisfying, and artful result.
+      </p>
+      <p>
+        These articles, writings, presentations, and tutorials makes no pretense about that. We can spend veritable
+        thousands on hardware and software that yield better data - this, in itself, is the essence of good science.
+        But capturing that data, interpreting it, and then re-interpreting it in a visual display medium is purely
+        art. As soon as you start your first non-linear stretch (Photoshop "curves") of the data, you will no longer
+        be able to gauge anything about the relative brightness of an object. It is the beginning of a chain of image
+        processing choices that will skew perception and color.
+      </p>
+      <p>
+        How image details relate to one another will forever be subject to interpretation; and thus methodologies
+        will be highly debated. For example, a Google search for images of an object will testify that there is no
+        "right" answer. But whether our chain of choices produces minor or severe changes in differences from other
+        images, any end result should prompt further inspection, giving rise to an investigation into what caused
+        those differences.
+      </p>
+      <p>
+        So, accept it now - as an astrophotographer, your end results will have little scientific validity in the
+        eyes of the scientific community. But in truth, neither does a Hubble image, other than to yield a different
+        perspective previously never seen in an already known object. Hubble images inspire more than they inform.
+        Your images should too inspire more than they inform.
+      </p>
+      <p>
+        For me, this is the goal of an image - to show an object in such a way that hints at a real possibility,
+        inspiring us, and others, to ask more questions.
+      </p>
+      <p>
+        Instead of real science, artists like us have to take solace in the fact that our APOD winning images tell a
+        story. A story so important that it inspires professional astronomers, philosophers, and poets to do their
+        jobs.
+      </p>
+      <p>
+        These tutorials, and this site, is for those who hope to change the world by doing what the Hubble has done -
+        make kids and adults alike choose lifelong vocations (and avocations) where their inquiries will yield
+        wonderful advances to their understanding of both themselves AND the universe, ultimately giving us, the
+        astroimager, more reasons to do what we do.
+      </p>
+    </div>
+
+    <h2>Articles</h2>
+    <h3>Philosophy - Theory - Big Picture Stuff</h3>
+    <p>
+      In the mid-oughts, I began writing a book, <em>All About Astroimaging</em>, which never really got finished.
+      Being a comprehensive and detailed look at the hobby, driven by my own sense of thoroughness, there became no
+      way to ever call it "finished." So, instead of hoarding away the material while persisting toward an end that
+      would never come, I decided to begin converting the chapters and topics into the articles below.
+    </p>
+    <p>
+      Keep in mind that many of the articles are lengthy. There will be stories and humor and illustrations. I like
+      to write, so the articles might even come across as being a bit pretentious. But remember, they were once
+      chapters of a book.
+    </p>
+    <p>
+      Thus, take your time with the articles and try to imagine you are reading your favorite novel. Hopefully you
+      will find the writing both illuminating and enjoyable...
+    </p>
+
+    {categories.map((category) => (
+      <>
+        <h3>{category.title}</h3>
+        {category.items.map((item) => {
+          const article = byId[item.id];
+          return (
+            <div class="learn-list-item">
+              <a href={`/learning/${item.id}/`} class="learn-list-thumb">
+                <Image src={item.thumb} alt="" width={150} height={110} />
+              </a>
+              <p class="learn-list-text">
+                <a href={`/learning/${item.id}/`}><strong>{article.data.title}</strong></a>
+                {article.data.description && <> - {article.data.description}</>}
+              </p>
+            </div>
+          );
+        })}
+      </>
     ))}
-  </ul>
+
+    <h3>Presentations</h3>
+    {presentations.map((pres) => (
+      <div class="learn-list-item">
+        <a href={pres.href} class="learn-list-thumb">
+          <Image src={pres.thumb} alt="" width={150} height={110} />
+        </a>
+        <p class="learn-list-text">
+          <a href={pres.href}><strong>{pres.title}</strong></a>
+          <br />
+          {pres.subtitle} - {pres.description}
+        </p>
+      </div>
+    ))}
+
+    <div class="ke-clear"></div>
+    <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="article-signature" />
+  </article>
 </BaseLayout>
+
+<style>
+  .learn-sidebar {
+    background-color: #a85a2a;
+    color: #fff;
+    padding: 20px;
+    margin: 0.3rem 0 1rem 1.75rem;
+    box-sizing: border-box;
+    float: right;
+  }
+  .learn-sidebar h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  }
+  .learn-sidebar p {
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    line-height: var(--prose-line-height);
+    color: rgba(255, 255, 255, 0.92);
+  }
+  @media (max-width: 700px) {
+    .learn-sidebar {
+      float: none;
+      width: 100% !important;
+      margin: 0.3rem 0 1rem;
+    }
+  }
+
+  .learn-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .learn-list-thumb {
+    flex-shrink: 0;
+    display: block;
+  }
+  .learn-list-thumb img {
+    display: block;
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .learn-list-text {
+    margin: 0;
+  }
+  .article-signature {
+    display: block;
+    margin: 1.5rem 0 0 auto;
+  }
+</style>

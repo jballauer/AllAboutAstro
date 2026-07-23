@@ -110,6 +110,7 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 - Audited Choosing a 35mm Film Camera: restored 86 dropped inline emphasis spans (nearly every camera/lens model name was bold+italic in the original) and converted two flattened `<ul>` lists (the FOREWORD reasons list, the ACCESSORIZING gear list) back into real markdown bullet lists
 
 - Audited My Favorite Slide Rules: restored the missing 18-image "art shot" photo gallery from the old page's bottom slideshow (extracted a reusable `PhotoCarousel` component from the Astro Gear carousel and used it in both places)
+- Built out the Learning landing page (previously a bare title list): restored the categorized article list with thumbnails/descriptions, the "Learning Astrophotography" sidebar essay, and a Presentations section (4 old talks, linked out to the legacy Weebly host since the files are 22-135MB and too large to commit into this repo)
 
 ---
 
