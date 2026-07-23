@@ -94,7 +94,36 @@ Read the target `.md` file and compare against what Step 1 found:
   it doesn't change word count or paragraph structure — a plain-text diff
   of word counts won't catch it. Check the old page's raw `innerHTML` (not
   just its rendered text) for `<em>`/`<strong>` spans and confirm each has
-  a markdown counterpart in the same spot.
+  a markdown counterpart in the same spot. An article can lose *dozens* of
+  these at once (Choosing a 35mm Film Camera had ~90 bold+italic camera/lens
+  model names stripped) — when the count is more than a handful, don't
+  restore them by hand one Edit call at a time. Pull every span's text plus
+  ~40 characters of surrounding plain-text context from the live old-page
+  DOM (via `javascript_tool`, walking `strong, em` and skipping nodes whose
+  parent is itself already inside a `strong`/`em` — otherwise a
+  `<strong><em>x</em></strong>` combo double-counts), then write a small
+  Node script (`node` is available in this repo) that anchors each
+  replacement on its distinctive preceding words rather than the bare
+  phrase alone — **a bare single word ("best", "camera", a manufacturer
+  name) can appear many times in one paragraph, and a naive
+  first-substring-after-cursor search will silently wrap the wrong
+  occurrence.** Verify by counting `article.querySelectorAll('strong,
+  em').length` on the re-rendered page against your source count, and
+  spot-check that a few landed on the sentence you actually intended, not
+  just that the count matches. Also watch for two false leads this
+  produces: (1) a bare manufacturer/section name that got promoted to a
+  real `### Heading` during migration (e.g. "### Nikon") was correctly
+  converted, not a loss — don't re-bold it; (2) don't blindly wrap
+  trailing punctuation caught inside the original `<strong>` span (a
+  stray `.`/`,` at a span boundary is a Weebly editor artifact, not
+  meaningful formatting).
+- Flattened lists. Weebly's `<ul><li>` sometimes collapses into plain
+  `<br>`-separated lines with no bullet markup once migrated to prose
+  paragraphs. Check the old page's `innerHTML` for `<ul>`/`<li>` and make
+  sure each survived as a real markdown `- ` list, not flattened text —
+  and watch for a list split across two adjacent `<ul>` elements in the
+  source (a single semantic list Weebly happened to save as two) that
+  should still become one combined markdown list.
 
 If this is a K&E/sliderules page, also check the two content conventions
 that only apply there (not to Learning/gear pages): bold-first-mention of
