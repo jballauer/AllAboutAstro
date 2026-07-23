@@ -30,10 +30,23 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
       <slot />
     </main>
     <Footer />
+    <div id="ke-lightbox" class="ke-lightbox" hidden>
+      <img id="ke-lightbox-img" alt="" />
+    </div>
   </body>
 </html>
 
 <script>
+  // Two zoom mechanisms coexist for now:
+  //
+  // 1. The in-frame zoom/pan/toggle below — currently opt-in only, via the
+  //    `.ke-zoom-inframe` class, while it's being trialed on a single image
+  //    (the M31 Mosaic gallery page). Do NOT broaden its selector to
+  //    `article img` again without checking with Jay first — see
+  //    feedback_lightbox_native_size_pan memory.
+  // 2. The plain fullscreen click-to-enlarge lightbox further down, which
+  //    is what every other image on the site still uses.
+
   // In-place zoom: clicking an image zooms in *within its own on-page
   // frame* (never a fullscreen overlay) anchored so the exact pixel
   // clicked stays under the cursor, then lets you drag to pan since the
@@ -105,11 +118,6 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
 
   function setupZoomFrame(imgEl: Element) {
     const img = imgEl as HTMLImageElement;
-    // Portfolio thumbnails live inside a <summary> and their click should
-    // only toggle the accordion, not fight it for the same click.
-    if (img.closest('summary')) return;
-    // Carousel thumbnail strips navigate the carousel on click instead.
-    if (img.closest('.no-lightbox')) return;
     img.classList.add('ke-zoomable');
 
     const frame = document.createElement('span');
@@ -217,7 +225,46 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     });
   }
 
-  document.querySelectorAll('article img').forEach(setupZoomFrame);
+  // Opt-in only for now — see the note at the top of this script block.
+  document.querySelectorAll('article img.ke-zoom-inframe').forEach(setupZoomFrame);
+
+  // Plain fullscreen click-to-enlarge lightbox — the default for every
+  // other image on the site (unchanged from the original implementation).
+  const overlay = document.getElementById('ke-lightbox') as HTMLDivElement;
+  const overlayImg = document.getElementById('ke-lightbox-img') as HTMLImageElement;
+
+  function openLightbox(fullSrc: string, alt: string) {
+    overlayImg.src = fullSrc;
+    overlayImg.alt = alt;
+    overlay.hidden = false;
+  }
+
+  function closeLightbox() {
+    overlay.hidden = true;
+    overlayImg.src = '';
+  }
+
+  document.querySelectorAll('article img').forEach((img) => {
+    if (img.classList.contains('ke-zoom-inframe')) return; // handled above instead
+    // Portfolio thumbnails live inside a <summary> and their click should
+    // only toggle the accordion, not fight it for the same click by also
+    // popping the lightbox open.
+    if (img.closest('summary')) return;
+    // Carousel thumbnail strips (e.g. the gear-page slideshow) navigate the
+    // carousel on click rather than opening the full-res zoom.
+    if (img.closest('.no-lightbox')) return;
+    img.classList.add('ke-zoomable');
+    img.addEventListener('click', () => {
+      const hiresHost = img.closest<HTMLElement>('[data-hires]');
+      const fullSrc = hiresHost?.dataset.hires || (img as HTMLImageElement).currentSrc || (img as HTMLImageElement).src;
+      openLightbox(fullSrc, (img as HTMLImageElement).alt);
+    });
+  });
+
+  overlay.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
 </script>
 
 <style is:global>
@@ -837,6 +884,28 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   }
   .ke-zoom-frame img.ke-zoom-instant {
     transition: none;
+  }
+
+  /* Plain fullscreen click-to-enlarge lightbox — default for every image
+     except the ones opted into the in-frame zoom above. */
+  .ke-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: zoom-out;
+    padding: 2rem;
+  }
+  .ke-lightbox[hidden] {
+    display: none;
+  }
+  .ke-lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
   }
 
   @media (max-width: 700px) {

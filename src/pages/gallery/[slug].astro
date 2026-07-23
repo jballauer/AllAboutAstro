@@ -27,7 +27,13 @@ const hires = hiresMap[entry.id];
       <>
         {hires ? (
           <span data-hires={hires}>
-            <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
+            <Image
+              src={entry.data.image}
+              alt={entry.data.title}
+              width={1000}
+              height={1000}
+              class={entry.id === 'm31-mosaic' ? 'ke-zoom-inframe' : undefined}
+            />
           </span>
         ) : (
           <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
