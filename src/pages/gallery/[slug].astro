@@ -3,6 +3,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 
+const hiresMap: Record<string, string> = {
+  'm31-mosaic': '/images/gallery/m31-mosaic-hires.jpg',
+};
+
 export async function getStaticPaths() {
   const images = await getCollection('gallery');
   return images.map((entry) => ({
@@ -13,12 +17,21 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const hires = hiresMap[entry.id];
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <article>
     <h1>{entry.data.title}</h1>
-    {entry.data.image && <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />}
+    {entry.data.image && (
+      hires ? (
+        <span data-hires={hires}>
+          <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
+        </span>
+      ) : (
+        <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
+      )
+    )}
     {entry.data.equipment && <p><strong>Equipment:</strong> {entry.data.equipment}</p>}
     {entry.data.exposure && <p><strong>Exposure:</strong> {entry.data.exposure}</p>}
     <Content />
