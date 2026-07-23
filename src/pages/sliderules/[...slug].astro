@@ -95,6 +95,8 @@ const isKePage = entry.id === 'all-about-ke-rules' || isKeSubPage;
 const isKeLandingPage = entry.id === 'all-about-ke-rules';
 const keLastUpdated = isKeLandingPage
   ? getLastUpdated('src/content/sliderules/all-about-ke-rules')
+  : entry.id === 'all-the-rules'
+  ? getLastUpdated('src/content/sliderules/all-the-rules.md')
   : null;
 const banner = pageBanners[entry.id];
 ---

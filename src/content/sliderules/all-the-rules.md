@@ -7,7 +7,7 @@ draft: false
 
 Thus begins a comprehensive picture list of all the slide rules in my collection. I have duplicates of many of the rules, but will only show one such sample if that happens, with the exception of the K&E rules. Each K&E sample will be listed, since their long history and continuity of a model line will show the evolution of the production of those rules.
 
-This page is very much under construction. I will be adding history, scale and construction details for all rules at some point. Not all rules I own are pictured here. Please refer to the Version History page for the changes made when they happen.
+This page is very much under construction. I will be adding history, scale and construction details for all rules at some point. Not all rules I own are pictured here. Please refer to the [Version History](/sliderules/all-about-ke-rules/appendix-5-version-history/) page for the changes made when they happen.
 
 ## Aristo
 
