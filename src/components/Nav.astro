@@ -9,9 +9,6 @@ const allSliderules = await getCollection('sliderules');
 const sliderulesTop = allSliderules
   .filter((item) => !item.id.includes('/'))
   .sort((a, b) => a.data.order - b.data.order);
-const pickettItems = allSliderules
-  .filter((item) => item.id.startsWith('pickett/'))
-  .sort((a, b) => a.data.order - b.data.order);
 
 const currentPath = Astro.url.pathname;
 const isCurrent = (base: string) => currentPath === base || currentPath.startsWith(base);
@@ -50,18 +47,7 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
           <a href="/sliderules/" aria-current={isCurrent('/sliderules/') ? 'page' : undefined}>Jay's Slide Rules</a>
           <ul class="dropdown">
             {sliderulesTop.map((item) => (
-              item.id === 'pickett' ? (
-                <li class="has-submenu">
-                  <a href="/sliderules/pickett/">{item.data.title}</a>
-                  <ul class="dropdown submenu">
-                    {pickettItems.map((sub) => (
-                      <li><a href={`/sliderules/${sub.id}/`}>{sub.data.title}</a></li>
-                    ))}
-                  </ul>
-                </li>
-              ) : (
-                <li><a href={`/sliderules/${item.id}/`}>{item.data.title}</a></li>
-              )
+              <li><a href={`/sliderules/${item.id}/`}>{item.data.title}</a></li>
             ))}
           </ul>
         </li>
