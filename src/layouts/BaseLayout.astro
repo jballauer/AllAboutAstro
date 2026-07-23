@@ -496,9 +496,13 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     font-size: 1rem;
   }
   .ke-sidebar.ke-two-col-about img {
-    width: 140px;
+    width: 220px;
     max-width: 100%;
     margin: 0.5rem 0 0 auto;
+    /* Source signature is gray for light backgrounds; recolor to match the
+       sidebar's white prose text. */
+    filter: brightness(0) invert(1);
+    opacity: 0.92;
   }
 
   /* K&E numbered image gallery — a grouped set of related photos inside
