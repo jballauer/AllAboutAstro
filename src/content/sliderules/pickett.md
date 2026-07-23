@@ -47,11 +47,11 @@ But the sheer number of Pickett rules and the stories they tell really make them
 
 The listing below catalogs every Pickett slide rule I own, organized the same way as the rest of this page. Click any rule's name to expand it. Some entries already have a photo, specifications, and a write-up; many are still just placeholders until I get around to documenting them properly. Please have patience with it — this catalog will keep growing over time.
 
-## General-Purpose Rules
+### General-Purpose Rules
 
 Here are Pickett slide rules that allow for basic to complex evaluation of mathematical computations and functions. I will also include "engineering" rules here, since that designation typically includes hyperbolic trig scales which, as far as I'm concerned, is still computational mathematics; however, where that applies, I will make note of that. Click any rule below to see its photo and details.
 
-### Full-Scale Rules
+#### Full-Scale Rules
 
 <div class="ke-portfolio-list">
 
@@ -218,7 +218,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 
 </div>
 
-### Pocket Rules
+#### Pocket Rules
 
 <div class="ke-portfolio-list">
 
@@ -306,7 +306,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 
 </div>
 
-### Circular Rules
+#### Circular Rules
 ![Pickett 103-ES circular rule](./_images/pickett-103es-1.jpg)
 
 <div class="ke-portfolio-list">
@@ -358,11 +358,11 @@ I own this rule but haven't written up its details yet — check back as this ca
 
 </div>
 
-## Specialty Rules
+### Specialty Rules
 
 These Pickett slide rules are "specialty" rules because they were designed or marketed for a specific purpose in mind. Such a rule will often include one or more scales for a specific application, whether a finance formula, chemistry conversion, electronics functions, or even unit conversions.
 
-### Full-Scale Rules
+#### Full-Scale Rules
 
 <div class="ke-portfolio-list">
 
@@ -501,7 +501,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 
 </div>
 
-### Pocket Rules
+#### Pocket Rules
 
 <div class="ke-portfolio-list">
 
@@ -566,7 +566,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 
 </div>
 
-### Circular Rules
+#### Circular Rules
 
 <div class="ke-portfolio-list">
 
