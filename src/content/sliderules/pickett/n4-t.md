@@ -27,7 +27,7 @@ It's more than I would even need, even if I had been doing such mathematics duri
 - **Country:** USA
 - **Material:** Aluminum
 - **Scale Length:** 10 in.
-- **Date:** 1968 to 1975
+- **Date:** 1958 to 1962
 - **Condition:** C4 (like new, but with case only)
 
 ### Scales

@@ -120,4 +120,10 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 
 ---
 
+## 2026-07-23 — Pickett landing page audit
+
+- Audited the Pickett landing page: restored bold+italic emphasis on "seven" (distinct eras) dropped during migration; fixed a Date/Condition data-swap bug where the N4-T and N600-ES subpages had each other's Date field (and N600-ES had N4-T's Condition and was missing its own "# of Scales: 22"), traced back to the original page's accordion-widget catalog which never fully migrated; created two new subpages (Pickett 111-ES Circular, Pickett Model 100 Douglas Sky Rule) recovering real spec/scale content from that same 53-item accordion (only 4 of the 53 items had real content — the other 49 are legitimately-unwritten bare entries, matching the existing flat bullet-list treatment) — 111-ES's own accordion photo turned out to be a mislabeled duplicate of the 103-ES art shot already used elsewhere on the page, so it was deliberately left without a photo rather than perpetuating that mismatch; linked all 4 documented rules (N4-T, N600-ES, 111-ES, Model 100) from the landing page's bullet lists, which previously had no links at all despite N4-T/N600-ES subpages already existing
+
+---
+
 *All 13 Learning articles reached visual parity as of 2026-07-22. See project memory for open items (image lightbox rollout, stub landing pages, nav sweep). Per-article audit status is now tracked via dated bullets above and `git log` per file, not this rollup line — treat this note as a snapshot, not a source of truth.*

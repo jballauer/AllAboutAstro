@@ -23,7 +23,7 @@ To be certain, I find the typical aluminum Pickett rule to be less enjoyable to 
 
 Pickett was widely known for producing a variety of custom slide rules for a variety of clients. As such, there is a remarkable array of "specialty" rules that can be found which, in my mind, is the best part about collecting Pickett rules today. This is made possible because almost every metallic rule is the same, except for what is printed on the rule. As such, once the photographic master is created, any number of rules can be quickly and cheaply printed. So if a client wanted a custom-rule made, Pickett could do so in a short run without too much extra expense. In my collection, we will see that most of the larger custom rules like this, particularly the ones with the most value today, will be found within the range of rules between models 5 and 19. A collection with most or ALL of those models will be truly outstanding.
 
-Dating Pickett rules is also difficult to accomplish, as they did not change their rules at all over extended periods (typically 4 to 8 years), nor did they use serial numbers. The best we can do is to identify a slide rule to one of maybe seven distinct eras of the company based on changes to the Pickett logo (on the rule) as well as the evolution of slide rule construction and materials. Likewise, the designs of the cursors and end-brackets over time can yield some enlightenment. As such, I will date them between a certain range of years based on these features.
+Dating Pickett rules is also difficult to accomplish, as they did not change their rules at all over extended periods (typically 4 to 8 years), nor did they use serial numbers. The best we can do is to identify a slide rule to one of maybe ***seven*** distinct eras of the company based on changes to the Pickett logo (on the rule) as well as the evolution of slide rule construction and materials. Likewise, the designs of the cursors and end-brackets over time can yield some enlightenment. As such, I will date them between a certain range of years based on these features.
 
 But the sheer number of Pickett rules and the stories they tell really make them one of my favorite slide rule brands to collect. I have some Pickett rules that nobody else seems to possess, even among the most avid collectors today. I find stumbling across such treasures to be very satisfying.
 
@@ -32,7 +32,7 @@ But the sheer number of Pickett rules and the stories they tell really make them
 Here are Pickett slide rules that allow for basic to complex evaluation of mathematical computations and functions. I will also include "engineering" rules here, since that designation typically includes hyperbolic trig scales which, as far as I'm concerned, is still computational mathematics; however, where that applies, I will make note of that.
 
 ### Full-Scale Rules
-- N4-T Vector Hyperbolic Dual Base Log Log
+- [N4-T Vector Hyperbolic Dual Base Log Log](/sliderules/pickett/n4-t/)
 - N4-ES Vector Dual Base Log Log
 - N3-ES Power Log Exponential
 - N500-ES Hi-Log Log Duplex
@@ -51,7 +51,7 @@ Here are Pickett slide rules that allow for basic to complex evaluation of mathe
 - Pickett B1 Bamboo Rule
 
 ### Pocket Rules
-- N600-ES Log Log Duplex
+- [N600-ES Log Log Duplex](/sliderules/pickett/n600-es/)
 - N300-T Log Log Duplex
 - N200-T Trig
 - N1006-ES Duplex Trig
@@ -62,7 +62,7 @@ Here are Pickett slide rules that allow for basic to complex evaluation of mathe
 ![Pickett 103-ES circular rule](./_images/pickett-103es-1.jpg)
 
 
-- 111-ES Circular
+- [111-ES Circular](/sliderules/pickett/111-es/)
 - Model 101-C Dial-Rule Circular
 - 110-ES Circular
 - 108-ES Circular
@@ -97,7 +97,7 @@ These Pickett slide rules are "specialty" rules because they were designed or ma
 ![Pickett Model 100 Douglas Sky Rule, back](./_images/pickett-model100-back.jpg)
 
 
-- Model 100 Douglas Sky Rule
+- [Model 100 Douglas Sky Rule](/sliderules/pickett/model-100/)
 - Model 700 Aerial Photo USAF
 - Model 400 Business
 
