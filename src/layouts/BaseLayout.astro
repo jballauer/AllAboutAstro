@@ -313,6 +313,18 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     height: auto;
     display: block;
   }
+  /* Embedded HTML5 video, for articles linking out to an externally-hosted
+     video file (e.g. a large original-source .mp4 too big to self-host).
+     Sized like a standard body image rather than left at native/intrinsic
+     width. */
+  .ke-video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #000;
+    margin: 1rem 0;
+  }
   table {
     border-collapse: collapse;
     width: 100%;

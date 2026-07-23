@@ -50,7 +50,9 @@ Here is the eclipse from our point of view. Thanks to my friend Ross Lawrence fo
 
 Even so, the video is a neat look at many of the activities of that most special day. Ross captured the enthusiasm of the crowd so well.
 
-<p><a href="https://oldallaboutastro.weebly.com/uploads/b/12477060-760644699539119106/eclipse_totality_174.mp4">Watch the totality video &rarr;</a></p>
+<video class="ke-video" controls preload="metadata" src="https://oldallaboutastro.weebly.com/uploads/b/12477060-760644699539119106/eclipse_totality_174.mp4">
+Your browser does not support embedded video. <a href="https://oldallaboutastro.weebly.com/uploads/b/12477060-760644699539119106/eclipse_totality_174.mp4">Watch the totality video directly</a>.
+</video>
 
 ### My Interview for a Bowling Green, Kentucky News Station
 
@@ -58,7 +60,9 @@ One of the cool things about having a nice astronomy setup for the eclipse is th
 
 The equipment I had setup for the event was a Takahashi FSQ-85ED "Baby-Q" apo refractor, a Coronado Solar Max 90mm H-alpha Scope, three Nikon D810a cameras - don't ask how I managed that - and a Takahashi NJP mount. I powered off of a large 12v deep cycle RV battery and 2000w Inverter.
 
-<p><a href="https://oldallaboutastro.weebly.com/uploads/b/12477060-760644699539119106/20170821_102002_674.mp4">Watch the news interview &rarr;</a></p>
+<video class="ke-video" controls preload="metadata" src="https://oldallaboutastro.weebly.com/uploads/b/12477060-760644699539119106/20170821_102002_674.mp4">
+Your browser does not support embedded video. <a href="https://oldallaboutastro.weebly.com/uploads/b/12477060-760644699539119106/20170821_102002_674.mp4">Watch the news interview directly</a>.
+</video>
 
 This image was later used on the cover of Amateur Astronomy Magazine, Fall 2017.
 
