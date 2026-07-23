@@ -107,6 +107,7 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 - Audited Building a Roll-Off Roof Observatory: clean, no changes (multi-page split, correctly has no closing signature)
 - Audited Globular Clusters again: restored dropped inline emphasis (`*side*`, `*front*`, `***globular clusters***`) lost during migration
 - Added the `audit-article-layout` project skill (`.claude/skills/`) to standardize this per-article audit process going forward
+- Audited Choosing a 35mm Film Camera: restored 86 dropped inline emphasis spans (nearly every camera/lens model name was bold+italic in the original) and converted two flattened `<ul>` lists (the FOREWORD reasons list, the ACCESSORIZING gear list) back into real markdown bullet lists
 
 ---
 
