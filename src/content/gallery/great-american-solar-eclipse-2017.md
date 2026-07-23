@@ -36,7 +36,11 @@ Equipment used for this image was a Tak FSQ-85 (without solar filter) and Nikon 
 
 I was very pleased to land my image on the cover of the most recent Amateur Astronomy Magazine. Thanks to Charlie Warren, editor of the magazine, for using the image on the cover. Cool stuff!
 
+<div class="ke-figure ke-figure-right ke-figure-third">
+
 ![Amateur Astronomy Magazine cover featuring Jay's eclipse corona image](./_images/eclipse2017-magazine-cover.jpg)
+
+</div>
 
 Special thanks to my friend Ross Lawrence for sharing the journey with me...and especially my wife, Helen, and kids for pardoning my absence from home.
 
@@ -55,68 +59,6 @@ One of the cool things about having a nice astronomy setup for the eclipse is th
 The equipment I had setup for the event was a Takahashi FSQ-85ED "Baby-Q" apo refractor, a Coronado Solar Max 90mm H-alpha Scope, three Nikon D810a cameras - don't ask how I managed that - and a Takahashi NJP mount. I powered off of a large 12v deep cycle RV battery and 2000w Inverter.
 
 <p><a href="https://oldallaboutastro.weebly.com/uploads/b/12477060-760644699539119106/20170821_102002_674.mp4">Watch the news interview &rarr;</a></p>
-
-### Slide Show of Event Photos
-
-<div class="ke-image-feature">
-<div class="ke-image-feature-row">
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0195.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0193.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0202.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0207.jpg)
-
-</div>
-</div>
-<div class="ke-image-feature-row">
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0210.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0213.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0219.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0233.jpg)
-
-</div>
-</div>
-<div class="ke-image-feature-row">
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-dsc0234.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse2017-event-img2586.jpg)
-
-</div>
-</div>
-<p class="ke-image-feature-caption">Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.</p>
-</div>
 
 This image was later used on the cover of Amateur Astronomy Magazine, Fall 2017.
 

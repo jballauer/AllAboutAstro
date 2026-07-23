@@ -1,7 +1,32 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PhotoCarousel from '../../components/PhotoCarousel.astro';
 import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
+
+import eclipse2017Event01 from '../../content/gallery/_images/eclipse2017-event-dsc0195.jpg';
+import eclipse2017Event02 from '../../content/gallery/_images/eclipse2017-event-dsc0193.jpg';
+import eclipse2017Event03 from '../../content/gallery/_images/eclipse2017-event-dsc0202.jpg';
+import eclipse2017Event04 from '../../content/gallery/_images/eclipse2017-event-dsc0207.jpg';
+import eclipse2017Event05 from '../../content/gallery/_images/eclipse2017-event-dsc0210.jpg';
+import eclipse2017Event06 from '../../content/gallery/_images/eclipse2017-event-dsc0213.jpg';
+import eclipse2017Event07 from '../../content/gallery/_images/eclipse2017-event-dsc0219.jpg';
+import eclipse2017Event08 from '../../content/gallery/_images/eclipse2017-event-dsc0233.jpg';
+import eclipse2017Event09 from '../../content/gallery/_images/eclipse2017-event-dsc0234.jpg';
+import eclipse2017Event10 from '../../content/gallery/_images/eclipse2017-event-img2586.jpg';
+
+const eclipse2017EventPhotos = [
+  { src: eclipse2017Event01, hires: '/images/gallery/eclipse2017-event-dsc0195.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event02, hires: '/images/gallery/eclipse2017-event-dsc0193.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event03, hires: '/images/gallery/eclipse2017-event-dsc0202.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event04, hires: '/images/gallery/eclipse2017-event-dsc0207.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event05, hires: '/images/gallery/eclipse2017-event-dsc0210.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event06, hires: '/images/gallery/eclipse2017-event-dsc0213.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event07, hires: '/images/gallery/eclipse2017-event-dsc0219.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event08, hires: '/images/gallery/eclipse2017-event-dsc0233.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event09, hires: '/images/gallery/eclipse2017-event-dsc0234.jpg', alt: '2017 eclipse event photo', caption: '' },
+  { src: eclipse2017Event10, hires: '/images/gallery/eclipse2017-event-img2586.jpg', alt: '2017 eclipse event photo', caption: '' },
+];
 
 const hiresMap: Record<string, string> = {
   'm31-mosaic': '/images/gallery/m31-mosaic-hires.jpg',
@@ -44,5 +69,12 @@ const hires = hiresMap[entry.id];
     {entry.data.equipment && <p><strong>Equipment:</strong> {entry.data.equipment}</p>}
     {entry.data.exposure && <p><strong>Exposure:</strong> {entry.data.exposure}</p>}
     <Content />
+    {entry.id === 'great-american-solar-eclipse-2017' && (
+      <>
+        <div class="ke-clear"></div>
+        <h3>Slide Show of Event Photos</h3>
+        <PhotoCarousel photos={eclipse2017EventPhotos} />
+      </>
+    )}
   </article>
 </BaseLayout>
