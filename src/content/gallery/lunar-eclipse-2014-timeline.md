@@ -1,12 +1,20 @@
 ---
-title: April 2014 Lunar Eclipse Timeline
-description: A composite timeline of the total lunar eclipse of April 15, 2014.
-pubDate: 2017-11-23
+title: Presentation 2 - Eclipse Cycle Timeline, April 15, 2014
+description: A labeled timeline composite of the April 2014 total lunar eclipse's major phases.
+pubDate: 2014-04-15
 image: ./_images/lunar-eclipse-2014-timeline.jpg
+equipment: "6\" Takahashi TOA-150 apochromatic refractor on a Software Bisque Paramount ME, Canon T2i DSLR and SBIG STL-11000M"
+exposure: "Various shutter speeds from 1/2000 to 3.2 seconds, ISO 200-800"
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+Location: Grapevine, Texas. Temperature: 40 degrees F.
+
+This is the second presentation of the data taken during the eclipse showing the major stages of the cycle and the timeline of its happenings.
+
+All images taken during this eclipse are with a Canon T2i DSLR and Tak TOA-150 refractor, except for the full moon shot taken just prior to the start of the eclipse with an SBIG STL-11000M astro camera.
+
+Processing: Debayer, Multiscale Median Transform, Histogram Transform, Local Histogram Enhancement, ACDNR, and 16-bit TIFF conversion in PixInsight. Saturation, Level/Curves, noise removal (Noel Carboni actions), rotation, and compositing in Photoshop CS6.
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
