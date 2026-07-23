@@ -30,121 +30,194 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
       <slot />
     </main>
     <Footer />
-    <div id="ke-lightbox" class="ke-lightbox">
-      <img id="ke-lightbox-img" alt="" />
-    </div>
   </body>
 </html>
 
 <script>
-  const overlay = document.getElementById('ke-lightbox') as HTMLDivElement;
-  const overlayImg = document.getElementById('ke-lightbox-img') as HTMLImageElement;
-
+  // In-place zoom: clicking an image zooms in *within its own on-page
+  // frame* (never a fullscreen overlay) anchored so the exact pixel
+  // clicked stays under the cursor, then lets you drag to pan since the
+  // whole image is no longer visible at once. Clicking again returns to
+  // the normal fit view. A wrapper span (`display: contents` until
+  // active, so it has zero layout effect on the unzoomed page) captures
+  // the image's own current rendered box in pixels the instant zoom
+  // starts — this works regardless of whether the image lives in a
+  // percentage-width float, a flex item, or the absolutely-positioned
+  // carousel stage, without needing special-case CSS for each.
   function clamp(value: number, min: number, max: number) {
     return Math.max(min, Math.min(max, value));
   }
 
-  // fracX/fracY (0-1) is where the user clicked within the thumbnail —
-  // the zoomed view opens centered on that same point in the full image,
-  // and grows smoothly outward from it rather than popping in centered.
-  function openLightbox(fullSrc: string, alt: string, fracX: number, fracY: number) {
-    // Snap the image to its pre-grow scale with transitions off, so setting
-    // the starting state doesn't itself animate.
-    overlayImg.classList.add('ke-zoom-instant', 'ke-zoom-start');
-    overlayImg.style.transformOrigin = `${fracX * 100}% ${fracY * 100}%`;
-    overlayImg.src = fullSrc;
-    overlayImg.alt = alt;
-    overlay.classList.add('ke-open');
-    void overlayImg.offsetWidth; // force layout so the instant snap applies
-    overlayImg.classList.remove('ke-zoom-instant');
+  type ZoomState = {
+    zoomed: boolean;
+    scale: number;
+    tx: number;
+    ty: number;
+    frameW: number;
+    frameH: number;
+  };
 
-    overlayImg.addEventListener(
-      'load',
-      () => {
-        // Position scroll first — transform doesn't affect layout, so the
-        // clicked point is already centered before the grow animation runs.
-        overlay.scrollLeft = clamp(fracX * overlayImg.scrollWidth - overlay.clientWidth / 2, 0, overlayImg.scrollWidth - overlay.clientWidth);
-        overlay.scrollTop = clamp(fracY * overlayImg.scrollHeight - overlay.clientHeight / 2, 0, overlayImg.scrollHeight - overlay.clientHeight);
-        requestAnimationFrame(() => {
-          overlayImg.classList.remove('ke-zoom-start');
-        });
-      },
-      { once: true }
-    );
-  }
+  const allZoomContexts: { state: ZoomState; exitZoom: () => void }[] = [];
 
-  function closeLightbox() {
-    overlay.classList.remove('ke-open');
-    window.setTimeout(() => {
-      overlayImg.src = '';
-    }, 250);
-  }
-
-  document.querySelectorAll('article img').forEach((img) => {
-    // Portfolio thumbnails live inside a <summary> and their click should
-    // only toggle the accordion, not fight it for the same click by also
-    // popping the lightbox open.
-    if (img.closest('summary')) return;
-    // Carousel thumbnail strips (e.g. the gear-page slideshow) navigate the
-    // carousel on click rather than opening the full-res zoom.
-    if (img.closest('.no-lightbox')) return;
-    img.classList.add('ke-zoomable');
-    img.addEventListener('click', (e) => {
-      const hiresHost = img.closest<HTMLElement>('[data-hires]');
-      const fullSrc = hiresHost?.dataset.hires || (img as HTMLImageElement).currentSrc || (img as HTMLImageElement).src;
-      const rect = (img as HTMLImageElement).getBoundingClientRect();
-      const fracX = clamp((e.clientX - rect.left) / rect.width, 0, 1);
-      const fracY = clamp((e.clientY - rect.top) / rect.height, 0, 1);
-      openLightbox(fullSrc, (img as HTMLImageElement).alt, fracX, fracY);
-    });
-  });
-
-  // Click-and-drag panning: the zoomed image can be larger than the
-  // viewport, so dragging scrolls the overlay rather than the page.
-  let isPanning = false;
-  let didPan = false;
-  let panStartX = 0;
-  let panStartY = 0;
-  let panScrollLeft = 0;
-  let panScrollTop = 0;
-
-  overlayImg.addEventListener('mousedown', (e) => {
-    isPanning = true;
-    didPan = false;
-    panStartX = e.pageX;
-    panStartY = e.pageY;
-    panScrollLeft = overlay.scrollLeft;
-    panScrollTop = overlay.scrollTop;
-    overlayImg.classList.add('ke-panning');
-    e.preventDefault();
-  });
+  let activeDrag: {
+    img: HTMLImageElement;
+    frame: HTMLElement;
+    state: ZoomState;
+    startX: number;
+    startY: number;
+    originTx: number;
+    originTy: number;
+    moved: boolean;
+  } | null = null;
+  let suppressClick = false;
 
   window.addEventListener('mousemove', (e) => {
-    if (!isPanning) return;
-    const dx = e.pageX - panStartX;
-    const dy = e.pageY - panStartY;
-    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) didPan = true;
-    overlay.scrollLeft = panScrollLeft - dx;
-    overlay.scrollTop = panScrollTop - dy;
+    if (!activeDrag) return;
+    const dx = e.pageX - activeDrag.startX;
+    const dy = e.pageY - activeDrag.startY;
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) activeDrag.moved = true;
+    const { state, img } = activeDrag;
+    const tx = clamp(activeDrag.originTx + dx, state.frameW * (1 - state.scale), 0);
+    const ty = clamp(activeDrag.originTy + dy, state.frameH * (1 - state.scale), 0);
+    state.tx = tx;
+    state.ty = ty;
+    img.classList.add('ke-zoom-instant');
+    img.style.transform = `translate(${tx}px, ${ty}px) scale(${state.scale})`;
   });
 
   window.addEventListener('mouseup', () => {
-    isPanning = false;
-    overlayImg.classList.remove('ke-panning');
+    if (activeDrag) {
+      if (activeDrag.moved) suppressClick = true;
+      activeDrag.img.classList.remove('ke-zoom-instant');
+      activeDrag.frame.classList.remove('ke-panning');
+      activeDrag.img.style.cursor = 'grab';
+    }
+    activeDrag = null;
   });
 
-  overlay.addEventListener('click', () => {
-    // A drag that ends still fires a click; swallow that one so panning
-    // doesn't also close the lightbox.
-    if (didPan) {
-      didPan = false;
-      return;
-    }
-    closeLightbox();
-  });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'Escape') {
+      allZoomContexts.forEach((ctx) => {
+        if (ctx.state.zoomed) ctx.exitZoom();
+      });
+    }
   });
+
+  function setupZoomFrame(imgEl: Element) {
+    const img = imgEl as HTMLImageElement;
+    // Portfolio thumbnails live inside a <summary> and their click should
+    // only toggle the accordion, not fight it for the same click.
+    if (img.closest('summary')) return;
+    // Carousel thumbnail strips navigate the carousel on click instead.
+    if (img.closest('.no-lightbox')) return;
+    img.classList.add('ke-zoomable');
+
+    const frame = document.createElement('span');
+    frame.className = 'ke-zoom-frame';
+    img.parentNode?.insertBefore(frame, img);
+    frame.appendChild(img);
+
+    const state: ZoomState = { zoomed: false, scale: 1, tx: 0, ty: 0, frameW: 0, frameH: 0 };
+
+    function applyScale(rect: DOMRect, clickX: number, clickY: number, fracX: number, fracY: number, instant: boolean) {
+      const natural = img.naturalWidth || rect.width * 2.5;
+      const scale = clamp(natural / rect.width, 1.4, 6);
+      const tx = clamp(clickX - fracX * rect.width * scale, rect.width * (1 - scale), 0);
+      const ty = clamp(clickY - fracY * rect.height * scale, rect.height * (1 - scale), 0);
+      state.scale = scale;
+      state.tx = tx;
+      state.ty = ty;
+      if (instant) img.classList.add('ke-zoom-instant');
+      img.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+      if (instant) {
+        void img.offsetWidth; // force layout so the instant snap applies
+        img.classList.remove('ke-zoom-instant');
+      }
+    }
+
+    function enterZoom(clickX: number, clickY: number) {
+      const rect = img.getBoundingClientRect();
+      state.frameW = rect.width;
+      state.frameH = rect.height;
+
+      // Lock the frame to the image's own current on-page box (in px) and
+      // pull the image out to fill it exactly — from here the transform
+      // does all the zooming, so it never spills past this box.
+      frame.classList.add('ke-zoom-active');
+      frame.style.width = `${rect.width}px`;
+      frame.style.height = `${rect.height}px`;
+      img.classList.add('ke-zoom-img-active');
+
+      const fracX = clamp(clickX / rect.width, 0, 1);
+      const fracY = clamp(clickY / rect.height, 0, 1);
+
+      const hiresHost = img.closest<HTMLElement>('[data-hires]');
+      const hiresSrc = hiresHost?.dataset.hires;
+      const resolvedHiresUrl = hiresSrc ? new URL(hiresSrc, location.href).href : null;
+
+      if (resolvedHiresUrl && img.src !== resolvedHiresUrl) {
+        // Grow immediately using the already-loaded small image, then
+        // refine the scale once the hi-res file finishes loading.
+        applyScale(rect, clickX, clickY, fracX, fracY, false);
+        img.addEventListener('load', () => applyScale(rect, clickX, clickY, fracX, fracY, true), { once: true });
+        img.src = hiresSrc as string;
+      } else {
+        applyScale(rect, clickX, clickY, fracX, fracY, false);
+      }
+
+      img.style.cursor = 'grab';
+      state.zoomed = true;
+    }
+
+    function exitZoom() {
+      img.style.transform = 'translate(0px, 0px) scale(1)';
+      img.style.cursor = '';
+      state.zoomed = false;
+      window.setTimeout(() => {
+        if (!state.zoomed) {
+          frame.classList.remove('ke-zoom-active');
+          frame.style.width = '';
+          frame.style.height = '';
+          img.classList.remove('ke-zoom-img-active');
+          img.style.transform = '';
+        }
+      }, 320);
+    }
+
+    allZoomContexts.push({ state, exitZoom });
+
+    frame.addEventListener('mousedown', (e) => {
+      if (!state.zoomed) return;
+      activeDrag = {
+        img,
+        frame,
+        state,
+        startX: e.pageX,
+        startY: e.pageY,
+        originTx: state.tx,
+        originTy: state.ty,
+        moved: false,
+      };
+      frame.classList.add('ke-panning');
+      img.style.cursor = 'grabbing';
+      e.preventDefault();
+    });
+
+    frame.addEventListener('click', (e) => {
+      if (suppressClick) {
+        suppressClick = false;
+        return;
+      }
+      if (state.zoomed) {
+        exitZoom();
+      } else {
+        const rect = img.getBoundingClientRect();
+        enterZoom(e.clientX - rect.left, e.clientY - rect.top);
+      }
+    });
+  }
+
+  document.querySelectorAll('article img').forEach(setupZoomFrame);
 </script>
 
 <style is:global>
@@ -729,49 +802,40 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     color: var(--color-prose-text);
     text-align: center;
   }
-  .ke-lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.85);
-    display: flex;
-    /* No align-items/justify-content here — centering is done via the
-       image's own `margin: auto` below, which is the standard fix for
-       "flexbox can center content but then you can't scroll to its
-       start edge" when the content overflows the container. */
-    overflow: auto;
-    z-index: 1000;
-    cursor: zoom-out;
-    /* Replaces the [hidden] attribute so open/close can fade smoothly —
-       display:none can't transition. */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.25s ease;
+  /* Wraps every zoomable image. `display: contents` means it has zero
+     layout effect until zoom is active — it doesn't participate in the
+     box tree, so it can't disturb any surrounding float/flex/absolute
+     layout while just sitting there unzoomed. Only once `.ke-zoom-active`
+     is added (in JS, at the instant of the click) does it become a real
+     box, pixel-locked to the image's own current rendered size, with
+     overflow hidden — the frame the zoomed image can never spill past. */
+  .ke-zoom-frame {
+    display: contents;
   }
-  .ke-lightbox.ke-open {
-    opacity: 1;
-    visibility: visible;
-  }
-  .ke-lightbox img {
-    /* Overrides the site-wide `img { max-width: 100% }` reset above: the
-       image renders at native resolution and can spill past the viewport;
-       drag or scroll to pan. */
-    max-width: none;
-    margin: auto;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  .ke-zoom-frame.ke-zoom-active {
+    display: block;
+    position: relative;
+    overflow: hidden;
     cursor: grab;
-    transform: scale(1);
-    transition: transform 0.3s ease-out;
   }
-  .ke-lightbox img.ke-panning {
+  .ke-zoom-frame.ke-zoom-active.ke-panning {
     cursor: grabbing;
   }
-  /* Grow-from-click-point animation: transform-origin is set inline (in JS)
-     to the fraction of the thumbnail that was clicked, so the zoomed image
-     appears to expand outward from wherever the user clicked. */
-  .ke-lightbox img.ke-zoom-start {
-    transform: scale(0.15);
+  /* While zoomed, the image is pulled out of normal flow to fill the frame
+     exactly; `transform: translate() scale()` (set in JS, transform-origin
+     pinned to 0 0) does the actual zooming/panning on top of that, so the
+     point clicked stays glued under the cursor at every step, and panning
+     never reveals empty space beyond the image's own edges. */
+  .ke-zoom-frame img.ke-zoom-img-active {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: 0 0;
+    transition: transform 0.3s ease-out;
   }
-  .ke-lightbox img.ke-zoom-instant {
+  .ke-zoom-frame img.ke-zoom-instant {
     transition: none;
   }
 
