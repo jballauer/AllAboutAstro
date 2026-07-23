@@ -109,6 +109,8 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 - Added the `audit-article-layout` project skill (`.claude/skills/`) to standardize this per-article audit process going forward
 - Audited Choosing a 35mm Film Camera: restored 86 dropped inline emphasis spans (nearly every camera/lens model name was bold+italic in the original) and converted two flattened `<ul>` lists (the FOREWORD reasons list, the ACCESSORIZING gear list) back into real markdown bullet lists
 
+- Audited My Favorite Slide Rules: restored the missing 18-image "art shot" photo gallery from the old page's bottom slideshow (extracted a reusable `PhotoCarousel` component from the Astro Gear carousel and used it in both places)
+
 ---
 
 *All 13 Learning articles reached visual parity as of 2026-07-22. See project memory for open items (image lightbox rollout, stub landing pages, nav sweep). Per-article audit status is now tracked via dated bullets above and `git log` per file, not this rollup line — treat this note as a snapshot, not a source of truth.*

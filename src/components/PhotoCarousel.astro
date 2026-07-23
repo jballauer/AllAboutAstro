@@ -1,0 +1,200 @@
+---
+import { Image } from 'astro:assets';
+
+interface Photo {
+  src: ImageMetadata;
+  hires: string;
+  alt: string;
+  caption: string;
+}
+
+interface Props {
+  photos: Photo[];
+}
+
+const { photos } = Astro.props;
+---
+
+<div class="photo-carousel">
+  <div class="pc-stage">
+    <button type="button" class="pc-pause" aria-label="Pause slideshow">Pause ❙❙</button>
+    <button type="button" class="pc-prev" aria-label="Previous image">‹</button>
+    <button type="button" class="pc-next" aria-label="Next image">›</button>
+    {photos.map((photo, i) => (
+      <figure class="pc-slide" data-index={i} data-active={i === 0} data-hires={photo.hires} data-caption={photo.caption}>
+        <Image src={photo.src} alt={photo.alt} width={700} />
+      </figure>
+    ))}
+  </div>
+  <p class="pc-caption">{photos[0].caption}</p>
+  <div class="pc-thumbs no-lightbox">
+    {photos.map((photo, i) => (
+      <Image src={photo.src} alt="" width={90} class="pc-thumb" data-index={i} data-active={i === 0} />
+    ))}
+  </div>
+</div>
+
+<style>
+  .photo-carousel {
+    margin: 0.3rem 0 1rem;
+  }
+  .pc-stage {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  .pc-stage :global(.pc-slide) {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+  }
+  .pc-stage :global(.pc-slide[data-active='true']) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .pc-stage :global(.pc-slide img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+  }
+  .pc-pause,
+  .pc-prev,
+  .pc-next {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .pc-pause {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .pc-prev,
+  .pc-next {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    padding: 0.3rem 0.75rem;
+  }
+  .pc-prev {
+    left: 0.5rem;
+  }
+  .pc-next {
+    right: 0.5rem;
+  }
+  .pc-caption {
+    margin: 0.6rem 0 0;
+    font-style: italic;
+    color: #9aa4b8;
+    text-align: center;
+    min-height: 1.4em;
+  }
+  .pc-thumbs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+    margin: 0.6rem 0 0;
+  }
+  .pc-thumbs :global(.pc-thumb) {
+    flex-shrink: 0;
+    width: 90px;
+    height: 63px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .pc-thumbs :global(.pc-thumb[data-active='true']) {
+    opacity: 1;
+    outline: 2px solid var(--color-link);
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.photo-carousel').forEach((carousel) => {
+    const stage = carousel.querySelector('.pc-stage') as HTMLElement;
+    const slides = Array.from(stage.querySelectorAll<HTMLElement>('.pc-slide'));
+    const thumbs = Array.from(carousel.querySelectorAll<HTMLElement>('.pc-thumb'));
+    const thumbsEl = carousel.querySelector('.pc-thumbs') as HTMLElement;
+    const captionEl = carousel.querySelector('.pc-caption') as HTMLElement;
+    const pauseBtn = carousel.querySelector('.pc-pause') as HTMLButtonElement;
+    const prevBtn = carousel.querySelector('.pc-prev') as HTMLButtonElement;
+    const nextBtn = carousel.querySelector('.pc-next') as HTMLButtonElement;
+    let current = 0;
+    let playing = true;
+    let timer: ReturnType<typeof setInterval> | undefined;
+
+    function scrollThumbIntoView(thumb: HTMLElement) {
+      const thumbLeft = thumb.offsetLeft;
+      const thumbRight = thumbLeft + thumb.offsetWidth;
+      const viewLeft = thumbsEl.scrollLeft;
+      const viewRight = viewLeft + thumbsEl.clientWidth;
+      if (thumbLeft < viewLeft) {
+        thumbsEl.scrollLeft = thumbLeft;
+      } else if (thumbRight > viewRight) {
+        thumbsEl.scrollLeft = thumbRight - thumbsEl.clientWidth;
+      }
+    }
+
+    function show(index: number) {
+      slides[current].setAttribute('data-active', 'false');
+      thumbs[current].setAttribute('data-active', 'false');
+      current = (index + slides.length) % slides.length;
+      slides[current].setAttribute('data-active', 'true');
+      thumbs[current].setAttribute('data-active', 'true');
+      captionEl.textContent = slides[current].dataset.caption || '';
+      scrollThumbIntoView(thumbs[current]);
+    }
+
+    function start() {
+      timer = setInterval(() => show(current + 1), 5000);
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+    }
+
+    start();
+
+    pauseBtn.addEventListener('click', () => {
+      playing = !playing;
+      pauseBtn.textContent = playing ? 'Pause ❙❙' : 'Play ►';
+      if (playing) {
+        start();
+      } else {
+        stop();
+      }
+    });
+    prevBtn.addEventListener('click', () => {
+      show(current - 1);
+      if (playing) { stop(); start(); }
+    });
+    nextBtn.addEventListener('click', () => {
+      show(current + 1);
+      if (playing) { stop(); start(); }
+    });
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener('click', () => {
+        show(i);
+        if (playing) { stop(); start(); }
+      });
+    });
+
+    thumbsEl.addEventListener('wheel', (event: WheelEvent) => {
+      if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+        event.preventDefault();
+        thumbsEl.scrollLeft += event.deltaY;
+      }
+    });
+  });
+</script>

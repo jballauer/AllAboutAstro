@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageBanner from '../../components/PageBanner.astro';
 import KeTableOfContents from '../../components/KeTableOfContents.astro';
+import PhotoCarousel from '../../components/PhotoCarousel.astro';
 import signatureImage from '../../assets/home/signature-transparent.png';
 import myFavoriteSlideRulesBanner from '../../assets/banners/my-favorite-slide-rules-banner.jpg';
 import pickettBanner from '../../assets/banners/pickett-banner.jpg';
@@ -10,6 +11,49 @@ import educationalValueBanner from '../../assets/banners/educational-value-banne
 import keBanner from '../../content/sliderules/_images/ke-banner-decilon5.jpg';
 import { getCollection, render } from 'astro:content';
 import { getLastUpdated } from '../../utils/lastUpdated.js';
+
+import favCelcon from '../../content/sliderules/_images/my-favorites/art-shot-k-e-celanese-celcon-2400px_orig.jpg';
+import favSic1610d from '../../content/sliderules/_images/my-favorites/art-shot-sic-1610d-2400px_orig.jpg';
+import favStaedtler from '../../content/sliderules/_images/my-favorites/art-shot-staedtler-544-28-2400px_orig.jpg';
+import favTwoDecilon5 from '../../content/sliderules/_images/my-favorites/art-shot-two-decilon-5-2400px_orig.jpg';
+import favPickettC19t from '../../content/sliderules/_images/my-favorites/art-shot-pickett-c19-t-2400px_orig.jpg';
+import favGraphoplex698 from '../../content/sliderules/_images/my-favorites/art-shot-graphoplex-698-2400px_orig.jpg';
+import favPost1461 from '../../content/sliderules/_images/my-favorites/art-shot-post-1461-pocket-versalog-2-2400px_orig.jpg';
+import favPostTeledyne from '../../content/sliderules/_images/my-favorites/art-shot-post-teledyne-versalog-2-2400px_orig.jpg';
+import favPickettModel100 from '../../content/sliderules/_images/my-favorites/art-shot-pickett-model-100-2400px_orig.jpg';
+import favPickettStatrule from '../../content/sliderules/_images/my-favorites/art-shot-pickett-statrule-2400px_orig.jpg';
+import favHemmi410 from '../../content/sliderules/_images/my-favorites/art-shot-hemmi-410-2400px_orig.jpg';
+import favTwoCelcon from '../../content/sliderules/_images/my-favorites/art-shot-two-k-e-celanese-celcon-2400px_orig.jpg';
+import favTwoPickettC19t from '../../content/sliderules/_images/my-favorites/art-shot-two-pickett-c19-t-2400px_orig.jpg';
+import favTwoPostTeledyne from '../../content/sliderules/_images/my-favorites/art-shot-two-post-teledyne-versalog-2-2400px_orig.jpg';
+import favDecilon5 from '../../content/sliderules/_images/my-favorites/art-shot-decilon-5-2400px_orig.jpg';
+import favFc283n from '../../content/sliderules/_images/my-favorites/art-shot-f-c-2-83n-2400px_orig.jpg';
+import favPickettN4t from '../../content/sliderules/_images/my-favorites/art-shot-pickett-n4-t-2400px_orig.jpg';
+import favDietzgen1770t from '../../content/sliderules/_images/my-favorites/art-shot-dietzgen-1770t-2400px_orig.jpg';
+
+// Bottom photo gallery on the original My Favorite Slide Rules page —
+// a Weebly slideshow of "art shot" photos, roughly one per favorite rule
+// (a few rules get two shots; the original carried no per-slide captions).
+const myFavoritesPhotos = [
+  { src: favCelcon, hires: '/images/sliderules/my-favorites/art-shot-k-e-celanese-celcon-2400px_orig.jpg', alt: 'K&E Celanese Celcon slide rule', caption: 'K&E Celanese Celcon' },
+  { src: favSic1610d, hires: '/images/sliderules/my-favorites/art-shot-sic-1610d-2400px_orig.jpg', alt: 'SIC 1610-D Circular Rule', caption: 'SIC 1610-D Circular Rule' },
+  { src: favStaedtler, hires: '/images/sliderules/my-favorites/art-shot-staedtler-544-28-2400px_orig.jpg', alt: 'Staedtler 544/28 slide rule', caption: 'Staedtler 544/28' },
+  { src: favTwoDecilon5, hires: '/images/sliderules/my-favorites/art-shot-two-decilon-5-2400px_orig.jpg', alt: 'K&E Deci-Lon 5 pocket rule', caption: 'K&E Deci-Lon 5 (68-1300) Pocket Rule' },
+  { src: favPickettC19t, hires: '/images/sliderules/my-favorites/art-shot-pickett-c19-t-2400px_orig.jpg', alt: 'Pickett C19-T Radio Transmission Rule', caption: 'Pickett C19-T Radio Transmission Rule' },
+  { src: favGraphoplex698, hires: '/images/sliderules/my-favorites/art-shot-graphoplex-698-2400px_orig.jpg', alt: 'Graphoplex 698 Electronic Rule', caption: 'Graphoplex 698 Electronic Rule' },
+  { src: favPost1461, hires: '/images/sliderules/my-favorites/art-shot-post-1461-pocket-versalog-2-2400px_orig.jpg', alt: 'Post 1461 Pocket Versalog', caption: 'Post 1461 Pocket Versalog 1 & 2' },
+  { src: favPostTeledyne, hires: '/images/sliderules/my-favorites/art-shot-post-teledyne-versalog-2-2400px_orig.jpg', alt: 'Post/Teledyne Versalog 2', caption: 'Post/Teledyne Versalog 2' },
+  { src: favPickettModel100, hires: '/images/sliderules/my-favorites/art-shot-pickett-model-100-2400px_orig.jpg', alt: 'Pickett Model 100 Douglas Sky Rule', caption: 'Pickett Model 100 Douglas Sky Rule' },
+  { src: favPickettStatrule, hires: '/images/sliderules/my-favorites/art-shot-pickett-statrule-2400px_orig.jpg', alt: 'Pickett Statrule', caption: 'Pickett Statrule' },
+  { src: favHemmi410, hires: '/images/sliderules/my-favorites/art-shot-hemmi-410-2400px_orig.jpg', alt: 'Hemmi No. 410 Involute of Gear Wheels Rule', caption: 'Hemmi No. 410 Involute of Gear Wheels Rule' },
+  { src: favTwoCelcon, hires: '/images/sliderules/my-favorites/art-shot-two-k-e-celanese-celcon-2400px_orig.jpg', alt: 'K&E Celanese Celcon slide rule', caption: 'K&E Celanese Celcon' },
+  { src: favTwoPickettC19t, hires: '/images/sliderules/my-favorites/art-shot-two-pickett-c19-t-2400px_orig.jpg', alt: 'Pickett C19-T Radio Transmission Rule', caption: 'Pickett C19-T Radio Transmission Rule' },
+  { src: favTwoPostTeledyne, hires: '/images/sliderules/my-favorites/art-shot-two-post-teledyne-versalog-2-2400px_orig.jpg', alt: 'Post/Teledyne Versalog 2', caption: 'Post/Teledyne Versalog 2' },
+  { src: favDecilon5, hires: '/images/sliderules/my-favorites/art-shot-decilon-5-2400px_orig.jpg', alt: 'K&E Deci-Lon 5 pocket rule', caption: 'K&E Deci-Lon 5 (68-1300) Pocket Rule' },
+  { src: favFc283n, hires: '/images/sliderules/my-favorites/art-shot-f-c-2-83n-2400px_orig.jpg', alt: 'Faber-Castell 2/83N Novo-Biplex', caption: 'Faber-Castell 2/83N Novo-Biplex' },
+  { src: favPickettN4t, hires: '/images/sliderules/my-favorites/art-shot-pickett-n4-t-2400px_orig.jpg', alt: 'Pickett N4-T VectorLog slide rule', caption: 'Pickett N4-T VectorLog' },
+  { src: favDietzgen1770t, hires: '/images/sliderules/my-favorites/art-shot-dietzgen-1770t-2400px_orig.jpg', alt: "Dietzgen 1770T Carpenter's Rule", caption: "Dietzgen 1770T Carpenter's Rule" },
+];
 
 // Landing/article pages that had their own distinct header banner on the
 // original site. Every one of these must render above the <h1>, immediately
@@ -64,6 +108,13 @@ const banner = pageBanners[entry.id];
     )}
     {isKeSubPage && <KeTableOfContents currentId={entry.id} />}
     <Content />
+    {entry.id === 'my-favorite-slide-rules' && (
+      <>
+        <div class="ke-clear"></div>
+        <h2>Photo Gallery</h2>
+        <PhotoCarousel photos={myFavoritesPhotos} />
+      </>
+    )}
     {!isKePage && (
       <>
         <div class="ke-clear"></div>

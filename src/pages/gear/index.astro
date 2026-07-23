@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageBanner from '../../components/PageBanner.astro';
+import PhotoCarousel from '../../components/PhotoCarousel.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 
@@ -146,24 +147,7 @@ const equipmentPhotos = [
     <h2>Equipment Images...</h2>
     <p>A snapshot history of just some of the gear that I have employed.</p>
 
-    <div class="gear-carousel">
-      <div class="gc-stage">
-        <button type="button" class="gc-pause" aria-label="Pause slideshow">Pause ❙❙</button>
-        <button type="button" class="gc-prev" aria-label="Previous image">‹</button>
-        <button type="button" class="gc-next" aria-label="Next image">›</button>
-        {equipmentPhotos.map((photo, i) => (
-          <figure class="gc-slide" data-index={i} data-active={i === 0} data-hires={photo.hires} data-caption={photo.caption}>
-            <Image src={photo.src} alt={photo.alt} width={700} />
-          </figure>
-        ))}
-      </div>
-      <p class="gc-caption">{equipmentPhotos[0].caption}</p>
-      <div class="gc-thumbs no-lightbox">
-        {equipmentPhotos.map((photo, i) => (
-          <Image src={photo.src} alt="" width={90} class="gc-thumb" data-index={i} data-active={i === 0} />
-        ))}
-      </div>
-    </div>
+    <PhotoCarousel photos={equipmentPhotos} />
   </div>
 
   <figure class="ke-figure ke-figure-third ke-figure-right" data-hires={eq08Photo.hires}>
@@ -240,14 +224,6 @@ const equipmentPhotos = [
     width: 50%;
     margin: 0 1.5rem 1rem 0;
   }
-  .gear-carousel {
-    margin: 0.3rem 0 1rem;
-  }
-  .gc-stage {
-    position: relative;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-  }
   @media (max-width: 700px) {
     .gear-left-col {
       float: none;
@@ -255,159 +231,4 @@ const equipmentPhotos = [
       margin: 0 0 1rem;
     }
   }
-  .gc-stage :global(.gc-slide) {
-    position: absolute;
-    inset: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1s ease;
-  }
-  .gc-stage :global(.gc-slide[data-active='true']) {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .gc-stage :global(.gc-slide img) {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #000;
-  }
-  .gc-pause,
-  .gc-prev,
-  .gc-next {
-    position: absolute;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.55);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    padding: 0.3rem 0.6rem;
-  }
-  .gc-pause {
-    top: 0.5rem;
-    left: 0.5rem;
-  }
-  .gc-prev,
-  .gc-next {
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.25rem;
-    padding: 0.3rem 0.75rem;
-  }
-  .gc-prev {
-    left: 0.5rem;
-  }
-  .gc-next {
-    right: 0.5rem;
-  }
-  .gc-caption {
-    margin: 0.6rem 0 0;
-    font-style: italic;
-    color: #9aa4b8;
-    text-align: center;
-    min-height: 1.4em;
-  }
-  .gc-thumbs {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 6px;
-    overflow-x: auto;
-    margin: 0.6rem 0 0;
-  }
-  .gc-thumbs :global(.gc-thumb) {
-    flex-shrink: 0;
-    width: 90px;
-    height: 63px;
-    object-fit: cover;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-  .gc-thumbs :global(.gc-thumb[data-active='true']) {
-    opacity: 1;
-    outline: 2px solid var(--color-link);
-  }
 </style>
-
-<script>
-  const carousel = document.querySelector('.gear-carousel');
-  if (carousel) {
-    const stage = carousel.querySelector('.gc-stage') as HTMLElement;
-    const slides = Array.from(stage.querySelectorAll<HTMLElement>('.gc-slide'));
-    const thumbs = Array.from(carousel.querySelectorAll<HTMLElement>('.gc-thumb'));
-    const thumbsEl = carousel.querySelector('.gc-thumbs') as HTMLElement;
-    const captionEl = carousel.querySelector('.gc-caption') as HTMLElement;
-    const pauseBtn = carousel.querySelector('.gc-pause') as HTMLButtonElement;
-    const prevBtn = carousel.querySelector('.gc-prev') as HTMLButtonElement;
-    const nextBtn = carousel.querySelector('.gc-next') as HTMLButtonElement;
-    let current = 0;
-    let playing = true;
-    let timer: ReturnType<typeof setInterval> | undefined;
-
-    function scrollThumbIntoView(thumb: HTMLElement) {
-      const thumbLeft = thumb.offsetLeft;
-      const thumbRight = thumbLeft + thumb.offsetWidth;
-      const viewLeft = thumbsEl.scrollLeft;
-      const viewRight = viewLeft + thumbsEl.clientWidth;
-      if (thumbLeft < viewLeft) {
-        thumbsEl.scrollLeft = thumbLeft;
-      } else if (thumbRight > viewRight) {
-        thumbsEl.scrollLeft = thumbRight - thumbsEl.clientWidth;
-      }
-    }
-
-    function show(index: number) {
-      slides[current].setAttribute('data-active', 'false');
-      thumbs[current].setAttribute('data-active', 'false');
-      current = (index + slides.length) % slides.length;
-      slides[current].setAttribute('data-active', 'true');
-      thumbs[current].setAttribute('data-active', 'true');
-      captionEl.textContent = slides[current].dataset.caption || '';
-      scrollThumbIntoView(thumbs[current]);
-    }
-
-    function start() {
-      timer = setInterval(() => show(current + 1), 5000);
-    }
-    function stop() {
-      if (timer) clearInterval(timer);
-    }
-
-    start();
-
-    pauseBtn.addEventListener('click', () => {
-      playing = !playing;
-      pauseBtn.textContent = playing ? 'Pause ❙❙' : 'Play ►';
-      if (playing) {
-        start();
-      } else {
-        stop();
-      }
-    });
-    prevBtn.addEventListener('click', () => {
-      show(current - 1);
-      if (playing) { stop(); start(); }
-    });
-    nextBtn.addEventListener('click', () => {
-      show(current + 1);
-      if (playing) { stop(); start(); }
-    });
-    thumbs.forEach((thumb, i) => {
-      thumb.addEventListener('click', () => {
-        show(i);
-        if (playing) { stop(); start(); }
-      });
-    });
-
-    thumbsEl.addEventListener('wheel', (event: WheelEvent) => {
-      if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-        event.preventDefault();
-        thumbsEl.scrollLeft += event.deltaY;
-      }
-    });
-  }
-</script>
