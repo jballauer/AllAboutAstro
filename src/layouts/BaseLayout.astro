@@ -466,6 +466,31 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     text-decoration: underline;
   }
 
+  /* Two-column spec-list + narrative-sidebar layout — built for the M31
+     Mosaic gallery page but written generically so any gallery entry can
+     reuse it: a plain spec list on the left, a `.ke-sidebar`-colored box
+     (same solid color as the K&E article sidebars) on the right. */
+  .ke-two-col {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0 1.5rem;
+  }
+  .ke-two-col-specs {
+    flex: 1 1 280px;
+  }
+  .ke-two-col-specs p {
+    margin: 0 0 0.6rem;
+  }
+  /* Overrides `.ke-sidebar`'s default float/fixed-width — here it's one
+     flex child in the row above, not a floated aside within body text. */
+  .ke-sidebar.ke-two-col-about {
+    flex: 1 1 280px;
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+
   /* K&E numbered image gallery — a grouped set of related photos inside
      a .ke-sidebar, each tagged with a number that matches its caption
      in the list below it. */
