@@ -43,6 +43,10 @@ But the sheer number of Pickett rules and the stories they tell really make them
 
 <div class="ke-clear"></div>
 
+## My Portfolio of Pickett Rules
+
+The listing below catalogs every Pickett slide rule I own, organized the same way as the rest of this page. Click any rule's name to expand it. Some entries already have a photo, specifications, and a write-up; many are still just placeholders until I get around to documenting them properly. Please have patience with it — this catalog will keep growing over time.
+
 ## General-Purpose Rules
 
 Here are Pickett slide rules that allow for basic to complex evaluation of mathematical computations and functions. I will also include "engineering" rules here, since that designation typically includes hyperbolic trig scales which, as far as I'm concerned, is still computational mathematics; however, where that applies, I will make note of that. Click any rule below to see its photo and details.
