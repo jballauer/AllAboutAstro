@@ -13,14 +13,36 @@ import jetLogAligned from '../../content/sliderules/_images/landing/ke-jet-log-a
 import fc810ArtShot from '../../content/sliderules/_images/landing/art-shot-fc-8-10-circular.jpg';
 import decilon5Truck from '../../content/sliderules/_images/landing/decilon5-demo-truck.jpeg';
 import classroomWall from '../../content/sliderules/_images/landing/classroom-wall-display.jpg';
+import logoAristo from '../../content/sliderules/_images/landing/maker-logos/aristo-dennert-pape.jpg';
+import logoDietzgen from '../../content/sliderules/_images/landing/maker-logos/dietzgen.webp';
+import logoKe from '../../content/sliderules/_images/landing/maker-logos/ke.jpg';
+import logoFaberCastell from '../../content/sliderules/_images/landing/maker-logos/faber-castell.webp';
+import logoNestler from '../../content/sliderules/_images/landing/maker-logos/nestler.jpg';
+import logoPickett from '../../content/sliderules/_images/landing/maker-logos/pickett.jpg';
+import logoPost from '../../content/sliderules/_images/landing/maker-logos/post.jpg';
+import logoHemmi from '../../content/sliderules/_images/landing/maker-logos/hemmi.jpg';
+import logoSic from '../../content/sliderules/_images/landing/maker-logos/sic.jpg';
 
 const entries = (await getCollection('sliderules', ({ data }) => !data.draft)).sort(
   (a, b) => a.data.order - b.data.order
 );
+
+const makerLogos = [
+  { src: logoAristo, alt: 'Dennert & Pape / Aristo logo' },
+  { src: logoDietzgen, alt: 'Dietzgen logo' },
+  { src: logoKe, alt: 'Keuffel & Esser logo', href: '/sliderules/all-about-ke-rules/' },
+  { src: logoFaberCastell, alt: 'Faber-Castell logo' },
+  { src: logoNestler, alt: 'Albert Nestler logo' },
+  { src: logoPickett, alt: 'Pickett logo', href: '/sliderules/pickett/' },
+  { src: logoPost, alt: 'Post logo' },
+  { src: logoHemmi, alt: "Hemmi's Bamboo Slide Rule logo" },
+  { src: logoSic, alt: 'Scientific Instruments Company logo' },
+];
 ---
 
 <BaseLayout title="Jay's Slide Rules">
   <PageBanner src={sliderulesBanner} alt="A close-up of a Post Versalog slide rule" />
+  <article>
   <h1>Jay's Slide Rules</h1>
 
   <p>I'm not sure why it took me so long to get it? As a math teacher, you'd think that math-related gizmos would resonate with my inner being, but it wasn't until recently that I stumbled across a collection of slide rules at an estate sale...and I knew that I had to have them.</p>
@@ -147,7 +169,22 @@ const entries = (await getCollection('sliderules', ({ data }) => !data.draft)).s
 
   <p>In its fully realized presentation, this website will feature each rule suitably photographed and a list of specifications. I will also include my own thoughts about the slide rule itself. All these things, of course, will be accomplished as time permits!</p>
 
-  <h2>Portfolio of "Rules"</h2>
+  <h2>Portfolio of "Rules" (click on the logos below)</h2>
+  <div class="ke-maker-grid">
+    {makerLogos.map((maker) =>
+      maker.href ? (
+        <a class="ke-maker-logo no-lightbox" href={maker.href}>
+          <Image src={maker.src} alt={maker.alt} />
+        </a>
+      ) : (
+        <div class="ke-maker-logo">
+          <Image src={maker.src} alt={maker.alt} />
+        </div>
+      )
+    )}
+  </div>
+
+  <h2>All Pages</h2>
   <ul>
     {entries.map((entry) => (
       <li>
@@ -155,4 +192,5 @@ const entries = (await getCollection('sliderules', ({ data }) => !data.draft)).s
       </li>
     ))}
   </ul>
+  </article>
 </BaseLayout>

@@ -878,4 +878,37 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     color: var(--color-prose-text);
     opacity: 0.7;
   }
+
+  /* Manufacturer-logo showcase grid (Jay's Slide Rules landing page).
+     Source logos come in wildly different native backgrounds (solid
+     black, white, red, cream) — a plain white card behind each keeps
+     the grid looking like one cohesive set instead of a row of clashing
+     rectangles against the page's dark background. */
+  .ke-maker-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .ke-maker-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 110px;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+  .ke-maker-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  a.ke-maker-logo:hover,
+  a.ke-maker-logo:focus-visible {
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.35);
+  }
 </style>
