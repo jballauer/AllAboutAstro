@@ -128,6 +128,7 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 - Reordered the "Jay's Slide Rules" nav dropdown so The Educational Value of Slide Rules sits above Pickett (and above the K&E book); floated the Pickett landing page's 3 intro images (logo, N4-T hero shot, 1968 catalog cover) inline beside the intro paragraphs instead of stacking them as one full-width block before all the text, alternating sides and clearing before the "General-Purpose Rules" heading
 - Added a "My Portfolio of Pickett Rules" heading and framing paragraph ahead of the accordion catalog, explaining these are the rules Jay owns and asking readers for patience as write-ups get filled in over time
 - Demoted the Pickett catalog's heading levels to show real hierarchy under "My Portfolio of Pickett Rules" (H2): "General-Purpose Rules"/"Specialty Rules" to H3 (sub-sections), "Full-Scale/Pocket/Circular Rules" to H4 (sub-sub-sections) — no custom CSS needed, the site has no prose heading styles beyond browser defaults, so the existing H2/H3/H4 size cascade (24px/18.72px/16px) already reads as three distinct levels
+- Reordered every model within each of the 6 accordion lists by model number, smallest to largest (e.g. Model 2, N3-ES, N4-T... within General-Purpose > Full-Scale Rules); moved "Pickett B1 Bamboo Rule" to the end of its list by hand since it has no true catalog number (the "1" in "B1" isn't one)
 
 ---
 

@@ -56,6 +56,20 @@ Here are Pickett slide rules that allow for basic to complex evaluation of mathe
 <div class="ke-portfolio-list">
 
 <details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 2 Deci Log Log Duplex</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N3-ES Power Log Exponential</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">N4-T Vector Hyperbolic Dual Base Log Log</span></summary>
 
 <div class="ke-portfolio-detail">
@@ -112,7 +126,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N3-ES Power Log Exponential</span></summary>
+<summary><span class="ke-portfolio-name">Model 4 Vector Hyperbolic Deci Log Log</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -126,7 +140,42 @@ I own this rule but haven't written up its details yet — check back as this ca
 </details>
 
 <details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 800 Log Log Duplex</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N901-ES Simplex</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">N902-ES Simplex Trig</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 902 Simplex Trig</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N903-ES Trig and Conversion</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N909-ES Simplex Trig with Metric Conversion</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -154,56 +203,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 2 Deci Log Log Duplex</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 902 Simplex Trig</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">N1010-T Trig Duplex</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N901-ES Simplex</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N903-ES Trig and Conversion</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N909-ES Simplex Trig with Metric Conversion</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 4 Vector Hyperbolic Deci Log Log</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 800 Log Log Duplex</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -221,6 +221,34 @@ I own this rule but haven't written up its details yet — check back as this ca
 #### Pocket Rules
 
 <div class="ke-portfolio-list">
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N4P-ES Vector-Type Log Log Duplex</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 20 Basic</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N200-T Trig</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N300-T Log Log Duplex</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
 
 <details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">N600-ES Log Log Duplex</span></summary>
@@ -270,35 +298,7 @@ This is one of the smallest rules I own. It has a durable feel, albeit the numbe
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N300-T Log Log Duplex</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N200-T Trig</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">N1006-ES Duplex Trig</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 20 Basic</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N4P-ES Vector-Type Log Log Duplex</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -310,6 +310,27 @@ I own this rule but haven't written up its details yet — check back as this ca
 ![Pickett 103-ES circular rule](./_images/pickett-103es-1.jpg)
 
 <div class="ke-portfolio-list">
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 101-C Dial-Rule Circular</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">108-ES Circular</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">110-ES Circular</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
 
 <details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">111-ES Circular</span></summary>
@@ -335,27 +356,6 @@ A photo of this rule is still to come — check back as this catalog grows.
 
 </details>
 
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 101-C Dial-Rule Circular</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">110-ES Circular</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">108-ES Circular</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
 </div>
 
 ### Specialty Rules
@@ -367,7 +367,35 @@ These Pickett slide rules are "specialty" rules because they were designed or ma
 <div class="ke-portfolio-list">
 
 <details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 6-T Statistical Quality Control Rule</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">PR-12 Projection Slide Rule</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">PR-13 Log Log Projection Slide Rule</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">Model 14 US Military</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N15-T Georgia Ironworks Hydraulic Rule</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -382,6 +410,13 @@ I own this rule but haven't written up its details yet — check back as this ca
 
 <details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">C19-T Collins Microwave Transmissions</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N515-T Cleveland Institute of Electronics Rule</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -409,21 +444,14 @@ I own this rule but haven't written up its details yet — check back as this ca
 </details>
 
 <details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 575 Kellogg Hydraulic Rule</span></summary>
+<div class="ke-portfolio-detail">
+I own this rule but haven't written up its details yet — check back as this catalog grows.
+</div>
+</details>
+
+<details class="ke-portfolio-item">
 <summary><span class="ke-portfolio-name">N808-T Standard Marine Fuels</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N1041-GP Universal Valve Sizing</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N1072-ES Spring Calculator</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -437,7 +465,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 575 Kellogg Hydraulic Rule</span></summary>
+<summary><span class="ke-portfolio-name">N1041-GP Universal Valve Sizing</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -451,35 +479,7 @@ I own this rule but haven't written up its details yet — check back as this ca
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 6-T Statistical Quality Control Rule</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N15-T Georgia Ironworks Hydraulic Rule</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">PR-12 Projection Slide Rule</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">PR-13 Log Log Projection Slide Rule</span></summary>
-<div class="ke-portfolio-detail">
-I own this rule but haven't written up its details yet — check back as this catalog grows.
-</div>
-</details>
-
-<details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">N515-T Cleveland Institute of Electronics Rule</span></summary>
+<summary><span class="ke-portfolio-name">N1072-ES Spring Calculator</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -551,14 +551,14 @@ A specialty aeronautic engineering slide rule made in the USA for Douglas Aircra
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 700 Aerial Photo USAF</span></summary>
+<summary><span class="ke-portfolio-name">Model 400 Business</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Model 400 Business</span></summary>
+<summary><span class="ke-portfolio-name">Model 700 Aerial Photo USAF</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
@@ -578,14 +578,14 @@ I own this rule but haven't written up its details yet — check back as this ca
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">106C Proportional Scale</span></summary>
+<summary><span class="ke-portfolio-name">105-C Profit Rule</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
 </details>
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">105-C Profit Rule</span></summary>
+<summary><span class="ke-portfolio-name">106C Proportional Scale</span></summary>
 <div class="ke-portfolio-detail">
 I own this rule but haven't written up its details yet — check back as this catalog grows.
 </div>
