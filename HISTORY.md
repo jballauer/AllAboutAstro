@@ -111,6 +111,7 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 
 - Audited My Favorite Slide Rules: restored the missing 18-image "art shot" photo gallery from the old page's bottom slideshow (extracted a reusable `PhotoCarousel` component from the Astro Gear carousel and used it in both places)
 - Built out the Learning landing page (previously a bare title list): restored the categorized article list with thumbnails/descriptions, the "Learning Astrophotography" sidebar essay, and a Presentations section (4 old talks, linked out to the legacy Weebly host since the files are 22-135MB and too large to commit into this repo)
+- Refined the Learning landing page per Jay's feedback: moved the closing signature into the sidebar essay (enlarged, recolored gray-to-white), gave the article list a fixed width so every entry wraps identically, moved the intro prose above the sidebar so it runs full-width, shifted the sidebar down to start level with the article list, and renamed the first category heading to "Theory - Learning Resources - Casual Reading"
 
 ---
 
