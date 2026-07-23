@@ -33,7 +33,7 @@ const byId = Object.fromEntries(articles.map((a) => [a.id, a]));
 // assigned during migration and doesn't reflect these categories).
 const categories = [
   {
-    title: 'Imaging Theory - Resources for Learning - Casual Reading',
+    title: 'Theory - Learning Resources - Casual Reading',
     items: [
       { id: 'how-to-learn-astrophotography', thumb: thumbHowToLearn },
       { id: 'space-is-a-landscape', thumb: thumbSpaceIsALandscape },
@@ -109,6 +109,24 @@ const presentations = [
     <PageBanner src={learningBanner} alt="A close-up collage of the Pillars of Creation in the Eagle Nebula" />
     <h1>Learning</h1>
 
+    <h2>Articles</h2>
+    <h3>Philosophy - Theory - Big Picture Stuff</h3>
+    <p>
+      In the mid-oughts, I began writing a book, <em>All About Astroimaging</em>, which never really got finished.
+      Being a comprehensive and detailed look at the hobby, driven by my own sense of thoroughness, there became no
+      way to ever call it "finished." So, instead of hoarding away the material while persisting toward an end that
+      would never come, I decided to begin converting the chapters and topics into the articles below.
+    </p>
+    <p>
+      Keep in mind that many of the articles are lengthy. There will be stories and humor and illustrations. I like
+      to write, so the articles might even come across as being a bit pretentious. But remember, they were once
+      chapters of a book.
+    </p>
+    <p>
+      Thus, take your time with the articles and try to imagine you are reading your favorite novel. Hopefully you
+      will find the writing both illuminating and enjoyable...
+    </p>
+
     <div class="learn-sidebar" data-color="orange" style="width: 45%">
       <h2>Learning Astrophotography</h2>
       <p>
@@ -182,28 +200,10 @@ const presentations = [
         wonderful advances to their understanding of both themselves AND the universe, ultimately giving us, the
         astroimager, more reasons to do what we do.
       </p>
-      <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="learn-sidebar-signature" />
+      <Image src={signatureImage} alt="Jay Ballauer's signature" width={200} class="learn-sidebar-signature" />
     </div>
 
-    <h2>Articles</h2>
     <div class="learn-articles">
-      <h3>Philosophy - Theory - Big Picture Stuff</h3>
-      <p>
-        In the mid-oughts, I began writing a book, <em>All About Astroimaging</em>, which never really got finished.
-        Being a comprehensive and detailed look at the hobby, driven by my own sense of thoroughness, there became no
-        way to ever call it "finished." So, instead of hoarding away the material while persisting toward an end that
-        would never come, I decided to begin converting the chapters and topics into the articles below.
-      </p>
-      <p>
-        Keep in mind that many of the articles are lengthy. There will be stories and humor and illustrations. I like
-        to write, so the articles might even come across as being a bit pretentious. But remember, they were once
-        chapters of a book.
-      </p>
-      <p>
-        Thus, take your time with the articles and try to imagine you are reading your favorite novel. Hopefully you
-        will find the writing both illuminating and enjoyable...
-      </p>
-
       {categories.map((category) => (
         <>
           <h3>{category.title}</h3>
@@ -280,6 +280,10 @@ const presentations = [
   .learn-sidebar-signature {
     display: block;
     margin: 1.25rem 0 0 auto;
+    /* Source file is gray ink; recolor to solid white then dial back to
+       match the sidebar body text's opacity (rgba(255,255,255,0.92)). */
+    filter: brightness(0) invert(1);
+    opacity: 0.92;
   }
 
   /* Fixed width so the article list wraps identically for every entry,
