@@ -147,9 +147,7 @@ Mirror Lock-up sounds good in theory, but not in practicality.  There is not an
 
 Those who do film photography, via eyepiece projection techniques, would definitely have a need for the mirror lock-up function.  It becomes critical to time properly these short exposures of brighter objects.   But with the shift toward digital photography for solar system objects, which can be accomplished much more effectively than with film, mirror lock-up is hardly necessary in a good astro camera.  
  
-## ASPECTS OF THE LENS
-
-### Remember, it's all about the glass...
+### It's all about the glass...
 
 For this reason, if you are going to be picky about purchasing something, make sure it is the lens.  Later I'll give you some specific camera models that are commonly used to produce great astrophotos, but for now allow me to describe what makes a good lens for astrophotography.
 
