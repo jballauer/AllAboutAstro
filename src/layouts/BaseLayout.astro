@@ -49,12 +49,15 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
 
   // In-place zoom: clicking an image zooms in *within its own on-page
   // frame* (never a fullscreen overlay) anchored so the exact pixel
-  // clicked stays under the cursor, then lets you drag to pan since the
-  // whole image is no longer visible at once. Clicking again returns to
-  // the normal fit view. A wrapper span (`display: contents` until
-  // active, so it has zero layout effect on the unzoomed page) captures
-  // the image's own current rendered box in pixels the instant zoom
-  // starts — this works regardless of whether the image lives in a
+  // clicked stays under the cursor. Once zoomed, simply moving the mouse
+  // pans — no drag needed — because the pixel under the cursor is
+  // recomputed on every mousemove using the same anchor formula used to
+  // enter zoom: whatever fraction across the frame the cursor sits at,
+  // that same fraction of the image is shown right there. Clicking again
+  // returns to the normal fit view. A wrapper span (`display: contents`
+  // until active, so it has zero layout effect on the unzoomed page)
+  // captures the image's own current rendered box in pixels the instant
+  // zoom starts — this works regardless of whether the image lives in a
   // percentage-width float, a flex item, or the absolutely-positioned
   // carousel stage, without needing special-case CSS for each.
   function clamp(value: number, min: number, max: number) {
@@ -64,49 +67,11 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   type ZoomState = {
     zoomed: boolean;
     scale: number;
-    tx: number;
-    ty: number;
     frameW: number;
     frameH: number;
   };
 
   const allZoomContexts: { state: ZoomState; exitZoom: () => void }[] = [];
-
-  let activeDrag: {
-    img: HTMLImageElement;
-    frame: HTMLElement;
-    state: ZoomState;
-    startX: number;
-    startY: number;
-    originTx: number;
-    originTy: number;
-    moved: boolean;
-  } | null = null;
-  let suppressClick = false;
-
-  window.addEventListener('mousemove', (e) => {
-    if (!activeDrag) return;
-    const dx = e.pageX - activeDrag.startX;
-    const dy = e.pageY - activeDrag.startY;
-    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) activeDrag.moved = true;
-    const { state, img } = activeDrag;
-    const tx = clamp(activeDrag.originTx + dx, state.frameW * (1 - state.scale), 0);
-    const ty = clamp(activeDrag.originTy + dy, state.frameH * (1 - state.scale), 0);
-    state.tx = tx;
-    state.ty = ty;
-    img.classList.add('ke-zoom-instant');
-    img.style.transform = `translate(${tx}px, ${ty}px) scale(${state.scale})`;
-  });
-
-  window.addEventListener('mouseup', () => {
-    if (activeDrag) {
-      if (activeDrag.moved) suppressClick = true;
-      activeDrag.img.classList.remove('ke-zoom-instant');
-      activeDrag.frame.classList.remove('ke-panning');
-      activeDrag.img.style.cursor = 'grab';
-    }
-    activeDrag = null;
-  });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -125,16 +90,15 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     img.parentNode?.insertBefore(frame, img);
     frame.appendChild(img);
 
-    const state: ZoomState = { zoomed: false, scale: 1, tx: 0, ty: 0, frameW: 0, frameH: 0 };
+    const state: ZoomState = { zoomed: false, scale: 1, frameW: 0, frameH: 0 };
 
-    function applyScale(rect: DOMRect, clickX: number, clickY: number, fracX: number, fracY: number, instant: boolean) {
-      const natural = img.naturalWidth || rect.width * 2.5;
-      const scale = clamp(natural / rect.width, 1.4, 6);
-      const tx = clamp(clickX - fracX * rect.width * scale, rect.width * (1 - scale), 0);
-      const ty = clamp(clickY - fracY * rect.height * scale, rect.height * (1 - scale), 0);
-      state.scale = scale;
-      state.tx = tx;
-      state.ty = ty;
+    // x/y are cursor position in frame-local px (0..frameW / 0..frameH).
+    // The point at that same fraction across the image ends up positioned
+    // right at (x, y) — this is what keeps a star glued under the cursor
+    // both on entry and continuously while panning afterward.
+    function positionAt(x: number, y: number, scale: number, instant: boolean) {
+      const tx = clamp(x * (1 - scale), state.frameW * (1 - scale), 0);
+      const ty = clamp(y * (1 - scale), state.frameH * (1 - scale), 0);
       if (instant) img.classList.add('ke-zoom-instant');
       img.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
       if (instant) {
@@ -156,24 +120,27 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
       frame.style.height = `${rect.height}px`;
       img.classList.add('ke-zoom-img-active');
 
-      const fracX = clamp(clickX / rect.width, 0, 1);
-      const fracY = clamp(clickY / rect.height, 0, 1);
-
       const hiresHost = img.closest<HTMLElement>('[data-hires]');
       const hiresSrc = hiresHost?.dataset.hires;
       const resolvedHiresUrl = hiresSrc ? new URL(hiresSrc, location.href).href : null;
 
+      function applyScale(instant: boolean) {
+        const natural = img.naturalWidth || rect.width * 2.5;
+        state.scale = clamp(natural / rect.width, 1.4, 6);
+        positionAt(clickX, clickY, state.scale, instant);
+      }
+
       if (resolvedHiresUrl && img.src !== resolvedHiresUrl) {
         // Grow immediately using the already-loaded small image, then
         // refine the scale once the hi-res file finishes loading.
-        applyScale(rect, clickX, clickY, fracX, fracY, false);
-        img.addEventListener('load', () => applyScale(rect, clickX, clickY, fracX, fracY, true), { once: true });
+        applyScale(false);
+        img.addEventListener('load', () => applyScale(true), { once: true });
         img.src = hiresSrc as string;
       } else {
-        applyScale(rect, clickX, clickY, fracX, fracY, false);
+        applyScale(false);
       }
 
-      img.style.cursor = 'grab';
+      img.style.cursor = 'zoom-out';
       state.zoomed = true;
     }
 
@@ -194,28 +161,13 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
 
     allZoomContexts.push({ state, exitZoom });
 
-    frame.addEventListener('mousedown', (e) => {
+    frame.addEventListener('mousemove', (e) => {
       if (!state.zoomed) return;
-      activeDrag = {
-        img,
-        frame,
-        state,
-        startX: e.pageX,
-        startY: e.pageY,
-        originTx: state.tx,
-        originTy: state.ty,
-        moved: false,
-      };
-      frame.classList.add('ke-panning');
-      img.style.cursor = 'grabbing';
-      e.preventDefault();
+      const rect = frame.getBoundingClientRect();
+      positionAt(e.clientX - rect.left, e.clientY - rect.top, state.scale, true);
     });
 
     frame.addEventListener('click', (e) => {
-      if (suppressClick) {
-        suppressClick = false;
-        return;
-      }
       if (state.zoomed) {
         exitZoom();
       } else {
@@ -863,16 +815,13 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     display: block;
     position: relative;
     overflow: hidden;
-    cursor: grab;
-  }
-  .ke-zoom-frame.ke-zoom-active.ke-panning {
-    cursor: grabbing;
   }
   /* While zoomed, the image is pulled out of normal flow to fill the frame
      exactly; `transform: translate() scale()` (set in JS, transform-origin
-     pinned to 0 0) does the actual zooming/panning on top of that, so the
-     point clicked stays glued under the cursor at every step, and panning
-     never reveals empty space beyond the image's own edges. */
+     pinned to 0 0) does the actual zooming on top of that. Panning is just
+     the mouse moving — no drag — so the point under the cursor is
+     recomputed on every mousemove and never reveals empty space beyond the
+     image's own edges. */
   .ke-zoom-frame img.ke-zoom-img-active {
     position: absolute;
     inset: 0;
