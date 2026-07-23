@@ -103,7 +103,11 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 - Audited remaining Learning articles for trailing-sidebar blank space
 - Fixed blank-space voids and float layout across 5 Learning articles
 - Fixed blank void beside the NexStar Evolution image
+- Audited Globular Clusters: added the missing closing signature graphic (13th Learning article, previously uncovered by the "all 12" rollup below)
+- Audited Building a Roll-Off Roof Observatory: clean, no changes (multi-page split, correctly has no closing signature)
+- Audited Globular Clusters again: restored dropped inline emphasis (`*side*`, `*front*`, `***globular clusters***`) lost during migration
+- Added the `audit-article-layout` project skill (`.claude/skills/`) to standardize this per-article audit process going forward
 
 ---
 
-*All 12 Learning articles reached visual parity as of 2026-07-22. See project memory for open items (image lightbox rollout, stub landing pages, nav sweep).*
+*All 13 Learning articles reached visual parity as of 2026-07-22. See project memory for open items (image lightbox rollout, stub landing pages, nav sweep). Per-article audit status is now tracked via dated bullets above and `git log` per file, not this rollup line — treat this note as a snapshot, not a source of truth.*
