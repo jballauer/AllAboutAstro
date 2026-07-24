@@ -1,12 +1,36 @@
 ---
 title: "NGC 281 - The Pacman Nebula"
-description: The Pacman Nebula, an emission nebula and cluster in Cassiopeia.
-pubDate: 2017-08-22
+description: The Pacman Nebula, an emission nebula and cluster in Cassiopeia, in L(Ha+R)GB.
+pubDate: 2005-11-01
 image: ./_images/ngc281-pacman-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+NGC 281, the Pacman Nebula, in L(Ha+R)GB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs, 3RF dark sky site near Crowell, TX, and Ballauer Observatory near Azle, TX</p>
+<p><strong>Date:</strong> October - November, 2005</p>
+<p><strong>Seeing:</strong> 3/10 on average</p>
+<p><strong>Transparency:</strong> 6/10 average over 5 nights</p>
+<p><strong>Temperature:</strong> Chilly (-25 and -20 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera (LRGB) and SBIG STL-6303e astro CCD camera (Ha)</p>
+<p><strong>Exposure Info:</strong> L (Ha+R)GB image; 320:60:40:60 minutes with 120 minutes of H-alpha blended with red channel (20 minute subexposures for L, 30 minute subexposures for Ha, and 10 minute subexposures for RGB, color binned)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), registration, gradient removal, and RGB channel combine in CCDstack (median combine). LRGB combine and Ha blending, color balance, levels/curves, and noise removal/local contrast enhancement (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> Relatively poor seeing throughout the data set, though the Ha data a little better at ~2.4 FWHM. Used both SBIG cameras for a variety of luminance data. Portions of the Ha data were blended 50% into the red channel using the Lighten blending mode in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Cassiopeia is filled with many glorious nebulae, the result of resting in a prime spot of the Milky Way. NGC 281, an emission nebula plus cluster, is a terrific example of the "Queen's" jewels. Also known as the "Pac-Man" cluster because of its shapely appearance to the famous video game, NGC 281 is a strong HII region of classic star formation found a short distance away from Schedar (Alpha Cassiopeiae). The brightest star in the center, a 7.7 magnitude OB double star, provides illumination to the interior of the nebula and excitation of the surrounding hydrogen gases. The double star itself is a part of a cluster of stars known as IC 1590. The emission nebula also carries a Sharpless 184 designation.</p>
+<p>As with many emission nebulae in the night sky, the Pac-Man covers a lot of space, roughly the same angular size as the full moon. The easy way to put this object in an eyepiece is to center Schedar in an eyepiece, turn off the drive motors, and wait 16 minutes. The nebula is best seen with 8" or larger scopes in dark skies, though UHC or OIII filters bring smaller apertures into the game. The resulting view will be a large, irregular glow around the bright center star.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

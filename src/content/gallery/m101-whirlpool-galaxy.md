@@ -1,13 +1,35 @@
 ---
-title: "M101 - The Whirlpool Galaxy in Ursa Major"
-description: M101, a large face-on spiral galaxy in Ursa Major.
-pubDate: 2017-11-26
+title: "M101 - The Pinwheel Galaxy in Ursa Major"
+description: M101, a large face-on spiral galaxy in Ursa Major, in LRGB.
+pubDate: 2003-12-29
 image: ./_images/m101-whirlpool-galaxy.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M101, the Pinwheel Galaxy, in LRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Ballauer Observatory in Azle, Texas</p>
+<p><strong>Seeing:</strong> 8/10 (1.4 FWHM)</p>
+<p><strong>Transparency:</strong> 4/10</p>
+<p><strong>Date and Time:</strong> December 29, 2003 @ 11:00PM</p>
+<p><strong>Equipment:</strong> Tak FSQ-106 @ f/5, and Celestron CGE mount</p>
+<p><strong>Camera:</strong> SBIG ST-7E with CFW-8a color filter wheel, standard SBIG filters</p>
+<p><strong>Exposure Info:</strong> LRGB image (L = 5 x 10 minutes, R = 3 x 5 minutes, G = 3 x 5 minutes, B = 5 x 5 minutes) all binned 1x1</p>
+<p><strong>Processing Information:</strong> Dark frames, gradient removal, registration, Sigma combine and DDP in MaxIm 3.0. Levels, Curves, Gaussian Blur and Unsharp Mask in Photoshop 7.</p>
+<p><strong>Exposure Notes:</strong> Composite images were taken low in the sky in too much light pollution. Although this shot has 105 minutes of total exposure time, the size of the galaxy should fill the frame from top to bottom. Need much more exposure time in like conditions.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>M101 forms a perfect equilateral triangle with the last two bright stars in the handle of the big dipper. This makes this spiral galaxy easy to find, but not necessarily easy to see. Though the picture doesn't show it, M101 is actually very large in apparent size, nearly 30 square arc minutes. Therefore, the magnitude of this object is spread over a large surface area. For this reason, dark skies and bigger apertures are necessary to bring out the spiral structure, though the entire galaxy is also visible in a good small scope, even in binoculars. One more interesting thing about this object: this is a duplicate object in the Messier catalogue. Not only is it the 101st object, but also the 102nd. This is why we say there are only 109 Messier objects, even though the last one is numbered M110.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

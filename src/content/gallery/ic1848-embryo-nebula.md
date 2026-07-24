@@ -1,13 +1,39 @@
 ---
 title: "IC 1848 - The Embryo Nebula"
-description: The Embryo Nebula (IC 1848), part of the Soul Nebula complex in Cassiopeia.
-pubDate: 2017-11-11
+description: The Embryo Nebula (IC 1848), part of the Heart and Soul complex in Cassiopeia, in Ha(Ha+R)GB.
+pubDate: 2004-10-14
 image: ./_images/ic1848-embryo-nebula.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+IC 1848, the "Embryo" or "Soul" Nebula, in Ha(Ha+R)GB. Partner in the sky to [the Heart Nebula, IC 1805](/gallery/ic1805-heart-nebula/).
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> 2004 Eldorado Star Party near Eldorado, Texas (RGB) and Ballauer Observatory (Ha info)</p>
+<p><strong>Date:</strong> October 14, 2004 (RGB) and December 9, 2004 (Ha info)</p>
+<p><strong>Temperature:</strong> 52 degrees F (RGB) and 42 degrees F; -25 degrees C camera temperature</p>
+<p><strong>Seeing:</strong> 1/10 (RGB) and 3/10 (Ha info)!</p>
+<p><strong>Transparency:</strong> 6.8 mag (RGB) and 4.8 mag (Ha info)</p>
+<p><strong>Scope/mount:</strong> Takahashi FSQ-106 @ f/5 and Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5 nm Hydrogen Alpha</p>
+<p><strong>Exposure Info:</strong> Ha (Ha + R) GB image - 165:40:40:40 minutes (15 min. subexposures for Ha; 5 min. subexposures for RGB, all unbinned)</p>
+<p><strong>Processing Info:</strong> Dark frame calibration, de-blooming, registration, and Sigma combine of all channels in MaxIm 4.0. Digital-Development in MaxIm. Blending of final data, Levels, Curves, Unsharp Mask, Gaussian Blur, Despeckle, and color balance in Photoshop CS.</p>
+<p><strong>Extra notes:</strong> The red channel is blended 70/30 with the Ha luminance. The Ha info is then blended again into the new RGB at 75%.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Partner in the sky to the "Heart" Nebula, IC 1805, is this emission nebula, IC 1848. This nebula is perhaps best known as the "Embryo" Nebula due to its characteristic shape, however, because it is within a few arc degrees of its neighbor, the Heart Nebula, many people call this the "Soul" Nebula. "Heart" and "Soul," two objects very similar in size and nature, in the same complex of the autumn sky.</p>
+<p>To observe the nebulosity itself, you must have large apertures (over 20") and either UHC or OIII filters. With such a setup, you might catch it as a very faint glow. Of course, really dark skies are imperative.</p>
+<p>Even though both the Heart and Soul Nebulae might not be too pleasing through a scope, it certainly is with a camera. To enhance the detail in the object, I employed a technique whereby I used a special filter that captures the Hydrogen Alpha emissions of the nebula, took parts of the image through it, and then used that information to give the image a special luminance component.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

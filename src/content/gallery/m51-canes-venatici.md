@@ -1,12 +1,38 @@
 ---
 title: M51 in Canes Venatici
-description: M51, the Whirlpool Galaxy, a spiral galaxy interacting with its smaller companion.
-pubDate: 2017-08-19
+description: M51, the Whirlpool Galaxy, a "miracle" image salvaged from frosted-over data, in LLRGB.
+pubDate: 2005-04-02
 image: ./_images/m51-canes-venatici.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M51, the Whirlpool Galaxy, in LLRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Ballauer Observatory near Azle, Texas</p>
+<p><strong>Date:</strong> April 1, 2005 (luminance) &amp; April 2, 2005 (RGB)</p>
+<p><strong>Seeing:</strong> 9/10 (luminance) &amp; 2/10 (RGB)</p>
+<p><strong>Transparency:</strong> 5/10; 4.5 magnitude ZLM</p>
+<p><strong>Temperature:</strong> 35 degrees F, -25c at the camera (luminance) and 53 degrees F, -23c at the camera (RGB)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS Ritchey-Chretien (with FFC) and Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303e astro CCD camera (60 minutes of luminance taken with the SBIG STL-11000M)</p>
+<p><strong>Exposure Info:</strong> LLRGB image; 160:30:30:55 minutes (10 min subs for luminance; 5 minute subs for RGB binned 2x2)</p>
+<p><strong>Processing Information:</strong> Dark frame calibration, registration, and DDP in MaxIm DL 4. Lucy-Richardson Deconvolution (2 iterations) in CCDSharp on luminance. RGB and LRGB combine (multiple iterations), cropping, artificial flats, levels/curves, sharpening, and noise removal (despeckle, gaussian blur, dust/scratches) in Photoshop CS. Further noise removal using DSLR Tools v.1.5 Photoshop plug-in (thanks to Noel Carboni).</p>
+<p><strong>Notes:</strong> A "miracle" image, salvaged from poor information. First time to use the RC with the Tak NJP mount. Plus, I haven't gotten the optical astigmatism (and field curvature) under control with the RC yet!</p>
+<p>Good seeing for luminance, though guiding with the NJP mount needs improvement (2.2" to 2.5" FWHM stars after 10 minute subs in 1.2" seeing skies). First 100 minutes of luminance taken with STL-6303, whereupon it frosted over. Remaining 60 minutes of luminance taken with STL-11000, whereupon it TOO frosted over! Fully more than 60% of the total luminance subexposures used for this image showed frosting over more than 30% of the image area, and that doesn't include the other 2 hours of exposures that I couldn't use. Therefore, because I couldn't get an even background through flat fielding, I was going to discard this data. Instead, I cropped the image and applied processing to try to flatten the background artificially - if you've seen a frost-affected image, you know how hard that is! The result was a somewhat respectable luminance image.</p>
+<p>The next night, when I took the RGB, I endured some horrible seeing and battled a run-away RA problem with the Tak mount - perhaps a coincidence that daylight savings time occurred during this exposure set? Who knows? Anyway, I wound up with a shortened blue data set. To make matters worse, I couldn't get my camera temperature to the full -25c. Therefore, I had to scale the darks with bias frames - the first time I've ever done that, and I think I did it wrong. So the RGB was horribly noisy, though thank goodness for Sigma combine, generous amounts of blurring, and despeckling in Photoshop. Used several iterations of LLRGB blending to build up/clean up the bad color data.</p>
+<p>Needless to say, having brought this image back from the dead, I'm pleased with the results!</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>One of the brightest galaxies in the sky, M51 sits next to its companion galaxy NGC 5195 to form the most famous galactic pair. Under dark and transparent skies, M51 can be considered a binocular object. Not bad for an object that is approximately 23 million light years away. The crossing of NGC 5195 in its path causes M51 to burn with new, blue supergiant stars which appear as clusters in the galaxy's arms. An 8" telescope in dark skies will easily show the spiral arm structure. It is one of the easiest galaxies to find, lying a few degrees below Alkaid, the end star in the hand of the Big Dipper.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

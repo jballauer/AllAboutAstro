@@ -1,12 +1,50 @@
 ---
 title: "NGC 5139 - Omega Centauri"
-description: Omega Centauri, the largest and brightest globular cluster in the Milky Way.
-pubDate: 2017-10-21
+description: Omega Centauri, the grandest globular cluster of them all, shot low above the southern horizon from the Texas Star Party.
+pubDate: 2004-05-17
 image: ./_images/ngc5139-omega-centauri.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+Omega Centauri, NGC 5139, in grayscale luminance -- shot just 11 degrees above the southern horizon.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Texas Star Party 2004 near Ft. Davis, Texas</p>
+<p><strong>Date and Time:</strong> May 17, 2004</p>
+<p><strong>Seeing:</strong> 8/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Equipment:</strong> Tak FSQ-106 @ f/5 on Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E NABG with integrated filter wheel</p>
+<p><strong>Exposure Info:</strong> Grayscale, clear luminance (4 x 10 minutes)</p>
+<p><strong>Processing Information:</strong> Calibration, deblooming, registration and Sigma combine in MaxIm DL 4. Digital development in MaxIm DL 4. Levels and Curves in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>One of the good things about living in Texas is that we can see this gem just above our horizon. Perhaps the grandest globular cluster of them all, Omega Centauri is compact and slightly oval in shape, shining at a naked eye brightness of 4th magnitude with an angular size that approximates our own moon at full phase. Millions and millions of stars comprise this beauty of an object which is easily resolved by even small aperture scopes, that is as long as the object is high enough at Northern latitudes to avoid atmospheric interference. This shot is wide-field, taken from very dark skies. Omega Centauri was 11 degrees above the southern horizon when this picture was shot.</p>
+
+</div>
+</div>
+
+<hr>
+
+<h3>Previous Attempt</h3>
+
+![An earlier attempt at Omega Centauri with an SBIG ST-10xme, April 2004](./_images/ngc5139-omega-centauri-previous2004.jpg)
+
+<p><strong>Location:</strong> Copperbreaks Star Park near Quanah, Texas<br>
+<strong>Date and Time:</strong> April 17, 2004 @ 12:30 AM<br>
+<strong>Seeing:</strong> 8/10<br>
+<strong>Transparency:</strong> 7/10<br>
+<strong>Equipment:</strong> Tak FSQ-106 @ f/5 on Tak NJP mount<br>
+<strong>Camera:</strong> SBIG ST-10xme<br>
+<strong>Exposure Info:</strong> Grayscale (5 x 5 minutes)<br>
+<strong>Processing Information:</strong> Calibration, deblooming and registration in MaxIm DL 3. Digital development, Lucy-Richardson Deconvolution (10 iterations), and Background Compensation in Images Plus. Unsharp Mask, Curves and cropping in Photoshop CS.</p>
+
+<p><em>Note: Wind gusts of around 20 mph during time of exposure. Object was taken only 7 degrees from horizon in the midst of skyglow from a small town (Crowell, TX). Seeing was exceptional for an image this low. Thanks to Dr. Fred Koch for the use of the NJP mount and ST10xme camera.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

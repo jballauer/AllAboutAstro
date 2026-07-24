@@ -1,12 +1,67 @@
 ---
 title: IC 1396 in Cepheus
-description: IC 1396, a vast emission nebula and star-forming region in Cepheus, home to the Elephant's Trunk.
-pubDate: 2017-10-06
+description: IC 1396, a vast emission nebula complex in Cepheus with van den Bergh 142 (the "Elephant's Trunk"), in Ha+LRGB.
+pubDate: 2006-09-19
 image: ./_images/ic1396-cepheus.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+IC 1396, the emission nebula complex in Cepheus, with vdb 142, in Ha+LRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Okie-Tex Star Party, Kenton, OK</p>
+<p><strong>Date:</strong> September 18-19, 2006</p>
+<p><strong>Seeing:</strong> 3/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Temperature:</strong> -25 degrees C on camera</p>
+<p><strong>Scope/Mount:</strong> Tak FSQ-106 @ f/5 on Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5 nm H-alpha filter</p>
+<p><strong>Exposure Info:</strong> Ha+LRGB image; 150:40:30:30 minutes with 60 minutes of clear luminance data (10 minute subexposures for LRGB, 30 minute subexposures for Ha)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), and registration in CCDstack (median combine). LRGB combine and Ha blending, color balance, levels/curves, and noise removal/local contrast enhancement/star halo reduction (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>A little known cluster and nebula in the Milky Way region of Cepheus. IC 1396 is large in size, covering approximately 3 degrees of the sky just southeast of Alderamin, the brightest star in Cepheus. In fact, it's one of the largest emission nebula in the sky, about 6 times wider than our full moon. The large, bright star in this photo is the Garnet Star, Mu Cephei, a red variable star. This star varies between 3.4 and 5.1 magnitude over a 730 day period. Several dark nebula permeate IC 1396 including Barnard 160, the larger of the dark nebula on the right side as shown here. Perhaps the most spectacular feature is van den Bergh 142, commonly called the "elephant trunk".</p>
+
+</div>
+</div>
+
+<p align="center"><em>Hydrogen-Alpha data used for the image above (150 minutes)</em></p>
+
+![Hydrogen-Alpha luminance data of IC 1396](./_images/ic1396-cepheus-hadata.jpg)
+
+<hr>
+
+<h3>Previous Images</h3>
+
+![An earlier grayscale attempt at IC 1396 with an SBIG STL-6303E, May 2003](./_images/ic1396-cepheus-previous2003a.jpg)
+
+<p><strong>Location:</strong> Texas Star Party 2004 near Fort Davis, Texas<br>
+<strong>Seeing:</strong> 6/10<br>
+<strong>Transparency:</strong> 8/10<br>
+<strong>Date and Time:</strong> May 21, 2003<br>
+<strong>Scope/Mount:</strong> Tak FSQ-106 on Tak NJP mount<br>
+<strong>Exposure information:</strong> Grayscale, clear luminance (7 x 10 minutes)<br>
+<strong>Camera:</strong> SBIG STL-6303E with integrated filter wheel<br>
+<strong>Processing Information:</strong> Dark calibration, deblooming, alignment, and sigma combine in MaxIm DL 4. Digital Development in MaxIm 4. Levels and Curves in Photoshop CS.</p>
+
+![An even earlier film exposure of IC 1396, May 2003](./_images/ic1396-cepheus-previous2003b.jpg)
+
+<p><strong>Location:</strong> Texas Star Party 2003 near Fort Davis, Texas<br>
+<strong>Seeing:</strong> 6/10<br>
+<strong>Transparency:</strong> 8/10<br>
+<strong>Date and Time:</strong> May 3, 2003 @ 3:35 AM CST<br>
+<strong>Equipment:</strong> 420mm @ f4 (300mm Nikkor ED lens with TC14B teleconverter) guided with Meade 208xt<br>
+<strong>Length:</strong> A single 45 minute exposure<br>
+<strong>Film:</strong> Kodak E200 slide film with one stop push to ISO 320<br>
+<strong>Processing Information:</strong> Image is slightly cropped with a levels adjustment and contrast/saturation increase. Slight unsharp mask applied.</p>
+
+<p><em>Exposure Notes: I shot this object a bit low on the horizon so some atmospheric discoloration occurred. I managed to process much of it out but some color shift remains. Still, a very pleasing shot!</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
