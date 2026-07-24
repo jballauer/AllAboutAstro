@@ -1,13 +1,30 @@
 ---
 title: "M42 - The Orion Nebula in Hubble Palette"
-description: The Orion Nebula rendered in the narrowband "Hubble palette" (SII/Ha/OIII mapped to RGB).
-pubDate: 2017-12-23
+description: A mixed-media composite of the Orion Nebula, combining Ha luminance with a Canon Digital Rebel RGB image.
+pubDate: 2004-11-22
 image: ./_images/m42-orion-hubble-palette.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Great Orion Nebula, a composite image combining several earlier exposures.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Date:</strong> Processed on November 22, 2004</p>
+<p><strong>Scope/Mount:</strong> Tak FSQ-106 @ f/5 and Tak NJP mount</p>
+<p><strong>Camera:</strong> Canon Digital Rebel (RGB), SBIG STL-6303E (Ha luminance), SBIG ST-10xme (core mask)</p>
+<p><strong>Exposure Info:</strong> Ha (Ha+R) GB, 80 minutes Ha luminance (8 x 10 minutes); 18 x 5 minutes single shot RGB.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>This is what happens when you have rainy weather for weeks unending! This is a mixed media, composite image using information from several other photographs I've taken, all of which can be seen at All About Astro.com. I used my Ha luminance image of this object taken in October, 2004, and I added it to the 90 minute image taken with my Canon Digital Rebel last January, 2004. The core of the object uses shorter exposures from the Digital Rebel and Ha data, approximately 5 x 30 seconds for both, and was processed separately to show the core of the trapezium in greater detail. The dynamic range is so large with this object that I used multiple masks and color balancing techniques. While the color in this image is "true" in the sense that it faithfully uses existing data, some liberties were taken in specific areas to bring out certain details and fix problems that would otherwise have ended the project. Total processing time for this image is approximately 24 hours.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

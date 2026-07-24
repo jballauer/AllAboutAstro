@@ -1,13 +1,35 @@
 ---
 title: "M42 - The Orion Nebula in Bicolor"
-description: The Orion Nebula rendered in a narrowband bicolor palette.
-pubDate: 2017-12-26
+description: A wide-field view of the entire Orion Nebula complex in narrowband Hydrogen-Alpha light.
+pubDate: 2004-10-15
 image: ./_images/m42-orion-bicolor.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Great Orion Nebula complex in Hydrogen-Alpha light.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Eldorado Star Party 2004 near San Angelo, Texas</p>
+<p><strong>Date:</strong> October 15, 2004</p>
+<p><strong>Seeing:</strong> 6/10</p>
+<p><strong>Transparency:</strong> 8/10</p>
+<p><strong>Equipment:</strong> Tak FSQ-106 on Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5nm Hydrogen-Alpha spectral line filter</p>
+<p><strong>Exposure Info:</strong> Grayscale - Ha filtered image - 80 minutes (10 minute sub-exposures) and five 30 second exposures for the central masks.</p>
+<p><strong>Processing Info:</strong> Darks, deblooming, alignment, and Sigma combine in MaxIm 4.0. Digital Development in MaxIm 4.0. Separate mask from shorter exposures used to replace the burned-out core regions. Masked layers re-leveled and balanced to match in Photoshop CS. Final smoothing and sharpening in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>Here is a wide-field view of the entire region of the Great Orion Nebula. This was taken with a special, narrowband filter that highlights the specific wavelength of Hydrogen gas emissions in the nebulosity. It brings out details not normally seen by traditional RGB filters.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

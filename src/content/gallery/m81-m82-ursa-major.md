@@ -1,13 +1,57 @@
 ---
 title: M81/82 in Ursa Major
-description: The galaxy pair M81 (Bode's Galaxy) and M82 (the Cigar Galaxy) in Ursa Major.
-pubDate: 2017-11-14
+description: M81, M82, and NGC 3077 -- the "classic duo plus one" in Ursa Major, in LRGB.
+pubDate: 2008-04-01
 image: ./_images/m81-m82-ursa-major.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M81, M82, and NGC 3077 -- a classic duo plus one -- in LRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs Astronomy Campus near Crowell, Texas</p>
+<p><strong>Date:</strong> March to April, 2008</p>
+<p><strong>Seeing:</strong> 7/10</p>
+<p><strong>Transparency:</strong> 7/10, windy on second night</p>
+<p><strong>Temperature:</strong> -20 degrees C on camera</p>
+<p><strong>Scope/Mount:</strong> Tak TOA-150 (with 67 flattener) on Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LRGB image; 240:60:60:60 minutes (10 minute subexposures for LRGB)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), and registration in CCDstack (median combine). RGB/LRGB combine, color balance, levels/curves, and noise removal (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>M81 and M82 together form the most famous galactic pair known, but a third galaxy wants to crash the party.</p>
+<p>M81, on bottom-left, is a nice spiral galaxy in Ursa Major, the "big bear." Its size, from earth, is near the equivalent of our full moon; therefore, this is one of the larger galaxies in the night sky from our vantage point. Here, the majestic and sweeping spiral arms show an abundance of hot, star forming regions. M81 is also known as "Bode's Nebula."</p>
+<p>In contrast to M81, M82 (bottom-right) is a peculiar galaxy shown on edge. Because it is shown on edge it is unclear exactly what type of galaxy this is. A unique feature of this galaxy is the red ejecta spraying out of the core which is somewhat captured here in this image. The ejecta is likely caused by tidal attractions to the larger M81 neighbor. M82 is sometimes known as the "Cigar Galaxy" because of its shape.</p>
+<p>The party crasher is NGC 3077, a magnitude 10, peculiar galaxy. Like M82, it shows strange structures and dust clouds that are likely due to gravitational interaction with other, larger members of the M81 group. It looks much like an elliptical galaxy.</p>
+<p>Together, these galaxies are circumpolar for most of the United States, meaning that they rest very near the celestial pole.</p>
+
+</div>
+</div>
+
+<hr>
+
+<h3>Previous Images</h3>
+
+![An earlier attempt at M81 and M82 with an SBIG ST-10XME, February 2004](./_images/m81-m82-ursa-major-previous2004.jpg)
+
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas<br>
+<strong>Date:</strong> February 16, 2004 (RGB) and April 7, 2004 (Luminance)<br>
+<strong>Temperature:</strong> 60 degrees F<br>
+<strong>Seeing:</strong> 7/10 (1.4 FWHM)<br>
+<strong>Transparency:</strong> 4/10 (dew)<br>
+<strong>Scope/mount:</strong> RGB data - Takahashi FSQ-106 @ f/5 and Celestron CGE mount. Luminance data - Takahashi FSQ-106 @ f/8 and Tak NJP Temma 2 mount<br>
+<strong>Camera:</strong> SBIG ST-10XME, self-guided<br>
+<strong>Exposure Info:</strong> LRGB image - 160:80:80:80 minutes (10 min. subexposures RGB, 20 min. subexposures Luminance)<br>
+<strong>Processing Info:</strong> Dark frame calibration (no flats), de-blooming (New Astro Plug-in), registration, and Sigma combine of all channels in MaxIm 3.0. Background compensation, Digital-Development and Lucy-Richardson Deconvolution (10 iterations) in Images Plus. Final data combine, curves, levels, and color balance in Photoshop CS.</p>
+
+<p><em>Extra information: Green haloes caused by RGB data being shot at smaller focal length than Luminance. Deblooming still needs some work as well.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

@@ -1,13 +1,52 @@
 ---
 title: NGC 4565 in Coma Berenices
-description: NGC 4565, the "Needle Galaxy," a striking edge-on spiral in Coma Berenices.
-pubDate: 2017-08-13
+description: NGC 4565, an edge-on spiral galaxy in Coma Berenices resembling our own Milky Way from the outside.
+pubDate: 2005-04-09
 image: ./_images/ngc4565-coma-berenices.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+NGC 4565, an edge-on spiral galaxy in Coma Berenices, in LRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs, 3RF dark sky site near Crowell, TX</p>
+<p><strong>Date:</strong> April 8 &amp; 9, 2005</p>
+<p><strong>Seeing:</strong> 5/10 on average</p>
+<p><strong>Transparency:</strong> 7/10</p>
+<p><strong>Temperature:</strong> Chilly (-25 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-6303e astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LRGB image; 130:20:20:45 minutes (10 minute subexposures for L, 5 minute subexposures for RGB, color binned)</p>
+<p><strong>Processing Information:</strong> Acquisition, calibration (darks/flats), registration, and RGB channel combine in MaxIm DL 4 (Sigma combine). LRGB combine, color balance, levels/curves, cropping, and noise removal (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>This might be the most famous of the non-Messier galaxies, with good reason. This edge-on spiral, with prominent dark dust lane, is a delight through just about any telescope with moderate aperture. The smaller galaxy at the bottom is NGC 4562, a 13.7 magnitude spiral, and of course many other smaller, fainter galaxies litter the field. NGC 4565 is assumed to resemble our own Milky Way galaxy if we were to view it from the outside, looking in. It rests approximately 31 million light years away. It can be found close to the unusual cluster of stars known as Mel 111 in the constellation Coma Berenices. It's one of my favorite galaxies and a wonderful springtime object.</p>
+
+</div>
+</div>
+
+<hr>
+
+<h3>Previous Attempts</h3>
+
+![An earlier attempt at NGC 4565 with an SBIG ST-10xme, March 2004](./_images/ngc4565-coma-berenices-previous2004.jpg)
+
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas<br>
+<strong>Date:</strong> March 30, 2004<br>
+<strong>Transparency:</strong> 5/10<br>
+<strong>Seeing:</strong> 5/10<br>
+<strong>Scope/Mount:</strong> Tak FSQ-106 @ f/8 (with Extender-Q) on Tak NJP mount<br>
+<strong>Camera:</strong> SBIG ST-10xme with CFW8a filter wheel<br>
+<strong>Exposure Info:</strong> RGB image (20:20:20 minutes)<br>
+<strong>Processing Info:</strong> Dark and flat calibration, registration, gradient removal, and average combine in MaxIm. DDP and Lucy-Richardson Deconvolution (2 iterations) in Images Plus. Curves, deblooming, sharpening, and cropping in Photoshop CS. Final smoothing in Pleiades' SGBNR.</p>
+
+<p><em>Extra Info: Special thanks to Dr. Fred Koch for the use of the SBIG ST-10xme camera and Tak NJP mount.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
