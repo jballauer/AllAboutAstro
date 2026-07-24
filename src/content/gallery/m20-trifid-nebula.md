@@ -6,9 +6,13 @@ image: ./_images/m20-trifid-nebula.jpg
 draft: false
 ---
 
-The Trifid Nebula is a part of one of the most photographed regions of the night sky. This area, known as the Lagoon Nebula region, is named after the large M8 nebula, the "Lagoon," in the bottom of this image. Trying to match the image scale of M20 here with the luminance data is typically a big challenge, and certainly here it was as well. Even so, once I scaled a cropped area of this image and pasted it onto the luminance in Photoshop, I was able to make stars look not too objectionable. The colors of the nebula itself seem quite good.
+The Trifid Nebula is a part of one of the most photographed regions of the night sky. This area, known as the Lagoon Nebula region, is named after the large M8 nebula, the "Lagoon," in the image below. Trying to match the image scale of M20 here with the luminance data is typically a big challenge, and certainly here it was as well. Even so, once I scaled a cropped area of this image and pasted it onto the luminance in Photoshop, I was able to make stars look not too objectionable. The colors of the nebula itself seem quite good.
+
+<div class="ke-figure-full">
 
 ![Wide-field view of the Lagoon and Trifid Nebula region](./_images/m20-lagoon-widefield.jpg)
+
+</div>
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">

@@ -313,6 +313,12 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     height: auto;
     display: block;
   }
+  /* Force a body image to fill the article column width even when its
+     native resolution is smaller than the column -- otherwise max-width:
+     100% just displays it at its (smaller) intrinsic size. */
+  .ke-figure-full img {
+    width: 100%;
+  }
   /* Embedded HTML5 video, for articles linking out to an externally-hosted
      video file (e.g. a large original-source .mp4 too big to self-host).
      Sized like a standard body image rather than left at native/intrinsic
