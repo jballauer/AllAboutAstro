@@ -1,20 +1,42 @@
 ---
-title: "NGC 7000 - The Cygnus Wall in Hubble Palette"
-description: The Cygnus Wall, the brightest ridge of the North America Nebula, in the narrowband "Hubble palette."
-pubDate: 2017-12-20
+title: "NGC 7000 - North America and the Pelican (HaLRGB)"
+description: An HaLRGB image of NGC 7000 and IC 5070 that won Best Deep Sky Photograph at the 2004 Texas Star Party.
+pubDate: 2004-10-15
 image: ./_images/ngc7000-cygnus-wall-hubble-palette.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+North America and the Pelican in HaLRGB &mdash; winner of Best Deep Sky Photograph at the 2004 Texas Star Party. A [more recent 2006 version](/gallery/north-america-pelican-nebulae/) and a [plain LRGB version](/gallery/ngc7000-cygnus-wall-visual-palette/) are also on file.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Texas Star Party 2004 near Ft. Davis, Texas (RGB) and Eldorado Star Party 2004 near Eldorado, Texas (Luminance)</p>
+<p><strong>Date:</strong> May 17, 2004 (RGB) and October 15, 2004 (Luminance)</p>
+<p><strong>Scope/mount:</strong> Takahashi FSQ-106 @ f/5 and Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5nm Hydrogen-alpha filter</p>
+<p><strong>Exposure Info:</strong> HaLRGB image - 120:30:30:30:10 minutes (10 min. subexposures, all unbinned)</p>
+<p><strong>Processing Info:</strong> Dark frame calibration (no flats), de-blooming, registration, and Sigma combine of all channels in MaxIm 4.0. Digital-Development in Images Plus (RGB) and MaxIm 4 (Luminance). Blending of final data, Levels, Curves, and color balance in Photoshop CS.</p>
+<p><strong>Processing Note:</strong> Original LRGB used as RGB for color information. Ha information blended 50% with Red layer in RGB set. Ha information used as luminance at 100%. Blue and Green information attenuated to allow for full luminance blend (for star halo reduction).</p>
+<p><strong>Awards/Publications:</strong> This image won the BEST DEEP SKY PHOTOGRAPH at the 2004 Texas Star Party.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>This image of NGC 7000 and IC 5067/5070, the North America Nebula and the Pelican Nebula respectively, was acquired using two sets of data. One set is the color photograph and the other is a Hydrogen-alpha shot. This technique uses the h-alpha information and blends it into the color information by becoming the "luminance" or detail layer in the image. The result preserves the color of the region while taking advantage of the details provided by the hydrogen-alpha data.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
 
 <dl class="ke-ai-stub-facts">
 <dt>What it is</dt>
-<dd>NGC 7000, the North America Nebula, is a large emission nebula whose shape resembles the North American continent; the "Cygnus Wall" is the bright, sharply-defined ridge of ionized gas and dust along its eastern edge where star formation is most active.</dd>
+<dd>NGC 7000, the North America Nebula, is a large emission nebula whose shape resembles the North American continent; part of the same star-forming cloud as the neighboring Pelican Nebula (IC 5070).</dd>
 <dt>Constellation</dt>
 <dd>Cygnus</dd>
 <dt>Distance</dt>

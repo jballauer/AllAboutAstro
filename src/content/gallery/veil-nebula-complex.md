@@ -1,13 +1,35 @@
 ---
 title: The Veil Nebula Complex
-description: The full Veil Nebula supernova remnant complex in Cygnus.
-pubDate: 2017-11-05
+description: An early film exposure of the western side of the Veil Nebula complex, from the 2003 Texas Star Party.
+pubDate: 2003-05-02
 image: ./_images/veil-nebula-complex.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+An early film exposure of the Veil Nebula in Cygnus. A [later, deeper CCD attempt](/gallery/ngc6960-witchs-broom-bicolor/) is also on file.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Texas Star Party 2003 near Fort Davis, Texas</p>
+<p><strong>Seeing:</strong> 7/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Date and Time:</strong> May 2, 2003 @ 4:15 AM CST</p>
+<p><strong>Equipment:</strong> 420mm @ f4 (300mm Nikkor ED lens with TC14B teleconverter) guided with Meade 208xt</p>
+<p><strong>Length:</strong> Single 60 minute exposure</p>
+<p><strong>Film:</strong> Kodak Royal Gold 400</p>
+<p><strong>Processing Information:</strong> Image is greatly cropped with a levels adjustment and substantial contrast increase. Slight unsharp mask applied.</p>
+<p><strong>Exposure Notes:</strong> Missed perfect focus just slightly on this object. I also missed the composition, as I should have placed 52 Cygni at the right side of the shot so as to capture the entire nebula. Hence, I cropped it down in processing.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Wow, is this a tough object to photograph! This photograph shows the western side of the nebula complex, IC 6960, that surrounds the star 52 Cygni. The tender filaments of the nebula can be seen here, though only barely. The Veil is a remnant of a supernova that has become pretty faint over time. It is seen pretty well with medium to large apertured scopes using an OIII filter, but only in very dark skies.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

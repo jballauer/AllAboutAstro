@@ -1,13 +1,36 @@
 ---
-title: "NGC 6960 - Witch's Broom in Bicolor"
-description: The Witch's Broom, the western filament of the Veil Nebula supernova remnant in Cygnus, in a narrowband bicolor palette.
-pubDate: 2017-12-29
+title: "NGC 6960 - The Veil Nebula"
+description: The Veil Nebula, a wide-field grayscale Hydrogen-Alpha image encompassing most of the supernova remnant complex.
+pubDate: 2003-05-19
 image: ./_images/ngc6960-witchs-broom-bicolor.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Veil Nebula in Cygnus, in grayscale Hydrogen-Alpha. An [earlier film attempt](/gallery/veil-nebula-complex/) is also on file.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Texas Star Party 2004 near Fort Davis, Texas</p>
+<p><strong>Seeing:</strong> 8/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Date and Time:</strong> May 19, 2003</p>
+<p><strong>Equipment:</strong> Tak FSQ-106 on Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
+<p><strong>Filter:</strong> Custom Scientific 5 nm H-alpha filter</p>
+<p><strong>Exposure information:</strong> Grayscale, 60 minutes (10 min sub-exposures)</p>
+<p><strong>Processing Information:</strong> Calibration, deblooming, alignment, and Sigma combine in MaxIm 4. Curves, Levels, and selective, iterative Unsharp Mask in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> This was my first attempt at using the 5 nm H-alpha filter that is integrated into the STL-6303E. I didn't have as difficult a time finding a guidestar as I originally feared.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Perhaps my favorite visual object! This area of the sky is huge, so large in fact that placing all three segments of this supernova remnant on the CCD chip is rarely done without some form of mosaic. In this case, a large format CCD coupled with a short focal length astrograph can produce a thrilling, wide-field view of most all of the nebular regions of this complex.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

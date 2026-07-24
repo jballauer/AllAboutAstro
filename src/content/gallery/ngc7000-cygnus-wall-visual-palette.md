@@ -1,20 +1,42 @@
 ---
-title: "NGC 7000 - The Cygnus Wall in Visual Palette"
-description: The Cygnus Wall, the brightest ridge of the North America Nebula, in natural visual color.
-pubDate: 2017-12-17
+title: "NGC 7000 - North America and the Pelican (LRGB)"
+description: A plain natural-color LRGB image of NGC 7000 and IC 5070 from the 2004 Texas Star Party.
+pubDate: 2004-05-17
 image: ./_images/ngc7000-cygnus-wall-visual-palette.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+North America and the Pelican in plain LRGB, no Hydrogen-Alpha data. A [more recent 2006 version](/gallery/north-america-pelican-nebulae/) and an [HaLRGB version](/gallery/ngc7000-cygnus-wall-hubble-palette/) are also on file.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Texas Star Party 2004 near Ft. Davis, Texas</p>
+<p><strong>Date:</strong> May 17, 2004</p>
+<p><strong>Temperature:</strong> 60 degrees F</p>
+<p><strong>Seeing:</strong> 8/10 (1.2 FWHM)</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Scope/mount:</strong> Takahashi FSQ-106 @ f/5 and Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
+<p><strong>Exposure Info:</strong> LRGB image - 30:30:30:10 minutes (10 min. subexposures, all unbinned)</p>
+<p><strong>Processing Info:</strong> Dark frame calibration (no flats), de-blooming, registration, and Sigma combine of all channels in MaxIm 4.0. Digital-Development in Images Plus. Blending of final data, Levels, Curves, and color balance in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>NGC 7000 and IC 5067/5070 comprise the North America Nebula and the Pelican Nebula. These objects lie just next to Deneb in the Northern Milky Way region of Cygnus. The North America Nebula is rather large, approximating the width of 4 full moons. I managed to see hints of the dark lane between these objects with my naked eye under the dark, remote night skies. A gorgeous and easily photographed area of the sky.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
 
 <dl class="ke-ai-stub-facts">
 <dt>What it is</dt>
-<dd>NGC 7000, the North America Nebula, is a large emission nebula whose shape resembles the North American continent; the "Cygnus Wall" is the bright, sharply-defined ridge of ionized gas and dust along its eastern edge where star formation is most active.</dd>
+<dd>NGC 7000, the North America Nebula, is a large emission nebula whose shape resembles the North American continent; part of the same star-forming cloud as the neighboring Pelican Nebula (IC 5070).</dd>
 <dt>Constellation</dt>
 <dd>Cygnus</dd>
 <dt>Distance</dt>

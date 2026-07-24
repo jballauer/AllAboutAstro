@@ -1,13 +1,41 @@
 ---
 title: North America and The Pelican
-description: The North America Nebula (NGC 7000) and Pelican Nebula (IC 5070) in Cygnus.
-pubDate: 2017-09-12
+description: NGC 7000 and IC 5070, the North America and Pelican Nebulae in Cygnus, in Ha+LRGB.
+pubDate: 2006-09-19
 image: ./_images/north-america-pelican-nebulae.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+NGC 7000 and IC 5067/70 -- the North America and Pelican Nebulae -- in Ha+LRGB. Two earlier attempts are on file: an [HaRGB blend](/gallery/ngc7000-cygnus-wall-hubble-palette/) and a [plain LRGB](/gallery/ngc7000-cygnus-wall-visual-palette/) version, both from 2004.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Okie-Tex Star Party, Kenton, OK</p>
+<p><strong>Date:</strong> September 18-19, 2006</p>
+<p><strong>Seeing:</strong> 3/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Temperature:</strong> -25 degrees C on camera</p>
+<p><strong>Scope/Mount:</strong> Tak FSQ-106 @ f/5 on Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5 nm H-alpha filter</p>
+<p><strong>Exposure Info:</strong> Ha+LRGB image; 150:60:30:40 minutes (10 minute subexposures for LRGB, 30 minute subexposures for Ha)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), and registration in CCDstack (median combine). RGB combine and Ha blending, color balance, levels/curves, and noise removal/local contrast enhancement (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>A terrific region of the sky in the constellation Cygnus, this region of emission sources are among the sky's most recognizable objects. The shape of these two nebula remind most people, unmistakably, of the North America continent (top) and a Pelican (bottom). The pair rests just to the west side of Deneb, the star at the top of the Swan or Northern Cross asterism.</p>
+<p>While not especially faint objects, these nebulae can be difficult to spot through telescopes because of their size. Binoculars and short focal length telescopes normally give you the better views&hellip;in dark skies, of course. If the skies are dark enough, don't be surprised if you can make out the North America Nebula with the naked eye. It's a sight to behold and a good indication as to the quality of your skies.</p>
+
+</div>
+</div>
+
+<p align="center"><em>Hydrogen Alpha data used for the image above (150 minutes)</em></p>
+
+![Hydrogen-Alpha luminance data of North America and the Pelican](./_images/north-america-pelican-nebulae-hadata.jpg)
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
