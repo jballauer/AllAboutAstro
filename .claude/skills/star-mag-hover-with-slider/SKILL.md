@@ -76,6 +76,17 @@ it needs a real cone search. Full working query in
 - Field radius for the cone search comes from the plate-solve
   calibration response's `radius` field (degrees) — same solve you're
   already doing for Phase 2's WCS.
+- **Pull `b.coo_qual` in the SELECT and exclude any row with `coo_qual = 'E'`.**
+  Found on the M20 Trifid pilot: two rows from an old cluster-photometry
+  catalog (`[SC96] GC 361`/`Mis 935`, `[SC96] GC 363`) had `coo_qual='E'`
+  — SIMBAD's lowest quality tier, meaning the RA/Dec are rounded to
+  ~0.001° (~3.6 arcmin), not measured astrometry — and both landed in
+  empty space between stars when checked against the real pixel data,
+  several tens of pixels from any actual point source. Every A/B-quality
+  row checked on the same image landed exactly on a real star. Add
+  `b.coo_qual` to the SELECT and drop `coo_qual='E'` rows before doing
+  the pixel conversion, same as the existing `inFrame` filter — don't
+  wait for Jay to spot a bad marker first.
 
 ## Component: `StarMagnitudeSlider.astro`
 
@@ -173,6 +184,30 @@ least: 0 (must show zero markers, plain image), a middle value, and 10
 e.g. two catalog entries sharing almost the same pixel position, which
 *will* happen and is a known, accepted limitation, not a bug to fix
 reflexively).
+
+**Also verify markers land on real stars before calling it done — don't
+rely on the WCS math being right just because it compiled.** The `coo_qual`
+filter above catches known-bad catalog positions, but confirm the pixel
+math itself against the actual image too (a bad WCS constant or an
+orientation flip would pass the `coo_qual` filter and still be wrong):
+
+1. Using `sharp` (already a project dependency — run any scratch script
+   from the repo root so it resolves), crop a small (~60px) region of
+   the *source* image centered on each of the 2-3 brightest computed
+   marker positions, upscale 4-6x with `kernel: 'nearest'` so individual
+   pixels are visible, and composite a red crosshair SVG at the exact
+   target pixel.
+2. `Read` each crop. A correct position lands the crosshair dead-center
+   on an obvious point source (ideally one bright enough to show
+   diffraction spikes). If it lands in a gap, on nebulosity, or offset
+   from the nearest star, something's wrong — recheck the WCS constants,
+   the row/column orientation (see `star-magnitude-hover`'s Phase 2
+   verification note), or that specific catalog row's `coo_qual`.
+3. Spot-check a few faint/borderline ones too, not just the brightest —
+   the brightest stars are the least likely to expose an orientation or
+   scale bug (they're easy to eyeball-confirm even when slightly off).
+4. Do this *before* reporting the slider done, not just when the user
+   flags a marker as looking wrong.
 
 ## Known limitations (surfaced during the pilot, not yet solved)
 

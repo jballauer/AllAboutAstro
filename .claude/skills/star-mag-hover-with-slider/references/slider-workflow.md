@@ -13,7 +13,9 @@ const centerRA = 56.5320, centerDec = 24.1340; // from the plate-solve calibrati
 const radiusDeg = 0.6274;                       // calibration's `radius` field
 const magLimit = 10;
 
-const adql = `SELECT b.oid, b.main_id, b.ra, b.dec, b.sp_type, f.flux AS vmag
+// b.coo_qual is required -- filter out 'E' rows (see "Filtering by
+// coo_qual" below) before doing the pixel conversion.
+const adql = `SELECT b.oid, b.main_id, b.ra, b.dec, b.sp_type, b.coo_qual, f.flux AS vmag
   FROM basic AS b JOIN flux AS f ON b.oid = f.oidref
   WHERE f.filter='V'
   AND 1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${centerRA}, ${centerDec}, ${radiusDeg}))
@@ -94,3 +96,60 @@ faint HD stars' computed positions matched detected blobs to within a
 few pixels), giving high confidence in the WCS conversion for faint
 stars too, not just the handful of named ones already verified in the
 `star-magnitude-hover` pilot.
+
+## Filtering by coo_qual — found on the M20 Trifid pilot
+
+The M45 pilot above didn't hit this, but M20 did: two SIMBAD rows from
+an old cluster-photometry catalog (`[SC96] GC 361`/`Mis 935`, `[SC96]
+GC 363`) came back with `coo_qual='E'` — coordinates rounded to
+`270.925` / round `-22.85`/`-22.75`, i.e. quantized to ~0.001°
+(~3.6 arcmin), not measured astrometry. Their computed pixel positions
+landed in empty space between stars, tens of pixels from any real point
+source, while every `coo_qual` A/B row on the same field landed exactly
+on a star. **Always select `b.coo_qual` and drop `coo_qual='E'` rows**
+before the pixel-conversion step — don't wait for a visibly wrong
+marker to notice.
+
+Check quality on a suspect subset directly if needed:
+
+```js
+const adql = `SELECT main_id, ra, dec, coo_qual, coo_bibcode FROM basic
+  WHERE main_id IN ('[SC96] GC 361', '[SC96] GC 363', 'HD 164492')`;
+```
+
+`coo_bibcode` is also informative — the reliable rows above cited Gaia
+(`2020yCat.1350....0G`); the bad ones had no bibcode at all.
+
+## Verifying marker placement against the actual pixel data
+
+Don't trust the WCS math just because the script ran without error.
+Crop small regions of the source image around a few computed marker
+positions (brightest few, plus a couple of faint/borderline ones) and
+inspect against a crosshair at the exact target pixel:
+
+```js
+import sharp from 'sharp'; // already a project dependency; run from repo root
+
+const size = 60, scale = 6; // upscale so individual source pixels are visible
+const { x, y } = candidate; // computed marker pixel position
+const left = Math.round(x - size / 2), top = Math.round(y - size / 2);
+const cropped = await sharp(srcPath)
+  .extract({ left, top, width: size, height: size })
+  .resize(size * scale, size * scale, { kernel: 'nearest' })
+  .toBuffer();
+
+const cx = Math.round((x - left) * scale), cy = Math.round((y - top) * scale);
+const svg = `<svg width="${size * scale}" height="${size * scale}">
+  <line x1="${cx - 15}" y1="${cy}" x2="${cx + 15}" y2="${cy}" stroke="red" stroke-width="2"/>
+  <line x1="${cx}" y1="${cy - 15}" x2="${cx}" y2="${cy + 15}" stroke="red" stroke-width="2"/>
+</svg>`;
+await sharp(cropped).composite([{ input: Buffer.from(svg), left: 0, top: 0 }]).toFile(outPath);
+```
+
+Then `Read` the resulting PNG. Crosshair dead-center on an obvious
+point source (bonus points if it shows diffraction spikes) confirms the
+position; landing in a gap, on nebulosity, or visibly offset from the
+nearest star means something's wrong (bad WCS constant, a row/column
+flip, or — per above — a low-`coo_qual` catalog row) and needs fixing
+before the marker set is trustworthy. Do this before reporting the
+slider done, not after the user flags a bad-looking marker.
