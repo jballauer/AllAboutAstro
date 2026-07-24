@@ -31,6 +31,7 @@ const { image, alt, imageWidth, imageHeight, stars } = Astro.props;
         style={`left:${((s.x / imageWidth) * 100).toFixed(2)}%; top:${((s.y / imageHeight) * 100).toFixed(2)}%`}
       >
         <span class="sms-dot"></span>
+        <span class="sms-leader"></span>
         <span class="sms-tag">
           <strong>{s.commonName ?? s.catalogName}</strong>
           {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
@@ -76,22 +77,40 @@ const { image, alt, imageWidth, imageHeight, stars } = Astro.props;
     width: 100%;
     height: auto;
   }
+  /* The marker's own left/top is the star's exact pixel (as a
+     percentage) -- do NOT transform/center the whole dot+tag block on
+     that point, or the tag ends up covering the star itself. Only
+     horizontal centering is applied to the block; the ring's negative
+     margin (below) pulls just the ring itself up so its center -- not
+     the block's top edge -- lands exactly on the star. */
   .sms-marker {
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    text-align: center;
     display: none;
   }
   .sms-marker[data-visible='true'] {
     display: block;
   }
+  /* Hollow ring, not a filled dot -- the star must stay visible through
+     the middle even while marked/labeled. */
   .sms-dot {
     display: block;
-    width: 6px;
-    height: 6px;
-    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    margin: -5px auto 0;
     border-radius: 50%;
-    background: #ffd54a;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.8);
+    border: 1.5px solid #ffd54a;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+  }
+  /* Short leader line from the ring down to the label, so the label can
+     sit clear of the star instead of overlapping it. */
+  .sms-leader {
+    display: block;
+    width: 1px;
+    height: 7px;
+    margin: 0 auto;
+    background: rgba(255, 213, 74, 0.85);
   }
   .sms-tag {
     display: flex;
@@ -103,7 +122,6 @@ const { image, alt, imageWidth, imageHeight, stars } = Astro.props;
     border: 1px solid rgba(255, 213, 74, 0.55);
     border-radius: 3px;
     padding: 2px 5px;
-    margin-top: 2px;
     font-family: var(--font-body);
     font-size: 0.62rem;
     color: #fff;

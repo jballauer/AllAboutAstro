@@ -103,6 +103,26 @@ interface Props {
 - Marker positions are percentages of the image box (`x/imageWidth*100`,
   same reasoning as `star-magnitude-hover`), computed once in the
   template, not by JS at runtime.
+- **The marker itself must land exactly on the star, and the star must
+  stay visible after labeling** — Jay's explicit correction after the
+  first version. Two mistakes to not repeat:
+  1. Don't `transform: translate(-50%, -50%)` the whole dot+tag block —
+     that centers the *block* on the star's coordinate, which pushes the
+     dot off-point and can bury the star under the tag. Only
+     horizontally center the block (`translateX(-50%)`); let the ring's
+     own negative top margin (`margin: -5px auto 0` for a 10px ring)
+     pull just the ring itself up so its center — not the block's top
+     edge — sits exactly on the star.
+  2. Don't use a filled dot. Use a small hollow ring (`border`, no
+     `background`) so the star shows through the middle even while
+     marked. Verify with `getBoundingClientRect()` on the ring itself
+     (not the wrapping marker span) against the expected pixel from
+     `imageWidth/Height * style.left/top` — should match to sub-pixel
+     precision.
+  3. Connect ring to label with a short leader (a plain 1px-wide
+     coloured div, ~7px tall, between them) rather than butting the tag
+     directly against the ring — gives separation so the tag's
+     background box doesn't creep over the star at high marker density.
 - Visibility is a plain `data-visible` attribute the script adds/removes
   per marker on every `input` event — simplest thing that works at this
   scale (~40 markers); don't reach for a class-toggle framework or CSS
