@@ -45,7 +45,24 @@ A four-frame mosaic covering Merope, Electra, Alcyone, and Maia, combining fresh
 <p>First, not many clusters like this are surrounded by so much dust. In the case of M45 (the Messier catalog designation for the cluster), this dust is easily seen because it is reflecting back all that blue starlight into our eyes. The swirls and streaks of dust seem astonishing to us, as if they've always been a part of the Pleiades landscape. However, most astronomers believe that the dust is just part of the interstellar medium and that the cluster is just passing through. I am not sure I agree with that assessment, as the dust appears captured up within the Pleiades neighborhood without hope of escape. Even so, thankfully for us, we get the chance to see their meeting!</p>
 <p>Second, B-Class stars are relatively rare in the night sky, comprising less than 1% of stars in the main-sequence. They typically only occur in clusters, known as "OB Associations," having been birthed not too long ago (around 100 million years) within a giant molecular cloud of abundant, hot gases. So much in fact that the stars formed with such gravitational mass that their hydrogen is burning away at a very fast rate, enough to cause these stars to have relatively short life-cycles (perhaps 500 million years) as compared to something like our own Sun (which is already around 5 billion years old). Therefore, it should be no surprise that THIS cluster would be so striking...its stars' energetic natures (their fast fusion rate) make them very luminous from an absolute standpoint. Coupled with their relatively close distance to us, their relative magnitudes are rather bright from our perspective. Of the nine brightest stars, they range from magnitude 2.9 to 5.6, making them a good gauge for astronomers to measure the transparency/darkness of their own skies (see illustration below).</p>
 
-![The Pleiades' ten brightest stars labeled with their mythological family names and apparent magnitudes](./_images/m45-seven-sisters-chart.jpg)
+<div class="ke-star-hover">
+
+![The Pleiades' brightest stars &mdash; hover or tap a marker for its name and magnitude](./_images/m45-seven-sisters-chart.jpg)
+
+<button class="ke-star-hover-dot" type="button" style="left:39.22%; top:52.88%;"><span class="ke-star-hover-tip">Alcyone &mdash; mag 2.9</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:13.81%; top:57.71%;"><span class="ke-star-hover-tip">Atlas &mdash; mag 3.6</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:78.76%; top:51.55%;"><span class="ke-star-hover-tip">Electra &mdash; mag 3.7</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:64.14%; top:29.28%;"><span class="ke-star-hover-tip">Maia &mdash; mag 3.9</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:56.89%; top:66.52%;"><span class="ke-star-hover-tip">Merope &mdash; mag 4.2</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:73.41%; top:20.30%;"><span class="ke-star-hover-tip">Taygeta &mdash; mag 4.3</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:13.41%; top:50.33%;"><span class="ke-star-hover-tip">Pleione &mdash; mag 5.1</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:79.69%; top:35.93%;"><span class="ke-star-hover-tip">Celaeno &mdash; mag 5.5</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:62.77%; top:12.76%;"><span class="ke-star-hover-tip">Asterope 1 &mdash; mag 5.8</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:60.68%; top:15.15%;"><span class="ke-star-hover-tip">Asterope 2 &mdash; mag 6.4</span></button>
+
+</div>
+
+<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; star identities and magnitudes cross-matched against the SIMBAD catalog. Hover (or tap, on touch devices) a marker to see that star's name and apparent magnitude.</p>
 
 <p>So who are the "Seven Sisters"? In ancient Greek myth, the sisters were the daughters of Atlas and Pleione, shown in the illustration as the left-most named stars. Therefore, their off-spring, the "seven sisters" are those on the right (and my image only shows the sisters themselves). Note that Asterope is actually two stars, a fact that would have been hidden from the ancient Greek observers, as they would appear as a single star to the naked eye due to how close together the relatively faint stars actually are.</p>
 <p>(Interesting fact: Most of the stars you see in the night sky are actually TWO stars, known as binaries. They usually consist of one large and one small star, the latter of which, typically, cannot be easily detected because of how close they are to each other.)</p>

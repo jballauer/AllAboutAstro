@@ -526,6 +526,68 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     opacity: 0.92;
   }
 
+  /* Star-magnitude hover chart — plate-solved star positions (see the
+     star-magnitude-hover skill) rendered as small hoverable/focusable dots
+     over a plain astrophoto, each revealing a name+magnitude tooltip.
+     CSS-only (no JS): tooltip visibility keys off :hover/:focus so it
+     works with mouse, keyboard, and touch (tap-to-focus). Positions are
+     percentages of the image's own box, so this stays correct at any
+     display width. */
+  .ke-star-hover {
+    position: relative;
+    display: block;
+  }
+  .ke-star-hover img {
+    display: block;
+    width: 100%;
+  }
+  .ke-star-hover-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    margin: -7px 0 0 -7px;
+    padding: 0;
+    border: 2px solid rgba(255, 213, 74, 0.85);
+    border-radius: 50%;
+    background: rgba(255, 213, 74, 0.15);
+    cursor: help;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ke-star-hover-dot:hover,
+  .ke-star-hover-dot:focus-visible {
+    background: rgba(255, 213, 74, 0.4);
+  }
+  .ke-star-hover-tip {
+    position: absolute;
+    left: 50%;
+    bottom: 130%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 213, 74, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+  }
+  .ke-star-hover-dot:hover .ke-star-hover-tip,
+  .ke-star-hover-dot:focus-visible .ke-star-hover-tip {
+    opacity: 1;
+  }
+  .ke-star-hover-caption {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-style: italic;
+    margin: 0.5rem 0 1rem;
+  }
+  .ke-sidebar .ke-star-hover-caption {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
   /* K&E numbered image gallery — a grouped set of related photos inside
      a .ke-sidebar, each tagged with a number that matches its caption
      in the list below it. */
