@@ -1,12 +1,43 @@
 ---
 title: IC 405/410 in Capella
-description: The Flaming Star Nebula (IC 405) and IC 410, a pair of emission nebulae near Capella in Auriga.
-pubDate: 2017-11-20
+description: The Flaming Star Nebula (IC 405) and IC 410, a pair of emission nebulae near Capella in Auriga, in Ha(Ha+R)GB.
+pubDate: 2004-12-11
 image: ./_images/ic405-410-capella.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Flaming Star region &mdash; IC 405 and IC 410, a pair of emission nebulae near Capella in Auriga, imaged in Ha(Ha+R)GB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Date:</strong> December 9, 2004 (Ha info) and December 11, 2004 (color info)</p>
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas (Ha info) and Comanche Springs near Crowell, Texas (color info)</p>
+<p><strong>Transparency:</strong> 5.2 mag zenithal (Ballauer Observatory) and 6.8 mag zenithal (Comanche Springs)</p>
+<p><strong>Seeing:</strong> 2/10 (Ballauer Observatory) and 5/10 (Comanche Springs)</p>
+<p><strong>Temperature:</strong> 55 degrees F (Ballauer Observatory) and 35 degrees F (Comanche Springs); camera cooled to -25 degrees C</p>
+<p><strong>Scope/Mount:</strong> Tak FSQ-106 @ f/5 and Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E (Ha info) and SBIG STL-11000 (color info), self-guided</p>
+<p><strong>Exposure Info:</strong> Ha(Ha+R)GB, 135:60:60:65 minutes; 15 minute individual exposures for Ha and 5 minute exposures for RGB; all unbinned.</p>
+<p><strong>Processing:</strong> Dark frame calibration, deblooming, registration, artificial flats, gradient removal and Sigma Combine in MaxIm DL 4. Digital Development and RGB combine in MaxIm DL 4. Ha blending, color balance, curves, levels, selective sharpening/blurring/despeckle in Photoshop CS.</p>
+<p><strong>Extra Notes:</strong> "First light" image taken with the new SBIG STL-11000 camera, supplied by 3RF. Ha info blended into red at 50% using Screen blending mode. Ha info then used again as luminance at 33%. A string taped to the end of the aperture to create the diffraction spikes.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Part of the winter Milky Way, these nebulae, IC 405 and IC 410, rest in the southern portion of Auriga near the open clusters M36 and M38. IC 405, located at bottom in this image, is also known as the "Flaming Star" Nebula due to the blue reflection of the bright star AE Aurigae amidst the rest of the reddish, hydrogen emissions. AE Aurigae is a hot, blue star shining at magnitude 5.96 with the B0 spectral class. It is a fast moving, roaming star that once originated in the Orion area. At the top of the image is IC 410, which is also an emission nebula, though the central star cluster also has the added designation of NGC 1893. This combination of nebula/cluster is reminiscent of the nearby Rosette Nebula in Monoceros. While the open cluster is easy to observe with most telescopes, the emission nebulae are a bit more tricky. The nebulosity of IC 410 is much easier to catch than that of the Flaming Star, but you'll still need at least 10" of aperture in dark skies, and a UHC or OIII filter will help. IC 405 requires much larger apertures, which makes its inclusion in the Caldwell "Catalog" (C31) somewhat questionable.</p>
+
+</div>
+</div>
+
+<p align="center"><em>IC 410 features some neat details, like these little tadpoles&hellip;or is it cosmic sperm? Hmmm&hellip;</em></p>
+
+![Close-up detail of the IC 410 "tadpole" globules](./_images/ic405-410-capella-detail.jpg)
+
+<p align="center"><em>The Flaming Star shown at full resolution of the camera</em></p>
+
+![Full-resolution detail of the Flaming Star Nebula, IC 405](./_images/ic405-410-capella-flame.jpg)
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

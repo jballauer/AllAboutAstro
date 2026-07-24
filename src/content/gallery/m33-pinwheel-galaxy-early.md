@@ -1,12 +1,50 @@
 ---
 title: "M33 - The Pinwheel Galaxy (LRGB)"
-description: M33, the Triangulum Galaxy, an earlier LRGB image from Jay's archive.
-pubDate: 2017-10-09
+description: An earlier LLRGB image of the Pinwheel Galaxy in Triangulum, imaged over three nights at Comanche Springs.
+pubDate: 2005-08-03
 image: ./_images/m33-pinwheel-galaxy-early.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+An earlier LLRGB attempt at [M33, the Pinwheel Galaxy](/gallery/m33-pinwheel-galaxy/), imaged over three nights at Comanche Springs. A [second, even earlier attempt](#previous-attempt) from 2003 is further down this page.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs, 3RF dark sky site near Crowell, Texas</p>
+<p><strong>Date:</strong> August 1-3, 2005</p>
+<p><strong>Seeing:</strong> 9/10</p>
+<p><strong>Transparency:</strong> 8/10 (mag. 7 skies)</p>
+<p><strong>Temperature:</strong> 72 degrees F (-15 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LLRGB image; 150:40:30:40 RGB (10 minute subexposures, all unbinned)</p>
+<p><strong>Processing Information:</strong> Calibration (darks/flats), registration, gradient removal, and RGB channel combine in MaxIm DL 4 (average combine). LRGB and LLRGB combine, color balance, levels/curves, high pass sharpening, and noise removal (Noel Carboni's DLR Tools) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> This one was tough to put together because of the many brighter regions within the galaxy itself. Could have used a little more luminance, but this will do. Seeing was exceptional during this stretch. Imaged over three nights in the late morning hours.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>The Andromeda Galaxy (M31) gets tons of attention, as it should. It's huge, bright and easily seen in even light polluted skies. But just on the other side of Mirach on a line extending from M31 is the Pinwheel Galaxy in Triangulum, known as M33. This is a magnificent object in its own right and, in my opinion, is a better telescopic sight than M31, as are several face-on spirals. Under dark skies, the spiral arms are evident in many scopes. In fact, little do people realize that this is sometimes a naked eye object in those same dark skies. The pinkish areas in the photo are very active star-forming regions, known as hydrogen-alpha regions, and they really stand out in many photographs. This galaxy is quite large as well, a stunning site in a big scope and even in binoculars. Don't neglect this spiral galaxy!</p>
+
+</div>
+</div>
+
+<h3 id="previous-attempt">Previous Attempt</h3>
+
+![An earlier attempt at M33 with an SBIG ST-7e, December 2003](./_images/m33-pinwheel-galaxy-early-previous2003.jpg)
+
+<p><strong>Location:</strong> Ballauer Observatory in Azle, Texas<br>
+<strong>Date:</strong> December 26, 2003<br>
+<strong>Seeing:</strong> 9/10 (1.3 FWHM)<br>
+<strong>Transparency:</strong> 5/10<br>
+<strong>Equipment:</strong> Tak FSQ-106 on Celestron CGE mount<br>
+<strong>Camera:</strong> SBIG ST-7e with CFW8a color filter wheel, unguided<br>
+<strong>Exposure Info:</strong> LRGB image (L = 5 x 10 min &amp; 30 x 1 minutes, R = 3 x 10 minutes, G = 3 x 10 minutes, B = 2 x 10 minutes) binned 1x1.<br>
+<strong>Processing Info:</strong> Color channels and Luminance with darks, alignment and Sigma combine in MaxIm 3.0. RGB image combined in MaxIm. Luminance and RGB aligned and combined in Photoshop 7. Levels, Curves, and Unsharp mask in Photoshop 7 on the Luminance channel. Levels, Curves, and color balance performed on the RGB channel in Photoshop. Image cropped and resized for web.</p>
+
+<p><em>Note: If you image this object, you might try to do a better job of focusing than I did!</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

@@ -1,13 +1,45 @@
 ---
 title: Horsehead and Flame Nebula Region
-description: The Horsehead Nebula (B33) and Flame Nebula (NGC 2024) region near Alnitak in Orion.
-pubDate: 2017-08-16
+description: A wide-field Ha(Ha)GB image of the Horsehead Nebula (B33) and Flame Nebula (NGC 2024) region near Alnitak in Orion.
+pubDate: 2004-12-06
 image: ./_images/horsehead-flame-nebula-region.jpg
 draft: false
 showInGallery: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Horsehead Nebula region &mdash; B33 and the Flame Nebula, NGC 2024, in Ha(Ha)GB. A [closer, later view of B33 alone](/gallery/b33-horsehead-nebula/) is also on file.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Date:</strong> December 6, 2004</p>
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas</p>
+<p><strong>Transparency:</strong> 4.5 mag zenithal</p>
+<p><strong>Seeing:</strong> 3/10</p>
+<p><strong>Temperature:</strong> 55 degrees, camera cooled to -25 degrees C</p>
+<p><strong>Scope/Mount:</strong> Tak FSQ-106 @ f/5 and Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
+<p><strong>Exposure Info:</strong> Ha(Ha)GB, 150 minutes Ha luminance (8 x 15 minutes); 15 x 2 minutes green and blue; all unbinned.</p>
+<p><strong>Processing:</strong> Dark frame calibration, deblooming, registration, and Sigma Combine in MaxIm DL 4. Digital Development and RGB combine in MaxIm DL 4. Color balance, curves, levels, selective sharpening/blurring/despeckle in Photoshop CS. Masking of additional H-alpha luminance performed in Photoshop CS.</p>
+<p><strong>Extra Notes:</strong> An additional 30 minutes of h-alpha luminance was taken December 9, 2004. This allowed for more detail in the foreground.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>One of the most famous objects in the sky, the Horsehead Nebula is a dark nebula only seen because of the reflection nebula, IC 434, that shines brightly behind it. It carries the designation of Barnard 33, one of many dark nebulae in the Barnard catalog. The other prominent nebula in the bottom center of the image is the Flame Nebula, NGC 2024. Also pictured are IC 432 and NGC 2023, which is a reflection nebula. The prominent star in the image is the eastern most of Orion's Belt stars, Alnitak. This star is rather bright, shining at mag 1.7.</p>
+<p>The Horsehead itself cannot be seen visually except by larger aperture scopes in very dark skies. Medium aperture scopes and some smaller scopes with fine optics can make out the shape of the Horsehead with the aid of a Hydrogen-Beta filter, but that is the exception to the rule. A filter, dark skies, and big aperture gives you the best opportunity, but this is primarily a photographic object, and a great one at that!</p>
+
+</div>
+</div>
+
+<p align="center"><em>The Horsehead Nebula, B33, shown at close to the full resolution of the camera</em></p>
+
+![The Horsehead Nebula region, close to full camera resolution](./_images/horsehead-flame-nebula-region-detail.jpg)
+
+<p align="center"><em>The Horsehead Nebula region in Hydrogen-Alpha light, used for luminance in the image above</em></p>
+
+![The Horsehead Nebula region in Hydrogen-Alpha light](./_images/horsehead-flame-nebula-region-hadata.jpg)
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

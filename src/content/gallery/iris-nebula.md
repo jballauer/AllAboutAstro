@@ -1,12 +1,39 @@
 ---
 title: The Iris Nebula
-description: NGC 7023, the Iris Nebula, a reflection nebula in Cepheus.
-pubDate: 2017-09-30
+description: NGC 7023, the Iris Nebula, a reflection nebula in Cepheus, imaged with a 6" refractor at the Texas Star Party.
+pubDate: 2008-06-05
 image: ./_images/iris-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+NGC 7023, the Iris Nebula, in LRGB, imaged with a 6" refractor at the Texas Star Party.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Texas Star Party 2008, near Ft. Davis, Texas</p>
+<p><strong>Date:</strong> June 4-5, 2008</p>
+<p><strong>Seeing:</strong> 5/10 on average</p>
+<p><strong>Transparency:</strong> 9.5/10 on average</p>
+<p><strong>Temperature:</strong> -15 and -20 degrees C on camera</p>
+<p><strong>Scope/Mount:</strong> Tak TOA-150 and Astrophysics AP900</p>
+<p><strong>Camera:</strong> SBIG STL-6303e astro CCD camera</p>
+<p><strong>Guiding:</strong> STL external guidehead through Tak FSQ-106</p>
+<p><strong>Exposure Info:</strong> LRGB image; 160:70:20:30 minutes (5 minute subexposures for L and RGB, all unbinned)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), registration, and RGB channel combine in CCDStack (median combine). LRGB combine, color balance, saturation, levels/curves, and noise removal/local contrast enhancement (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> Tough target. Hard to get enough exposure time. Green and Blue color data was a little thin, but this is where the LRGB technique really shines. The separate luminance fills in the gaps for the weaker color channel data once the luminance is layered multiple times. Earlier iterations utilize heavy noise reduction and blurring in the weaker color channels while allowing the luminance data to sort itself into the appropriate color locations.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>A beautiful object, most normally a target of larger scopes, NGC 7023 is imaged here with a medium focal length 6" refractor. What makes it a suitable target for this instrument? CCD camera power!</p>
+<p>Also known as the "Iris Nebula" because of the floral shape and color, this region is surrounded by dust. When you expose long enough with a CCD camera, the dust begins to silhouette against the background star light, as well as the light coming from the strong, central star within the "iris" itself. The result is a distinct separation of the dust from the "space" background.</p>
+<p>This nebula is a typical reflection nebula, where the color comes as a result of the powerful, massive, yet young, blue-colored star resting within the dust. The object is found slightly north of Alderamin on the western side of the constellation Cepheus.</p>
+<p>This object is not often a visual target, though it should be. Even through a 4" scope in dark skies, the main reflection areas are very apparent. With a slightly larger scope, or with a little more power, some of the knotting in the object becomes apparent.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

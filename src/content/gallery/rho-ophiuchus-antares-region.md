@@ -1,12 +1,37 @@
 ---
 title: Rho-Ophiuchus Antares Region
-description: The colorful dust and reflection nebula complex surrounding Antares and Rho Ophiuchi.
-pubDate: 2017-10-30
+description: A wide-field mosaic of the colorful dust and reflection nebula complex surrounding Antares and Rho Ophiuchi, shot from Kitt Peak.
+pubDate: 2005-06-02
 image: ./_images/rho-ophiuchus-antares-region.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Rho-Antares region &mdash; a wide-field mosaic in Scorpius, shot from Kitt Peak National Observatory. Credit line: Jay Ballauer, Phil Jones, and Adam Block.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Kitt Peak National Observatory near Tucson, Arizona</p>
+<p><strong>Date:</strong> June 2, 2005</p>
+<p><strong>Seeing:</strong> 3/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Temperature:</strong> 52 degrees F (-20 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> Tak FSQ-106 @ f/5 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> Two frame mosaic, RGB image; 20:20:30 RGB for each frame (10 minute subexposures all unbinned), processed with synthetic luminance</p>
+<p><strong>Processing Information:</strong> Calibration (darks, bias, flats), registration, gradient removal, and RGB channel combine in MaxIm DL 4 (mean combine). LRGB combine, mosaic stitching, cropping, color balance, levels/curves, sharpening, and noise removal in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> String used on the front of the aperture to give the diffraction spikes on the stars. Data was taken by Jay Ballauer, Phil Jones, and Adam Block. Image processing done by Jay Ballauer. Special thanks to Adam Block for hosting Phil and I at the Advanced Observer's Program atop Kitt Peak. Likewise, thanks to the Three Rivers Foundation and Dr. Fred Koch for sponsoring the trip.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>This area of Scorpius produces the prettiest photographs! The bright yellow star Antares, the heart of the Scorpion, produces a curious yellow nebulosity; very rare. That would ordinarily be pretty enough but many other colorful objects adorn this view.</p>
+<p>Three areas of blue nebulosity appear, most notably around the triple star system of Rho Ophiuchi at the upper right. Another area of blue nebulosity surrounds the triple star system of 22 Scorpii, just above Antares. Between the two triple star systems is IC 4603, itself a pretty blue nebula. Red nebulosity also appears in the area around Sigma Scorpii at the upper right and below Antares itself. The great M4 globular cluster appears just to the right of Antares and another smaller globular, NGC 6144, can be seen right in the middle of everything else. And all this is covered with the dust of dark nebula, such as Barnard 42 in the upper left.</p>
+<p>Therefore, the image shows every type of nebulosity imaginable; red hydrogen emission nebulae, blue and yellow reflection nebulae, and dark nebulae. In total, this area of colorful dust is quite extraordinary!</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

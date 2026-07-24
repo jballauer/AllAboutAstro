@@ -1,12 +1,55 @@
 ---
 title: "B33 - The Horsehead Nebula"
-description: The Horsehead Nebula, a dark nebula silhouetted against IC 434 in Orion.
-pubDate: 2017-09-27
+description: A close-up LLRGB image of the Horsehead Nebula, a dark nebula silhouetted against IC 434 in Orion.
+pubDate: 2005-10-26
 image: ./_images/b33-horsehead-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+B33, the Horsehead Nebula, in LLRGB &mdash; a close-up view battling the glare of nearby Alnitak. A [wider region shot](/gallery/horsehead-flame-nebula-region/) including the Flame Nebula is also on file.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs, 3RF dark sky site near Crowell, Texas</p>
+<p><strong>Date:</strong> October 26, 2005</p>
+<p><strong>Seeing:</strong> 9/10</p>
+<p><strong>Transparency:</strong> 8/10 (mag. 7 skies)</p>
+<p><strong>Temperature:</strong> 32 degrees F (-25 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LLRGB image; 160:50:40:60 RGB (20 minute subexposures for L, 10 minute subexposures for RGB, color binned)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), registration, gradient removal, and RGB channel combine in MaxIm DL 4 (average combine). LRGB and LLRGB combine, color balance, levels/curves, high pass sharpening, and noise removal and local contrast enhancement (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> One of the more difficult objects I've shot, simply because of the havoc wreaked by the bright star Alnitak just off the frame to the left. Philosophically, it poses a dilemma&hellip;attack the gradient, leaving the viewer with the question of why the red channel is weaker compared to the other channels -or- preserve the gradient, making it more obvious that something lurks outside the frame impressing itself on the landscape? For this image, I chose a mixture of both philosophies. The original data is heavily biased to the blue, so strengthening of the red channel and removal of most of the blue gradients were required; however, leaving some of the diffraction spikes/flares from Alnitak gives reference to its presence.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>One of the most famous objects in the sky, the Horsehead Nebula is a dark nebula only seen because of the reflection nebula, IC 434, that shines brightly behind it. It carries the designation of Barnard 33, one of many dark nebulae in the Barnard catalog. To the lower left in this picture is another emission nebula, NGC 2023. The Horsehead itself cannot be seen visually except by larger aperture scopes in very dark skies. Medium aperture scopes and some smaller scopes with fine optics can make out the shape of the Horsehead with the aid of a Hydrogen-Beta filter, but that is the exception to the rule. A filter, dark skies, and big aperture gives you the best opportunity, but this is primarily a photographic object, and a great one at that!</p>
+
+</div>
+</div>
+
+<p align="center"><em>The Horsehead Nebula, Barnard 33, in detail</em></p>
+
+![Detail crop of the Horsehead Nebula at close to the full resolution of the camera](./_images/b33-horsehead-nebula-detail.jpg)
+
+<hr>
+
+<h3>Previous Attempt</h3>
+
+![An earlier attempt at the Horsehead Nebula with an SBIG ST-7E, November 2003](./_images/b33-horsehead-nebula-previous2003.jpg)
+
+<p><strong>Location:</strong> Ballauer Observatory in Azle, Texas<br>
+<strong>Seeing:</strong> 8/10 (2.5 FWHM)<br>
+<strong>Transparency:</strong> 4/10<br>
+<strong>Date and Time:</strong> November 18, 2003 @ 11:00PM<br>
+<strong>Equipment:</strong> SBIG ST-7E, Tak FSQ-106 @ f/5, and Celestron CGE mount<br>
+<strong>Length:</strong> Five 20 minute exposures binned 1x1<br>
+<strong>Processing Information:</strong> Dark frames, gradient removal, registration and Sigma Combine in MaxIm 3.0. Levels, Curves, Gaussian Blur and Unsharp Mask in Photoshop 7.</p>
+
+<p><em>Exposure Notes: First light image with the new Celestron CGE mount.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

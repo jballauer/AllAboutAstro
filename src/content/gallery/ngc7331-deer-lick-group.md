@@ -1,12 +1,36 @@
 ---
 title: NGC 7331 and Deer Lick Group
-description: NGC 7331, a large spiral galaxy in Pegasus, together with the fainter background "Deer Lick Group" of galaxies.
-pubDate: 2017-10-15
+description: NGC 7331, a large spiral galaxy in Pegasus often called the Milky Way's twin, together with the fainter background Deer Lick Group of galaxies.
+pubDate: 2005-10-01
 image: ./_images/ngc7331-deer-lick-group.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+NGC 7331, the "Pegasus Galaxy," together with the Deer Lick Group, in LRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs, 3RF dark sky site near Crowell, TX</p>
+<p><strong>Date:</strong> September - October, 2005</p>
+<p><strong>Seeing:</strong> 3/10 on average</p>
+<p><strong>Transparency:</strong> 7/10</p>
+<p><strong>Temperature:</strong> Chilly (-25 and -20 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LRGB image; 240:30:30:40 minutes (20 minute subexposures for L, 30 minute subexposures for Ha, and 10 minute subexposures for RGB, color binned)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), registration, gradient removal, and RGB channel combine in CCDStack (median combine). LRGB combine, color balance, levels/curves, and noise removal/local contrast enhancement (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>One of the bright galaxies not listed in the Messier catalog, NGC 7331 is quite a treat. Surrounded by several smaller galaxies known as the Deer Lick Group, this galaxy is a showpiece object in the constellation Pegasus. It is often known as the Milky Way's twin in both size and composition.</p>
+<p>The galaxies of the Deer Lick Group include NGC 7335, 7336, and 7337, with NGC 7331 itself being the most prominent member of this association of galaxies. Also located nearby, around 1.5 degrees away, is the famous Stephan's Quintet of galaxies, not shown in this image.</p>
+<p>This galaxy is quite easy to see through a telescope in dark skies and isn't a tough target for binoculars. It is located nearest to Scheat, the most northwesterly of the stars in the great "square" of Pegasus.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

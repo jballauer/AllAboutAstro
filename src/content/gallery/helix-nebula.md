@@ -1,12 +1,36 @@
 ---
 title: The Helix Nebula
-description: NGC 7293, one of the closest and largest planetary nebulae, in Aquarius.
-pubDate: 2017-11-02
+description: NGC 7293, the Helix Nebula, the largest planetary nebula in the sky, imaged from the Okie-Tex Star Party in LRGB.
+pubDate: 2005-11-01
 image: ./_images/helix-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+NGC 7293, the Helix Nebula, in LRGB from the Okie-Tex Star Party and Comanche Springs.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Okie-Tex Star Party 2005 and Comanche Springs, 3RF dark sky site near Crowell, Texas</p>
+<p><strong>Date:</strong> October - November, 2005</p>
+<p><strong>Seeing:</strong> 2/10</p>
+<p><strong>Transparency:</strong> 6/10</p>
+<p><strong>Temperature:</strong> Chilly (-25 and -20 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LRGB image; 420:30:25:30 RGB (20 minute subexposures for L, 5 minute subexposures for RGB, color binned)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), registration, gradient removal, and RGB channel combine in CCDStack (median combine). LRGB combine, color balance, levels/curves, and noise removal and local contrast enhancement (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> A difficult object because of the low southern views. Poor seeing, winds, and short RGB data set didn't help. Data taken across five different nights, none of which were spectacular. Interesting note, but this was 7 hours of clear luminance exposure, yet the image was still quite noisy and not very deep&hellip;if the data isn't good in quality, it'll likely have low S/N. Not a bad final result, but this one will require a return visit!</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>The largest planetary nebula in the night sky, the Helix Nebula, is some 10 times larger than the famous Ring Nebula (M57). While the Helix is no doubt of similar size to the Ring, it is much closer to Earth, perhaps some 450 light years away. So from our perspective, the Helix doesn't first remind us of a planetary nebula. Yet, everything else about it fits the mold of a planetary. It has a dying center star that is shedding its gases, it has heavy concentrations of oxygen about the center, and it glows with the typical ring of hydrogen surrounding the perimeter.</p>
+<p>The Helix, designated NGC 7293, shines at magnitude 7.3, though it can be a tough visual object for two reasons. One, its light is spread over a large surface area, making it low in contrast. And two, it's a southern object, resting at -20 in declination, so those in North America will undoubtedly deal with southern horizon issues. Even so, from a dark sky site, it's an easy target if you know what you are looking for. For the best view, lots of aperture will show a glorious view and the shape is unmistakable. But use too much power too early and you might skip over it entirely. Wider field views show the object well, appearing as a smudge even with binoculars. The Helix, despite the above, deserves attention. It's lovely indeed.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

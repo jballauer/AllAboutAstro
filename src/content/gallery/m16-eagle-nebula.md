@@ -1,12 +1,41 @@
 ---
 title: "M16 - The Eagle Nebula"
-description: The Eagle Nebula, home of the "Pillars of Creation," in Serpens.
-pubDate: 2017-09-24
+description: The Eagle Nebula, home of the "Pillars of Creation," in HaRGB from a combination of Ballauer Observatory and Comanche Springs sessions.
+pubDate: 2005-09-06
 image: ./_images/m16-eagle-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M16, the Eagle Nebula, in HaRGB &mdash; home of the famous Hubble "Pillars of Creation."
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Ballauer Observatory near Azle, Texas (Ha) and Comanche Springs Astronomy Campus near Crowell, Texas (RGB)</p>
+<p><strong>Date:</strong> June 28, 2005 (Ha) and September 6, 2005 (RGB)</p>
+<p><strong>Seeing:</strong> 9/10</p>
+<p><strong>Transparency:</strong> 4/10</p>
+<p><strong>Temperature:</strong> 72 degrees F</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-6303e astro CCD camera (Ha) and SBIG STL-11000m astro CCD camera (RGB)</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5nm Hydrogen-alpha filter</p>
+<p><strong>Exposure Info:</strong> HaRGB image - 60:40:30:40 minutes (20 minute subexposures for Ha and 5 minute subexposures RGB, all unbinned)</p>
+<p><strong>Processing Information:</strong> Calibration, registration, and DDP in MaxIm DL 4. Levels/curves, sharpening, and noise removal in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> H-alpha information is from previous data. Ha blended into red channel at 50% and reused as luminance at 50%.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>The Eagle Nebula, M16, inspires us like perhaps no other object in the sky. Perhaps it's because of the beautiful representation of its namesake, the Eagle. But more than that, it's a spectacular representation of creation in real-time. The hot emission nebula is the birthplace of many hot, new stars. And it's this aspect of M16 that is captured in the famous Hubble shot entitled "Pillars of Creation."</p>
+<p>Visually speaking, M16 is a relatively easy object to see in dark skies. In fact, it will appear as a bright patch to the naked eye amidst the surrounding summer Milky Way. However, the pillars themselves are a little more difficult to see. Regardless, it is in one of the heaven's most exciting regions of the sky, and this image merely hints as to its true grandeur!</p>
+
+</div>
+</div>
+
+<p align="center"><em>M16 in Hydrogen-Alpha light, used for luminance in the image above</em></p>
+
+![M16 in Hydrogen-Alpha light](./_images/m16-eagle-nebula-hadata.jpg)
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

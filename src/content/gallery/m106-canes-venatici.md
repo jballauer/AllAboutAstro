@@ -1,12 +1,41 @@
 ---
 title: M106 in Canes Venatici
-description: M106, a Seyfert spiral galaxy in Canes Venatici.
-pubDate: 2017-11-08
+description: A first-light LLRGB image of the Seyfert spiral galaxy M106, taken with a new 12.5" RCOS Ritchey-Chretien.
+pubDate: 2005-02-13
 image: ./_images/m106-canes-venatici.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+A first-light LLRGB image of M106, taken the first night with a new 12.5" RCOS Ritchey-Chretien and Paramount ME.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas</p>
+<p><strong>Date:</strong> February 13, 2005</p>
+<p><strong>Transparency:</strong> 4.5 mag zenithal</p>
+<p><strong>Seeing:</strong> 8/10, 1.4" FWHM</p>
+<p><strong>Temperature:</strong> 45 degrees F, camera cooled to -30 degrees C</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC with field flattener and Paramount ME mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
+<p><strong>Filters:</strong> Standard SBIG, clear filter used for luminance</p>
+<p><strong>Exposure Info:</strong> LLRGB image, 160:30:30:40 minutes - 10 minute subexposures L unbinned and 5 minute subexposures RGB binned 2x2</p>
+<p><strong>Processing:</strong> Dark frame calibration, flat fields, registration, and Sigma Combine in MaxIm DL 4. Digital Development and RGB combine in MaxIm DL 4. Final LRGB and LLRGB combining, deblooming, gradient removal, color balance, curves, levels, selective sharpening/blurring/despeckle in Photoshop CS.</p>
+<p><strong>Extra Notes:</strong> This is a first-light, first-night image with the new 12.5" RCOS Ritchey-Chretien scope and Paramount ME. The scope was slightly out of calibration and demonstrated some astigmatism despite the use of the field flattener. Of course, this will soon be corrected.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Some galaxies are quite small when pictured. This is not one of them. M106 in Canes Venatici is one of the larger galaxies in the sky from our perspective. But it doesn't garner much notice because it takes a powerful scope or long exposure photographs to show the entire, faint outer halo. Partnered with M106 in this image is NGC 4248 at right and NGC 4258 at lower-left. Several other faint galaxies are shown scattered throughout the field.</p>
+<p>M106 is an underrated Messier galaxy among visual observers but one of the most spectacular to photograph!</p>
+
+</div>
+</div>
+
+<p align="center"><em>M106 in grayscale, used for luminance in the image above</em></p>
+
+![M106 grayscale luminance frame](./_images/m106-canes-venatici-grayscale.jpg)
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

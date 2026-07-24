@@ -1,12 +1,35 @@
 ---
 title: M45 with Comet Machholz
-description: The Pleiades star cluster with Comet Machholz passing nearby.
-pubDate: 2017-10-03
+description: Comet C/2004 Q2 (Machholz) passing within two degrees of the Pleiades on a memorable January night in 2005.
+pubDate: 2005-01-07
 image: ./_images/m45-comet-machholz.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+Comet Machholz with the Pleiades &mdash; Comet C/2004 Q2 passing within two degrees of M45 on January 7, 2005.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Date:</strong> January 7, 2005</p>
+<p><strong>Location:</strong> Copperbreaks State Park near Quanah, Texas</p>
+<p><strong>Transparency:</strong> 6.2 mag zenithal; heavy dew, frost</p>
+<p><strong>Seeing:</strong> 4/10</p>
+<p><strong>Temperature:</strong> 26 degrees F; camera cooled to -25 degrees C</p>
+<p><strong>Scope/Mount:</strong> Tak FSQ-106 @ f/5 and Tak NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-11000, self-guided</p>
+<p><strong>Exposure Info:</strong> LRGB image. 15:15:9:15 minutes (5 x 3 minutes Luminance; 3 x 5 minutes red; 3 x 3 minutes green; 3 x 5 minutes blue), RGB binned 2x2.</p>
+<p><strong>Processing:</strong> Dark frame calibration, registration, artificial flats, gradient removal and Sigma Combine in MaxIm DL 4. Digital Development and RGB combine in MaxIm DL 4. Luminance blending, color balance, curves, levels, sharpening and despeckle in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>January 7, 2005 was a memorable night. The best comet to grace the sky since Ikeya-Zhang in 2002, Comet Machholz was a magnitude 4, naked eye comet on this night when it came within 2 arc degrees of the Pleiades star cluster. But what has made Comet Machholz &mdash; C/2004 Q2 in "comet speak" &mdash; so memorable is that it has stayed in the high skies of northern hemisphere observers during its peak brightening period and subsequent fading period when it begins to make its exit from the solar system.</p>
+<p>Shooting images of comets is very difficult to do since comets move at a faster pace than the stars. Therefore, if you wish to keep the background from trailing, exposures have to be very short. Normally, this is good enough for the comet, but not good enough to bring in enough detail in the background. In this case, because the reflection nebulosity surrounding M45 is somewhat easy to capture (relatively speaking), the final result shows a nice amount of detail in both objects.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

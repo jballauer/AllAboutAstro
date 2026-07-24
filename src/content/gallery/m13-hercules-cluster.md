@@ -1,12 +1,36 @@
 ---
 title: "M13 - The Hercules Cluster"
-description: M13, the Great Globular Cluster in Hercules.
-pubDate: 2017-10-12
+description: M13, the Great Hercules Cluster, imaged in LRGB with synthetic luminance under a bright 11-day moon.
+pubDate: 2005-05-19
 image: ./_images/m13-hercules-cluster.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M13, the Great Hercules Cluster, in LRGB with synthetic luminance.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs, 3RF dark sky site near Crowell, Texas</p>
+<p><strong>Date:</strong> May 19, 2005</p>
+<p><strong>Seeing:</strong> 5/10</p>
+<p><strong>Transparency:</strong> 8/10 (mag. 3.5 skies, 11 day moon)</p>
+<p><strong>Temperature:</strong> 62 degrees F (-15 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LRGB image; 45:30:45 RGB with synthetic luminance (5 minute subexposures all unbinned)</p>
+<p><strong>Processing Information:</strong> Calibration (darks/flats), registration, gradient removal, DDP, and RGB channel combine in MaxIm DL 4 (Sigma median). LRGB combine, cropping, color balance, levels/curves, sharpening, and noise removal (despeckle and gaussian blur) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> I normally don't image with the moon so bright, but bad weather made me desperate! Still, such an object doesn't require very dark skies, and the magic of image processing really helps to even the background caused by the bright moon. It should be noted that the RC still isn't optimally collimated and aligned yet.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Known by most as the most spectacular globular cluster in the northern sky, the Great Hercules Cluster can often be seen with the naked eye in dark skies. As globular clusters go, this cluster, also known as Messier 13, is quite large in size from our perspective, approximately 20 arc minutes wide. The star at the upper-left of this image is a 6.86 magnitude K2 spectral star.</p>
+<p>M13 is very easy to find in the night sky, making it one of the first deep sky objects found by beginning hobbyists. Just look to the western side of the Hercules "keystone" and search along that line about 1/3 the way from the northern-most star on that side. Any scope can detect the object, but the individual stars in the cluster need 6 to 8 inches of aperture to really appreciate.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
