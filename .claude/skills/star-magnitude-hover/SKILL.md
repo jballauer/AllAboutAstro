@@ -163,6 +163,15 @@ to fit context, but keep a `.ke-star-hover-caption` caption present.
   markers findable without needing to hunt pixel-by-pixel. If markers
   still feel hard to find in practice, grow this further rather than
   making them visible.
+- **If the revealed-on-hover ring is hard to see against a saturated
+  star** (a bare gold ring on a blown-out white core), the sibling
+  `star-mag-hover-with-slider` skill's marker CSS has a black-outline
+  fix for exactly this (`inset`+outset `box-shadow` sandwiching the gold
+  `border`) — port that same technique to `.ke-star-hover-dot`'s
+  `:hover`/`:focus-visible` ring if it comes up here too. Don't add it
+  preemptively, though — this skill's visual design is settled/finished
+  (see the top of this file); only touch it if the low-contrast problem
+  actually surfaces on a real image, same as any other change here.
 - **`.ke-star-hover-caption` is 10pt, centered, italic.** Watch for CSS
   specificity fights if this markup lands inside a `.ke-sidebar` (e.g.
   the `.ke-two-col-about` pattern) — `.ke-sidebar.ke-two-col-about p`

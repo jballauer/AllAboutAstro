@@ -1,12 +1,14 @@
-# Mag-12 pilot — working query, dedup, and results (M20 Trifid, WCS-only test)
+# Mag-12 pilot — working query, dedup, and results (M20 Trifid)
 
-Ran 2026-07-24 against the M20 Trifid Nebula's already-solved WCS (from
-the mag-10 `star-mag-hover-with-slider` pass on the same image —
-`src/content/gallery/_images/m20-trifid-nebula.jpg`, 1082x800). This
-validated the mag-12 pipeline end-to-end but was **not** deployed to
-the live page — the site's M20 hero already has the committed mag-10
-slider; this was purely to prove the mechanism before writing the
-skill.
+Ran 2026-07-24 against the M20 Trifid Nebula's already-solved WCS
+(`src/content/gallery/_images/m20-trifid-nebula.jpg`, 1082x800). Initially
+validated pipeline-only, reusing the WCS from the site's earlier mag-10
+`star-mag-hover-with-slider` pass on the same image without touching the
+live page. Jay then asked to see it live, so the M20 hero's star list was
+swapped from the mag-10 set (17 markers) to this mag-12 set (52 markers)
+and `maxMag={12}` passed to the component — it is now the live
+configuration on that page (prior mag-10 marker data is recoverable from
+git history if ever reverted).
 
 ## Cone search (identical shape to the base skill, mag limit raised)
 
@@ -66,7 +68,12 @@ tags did in fact collide once actually rendered on the live page. Fixed
 with the base skill's per-marker `tagDx`/`tagDy` label offset (see its
 "Fixing overlapping tags on a real close pair" section) rather than
 merging or dropping either marker — both are real stars, they just
-needed their labels nudged apart.
+needed their labels nudged apart. First attempt applied the offset to a
+wrapper around both the leader and the tag, which detached the leader
+from its ring (it floated off toward the relocated tag) — Jay caught it
+immediately as "the LkHA 123 stem looks broken." Fixed component-side:
+`tagDx`/`tagDy` now transforms only `.sms-tag`; the leader always
+renders as a plain, unshifted sibling of the ring.
 
 ## Density check
 

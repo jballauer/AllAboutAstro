@@ -1,6 +1,6 @@
 ---
 name: star-mag-hover-with-slider-mag12
-description: Same magnitude-depth slider mechanism as star-mag-hover-with-slider, but resolving the SIMBAD cone search down to apparent magnitude 12 instead of 10 — for a hero image with a richer, denser star field where mag-10 leaves too few markers to be interesting. Use when Jay asks for the slider "deeper" or specifically mentions magnitude 12, or when scoping a new image and a mag-10 pull comes back sparse. Pick this skill or the base mag-10 one per image, not both on the same image. Pipeline validated 2026-07-24 against the M20 Trifid Nebula's already-solved WCS (52 in-frame stars after quality-filtering and dedup, vs. 17 at mag 10) — not yet deployed to a live page.
+description: Same magnitude-depth slider mechanism as star-mag-hover-with-slider, but resolving the SIMBAD cone search down to apparent magnitude 12 instead of 10 — for a hero image with a richer, denser star field where mag-10 leaves too few markers to be interesting. Use when Jay asks for the slider "deeper" or specifically mentions magnitude 12, or when scoping a new image and a mag-10 pull comes back sparse. Pick this skill or the base mag-10 one per image, not both on the same image. Piloted 2026-07-24 on the M20 Trifid Nebula, swapped in live over the page's original mag-10 rollout (52 in-frame stars after quality-filtering and dedup, vs. 17 at mag 10) — read this before re-deriving the pipeline or re-solving M20's WCS.
 ---
 
 # Star-magnitude slider — mag 12
@@ -56,6 +56,20 @@ mag-12-specific gotchas without cluttering the base skill.
    `maxMag` prop (default 10) that drives the range input's `max` and
    the tick datalist — added specifically to support this skill without
    forking the component. Don't duplicate the component; pass the prop.
+5. **Denser fields make label collisions more likely.** With 3x the
+   markers of a mag-10 pull in the same field, a genuine close pair
+   (two real stars a few px apart, e.g. M20's `HD 164492`/`LkHA 123`)
+   overlapping tags is more likely to actually surface, not just be a
+   theoretical density-check note. Read the base skill's "Fixing
+   overlapping tags on a real close pair" section (`tagDx`/`tagDy`,
+   applied to the tag only, never the leader) — don't treat overlap as
+   unfixable just because it showed up at this depth instead of mag 10.
+6. **Ring and leader are outlined in black by default** (see the base
+   skill's marker-rendering rules) — a bare gold ring/stem nearly
+   vanishes against a saturated star core, which is more likely to come
+   up at mag 12 simply because there are more markers, including on
+   brighter stars near the field's saturated core. This is baked into
+   the shared component, not something to add per-skill.
 
 ## Verification — same as the base skill, same discipline
 

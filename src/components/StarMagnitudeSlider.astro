@@ -39,17 +39,15 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
         style={`left:${((s.x / imageWidth) * 100).toFixed(2)}%; top:${((s.y / imageHeight) * 100).toFixed(2)}%`}
       >
         <span class="sms-dot"></span>
+        <span class="sms-leader"></span>
         <span
-          class="sms-label"
+          class="sms-tag"
           style={(s.tagDx || s.tagDy) ? `transform: translate(${s.tagDx ?? 0}px, ${s.tagDy ?? 0}px)` : undefined}
         >
-          <span class="sms-leader"></span>
-          <span class="sms-tag">
-            <strong>{s.commonName ?? s.catalogName}</strong>
-            {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
-            <span class="sms-mag">mag {s.mag.toFixed(2)}</span>
-            {s.specType && <span class="sms-sp">{s.specType}</span>}
-          </span>
+          <strong>{s.commonName ?? s.catalogName}</strong>
+          {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
+          <span class="sms-mag">mag {s.mag.toFixed(2)}</span>
+          {s.specType && <span class="sms-sp">{s.specType}</span>}
         </span>
       </span>
     ))}
@@ -121,17 +119,13 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
       0 0 0 1px rgba(0, 0, 0, 0.85),
       0 0 2px rgba(0, 0, 0, 0.9);
   }
-  /* Groups the leader + tag so both can be nudged together via an
-     optional per-star tagDx/tagDy, without moving the ring (a sibling,
-     outside this wrapper) off the star's real position. Plain block
-     display keeps default (no-offset) layout identical to before this
-     wrapper existed. */
-  .sms-label {
-    display: block;
-  }
   /* Short leader line from the ring down to the label, so the label can
-     sit clear of the star instead of overlapping it. Same black-outline
-     treatment as .sms-dot -- a bare 1px gold line gets lost crossing a
+     sit clear of the star instead of overlapping it. Always renders
+     directly below the ring, unshifted -- an optional tagDx/tagDy (see
+     .sms-tag below) moves only the tag box, never this stem, so the
+     stem always visibly connects to its own ring instead of floating
+     off toward a relocated tag. Same black-outline treatment as
+     .sms-dot -- a bare 1px gold line gets lost crossing a
      bright/saturated part of the star or nebula, so it's flanked by a
      1px black edge on each side (a 3px black bar with the gold line
      centered on top), keeping it visible against any background. */
@@ -145,6 +139,11 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
       -1px 0 0 rgba(0, 0, 0, 0.85),
       1px 0 0 rgba(0, 0, 0, 0.85);
   }
+  /* Optional inline transform (see the tagDx/tagDy handling in the
+     template above) nudges just this box, for a colliding label on a
+     genuine close pair -- the ring and leader above are unaffected, so
+     the leader keeps pointing at the ring even when the tag itself has
+     moved elsewhere. */
   .sms-tag {
     display: flex;
     flex-direction: column;

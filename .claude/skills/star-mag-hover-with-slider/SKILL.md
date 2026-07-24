@@ -108,6 +108,8 @@ interface StarMarker {
   specType: string;
   x: number;  // native pixel position, from the WCS math
   y: number;
+  tagDx?: number;  // optional label-only nudge, px -- see "Fixing overlapping tags" below
+  tagDy?: number;
 }
 interface Props {
   image: ImageMetadata;
@@ -115,6 +117,7 @@ interface Props {
   imageWidth: number;
   imageHeight: number;
   stars: StarMarker[];
+  maxMag?: number;  // default 10
 }
 ```
 
@@ -141,6 +144,17 @@ interface Props {
      coloured div, ~7px tall, between them) rather than butting the tag
      directly against the ring — gives separation so the tag's
      background box doesn't creep over the star at high marker density.
+  4. **Outline both the ring and the leader in black.** A bare gold
+     (`#ffd54a`) ring/stem all but disappears against a blown-out,
+     saturated white star core — Jay flagged this directly on the M20
+     pilot. Fix: the ring gets both an inset and an outset black
+     `box-shadow` (`inset 0 0 0 1px black, 0 0 0 1px black`) sandwiching
+     the gold `border`, and the leader gets a black `box-shadow` flanking
+     each side (`-1px 0 0 black, 1px 0 0 black`) so it reads as a 1px
+     gold line inside a black bar. Gold stays the primary color for
+     normal (unsaturated) backgrounds; black is what keeps it legible on
+     a saturated one. Applies to every marker by default — not
+     opt-in, no per-star flag needed.
 - Visibility is a plain `data-visible` attribute the script adds/removes
   per marker on every `input` event — simplest thing that works at this
   scale (~40 markers); don't reach for a class-toggle framework or CSS
@@ -198,15 +212,29 @@ Found on the M20 Trifid pilot: `HD 164492` and `EM* LkHA 123` are a
 genuine ~5px-separated close pair (both real stars, not a `coo_qual`
 dedup case), and their tags rendered directly on top of each other,
 fully hiding one. `StarMarker` takes optional `tagDx`/`tagDy` (px, at
-the frame's natural render width) that nudge just the tag+leader
-group sideways — **the ring stays exactly on the star's real pixel
-position regardless of this offset**, only the label moves. Apply it to
-one marker in a colliding pair (leave the other at 0,0), pick a value
-large enough to clear the other tag's width (~60-80px horizontal is
-usually enough for these tags' width), and re-check with a screenshot
-at the slider value where both first appear together. Comment the data
-entry explaining it's a real pair, not a dedup miss, so a future editor
-doesn't "clean it up" by merging them.
+the frame's natural render width) that nudges **only the `.sms-tag` box**
+— **the ring, and the leader connecting it to the tag, both stay exactly
+on the star's real pixel position regardless of this offset; only the
+label moves.**
+
+Get this right the first time — the obvious-looking alternative is
+wrong: an earlier version applied the offset to a wrapper spanning both
+the leader *and* the tag, which visually detached the leader from its
+own ring (the stem floated off toward the relocated tag instead of
+connecting to anything) — Jay caught this immediately ("the LkHA 123
+stem looks broken"). The leader must render as a plain, unshifted
+sibling of the ring; only `.sms-tag` itself gets the `transform:
+translate(...)` from `tagDx`/`tagDy`.
+
+Apply the offset to one marker in a colliding pair (leave the other at
+0,0), pick a value large enough to clear the other tag's width (~60-80px
+horizontal is usually enough for these tags' width), and re-check with a
+screenshot at the slider value where both first appear together —
+specifically confirm (via `getBoundingClientRect()`) that the leader's
+bottom edge still meets the ring's bottom edge, not just that the tags
+no longer overlap. Comment the data entry explaining it's a real pair,
+not a dedup miss, so a future editor doesn't "clean it up" by merging
+them.
 
 This is a real fix, not a workaround to avoid — don't leave overlapping
 tags unfixed by default just because the base skill once called this an
