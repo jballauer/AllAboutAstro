@@ -102,7 +102,7 @@ const hires = hiresMap[entry.id];
         stars={m45HeroStars}
       />
     ) : (
-      entry.data.image && (
+      entry.id !== 'comet-neowise-timelapse' && entry.data.image && (
         <>
           {hires ? (
             <span data-hires={hires}>
