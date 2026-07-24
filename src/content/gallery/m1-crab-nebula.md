@@ -2,7 +2,7 @@
 title: "M1 - The Crab Nebula"
 description: M1, the Crab Nebula, a supernova remnant in Taurus.
 pubDate: 2017-10-27
-image: ./_images/m1-crab-nebula.png
+image: ./_images/m1-crab-nebula.jpg
 draft: false
 ---
 
