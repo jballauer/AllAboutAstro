@@ -325,6 +325,16 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     background: #000;
     margin: 1rem 0;
   }
+  /* Opt-in crop for source video files that have letterbox/pillarbox bars
+     baked into every encoded frame -- object-fit: cover on the <video>
+     itself scales to the real content ratio and crops the bars off,
+     without needing to re-encode the file. Pair with an inline
+     `style="aspect-ratio: …"` set to the video's true content ratio
+     (not the container's), since CSS attr() can't read a numeric ratio
+     from a data attribute reliably across browsers yet. */
+  .ke-video[data-crop-letterbox] {
+    object-fit: cover;
+  }
   table {
     border-collapse: collapse;
     width: 100%;

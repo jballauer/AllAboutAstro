@@ -8,7 +8,7 @@ draft: false
 
 A time-lapse capture of Comet NEOWISE (C/2020 F3) and its long, sweeping dust tail, taken shortly after the comet's closest approach to Earth in July 2020.
 
-<video class="ke-video" controls preload="metadata" poster="/images/gallery/comet-neowise-timelapse-poster.jpg" src="/videos/comet-neowise-timelapse.mp4">
+<video class="ke-video" data-crop-letterbox controls preload="metadata" style="aspect-ratio: 1280 / 678;" poster="/images/gallery/comet-neowise-timelapse-poster.jpg" src="/videos/comet-neowise-timelapse.mp4">
 Your browser does not support embedded video. <a href="/videos/comet-neowise-timelapse.mp4">Watch the time lapse directly</a>.
 </video>
 
