@@ -217,14 +217,47 @@ the frame's natural render width) that nudges **only the `.sms-tag` box**
 on the star's real pixel position regardless of this offset; only the
 label moves.**
 
-Get this right the first time — the obvious-looking alternative is
-wrong: an earlier version applied the offset to a wrapper spanning both
-the leader *and* the tag, which visually detached the leader from its
-own ring (the stem floated off toward the relocated tag instead of
-connecting to anything) — Jay caught this immediately ("the LkHA 123
-stem looks broken"). The leader must render as a plain, unshifted
-sibling of the ring; only `.sms-tag` itself gets the `transform:
-translate(...)` from `tagDx`/`tagDy`.
+Get this right the first time — there were two wrong attempts before
+landing on the working design, both caught by Jay live rather than by
+self-review:
+
+1. Applying the offset to a wrapper spanning both the leader *and* the
+   tag, which detached the leader from its own ring (the stem floated
+   off toward the relocated tag instead of connecting to anything) —
+   "the LkHA 123 stem looks broken."
+2. Fixing that by making the leader a plain, unshifted, always-vertical
+   sibling of the ring — better, but a fixed vertical stem obviously
+   can't reach a tag that's been moved sideways; it just dangles
+   straight down next to a tag that's no longer below it — "I think
+   it's because your leaders are all vertical... you need a way for
+   such labels to draw the leader from the text box to the side of the
+   ring."
+
+**The actual fix: compute the leader's length and angle at build time
+so it always points from the ring to wherever the tag ends up**, offset
+or not. The component's frontmatter has a `leaderGeometry(s)` helper:
+with `dx = tagDx ?? 0` and `dy = 7 + (tagDy ?? 0)` (7 is the base
+ring-to-tag gap with no offset), `length = Math.sqrt(dx*dx + dy*dy)` and
+`angleDeg = Math.atan2(-dx, dy) * 180 / Math.PI`. The leader renders as
+an absolutely-positioned 1px bar anchored at the ring's exact bottom
+edge (`top: 5px` in the marker's local coordinate space — the ring's
+own centering trick puts its bottom edge there), with
+`transform-origin: top center` so it pivots at the ring end, and a
+per-marker inline `height`/`rotate()` from that helper. With no offset
+this reduces to a 0°-rotated 7px vertical bar — pixel-identical to the
+original design, confirmed via `getComputedStyle().transform` showing
+an identity-ish matrix (`matrix(1,0,0,1,-0.5,0)`) on unoffset markers.
+`.sms-tag` needs an explicit `margin-top: 7px` to reproduce the gap the
+leader used to provide implicitly through flow, since the leader is now
+`position: absolute` (out of flow).
+
+Don't reach for a simpler-looking shortcut here (a fixed-angle diagonal,
+a CSS-only skew, an SVG `<line>` per marker) — the trig approach handles
+any `tagDx`/`tagDy` combination correctly including the zero case, and
+was verified to sub-pixel precision by reconstructing the leader's
+rendered tip position (via its `DOMMatrix` and `transform-origin`) and
+confirming it lands within ~0.3px of the tag's actual `getBoundingClientRect()`
+top-center.
 
 Apply the offset to one marker in a colliding pair (leave the other at
 0,0), pick a value large enough to clear the other tag's width (~60-80px

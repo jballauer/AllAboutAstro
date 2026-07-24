@@ -27,30 +27,51 @@ interface Props {
 
 const { image, alt, imageWidth, imageHeight, stars, maxMag = 10 } = Astro.props;
 const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
+
+// The leader must always point from the ring to wherever the tag actually
+// ends up -- with no offset that's straight down (the historical fixed 7px
+// stem), but once tagDx/tagDy relocates the tag sideways a vertical stem no
+// longer reaches it and reads as disconnected. Compute the ring-to-tag
+// vector at build time (dx, base-gap+dy) and rotate a bar to match, rather
+// than hardcoding a vertical line.
+const BASE_GAP = 7; // px, the ring-bottom-to-tag-top gap with no offset
+function leaderGeometry(s: StarMarker) {
+  const dx = s.tagDx ?? 0;
+  const dy = BASE_GAP + (s.tagDy ?? 0);
+  const length = Math.sqrt(dx * dx + dy * dy);
+  const angleDeg = (Math.atan2(-dx, dy) * 180) / Math.PI;
+  return { length, angleDeg };
+}
 ---
 
 <div class="star-mag-slider">
   <div class="sms-frame">
     <Image src={image} alt={alt} width={imageWidth} height={imageHeight} />
-    {stars.map((s) => (
-      <span
-        class="sms-marker"
-        data-bucket={Math.ceil(s.mag)}
-        style={`left:${((s.x / imageWidth) * 100).toFixed(2)}%; top:${((s.y / imageHeight) * 100).toFixed(2)}%`}
-      >
-        <span class="sms-dot"></span>
-        <span class="sms-leader"></span>
+    {stars.map((s) => {
+      const { length, angleDeg } = leaderGeometry(s);
+      return (
         <span
-          class="sms-tag"
-          style={(s.tagDx || s.tagDy) ? `transform: translate(${s.tagDx ?? 0}px, ${s.tagDy ?? 0}px)` : undefined}
+          class="sms-marker"
+          data-bucket={Math.ceil(s.mag)}
+          style={`left:${((s.x / imageWidth) * 100).toFixed(2)}%; top:${((s.y / imageHeight) * 100).toFixed(2)}%`}
         >
-          <strong>{s.commonName ?? s.catalogName}</strong>
-          {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
-          <span class="sms-mag">mag {s.mag.toFixed(2)}</span>
-          {s.specType && <span class="sms-sp">{s.specType}</span>}
+          <span class="sms-dot"></span>
+          <span
+            class="sms-leader"
+            style={`height:${length.toFixed(2)}px; transform: translate(-50%, 0) rotate(${angleDeg.toFixed(2)}deg);`}
+          ></span>
+          <span
+            class="sms-tag"
+            style={(s.tagDx || s.tagDy) ? `transform: translate(${s.tagDx ?? 0}px, ${s.tagDy ?? 0}px)` : undefined}
+          >
+            <strong>{s.commonName ?? s.catalogName}</strong>
+            {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
+            <span class="sms-mag">mag {s.mag.toFixed(2)}</span>
+            {s.specType && <span class="sms-sp">{s.specType}</span>}
+          </span>
         </span>
-      </span>
-    ))}
+      );
+    })}
   </div>
   <div class="sms-controls">
     <input
@@ -119,31 +140,39 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
       0 0 0 1px rgba(0, 0, 0, 0.85),
       0 0 2px rgba(0, 0, 0, 0.9);
   }
-  /* Short leader line from the ring down to the label, so the label can
-     sit clear of the star instead of overlapping it. Always renders
-     directly below the ring, unshifted -- an optional tagDx/tagDy (see
-     .sms-tag below) moves only the tag box, never this stem, so the
-     stem always visibly connects to its own ring instead of floating
-     off toward a relocated tag. Same black-outline treatment as
-     .sms-dot -- a bare 1px gold line gets lost crossing a
-     bright/saturated part of the star or nebula, so it's flanked by a
-     1px black edge on each side (a 3px black bar with the gold line
-     centered on top), keeping it visible against any background. */
+  /* Leader line from the ring to the label. Anchored (via absolute
+     positioning, not flow) at the ring's exact bottom edge -- local
+     top:5px, since the ring's own -5px/auto/0 margin trick centers it on
+     the star at local y:0, putting its bottom edge at y:+5. Height and
+     rotation are set per-marker inline (see leaderGeometry() above): with
+     no tagDx/tagDy the bar is a plain 7px vertical stem (angle 0), and
+     with an offset it's rotated + lengthened to reach the tag's actual
+     relocated position -- a fixed vertical stem can't do that, it just
+     dangles disconnected from whichever direction the tag moved.
+     transform-origin: top keeps the pivot at the ring end, not the
+     middle, so the far end is what swings to meet the tag. Same
+     black-outline treatment as .sms-dot -- a bare 1px gold line gets
+     lost crossing a bright/saturated part of the star or nebula, so
+     it's flanked by a 1px black edge on each side (box-shadow rotates
+     with the element, so this still reads correctly at any angle). */
   .sms-leader {
-    display: block;
+    position: absolute;
+    left: 50%;
+    top: 5px;
     width: 1px;
-    height: 7px;
-    margin: 0 auto;
+    transform-origin: top center;
     background: rgba(255, 213, 74, 0.85);
     box-shadow:
       -1px 0 0 rgba(0, 0, 0, 0.85),
       1px 0 0 rgba(0, 0, 0, 0.85);
   }
-  /* Optional inline transform (see the tagDx/tagDy handling in the
-     template above) nudges just this box, for a colliding label on a
-     genuine close pair -- the ring and leader above are unaffected, so
-     the leader keeps pointing at the ring even when the tag itself has
-     moved elsewhere. */
+  /* margin-top reproduces the same ring-to-tag gap the old flow-based
+     leader used to provide implicitly (it's now position:absolute, out
+     of flow, so this box no longer gets pushed down by it) -- must match
+     leaderGeometry()'s BASE_GAP constant above. Optional inline transform
+     (see the tagDx/tagDy handling in the template above) nudges just this
+     box for a colliding label on a genuine close pair; the leader is
+     recalculated to still reach it at any offset. */
   .sms-tag {
     display: flex;
     flex-direction: column;
@@ -154,6 +183,7 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
     border: 1px solid rgba(255, 213, 74, 0.55);
     border-radius: 3px;
     padding: 2px 5px;
+    margin-top: 7px;
     font-family: var(--font-body);
     font-size: 0.62rem;
     color: #fff;

@@ -68,12 +68,19 @@ tags did in fact collide once actually rendered on the live page. Fixed
 with the base skill's per-marker `tagDx`/`tagDy` label offset (see its
 "Fixing overlapping tags on a real close pair" section) rather than
 merging or dropping either marker — both are real stars, they just
-needed their labels nudged apart. First attempt applied the offset to a
-wrapper around both the leader and the tag, which detached the leader
-from its ring (it floated off toward the relocated tag) — Jay caught it
-immediately as "the LkHA 123 stem looks broken." Fixed component-side:
-`tagDx`/`tagDy` now transforms only `.sms-tag`; the leader always
-renders as a plain, unshifted sibling of the ring.
+needed their labels nudged apart.
+
+Took two tries to get the leader (stem) right: first, offsetting a
+wrapper around both leader and tag together detached the stem from its
+ring entirely. Second, making the leader a fixed, always-vertical
+sibling of the ring fixed *that* but couldn't reach a tag relocated
+sideways — Jay: "your leaders are all vertical... you need a way for
+such labels to draw the leader from the text box to the side of the
+ring." Final fix computes the leader's length/angle at build time
+(`leaderGeometry()` in the component) so it always points from the
+ring to the tag's actual position, offset or not — see the base
+skill's "Fixing overlapping tags on a real close pair" section for the
+trig and verification method.
 
 ## Density check
 
