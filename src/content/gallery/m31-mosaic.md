@@ -33,7 +33,11 @@ An eight-frame LRGB mosaic of the Great Andromeda Galaxy — combining long-foca
 <p>How many stars are there in Andromeda? You're looking at about a trillion stars, give or take a couple — about 4 or 5 times the number in our own galaxy.</p>
 <p>One of the more intriguing aspects of M31 is that the light captured here first left that galaxy around 2.5 million years ago. In other words, looking into the sky is about as close to actual time travel as we can experience.</p>
 
+<div class="ke-sig">
+
 ![Jay Ballauer's signature](./_images/m31-signature.png)
+
+</div>
 
 </div>
 </div>

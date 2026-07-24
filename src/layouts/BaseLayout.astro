@@ -507,7 +507,10 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-sidebar.ke-two-col-about p {
     font-size: 1rem;
   }
-  .ke-sidebar.ke-two-col-about img {
+  /* Signature graphic only — scoped via .ke-sig so this doesn't recolor
+     ordinary illustrative photos that also appear inside a
+     .ke-two-col-about sidebar (e.g. a reference chart). */
+  .ke-sidebar.ke-two-col-about .ke-sig img {
     width: 220px;
     max-width: 100%;
     margin: 0.5rem 0 0 auto;

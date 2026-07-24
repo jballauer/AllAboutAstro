@@ -24,6 +24,18 @@ A four-frame mosaic covering Merope, Electra, Alcyone, and Maia, combining fresh
 <p><strong>Processing Information (Color):</strong> Acquisition in CCDSoft V5. Calibration, Registration, and DDP in CCDStack. LRGB combine, cropping, color balance, levels/curves, sharpening, and noise removal (despeckle and gaussian blur) in Photoshop CS2. Color Blotch Reduction, Deep Space Noise Removal, and Local Contrast Enhancement in Photoshop via ProDigital Actions for Photoshop.</p>
 <p><strong>Processing Information (LRGB):</strong> Images aligned in PixInsight, saved as 16-bit TIFF files, and brought into Adobe Photoshop CC for further processing. "Make Stars Smaller" action (ProDigital) to help with star matching between Lum and color. AstroFlat Pro (ProDigital) used to reduce glare in luminance, revealing more dust. High-pass filtering used for sharpening and various noise reduction techniques used for cleaning up the background. Vibrance/Saturation, cropped, and rotated in Photoshop for more visual impact.</p>
 
+<p>Taken remotely from Grapevine, Texas at the Conley Observatory, Comanche Springs Astronomy Campus (3RF) near Crowell, Texas. November 2017 (luminance) &amp; November 2009 (color).</p>
+
+<div class="ke-sidebar" data-color="orange" data-width="full">
+
+<h2>Fun Fact...</h2>
+<p>My first exposure to "Pleiades" wasn't today's featured star cluster. As a child of the 80s who spent a large part of his childhood in an arcade, "Pleiades" originally had a completely different meaning for me.</p>
+<p>Anybody else remember this game? Made in 1981 by Tecmo, I've lined up a lot of quarters on this machine!</p>
+
+![The 1981 Tecmo arcade game "Pleiades," a childhood favorite of Jay's](./_images/m45-pleiades-arcade-game.jpg)
+
+</div>
+
 </div>
 <div class="ke-sidebar ke-two-col-about" data-color="teal">
 
@@ -42,18 +54,6 @@ A four-frame mosaic covering Merope, Electra, Alcyone, and Maia, combining fresh
 
 </div>
 </div>
-
-<div class="ke-sidebar" data-color="orange">
-
-<h2>Fun Fact...</h2>
-<p>My first exposure to "Pleiades" wasn't today's featured star cluster. As a child of the 80s who spent a large part of his childhood in an arcade, "Pleiades" originally had a completely different meaning for me.</p>
-<p>Anybody else remember this game? Made in 1981 by Tecmo, I've lined up a lot of quarters on this machine!</p>
-
-![The 1981 Tecmo arcade game "Pleiades," a childhood favorite of Jay's](./_images/m45-pleiades-arcade-game.jpg)
-
-</div>
-
-Taken remotely from Grapevine, Texas at the Conley Observatory, Comanche Springs Astronomy Campus (3RF) near Crowell, Texas. November 2017 (luminance) & November 2009 (color).
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
