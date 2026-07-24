@@ -24,15 +24,17 @@ const thumbPosition: Record<string, string> = {
     {images.map((entry) => (
       <a class="tile" href={`/gallery/${entry.id}/`}>
         {entry.data.image && (
-          <Image
-            src={entry.data.image}
-            alt={entry.data.title}
-            width={400}
-            height={400}
-            position={thumbPosition[entry.id]}
-          />
+          <span class="tile-image">
+            <Image
+              src={entry.data.image}
+              alt=""
+              width={400}
+              height={300}
+              position={thumbPosition[entry.id]}
+            />
+            <span class="tile-caption">{entry.data.title}</span>
+          </span>
         )}
-        <span>{entry.data.title}</span>
       </a>
     ))}
   </div>
@@ -49,8 +51,36 @@ const thumbPosition: Record<string, string> = {
     color: inherit;
     text-decoration: none;
   }
-  .tile span {
+  /* 4:3 crop (close to the site's typical astrophoto proportions --
+     3:2 to 4:3 in practice) instead of a full square, so less of each
+     photo needs to be cropped away than a 1:1 thumbnail would require. */
+  .tile-image {
+    position: relative;
     display: block;
-    margin-top: 0.5rem;
+  }
+  .tile-image :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* Caption overlaid directly on the image, bottom-anchored, capped at
+     1/4 of the image's own height so it stays a minor accent rather than
+     covering a third of the photo. */
+  .tile-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.6rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.2;
   }
 </style>
