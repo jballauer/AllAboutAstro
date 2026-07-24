@@ -543,19 +543,20 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   }
   .ke-star-hover-dot {
     position: absolute;
-    width: 14px;
-    height: 14px;
-    margin: -7px 0 0 -7px;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
     padding: 0;
-    border: 2px solid rgba(255, 213, 74, 0.85);
+    border: 2px solid transparent;
     border-radius: 50%;
-    background: rgba(255, 213, 74, 0.15);
+    background: transparent;
     cursor: help;
     -webkit-tap-highlight-color: transparent;
   }
   .ke-star-hover-dot:hover,
   .ke-star-hover-dot:focus-visible {
-    background: rgba(255, 213, 74, 0.4);
+    border-color: rgba(255, 213, 74, 0.85);
+    background: rgba(255, 213, 74, 0.25);
   }
   .ke-star-hover-tip {
     position: absolute;

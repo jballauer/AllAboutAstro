@@ -1,12 +1,16 @@
 ---
 name: star-magnitude-hover
-description: Add hoverable/tappable star markers (name + real catalog magnitude) to an astrophoto on the site — plate-solve the image via astrometry.net, cross-match star identities/magnitudes against SIMBAD, then render CSS-only tooltip markers. Use whenever the user wants "mouseover shows the magnitude" on a deep-sky image, wants to label named stars in a photo accurately, or mentions this being wrong/approximate on a previous attempt. First built 2026-07-24 on the Pleiades (M45) Mosaic gallery page — read this before re-deriving the process or guessing star positions from memory/geometry by hand.
+description: Add hoverable/tappable star markers (name + real catalog magnitude) to an astrophoto on the site — plate-solve the image via astrometry.net, cross-match star identities/magnitudes against SIMBAD, then render CSS-only tooltip markers that stay fully invisible until interacted with. Use whenever the user wants "mouseover shows the magnitude" on a deep-sky image, wants to label named stars in a photo accurately, or mentions this being wrong/approximate on a previous attempt. First built 2026-07-24 on the Pleiades (M45) Mosaic gallery page, then refined same-day to make markers transparent by default at Jay's request ("I wouldn't want it defaced") since the intended use is the article's main presentation image, not just a small sidebar chart — read this before re-deriving the process, guessing star positions from memory/geometry by hand, or defaulting markers back to visible.
 ---
 
 # Star-magnitude hover markers
 
 Site mechanism for showing a star's name and real catalog magnitude on
-hover/tap, without permanently baking text onto the photo. Two phases:
+hover/tap, without permanently baking text onto the photo **and without
+visibly marking up the photo at all until the user interacts with it**.
+This is meant to work on an article's main/hero image, not just a small
+supporting figure — the photo must look completely normal, unmarked, at
+rest. Two phases:
 
 1. **Authoring-time (offline, once per image)** — plate-solve the photo to
    get an exact pixel↔sky mapping, look up real magnitudes, compute each
@@ -130,6 +134,22 @@ No new JS. Reuse the `.ke-star-hover*` classes already defined in
 - Each marker is a real `<button>` (not a bare `<span>`), so it's
   natively focusable/tappable — `:focus-visible` shows the same tooltip
   as `:hover`, covering keyboard and touch users without any JS.
+- **Markers are fully transparent at rest** — `.ke-star-hover-dot`'s
+  default `border`/`background` are `transparent`; only `:hover`/
+  `:focus-visible` reveal the faint ring (`rgba(255, 213, 74, 0.85)`
+  border) alongside the tooltip. The image must look completely
+  unmarked-up until someone actually finds a marker — that's the whole
+  point of using this on a hero/presentation image instead of a
+  permanently-labeled chart graphic. Don't reintroduce a visible resting
+  state (a permanent ring, a subtle glow, anything) without checking with
+  Jay first; this was an explicit, deliberate change from the first
+  version.
+- The invisible hit target is intentionally larger (20px) than a visible
+  one would need to be (was 14px in the first, visible-by-default
+  version) — with no visual cue at rest, a slightly bigger target makes
+  markers findable without needing to hunt pixel-by-pixel. If markers
+  still feel hard to find in practice, grow this further rather than
+  making them visible.
 
 ## How to verify
 
