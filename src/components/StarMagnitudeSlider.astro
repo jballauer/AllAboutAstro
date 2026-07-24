@@ -8,6 +8,12 @@ interface StarMarker {
   specType: string;
   x: number;
   y: number;
+  // Optional label-only nudge (px, at the frame's natural render width) for
+  // co-located stars whose tags would otherwise overlap. Shifts the tag box
+  // and its leader together; the ring itself always stays exactly on the
+  // star's real pixel position regardless of this offset.
+  tagDx?: number;
+  tagDy?: number;
 }
 
 interface Props {
@@ -33,12 +39,17 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
         style={`left:${((s.x / imageWidth) * 100).toFixed(2)}%; top:${((s.y / imageHeight) * 100).toFixed(2)}%`}
       >
         <span class="sms-dot"></span>
-        <span class="sms-leader"></span>
-        <span class="sms-tag">
-          <strong>{s.commonName ?? s.catalogName}</strong>
-          {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
-          <span class="sms-mag">mag {s.mag.toFixed(2)}</span>
-          {s.specType && <span class="sms-sp">{s.specType}</span>}
+        <span
+          class="sms-label"
+          style={(s.tagDx || s.tagDy) ? `transform: translate(${s.tagDx ?? 0}px, ${s.tagDy ?? 0}px)` : undefined}
+        >
+          <span class="sms-leader"></span>
+          <span class="sms-tag">
+            <strong>{s.commonName ?? s.catalogName}</strong>
+            {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
+            <span class="sms-mag">mag {s.mag.toFixed(2)}</span>
+            {s.specType && <span class="sms-sp">{s.specType}</span>}
+          </span>
         </span>
       </span>
     ))}
@@ -101,6 +112,14 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
     border-radius: 50%;
     border: 1.5px solid #ffd54a;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+  }
+  /* Groups the leader + tag so both can be nudged together via an
+     optional per-star tagDx/tagDy, without moving the ring (a sibling,
+     outside this wrapper) off the star's real position. Plain block
+     display keeps default (no-offset) layout identical to before this
+     wrapper existed. */
+  .sms-label {
+    display: block;
   }
   /* Short leader line from the ring down to the label, so the label can
      sit clear of the star instead of overlapping it. */

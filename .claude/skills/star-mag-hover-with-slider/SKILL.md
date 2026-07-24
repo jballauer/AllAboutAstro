@@ -189,8 +189,30 @@ screenshot to eyeball label legibility/overlap at that density. Test at
 least: 0 (must show zero markers, plain image), a middle value, and 10
 (worst-case density — check for overlapping tags on close pairs/binaries,
 e.g. two catalog entries sharing almost the same pixel position, which
-*will* happen and is a known, accepted limitation, not a bug to fix
-reflexively).
+*will* happen; see "Fixing overlapping tags" below rather than treating
+it as unfixable).
+
+## Fixing overlapping tags on a real close pair
+
+Found on the M20 Trifid pilot: `HD 164492` and `EM* LkHA 123` are a
+genuine ~5px-separated close pair (both real stars, not a `coo_qual`
+dedup case), and their tags rendered directly on top of each other,
+fully hiding one. `StarMarker` takes optional `tagDx`/`tagDy` (px, at
+the frame's natural render width) that nudge just the tag+leader
+group sideways — **the ring stays exactly on the star's real pixel
+position regardless of this offset**, only the label moves. Apply it to
+one marker in a colliding pair (leave the other at 0,0), pick a value
+large enough to clear the other tag's width (~60-80px horizontal is
+usually enough for these tags' width), and re-check with a screenshot
+at the slider value where both first appear together. Comment the data
+entry explaining it's a real pair, not a dedup miss, so a future editor
+doesn't "clean it up" by merging them.
+
+This is a real fix, not a workaround to avoid — don't leave overlapping
+tags unfixed by default just because the base skill once called this an
+"accepted limitation." Reach for `tagDx`/`tagDy` whenever a genuine
+collision surfaces (Jay noticing one, or your own density check at
+step above).
 
 **Also verify markers land on real stars before calling it done — don't
 rely on the WCS math being right just because it compiled.** The `coo_qual`
@@ -216,14 +238,16 @@ orientation flip would pass the `coo_qual` filter and still be wrong):
 4. Do this *before* reporting the slider done, not just when the user
    flags a marker as looking wrong.
 
-## Known limitations (surfaced during the pilot, not yet solved)
+## Known limitations (surfaced during the pilot)
 
 - **Co-located binaries produce overlapping tags** at high slider values
   (two SIMBAD entries a few arcseconds apart land on nearly the same
-  pixel). Didn't need fixing on the pilot image (37 stars stayed legible
-  enough), but a denser field could need per-marker manual offset
-  nudging, or collision-avoidance layout — not built yet.
-  don't build this speculatively — wait until a real image needs it.
+  pixel) — **now fixable** via the per-marker `tagDx`/`tagDy` offset, see
+  "Fixing overlapping tags on a real close pair" above (built on the M20
+  Trifid pilot after Jay flagged `HD 164492`/`LkHA 123` overlapping).
+  Didn't need it on the original M45 pilot image (37 stars stayed legible
+  without it) — apply the offset only to markers that actually collide,
+  don't pre-emptively nudge every close pair.
 - Only tested down to mag 10 on a modest ~0.6°-radius field (37 stars in
   frame). A wider or richer field could return hundreds of catalog
   entries at mag 10 — if a future target image's cone search returns an

@@ -56,12 +56,17 @@ On the M20 field this collapsed 55 in-frame rows to 52 markers:
   tiebreak order, only falling back to magnitude when quality ties).
 
 This is a *different* problem from the base skill's "co-located
-binaries produce overlapping tags" known limitation — that's about
+binaries produce overlapping tags" limitation — that's about
 genuinely separate stars a few arcsec apart that still overlap visually
 at this image scale; this is the *same star* appearing as 2-3 rows.
 Both can coexist: after this dedup pass, real close pairs (e.g. `EM*
 LkHA 123` and `HD 164492`, ~5px apart, both real Trifid-region O/B
-stars) still remain as separate markers, which is correct.
+stars) still remain as separate markers, which is correct — and their
+tags did in fact collide once actually rendered on the live page. Fixed
+with the base skill's per-marker `tagDx`/`tagDy` label offset (see its
+"Fixing overlapping tags on a real close pair" section) rather than
+merging or dropping either marker — both are real stars, they just
+needed their labels nudged apart.
 
 ## Density check
 

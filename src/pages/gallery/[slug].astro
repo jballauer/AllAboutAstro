@@ -66,7 +66,11 @@ const m20HeroStars = [
   { commonName: null, catalogName: 'HD 164402', mag: 5.77, specType: 'B0Ib', x: 702.5, y: 144.3 },
   { commonName: null, catalogName: 'HD 164637', mag: 6.718, specType: 'B0Ib/II', x: 302.2, y: 37.1 },
   { commonName: null, catalogName: 'HD 164492', mag: 6.8, specType: 'O7.5Vz', x: 517.2, y: 529.7 },
-  { commonName: null, catalogName: 'LkHA 123', mag: 6.8, specType: 'B1V', x: 519.6, y: 533.6 },
+  // ~5px from HD 164492 above -- a real close pair, not a dedup case (see
+  // the mag12-workflow reference). Their tags collided directly on top of
+  // each other; tagDx/tagDy nudges this one's label clear while the ring
+  // stays exactly on the star.
+  { commonName: null, catalogName: 'LkHA 123', mag: 6.8, specType: 'B1V', x: 519.6, y: 533.6, tagDx: 70, tagDy: 6 },
   { commonName: null, catalogName: 'HD 164514', mag: 7.42, specType: 'A7Iab/b', x: 473.9, y: 333.2 },
   { commonName: null, catalogName: 'HD 164384', mag: 8.26, specType: 'B1Vnn', x: 739, y: 765.8 },
   { commonName: null, catalogName: 'HD 164739', mag: 8.48, specType: 'B8/9III', x: 68.4, y: 685.1 },
