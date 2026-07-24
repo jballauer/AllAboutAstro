@@ -30,17 +30,26 @@ const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
 
 // The leader must always point from the ring to wherever the tag actually
 // ends up -- with no offset that's straight down (the historical fixed 7px
-// stem), but once tagDx/tagDy relocates the tag sideways a vertical stem no
-// longer reaches it and reads as disconnected. Compute the ring-to-tag
-// vector at build time (dx, base-gap+dy) and rotate a bar to match, rather
-// than hardcoding a vertical line.
+// stem from the ring's bottom), but once tagDx/tagDy relocates the tag
+// sideways, starting from the bottom still reads oddly (the stem crosses
+// under/through the ring instead of leaving from the side facing the tag).
+// So the anchor point itself moves too: a purely-vertical offset (or none)
+// still leaves from the ring's bottom, but any horizontal offset leaves
+// from the ring's left/right edge (whichever side the tag moved toward).
+const RING_RADIUS = 5; // px, half of .sms-dot's 10px diameter
 const BASE_GAP = 7; // px, the ring-bottom-to-tag-top gap with no offset
+const TAG_DEFAULT_Y = RING_RADIUS + BASE_GAP; // tag's default top-center y, from ring center
 function leaderGeometry(s: StarMarker) {
   const dx = s.tagDx ?? 0;
-  const dy = BASE_GAP + (s.tagDy ?? 0);
-  const length = Math.sqrt(dx * dx + dy * dy);
-  const angleDeg = (Math.atan2(-dx, dy) * 180) / Math.PI;
-  return { length, angleDeg };
+  const targetX = dx;
+  const targetY = TAG_DEFAULT_Y + (s.tagDy ?? 0);
+  const anchorX = dx !== 0 ? Math.sign(dx) * RING_RADIUS : 0;
+  const anchorY = dx !== 0 ? 0 : RING_RADIUS;
+  const vx = targetX - anchorX;
+  const vy = targetY - anchorY;
+  const length = Math.sqrt(vx * vx + vy * vy);
+  const angleDeg = (Math.atan2(-vx, vy) * 180) / Math.PI;
+  return { length, angleDeg, anchorX, anchorY };
 }
 ---
 
@@ -48,7 +57,7 @@ function leaderGeometry(s: StarMarker) {
   <div class="sms-frame">
     <Image src={image} alt={alt} width={imageWidth} height={imageHeight} />
     {stars.map((s) => {
-      const { length, angleDeg } = leaderGeometry(s);
+      const { length, angleDeg, anchorX, anchorY } = leaderGeometry(s);
       return (
         <span
           class="sms-marker"
@@ -58,7 +67,7 @@ function leaderGeometry(s: StarMarker) {
           <span class="sms-dot"></span>
           <span
             class="sms-leader"
-            style={`height:${length.toFixed(2)}px; transform: translate(-50%, 0) rotate(${angleDeg.toFixed(2)}deg);`}
+            style={`left:calc(50% + ${anchorX}px); top:${anchorY}px; height:${length.toFixed(2)}px; transform: translate(-50%, 0) rotate(${angleDeg.toFixed(2)}deg);`}
           ></span>
           <span
             class="sms-tag"
@@ -141,15 +150,19 @@ function leaderGeometry(s: StarMarker) {
       0 0 2px rgba(0, 0, 0, 0.9);
   }
   /* Leader line from the ring to the label. Anchored (via absolute
-     positioning, not flow) at the ring's exact bottom edge -- local
-     top:5px, since the ring's own -5px/auto/0 margin trick centers it on
-     the star at local y:0, putting its bottom edge at y:+5. Height and
-     rotation are set per-marker inline (see leaderGeometry() above): with
+     positioning, not flow) at a point on the ring itself -- its exact
+     bottom edge when the tag has no horizontal offset (local x:0,
+     y:+5, since the ring's own -5px/auto/0 margin trick centers it on
+     the star at local y:0, putting its bottom edge at y:+5), or the
+     ring's left/right edge (local x:-5/+5, y:0) when tagDx has moved
+     the tag sideways -- leaving from the bottom in that case reads as
+     the stem crossing under/through the ring instead of departing
+     toward the tag. left/top are set per-marker inline from
+     leaderGeometry()'s anchorX/anchorY; height/rotation are too: with
      no tagDx/tagDy the bar is a plain 7px vertical stem (angle 0), and
      with an offset it's rotated + lengthened to reach the tag's actual
-     relocated position -- a fixed vertical stem can't do that, it just
-     dangles disconnected from whichever direction the tag moved.
-     transform-origin: top keeps the pivot at the ring end, not the
+     relocated position from whichever side it left from.
+     transform-origin: top keeps the pivot at the anchor point, not the
      middle, so the far end is what swings to meet the tag. Same
      black-outline treatment as .sms-dot -- a bare 1px gold line gets
      lost crossing a bright/saturated part of the star or nebula, so
@@ -157,8 +170,6 @@ function leaderGeometry(s: StarMarker) {
      with the element, so this still reads correctly at any angle). */
   .sms-leader {
     position: absolute;
-    left: 50%;
-    top: 5px;
     width: 1px;
     transform-origin: top center;
     background: rgba(255, 213, 74, 0.85);

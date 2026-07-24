@@ -232,32 +232,51 @@ self-review:
    it's because your leaders are all vertical... you need a way for
    such labels to draw the leader from the text box to the side of the
    ring."
+3. Fixing *that* by rotating the leader but always starting it from the
+   ring's bottom edge — closer, but for a mostly-horizontal offset the
+   stem then visibly crosses under/through the ring on its way out
+   instead of leaving cleanly from the side facing the tag — "make
+   those leaders connect to the side of the ring, not directly on the
+   bottom of it."
 
-**The actual fix: compute the leader's length and angle at build time
-so it always points from the ring to wherever the tag ends up**, offset
-or not. The component's frontmatter has a `leaderGeometry(s)` helper:
-with `dx = tagDx ?? 0` and `dy = 7 + (tagDy ?? 0)` (7 is the base
-ring-to-tag gap with no offset), `length = Math.sqrt(dx*dx + dy*dy)` and
-`angleDeg = Math.atan2(-dx, dy) * 180 / Math.PI`. The leader renders as
-an absolutely-positioned 1px bar anchored at the ring's exact bottom
-edge (`top: 5px` in the marker's local coordinate space — the ring's
-own centering trick puts its bottom edge there), with
-`transform-origin: top center` so it pivots at the ring end, and a
-per-marker inline `height`/`rotate()` from that helper. With no offset
-this reduces to a 0°-rotated 7px vertical bar — pixel-identical to the
-original design, confirmed via `getComputedStyle().transform` showing
-an identity-ish matrix (`matrix(1,0,0,1,-0.5,0)`) on unoffset markers.
-`.sms-tag` needs an explicit `margin-top: 7px` to reproduce the gap the
-leader used to provide implicitly through flow, since the leader is now
+**The actual fix: both the leader's anchor point on the ring *and* its
+length/angle are computed at build time**, so it leaves from whichever
+point on the ring actually faces the tag and reaches exactly to it. The
+component's frontmatter has a `leaderGeometry(s)` helper, working in a
+coordinate space centered on the ring:
+- `RING_RADIUS = 5` (half the ring's 10px diameter), `BASE_GAP = 7` (the
+  default ring-to-tag gap), `TAG_DEFAULT_Y = RING_RADIUS + BASE_GAP = 12`
+  (the tag's default top-center y, measured from ring center).
+- Target point (the tag's actual top-center): `(tagDx ?? 0, TAG_DEFAULT_Y + (tagDy ?? 0))`.
+- Anchor point (where the leader leaves the ring): the ring's **bottom**
+  `(0, RING_RADIUS)` when there's no horizontal offset, or the ring's
+  **left/right edge** `(±RING_RADIUS, 0)` — whichever side the tag moved
+  toward — whenever `tagDx !== 0`.
+- The leader vector is `target - anchor`; `length = Math.sqrt(vx*vx + vy*vy)`,
+  `angleDeg = Math.atan2(-vx, vy) * 180 / Math.PI`.
+- The leader renders as an absolutely-positioned 1px bar, `left`/`top` set
+  per-marker inline to the anchor point (`left: calc(50% + anchorXpx)`,
+  `top: anchorYpx`), with `transform-origin: top center` so it pivots at
+  that anchor, and a per-marker inline `height`/`rotate()` from the vector
+  above.
+
+With no offset this reduces to anchor `(0,5)`, target `(0,12)`, a
+0°-rotated 7px vertical bar — pixel-identical to the original design,
+confirmed via `getComputedStyle().transform` showing an identity-ish
+matrix (`matrix(1,0,0,1,-0.5,0)`) on unoffset markers. `.sms-tag` needs
+an explicit `margin-top: 7px` to reproduce the gap the leader used to
+provide implicitly through flow, since the leader is now
 `position: absolute` (out of flow).
 
-Don't reach for a simpler-looking shortcut here (a fixed-angle diagonal,
-a CSS-only skew, an SVG `<line>` per marker) — the trig approach handles
-any `tagDx`/`tagDy` combination correctly including the zero case, and
-was verified to sub-pixel precision by reconstructing the leader's
-rendered tip position (via its `DOMMatrix` and `transform-origin`) and
-confirming it lands within ~0.3px of the tag's actual `getBoundingClientRect()`
-top-center.
+Don't reach for a simpler-looking shortcut here (a single fixed anchor
+point, a CSS-only skew, an SVG `<line>` per marker) — the two-part
+(anchor + vector) approach is what actually handles "leaves from the
+correct side of the ring" for any `tagDx`/`tagDy` combination including
+the zero case. Verified to sub-pixel precision both ways: the leader's
+computed start point matches the ring's actual edge
+(`getBoundingClientRect()` on `.sms-dot`), and its reconstructed tip
+(via its `DOMMatrix` and `transform-origin`) lands within ~0.2px of the
+tag's actual `getBoundingClientRect()` top-center.
 
 Apply the offset to one marker in a colliding pair (leave the other at
 0,0), pick a value large enough to clear the other tag's width (~60-80px

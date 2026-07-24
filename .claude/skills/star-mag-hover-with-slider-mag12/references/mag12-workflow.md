@@ -70,17 +70,21 @@ with the base skill's per-marker `tagDx`/`tagDy` label offset (see its
 merging or dropping either marker — both are real stars, they just
 needed their labels nudged apart.
 
-Took two tries to get the leader (stem) right: first, offsetting a
-wrapper around both leader and tag together detached the stem from its
-ring entirely. Second, making the leader a fixed, always-vertical
-sibling of the ring fixed *that* but couldn't reach a tag relocated
-sideways — Jay: "your leaders are all vertical... you need a way for
-such labels to draw the leader from the text box to the side of the
-ring." Final fix computes the leader's length/angle at build time
-(`leaderGeometry()` in the component) so it always points from the
-ring to the tag's actual position, offset or not — see the base
+Took three tries to get the leader (stem) right: offsetting a wrapper
+around both leader and tag together detached the stem from its ring
+entirely; making the leader a fixed, always-vertical sibling of the
+ring fixed that but couldn't reach a tag relocated sideways ("your
+leaders are all vertical..."); rotating the leader but always starting
+it from the ring's bottom then had it crossing under/through the ring
+on the way out instead of leaving from the side facing the tag ("make
+those leaders connect to the side of the ring, not directly on the
+bottom of it"). Final fix computes *both* the leader's anchor point on
+the ring (bottom for a vertical-only offset, left/right edge for any
+horizontal offset) and its length/angle at build time
+(`leaderGeometry()` in the component) so it leaves from the correct
+side and reaches exactly to the tag's actual position — see the base
 skill's "Fixing overlapping tags on a real close pair" section for the
-trig and verification method.
+full geometry and verification method.
 
 ## Density check
 
