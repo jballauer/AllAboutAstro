@@ -3,8 +3,6 @@ title: M20 - The Trifid Nebula
 description: Emission and reflection nebulas in Sagittarius, part of the widely photographed Lagoon Nebula region.
 pubDate: 2019-08-01
 image: ./_images/m20-trifid-nebula.jpg
-equipment: "12.5\" RCOS Ritchey-Chretien (Lum/Ha) and Takahashi FSQ-85ED (RGB) on a Software Bisque Paramount ME / Takahashi NJP Temma 2"
-exposure: "4 hours 10 minutes total"
 draft: false
 ---
 

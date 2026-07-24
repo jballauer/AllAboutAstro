@@ -3,18 +3,30 @@ title: Full Lunar Eclipse - April 15, 2014
 description: Various presentations of all phases of the April 2014 total lunar eclipse.
 pubDate: 2014-04-15
 image: ./_images/full-lunar-eclipse-2014.jpg
-equipment: "6\" Takahashi TOA-150 apochromatic refractor on a Software Bisque Paramount ME, Canon T2i DSLR and SBIG STL-11000M"
-exposure: "Various shutter speeds from 1/2000 to 3.2 seconds, ISO 200-800"
 draft: false
 ---
 
-Location: Grapevine, Texas. Temperature: 40 degrees F.
+Various presentations of all phases of the April 2014 total lunar eclipse.
 
-This is a presentation of the data taken during the eclipse showing the major stages of the cycle and the timeline of its happenings.
+<div class="ke-two-col">
+<div class="ke-two-col-specs" data-width="wide">
 
-All images taken during this eclipse are with a Canon T2i DSLR and Tak TOA-150 refractor, except for the full moon shot taken just prior to the start of the eclipse with an SBIG STL-11000m astro camera.
+<p><strong>Location:</strong> Grapevine, Texas</p>
+<p><strong>Temperature:</strong> 40 degrees F</p>
+<p><strong>Equipment:</strong> 6" Takahashi TOA-150 apochromatic refractor on a Software Bisque Paramount ME</p>
+<p><strong>Camera:</strong> Canon T2i DSLR and SBIG STL-11000M (full moon shot just prior to eclipse start)</p>
+<p><strong>Exposure Info:</strong> Various shutter speeds from 1/2000 to 3.2 seconds, ISO 200-800</p>
+<p><strong>Processing:</strong> Debayer, Multiscale Median Transform, Histogram Transform, Local Histogram Enhancement, ACDNR, and 16-bit TIFF conversion in PixInsight. Saturation, Level/Curves, noise removal (Noel Carboni actions), rotation, and compositing in Photoshop CS6.</p>
 
-Processing: Debayer, Multiscale Median Transform, Histogram Transform, Local Histogram Enhancement, ACDNR, and 16-bit TIFF conversion in PixInsight. Saturation, Level/Curves, noise removal (Noel Carboni actions), rotation, and compositing in Photoshop CS6.
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>This is a presentation of the data taken during the eclipse showing the major stages of the cycle and the timeline of its happenings.</p>
+<p>All images taken during this eclipse are with a Canon T2i DSLR and Tak TOA-150 refractor, except for the full moon shot taken just prior to the start of the eclipse with an SBIG STL-11000m astro camera.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

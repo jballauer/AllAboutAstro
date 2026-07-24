@@ -3,18 +3,30 @@ title: M8 - The Lagoon Nebula (DSLR)
 description: An emission nebula with cluster in Sagittarius, shot with a Skywatcher 120 EDT at the Texas Star Party.
 pubDate: 2014-05-31
 image: ./_images/m8-lagoon-nebula-dslr.jpg
-equipment: "5\" Skywatcher 120 EDT on a Software Bisque Paramount ME, Canon 60Da DSLR"
-exposure: "8 x 5 minutes (40 minutes total)"
 draft: false
 ---
 
-Location: Texas Star Party 2014, Prude Ranch, Davis Mountains, Texas. Temperature: 62 degrees F.
+An emission nebula with cluster in Sagittarius, shot with a Skywatcher 120 EDT at the Texas Star Party.
 
-Processing Information: Acquisition in BackyardEOS. Calibration, Registration, and non-linear noise reduction and stretching in PixInsight. Color balance, levels/curves, sharpening, star repair, and cropping in Photoshop CS6. Color Blotch Reduction, Deep Space Noise Removal, and Local Contrast Enhancement in Photoshop via Noel Carboni's Astronomy Tools Actions for Photoshop.
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
 
-I am privileged that Skywatcher USA is wanting me to do some imaging through their refractors. This 5" refractor is a nice sized scope, and just like its 6" big brother, which I have imaged with here, is a great performer at any price. Do not try to judge optical performance by the quality of the image, however. I'm not a fan of DSLRs for such things, and the 14-bit performance of the Canon 60Da makes it very difficult to image the stars well. Therefore, a lot of post-processing goes into star repair, at least in order to make for a good image. Even so, for 40 minutes of total exposure, it's a nice result.
+<p><strong>Location:</strong> Texas Star Party 2014, Prude Ranch, Davis Mountains, Texas</p>
+<p><strong>Temperature:</strong> 62 degrees F</p>
+<p><strong>Equipment:</strong> 5" Skywatcher 120 EDT on a Software Bisque Paramount ME</p>
+<p><strong>Camera:</strong> Canon 60Da DSLR</p>
+<p><strong>Exposure Info:</strong> 8 x 5 minutes (40 minutes total)</p>
+<p><strong>Processing Information:</strong> Acquisition in BackyardEOS. Calibration, Registration, and non-linear noise reduction and stretching in PixInsight. Color balance, levels/curves, sharpening, star repair, and cropping in Photoshop CS6. Color Blotch Reduction, Deep Space Noise Removal, and Local Contrast Enhancement in Photoshop via Noel Carboni's Astronomy Tools Actions for Photoshop.</p>
 
-As for the object itself, many exposures of the Lagoon, or any emission source for that matter, do a poor job of showing the reflections of the hot, young, blue stars in the cluster. This image consciously tries to preserve that; so, if there is more blue than you have seen - or a wider color palette - then now you know the reason.
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal" data-width="wide">
+
+<h2>About this Image</h2>
+<p>I am privileged that Skywatcher USA is wanting me to do some imaging through their refractors. This 5" refractor is a nice sized scope, and just like its 6" big brother, which I have imaged with here, is a great performer at any price. Do not try to judge optical performance by the quality of the image, however. I'm not a fan of DSLRs for such things, and the 14-bit performance of the Canon 60Da makes it very difficult to image the stars well. Therefore, a lot of post-processing goes into star repair, at least in order to make for a good image. Even so, for 40 minutes of total exposure, it's a nice result.</p>
+<p>As for the object itself, many exposures of the Lagoon, or any emission source for that matter, do a poor job of showing the reflections of the hot, young, blue stars in the cluster. This image consciously tries to preserve that; so, if there is more blue than you have seen - or a wider color palette - then now you know the reason.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

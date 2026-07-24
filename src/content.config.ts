@@ -56,6 +56,10 @@ const gallery = defineCollection({
     equipment: z.string().optional(),
     exposure: z.string().optional(),
     draft: z.boolean().default(false),
+    // Earlier/lesser imaging attempts that Jay wants a real page for (so they
+    // can be linked from the object's main gallery entry) but not thumbnailed
+    // in the main /gallery/ grid alongside his preferred images of an object.
+    showInGallery: z.boolean().default(true),
   }),
 });
 

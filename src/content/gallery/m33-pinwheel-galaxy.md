@@ -3,18 +3,35 @@ title: M33 - The Pinwheel Galaxy in Triangulum (HaRGB)
 description: An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies.
 pubDate: 2017-11-22
 image: ./_images/m33-pinwheel-galaxy.jpg
-equipment: "12.5\" RCOS RC f/9 on a Software Bisque Paramount ME, FLI PL-16803 astro CCD camera"
-exposure: "8 hours 40 minutes total (LRGB plus H-alpha)"
 draft: false
 ---
 
-Taken remotely from Grapevine, Texas at the Conley Observatory, Comanche Springs Astronomy Campus (CSAC), Three Rivers Foundation, Crowell, Texas. November 21-22, 2017. Seeing: 6/10. Transparency: 9/10. Temperature: 24 to 42 degrees F (-30C on camera). Filters: AstroDon Gen 2 Tru-Balance LRGB with 3nm h-alpha spectral band. Guider: Off-axis via MMOAG and SBIG STi camera.
+An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies.
 
-Exposure Info: LRGB plus Ha image; 250 x 10 minutes L; 12 x 5 minutes Red; 12 x 5 minutes Green; 12 x 5 minutes Blue; 6 x 15 minutes H-alpha (all color data binned 2x2).
+<div class="ke-two-col">
+<div class="ke-two-col-specs" data-width="widest">
 
-Processing Information: Acquisition in TheSkyX Professional. Calibration (darks, flats, &amp; bias), Registration (StarAlignment), and Integer Rescale (to upscale RGB) in PixInsight. MultiscaleMedianTransform (wavelet noise reduction), Histogram Transformation, LocalHistogramTransformation, HDRMultiscaleTransform, and ColorCombination in PixInsight. LRGB combine, cropping, color balance, levels/curves, and sharpening (hi-pass) in Photoshop CS6. Color Blotch Reduction, Deep Space Noise Removal, and Local Contrast Enhancement in Photoshop via Noel Carboni's Astronomy Tools Actions for Photoshop.
+<p><strong>Location:</strong> Taken remotely from Grapevine, Texas at the Conley Observatory, Comanche Springs Astronomy Campus (CSAC), Three Rivers Foundation, Crowell, Texas</p>
+<p><strong>Date:</strong> November 21-22, 2017</p>
+<p><strong>Seeing:</strong> 6/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Temperature:</strong> 24 to 42 degrees F (-30C on camera)</p>
+<p><strong>Equipment:</strong> 12.5" RCOS RC f/9 on a Software Bisque Paramount ME</p>
+<p><strong>Camera:</strong> FLI PL-16803 astro CCD camera</p>
+<p><strong>Filters:</strong> AstroDon Gen 2 Tru-Balance LRGB with 3nm h-alpha spectral band</p>
+<p><strong>Guider:</strong> Off-axis via MMOAG and SBIG STi camera</p>
+<p><strong>Exposure Info:</strong> LRGB plus Ha image; 250 x 10 minutes L; 12 x 5 minutes Red; 12 x 5 minutes Green; 12 x 5 minutes Blue; 6 x 15 minutes H-alpha (all color data binned 2x2)</p>
+<p><strong>Total Exposure Time:</strong> 8 hours 40 minutes</p>
+<p><strong>Processing Information:</strong> Acquisition in TheSkyX Professional. Calibration (darks, flats, &amp; bias), Registration (StarAlignment), and Integer Rescale (to upscale RGB) in PixInsight. MultiscaleMedianTransform (wavelet noise reduction), Histogram Transformation, LocalHistogramTransformation, HDRMultiscaleTransform, and ColorCombination in PixInsight. LRGB combine, cropping, color balance, levels/curves, and sharpening (hi-pass) in Photoshop CS6. Color Blotch Reduction, Deep Space Noise Removal, and Local Contrast Enhancement in Photoshop via Noel Carboni's Astronomy Tools Actions for Photoshop.</p>
 
-Over 2.7 million light years away in the constellation of Triangulum. Known as the "Triangulum" or "Pinwheel" galaxy. It is of a grand spiral design, one of the largest galaxies in the night sky from our point of view, easily 1/2 degree across (the apparent size of our moon). M33 serves as a good test for truly dark skies...an easy naked eye object in magnitude 7 skies (Bortle 2) or better. The amazing number of visual HII regions, showing as reddish-pink in the image, is the key feature of this galaxy. Astrophotographers will often take extra h-alpha spectral band data (as I have also done) to add to the LRGB mix to make these regions "pop." I used a bit more restraint in this regard than most, since the regular LRGB data showed them sufficiently enough for my tastes. Even so, the h-alpha data did serve to yield small amounts of detail in those areas, as well as a slightly darker red color.
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>Over 2.7 million light years away in the constellation of Triangulum. Known as the "Triangulum" or "Pinwheel" galaxy. It is of a grand spiral design, one of the largest galaxies in the night sky from our point of view, easily 1/2 degree across (the apparent size of our moon). M33 serves as a good test for truly dark skies&mdash;an easy naked eye object in magnitude 7 skies (Bortle 2) or better. The amazing number of visual HII regions, showing as reddish-pink in the image, is the key feature of this galaxy. Astrophotographers will often take extra h-alpha spectral band data (as I have also done) to add to the LRGB mix to make these regions "pop." I used a bit more restraint in this regard than most, since the regular LRGB data showed them sufficiently enough for my tastes. Even so, the h-alpha data did serve to yield small amounts of detail in those areas, as well as a slightly darker red color.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

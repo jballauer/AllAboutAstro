@@ -3,16 +3,33 @@ title: M45 - The Pleiades - Taurus - Open Cluster - Magnitude 1.5
 description: The first long-exposure deep-sky image acquired remotely via the newly-built ProDome 10 observatory at Comanche Springs Astronomy Campus.
 pubDate: 2009-11-23
 image: ./_images/m45-pleiades-2009-prodome.jpg
-equipment: "Takahashi TOA-150 (with Flattener) on a Software Bisque Paramount ME mount, SBIG STL-11000M astro CCD camera"
-exposure: "LRGB, 160:60:50:30 minutes (10 minute subexposures, all unbinned)"
 draft: false
 ---
 
-Observatory: Prodome 10 - Data acquired via remote from Grapevine, TX. Location: Comanche Spring Astronomy Campus (CSAC), Three Rivers Foundation, Crowell, Texas. Seeing: 9/10. Transparency: 9/10. Temperature: 55 degrees F (-25C on camera). Date: November 22-23, 2009.
+The first long-exposure deep-sky image acquired remotely via the newly-built ProDome 10 observatory at Comanche Springs Astronomy Campus.
 
-Processing Information: Acquisition in CCDSoft V5. Calibration, Registration, and DDP in CCDStack. LRGB combine, cropping, color balance, levels/curves, sharpening, and noise removal (despeckle and gaussian blur) in Photoshop CS2. Color Blotch Reduction, Deep Space Noise Removal, and Local Contrast Enhancement in Photoshop via Noel Carboni's Astronomy Tools Actions for Photoshop.
+<div class="ke-two-col">
+<div class="ke-two-col-specs" data-width="widest">
 
-This is an especially important image because it is the first long-exposure, deep sky image acquired remotely via the Prodome 10 Observatory on the CSAC campus near Crowell, Texas. I built the Technical Innovations ProDome observatory for the Three Rivers Foundation beginning 3 1/2 years ago, the robotic/remote phase just now being complete. One final phase for the observatory remains involving an all-sky camera, seeing, and weather sensors; however, it is exciting to capture data over 180 miles away from my home in Grapevine, Texas. Two more larger ProDomes will be nearing operational phases shortly!
+<p><strong>Observatory:</strong> Prodome 10 &mdash; data acquired via remote from Grapevine, TX</p>
+<p><strong>Location:</strong> Comanche Spring Astronomy Campus (CSAC), Three Rivers Foundation, Crowell, Texas</p>
+<p><strong>Date:</strong> November 22-23, 2009</p>
+<p><strong>Seeing:</strong> 9/10</p>
+<p><strong>Transparency:</strong> 9/10</p>
+<p><strong>Temperature:</strong> 55 degrees F (-25C on camera)</p>
+<p><strong>Equipment:</strong> Takahashi TOA-150 (with Flattener) on a Software Bisque Paramount ME mount</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LRGB, 160:60:50:30 minutes (10 minute subexposures, all unbinned)</p>
+<p><strong>Processing Information:</strong> Acquisition in CCDSoft V5. Calibration, Registration, and DDP in CCDStack. LRGB combine, cropping, color balance, levels/curves, sharpening, and noise removal (despeckle and gaussian blur) in Photoshop CS2. Color Blotch Reduction, Deep Space Noise Removal, and Local Contrast Enhancement in Photoshop via Noel Carboni's Astronomy Tools Actions for Photoshop.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>This is an especially important image because it is the first long-exposure, deep sky image acquired remotely via the Prodome 10 Observatory on the CSAC campus near Crowell, Texas. I built the Technical Innovations ProDome observatory for the Three Rivers Foundation beginning 3 1/2 years ago, the robotic/remote phase just now being complete. One final phase for the observatory remains involving an all-sky camera, seeing, and weather sensors; however, it is exciting to capture data over 180 miles away from my home in Grapevine, Texas. Two more larger ProDomes will be nearing operational phases shortly!</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

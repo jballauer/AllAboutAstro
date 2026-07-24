@@ -3,24 +3,18 @@ title: Total Lunar Eclipse - January 20 & 21, 2019
 description: A linear composite showing the full progression of the January 2019 total lunar eclipse.
 pubDate: 2019-01-21
 image: ./_images/total-lunar-eclipse-2019.jpg
-equipment: "6\" Takahashi TOA-150 apochromatic refractor on a Takahashi NJP Temma 2 mount, Nikon D810A"
-exposure: "700+ exposures every 30 seconds, 1/1000 sec to 6 sec, ISO 100"
 draft: false
 ---
 
-Location: Grapevine, Texas.
+A linear composite showing the full progression of the January 2019 total lunar eclipse.
 
-This linear composition shows the eclipse sequence, moving right to left. This seems counterintuitive...while the moon moves left to right (east to west) from our perspective in Texas, the shadow of the earth actually catches up to the moon from the left side, eclipses it, and exits out of the moon after about 6 hours, speeding on ahead.
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
 
-What many do not realize is that there are two aspects to the shadow, a penumbra, where sunlight begins to hide the lunar surface (note the dimming of the lunar limb once it enters the penumbral ring), and an umbra, when sunlight is completely blocked on the lunar surface.
-
-Both the penumbral and umbral rings are shown here to scale. The actual lunar size of approximately 30 arc minutes is demonstrated by the smaller lunar images shown here.
-
-To become a "total" eclipse, the moon must enter the umbral ring entirely. When it does, it takes on a red hue, caused by the scattering of blue light through earth's own atmosphere. In other words, as light passes around the earth and is refracted toward the moon, the absence of the blue light causes the "blood" color, as the Internet likes to sensationalize it. For those wondering why earth sunsets are red, it happens for the same reason described here.
-
-Some lunar eclipse "totalities" last longer than others. Here in Grapevine, Texas, the moon barely entered the umbral ring, which is why even at totality (blown up and centered in this composition) the northern rim of the moon has a slight brightening to it.
-
-Want a good way to know where the moon is during its eclipse cycle? If the moon is dimming, yet you can still trace the entire perimeter of the lunar disk, then it has not yet entered the umbral ring. When it does, it will look like a chunk has been taken out of it!
+<p><strong>Location:</strong> Grapevine, Texas</p>
+<p><strong>Equipment:</strong> 6" Takahashi TOA-150 apochromatic refractor on a Takahashi NJP Temma 2 mount</p>
+<p><strong>Camera:</strong> Nikon D810A</p>
+<p><strong>Exposure Info:</strong> 700+ exposures every 30 seconds, 1/1000 sec to 6 sec, ISO 100</p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
@@ -44,5 +38,19 @@ Want a good way to know where the moon is during its eclipse cycle? If the moon 
 
 <div class="ke-ai-stub-footer">
 <span class="tag">Verify further:</span> <a href="https://en.wikipedia.org/wiki/January_2019_lunar_eclipse">Wikipedia</a>
+</div>
+</div>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal" data-width="wide">
+
+<h2>About this Image</h2>
+<p>This linear composition shows the eclipse sequence, moving right to left. This seems counterintuitive...while the moon moves left to right (east to west) from our perspective in Texas, the shadow of the earth actually catches up to the moon from the left side, eclipses it, and exits out of the moon after about 6 hours, speeding on ahead.</p>
+<p>What many do not realize is that there are two aspects to the shadow, a penumbra, where sunlight begins to hide the lunar surface (note the dimming of the lunar limb once it enters the penumbral ring), and an umbra, when sunlight is completely blocked on the lunar surface.</p>
+<p>Both the penumbral and umbral rings are shown here to scale. The actual lunar size of approximately 30 arc minutes is demonstrated by the smaller lunar images shown here.</p>
+<p>To become a "total" eclipse, the moon must enter the umbral ring entirely. When it does, it takes on a red hue, caused by the scattering of blue light through earth's own atmosphere. In other words, as light passes around the earth and is refracted toward the moon, the absence of the blue light causes the "blood" color, as the Internet likes to sensationalize it. For those wondering why earth sunsets are red, it happens for the same reason described here.</p>
+<p>Some lunar eclipse "totalities" last longer than others. Here in Grapevine, Texas, the moon barely entered the umbral ring, which is why even at totality (blown up and centered in this composition) the northern rim of the moon has a slight brightening to it.</p>
+<p>Want a good way to know where the moon is during its eclipse cycle? If the moon is dimming, yet you can still trace the entire perimeter of the lunar disk, then it has not yet entered the umbral ring. When it does, it will look like a chunk has been taken out of it!</p>
+
 </div>
 </div>

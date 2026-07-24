@@ -3,14 +3,21 @@ title: NGC 2244 - The Rosette Nebula (2004)
 description: An early Ha(Ha+R)GB image of the Rosette Nebula from the original Ballauer Observatory.
 pubDate: 2004-12-17
 image: ./_images/ngc2244-rosette-2004.jpg
-equipment: "Takahashi FSQ-106 at f/5 on a Takahashi NJP mount, SBIG STL-6303E (Ha) and SBIG STL-11000 (color)"
-exposure: "Ha(Ha+R)GB, 180:15:40:40 minutes"
 draft: false
 ---
 
-Location: The Ballauer Observatory near Azle, Texas. Transparency 4.8 mag zenithal, seeing 7/10, temperature 38°F, camera cooled to -25°C. Filter: Custom Scientific 4.5nm hydrogen alpha spectral line filter. Camera self-guided.
+An early Ha(Ha+R)GB image of the Rosette Nebula from the original Ballauer Observatory.
 
-Reprocessed in May 2013: Dark frame calibration, flat fields, registration, and Winsor Rejection combine in PixInsight 1.8. Channel processing in PixInsight 1.8 using Dynamic Background Extraction, Histogram Transformation, Local Histogram Equalization, HDR Multiscale Transform, and noise reduction. Final HaRGB combine, deblooming (Ha channel), color balance, curves, levels, selective sharpening/blurring/despeckle in Photoshop CS6.
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas</p>
+<p><strong>Conditions:</strong> Transparency 4.8 mag zenithal, seeing 7/10, temperature 38&deg;F, camera cooled to -25&deg;C</p>
+<p><strong>Equipment:</strong> Takahashi FSQ-106 at f/5 on a Takahashi NJP mount</p>
+<p><strong>Camera:</strong> SBIG STL-6303E (Ha) and SBIG STL-11000 (color), self-guided</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5nm hydrogen alpha spectral line filter</p>
+<p><strong>Exposure Info:</strong> Ha(Ha+R)GB, 180:15:40:40 minutes</p>
+<p><strong>Processing:</strong> Reprocessed in May 2013. Dark frame calibration, flat fields, registration, and Winsor Rejection combine in PixInsight 1.8. Channel processing in PixInsight 1.8 using Dynamic Background Extraction, Histogram Transformation, Local Histogram Equalization, HDR Multiscale Transform, and noise reduction. Final HaRGB combine, deblooming (Ha channel), color balance, curves, levels, selective sharpening/blurring/despeckle in Photoshop CS6.</p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
@@ -36,3 +43,6 @@ Reprocessed in May 2013: Dark frame calibration, flat fields, registration, and 
 <span class="tag">Verify further:</span> <a href="https://en.wikipedia.org/wiki/Rosette_Nebula">Wikipedia</a>
 </div>
 </div>
+
+</div>
+

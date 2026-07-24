@@ -75,6 +75,8 @@ const eclipse2017EventPhotos = [
 
 const hiresMap: Record<string, string> = {
   'm31-mosaic': '/images/gallery/m31-mosaic-hires.jpg',
+  'm31-andromeda-galaxy': '/images/gallery/m31-andromeda-galaxy-hires.jpg',
+  'm31-andromeda-2004': '/images/gallery/m31-andromeda-2004-hires.jpg',
 };
 
 export async function getStaticPaths() {
@@ -115,14 +117,20 @@ const hires = hiresMap[entry.id];
               />
             </span>
           ) : (
+            // No genuine higher-resolution source on file for this image --
+            // it's already displayed at (or near) its native resolution, so
+            // a "zoom" would just reopen the same-size image. Suppress the
+            // hint and skip the lightbox rather than promise a zoom that
+            // doesn't deliver.
             <Image
               src={entry.data.image}
               alt={entry.data.title}
               width={1000}
               height={Math.round((1000 * entry.data.image.height) / entry.data.image.width)}
+              class="no-lightbox"
             />
           )}
-          <p class="ke-zoom-hint">Click to Zoom</p>
+          {hires && <p class="ke-zoom-hint">Click to Zoom</p>}
         </>
       )
     )}

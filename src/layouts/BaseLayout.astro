@@ -523,6 +523,41 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-sidebar.ke-two-col-about p {
     font-size: 1rem;
   }
+  /* When the specs column is much shorter than the about-sidebar's own
+     content, a plain 50/50 split leaves a tall blank void under the specs.
+     Reusing the sidebar's existing data-width="wide" convention here grows
+     the sidebar's share of the row (and narrows its specs sibling to
+     match), which shortens the sidebar's wrap height and closes the gap
+     instead of leaving empty space. */
+  .ke-sidebar.ke-two-col-about[data-width='wide'] {
+    flex: 1.4 1 280px;
+  }
+  .ke-two-col-specs:has(+ .ke-sidebar.ke-two-col-about[data-width='wide']) {
+    flex: 0.7 1 280px;
+  }
+  /* Wider still, for cases where "wide" isn't enough to close the void
+     (a short spec list beside a long about-sidebar). */
+  .ke-sidebar.ke-two-col-about[data-width='widest'] {
+    flex: 2 1 280px;
+  }
+  .ke-two-col-specs:has(+ .ke-sidebar.ke-two-col-about[data-width='widest']) {
+    flex: 0.5 1 280px;
+  }
+  /* The reverse case: a long, densely-labeled spec list beside a short
+     about-sidebar. Widening specs (and narrowing its sidebar sibling to
+     match) shortens the specs column instead. */
+  .ke-two-col-specs[data-width='wide'] {
+    flex: 1.4 1 280px;
+  }
+  .ke-two-col-specs[data-width='wide'] ~ .ke-sidebar.ke-two-col-about {
+    flex: 0.7 1 280px;
+  }
+  .ke-two-col-specs[data-width='widest'] {
+    flex: 2 1 280px;
+  }
+  .ke-two-col-specs[data-width='widest'] ~ .ke-sidebar.ke-two-col-about {
+    flex: 0.5 1 280px;
+  }
   /* Signature graphic only — scoped via .ke-sig so this doesn't recolor
      ordinary illustrative photos that also appear inside a
      .ke-two-col-about sidebar (e.g. a reference chart). */

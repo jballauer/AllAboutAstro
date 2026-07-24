@@ -3,24 +3,20 @@ title: NGC 2244 - The Rosette Nebula (6" Refractor Shoot-out)
 description: A head-to-head composite comparing a Skywatcher Esprit and a Takahashi TOA-150 on the Rosette Nebula.
 pubDate: 2013-11-03
 image: ./_images/ngc2244-rosette-nebula-dslr.jpg
-equipment: "6\" Skywatcher Esprit and 6\" Takahashi TOA-150 on a Software Bisque Paramount ME, matching Canon 60Da DSLRs"
-exposure: "36 x 5 minutes (3 hours) through each scope, 6 hours total"
 draft: false
 ---
 
-Location: Comanche Springs Astronomy Campus (CSAC), Three Rivers Foundation, Crowell, TX. Temperature: 47 degrees F.
+A head-to-head composite comparing a Skywatcher Esprit and a Takahashi TOA-150 on the Rosette Nebula.
 
-Processing: Dark frame calibration, registration, and Windsorized Rejection combine in PixInsight 1.8. Histogram Transformation, SCNR and noise reduction in PixInsight 1.8. Final color balance, saturation, curves/levels, star repair, and local contrast enhancement in Photoshop CS6.
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
 
-If it seems like I shoot this object a lot, well, you would be right. But this image arose from special circumstances...
-
-I was recently approached by Celestron and Skywatcher telescopes, by virtue of my long-going association with the Three Rivers Foundation, to shoot a series of images that would provide content for an upcoming advertising campaign. The idea is that you take the new Skywatcher Esprit 6" apochromatic refractor and perform a head-to-head, simultaneous data acquisition against a leading competitor refractor (typically twice the price), and see what results arise. In this case, my current Takahashi TOA-150 is the perfect competitor.
-
-Of course, to do an effective comparison, you need an object that produces good results for both scopes, which yields ever so slightly different image scales (1050mm for the Esprit and 1100mm for the TOA). Likewise, you need identical cameras. Canon provided two new 60Da factory-modified DSLRs, which I was really curious about since it had been many years since my own testing of a self-modified Canon 300D. My old favorite, the Rosette, is perfectly suited for this comparison.
-
-![From left to right: the Tak TOA-150, an Astro-Physics AP-160 Starfire (guide scope), and the Skywatcher Esprit, set up side by side for the shoot-out](./_images/ngc2244-shootout-setup.jpg)
-
-I will save all telescope and camera comparisons for another time and place; however, the resulting image is a composite of both data sets, comprising one long, 6 hour image. The results are not what I would typically expect, which results from using the DSLRs as opposed to real CCD astronomy cameras, but I will say that the telescopes both perform equally well.
+<p><strong>Location:</strong> Comanche Springs Astronomy Campus (CSAC), Three Rivers Foundation, Crowell, TX</p>
+<p><strong>Date:</strong> November 3, 2013</p>
+<p><strong>Temperature:</strong> 47 degrees F</p>
+<p><strong>Equipment:</strong> 6" Skywatcher Esprit and 6" Takahashi TOA-150 on a Software Bisque Paramount ME, matching Canon 60Da DSLRs</p>
+<p><strong>Exposure Info:</strong> 36 x 5 minutes (3 hours) through each scope, 6 hours total</p>
+<p><strong>Processing:</strong> Dark frame calibration, registration, and Windsorized Rejection combine in PixInsight 1.8. Histogram Transformation, SCNR and noise reduction in PixInsight 1.8. Final color balance, saturation, curves/levels, star repair, and local contrast enhancement in Photoshop CS6.</p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
@@ -44,5 +40,20 @@ I will save all telescope and camera comparisons for another time and place; how
 
 <div class="ke-ai-stub-footer">
 <span class="tag">Verify further:</span> <a href="https://en.wikipedia.org/wiki/Rosette_Nebula">Wikipedia</a>
+</div>
+</div>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal" data-width="wide">
+
+<h2>About this Image</h2>
+<p>If it seems like I shoot this object a lot, well, you would be right. But this image arose from special circumstances...</p>
+<p>I was recently approached by Celestron and Skywatcher telescopes, by virtue of my long-going association with the Three Rivers Foundation, to shoot a series of images that would provide content for an upcoming advertising campaign. The idea is that you take the new Skywatcher Esprit 6" apochromatic refractor and perform a head-to-head, simultaneous data acquisition against a leading competitor refractor (typically twice the price), and see what results arise. In this case, my current Takahashi TOA-150 is the perfect competitor.</p>
+<p>Of course, to do an effective comparison, you need an object that produces good results for both scopes, which yields ever so slightly different image scales (1050mm for the Esprit and 1100mm for the TOA). Likewise, you need identical cameras. Canon provided two new 60Da factory-modified DSLRs, which I was really curious about since it had been many years since my own testing of a self-modified Canon 300D. My old favorite, the Rosette, is perfectly suited for this comparison.</p>
+
+![From left to right: the Tak TOA-150, an Astro-Physics AP-160 Starfire (guide scope), and the Skywatcher Esprit, set up side by side for the shoot-out](./_images/ngc2244-shootout-setup.jpg)
+
+<p>I will save all telescope and camera comparisons for another time and place; however, the resulting image is a composite of both data sets, comprising one long, 6 hour image. The results are not what I would typically expect, which results from using the DSLRs as opposed to real CCD astronomy cameras, but I will say that the telescopes both perform equally well.</p>
+
 </div>
 </div>

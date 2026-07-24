@@ -3,20 +3,32 @@ title: NGC 2244 - The Rosette Nebula (Hubble Colors)
 description: "\"When Roses Aren't Red\" — a Hubble-palette spectral band mosaic of the Rosette Nebula, featured as NASA's APOD."
 pubDate: 2006-01-01
 image: ./_images/ngc2244-hubble-colors.jpg
-equipment: "12.5\" RCOS RC on a Software Bisque Paramount ME, SBIG STL-6303e astro CCD camera"
-exposure: "Mapped SII/Ha/OIII mosaic, 90:210:60 min (left) and 90:150:90 min (right)"
 draft: false
 ---
 
-Location: Ballauer Observatory near Azle, Texas. November 2005 to January 2006. Filters: Custom Scientific 4.5nm Ha, OIII, and SII spectral line filters.
+"When Roses Aren't Red" — a Hubble-palette spectral band mosaic of the Rosette Nebula, featured as NASA's APOD.
 
-Processing Information: Calibration, Registration, and DDP in CCDStack. Color mapping, cropping, color balance, levels/curves, sharpening, and noise removal (Astronomy Tools/Pro Digital Software) in Photoshop CS.
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
 
-No, this isn't a Hubble shot. But this image was acquired and processed just like the gorgeous Hubble telescope images that we've come to love, using specialized narrowband emission line filters mapped to the traditional red, green, and blue channels. The greenish portions represent hydrogen-alpha ionized gases, the bluish color represents doubly ionized oxygen gases, and the reddish areas represent singly ionized sulfur gases. While the stars glow heavily in the sulfur wavelength, there is only light concentration of it in the nebula, mostly throughout the brighter portions.
+<p><strong>Location:</strong> Ballauer Observatory near Azle, Texas</p>
+<p><strong>Date:</strong> November 2005 to January 2006</p>
+<p><strong>Equipment:</strong> 12.5" RCOS RC on a Software Bisque Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-6303e astro CCD camera</p>
+<p><strong>Filters:</strong> Custom Scientific 4.5nm Ha, OIII, and SII spectral line filters</p>
+<p><strong>Exposure Info:</strong> Mapped SII/Ha/OIII mosaic, 90:210:60 min (left) and 90:150:90 min (right)</p>
+<p><strong>Processing Information:</strong> Calibration, Registration, and DDP in CCDStack. Color mapping, cropping, color balance, levels/curves, sharpening, and noise removal (Astronomy Tools/Pro Digital Software) in Photoshop CS.</p>
 
-Such images, while obviously beautiful, have a real scientific purpose. Because the colors are mapped specifically to certain gases, it's easy to understand the concentrations of ionizations and how (where) they interact with each other.
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal" data-width="widest">
 
-This image was named NASA's Astronomy Picture of the Day for March 24, 2006, titled "When Roses Aren't Red." See it on [APOD](https://apod.nasa.gov/apod/ap060324.html).
+<h2>About this Image</h2>
+<p>No, this isn't a Hubble shot. But this image was acquired and processed just like the gorgeous Hubble telescope images that we've come to love, using specialized narrowband emission line filters mapped to the traditional red, green, and blue channels. The greenish portions represent hydrogen-alpha ionized gases, the bluish color represents doubly ionized oxygen gases, and the reddish areas represent singly ionized sulfur gases. While the stars glow heavily in the sulfur wavelength, there is only light concentration of it in the nebula, mostly throughout the brighter portions.</p>
+<p>Such images, while obviously beautiful, have a real scientific purpose. Because the colors are mapped specifically to certain gases, it's easy to understand the concentrations of ionizations and how (where) they interact with each other.</p>
+<p>This image was named NASA's Astronomy Picture of the Day for March 24, 2006, titled "When Roses Aren't Red." See it on <a href="https://apod.nasa.gov/apod/ap060324.html">APOD</a>.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
