@@ -16,9 +16,11 @@ interface Props {
   imageWidth: number;
   imageHeight: number;
   stars: StarMarker[];
+  maxMag?: number;
 }
 
-const { image, alt, imageWidth, imageHeight, stars } = Astro.props;
+const { image, alt, imageWidth, imageHeight, stars, maxMag = 10 } = Astro.props;
+const ticks = Array.from({ length: maxMag + 1 }, (_, i) => i);
 ---
 
 <div class="star-mag-slider">
@@ -46,17 +48,14 @@ const { image, alt, imageWidth, imageHeight, stars } = Astro.props;
       type="range"
       class="sms-input"
       min="0"
-      max="10"
+      max={maxMag}
       step="1"
       value="0"
       list="sms-ticks"
       aria-label="Show named stars down to this apparent magnitude"
     />
     <datalist id="sms-ticks">
-      <option value="0"></option><option value="1"></option><option value="2"></option>
-      <option value="3"></option><option value="4"></option><option value="5"></option>
-      <option value="6"></option><option value="7"></option><option value="8"></option>
-      <option value="9"></option><option value="10"></option>
+      {ticks.map((t) => <option value={t}></option>)}
     </datalist>
     <div class="sms-readout">
       <span class="sms-readout-value">0 &mdash; normal image</span>

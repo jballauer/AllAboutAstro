@@ -20,6 +20,13 @@ math (Phases 1-2) — this skill only covers what's different: the catalog
 query (broader, magnitude-limited, not just named stars) and the slider
 UI/component.
 
+A sibling skill, `star-mag-hover-with-slider-mag12`, does the exact
+same thing but resolves down to magnitude 12 instead of 10, for a
+richer/denser field — pick whichever depth fits the target image rather
+than always defaulting to this one. The `StarMagnitudeSlider.astro`
+component takes an optional `maxMag` prop (default 10) so both skills
+share one component.
+
 ## The slider's semantics — get this exact, it's easy to get subtly wrong
 
 - **0 = the plain, unmarked image.** Not "stars ≤ mag 0" (which would
