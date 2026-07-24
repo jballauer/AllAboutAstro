@@ -9,7 +9,9 @@ const images = (await getCollection('gallery', ({ data }) => !data.draft)).sort(
 ---
 
 <BaseLayout title="Astro Gallery">
-  <h1>Astro Gallery</h1>
+  <h1>Astrophotography by Jay Ballauer</h1>
+  <p>Here is a selection of just some of the images I have taken over the many years of pointing a telescope at the night sky. For the most part, they are taken with a wide variety of apochromatic refractors, ranging from 3" to 6", with narrow-field images taken with a 12.5" RCOS RC. A variety of cameras are used and you can assume that the images are from a cooled astro CCD unless otherwise indicated in the title. Clicking on some images will bring up separate pages with more information about them. Other images will just show an enlarged view. My goal is to add more images over time, as well as provide more of the individual pages full of details about them.</p>
+  <p>Some images also include an interactive slider below them &mdash; drag it to reveal the stars in that photo, labeled with their name and magnitude, straight from real astronomical catalogs.</p>
   <div class="grid">
     {images.map((entry) => (
       <a class="tile" href={`/gallery/${entry.id}/`}>
