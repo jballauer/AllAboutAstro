@@ -110,12 +110,17 @@ const hires = hiresMap[entry.id];
                 src={entry.data.image}
                 alt={entry.data.title}
                 width={1000}
-                height={1000}
+                height={Math.round((1000 * entry.data.image.height) / entry.data.image.width)}
                 class={entry.id === 'm31-mosaic' ? 'ke-zoom-inframe' : undefined}
               />
             </span>
           ) : (
-            <Image src={entry.data.image} alt={entry.data.title} width={1000} height={1000} />
+            <Image
+              src={entry.data.image}
+              alt={entry.data.title}
+              width={1000}
+              height={Math.round((1000 * entry.data.image.height) / entry.data.image.width)}
+            />
           )}
           <p class="ke-zoom-hint">Click to Zoom</p>
         </>
