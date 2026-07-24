@@ -1,0 +1,179 @@
+---
+import { Image } from 'astro:assets';
+
+interface StarMarker {
+  commonName: string | null;
+  catalogName: string;
+  mag: number;
+  specType: string;
+  x: number;
+  y: number;
+}
+
+interface Props {
+  image: ImageMetadata;
+  alt: string;
+  imageWidth: number;
+  imageHeight: number;
+  stars: StarMarker[];
+}
+
+const { image, alt, imageWidth, imageHeight, stars } = Astro.props;
+---
+
+<div class="star-mag-slider">
+  <div class="sms-frame">
+    <Image src={image} alt={alt} width={imageWidth} height={imageHeight} />
+    {stars.map((s) => (
+      <span
+        class="sms-marker"
+        data-bucket={Math.ceil(s.mag)}
+        style={`left:${((s.x / imageWidth) * 100).toFixed(2)}%; top:${((s.y / imageHeight) * 100).toFixed(2)}%`}
+      >
+        <span class="sms-dot"></span>
+        <span class="sms-tag">
+          <strong>{s.commonName ?? s.catalogName}</strong>
+          {s.commonName && <span class="sms-cat">{s.catalogName}</span>}
+          <span class="sms-mag">mag {s.mag.toFixed(2)}</span>
+          {s.specType && <span class="sms-sp">{s.specType}</span>}
+        </span>
+      </span>
+    ))}
+  </div>
+  <div class="sms-controls">
+    <input
+      type="range"
+      class="sms-input"
+      min="0"
+      max="10"
+      step="1"
+      value="0"
+      list="sms-ticks"
+      aria-label="Show named stars down to this apparent magnitude"
+    />
+    <datalist id="sms-ticks">
+      <option value="0"></option><option value="1"></option><option value="2"></option>
+      <option value="3"></option><option value="4"></option><option value="5"></option>
+      <option value="6"></option><option value="7"></option><option value="8"></option>
+      <option value="9"></option><option value="10"></option>
+    </datalist>
+    <div class="sms-readout">
+      <span class="sms-readout-value">0 &mdash; normal image</span>
+      <span class="sms-readout-count"></span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .star-mag-slider {
+    margin: 0.3rem 0 1.5rem;
+  }
+  .sms-frame {
+    position: relative;
+  }
+  .sms-frame :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .sms-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .sms-marker[data-visible='true'] {
+    display: block;
+  }
+  .sms-dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #ffd54a;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.8);
+  }
+  .sms-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.15;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.78);
+    border: 1px solid rgba(255, 213, 74, 0.55);
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-top: 2px;
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    color: #fff;
+    pointer-events: none;
+  }
+  .sms-tag strong {
+    font-size: 0.68rem;
+  }
+  .sms-cat {
+    color: rgba(255, 255, 255, 0.65);
+    font-style: italic;
+  }
+  .sms-mag {
+    color: #ffd54a;
+  }
+  .sms-sp {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .sms-controls {
+    max-width: 420px;
+    margin: 0.75rem auto 0;
+    text-align: center;
+  }
+  .sms-input {
+    width: 100%;
+  }
+  .sms-readout {
+    margin-top: 0.35rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+  .sms-readout-count {
+    opacity: 0.75;
+  }
+  .sms-readout-count:not(:empty)::before {
+    content: ' \2014 ';
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.star-mag-slider').forEach((widget) => {
+    const input = widget.querySelector<HTMLInputElement>('.sms-input')!;
+    const markers = Array.from(widget.querySelectorAll<HTMLElement>('.sms-marker'));
+    const valueEl = widget.querySelector('.sms-readout-value')!;
+    const countEl = widget.querySelector('.sms-readout-count')!;
+
+    function apply() {
+      const value = Number(input.value);
+      if (value === 0) {
+        markers.forEach((m) => m.removeAttribute('data-visible'));
+        valueEl.textContent = '0 — normal image';
+        countEl.textContent = '';
+        return;
+      }
+      let shown = 0;
+      markers.forEach((m) => {
+        const bucket = Number(m.dataset.bucket);
+        if (bucket <= value) {
+          m.setAttribute('data-visible', 'true');
+          shown++;
+        } else {
+          m.removeAttribute('data-visible');
+        }
+      });
+      valueEl.textContent = `Stars ≤ magnitude ${value}`;
+      countEl.textContent = `${shown} labeled`;
+    }
+
+    input.addEventListener('input', apply);
+    apply();
+  });
+</script>
