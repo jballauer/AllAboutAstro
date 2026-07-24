@@ -141,7 +141,15 @@ const gear = {
       <div class="recent-grid">
         {recentImages.map((entry) => (
           <a class="recent-tile" href={`/gallery/${entry.id}/`}>
-            {entry.data.image && <Image src={entry.data.image} alt={entry.data.title} width={300} height={220} />}
+            {entry.data.image && (
+              <Image
+                src={entry.data.image}
+                alt={entry.data.title}
+                width={300}
+                height={220}
+                position={entry.id === 'comet-neowise-timelapse' ? 'left' : undefined}
+              />
+            )}
             <span>{entry.data.title}</span>
           </a>
         ))}
