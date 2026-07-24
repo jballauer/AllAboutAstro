@@ -49,6 +49,36 @@ const m45HeroStars = [
   { commonName: null, catalogName: 'HD 282975', mag: 10.00, specType: 'G2V+G2V', x: 873.1, y: 499.4 },
 ];
 
+// Plate-solved via astrometry.net, cross-matched against SIMBAD (cone
+// search, V<=10) -- see the star-mag-hover-with-slider skill. bucket is
+// ceil(mag): a star shows once the slider reaches its bucket value, so
+// "mag <= slider value" holds exactly. Two SIMBAD rows (GC 361/Mis 935,
+// and HD 313714/HD 313714A) resolved to identical pixel positions --
+// same physical star under alternate catalog IDs, not a real close
+// binary -- deduped to one marker each rather than showing overlapping
+// duplicate tags.
+const m20HeroStars = [
+  { commonName: null, catalogName: 'HD 164402', mag: 5.77, specType: 'B0Ib', x: 702.5, y: 144.3 },
+  { commonName: null, catalogName: 'HD 164637', mag: 6.72, specType: 'B0Ib/II', x: 302.2, y: 37.1 },
+  { commonName: null, catalogName: 'GC 361', mag: 6.78, specType: '', x: 55.8, y: 235.6 },
+  { commonName: null, catalogName: 'LkHA 123', mag: 6.80, specType: 'B1V', x: 519.6, y: 533.6 },
+  { commonName: null, catalogName: 'HD 164492', mag: 6.80, specType: 'O7.5Vz', x: 517.2, y: 529.7 },
+  { commonName: null, catalogName: 'HD 164514', mag: 7.42, specType: 'A7Iab/b', x: 473.9, y: 333.2 },
+  { commonName: null, catalogName: 'HD 164384', mag: 8.26, specType: 'B1Vnn', x: 739, y: 765.8 },
+  { commonName: null, catalogName: 'HD 164739', mag: 8.48, specType: 'B8/9III', x: 68.4, y: 685.1 },
+  { commonName: null, catalogName: 'HD 164704', mag: 8.81, specType: 'B2II', x: 192.9, y: 292.8 },
+  { commonName: null, catalogName: 'HD 313716', mag: 9.19, specType: 'K2', x: 225.2, y: 210.2 },
+  { commonName: null, catalogName: 'HD 164294', mag: 9.23, specType: 'A2III', x: 869.9, y: 748.8 },
+  { commonName: null, catalogName: 'HD 164534', mag: 9.24, specType: 'B9V', x: 460.8, y: 124.3 },
+  { commonName: null, catalogName: 'GC 363', mag: 9.54, specType: '', x: 59.7, y: 79.9 },
+  { commonName: null, catalogName: 'WY Sgr', mag: 9.59, specType: 'B3/5(III)', x: 1023.8, y: 546.3 },
+  { commonName: null, catalogName: 'HD 313737', mag: 9.74, specType: 'M0', x: 289.7, y: 616.7 },
+  { commonName: null, catalogName: 'CD-22 12456', mag: 9.79, specType: '', x: 470.9, y: 425.5 },
+  { commonName: null, catalogName: 'HD 313738', mag: 9.90, specType: 'K2', x: 339.9, y: 526.8 },
+  { commonName: null, catalogName: 'HD 313714', mag: 9.96, specType: 'F0', x: 313.2, y: 275.4 },
+  { commonName: null, catalogName: 'HD 313713', mag: 10.00, specType: 'B8', x: 295.5, y: 144.9 },
+];
+
 import eclipse2017Event01 from '../../content/gallery/_images/eclipse2017-event-dsc0195.jpg';
 import eclipse2017Event02 from '../../content/gallery/_images/eclipse2017-event-dsc0193.jpg';
 import eclipse2017Event03 from '../../content/gallery/_images/eclipse2017-event-dsc0202.jpg';
@@ -102,6 +132,14 @@ const hires = hiresMap[entry.id];
         imageWidth={1030}
         imageHeight={800}
         stars={m45HeroStars}
+      />
+    ) : entry.id === 'm20-trifid-nebula' ? (
+      <StarMagnitudeSlider
+        image={entry.data.image}
+        alt={entry.data.title}
+        imageWidth={1082}
+        imageHeight={800}
+        stars={m20HeroStars}
       />
     ) : (
       entry.id !== 'comet-neowise-timelapse' && entry.data.image && (
