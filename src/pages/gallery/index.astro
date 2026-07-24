@@ -6,6 +6,14 @@ import { Image } from 'astro:assets';
 const images = (await getCollection('gallery', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+// Square thumbnail crops center by default, which works fine for the
+// site's typically near-square astrophotos. A non-square source (e.g. a
+// 16:9 video-frame thumbnail) needs an explicit crop position so the
+// subject doesn't get cut off -- see the comet-neowise-timelapse entry.
+const thumbPosition: Record<string, string> = {
+  'comet-neowise-timelapse': 'left',
+};
 ---
 
 <BaseLayout title="Astro Gallery">
@@ -16,9 +24,13 @@ const images = (await getCollection('gallery', ({ data }) => !data.draft)).sort(
     {images.map((entry) => (
       <a class="tile" href={`/gallery/${entry.id}/`}>
         {entry.data.image && (
-          <span class="tile-image">
-            <Image src={entry.data.image} alt={entry.data.title} width={400} />
-          </span>
+          <Image
+            src={entry.data.image}
+            alt={entry.data.title}
+            width={400}
+            height={400}
+            position={thumbPosition[entry.id]}
+          />
         )}
         <span>{entry.data.title}</span>
       </a>
@@ -37,24 +49,7 @@ const images = (await getCollection('gallery', ({ data }) => !data.draft)).sort(
     color: inherit;
     text-decoration: none;
   }
-  /* Fixed-height frame so the grid stays uniform, but the image itself is
-     never pixel-cropped -- `object-fit: contain` letterboxes/pillarboxes
-     non-square photos (e.g. a 16:9 video-frame thumbnail) instead of
-     cutting off part of the subject. */
-  .tile-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 220px;
-    background: #000;
-    overflow: hidden;
-  }
-  .tile-image :global(img) {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .tile span:not(.tile-image) {
+  .tile span {
     display: block;
     margin-top: 0.5rem;
   }
