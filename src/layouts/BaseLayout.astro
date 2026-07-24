@@ -581,11 +581,15 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   }
   .ke-star-hover-caption {
     font-family: var(--font-body);
-    font-size: 0.85rem;
+    font-size: 10pt;
     font-style: italic;
+    text-align: center;
     margin: 0.5rem 0 1rem;
   }
-  .ke-sidebar .ke-star-hover-caption {
+  /* Matches `.ke-sidebar.ke-two-col-about p`'s specificity so this wins
+     (later in source) instead of being overridden back to 1rem. */
+  .ke-sidebar p.ke-star-hover-caption {
+    font-size: 10pt;
     color: rgba(255, 255, 255, 0.8);
   }
 
