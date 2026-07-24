@@ -5,6 +5,11 @@ pubDate: 2019-05-10
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/how-to-learn-astrophotography-posted-1.png">
+
+![Photo](./_images/how-to-learn-astrophotography-posted-1.png)
+
+</div>
 Adding to the Learning section of All About Astro.com is a new article written for those wondering how to begin the hobby. It's the first article in the pull-down menu at top the Learning tab.
 
 As with all of my articles, take your time trying to digest all of the information. This is intended to be a casual read, a look at an overall approach to how you might tackle the learning of what most people consider a very challenging hobby.

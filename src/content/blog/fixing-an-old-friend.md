@@ -5,6 +5,12 @@ pubDate: 2019-09-22
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/fixing-an-old-friend-1.jpg">
+
+![Photo](./_images/fixing-an-old-friend-1.jpg)
+
+</div>
+
 We have cool telescopes in the 3RF Conley Observatory. The setup on the left, which we call "Aries," contains two telescopes, both of which have been in my possession for over 15 years now. The small one is my Tak FSQ-106. Don't frown down on it because it has a fixed dew shield...it's a wonderful telescope and has produced hundreds of wonderful images for me.
 
 But the other scope on Aries is an old friend. I received this beautiful 12.5" RCOS Ritchey Chretien scope in 2004 and, despite it technically being owned by the Three Rivers Foundation (3RF), it's never NOT been my scope. I'm the only person who ever touched it, well, except for the RCOS people who maintenanced it back in 2010.
@@ -16,6 +22,21 @@ After we closed its old ProDome observatory, we sent it back to RCOS to repair m
 My travails began when I remounted the scope and checked collimation. Surprisingly, the scope couldn't be collimated because my method no longer seemed to work - using a "Tak collimator" requires the sight of an annulus of light through the collimator, but something was wrong. The annulus was missing.
 
 Thinking I might be missing a spacer in the optical train during collimation (I learned afterward that I wasn't), I went ahead and started imaging with it. Unfortunately, defocused images showed a severe intrusion into the light cone, which only got worse the farther I went off the optical axis. Nothing changed from the old setup - same SBIG STL-series camera, same spacers, same everything. And of course when I put the bigger FLI PL-16803 camera on it, the bigger chip just made the optical problems even worse.
+
+<div class="ke-image-feature">
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal1-1.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal1-2.jpg)
+
+</div>
+</div>
+</div>
 
 Call the manufacturer, right? Well, sure, only now, RCOS was out of business!
 
@@ -33,9 +54,63 @@ Exasperated, I threatened to pull out a hack-saw, because in my mind it couldn't
 
 And then, finally, I found an old picture of my scope, one that showed a close-up of the original secondary baffle. And sure enough, it was now different! This old friend of mine who has seen sub-arc second details and diffraction-limited performance had a secondary baffle transplant. This was the culprit, cutting into the light cone and causing crap performance (more than double the FWHM measures I used to get, at best).
 
+<div class="ke-image-feature">
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal2-1.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal2-2.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal2-3.jpg)
+
+</div>
+</div>
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal2-4.jpg)
+
+</div>
+</div>
+</div>
+
 And it totally makes sense...It turns out that my scope was a 2004 model with a 2.5" long, straight secondary baffle. This one grew to 3.25" long, with a taper. Yep, RCOS changed their baffle design for the 2005 model year, and instead of replacing my old beautiful baffle, they switched it out. I don't know if they got mine mixed up, or whether they thought they'd "upgrade" mine. But why? Certainly they knew that to change the baffle you also have to lengthen the truss arms of the scope. My overall scope dimensions were unchanged.
 
 So, yeah, I did it. I cut off the secondary baffle of a $21,000 telescope! No hacksaw...a Dremel and some sandpaper.
+
+<div class="ke-image-feature">
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal3-1.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal3-2.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal3-3.jpg)
+
+</div>
+</div>
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/fixing-an-old-friend-gal3-4.jpg)
+
+</div>
+</div>
+</div>
 
 The result is now only 2.6" long. If you are worried about the accuracy, don't be. Grinding it down uniformly with sandpaper and a digital caliper, my result is within 10 thousandths of length all the way around the baffle.
 

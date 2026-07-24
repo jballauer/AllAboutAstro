@@ -5,6 +5,11 @@ pubDate: 2019-10-16
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/pleiades-m45-mosaic-four-frames-1.jpg">
+
+![Photo](./_images/pleiades-m45-mosaic-four-frames-1.jpg)
+
+</div>
 Check out the newest image posted to the Astrogallery! It's a four frame mosaic of M45, taken a couple of years ago but only now finished. Clicking the image will take you directly to the details.
 
 Known from the earliest of antiquity and mentioned three times in the Bible, the "Pleiades" or the "Seven Sisters," is inarguably the night sky's most beautiful star cluster. Illuminating the autumn sky, it seems to signify a cool, refreshing end to our hot Texas summer!

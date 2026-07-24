@@ -5,6 +5,11 @@ pubDate: 2019-09-08
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/m31-mosaic-largest-to-date-1.jpg">
+
+![Photo](./_images/m31-mosaic-largest-to-date-1.jpg)
+
+</div>
 Shooting a mosaic, especially an 8-frame color LRGB image, is not for the faint of heart! But every now and then we astrophotographers get the urge to push our skills and our equipment. The result of such mosaics, like this one of the very familiar M31, Andromeda Galaxy, is to achieve fine resolution (detail) as delivered by the long focal length optics WITH the wide field of view typically given by shorter focal length scopes and lenses.
 
 Meaning? A huge galaxy such as Messier 31, Andromeda's catalog designation, can be captured completely, yet in terrific detail.

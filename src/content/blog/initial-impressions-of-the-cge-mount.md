@@ -1,0 +1,34 @@
+---
+title: "Initial Impressions of the CGE mount"
+description: "I don't know what I like better, using new equipment to get good images or the thrill of pulling a new acquision from its box. Even if its just an…"
+pubDate: 2003-11-17
+draft: false
+---
+
+I don't know what I like better, using new equipment to get good images or the thrill of pulling a new acquision from its box.  Even if its just an eyepiece, the tactile sensation of holding the object in your hands is reassuring; you finally know that you didn't get ripped off and that "Brown" didn't break your package while playing football with it.
+
+Though I haven't had a chance to setup my new Celestron CGE mount under the stars much less see how well it works with my scopes for astrophotography, I can say, most assuredly, that the muscle pulls and back spasms I now have as a result of pulling this large German Equatorial Mount (GEM) from its box doesn't come close to offsetting the excitement of handling and drooling over one-hundred plus pounds of black anodized steel...woof, woof, woof!
+
+**First Impressions:**
+
+It arrived a day late, but the three separate boxes of 45, 50, and 60 pounds made me happy.  You always like getting something for your money, which is partly why I love Tak scopes so much.  Holding one in your hand you can feel the quality that goes into those scopes.  Well, that's the impression I got from this CGE mount.  It looks like a Losmandy G-11, which should be expected as part of its pedigree.   But instead of a separate control panel, the CGE incorporates its electronics into a mini-pier that rests just below the mount base.  I had worried that this would cause a little unnecessary flexure in the system, and I might just be right to worry, but it is a neat concept.  But hopefully the three bolts that attach the mini-pier to the tripod and the other three bolts that hold the mount to the mini-pier will unite to make a stable system.
+
+The tripod is rugged and heavy.  A single hand bolt tightens down on the legs to keep the telescoping legs in place.  The spreader bar is mounted about a foot below the top of the tripod, which lends more rigidity when tightened into place, unlike my Meade LX200 Classic that mounts too close to the top of the tripod.
+
+The mount comes with two 21 lbs counterweights, enough for a variety of configurations up to its listed payload capacity of 65 lbs.  I mounted my Tak FSQ-106, see above, atop the dovetail attachment so that I could test the electronics.  This 13 lbs scope balanced perfectly with a single counterweight placed close to the azimuth arm.  Lesser scopes would require smaller counterweights.  I'm certain that I could add a 10" or 11" SCT tube in addition to the Tak and it would balance quite easily with the additional counterweight added near the bottom of the bar.  As far as imaging goes, it will not be a question as to whether or not the mount will handle all the weight.  The question will be whether or not the mount will guide well enough with that much weight while imaging through a 2500mm to 3000mm scope.  That's a question I hope to answer sometime soon.
+
+**Turning it on:**
+
+The mount came with a DC power cord, so I attached it to my smaller, portable field battery for some power-up test.  I basically wanted to get a grasp on how the Nexstar system measures up to the older Meade Magellan system from my venerable LX200 classic.  Well, as with anything new, I suspose I'll get used to the Nexstar system.  The menus are laid out logically, but the handpad seems a bit difficult to hold.  It's just not as hefty as the Meade handpad and the cord isn't long enough.  Because the cord is integrated into the handpad, changing to a longer cord, like I did on my Meade, will require a bit surgery.  I also don't care for where they attached the cord to the handpad; to the back.  Makes it more difficult to hang the pad on its holder, which itself attaches via velcro to a tripod leg.
+
+Whereas the Nexstar system will allow me to input object names with a few strokes of the number buttons, a feature I love on my older Meade, you have to take your menu to the root menu before you can key in new objects.  I also don't care for the descriptive nature of the object database when you push the INFO button.  Instead of useful information like magnitude and angular size, you get a scrolling message that seems more in place during a skytour. For example,  I don't need the handpad to tell me that "canali" were once seen on the surface of Mars.  I can read that in a book.  What I do need is an immediate indication of its angular size.  Perhaps this ability exists in the Nexstar, but I haven't found it yet.
+
+I also didn't care for the speed of the drive system.  Rated at 4 degrees per second, which is half the speed of my LX200, the CGE actually seems more than twice as slow.    But I will say that the motors are extremely quite, something that cannot be said of the LX200.  I also would appreciate it if the handpad would relinquish control sooner in the startup process.  The Nexstar system requires a one or two star alignment before you can set the other settings.  If I had my choice, I'd rather the system give me complete control sfrom the beginning so that I find my own star and merely sync the computer to it with a simple keystroke.  The Nexstar requires me to navigate through an object list before I can align on the star of my choice, something that I do quite often with the Meade during a typical session.
+
+One thing about the Nexstar system is that a control panel for the PC can be purchased to emulate the handpad.  At $59, [HCAnywhere](http://www.astrogeeks.com/hcAnywhere/index.html) duplicates the handpad on the PC screen while also allowing other control programs, like The SKY, to function simultaneously without the need to take up other ports.  Its susposed to be quite slick, even providing the ability to use a wireless gamepad to control the software, and thus the mount.  This will undoubtedly be the way I control the mount the majority of the time, some combination between the PC or a wireless game controller.  I just need to buy or make the cable to make the connection...and buy a wireless gamepad.
+
+**Final thoughts:**
+
+I don't want to leave you with the impression that I'm not pleased with the mount.  Truth is, I haven't began to scratch the surface of its features, nor have I been outside to test the accuracy of the GOTO system, nor of its drives.  That will come in a future review, hopefully if the clouds clear away anytime soon.
+
+But going from Meade to Celestron is like loving hot coffee and then switching to the cold, fru-fru stuff.   The Meade is like hot coffee for me.  It might take a while before I get used to the fru-fru stuff.  But undoubtedly, the Celestron CGE is better equipped right out of the box for astrophotography, something that my LX200 just couldn't do as consistently as I would have liked.

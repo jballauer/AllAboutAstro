@@ -5,6 +5,11 @@ pubDate: 2017-10-24
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/cover-image-amateur-astronomy-magazine-1.png">
+
+![Photo](./_images/cover-image-amateur-astronomy-magazine-1.png)
+
+</div>
 Very pleased to land my image on the cover of the most recent Amateur Astronomy Magazine. The 2017 total solar eclipse was a very special event. While I didn't execute this image the way I wanted, it still turned out okay.
 
 This is a composite image, with nine individual sub exposures ranging from 1/3200 seconds to 2 seconds.

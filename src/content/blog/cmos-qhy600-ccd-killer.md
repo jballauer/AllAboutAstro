@@ -5,6 +5,37 @@ pubDate: 2019-11-03
 draft: false
 ---
 
+<div class="ke-image-feature">
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/cmos-qhy600-ccd-killer-gal0-1.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/cmos-qhy600-ccd-killer-gal0-2.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/cmos-qhy600-ccd-killer-gal0-3.jpg)
+
+</div>
+</div>
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/cmos-qhy600-ccd-killer-gal0-4.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/cmos-qhy600-ccd-killer-gal0-5.jpg)
+
+</div>
+</div>
+</div>
 The new QHY600 "early bird" edition of the Sony IMX455-based CMOS camera is in the house!
 
 I have been doing some preliminary testing of it and I can say it extraordinary how clean and powerful this camera is. I'll be writing and showing more of this camera in the future, but I wanted to let you know I have it.

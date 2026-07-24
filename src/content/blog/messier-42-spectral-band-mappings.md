@@ -5,6 +5,11 @@ pubDate: 2018-12-03
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/messier-42-spectral-band-mappings-1.jpg">
+
+![Photo](./_images/messier-42-spectral-band-mappings-1.jpg)
+
+</div>
 I thought I would share two images taken this past week over several nights, showing data that was collected REMOTELY at the Conley Observatory at the Comanche Springs Astronomy Campus near Crowell, Texas, a "roll-off roof" observatory that was completed this past year.
 
 I present to you Messier 42, the Orion Nebula. "M42" is one of the oldest known deep space objects in the night sky, recognized by observers since antiquity. A stellar nursery of new star birth, the stars at the core of the structure, known as "the trapezium," are responsible for ionizing the surrounding gases (making them glow). Perhaps most amazingly, you are looking back in time 1,344 years ago. (!) In other words, the light captured in this image took 1,344 years, travelling at the speed of light, to reach us.

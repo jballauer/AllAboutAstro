@@ -5,6 +5,11 @@ pubDate: 2019-04-02
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/january-2019-total-lunar-eclipse-1.jpg">
+
+![Photo](./_images/january-2019-total-lunar-eclipse-1.jpg)
+
+</div>
 The problem with an event like a total lunar eclipse is that you end up taking about 600 images of said eclipse. It takes a lot of time and processing horsepower, but inevitably a few things like this fancy composition eventually get done.
 
 Here is a variety of shots from the January 20/21 eclipse, arranged in a poster style.

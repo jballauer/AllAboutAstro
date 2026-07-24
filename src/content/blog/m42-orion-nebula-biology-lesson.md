@@ -5,6 +5,11 @@ pubDate: 2020-02-07
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/m42-orion-nebula-biology-lesson-1.jpg">
+
+![Photo](./_images/m42-orion-nebula-biology-lesson-1.jpg)
+
+</div>
 So you've seen the first light grayscale image of M42 posted in the blog a month ago. The new QHY600m camera in the Conley Observatory at CSAC (www.3rf.org) has great potential, albeit it's not optimally setup yet, both in tilt and back focus distance. But it promises to signify the end of all CCD astronomy cameras as we know it. CMOS is taking over. The color version, shown here, was taken in HaLRGB – traditional LRGB enhanced with hydrogen-alpha data.
 
 Arguably the brightest and most magnificent object outside of our own solar system, the Orion Nebula is easily visible as a naked eye object, even in light polluted skies. Shown here with the "Running Man" Nebula, NGC 1977, the views through a small telescope or binoculars are outstanding, and it just gets better in larger aperture scopes. The bright center portion of the nebulae features four stars of similar magnitude known as the "trapezium." It's the heart of a massive complex of young stars being formed from the gases and dust which gives the nebula its shape. It is truly a stellar nursery.

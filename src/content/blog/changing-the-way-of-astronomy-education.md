@@ -5,6 +5,11 @@ pubDate: 2017-01-12
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/changing-the-way-of-astronomy-education-1.png">
+
+![Photo](./_images/changing-the-way-of-astronomy-education-1.png)
+
+</div>
 For more than two years now, my teaching partner, Scott Christensen, and myself have dared to walk where few have travelled...
 
 People may have wondered why educators don't do some of the stuff you see on these pages, since even a "lowly" amateur like me can seemingly do some amazing things. But the reality is that there will always be a disconnect between education and industry, since seldom do the twain meet.

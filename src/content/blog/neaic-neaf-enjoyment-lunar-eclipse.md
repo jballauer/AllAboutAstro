@@ -5,6 +5,11 @@ pubDate: 2014-04-14
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/neaic-neaf-enjoyment-lunar-eclipse-1.jpg">
+
+![Photo](./_images/neaic-neaf-enjoyment-lunar-eclipse-1.jpg)
+
+</div>
 NEAF 2014 at Rockland Community College in Suffern, New York.
 
 I am sometimes asked what I enjoy more, imaging the night sky, or talking to people ABOUT imaging the night sky?

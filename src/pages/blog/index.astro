@@ -15,7 +15,9 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
   <ul>
     {posts.map((post) => (
       <li>
-        <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+        <a href={`/blog/${post.id}/`}>
+          {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })} &mdash; {post.data.title}
+        </a>
       </li>
     ))}
   </ul>

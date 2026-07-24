@@ -5,6 +5,11 @@ pubDate: 2014-05-24
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/ais-tsp-2014-photoshop-workflows-presentation-1.jpg">
+
+![Photo](./_images/ais-tsp-2014-photoshop-workflows-presentation-1.jpg)
+
+</div>
 Whereas I said that I wouldn't be going to the Texas Star Party this year because my original presentation, "How to Build an Astroimager," did not make, the TSP guys let me know they still needed me to fill in for my friend, John Davis, who has to vacate his spot in the lineup because he has to run off and make a movie or something.
 
 That kinda stuff happens all the time, right?

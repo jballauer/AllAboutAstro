@@ -5,6 +5,11 @@ pubDate: 2019-12-08
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/first-light-qhy600-cmos-camera-1.jpg">
+
+![Photo](./_images/first-light-qhy600-cmos-camera-1.jpg)
+
+</div>
 So, I installed a new camera in the Conley Observatory at CSAC this month. The QHY600 camera with filter wheel, seen on the smaller Tak FSQ-106 telescope in the picture below, promises to signify the end of all CCD astronomy cameras as we know it.
 
 Why? Because it's the first full-frame (35mm film size) grayscale camera available to astronomers. And because it's a 16-bit back-illuminated CMOS sensor with quantum efficiency of over 90% (sensitivity), with barely any camera read-noise at all when compared with traditional CCDs, it's pretty much the perfect camera. Moreover, because the camera accomplishes this with really small 3.75 micron pixels (60 megapixels in total), it matches very well with smaller, high quality refractors like the FSQ-106.
@@ -22,3 +27,10 @@ For those evaluating the performance of the camera (my apologies to the lay pers
 For all the talk astronomers like to make about specifics of camera performance, quit being so picky! This camera is better than any camera that preceded it, including that FLI PL-16803 also in that picture. In fact, you can purchase TWO QHY600 cameras for the camera price as that FLI CCD setup.
 
 It's truly a remarkable time to be an astrophotographer.
+
+
+<div class="ke-figure ke-figure-right" data-hires="/images/blog-legacy/first-light-qhy600-cmos-camera-2.jpg">
+
+![Photo](./_images/first-light-qhy600-cmos-camera-2.jpg)
+
+</div>

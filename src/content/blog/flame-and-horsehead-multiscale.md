@@ -5,6 +5,11 @@ pubDate: 2019-10-09
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/flame-and-horsehead-multiscale-1.jpg">
+
+![Photo](./_images/flame-and-horsehead-multiscale-1.jpg)
+
+</div>
 The other day, a friend of mine asked a question about multi-scale (or hybrid) imaging. He was considering two scopes with similar cameras to be used simultaneously and he was curious about how optically close the scopes need to be in order to mix together the data. I stated that they didn't need to be all that similar and that I use mixed data all the time.
 
 Here's an example, an image that I completed the other night. Clear-filtered luminance for this image was acquired in November, 2017. It is two frames, 120 minutes of the Flame Nebula and 170 minutes of the Horsehead using a 12.5" RCOS RC and FLI PL-16803 astro camera. This was preprocessed and stitched together in PixInsight.

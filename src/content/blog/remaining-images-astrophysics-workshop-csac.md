@@ -5,6 +5,32 @@ pubDate: 2018-10-29
 draft: false
 ---
 
+<div class="ke-image-feature">
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-1.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-2.jpg)
+
+</div>
+<div class="ke-image-feature-item">
+
+![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-3.jpg)
+
+</div>
+</div>
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item">
+
+![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-4.jpg)
+
+</div>
+</div>
+</div>
 In addition to the M31 shot posted previously, I made the effort to shoot 4 more images at June's "Astrophysics in a Nutshell" Workshop at CSAC.
 
 Taken with a Nikon D810a DSLR camera, Takahashi FSQ-85ED refractor and Takahashi NJP mount, the following images were comprised of any number of 2 minute sub-exposures at ISO 1600. These images were unguided...about as easy as you can get in this hobby.

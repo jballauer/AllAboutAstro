@@ -5,6 +5,11 @@ pubDate: 2018-12-30
 draft: false
 ---
 
+<div class="ke-figure ke-figure-left" data-hires="/images/blog-legacy/ngc6960-witchs-broom-bicolor-1.jpg">
+
+![Photo](./_images/ngc6960-witchs-broom-bicolor-1.jpg)
+
+</div>
 This is an image of NGC 6960, the western portion of the Veil Nebula. Known as the "Witch's Broom" or "Finger of God," among other names, this is only a small part of a larger complex of a supernova remnant; an exploded star. This intricate display of hydrogen and oxygen gases is centered around the star 52 Cygni, not the star that originally "blew up."
 
 I found the data for this image on our server in the Conley Observatory of the Three Rivers Foundation. Taken this past June 2018 with some students at our week-long "Astrophysics in a Nutshell" course, there was only 2 hours of data total, 1 hour each of ionized hydrogen and oxygen data.
