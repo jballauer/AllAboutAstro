@@ -4,6 +4,7 @@ description: The North America Nebula (NGC 7000) and Pelican Nebula (IC 5070) in
 pubDate: 2017-09-12
 image: ./_images/north-america-pelican-nebulae.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

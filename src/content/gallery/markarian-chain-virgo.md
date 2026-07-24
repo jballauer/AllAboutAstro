@@ -4,6 +4,7 @@ description: A chain of galaxies at the heart of the Virgo Cluster.
 pubDate: 2017-08-25
 image: ./_images/markarian-chain-virgo.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

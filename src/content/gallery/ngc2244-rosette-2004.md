@@ -4,6 +4,7 @@ description: An early Ha(Ha+R)GB image of the Rosette Nebula from the original B
 pubDate: 2004-12-17
 image: ./_images/ngc2244-rosette-2004.jpg
 draft: false
+showInGallery: false
 ---
 
 An early Ha(Ha+R)GB image of the Rosette Nebula from the original Ballauer Observatory.

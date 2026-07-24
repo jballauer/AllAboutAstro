@@ -4,6 +4,7 @@ description: M33, the Triangulum Galaxy, an earlier LRGB image from Jay's archiv
 pubDate: 2017-10-09
 image: ./_images/m33-pinwheel-galaxy-early.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

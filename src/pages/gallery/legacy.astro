@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+// Unlisted staging gallery -- not linked from Nav.astro. Holds every entry
+// hidden from the main /gallery/ grid (showInGallery: false) so Jay can
+// browse them all in one place and decide which are worth promoting to the
+// main gallery (flip showInGallery back to true) as he works through them.
+const images = (await getCollection('gallery', ({ data }) => !data.draft && !data.showInGallery)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout title="Legacy Gallery">
+  <h1>Legacy Gallery</h1>
+  <p>Unlisted staging area for older/lesser images not yet promoted to the main <a href="/gallery/">Astro Gallery</a> -- earlier imaging attempts, and pages recently populated from the old CCD-camera archive. Review and flip <code>showInGallery</code> to <code>true</code> on any entry worth moving to the main gallery.</p>
+  <div class="grid">
+    {images.map((entry) => (
+      <a class="tile" href={`/gallery/${entry.id}/`}>
+        {entry.data.image && (
+          <span class="tile-image">
+            <Image src={entry.data.image} alt="" width={400} height={300} />
+            <span class="tile-caption">{entry.data.title}</span>
+          </span>
+        )}
+      </a>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .tile {
+    color: inherit;
+    text-decoration: none;
+  }
+  .tile-image {
+    position: relative;
+    display: block;
+  }
+  .tile-image :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .tile-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.6rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+</style>

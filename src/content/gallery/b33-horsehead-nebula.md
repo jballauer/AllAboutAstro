@@ -4,6 +4,7 @@ description: The Horsehead Nebula, a dark nebula silhouetted against IC 434 in O
 pubDate: 2017-09-27
 image: ./_images/b33-horsehead-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

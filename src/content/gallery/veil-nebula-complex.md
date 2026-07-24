@@ -4,6 +4,7 @@ description: The full Veil Nebula supernova remnant complex in Cygnus.
 pubDate: 2017-11-05
 image: ./_images/veil-nebula-complex.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

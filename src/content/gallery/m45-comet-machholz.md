@@ -4,6 +4,7 @@ description: The Pleiades star cluster with Comet Machholz passing nearby.
 pubDate: 2017-10-03
 image: ./_images/m45-comet-machholz.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

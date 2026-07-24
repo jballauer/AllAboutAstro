@@ -4,6 +4,7 @@ description: The Heart Nebula, a large emission nebula in Cassiopeia.
 pubDate: 2017-09-03
 image: ./_images/ic1805-heart-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

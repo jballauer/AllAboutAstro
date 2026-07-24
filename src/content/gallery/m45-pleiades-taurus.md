@@ -4,6 +4,7 @@ description: The Pleiades open star cluster (the Seven Sisters) in Taurus.
 pubDate: 2017-12-02
 image: ./_images/m45-pleiades-taurus.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

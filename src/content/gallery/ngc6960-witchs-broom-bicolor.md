@@ -4,6 +4,7 @@ description: The Witch's Broom, the western filament of the Veil Nebula supernov
 pubDate: 2017-12-29
 image: ./_images/ngc6960-witchs-broom-bicolor.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

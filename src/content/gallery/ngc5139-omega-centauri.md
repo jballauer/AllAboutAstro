@@ -4,6 +4,7 @@ description: Omega Centauri, the largest and brightest globular cluster in the M
 pubDate: 2017-10-21
 image: ./_images/ngc5139-omega-centauri.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

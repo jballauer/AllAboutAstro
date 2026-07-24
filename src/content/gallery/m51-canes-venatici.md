@@ -4,6 +4,7 @@ description: M51, the Whirlpool Galaxy, a spiral galaxy interacting with its sma
 pubDate: 2017-08-19
 image: ./_images/m51-canes-venatici.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

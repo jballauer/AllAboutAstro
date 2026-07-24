@@ -4,6 +4,7 @@ description: The colorful dust and reflection nebula complex surrounding Antares
 pubDate: 2017-10-30
 image: ./_images/rho-ophiuchus-antares-region.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

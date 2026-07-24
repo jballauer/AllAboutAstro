@@ -4,6 +4,7 @@ description: The Orion Nebula rendered in a narrowband bicolor palette.
 pubDate: 2017-12-26
 image: ./_images/m42-orion-bicolor.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

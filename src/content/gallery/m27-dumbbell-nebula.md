@@ -4,6 +4,7 @@ description: M27, the Dumbbell Nebula, a bright planetary nebula in Vulpecula.
 pubDate: 2017-09-21
 image: ./_images/m27-dumbbell-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

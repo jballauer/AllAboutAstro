@@ -4,6 +4,7 @@ description: M13, the Great Globular Cluster in Hercules.
 pubDate: 2017-10-12
 image: ./_images/m13-hercules-cluster.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

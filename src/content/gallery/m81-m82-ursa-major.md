@@ -4,6 +4,7 @@ description: The galaxy pair M81 (Bode's Galaxy) and M82 (the Cigar Galaxy) in U
 pubDate: 2017-11-14
 image: ./_images/m81-m82-ursa-major.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

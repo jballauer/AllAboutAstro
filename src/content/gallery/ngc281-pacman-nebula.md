@@ -4,6 +4,7 @@ description: The Pacman Nebula, an emission nebula and cluster in Cassiopeia.
 pubDate: 2017-08-22
 image: ./_images/ngc281-pacman-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

@@ -4,6 +4,7 @@ description: The Orion Nebula rendered in the narrowband "Hubble palette" (SII/H
 pubDate: 2017-12-23
 image: ./_images/m42-orion-hubble-palette.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

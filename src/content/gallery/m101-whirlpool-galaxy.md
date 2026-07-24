@@ -4,6 +4,7 @@ description: M101, a large face-on spiral galaxy in Ursa Major.
 pubDate: 2017-11-26
 image: ./_images/m101-whirlpool-galaxy.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

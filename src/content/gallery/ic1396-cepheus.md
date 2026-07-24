@@ -4,6 +4,7 @@ description: IC 1396, a vast emission nebula and star-forming region in Cepheus,
 pubDate: 2017-10-06
 image: ./_images/ic1396-cepheus.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

@@ -4,6 +4,7 @@ description: The Lagoon Nebula, a star-forming emission nebula in Sagittarius.
 pubDate: 2017-11-29
 image: ./_images/m8-lagoon-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

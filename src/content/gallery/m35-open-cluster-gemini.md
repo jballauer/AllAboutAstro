@@ -4,6 +4,7 @@ description: M35, a bright open star cluster in Gemini.
 pubDate: 2017-08-31
 image: ./_images/m35-open-cluster-gemini.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

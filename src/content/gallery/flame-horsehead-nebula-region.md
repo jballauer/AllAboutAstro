@@ -4,6 +4,7 @@ description: The Flame Nebula (NGC 2024) and Horsehead Nebula (B33) region near 
 pubDate: 2017-12-05
 image: ./_images/flame-horsehead-nebula-region.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

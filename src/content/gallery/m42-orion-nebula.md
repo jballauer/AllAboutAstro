@@ -4,6 +4,7 @@ description: The Orion Nebula, a bright star-forming region in Orion.
 pubDate: 2017-10-18
 image: ./_images/m42-orion-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

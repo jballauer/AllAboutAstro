@@ -4,6 +4,7 @@ description: NGC 4565, the "Needle Galaxy," a striking edge-on spiral in Coma Be
 pubDate: 2017-08-13
 image: ./_images/ngc4565-coma-berenices.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

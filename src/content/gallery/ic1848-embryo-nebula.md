@@ -4,6 +4,7 @@ description: The Embryo Nebula (IC 1848), part of the Soul Nebula complex in Cas
 pubDate: 2017-11-11
 image: ./_images/ic1848-embryo-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

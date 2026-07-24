@@ -4,6 +4,7 @@ description: The Cygnus Wall, the brightest ridge of the North America Nebula, i
 pubDate: 2017-12-20
 image: ./_images/ngc7000-cygnus-wall-hubble-palette.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

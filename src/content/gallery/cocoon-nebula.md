@@ -4,6 +4,7 @@ description: IC 5146, the Cocoon Nebula, a star-forming emission/reflection nebu
 pubDate: 2017-09-09
 image: ./_images/cocoon-nebula.jpg
 draft: false
+showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*
