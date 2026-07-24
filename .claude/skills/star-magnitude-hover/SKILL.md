@@ -1,9 +1,15 @@
 ---
 name: star-magnitude-hover
-description: Add hoverable/tappable star markers (name + real catalog magnitude) to an astrophoto on the site — plate-solve the image via astrometry.net, cross-match star identities/magnitudes against SIMBAD, then render CSS-only tooltip markers that stay fully invisible until interacted with. Use whenever the user wants "mouseover shows the magnitude" on a deep-sky image, wants to label named stars in a photo accurately, or mentions this being wrong/approximate on a previous attempt. First built 2026-07-24 on the Pleiades (M45) Mosaic gallery page, then refined same-day to make markers transparent by default at Jay's request ("I wouldn't want it defaced") since the intended use is the article's main presentation image, not just a small sidebar chart — read this before re-deriving the process, guessing star positions from memory/geometry by hand, or defaulting markers back to visible.
+description: Add hoverable/tappable star markers (name + real catalog magnitude) to an astrophoto on the site — plate-solve the image via astrometry.net, cross-match star identities/magnitudes against SIMBAD, then render CSS-only tooltip markers that stay fully invisible until interacted with. Use whenever the user wants "mouseover shows the magnitude" on a deep-sky image, wants to label named stars in a photo accurately, or mentions this being wrong/approximate on a previous attempt. This is the settled, complete design (Jay: "Right [write] that as the complete version of that skill. When I want it used, I'll call it.") — apply it as-is, on request only; don't roll it out proactively to other images and don't redesign the interaction model without Jay asking first.
 ---
 
 # Star-magnitude hover markers
+
+**Status: settled/complete as of 2026-07-24.** Piloted and finalized on
+the Pleiades (M45) Mosaic gallery page through several rounds of live
+feedback (visible markers → fully transparent markers; caption sizing/
+alignment). Apply this recipe as-is on other images when asked — this is
+not a first draft to keep iterating on by default.
 
 Site mechanism for showing a star's name and real catalog magnitude on
 hover/tap, without permanently baking text onto the photo **and without
@@ -118,7 +124,14 @@ No new JS. Reuse the `.ke-star-hover*` classes already defined in
 <!-- one <button> per star -->
 
 </div>
+
+<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; star identities and magnitudes cross-matched against the SIMBAD catalog. Hover (or tap, on touch devices) a marker to see that star's name and apparent magnitude.</p>
 ```
+
+Include the `.ke-star-hover-caption` paragraph every time — it's the
+only cue a reader gets that the image is interactive at all, given the
+markers themselves are invisible at rest (see below). Reword its wording
+to fit context, but keep a `.ke-star-hover-caption` caption present.
 
 - **Blank lines around the `![]()` matter** — Astro's markdown processor
   only optimizes/converts the image if it's its own paragraph (blank line
@@ -150,6 +163,19 @@ No new JS. Reuse the `.ke-star-hover*` classes already defined in
   markers findable without needing to hunt pixel-by-pixel. If markers
   still feel hard to find in practice, grow this further rather than
   making them visible.
+- **`.ke-star-hover-caption` is 10pt, centered, italic.** Watch for CSS
+  specificity fights if this markup lands inside a `.ke-sidebar` (e.g.
+  the `.ke-two-col-about` pattern) — `.ke-sidebar.ke-two-col-about p`
+  (two classes + element, specificity 0,2,1) silently overrode the
+  caption's plain single-class font-size rule (0,1,0) the first time,
+  even though the caption rule came later in the stylesheet. Fixed with
+  a same-specificity rule scoped the same way
+  (`.ke-sidebar p.ke-star-hover-caption`, also 0,2,1) placed after it, so
+  source order breaks the tie. If this markup lands inside some other
+  container with its own `p` styling, check computed styles
+  (`getComputedStyle`), don't just trust that setting the property once
+  worked — a silent override like this won't error, it'll just look
+  wrong.
 
 ## How to verify
 
@@ -173,6 +199,10 @@ screenshot lands in the wrong place. Instead:
    the CSS `:hover` rule fired, then take a confirming screenshot.
 
 ## Extending to another image
+
+**Apply this only when Jay asks for it on a specific image** — this is a
+deliberate, finished design he settled on, not a default to add
+proactively to other gallery/article images just because it exists.
 
 1. Make sure you're plate-solving the clean, unlabeled source file (check
    `git log`/memory for whether a prior pass already baked text into it —
