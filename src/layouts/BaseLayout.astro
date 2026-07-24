@@ -490,6 +490,11 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   }
   .ke-two-col-specs {
     flex: 1 1 280px;
+    /* Flex items default to min-width:auto, which lets a wide image inside
+       either column (e.g. a reference chart) force that column past its
+       flex-basis and squeeze its sibling. Allow both to shrink normally so
+       `img { max-width: 100% }` actually applies within the column. */
+    min-width: 0;
   }
   .ke-two-col-specs p {
     margin: 0 0 0.6rem;
@@ -501,6 +506,7 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     float: none;
     width: auto;
     margin: 0;
+    min-width: 0;
   }
   /* .ke-sidebar p defaults to the smaller K&E body-text size; here it sits
      beside plain-default-size prose in .ke-two-col-specs, so match that. */
