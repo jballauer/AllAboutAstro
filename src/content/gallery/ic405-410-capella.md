@@ -4,7 +4,6 @@ description: The Flaming Star Nebula (IC 405) and IC 410, a pair of emission neb
 pubDate: 2017-11-20
 image: ./_images/ic405-410-capella.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

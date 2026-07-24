@@ -4,7 +4,6 @@ description: M65, M66, and NGC 3628, a compact group of spiral galaxies in Leo.
 pubDate: 2017-09-18
 image: ./_images/leo-trio.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

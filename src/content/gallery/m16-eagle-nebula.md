@@ -4,7 +4,6 @@ description: The Eagle Nebula, home of the "Pillars of Creation," in Serpens.
 pubDate: 2017-09-24
 image: ./_images/m16-eagle-nebula.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

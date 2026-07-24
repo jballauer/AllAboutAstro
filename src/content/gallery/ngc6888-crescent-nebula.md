@@ -4,7 +4,6 @@ description: The Crescent Nebula, a Wolf-Rayet wind-blown bubble in Cygnus.
 pubDate: 2017-09-15
 image: ./_images/ngc6888-crescent-nebula.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

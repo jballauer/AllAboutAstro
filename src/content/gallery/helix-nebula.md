@@ -4,7 +4,6 @@ description: NGC 7293, one of the closest and largest planetary nebulae, in Aqua
 pubDate: 2017-11-02
 image: ./_images/helix-nebula.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

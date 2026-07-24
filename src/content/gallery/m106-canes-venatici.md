@@ -4,7 +4,6 @@ description: M106, a Seyfert spiral galaxy in Canes Venatici.
 pubDate: 2017-11-08
 image: ./_images/m106-canes-venatici.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

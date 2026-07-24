@@ -4,7 +4,6 @@ description: NGC 7023, the Iris Nebula, a reflection nebula in Cepheus.
 pubDate: 2017-09-30
 image: ./_images/iris-nebula.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*

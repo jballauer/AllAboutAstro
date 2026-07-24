@@ -4,7 +4,6 @@ description: NGC 7331, a large spiral galaxy in Pegasus, together with the faint
 pubDate: 2017-10-15
 image: ./_images/ngc7331-deer-lick-group.jpg
 draft: false
-showInGallery: false
 ---
 
 *Information about this image and its acquisition is forthcoming.*
