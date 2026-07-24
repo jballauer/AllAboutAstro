@@ -172,29 +172,19 @@ const gear = {
 
     <p>In my time as a teacher and presenter of CCD topics and hands-on astronomy workshops, particularly to beginners, I've learned that I cannot take the approach of, "What questions do you have and let's see if I can answer them?"</p>
 
-    <div class="welcome-row">
-      <div class="highlights">
-        <div class="highlights-stage">
-          <button type="button" class="hl-pause" aria-label="Pause slideshow">Pause ❙❙</button>
-          <button type="button" class="hl-prev" aria-label="Previous image">‹</button>
-          <button type="button" class="hl-next" aria-label="Next image">›</button>
-          {highlightSlides.map((src, i) => (
-            <Image src={src} alt="A highlight image from All About Astro" width={620} class="hl-slide" data-index={i} data-active={i === 0} />
-          ))}
-        </div>
-        <div class="hl-thumbs">
-          {highlightSlides.map((src, i) => (
-            <Image src={src} alt="" width={90} class="hl-thumb" data-index={i} data-active={i === 0} />
-          ))}
-        </div>
+    <div class="highlights">
+      <div class="highlights-stage">
+        <button type="button" class="hl-pause" aria-label="Pause slideshow">Pause ❙❙</button>
+        <button type="button" class="hl-prev" aria-label="Previous image">‹</button>
+        <button type="button" class="hl-next" aria-label="Next image">›</button>
+        {highlightSlides.map((src, i) => (
+          <Image src={src} alt="A highlight image from All About Astro" width={620} class="hl-slide" data-index={i} data-active={i === 0} />
+        ))}
       </div>
-
-      <div class="welcome-row-text">
-        <p>Second, teaching WHAT to do in this hobby, in the long-run, will not be as effective as teaching WHY. The person who understands the concepts and philosophies will soon be able to make decisions outside the scope of this website. This will lead to an understanding that promotes progress and innovation within the hobby, making it more likely that the imager will be able to contribute back to the astroimaging community at large.</p>
-
-        <p>Regardless of the reason you are in the hobby or the goals you hope to achieve, the problem with being a beginner is that we spend most of our time trying to figure out what questions we need to ask. Whereas there are many resources that can teach the hobby, I have found that too many of them leave me desiring for more, and more often than not, they leave us with apprehension about what is next.</p>
-
-        <p>Therefore this website not only showcases some fine astrophotography, but will help you learn how to do the same. It will attempt to tell you what questions you need to ask and when you need to ask them. This way, you can research your inquiries, perhaps beginning with this website and finishing in the laboratory of experience. But in the end, as comprehensive as you might find the information contained herein, it is my desire that All About Astro.com will prove authoritative, not because some guy like me wrote it, but rather because you find success in the methods contained on these pages.</p>
+      <div class="hl-thumbs">
+        {highlightSlides.map((src, i) => (
+          <Image src={src} alt="" width={90} class="hl-thumb" data-index={i} data-active={i === 0} />
+        ))}
       </div>
     </div>
 
@@ -204,7 +194,13 @@ const gear = {
 
     <p>But there are a couple of other reasons to express the hobby in such a way. First, the number of hardware and software options available to the hobbyist does not permit individual tutorials on specific software and hardware without also alienating the reader who has a different set of tools, or promoting only my favorite tools - I will do some of that, but only because I feel the tools are that good.</p>
 
-    <p>Give a person a fish, and he feeds for a day...teach a person to fish, and...well...you get it. Pithy saying, but applicable.</p>
+    <p>Second, teaching WHAT to do in this hobby, in the long-run, will not be as effective as teaching WHY. The person who understands the concepts and philosophies will soon be able to make decisions outside the scope of this website. This will lead to an understanding that promotes progress and innovation within the hobby, making it more likely that the imager will be able to contribute back to the astroimaging community at large.</p>
+
+    <p>Regardless of the reason you are in the hobby or the goals you hope to achieve, the problem with being a beginner is that we spend most of our time trying to figure out what questions we need to ask. Whereas there are many resources that can teach the hobby, I have found that too many of them leave me desiring for more, and more often than not, they leave us with apprehension about what is next.</p>
+
+    <p>Therefore this website not only showcases some fine astrophotography, but will help you learn how to do the same. It will attempt to tell you what questions you need to ask and when you need to ask them. This way, you can research your inquiries, perhaps beginning with this website and finishing in the laboratory of experience. But in the end, as comprehensive as you might find the information contained herein, it is my desire that All About Astro.com will prove authoritative, not because some guy like me wrote it, but rather because you find success in the methods contained on these pages.</p>
+
+    <p class="ke-clear">Give a person a fish, and he feeds for a day...teach a person to fish, and...well...you get it. Pithy saying, but applicable.</p>
 
     <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="signature" />
   </section>
@@ -352,34 +348,21 @@ const gear = {
     color: var(--color-prose-text);
   }
 
-  .welcome-row {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-  }
+  /* Floated alongside the surrounding Welcome-section prose, unrelated to
+     any specific paragraph -- same 46% figure-float proportion as the
+     site's .ke-figure-left convention, so it doesn't strand a narrow
+     sliver of text next to it. */
   .highlights {
-    flex: 0 0 55%;
-    max-width: 55%;
-  }
-  .welcome-row-text {
-    flex: 1;
-    min-width: 0;
-  }
-  .welcome-row-text p {
-    font-family: var(--font-body);
-    font-size: var(--font-body-size);
-    line-height: var(--prose-line-height);
-    color: var(--color-prose-text);
+    float: left;
+    width: 46%;
+    margin: 0.3rem 1.75rem 1rem 0;
   }
 
   @media (max-width: 700px) {
-    .welcome-row {
-      flex-direction: column;
-    }
     .highlights {
-      flex-basis: auto;
-      max-width: 100%;
+      float: none;
+      width: 100%;
+      margin: 0 0 1.5rem;
     }
   }
   .highlights-stage {
