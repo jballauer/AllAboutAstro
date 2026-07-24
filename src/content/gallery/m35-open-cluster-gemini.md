@@ -1,12 +1,37 @@
 ---
 title: "M35 - Open Cluster in Gemini"
-description: M35, a bright open star cluster in Gemini.
-pubDate: 2017-08-31
+description: M35, a bright open star cluster in Gemini, paired with the fainter open cluster NGC 2158, in LRGB.
+pubDate: 2005-11-04
 image: ./_images/m35-open-cluster-gemini.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M35, paired with the open cluster NGC 2158, in LRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Eldorado Star Party, 2005, near Eldorado, Texas</p>
+<p><strong>Date:</strong> November 4, 2005</p>
+<p><strong>Seeing:</strong> 2/10</p>
+<p><strong>Transparency:</strong> 8/10</p>
+<p><strong>Temperature:</strong> 50 degrees F (-20c on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC with Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera</p>
+<p><strong>Exposure Info:</strong> LRGB image; 100:40:30:40 RGB (20 minute subexposures L, 10 minute subs RGB, color binned)</p>
+<p><strong>Processing Information:</strong> Acquisition in CCDSoft. Calibration, Registration, DDP, and RGB channel combine in MaxIm DL 4. LRGB combine, color balance, levels/curves, sharpening, and noise removal (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> Exceptionally poor seeing and wind during the blue channel exposure.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>At the foot of the twins in Gemini is a large open cluster known as M35. The cluster shines at mag 5.1 and consists prominently of young, hot blue stars. There is some reflection nebulosity to this cluster, but it's very difficult to capture. This photography merely hints at it. The larger, looser grouping of stars in the upper left hand corner is M35.</p>
+<p>Paired with M35 in this photo is the tight open cluster NGC 2158. This cluster of older stars shines at a magnitude of 8.6.</p>
+<p>M35 is easily seen with binocular in just about any sky. Its companion is a little more difficult to see, though even small scopes can bring it in if the sky is dark enough.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

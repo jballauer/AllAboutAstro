@@ -1,12 +1,36 @@
 ---
 title: The Cocoon Nebula
-description: IC 5146, the Cocoon Nebula, a star-forming emission/reflection nebula and cluster in Cygnus.
-pubDate: 2017-09-09
+description: IC 5146, the Cocoon Nebula, a star-forming emission/reflection nebula and cluster in Cygnus, in L(Ha+R)GB.
+pubDate: 2005-11-01
 image: ./_images/cocoon-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+IC 5146, the Cocoon Nebula, in L(Ha+R)GB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs, 3RF dark sky site near Crowell, TX, and Ballauer Observatory near Azle, TX</p>
+<p><strong>Date:</strong> October - November, 2005</p>
+<p><strong>Seeing:</strong> 3/10</p>
+<p><strong>Transparency:</strong> 6/10 average over 4 nights</p>
+<p><strong>Temperature:</strong> Chilly (-25 and -20 degrees C on camera)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC @ f/9 and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera (LRGB) and SBIG STL-6303e astro CCD camera (Ha and L)</p>
+<p><strong>Exposure Info:</strong> L(Ha+R)GB image; 330:30:20:30 minutes with 100 minutes of H-alpha blended with red channel (10 and 20 minute subexposures for L, 20 minute subexposures for Ha, and 5 minute subexposures for RGB, color binned)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), registration, gradient removal, and RGB channel combine in CCDstack (median combine). LRGB combine and Ha blending, color balance, levels/curves, and noise removal and local contrast enhancement (Noel Carboni's Astronomy Tools) in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> Data taken over 4 below average seeing nights&hellip;FWHM measures in the 2.8" to 3.5" range. Used both SBIG cameras for a variety of luminance data. H-alpha blended into the red channel only at 50% using the Lighten blending mode in Photoshop CS.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>At the northern end of constellation Cygnus is the nice emission/reflection nebula, the "Cocoon." It rests at the end of a long, streaming dark nebula, Barnard 168, that extends from near the head of the "swan," close to M39. Technically speaking, the IC designation goes with the open cluster of stars, whereas the nebulosity itself is identified as Sharpless 2-165. Most of the stars in the cluster are around magnitude 12 in brightness, with the brightest star at magnitude 9.6.</p>
+<p>Finding the Cocoon is not easy since there aren't a lot of obvious markers to direct a person to it. However, it can be viewed in dark skies through scopes as small as 4" using averted vision, once you know where it is. Of course, larger apertured scopes will make finding it and viewing it much easier. More than likely, using a UHC or OIII filter for this object will not help much, as a filterless view reveals more of the detail. Perhaps this is because of the dual nature of the nebula as both a reflector of star light and an emitter.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

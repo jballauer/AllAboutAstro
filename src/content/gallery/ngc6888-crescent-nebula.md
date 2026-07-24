@@ -1,12 +1,53 @@
 ---
 title: "NGC 6888 - Crescent Nebula"
-description: The Crescent Nebula, a Wolf-Rayet wind-blown bubble in Cygnus.
-pubDate: 2017-09-15
+description: The Crescent Nebula, a Wolf-Rayet wind-blown bubble in Cygnus, in HaRGB.
+pubDate: 2005-06-27
 image: ./_images/ngc6888-crescent-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+NGC 6888, the Crescent Nebula, in HaRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Ballauer Observatory near Azle, Texas</p>
+<p><strong>Date:</strong> June 26 &amp; 27, 2005</p>
+<p><strong>Seeing:</strong> 7/10</p>
+<p><strong>Transparency:</strong> 3/10</p>
+<p><strong>Temperature:</strong> 72 degrees F</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-6303e (Ha) and SBIG STL-11000M (RGB) astro CCD cameras</p>
+<p><strong>Filter:</strong> Custom Scientific 4.5nm Hydrogen-alpha filter</p>
+<p><strong>Exposure Info:</strong> HaRGB image - 120:80:50:80 minutes (20 minute subexposures for Ha; 10 minute subs for RGB; all unbinned)</p>
+<p><strong>Processing Information:</strong> Calibration, registration, DDP, and RGB combine in MaxIm DL 4. HaRGB combine, levels/curves, sharpening, and noise removal in Photoshop CS.</p>
+<p><strong>Extra Notes:</strong> H-alpha data blended 50% with the red channel to improve color saturation. H-alpha data was then used again as luminance.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>The Crescent Nebula, NGC 6888, is an interesting nebula with a peculiar and unique shape. At the center of the Nebula is a Wolf-Rayet star (WR 136) that shines at magnitude 7.4, a star in the latter part of its life-cycle that is shedding off its mass in the form of a strong, stellar wind. It has shed off all its hydrogen gases leaving its helium core exposed, a dynamic that will result eventually in a supernova explosion. The stellar winds stirred up the surrounding interstellar dust and gas causing ripples across the visible part of the nebula, which is now seen because the ultraviolet radiation of WR136 exciting the gases of the nebula, causing it to fluoresce.</p>
+<p>Many planetary nebulae have similar Wolf-Rayet stars at their center. In the case of NGC 6888, it is classified as an emission nebula because it emits its own light, although it shares many characteristics of planetary nebulae itself. The Crescent is quite difficult to observe visually because of its rather even surface illumination. To see it, you'll need medium to large aperture and dark skies.</p>
+
+</div>
+</div>
+
+<hr>
+
+<h3>Another View&hellip;</h3>
+
+![A wide-field Hydrogen-alpha shot of the region southeast of the Crescent Nebula](./_images/ngc6888-crescent-nebula-wide.jpg)
+
+<p>Here is a wide-field shot of the area extending south-east from the Crescent Nebula, NGC 6888, shown in the lower-left of this image. The total exposure is over 3 hours in Hydrogen-alpha light, a method that allows for capturing detail of the hydrogen gases being emitted in this area. It is a region of interesting nebulosity from the Cygnus Milky Way, a southern extension of IC 1318 around Gamma Cygni; however, none of the nebulosity in this image has a designation, at least none that I'm aware of. There are star clusters contained within the dust. Open clusters NGC 6871 and NGC 6883 are included at the right side of the image. NGC 6874 is at the upper left.</p>
+
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas<br>
+<strong>Date:</strong> July 11, 2004 and September 8, 2004<br>
+<strong>Scope/mount:</strong> Takahashi FSQ-106 @ f/5 and Tak NJP mount<br>
+<strong>Camera:</strong> SBIG STL-6303E, self-guided<br>
+<strong>Filter:</strong> Custom Scientific 4.5nm Hydrogen Alpha<br>
+<strong>Exposure Info:</strong> Grayscale, Hydrogen-alpha filtered image - 205 minutes (15 min. subexposures unbinned).<br>
+<strong>Processing Info:</strong> Dark frame calibration, flat-fields, registration, and average combine in MaxIm 4.0. Digital-Development in MaxIm. Levels, Curves, selective unsharp mask, and selective gaussian blur in Photoshop CS.</p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

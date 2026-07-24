@@ -1,12 +1,54 @@
 ---
 title: The Leo Trio
-description: M65, M66, and NGC 3628, a compact group of spiral galaxies in Leo.
-pubDate: 2017-09-18
+description: M65, M66, and NGC 3628, a compact group of spiral galaxies in Leo, imaged in LRGB with adaptive optics.
+pubDate: 2007-02-19
 image: ./_images/leo-trio.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Leo Trio of galaxies -- M65, M66, and NGC 3628 -- in LRGB.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs Astronomy Campus near Crowell, Texas</p>
+<p><strong>Date:</strong> February 18-19, 2007</p>
+<p><strong>Seeing:</strong> 9/10</p>
+<p><strong>Transparency:</strong> 9/10, windy on second night</p>
+<p><strong>Temperature:</strong> -25 degrees C on camera</p>
+<p><strong>Scope/Mount:</strong> Tak TOA-150 (with 67 flattener) on Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-11000M astro CCD camera plus AO-L adaptive optics</p>
+<p><strong>Exposure Info:</strong> LRGB image; 160:50:40:60 minutes (10 minute subexposures for RGB, 20 minute subexposures for L)</p>
+<p><strong>Processing Information:</strong> Acquisition with CCDSoft. Calibration (darks/flats), and registration in CCDStack (median combine). RGB/LRGB combine, color balance, levels/curves, and noise removal (Noel Carboni's Astronomy Tools) in Photoshop CS. Special thanks to the Three Rivers Foundation for use of the equipment.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Object</h2>
+<p>Leo is one of the more unrated constellations in the night sky. No, it is not filled with colorful nebula, a distinction of any constellation so far removed from the plane of our Milky Way. However, Leo is home to several of the best galaxies visible from earth. This image shows three of the most famous of the Leo galaxies, and together they are often called the "Leo Trio" or "Leo Triplet" of galaxies. Belonging to the M66 group, they reside some 35 million light years away.</p>
+<p>In the image above, M65 is the oblique spiral in the upper right, M66 is below, and NGC 3628 is the edge-on spiral to the left. Notice the faint trail of dust extending below and to the left of this galaxy. Together, they are a beautiful trio indeed, a favorite target for many astroimagers in the spring months.</p>
+<p>The cluster is quite easy to find, resting in the "back leg" of the Lion itself, between the Theta and Iota stars in Leo. Most any scope in dark skies can detect these bright galaxies - mag 8.9 for M66, mag 9.2 for M65, and mag 9.6 for NGC 3628.</p>
+
+</div>
+</div>
+
+<hr>
+
+<h3>Previous Images</h3>
+
+![An earlier attempt at the Leo Trio with an SBIG ST-10XME, February 2004](./_images/leo-trio-previous2004.jpg)
+
+<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas<br>
+<strong>Date:</strong> February 13, 2004<br>
+<strong>Temperature:</strong> 28 degrees F<br>
+<strong>Seeing:</strong> 8/10 (1.3 FWHM)<br>
+<strong>Transparency:</strong> 2/10<br>
+<strong>Scope/mount:</strong> Takahashi FSQ-106 @ f/5 and Celestron CGE mount<br>
+<strong>Camera:</strong> SBIG ST-10XME, self-guided<br>
+<strong>Exposure Info:</strong> RGB image - 40:40:60 minutes (10 min. subexposures)<br>
+<strong>Processing Info:</strong> Dark frame and flat field calibration, de-blooming, alignment, and Sigma combine of all channels in MaxIm 3.0. Digital-development in Images Plus. Color compositing in MaxIm. Curves, gradient removal, color balance, sharpening, and cropping in Photoshop CS. Final smoothing in Pleiades' SGBNR.</p>
+
+<p><em>Extra information: First light image with the SBIG ST-10xme. Taken low in the midst of lots of light pollution; around mag 2 skies. Thanks to Dr. Fred Koch for loaning me the ST-10.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

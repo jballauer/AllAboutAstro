@@ -1,12 +1,43 @@
 ---
 title: "M27 - The Dumbbell Nebula"
-description: M27, the Dumbbell Nebula, a bright planetary nebula in Vulpecula.
-pubDate: 2017-09-21
+description: M27, the Dumbbell Nebula, mapped to "Hubble" narrowband colors -- Red = SII, Green = Ha, Blue = OIII.
+pubDate: 2005-06-25
 image: ./_images/m27-dumbbell-nebula.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M27, the Dumbbell Nebula, in "Hubble" colors &mdash; Red = SII, Green = Ha, Blue = OIII.
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Ballauer Observatory near Azle, Texas</p>
+<p><strong>Date:</strong> June 24th and 25th, 2005</p>
+<p><strong>Seeing:</strong> 9/10</p>
+<p><strong>Transparency:</strong> 2/10 (shot near full moon phase)</p>
+<p><strong>Temperature:</strong> 69 to 72 degrees F (camera at -15c)</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC and Paramount ME</p>
+<p><strong>Camera:</strong> SBIG STL-6303e astro CCD camera</p>
+<p><strong>Filters:</strong> Custom Scientific 4.5nm Ha, OIII, and SII spectral line filters</p>
+<p><strong>Exposure Info:</strong> Mapped color image - SII/Ha/OIII - 120:300:80 minutes (20 minute subexposures unbinned)</p>
+<p><strong>Processing Information:</strong> Calibration, registration, hot/cold pixel removal, and DDP in MaxIm DL 4. LR Deconvolution on Ha channel in CCDSharp. Color mapping, cropping, color balance, levels/curves, sharpening, and noise removal in Photoshop CS.</p>
+<p><strong>Exposure Notes:</strong> This represents my first "mapped color" image taken with narrowband, spectral line filters. The SII data is mapped to the red channel, Ha to green, and OIII to blue. Seeing was exceptional, in the 1" arc second neighborhood, but data was taken near a full moon.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>No, this isn't a Hubble shot. But this image was acquired and processed just like the gorgeous Hubble telescope images that we've come to love. To accomplish this, the image was taken through specialized, narrowband emission line filters. This information was then "mapped" to the traditional red, green, and blue channels of an RGB image. The green portions of the image represent Hydrogen-alpha ionized gases. Most notably, these gases extend well outside the Dumbbell itself to form a halo around the outskirts, something that requires very long exposure times to capture in an amateur image. The color blue represents doubly ionized Oxygen gases, and as you'd expect from a planetary nebula, the heaviest concentration of these gases are around the core area itself. Finally, red represents singly ionized Sulfur gases. While the stars glow heavily in the sulfur wavelength, there is only a light concentration of it in the nebula, mostly throughout the brighter portions.</p>
+<p>Such images, while obviously beautiful, have a real scientific purpose. Because the colors are mapped specifically to certain gases, it's easy to understand the concentrations of ionizations and how (where) they interact with each other.</p>
+
+</div>
+</div>
+
+<p align="center"><em>M27 in "VLT" colors &mdash; Red = Ha, Green = OIII, Blue = SII (with a hint of Ha to simulate H-beta)</em></p>
+
+![M27, the Dumbbell Nebula, mapped to VLT-style narrowband colors](./_images/m27-dumbbell-nebula-eso.jpg)
+
+<p align="center"><em>This is an attempt to take the same spectral line data and use the same techniques as the well-known European Southern Observatory image of M27, taken in 1998 on the newly constructed 8.2 meter VLT scope -- albeit with far less aperture!</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
