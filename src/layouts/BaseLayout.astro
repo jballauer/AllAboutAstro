@@ -502,11 +502,17 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
-    align-items: flex-start;
   }
   .ke-sidebar-split-text {
     flex: 1 1 320px;
     min-width: 0;
+    /* Stretches to match the image column's height (the flex row's
+       default cross-axis stretch), then spreads its own children across
+       that full height so a short text block doesn't leave a void below
+       it when the image column runs taller. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .ke-sidebar-split-image {
     flex: 1 1 260px;
