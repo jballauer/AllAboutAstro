@@ -768,6 +768,13 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-figure-quarter.ke-figure-right {
     width: 22%;
   }
+  /* Caps a tall, narrow (portrait) screenshot placed inside a sidebar box
+     so it doesn't dictate the whole box's height on its own — a plain
+     full-width image at a steep aspect ratio (e.g. a phone-app checklist
+     screenshot) can otherwise tower over the sidebar's own prose. */
+  .ke-figure-narrow img {
+    max-width: 35%;
+  }
   /* A plain (non-floated) figure is a block-level replaced element that
      stays anchored to the container's own edge regardless of width — it
      does not shift sideways to sit beside an active float, so narrowing it
