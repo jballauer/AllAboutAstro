@@ -4,7 +4,6 @@ description: An image sequence of a Delta IV Centaur rocket fuel dump near Orion
 pubDate: 2007-11-11
 image: ./_images/delta-iv-fuel-dump.jpg
 draft: false
-showInGallery: false
 ---
 
 An image sequence of a Delta IV Centaur rocket fuel dump near Orion, first spotted with the naked eye and reported by visitors as a "comet."

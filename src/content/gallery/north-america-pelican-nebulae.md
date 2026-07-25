@@ -4,7 +4,6 @@ description: NGC 7000 and IC 5070, the North America and Pelican Nebulae in Cygn
 pubDate: 2006-09-19
 image: ./_images/north-america-pelican-nebulae.jpg
 draft: false
-showInGallery: false
 ---
 
 NGC 7000 and IC 5067/70 -- the North America and Pelican Nebulae -- in Ha+LRGB. Two earlier attempts are on file: an [HaRGB blend](/gallery/ngc7000-cygnus-wall-hubble-palette/) and a [plain LRGB](/gallery/ngc7000-cygnus-wall-visual-palette/) version, both from 2004.

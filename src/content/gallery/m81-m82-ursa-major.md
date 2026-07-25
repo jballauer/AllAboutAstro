@@ -4,10 +4,9 @@ description: M81, M82, and NGC 3077 -- the "classic duo plus one" in Ursa Major,
 pubDate: 2008-04-01
 image: ./_images/m81-m82-ursa-major.jpg
 draft: false
-showInGallery: false
 ---
 
-M81, M82, and NGC 3077 -- a classic duo plus one -- in LRGB.
+M81, M82, and NGC 3077 -- a classic duo plus one -- in LRGB. An [earlier attempt](/gallery/m81-m82-ursa-major-2004/) from 2004 is also on file.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
@@ -34,24 +33,6 @@ M81, M82, and NGC 3077 -- a classic duo plus one -- in LRGB.
 
 </div>
 </div>
-
-<hr>
-
-<h3>Previous Images</h3>
-
-![An earlier attempt at M81 and M82 with an SBIG ST-10XME, February 2004](./_images/m81-m82-ursa-major-previous2004.jpg)
-
-<p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas<br>
-<strong>Date:</strong> February 16, 2004 (RGB) and April 7, 2004 (Luminance)<br>
-<strong>Temperature:</strong> 60 degrees F<br>
-<strong>Seeing:</strong> 7/10 (1.4 FWHM)<br>
-<strong>Transparency:</strong> 4/10 (dew)<br>
-<strong>Scope/mount:</strong> RGB data - Takahashi FSQ-106 @ f/5 and Celestron CGE mount. Luminance data - Takahashi FSQ-106 @ f/8 and Tak NJP Temma 2 mount<br>
-<strong>Camera:</strong> SBIG ST-10XME, self-guided<br>
-<strong>Exposure Info:</strong> LRGB image - 160:80:80:80 minutes (10 min. subexposures RGB, 20 min. subexposures Luminance)<br>
-<strong>Processing Info:</strong> Dark frame calibration (no flats), de-blooming (New Astro Plug-in), registration, and Sigma combine of all channels in MaxIm 3.0. Background compensation, Digital-Development and Lucy-Richardson Deconvolution (10 iterations) in Images Plus. Final data combine, curves, levels, and color balance in Photoshop CS.</p>
-
-<p><em>Extra information: Green haloes caused by RGB data being shot at smaller focal length than Luminance. Deblooming still needs some work as well.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
