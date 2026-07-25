@@ -6,7 +6,7 @@ image: ./_images/ngc7000-ic5070-dslr.jpg
 draft: false
 ---
 
-The North America and Pelican Nebula region in Cygnus, one of four wide-field DSLR shots taken during a summer astrophysics workshop. A [later, deeper CCD attempt](/gallery/north-america-pelican-nebulae/) of the same region is also on file. Also from this DSLR session: the [Lagoon/Trifid region](/gallery/m8-m20-lagoon-trifid-dslr/), the [M16/M17 region](/gallery/m16-m17-region-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
+The North America and Pelican Nebula region in Cygnus, one of five wide-field DSLR shots taken during a summer astrophysics workshop. A [later, deeper CCD attempt](/gallery/north-america-pelican-nebulae/) of the same region is also on file. Also from this DSLR session: [M31](/gallery/m31-andromeda-dslr/), the [Lagoon/Trifid region](/gallery/m8-m20-lagoon-trifid-dslr/), the [M16/M17 region](/gallery/m16-m17-region-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">

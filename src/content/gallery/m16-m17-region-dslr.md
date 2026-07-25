@@ -6,7 +6,7 @@ image: ./_images/m16-m17-region-dslr.jpg
 draft: false
 ---
 
-The M16/M17 region -- the Eagle and Omega Nebulae -- in a wide DSLR field, one of four images taken during a summer astrophysics workshop. Also from that session: the [Lagoon/Trifid region](/gallery/m8-m20-lagoon-trifid-dslr/), the [North America and Pelican region](/gallery/ngc7000-ic5070-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
+The M16/M17 region -- the Eagle and Omega Nebulae -- in a wide DSLR field, one of five images taken during a summer astrophysics workshop. Also from that session: [M31](/gallery/m31-andromeda-dslr/), the [Lagoon/Trifid region](/gallery/m8-m20-lagoon-trifid-dslr/), the [North America and Pelican region](/gallery/ngc7000-ic5070-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">

@@ -6,7 +6,7 @@ image: ./_images/m8-m20-lagoon-trifid-dslr.jpg
 draft: false
 ---
 
-The Lagoon and Trifid Nebula region in Sagittarius, one of four wide-field DSLR shots taken during a summer astrophysics workshop. Also from that session: the [M16/M17 region](/gallery/m16-m17-region-dslr/), the [North America and Pelican region](/gallery/ngc7000-ic5070-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
+The Lagoon and Trifid Nebula region in Sagittarius, one of five wide-field DSLR shots taken during a summer astrophysics workshop. Also from that session: [M31](/gallery/m31-andromeda-dslr/), the [M16/M17 region](/gallery/m16-m17-region-dslr/), the [North America and Pelican region](/gallery/ngc7000-ic5070-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">

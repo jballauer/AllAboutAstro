@@ -1,12 +1,32 @@
 ---
 title: "M31 - Andromeda Galaxy (DSLR)"
 description: The Andromeda Galaxy captured with a DSLR camera.
-pubDate: 2017-12-14
+pubDate: 2018-07-24
 image: ./_images/m31-andromeda-dslr.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+M31, the Andromeda Galaxy, in a simple unguided DSLR field -- the first of five wide-field images taken during a summer astrophysics workshop. The other four followed a few months later: the [Lagoon/Trifid region](/gallery/m8-m20-lagoon-trifid-dslr/), the [M16/M17 region](/gallery/m16-m17-region-dslr/), the [North America and Pelican region](/gallery/ngc7000-ic5070-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/new-dslr-image-m31-astrogallery/).
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs Astronomy Campus</p>
+<p><strong>Date:</strong> June 2018</p>
+<p><strong>Scope/Mount:</strong> Takahashi FSQ-85ED ("Baby-Q") apo refractor @ f/5.3 on a Takahashi NJP mount</p>
+<p><strong>Camera:</strong> Nikon D810a DSLR</p>
+<p><strong>Exposure Info:</strong> 36 minutes total (2 minute subs, ISO 1600)</p>
+<p><strong>Extra Notes:</strong> Unattended and unguided -- polar aligned and pointed manually with the finder scope, then left to run on an on-camera intervalometer while the "Astrophysics in a Nutshell" workshop students worked on other things. Posted first of the five images from this session.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>M31, the Andromeda Galaxy, is bright and large enough to make an easy, forgiving target for a quick unguided DSLR exposure -- a good choice to shoot first while getting the rest of the workshop's data sets going.</p>
+<p>This was one of several simple, unattended data sets I shot for students at the workshop to practice their processing on -- about as close to "point and shoot" as astrophotography gets, and a good reminder of how much dark skies alone can do for you.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
