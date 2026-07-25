@@ -1,12 +1,32 @@
 ---
 title: North America and Pelican Nebulae (DSLR)
 description: The North America Nebula (NGC 7000) and neighboring Pelican Nebula (IC 5070) in Cygnus, captured with a DSLR camera.
-pubDate: 2017-12-08
+pubDate: 2018-10-29
 image: ./_images/ngc7000-ic5070-dslr.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The North America and Pelican Nebula region in Cygnus, one of four wide-field DSLR shots taken during a summer astrophysics workshop. A [later, deeper CCD attempt](/gallery/north-america-pelican-nebulae/) of the same region is also on file. Also from this DSLR session: the [Lagoon/Trifid region](/gallery/m8-m20-lagoon-trifid-dslr/), the [M16/M17 region](/gallery/m16-m17-region-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs Astronomy Campus</p>
+<p><strong>Date:</strong> June 2018</p>
+<p><strong>Scope/Mount:</strong> Takahashi FSQ-85ED ("Baby-Q") apo refractor @ f/5.3 on a Takahashi NJP mount</p>
+<p><strong>Camera:</strong> Nikon D810a DSLR</p>
+<p><strong>Exposure Info:</strong> 42 minutes total (2 minute subs, ISO 1600)</p>
+<p><strong>Extra Notes:</strong> Unattended and unguided -- polar aligned and pointed manually with the finder scope, then left to run on an on-camera intervalometer while the "Astrophysics in a Nutshell" workshop students worked on other things.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>NGC 7000 and IC 5070 -- the North America and Pelican Nebulae -- in a simple, unguided DSLR field. This wide, easy-to-recognize pairing in Cygnus was a good candidate for a short, no-fuss exposure while I let the workshop students handle themselves for a while.</p>
+<p>A few years later I came back to this same region with the observatory's cooled CCD camera and much longer exposure times, but this quick DSLR pass captures the pair well on its own.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

@@ -1,12 +1,32 @@
 ---
 title: "M8/M20 Region - The Lagoon and Trifid (DSLR)"
 description: The Lagoon Nebula (M8) and Trifid Nebula (M20) region in Sagittarius, captured with a DSLR camera.
-pubDate: 2017-12-11
+pubDate: 2018-10-29
 image: ./_images/m8-m20-lagoon-trifid-dslr.jpg
 draft: false
 ---
 
-*Information about this image and its acquisition is forthcoming.*
+The Lagoon and Trifid Nebula region in Sagittarius, one of four wide-field DSLR shots taken during a summer astrophysics workshop. Also from that session: the [M16/M17 region](/gallery/m16-m17-region-dslr/), the [North America and Pelican region](/gallery/ngc7000-ic5070-dslr/), and the [Rho-Antares region](/gallery/rho-antares-region-dslr/). This image is also covered in a [blog post](/blog/remaining-images-astrophysics-workshop-csac/).
+
+<div class="ke-two-col">
+<div class="ke-two-col-specs">
+
+<p><strong>Location:</strong> Comanche Springs Astronomy Campus</p>
+<p><strong>Date:</strong> June 2018</p>
+<p><strong>Scope/Mount:</strong> Takahashi FSQ-85ED ("Baby-Q") apo refractor @ f/5.3 on a Takahashi NJP mount</p>
+<p><strong>Camera:</strong> Nikon D810a DSLR</p>
+<p><strong>Exposure Info:</strong> 50 minutes total (2 minute subs, ISO 1600)</p>
+<p><strong>Extra Notes:</strong> Unattended and unguided -- polar aligned and pointed manually with the finder scope, then left to run on an on-camera intervalometer while the "Astrophysics in a Nutshell" workshop students worked on other things.</p>
+
+</div>
+<div class="ke-sidebar ke-two-col-about" data-color="teal">
+
+<h2>About this Image</h2>
+<p>M8, the Lagoon Nebula, and M20, the Trifid Nebula, framed together in one wide DSLR field. Both are easy visual targets in Sagittarius, and with the "Baby-Q" refractor's short focal length there was plenty of room to fit both in a single unguided exposure.</p>
+<p>This was one of several simple, unattended data sets I shot for students at the workshop to practice their processing on -- about as close to "point and shoot" as astrophotography gets, and a good reminder of how much dark skies alone can do for you.</p>
+
+</div>
+</div>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>

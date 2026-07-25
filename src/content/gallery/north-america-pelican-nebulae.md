@@ -6,7 +6,7 @@ image: ./_images/north-america-pelican-nebulae.jpg
 draft: false
 ---
 
-NGC 7000 and IC 5067/70 -- the North America and Pelican Nebulae -- in Ha+LRGB. Two earlier attempts are on file: an [HaRGB blend](/gallery/ngc7000-cygnus-wall-hubble-palette/) and a [plain LRGB](/gallery/ngc7000-cygnus-wall-visual-palette/) version, both from 2004.
+NGC 7000 and IC 5067/70 -- the North America and Pelican Nebulae -- in Ha+LRGB. Earlier attempts are on file: an [HaRGB blend](/gallery/ngc7000-cygnus-wall-hubble-palette/) and a [plain LRGB](/gallery/ngc7000-cygnus-wall-visual-palette/) version, both from 2004, plus a [quick DSLR shot](/gallery/ngc7000-ic5070-dslr/) from 2018.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
