@@ -1,33 +1,31 @@
 ---
-title: "NGC 6960 - The Veil Nebula"
-description: The Veil Nebula, a wide-field grayscale Hydrogen-Alpha image encompassing most of the supernova remnant complex.
-pubDate: 2003-05-19
+title: "NGC 6960 - Witch's Broom in Bicolor"
+description: A bicolor hydrogen/oxygen image of the western Veil Nebula, shot with students during a summer astrophysics course.
+pubDate: 2018-12-30
 image: ./_images/ngc6960-witchs-broom-bicolor.jpg
 draft: false
-showInGallery: false
 ---
 
-The Veil Nebula in Cygnus, in grayscale Hydrogen-Alpha. An [earlier film attempt](/gallery/veil-nebula-complex/) is also on file.
+NGC 6960, the Witch's Broom, in a bicolor hydrogen/oxygen palette. A [2003 grayscale attempt](/gallery/ngc6960-veil-nebula-2003/) is also on file. This image is also covered in a [blog post](/blog/ngc6960-witchs-broom-bicolor/).
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
 
-<p><strong>Location:</strong> Texas Star Party 2004 near Fort Davis, Texas</p>
-<p><strong>Seeing:</strong> 8/10</p>
-<p><strong>Transparency:</strong> 9/10</p>
-<p><strong>Date and Time:</strong> May 19, 2003</p>
-<p><strong>Equipment:</strong> Tak FSQ-106 on Tak NJP mount</p>
-<p><strong>Camera:</strong> SBIG STL-6303E, self-guided</p>
-<p><strong>Filter:</strong> Custom Scientific 5 nm H-alpha filter</p>
-<p><strong>Exposure information:</strong> Grayscale, 60 minutes (10 min sub-exposures)</p>
-<p><strong>Processing Information:</strong> Calibration, deblooming, alignment, and Sigma combine in MaxIm 4. Curves, Levels, and selective, iterative Unsharp Mask in Photoshop CS.</p>
-<p><strong>Exposure Notes:</strong> This was my first attempt at using the 5 nm H-alpha filter that is integrated into the STL-6303E. I didn't have as difficult a time finding a guidestar as I originally feared.</p>
+<p><strong>Location:</strong> Comanche Springs Astronomy Campus</p>
+<p><strong>Date:</strong> June 2018</p>
+<p><strong>Scope/Mount:</strong> 12.5" RCOS RC on a Paramount ME</p>
+<p><strong>Camera:</strong> FLI PL-16803</p>
+<p><strong>Filters:</strong> AstroDon 3nm spectral band filters (Ha, OIII)</p>
+<p><strong>Exposure Info:</strong> Bicolor image, 2 hours total data (1 hour ionized hydrogen, 1 hour ionized oxygen)</p>
+<p><strong>Processing Information:</strong> Bicolor palette -- hydrogen (H-alpha) data mapped to the red channel, oxygen (OIII) data mapped to the blue channel, and a 70/30 percent blend of OIII and H-alpha respectively assigned to the green channel.</p>
+<p><strong>Extra Notes:</strong> Data found on the Conley Observatory server at the Three Rivers Foundation, taken with students during the week-long "Astrophysics in a Nutshell" course.</p>
 
 </div>
 <div class="ke-sidebar ke-two-col-about" data-color="teal">
 
-<h2>About this Object</h2>
-<p>Perhaps my favorite visual object! This area of the sky is huge, so large in fact that placing all three segments of this supernova remnant on the CCD chip is rarely done without some form of mosaic. In this case, a large format CCD coupled with a short focal length astrograph can produce a thrilling, wide-field view of most all of the nebular regions of this complex.</p>
+<h2>About this Image</h2>
+<p>This is an image of NGC 6960, the western portion of the Veil Nebula. Known as the "Witch's Broom" or "Finger of God," among other names, this is only a small part of a larger complex of a supernova remnant; an exploded star. This intricate display of hydrogen and oxygen gases is centered around the star 52 Cygni, not the star that originally "blew up."</p>
+<p>Honestly, I didn't think much of the data at first, since we are now so conditioned to going long with our images. So, instead of aiming for a polished image, I merely passed it off as a part of the learning with our students. Certainly, more exposure time could bring out more of the faint background gases and clean up the image a little better, but processing it like this just goes to show that not everything needs hours of exposure time.</p>
 
 </div>
 </div>

@@ -7,7 +7,7 @@ draft: false
 showInGallery: false
 ---
 
-An early film exposure of the Veil Nebula in Cygnus. A [later, deeper CCD attempt](/gallery/ngc6960-witchs-broom-bicolor/) is also on file.
+An early film exposure of the Veil Nebula in Cygnus. A [later, deeper CCD attempt](/gallery/ngc6960-veil-nebula-2003/) and a [more recent bicolor image](/gallery/ngc6960-witchs-broom-bicolor/) are also on file.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
