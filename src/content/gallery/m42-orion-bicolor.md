@@ -10,7 +10,7 @@ showInGallery: false
 The Great Orion Nebula complex in Hydrogen-Alpha light.
 
 <div class="ke-two-col">
-<div class="ke-two-col-specs">
+<div class="ke-two-col-specs" data-width="widest">
 
 <p><strong>Location:</strong> Eldorado Star Party 2004 near San Angelo, Texas</p>
 <p><strong>Date:</strong> October 15, 2004</p>
