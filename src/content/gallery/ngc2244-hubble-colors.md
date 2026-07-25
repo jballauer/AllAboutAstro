@@ -6,7 +6,7 @@ image: ./_images/ngc2244-hubble-colors.jpg
 draft: false
 ---
 
-"When Roses Aren't Red" — a Hubble-palette spectral band mosaic of the Rosette Nebula, featured as NASA's APOD.
+"When Roses Aren't Red" — a Hubble-palette spectral band mosaic of the Rosette Nebula, featured as NASA's APOD. The same data set is also [reprocessed in CFHT colors](/gallery/ngc2244-cfht-colors/).
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
