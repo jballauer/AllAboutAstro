@@ -6,7 +6,7 @@ image: ./_images/ngc5139-omega-centauri.jpg
 draft: false
 ---
 
-Omega Centauri, NGC 5139, in grayscale luminance -- shot just 11 degrees above the southern horizon.
+Omega Centauri, NGC 5139, in grayscale luminance -- shot just 11 degrees above the southern horizon. An [earlier, lower attempt](/gallery/ngc5139-omega-centauri-2004/) from a month prior is also on file.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
@@ -28,23 +28,6 @@ Omega Centauri, NGC 5139, in grayscale luminance -- shot just 11 degrees above t
 
 </div>
 </div>
-
-<hr>
-
-<h3>Previous Attempt</h3>
-
-![An earlier attempt at Omega Centauri with an SBIG ST-10xme, April 2004](./_images/ngc5139-omega-centauri-previous2004.jpg)
-
-<p><strong>Location:</strong> Copperbreaks Star Park near Quanah, Texas<br>
-<strong>Date and Time:</strong> April 17, 2004 @ 12:30 AM<br>
-<strong>Seeing:</strong> 8/10<br>
-<strong>Transparency:</strong> 7/10<br>
-<strong>Equipment:</strong> Tak FSQ-106 @ f/5 on Tak NJP mount<br>
-<strong>Camera:</strong> SBIG ST-10xme<br>
-<strong>Exposure Info:</strong> Grayscale (5 x 5 minutes)<br>
-<strong>Processing Information:</strong> Calibration, deblooming and registration in MaxIm DL 3. Digital development, Lucy-Richardson Deconvolution (10 iterations), and Background Compensation in Images Plus. Unsharp Mask, Curves and cropping in Photoshop CS.</p>
-
-<p><em>Note: Wind gusts of around 20 mph during time of exposure. Object was taken only 7 degrees from horizon in the midst of skyglow from a small town (Crowell, TX). Seeing was exceptional for an image this low. Thanks to Dr. Fred Koch for the use of the NJP mount and ST10xme camera.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
