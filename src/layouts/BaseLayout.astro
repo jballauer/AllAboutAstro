@@ -805,6 +805,32 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
   .ke-image-feature-row p {
     margin: 0;
   }
+  /* Uniform grid variant — for sets where the shots should read as one
+     evenly-matched set (e.g. four frames from the same session) rather than
+     the default natural-aspect-ratio row, which looks uneven when the
+     source images don't share a common aspect ratio. */
+  .ke-image-feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .ke-image-feature-grid .ke-image-feature-item {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .ke-image-feature-grid .ke-image-feature-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+  }
+  @media (max-width: 500px) {
+    .ke-image-feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
   .ke-image-feature-caption {
     font-family: var(--font-body);
     font-size: 0.85rem;

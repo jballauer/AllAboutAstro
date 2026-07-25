@@ -5,30 +5,26 @@ pubDate: 2018-10-29
 draft: false
 ---
 
-<div class="ke-image-feature">
-<div class="ke-image-feature-row">
+<div class="ke-image-feature ke-image-feature-grid">
 <div class="ke-image-feature-item">
 
-![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-1.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-2.jpg)
+![Lagoon and Trifid Nebula Region](./_images/remaining-images-astrophysics-workshop-csac-gal0-1.jpg)
 
 </div>
 <div class="ke-image-feature-item">
 
-![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-3.jpg)
+![M16 and M17 Region](./_images/remaining-images-astrophysics-workshop-csac-gal0-2.jpg)
 
 </div>
-</div>
-<div class="ke-image-feature-row">
 <div class="ke-image-feature-item">
 
-![Photo](./_images/remaining-images-astrophysics-workshop-csac-gal0-4.jpg)
+![North America and Pelican Nebula Region](./_images/remaining-images-astrophysics-workshop-csac-gal0-3.jpg)
 
 </div>
+<div class="ke-image-feature-item">
+
+![Rho-Antares Region](./_images/remaining-images-astrophysics-workshop-csac-gal0-4.jpg)
+
 </div>
 </div>
 In addition to the M31 shot posted previously, I made the effort to shoot 4 more images at June's "Astrophysics in a Nutshell" Workshop at CSAC.
