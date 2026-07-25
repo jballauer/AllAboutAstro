@@ -494,6 +494,31 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     text-decoration: underline;
   }
 
+  /* Internal text+image split for a `data-width="full"` sidebar — the
+     full-width variant otherwise leaves a single wide text column with
+     nothing to keep it company; this recreates the original two-column
+     layout Weebly used inside its own closing "aside" boxes. */
+  .ke-sidebar-split {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .ke-sidebar-split-text {
+    flex: 1 1 320px;
+    min-width: 0;
+  }
+  .ke-sidebar-split-image {
+    flex: 1 1 260px;
+    min-width: 0;
+  }
+  .ke-sidebar-split-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
   /* Two-column spec-list + narrative-sidebar layout — built for the M31
      Mosaic gallery page but written generically so any gallery entry can
      reuse it: a plain spec list on the left, a `.ke-sidebar`-colored box
