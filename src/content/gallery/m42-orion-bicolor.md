@@ -1,5 +1,5 @@
 ---
-title: "M42 - The Orion Nebula in Bicolor"
+title: "M42 - The Orion Nebula in Hydrogen-Alpha"
 description: A wide-field view of the entire Orion Nebula complex in narrowband Hydrogen-Alpha light.
 pubDate: 2004-10-15
 image: ./_images/m42-orion-bicolor.jpg
