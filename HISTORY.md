@@ -132,4 +132,10 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 
 ---
 
+## 2026-07-24 — Solar Eclipse Guide audit
+
+- Audited The April 2024 Total Solar Eclipse Guide for Teachers (and Non-Teachers): restored ~85 dropped bold+italic emphasis spans (old Weebly page wrapped nearly every emphasized phrase in nested `<strong><em>`, migrated to plain text) via an anchored Node script keyed on surrounding context, with 9 anchor collisions fixed by hand; restored the missing closing signature graphic (Jay's cursive signature, same file already used on the Globular Clusters and Space Is a Landscape articles) which the old page placed after the final "Remaining thoughts" paragraph but before a trailing addendum sidebar, not at the true end of the page; fixed two "SIDEBAR: X"-titled boxes (Proper Viewing Safety, Equipment and Packing List) that were orange instead of the required teal default, while correctly leaving two untitled trailing sidebars orange; fixed a genuine narrow-line-wrap violation where a right-floated map and a left-floated screenshot placed back-to-back squeezed several lines of body text into a ~20px-wide column (added `ke-clear` to force stacking); fixed 5 heading-immediately-followed-by-figure violations (Planning for the Eclipse, Methods for Observing the Eclipse, Nature Observations, Natural Observations at Totality, Photography with a "Real" Camera) by moving each section's lead paragraph ahead of its floated figure
+
+---
+
 *All 13 Learning articles reached visual parity as of 2026-07-22. See project memory for open items (image lightbox rollout, stub landing pages, nav sweep). Per-article audit status is now tracked via dated bullets above and `git log` per file, not this rollup line — treat this note as a snapshot, not a source of truth.*
