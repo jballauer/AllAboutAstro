@@ -53,6 +53,10 @@ const gallery = defineCollection({
     description: z.string().optional(),
     pubDate: z.coerce.date(),
     image: image().optional(),
+    // Custom-cropped alternate for the /gallery/ grid tile, when the default
+    // centered/gravity-based auto-crop of `image` doesn't frame the subject
+    // well (e.g. two widely separated galaxies). Falls back to `image`.
+    thumbnailImage: image().optional(),
     equipment: z.string().optional(),
     exposure: z.string().optional(),
     draft: z.boolean().default(false),

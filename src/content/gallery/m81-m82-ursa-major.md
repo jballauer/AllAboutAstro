@@ -3,6 +3,7 @@ title: M81/82 in Ursa Major
 description: M81, M82, and NGC 3077 -- the "classic duo plus one" in Ursa Major, in LRGB.
 pubDate: 2008-04-01
 image: ./_images/m81-m82-ursa-major.jpg
+thumbnailImage: ./_images/m81-m82-ursa-major-thumb.jpg
 draft: false
 ---
 

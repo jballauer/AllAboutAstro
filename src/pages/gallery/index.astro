@@ -27,7 +27,6 @@ const images = [...known, ...undated];
 // subject doesn't get cut off -- see the comet-neowise-timelapse entry.
 const thumbPosition: Record<string, string> = {
   'comet-neowise-timelapse': 'left',
-  'm81-m82-ursa-major': 'bottom',
 };
 ---
 
@@ -42,7 +41,7 @@ const thumbPosition: Record<string, string> = {
         {entry.data.image && (
           <span class="tile-image">
             <Image
-              src={entry.data.image}
+              src={entry.data.thumbnailImage ?? entry.data.image}
               alt=""
               width={400}
               height={300}

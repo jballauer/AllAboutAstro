@@ -20,7 +20,7 @@ const images = (await getCollection('gallery', ({ data }) => !data.draft && !dat
       <a class="tile" href={`/gallery/${entry.id}/`}>
         {entry.data.image && (
           <span class="tile-image">
-            <Image src={entry.data.image} alt="" width={400} height={300} />
+            <Image src={entry.data.thumbnailImage ?? entry.data.image} alt="" width={400} height={300} />
             <span class="tile-caption">{entry.data.title}</span>
           </span>
         )}
