@@ -5,13 +5,38 @@ order: 13
 draft: false
 ---
 
+import PhotoCarousel from '../../components/PhotoCarousel.astro';
+import eclipse25 from './_images/eclipse24-25-dsc0195.jpg';
+import eclipse26 from './_images/eclipse24-26-dsc0193.jpg';
+import eclipse27 from './_images/eclipse24-27-dsc0202.jpg';
+import eclipse28 from './_images/eclipse24-28-dsc0207.jpg';
+import eclipse29 from './_images/eclipse24-29-dsc0210.jpg';
+import eclipse30 from './_images/eclipse24-30-dsc0213.jpg';
+import eclipse31 from './_images/eclipse24-31-dsc0219.jpg';
+import eclipse32 from './_images/eclipse24-32-dsc0233.jpg';
+import eclipse33 from './_images/eclipse24-33-dsc0234.jpg';
+import eclipse34 from './_images/eclipse24-34-img2586.jpg';
+
+export const usingYourPhonePhotos = [
+  { src: eclipse25, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse26, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse27, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse28, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse29, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse30, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse31, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse32, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse33, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+  { src: eclipse34, hires: '', alt: '2017 eclipse event photo', caption: 'Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.' },
+];
+
 By Jay Ballauer
 
 <div class="ke-figure ke-figure-right" data-hires="/images/learning/eclipse24-01-hero.jpg">
 
 ![Total solar eclipse corona](./_images/eclipse24-01-hero.jpg)
 
-<p class="ke-figure-caption"><strong>Image:</strong> The "Great American" Total Solar Eclipse of 2017<br />
+<p class="ke-figure-caption ke-figure-caption-left"><strong>Image:</strong> The "Great American" Total Solar Eclipse of 2017<br />
 <strong>Location:</strong> "Ground Zero" - Walmart Parking Lot, Hopkinsville, Kentucky<br />
 <strong>Temperature:</strong> Maybe 92 degrees F<br />
 <strong>Date:</strong> August 21, 2017<br />
@@ -70,22 +95,20 @@ Unless you do, this means that most people will never be fortunate enough to vie
 - 2343 Feb 25 (Total)
 - 2345 June 30 (Total)
 
-<div class="ke-figure ke-figure-right" data-hires="/images/learning/eclipse24-02-21stcentury.jpg">
+<div class="ke-image-feature">
+<div class="ke-image-feature-row">
+<div class="ke-image-feature-item" data-hires="/images/learning/eclipse24-02-21stcentury.jpg">
 
 ![21st Century Eclipses](./_images/eclipse24-02-21stcentury.jpg)
 
-<p class="ke-figure-caption">This excellent map shows the paths of all total solar eclipses across the globe in the 21st century. If your location isn't under one of those eclipse paths, then it could take another 3 or 4 centuries of maps before one does! Click on the image to zoom in. Map courtesy of greatamericaneclipse.com</p>
-
 </div>
-
-<div class="ke-clear"></div>
-
-<div class="ke-figure ke-figure-left" data-hires="/images/learning/eclipse24-03-screenshot-full.png">
+<div class="ke-image-feature-item" data-hires="/images/learning/eclipse24-03-screenshot-full.png">
 
 ![Eclipse frequency screenshot](./_images/eclipse24-03-screenshot.png)
 
-<p class="ke-figure-caption">If you live in Dallas and you miss this one, then two more will pass over your house in 2343 and 2345. I wonder who might be there to see it?</p>
-
+</div>
+</div>
+<p class="ke-image-feature-caption"><strong>Left:</strong> This excellent map shows the paths of all total solar eclipses across the globe in the 21st century. If your location isn't under one of those eclipse paths, then it could take another 3 or 4 centuries of maps before one does! Map courtesy of greatamericaneclipse.com. <strong>Right:</strong> If you live in Dallas and you miss this one, then two more will pass over your house in 2343 and 2345. I wonder who might be there to see it? Click either image to zoom in.</p>
 </div>
 
 So for us in the DFW area, it's been ***146 years*** since a total solar eclipse has occurred over this area.   The next TWO total solar eclipses that look to pass right overhead will be in February 25, 2343 and June 30, 2345.   Chances are pretty good that we will miss those!
@@ -153,7 +176,7 @@ The event will start slowly, where the moon's silhouette gradually robs us of su
 
 To interpret what we see here, let's consider this drawing of the sun.   This is a classic way to represent our nearest star according to traditional folklore, yet have you ever asked, "Why are their flames?"   Despite knowing that a star is a ***huge*** ***ball of flames***, I never get the impression of such during sunset or sunrise when instead the sun looks like a glowing, circular orb.  In fact, if such flames exist, when would you actually witness them?   Surely it's all a fantasy, right?   Well, a total solar eclipse will show you otherwise!
 
-<div class="ke-figure ke-figure-left">
+<div class="ke-figure ke-figure-column">
 
 ![A classic drawing of the sun with flames](./_images/eclipse24-06-sun-drawing.jpg)
 
@@ -176,6 +199,10 @@ Outside of "totality," when none of the sun's surface can be seen, safe filters 
 ## Solar Eclipse Basics
 
 A solar eclipse occurs when the moon blocks our view of the sun, either in part or in full.  This can happen during some "new moon" phases, when the moon and the sun are on the same side of the sky from our perspective (they are on opposite sides of the sky during a full moon).  Note that you will never see the moon when they are close together in the sky due to the brightness of the sun, but when the moon passes over the sun, its black silhouette will be seen over the sun's surface.   Most such events are only PARTIAL, meaning that the moon isn't perfectly aligned to block the entire solar "disk."  When this happens, the sun will look like a moon-shaped bite was taken out of it.   The size of the "bite" during "maximum eclipse" determines the percent of "partiality" for your location...and in some cases, you could travel a few hours to increase that number.
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0;">
+<iframe src="https://www.youtube.com/embed/oNH3akWXaV8" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="Solar and Lunar Eclipses Explained - Vox"></iframe>
+</div>
 
 <div class="ke-figure ke-figure-right">
 
@@ -290,6 +317,14 @@ Similarly, this article highlights several activities that might require home-ma
 
 Equally important, time will be needed for ***observation planning and practice***. Because the eclipse is a timed event, you have ONE shot at certain observations.  You will need time in advance to not only learn what stages of the eclipse might be of interest - particularly as a photographer - but you will also want to budget time and energy to practice beforehand.  This is especially true for somebody like me, who will have an array of complex gear that must be ***working without fail*** on the day of the event.   I will even be planning for redundancy with my observing setup in the form of carrying extra, charged batteries, camping equipment, and tarps/covers.   In fact, I have a checklist/packing list ready to follow when I load up for the chase (see **Sidebar: Equipment and Packing List** at right).
 
+<div class="ke-figure ke-figure-column">
+
+![Solar eclipse viewing plan screenshot](./_images/eclipse24-14-screenshot3.jpg)
+
+<p class="ke-figure-caption">My typical travel list for an eclipse.</p>
+
+</div>
+
 As a newbie solar observer, you will want to practice some observations of the sun in the days prior to the event. You can learn what sunspots are and watch them over two weeks prior with your solar glasses or filtered binoculars.  You can view online solar videos in white light and "h-alpha" wavelengths to see how active the sun is beforehand.   Or maybe you want to try some basic photography, like doing a wide-field, filtered shot with a camera on a tripod OR practicing with a cell-phone held up to the eyepiece of a filtered-telescope.
 
 For teachers, this pre-planning becomes critical, especially if the eclipse is to be a part of a broader unit of study or if it requires lesson planning or correlation to your state's educational objectives.   Some of my favorite classroom activities and eclipse-preparation items can be found in the links that follow:
@@ -300,7 +335,7 @@ For teachers, this pre-planning becomes critical, especially if the eclipse is t
 - https://theowlteacher.com/7-engaging-eclipse-activities/
 - https://www.teachingexpertise.com/classroom-ideas/eclipse-activities-for-middle-school/
 
-<div class="ke-sidebar" data-side="right">
+<div class="ke-sidebar" data-side="right" data-width="wide">
 
 ## SIDEBAR: Equipment and Packing List
 
@@ -316,9 +351,7 @@ At that point, you need to have a packing list. Trust me, you will forget to bri
 
 For me, I like to write out a list of items required, especially since a trip for a solar eclipse during the day is MUCH different from what I pack when I do astronomy at night.  My setups are different, my equipment and tools are different, I have a variety of special purpose items that must be brought with me, and much more.   Such a list also helps me streamline exactly what I need so I'm not tempted to bring more than I really need...such as every telescope I own.
 
-My typical travel list for an eclipse looks like the following:
-
-![Solar eclipse viewing plan screenshot](./_images/eclipse24-14-screenshot3.jpg)
+My typical travel list for an eclipse is shown at left.
 
 </div>
 
@@ -563,65 +596,7 @@ That said, let's look at many things you can do on that day!
 
 At its most basic, try photographing your indirect observations that I discussed above.   Notice the slide show below, which are pictures taken during the 2017 event.  Many of those images capture the observations that many of the folks around me were doing.   Likewise, the video toward the end of this article shows a video of the 2017 event right at totality, which permanently documents not just the eclipse, but many of the people and activities involved.  As wonderful and amazing as the eclipse is, the people and activities around you add to wonderful memories you will take home with you.   So use your camera phone to make a record of the event - and then brag about them on your favorite social media sites.
 
-<div class="ke-image-feature">
-<div class="ke-image-feature-row">
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-25-dsc0195.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-26-dsc0193.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-27-dsc0202.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-28-dsc0207.jpg)
-
-</div>
-</div>
-<div class="ke-image-feature-row">
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-29-dsc0210.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-30-dsc0213.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-31-dsc0219.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-32-dsc0233.jpg)
-
-</div>
-</div>
-<div class="ke-image-feature-row">
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-33-dsc0234.jpg)
-
-</div>
-<div class="ke-image-feature-item">
-
-![2017 eclipse event photos](./_images/eclipse24-34-img2586.jpg)
-
-</div>
-</div>
-<p class="ke-image-feature-caption">Pictures taken during the 2017 event, capturing the observations and activities of the people gathered around me.</p>
-</div>
+<PhotoCarousel photos={usingYourPhonePhotos} />
 
 <blockquote class="ke-callout">
 "Don't let your compulsion (or obsession) to photograph the eclipse make you miss out on the spectacle of what is happening."
@@ -674,6 +649,14 @@ Let's look at some of the shots I would suggest using a camera capable of using 
 
 **1) A clean shot of the solar disk** - Whether you view the sun in white light or through a lovely h-alpha telescope, you will want to have a picture of the sun as it appears on the day of the eclipse.  The April 2024 eclipse lines up well with the active cycle of the sun, which means that there should be several notable sunspot groups on the solar surface.  A good white-light filtered image will capture that. This image on eclipse day is something I always try to get.  Similarly, with my h-alpha telescope, this big ball of burning gases looks awesome in photos - or in video, like with this one of the October 2023 Annular Eclipse I shot at right.  While I could do these full-disk images on any day, getting one on solar eclipse day is important.
 
+<div class="ke-figure ke-figure-right">
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+<iframe src="https://www.youtube.com/embed/9UwpboZxdCI" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="H-alpha video of the October 2023 Annular Solar Eclipse"></iframe>
+</div>
+
+</div>
+
 It also serves to nail down focusing, check exposure times, and test the alignment of a tracking telescope mount.  If using a telephoto lens, focus manually, as you do not want the camera to focus for you, especially since the solar disk might not be large and full-featured enough.  Many electronic cameras become confused by having nothing much to focus on.
 
 <div class="ke-figure ke-figure-right">
@@ -692,24 +675,25 @@ Make no mistake that such images are better with a longer telephoto lens or tele
 
 Experiment with shutter speeds, which will be quite fast in the uneclipsed and early/late partial phases and marginally slower (about 3 full stops) nearing totality.  With a tripod, you can adjust the camera's shutter speed predictably with an exposure chart (see right).  There are also eclipse exposure apps for your smart phone.  You will need the tripod for exposures longer than 1/15th of a second (or so).  You likely want a shutter-release cable as well, so that you don't have to physically touch the shutter button, which imparts vibrations to the image at higher magnifications even if it's on a tripod.  Thus, you can take all the shots by handholding the camera, but you will want to keep the shutter speed (fast) and increase either the aperture or ISO of the camera to compensate.
 
-As a ***rule of thumb***, if you keep aperture and ISO the same throughout the eclipse, the same shutter speed you used in the beginning at First Contact (C1) WITH the filter will be nearly the same as the totally eclipsed exposure WITHOUT the filter.  This allows you do develop a plan in advance by experimenting with your imaging techniques on days before the eclipse.  Just remember the settings of the camera, especially the shutter speeds you use when capturing the full solar disk with your filter.
-
-<div class="ke-figure-row">
-<div class="ke-figure">
+<div class="ke-figure ke-figure-right">
 
 ![Exposure guide for eclipse photography](./_images/eclipse24-39-exposure.gif)
 
 <p class="ke-figure-caption">When establishing your shutter speed, understand that exposure time is not an exact science. Your results can vary from these values. So these are merely starting points to try. Experiment with the starting value before the start of the eclipse and use those camera settings to begin your exposure run when it really matters! Then consult the table, noting the difference between various eclipse stages and how it trends. So, once you establish a starting point, then your overall exposure sequence can become more predictable. This table is courtesy of Mr. Eclipse himself, Fred Espenak. He hasn't missed an eclipse, ever, and his site at www.mreclipse.com is well worth exploring.</p>
 
 </div>
-<div class="ke-figure">
+
+As a ***rule of thumb***, if you keep aperture and ISO the same throughout the eclipse, the same shutter speed you used in the beginning at First Contact (C1) WITH the filter will be nearly the same as the totally eclipsed exposure WITHOUT the filter.  This allows you do develop a plan in advance by experimenting with your imaging techniques on days before the eclipse.  Just remember the settings of the camera, especially the shutter speeds you use when capturing the full solar disk with your filter.
+
+<div class="ke-figure ke-figure-left">
 
 ![Solar Eclipse Timer app screenshot](./_images/eclipse24-40-screenshot6.jpg)
 
 <p class="ke-figure-caption">For those wanting to know everything there is to know about photographing the eclipse, try out <a href="https://www.amazingsky.com/EclipseBook">this PDF guide</a> from my friend, Alan Dyer.  It's all of 11 bucks for 380 pages of detailed goodness.  The download is immediate, so get started by clicking on the image to take you there!</p>
 
 </div>
-</div>
+
+<div class="ke-clear"></div>
 
 **3) The diamond ring and Baily's beads** - These fascinating events will not pose much a problem with regard to execution when using the camera.  You will shoot using your fast shutter speed (filter-less), same as that you began the day with near C1.  However, it's the timing that can pose the issues.  One sure way to nail the timing is to use a phone app for the countdown.  Perhaps my favorite is one called ***Solar Eclipse Timer*** which gives audible countdowns for the main events in the eclipse sequence based on GPS for your location.  Using this, you can time your removal of the solar filter just right - you must shoot these events without a filter - and make sure you've set your camera for the proper shutter speed.
 
@@ -723,28 +707,29 @@ The second suggestion to try is ***to bracket your exposures*** during these tim
 
 Lastly, you might consider practicing on ***THE MOON***.   Lunar photography simulates many traits of solar imaging, as images of the moon WITHOUT a filter tend to be similar to solar exposures WITH a filter.   Likewise, it's just a good way to figure out your imaging setup, how to focus, and your confidence with execution, not to mention imaging the moon at all it's phases can become a wonderful hobby all it's own.
 
-If you do decide to use our moon as a skill builder for the eclipse event, then be aware that it will be in its ***waning phase*** for two weeks prior.  This means the moon will only be available to you later in the evening and the early morning hours when no humans are awake.  So, my recommendation is to begin your lunar practice sessions around March 13, 2024, when the moon is available in the early evening just after sunset and is nearing its first quarter.  In this way, you can carry on a solid 10 to 12 nights of practice sessions, culminating around 5 days past the ***full moon***, which is still early enough for you to reach bed before midnight.
-
-<div class="ke-figure-row">
-<div class="ke-figure">
+<div class="ke-figure ke-figure-right">
 
 ![Diamond ring and Baily's beads sequence](./_images/eclipse24-41-sequence.jpg)
 
 <p class="ke-figure-caption">During the August 2017 total solar eclipse, I actually missed Baily's beads in this eclipse sequence. Likewise, I failed to decrease the exposure length when I caught the Diamond Ring just past C3. This is why you prepare!</p>
 
 </div>
-<div class="ke-figure">
+
+If you do decide to use our moon as a skill builder for the eclipse event, then be aware that it will be in its ***waning phase*** for two weeks prior.  This means the moon will only be available to you later in the evening and the early morning hours when no humans are awake.  So, my recommendation is to begin your lunar practice sessions around March 13, 2024, when the moon is available in the early evening just after sunset and is nearing its first quarter.  In this way, you can carry on a solid 10 to 12 nights of practice sessions, culminating around 5 days past the ***full moon***, which is still early enough for you to reach bed before midnight.
+
+<div class="ke-clear"></div>
+
+**4) The coronal display** - This, of course, is the money shot!  When C2 hits after Baily's beads, you can capture the beautiful display of the solar corona.  Be a little patient at first.  You have time to enjoy the shock and awe of the event first by just looking up and soaking it all in.  Then, get your game-face on and begin a series of images from where you left off with Baily's Beads, filter-less.
+
+Remember, with the sun entirely behind the moon, it is dark-ish outside.  Not to the point you can't see, but certainly to the point where the camera's shutter speed will have to be adjusted throughout the sequence more than you might realize if you hope to capture the solar corona the way your eyes see it.   Our eyes are wildly capable of high dynamic range, meaning we can see extremely bright elements and dark elements simultaneously, as many as 20 "stops" or "doublings" of light intensity.  On the other hand, even the best cameras are capable of a maximum of 15 bits (stops), and likely much less depending on factors like camera quality, exposure time, signal/noise ratios, etc.   Said in the way most can understand, the camera cannot capture the WIDE range of darkness (the moon), extreme brightness (the solar limb and prominences) and the greatly diminishing darkness at the edges of the coronal boundaries that you can see visually...at least not in one image.
+
+<div class="ke-figure ke-figure-left">
 
 ![Eclipse magazine cover](./_images/eclipse24-42-magazine-cover.jpg)
 
 <p class="ke-figure-caption">I was very pleased to land my HDR composite image of the August 2017 Great American Eclipse on the cover of the Fall edition of Amateur Astronomy Magazine. Perhaps you can have your image of the 2024 Great American Eclipse on the cover of your favorite magazine too?</p>
 
 </div>
-</div>
-
-**4) The coronal display** - This, of course, is the money shot!  When C2 hits after Baily's beads, you can capture the beautiful display of the solar corona.  Be a little patient at first.  You have time to enjoy the shock and awe of the event first by just looking up and soaking it all in.  Then, get your game-face on and begin a series of images from where you left off with Baily's Beads, filter-less.
-
-Remember, with the sun entirely behind the moon, it is dark-ish outside.  Not to the point you can't see, but certainly to the point where the camera's shutter speed will have to be adjusted throughout the sequence more than you might realize if you hope to capture the solar corona the way your eyes see it.   Our eyes are wildly capable of high dynamic range, meaning we can see extremely bright elements and dark elements simultaneously, as many as 20 "stops" or "doublings" of light intensity.  On the other hand, even the best cameras are capable of a maximum of 15 bits (stops), and likely much less depending on factors like camera quality, exposure time, signal/noise ratios, etc.   Said in the way most can understand, the camera cannot capture the WIDE range of darkness (the moon), extreme brightness (the solar limb and prominences) and the greatly diminishing darkness at the edges of the coronal boundaries that you can see visually...at least not in one image.
 
 Therefore, the only way to capture the full coronal display, just as your eyes see it, is to take many images, from short to long, and then composite them later using image processing techniques in a software like Adobe Photoshop.   There are tutorials online to teach how this is done, so if you can acquire the images and have the software then you too can form that HDR (High Dynamic-Range) composite image, like the one I took in 2017 shown at the very top of the article.  It might even be good enough to land on the cover of your favorite magazine.
 
@@ -797,6 +782,10 @@ If you have done something right, perhaps you get people taking video OF YOU tha
 ## Remaining thoughts...
 
 Hopefully if you have made it through this article, you will have been convinced that a total solar eclipse is something you do not want to miss.  If you need more convincing, check out Dustin Sandlin of "Smarter Every Day" - it also highlights many of the activities I discussed here.
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0;">
+<iframe src="https://www.youtube.com/embed/eNK2LI7VeX4" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="Smarter Every Day - Total Solar Eclipse"></iframe>
+</div>
 
 Despite the worries of traffic on eclipse day, you too will want to remain mobile.  Watch weather forecasts a couple of days in advance and plan to be in an area of high-pressure for your best chance of success.  April is a cloudy month for many people, so please do not let clouds get in the way of you witnessing this event in person!
 

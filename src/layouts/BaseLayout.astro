@@ -708,6 +708,13 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin-top: 0.4rem;
     text-align: center;
   }
+  /* Opt-in modifier for a multi-line spec-list caption (Image/Location/
+     Temperature/etc., one per <br>) where left-aligned lines read far more
+     naturally than the centered default -- scoped to individual instances
+     rather than changing .ke-figure-caption's site-wide default. */
+  .ke-figure-caption-left {
+    text-align: left;
+  }
   .ke-figure-left {
     float: left;
     width: 46%;
