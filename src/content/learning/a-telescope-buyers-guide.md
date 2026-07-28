@@ -652,12 +652,6 @@ Taken a step further, the purchase of an "intervalometer" (as shown above) allow
 
 Taking the tripod technique a step further, you are not far away from being able to move the camera with the stars.   All it requires is a way to "track" them.  "Tracker" mounts exist to do exactly that.  Attached between the tripod and the camera, these boxy little mounts have a motor that moves at the same rate that the earth spins.   As long as you are "polar aligned," it will track for any amount of exposure time.   This lets you shoot longer images of wide-fields, going even "deeper" with your Milky Way and constellation shots.   It also lets you use longer lenses (up to practical mount payload and tripod stability) without needed to worry about the Rule of 500.
 
-<div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/learning/guide-22-tracker-mount-full.jpg">
-
-![A Sky-Watcher Star Adventurer tracker mount](./_images/guide-22-tracker-mount.jpg)
-
-</div>
-
 This form of imaging also allows you to begin "stacking" individual exposures to form a single, deeper image.  It's this technique that is the foundation of all other more advanced forms of digital astrophotography...the more you "stack," the better the signal/noise ratio (or the cleaner the image).
 
 ### "Piggybacking"
