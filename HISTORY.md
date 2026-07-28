@@ -141,3 +141,9 @@ A chronological log of the allaboutastro.com Astro rebuild, grouped by day. Gene
 ---
 
 *All 13 Learning articles reached visual parity as of 2026-07-22. See project memory for open items (image lightbox rollout, stub landing pages, nav sweep). Per-article audit status is now tracked via dated bullets above and `git log` per file, not this rollup line — treat this note as a snapshot, not a source of truth.*
+
+---
+
+## 2026-07-28 — A Telescope Buyer's Guide audit
+
+- Audited A Telescope Buyer's Guide (Jay: "It's a disaster"): fixed 9 heading-immediately-followed-by-figure violations (APERTURE, OPTICAL PERFORMANCE, the "Alt-az" vs "EQ" sidebar, HOW TO CHOOSE?, and the 4 sub-headings in the Recommendations for Aspiring AstroImagers sidebar) by moving each section's lead sentence/paragraph ahead of its figure; fixed a genuine narrow-line-wrap violation where the Takahashi FS-78 quarter-figure squeezed body text into 1–2-word lines against the still-active wide "Basic Optical Tube Design" sidebar, by switching it to the purpose-built `.ke-figure-column` class; restored the missing closing signature graphic (this is a true single-page article) and a missing intervalometer product photo in the "Tripod + Camera" section whose caption ("as shown above") was pointing at nothing after the image was dropped during migration; restored 14 dropped bold+italic emphasis spans (rhetorical sentence-level call-outs like "APERTURE IS KING!" and the "Learning the sky..." pull-quote) that were plain text in the migrated markdown

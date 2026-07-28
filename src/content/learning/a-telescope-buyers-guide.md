@@ -47,6 +47,8 @@ More importantly for you now, a scope is only as good as its weakest link.   So 
 
 ## APERTURE
 
+​​APERTURE size is important if you like deep sky objects (DSOs) like galaxies and globular clusters, or high resolution views of the planets.  Likewise, aperture size is important for the fastest photographic speed and when trying to see faint stuff from light polluted skies.
+
 <div class="ke-figure ke-figure-right">
 
 ![The 22" Sayres Binoscope at CSAC near Crowell, Texas](./_images/guide-02-sayres-binoscope.jpg)
@@ -55,9 +57,7 @@ More importantly for you now, a scope is only as good as its weakest link.   So 
 
 </div>
 
-​​APERTURE size is important if you like deep sky objects (DSOs) like galaxies and globular clusters, or high resolution views of the planets.  Likewise, aperture size is important for the fastest photographic speed and when trying to see faint stuff from light polluted skies.
-
-In other words, unless you want your scopes portable, APERTURE is ALWAYS important!  APERTURE IS KING!
+In other words, unless you want your scopes portable, ***APERTURE is ALWAYS important!  APERTURE IS KING!***
 
 To elaborate, bigger apertures gives a larger opening for collecting light, which is the FIRST job of a telescope.  Most objects in the night sky are rather large and would be seen EASILY by the naked eye if they were bright enough.  Thus, the larger the aperture of the scope, the more likely you will be able to see these objects, even at very low magnifications.
 
@@ -93,7 +93,7 @@ Finally, many of the world's best astrophotographers and professional observator
 
 While many of these advanced scopes  aren't considered by beginner's from a budgetary standpoint, it's important to know of their existence, either to alleviate confusion or to allow you to start saving for one!
 
-Regardless, when talking aperture, you will want at least 8" to 10" for visual observing of deep sky objects in dark skies.  This is widely considered the point at which galaxy details begin to appear.
+Regardless, when talking aperture, you will want at least 8" to 10" for visual observing of deep sky objects in dark skies.  ***This is widely considered the point at which galaxy details begin to appear.***
 
 Most amateur astronomers will say that aperture size is the most important consideration when deciding on a scope. It's hard to disagree!
 
@@ -101,15 +101,15 @@ Most amateur astronomers will say that aperture size is the most important consi
 
 ## OPTICAL PERFORMANCE
 
+Optics are typically the second consideration with a telescope, both in design and quality.
+
 <div class="ke-figure ke-figure-left" data-hires="/images/learning/guide-04-triple-threat-full.jpg">
 
 ![Three 6-inch apochromatic refractors compared at CSAC](./_images/guide-04-triple-threat.jpg)
 
 <p class="ke-figure-caption">"Triple Threat!" - Having fun with three 6" apos. Shown (from left to right) are a Takahashi TOA-150, Astro-Physics AP160 Starfire, and the Sky-Watcher Esprit 150. I was comparing the Tak and the Sky-Watcher for a Sky-Watcher advertisement using the same cameras simultaneously. The AP was the guidescope! Photo taken at CSAC (3RF) near Crowell, Texas. Buyer's might think that a scope costing twice the price will have twice the performance. Despite being half the price, the Esprit produces nearly equivalent results as the TOA. The difference in price is in construction and optical design, but those do not always lend themselves to overwhelming better performance.</p>
 
-</div>
-
-Optics are typically the second consideration with a telescope, both in design and quality.   From a design standpoint, the nature of the optics - mirror or lens, number of elements, focal length - determines the portability (size and weight) of a scope.  Quality-wise, your choice of optics can mean sharpness of the view, fidelity of the color, and flatness of the field of view.  ​
+</div>   From a design standpoint, the nature of the optics - mirror or lens, number of elements, focal length - determines the portability (size and weight) of a scope.  Quality-wise, your choice of optics can mean sharpness of the view, fidelity of the color, and flatness of the field of view.  ​
 
 While high quality optics are typically the domain of the astrophotographer or solar-system observer, it would be a mistake to think that great optics aren't a virtue for ANY telescope, regardless of the purpose or design.  In fact, I tend to be very sensitive to the quality of the optics even with a larger visual scope like a Dobsonian reflector.   It's day and night to me.
 
@@ -198,7 +198,7 @@ To clarify another aspect of refractors, especially triplets, lens elements can 
 
 But when the elements ARE spaced with oil in between them, then the oil fills the gaps, making it behave as if the light passes only through two surfaces, the front of the first and the rear of the last.  No need to use surface coatings, albeit it's much more difficult to assure both chromatic AND spherical aberrations are tamed.
 
-A good oil-spaced triplet is delight to use, high-contrast and very well corrected for aberrations, though it typically takes an advanced observer to appreciate it.  It also comes to thermal equilibrium very quickly!   An "oil-spaced" triplet is a rare breed today, since companies can get great performance in all aspects with the cheaper, air-spaced design. But companies like TEC still utilize the expensive "oil-spaced" design in their scopes.   Having used their TEC 140FL, TEC 180FL, and TEC 210FL models, which are also "fluorite" triplets, these are the very best views I've ever had through any telescope at their given apertures.
+A good oil-spaced triplet is delight to use, high-contrast and very well corrected for aberrations, though it typically takes an advanced observer to appreciate it.  It also comes to thermal equilibrium very quickly!   An "oil-spaced" triplet is a rare breed today, since companies can get great performance in all aspects with the cheaper, air-spaced design. But companies like TEC still utilize the expensive "oil-spaced" design in their scopes.   Having used their TEC 140FL, TEC 180FL, and TEC 210FL models, which are also "fluorite" triplets, ***these are the very best views I've ever had through any telescope at their given apertures.***
 
 Other oil-spaced triplets that I've used in the past include the William Optics FLT-110 f/6.5 and various Astro-Physics models.  Even today, for me, they represent some of the very BEST in optical triplet performance.
 
@@ -206,7 +206,7 @@ Finally, another refractor design, also apochromatic, is the 4-element Petzval d
 
 </div>
 
-<div class="ke-figure ke-figure-right ke-figure-quarter" data-hires="/images/learning/guide-08-tak-fs78-full.jpg">
+<div class="ke-figure ke-figure-column" data-hires="/images/learning/guide-08-tak-fs78-full.jpg">
 
 ![A Takahashi FS-78 on a Losmandy GM-8 mount](./_images/guide-08-tak-fs78.jpg)
 
@@ -246,7 +246,7 @@ Otherwise, larger scopes are best when you can set them up permanently at home, 
 
 Because of this, it becomes necessary to consider scopes that can be toted easily to darker sky sites.  Some examples are most Maks, smaller Dobsonian reflectors, and smaller refractors on alt-az or light-weight German equatorial mounts (see the **Sidebar: "Alt-az" vs. "EQ"** below for a distinction between these mounts).   These can be good first telescopes, especially considering their lower prices.  A person who buys a scope that never gets used will probably leave the hobby prior to finding out how truly wonderful it is.   Lack of portability is a major reason why.
 
-Therefore, quite often the best scope for YOU is the scope you will use most often.
+***Therefore, quite often the best scope for YOU is the scope you will use most often.***
 
 ## QUALITY
 
@@ -292,7 +292,7 @@ Americans often swell with pride when we see the "Made in the USA" label.  And m
 
 American pride must seem strange, or even narcissistic, to my non-American readers. They probably are better aware than we are that American companies outsource seemingly everything from overseas.   If it's not the whole product, then it's likely the assembly.  Apple iPhones are less "American" than Toyota pick-up trucks.
 
-It's those aspects of this hobby that lead to confusion...simply put, the majority of budget products (and even some pricey ones) that you are seeing in your online research from American companies are predominantly Chinese made.
+***It's those aspects of this hobby that lead to confusion...simply put, the majority of budget products (and even some pricey ones) that you are seeing in your online research from American companies are predominantly Chinese made.***
 
 While there are indeed great astronomy items that are conceived, designed, and manufactured in the USA, those likely aren't the items that a newbie to the hobby is shopping for.   More importantly, for you the uninformed, you need to know how this hobby works; how it HAS worked for ages.
 
@@ -347,7 +347,7 @@ Traditionally, the most popular has been the EQ-5 type of mount, that many peopl
 
 In most cases, the origin of the mount can be identified within the model name for each company.  If you see CG-5, EQ-5, HEQ-5, or any mount with a 5, it's likely the same mount.  Same with alt-az mounts, AZ1, AZ2, AZ3, and AZ4...yep, all Synta.
 
-Of course, they make most of the OTAs as well.  If a company advertises a budget 70mm refractor, a 4.5" reflector (also known as the 114mm), all the way up in size...it's Synta.    Anything sold by Orion telescopes is Synta, and that includes the XT-series of Dobs and the 80ED and 100ED doublet ED/APO refractors.   Again, NOT everything "Synta" is bad.  Those refractors, which I criticized for the "ED/APO" label elsewhere in this Guide, I also praised for being a really good value performer.  And more than once in this Buyer's Guide I have recommended the Orion XT-8 dob as my "favorite recommendation" for a serious, beginning observer.   Oh, and the Skywatcher 8" Classic Dob is the same scope.  Compare below...
+Of course, they make most of the OTAs as well.  If a company advertises a budget 70mm refractor, a 4.5" reflector (also known as the 114mm), all the way up in size...it's Synta.    Anything sold by Orion telescopes is Synta, and that includes the XT-series of Dobs and the 80ED and 100ED doublet ED/APO refractors.   Again, ***NOT everything "Synta" is bad.***  Those refractors, which I criticized for the "ED/APO" label elsewhere in this Guide, I also praised for being a really good value performer.  And more than once in this Buyer's Guide I have recommended the Orion XT-8 dob as my "favorite recommendation" for a serious, beginning observer.   Oh, and the Skywatcher 8" Classic Dob is the same scope.  Compare below...
 
 <div class="ke-figure" data-hires="/images/learning/guide-15-sw-orion-dobs-full.jpg">
 
@@ -373,6 +373,8 @@ Don't be disappointed in this fact.  Instead, celebrate that open competition in
 
 ## Sidebar: "Alt-az" vs. "EQ"
 
+Mounts come in two varieties in terms of how we align them, shown in the picture below.
+
 <div class="ke-figure">
 
 ![Comparison of alt-az and equatorial telescope mounts](./_images/guide-17-telescope-mounts2.jpg)
@@ -380,8 +382,6 @@ Don't be disappointed in this fact.  Instead, celebrate that open competition in
 <p class="ke-figure-caption">- Courtesy of Starry Hill Observatory at www.starryhill.org</p>
 
 </div>
-
-Shown in the picture above, mounts come in two varieties in terms of how we align them.
 
 "Alt-az" or altitude-azimuth mounts are quite simple...rotating the scope is an azimuth move and raising the scopes is an altitude move.  As such, mounts like these can be made simply and cheaply, making them easily portable.  They are also free of difficulties in terms of use.
 
@@ -415,13 +415,13 @@ Want to know the number one reason why I'm fat?   It's because I expect the MOST
 
 As consumers, everybody wants to know that our money is well-spent.   While we definitely want a large "bang for the buck," we should understand that you have to spend a certain amount of money in order to get quality, reliable gear in our hobby.   As a beginner, we should be very concerned about buying bad gear, since there is a lot of it out there.   But, neither do we want to take a "buy once, cry once," philosophy.   You don't HAVE to go crazy!
 
-Thus, your overall budget should be moderately sufficient to acquire not only a capable telescope, but also the accessories you will need to operate it.
+***Thus, your overall budget should be moderately sufficient to acquire not only a capable telescope, but also the accessories you will need to operate it.***
 
 Because scopes of big aperture show you more things, then it stands to reason that the biggest "bang" will come from putting your money mostly into the aperture.   This favors mirrors (reflectors) over lenses (refractors).   And from the standpoint of cost, the cheapest way to deliver that aperture is often preferred.   This is where the Dobsonian telescope has a large advantage.   Placed into an easy-to-push "rocker box," whereas the light can bounce back up to the eyepiece, such scopes are the simplest way to deliver photons to your eyes.
 
 Therefore, the secondary aspect to getting "good value" comes in avoiding spending money on electronics with a telescope, something that most people will add later, once they are more familiar with the hobby or they determined a specialized direction to go.
 
-For these reasons, Dobsonian reflectors deliver the most visual performance for your money, by far.   A 10" manual version, which is enough to last a life-time, can be had for under $500, including accessories.   These scopes are perfect for learning the sky, are reliable since they have no electronics to breakdown, and they show you more of the sky than another comparative telescope.   ​
+For these reasons, ***Dobsonian reflectors*** deliver the most visual performance for your money, by far.   A 10" manual version, which is enough to last a life-time, can be had for under $500, including accessories.   These scopes are perfect for learning the sky, are reliable since they have no electronics to breakdown, and they show you more of the sky than another comparative telescope.   ​
 
 ​When in doubt, get a Dob!
 
@@ -459,7 +459,7 @@ Some of us are motivated as much by the cool gear as we are the night skies them
 
 But for the majority of beginners, you might find yourself quickly frustrated by your equipment, which is the leading cause for why people fail to stick to it!
 
-Once again, Dobsonian reflectors are the leaders here.   Coupled with their large apertures, ease of use is what makes us recommend Dobs so quickly to beginners seeking a "first telescope."
+Once again, ***Dobsonian reflectors*** are the leaders here.   Coupled with their large apertures, ease of use is what makes us recommend Dobs so quickly to beginners seeking a "first telescope."
 
 Similarly, a small refractor on a basic alt-az mount (see Sidebar: "Alt-az" vs. "EQ" above).
 
@@ -532,15 +532,15 @@ Below I have ranked scope types according to each category on a 1-10 scale.  1 i
 
 ## HOW TO CHOOSE?
 
+As I said, with all the choices, true beginners are at a disadvantage.
+
 <div class="ke-figure ke-figure-right" data-hires="/images/learning/guide-18-reeves-scope-full.jpg">
 
 ![The Celestron Firstscope, Robert Reeves Signature Series](./_images/guide-18-reeves-scope.jpg)
 
 <p class="ke-figure-caption">Priced at around $55, this Celestron Firstscope (Robert Reeves Signature Series) is a decent performer compared to a lot of the cheaper EQ setups you'd purchase for a little more. The nice thing, other than having the knowledge that Robert is a friend, is that you won't be greatly put-out if you are disappointed. It's simple and easy to use...and that makes scopes like this (and full-sized dobs) a safe choice for a first scope.</p>
 
-</div>
-
-As I said, with all the choices, true beginners are at a disadvantage.  But you can start by asking yourself what it is you'd like to do and how much you are willing to pay for it?   When we ask this question of people online in various forums, the typical person will indicate that they want to "see everything and do some photography."  Hopefully, in my presentation to this point, you realize that the MORE you hope a scope will do, the more likely the price tag becomes something you fail to anticipate.
+</div>  But you can start by asking yourself what it is you'd like to do and how much you are willing to pay for it?   When we ask this question of people online in various forums, the typical person will indicate that they want to "see everything and do some photography."  Hopefully, in my presentation to this point, you realize that the MORE you hope a scope will do, the more likely the price tag becomes something you fail to anticipate.
 
 Quite simply, for most, I recommend that you keep it simple and get a visual instrument.  In this way, you know you will be getting one tool, well chosen for the job.  Your likelihood of being dissatisfied with your choice lessens when you have fewer expectations of it.
 
@@ -552,13 +552,13 @@ I do believe there are several types of interested beginners...and I've crossed 
 
 For this person, budget is important, but it's not a huge constraint.  It's likely that you are willing to budget $500 or so because you realize that, ultimately, you get what you pay for.
 
-As such, you should look no further than a 8" to 10" Dobsonian Reflector.   Among experienced amateurs, this will be the number one recommended telescope for the vast majority of people willing to spend a modest amount of money.    It packs huge bang-for-the-buck, delivering the most total amounts of "eye candy" at the most reasonable price.   Granted, it's not a photographic instrument - although holding an iPhone to the eyepiece can still be really cool - but this shouldn't matter right now, especially since you'd done enough research on your own to know that any telescope that allows for decent photography will cost more than you want at this time!
+As such, you should look no further than ***a 8" to 10" Dobsonian Reflector.***   Among experienced amateurs, this will be the number one recommended telescope for the vast majority of people willing to spend a modest amount of money.    It packs huge bang-for-the-buck, delivering the most total amounts of "eye candy" at the most reasonable price.   Granted, it's not a photographic instrument - although holding an iPhone to the eyepiece can still be really cool - but this shouldn't matter right now, especially since you'd done enough research on your own to know that any telescope that allows for decent photography will cost more than you want at this time!
 
 **THE BUYING-A-SCOPE-FOR-MY-KID PARENT (BASFMKP)** - ​This is the one that frustrates me. When this person asks me questions, we realize that they are looking for a good, easy-to-use, fun telescope that packs a large potential for learning.  Only we know the next line will typically be, "But I don't want to spend too much on it."
 
 Here's the thing...if you aren't willing to spend $300 or more on a telescope, then just buy a nice pair of binoculars instead.
 
-But here's what $300 will get you... a 4.5" to 6" Dobsonian reflector with a couple of eyepieces that can let your child learn the sky and see an enormous number of exciting objects in the night sky!
+But here's what $300 will get you... ***a 4.5" to 6" Dobsonian reflector*** with a couple of eyepieces that can let your child learn the sky and see an enormous number of exciting objects in the night sky!
 
 And if you must buy something slightly cheaper, then get a table-top version of a similar style (see right).
 
@@ -572,7 +572,7 @@ But what about the cheaper telescopes you see at the department store?   That's 
 
 With the rise of electronics within telescopes, especially with GOTO scopes that could arrive at your sky destination at the click of a button, people of my generation of astronomers went through a huge debate on whether technology is good for the hobby.   This debate has subsided somewhat today, but it still is "out there."   It went something like this...
 
-"Learning the sky should be your first motivation...and GOTO scopes will keep people from learning the sky."
+***"Learning the sky should be your first motivation...and GOTO scopes will keep people from learning the sky."***
 
 The debate is an interesting one.  Should we learn the sky?   Is it a moral imperative, as if we will be offending the science gods if we take up the hobby for any other reason?
 
@@ -602,7 +602,7 @@ Some may never venture out beyond a one-time use of it, a very likely outcome if
 
 There is no better time than NOW to get into the hobby for "The Techie Guy."   The way advanced amateurs do astronomy today has been transformed over the last two decades by the technology that is available to us "off the shelf" - technology that is actually quite reasonably priced.
 
-For this type of person then, it's really hard to beat a Schmidt-Cassegrain Telescope (SCT) in the 8" to 11" aperture size.  These instruments do just about everything you can imagine. They provide GOTO slews to thousands of targets in the night sky to be viewed through either an eyepiece, recorded on video, or snapped with a camera.  At a $2000 to $5000 price point, depending on size, it's nothing to sneeze at!  But then again, you recently dropped three-grand on a gaming PC, so why the heck not!
+For this type of person then, it's really hard to beat ***a Schmidt-Cassegrain Telescope (SCT) in the 8" to 11" aperture size.***  These instruments do just about everything you can imagine. They provide GOTO slews to thousands of targets in the night sky to be viewed through either an eyepiece, recorded on video, or snapped with a camera.  At a $2000 to $5000 price point, depending on size, it's nothing to sneeze at!  But then again, you recently dropped three-grand on a gaming PC, so why the heck not!
 
 Also, the scope shown at left, and many other scopes that are electronically-equipped, will have a dedicated jack for a serial, cable connection to a controlling PC or laptop.  Some, like the Evolution, even have WiFi capability to a phone or tablet device.  This is also true of German EQ mounts (GEMs) that you might consider for imaging.
 
@@ -630,7 +630,7 @@ Sure, you have the green!   Certainly, you want the coolest thing around!  I get
 
 ​But here's the thing...the "coolest" thing around is pushing six figures. (!)   Remember that bass-boat you bought last year?   Well, you only THOUGHT that was a lot of money!
 
-You can certainly spend less and get an amazing setup.  Budgeting $10,000 to $20,000 yields a nice APO refractor, bullet-proof EQ mount, and nice DSLR or astro CCD camera.   But here's the thing...this is the kind of gear that people "upgrade" to, after many years of practice, research, and learning.
+You can certainly spend less and get an amazing setup.  ***Budgeting $10,000 to $20,000 yields a nice APO refractor, bullet-proof EQ mount, and nice DSLR or astro CCD camera.***   But here's the thing...this is the kind of gear that people "upgrade" to, after many years of practice, research, and learning.
 
 It's okay to buy it if you are fully-prepared to learn to use it, which is why I recommend similar setups above.
 
@@ -672,13 +672,19 @@ I hope you found this Guide helpful!
 
 ### Tripod + Camera
 
+If you have a camera, then it might be welcome news to you that you do not need a telescope to do night sky imaging.   Your starting point, especially if you already have something like a DSLR with its own lenses, is to prop the camera up on a tripod (or a rock), bump up the ISO a little, dial in a long exposure speed, and shoot!
+
 <div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/learning/guide-21-camera-tripod-full.png">
 
 ![A camera on a tripod with an intervalometer](./_images/guide-21-camera-tripod.png)
 
 </div>
 
-If you have a camera, then it might be welcome news to you that you do not need a telescope to do night sky imaging.   Your starting point, especially if you already have something like a DSLR with its own lenses, is to prop the camera up on a tripod (or a rock), bump up the ISO a little, dial in a long exposure speed, and shoot!
+<div class="ke-figure ke-figure-left ke-figure-third">
+
+![An intervalometer for automating a sequence of exposures](./_images/guide-30-intervalometer.jpg)
+
+</div>
 
 Following the "Rule of 500" - exposure length is equal to 500 divided by the focal length of the lens - you can use a tripod very successfully without fear that the stars will "move" during the image.  For example, a wide-field Milky Way shot can be taken with a 24mm lens (try f/2.8 to f/4) very successfully with a 500/24 or approximately 21 second exposure.   I'd try 30 seconds (the shorter the lenses, the more it becomes a "rule of 600").
 
@@ -688,17 +694,19 @@ Taken a step further, the purchase of an "intervalometer" (as shown above) allow
 
 ### The "Tracker" Mount
 
+Taking the tripod technique a step further, you are not far away from being able to move the camera with the stars.   All it requires is a way to "track" them.  "Tracker" mounts exist to do exactly that.  Attached between the tripod and the camera, these boxy little mounts have a motor that moves at the same rate that the earth spins.   As long as you are "polar aligned," it will track for any amount of exposure time.   This lets you shoot longer images of wide-fields, going even "deeper" with your Milky Way and constellation shots.   It also lets you use longer lenses (up to practical mount payload and tripod stability) without needed to worry about the Rule of 500.
+
 <div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/learning/guide-22-tracker-mount-full.jpg">
 
 ![A Sky-Watcher Star Adventurer tracker mount](./_images/guide-22-tracker-mount.jpg)
 
 </div>
 
-Taking the tripod technique a step further, you are not far away from being able to move the camera with the stars.   All it requires is a way to "track" them.  "Tracker" mounts exist to do exactly that.  Attached between the tripod and the camera, these boxy little mounts have a motor that moves at the same rate that the earth spins.   As long as you are "polar aligned," it will track for any amount of exposure time.   This lets you shoot longer images of wide-fields, going even "deeper" with your Milky Way and constellation shots.   It also lets you use longer lenses (up to practical mount payload and tripod stability) without needed to worry about the Rule of 500.
-
 This form of imaging also allows you to begin "stacking" individual exposures to form a single, deeper image.  It's this technique that is the foundation of all other more advanced forms of digital astrophotography...the more you "stack," the better the signal/noise ratio (or the cleaner the image).
 
 ### "Piggybacking"
+
+Many might be surprised that I'd choose an all-in-one SCT (fork-mounted) for a good many people.
 
 <div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/learning/guide-23-piggyback-fsq-full.jpg">
 
@@ -706,7 +714,7 @@ This form of imaging also allows you to begin "stacking" individual exposures to
 
 </div>
 
-Many might be surprised that I'd choose an all-in-one SCT (fork-mounted) for a good many people.  They are reasonably priced and versatile... and it's this latter point that makes it so great, since you can use it as a tracking platform (if equipped with a "wedge").  This is known as "piggyback" imaging.  Using camera lenses (or small scopes) while using the SCT as a tracking platform is powerful, especially since an SCT is an uncompromised visual instrument as well.
+They are reasonably priced and versatile... and it's this latter point that makes it so great, since you can use it as a tracking platform (if equipped with a "wedge").  This is known as "piggyback" imaging.  Using camera lenses (or small scopes) while using the SCT as a tracking platform is powerful, especially since an SCT is an uncompromised visual instrument as well.
 
 SCTs are absolutely the best system for imaging the planets and the moon, since the exposures are short.  Shooting long exposures of DSOs THROUGH the SCT is a much greater challenge, however.  Even so, it's there when you are ready for it.
 
@@ -716,13 +724,13 @@ The advantages of this technique when compared to a "tracker" is that greater pa
 
 ### Short Focal Length
 
+The most difficult aspect of imaging is getting good tracking and precision that can "freeze" the stars in your picture, a fact that become increasing true the longer the lens or telescope becomes.
+
 <div class="ke-figure ke-figure-left ke-figure-third" data-hires="/images/learning/guide-24-tak106-njp-full.jpg">
 
 ![A Takahashi 106 on an NJP mount for short focal length imaging](./_images/guide-24-tak106-njp.jpg)
 
-</div>
-
-The most difficult aspect of imaging is getting good tracking and precision that can "freeze" the stars in your picture, a fact that become increasing true the longer the lens or telescope becomes.  This means that you must be able to align the mount properly...and you need a mount refined enough to not "wobble" as the shutter is open.
+</div>  This means that you must be able to align the mount properly...and you need a mount refined enough to not "wobble" as the shutter is open.
 
 Unlike any other "German Equatorial Mount," Takahashi has you covered in spades (as shown in the picture).   Tak mounts have very accurate polar alignment scopes, meaning you can be imaging within 30 minutes of pulling up your car.    And the gears are very refined, meaning that when you decided to "auto-guide" an exposure, you will have the greatest amount of success.  Mate this with any APO scope of your choice (especially short ones) with a DSLR and you have a ready-made imaging setup capable of 3 to 5 minutes of UNGUIDED exposures right out of the box!
 
@@ -734,13 +742,15 @@ You should know that such a setup is the typical, first serious imaging setup of
 
 ### The RASA
 
+​Not a cheap option, but a powerful one, is the 11" Celestron RASA Astrograph.
+
 <div class="ke-figure ke-figure-right ke-figure-third" data-hires="/images/learning/guide-20-final-scope-full.jpeg">
 
 ![The 11" Celestron RASA Astrograph](./_images/guide-20-final-scope.jpg)
 
 </div>
 
-​Not a cheap option, but a powerful one, is the 11" Celestron RASA Astrograph.  A special design similar to an SCT, this scope puts the camera at exactly where it's shown in the picture (known as "prime" focus). This shortens the focal length dramatically while funneling a tremendous amount of light onto the focal plane - f/2.2 for you focal-ratio-minded people.
+A special design similar to an SCT, this scope puts the camera at exactly where it's shown in the picture (known as "prime" focus). This shortens the focal length dramatically while funneling a tremendous amount of light onto the focal plane - f/2.2 for you focal-ratio-minded people.
 
 What this means for you is that when you place this 620mm focal length system on a well-aligned, reasonably accurate EQ mount, you swallow up photons very quickly.   With a DSLR, this means images less than a minute.  620mm means you'll likely want to "guide" the image just to keep it honest, but unguided images are very much possible if you pay some attention to the mount.
 
@@ -753,3 +763,11 @@ Celestron now has an 8" version of this same design, which is more cost effectiv
 There is something beyond.   LONG focal length imaging, as high as 3000mm or more, is possible with higher quality ($$$) mounts/accessories and great attention to detail.   I would consider "long" being anything greater than the aforementioned RASA, which still has it's own challenges.   Such goals go beyond the extent of a "Buyer's Guide" directed toward beginners; however, you should know that MANY people decide never to go into imaging with longer scopes...and this is totally cool.  But in the event you ever want the highest detail images of smaller objects in the sky, like most galaxies and clusters, then you might find yourself jumping in quite deep some day with more research on such setups.
 
 </div>
+
+<div class="ke-figure ke-figure-right ke-figure-quarter">
+
+![Author's signature](./_images/guide-29-signature.jpg)
+
+</div>
+
+<div class="ke-clear"></div>
