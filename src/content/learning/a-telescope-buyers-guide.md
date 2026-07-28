@@ -146,15 +146,7 @@ Priced competitively in the smaller apertures, Sky-watcher is able to beat the "
 
 My fifth grade daughter had a science assignment recently that required her to know that light can do 3 different things when it encounters an object:  it can bounce (be reflected), bend (be transmitted), or be absorbed (causing heat).    A telescope is designed to utilize one or two of these dynamics to refocus light onto your eyeball.
 
-<div class="ke-figure">
-
-![Diagram of the three main telescope designs - refractor, reflector, and catadioptric](./_images/guide-06-scope-design.png)
-
-<p class="ke-figure-caption">Diagram of three main telescope designs. Courtesy of Andrew Johnston at http://www.eaas.co.uk/</p>
-
-</div>
-
-This gives rise to THREE different scope designs (above):  one that uses mirrors (reflectors), one that uses lenses (refractors), and one that uses BOTH mirrors and lenses (catadioptrics or "cats").   All of these designs require some way of mounting it, which is the subject of the previous SIDEBAR.  ​
+This gives rise to THREE different scope designs (at right):  one that uses mirrors (reflectors), one that uses lenses (refractors), and one that uses BOTH mirrors and lenses (catadioptrics or "cats").   All of these designs require some way of mounting it, which is the subject of the previous SIDEBAR.  ​
 
 One thing in common, regardless of the design, is that light has some distance to travel through the scope once it enters the scope.  More precisely, from the moment it hits the primary element, whether a mirror (in reflectors and cats) or a lens (in refractors), the light begins to be focused toward its "focal point."   This path from first contact (not including the corrector plate in an SCT) to the focal point is known as the focal length of the telescope.  The focal ratio (or f-number) will be the overall focal length divided by the scope's aperture.  In essence, this is a measure of how "steep" the cone of light is...or at what rate the light finds its focal point.
 
@@ -203,6 +195,14 @@ A good oil-spaced triplet is delight to use, high-contrast and very well correct
 Other oil-spaced triplets that I've used in the past include the William Optics FLT-110 f/6.5 and various Astro-Physics models.  Even today, for me, they represent some of the very BEST in optical triplet performance.
 
 Finally, another refractor design, also apochromatic, is the 4-element Petzval design.  It typically utilizes a color-correcting lens pair up front, with one-or-both elements of fluorite or FPL-53 glass, and an additional "field-flattening" pair of elements in the back of the scope.  Obviously expensive and wonderfully pristine in performance, it's typically the best refractor you can find if astroimaging is your desire.  The Takahashi FSQ-series of scopes utilizes this design, as does the TeleVue NP-series of APO Refractors.   Per inch of aperture, these scopes are the best optical instruments there is when you demand the best color-correction combined with the ultimate in field-flatness.   Both traits are highly desirable when imaging with today's larger sensors, so much so that most people purchase "field-flatteners" to be used with the already pristine doublet and triplet apos.
+
+</div>
+
+<div class="ke-figure ke-figure-column">
+
+![Diagram of the three main telescope designs - refractor, reflector, and catadioptric](./_images/guide-06-scope-design.png)
+
+<p class="ke-figure-caption">Diagram of three main telescope designs. Courtesy of Andrew Johnston at http://www.eaas.co.uk/</p>
 
 </div>
 
@@ -622,51 +622,7 @@ Any of these would be good advice, especially any purchase that includes a solid
 
 ​Today, I have concluded that there is no single best choice.    Instead, I have five suggestions, sequential steps toward success - see the **Recommendations for Aspiring AstroImagers** sidebar below.
 
-**THE MONEY-IS-NO-OBJECT DUDE** - Sure, you have the money and you want to do it the "right way."  I get that.  I respect that.
-
-Now, do yourself a favor...put down the credit card and read through the other people I've described here.  Pick one, and then follow those recommendations.
-
-Sure, you have the green!   Certainly, you want the coolest thing around!  I get it.
-
-​But here's the thing...the "coolest" thing around is pushing six figures. (!)   Remember that bass-boat you bought last year?   Well, you only THOUGHT that was a lot of money!
-
-You can certainly spend less and get an amazing setup.  ***Budgeting $10,000 to $20,000 yields a nice APO refractor, bullet-proof EQ mount, and nice DSLR or astro CCD camera.***   But here's the thing...this is the kind of gear that people "upgrade" to, after many years of practice, research, and learning.
-
-It's okay to buy it if you are fully-prepared to learn to use it, which is why I recommend similar setups above.
-
-But I have been around many people just like you, Mr. Moneybags - don't just buy it because "you can."  Trust me when I say that you have to work up to this level of gear.  Unless you are determined, you need to pay your dues first, or you might just find this thing collecting dust in your closet.   Just remember that more money always means more complexity, so keep that in mind, even if it does look good hanging out next to your bass-boat!
-
-**THE HOBBY ENTHUSIAST** - ​You are one of my favorite types of people.  You really like space, hangout at star parties, and probably even got to spend some time on a variety of nice instruments.    More than likely, you've always loved photography; and you look at images like those I've shot in my gallery page and you can't wait to give it a try!
-
-You understand the concepts of paying your dues, finding dark skies, and being patient with your learning.  You already have your observing charts, object lists, and a telrad to mount on your new scope.   For you, the sky (or your budget) is the limit.
-
-I would have no problem recommending telescopes for you, as I know you would likely end up having several scopes to do so many different types of things anyway, from visual observing to imaging, from solar work to actual science.
-
-The nice part is that I probably don't need to recommend anything for you.  You already know this stuff...even if you'd never actually owned it or used it.  I wish all people were like you, in fact.   You'll likely win many people to the hobby in the near future, and I greatly appreciate your zeal!
-
-If I do have a recommendation, it would be to find a role-model and a mentor; people who do what you WANT to do and people who can help you achieve it.
-
-**THE SEASONED VETERAN** - Many of you I've shared time with, either online or under actual stars.   You know what you want, the different scope designs, what value is found in certain instruments, and how to make the most from them.   But perhaps you are here reading my views on what you would consider a very "basic" topic.
-
-But what I've learned over the many years is that my own understanding of things can be greatly increased by reading the perspectives of other seasoned veterans.  Hopefully, and especially, if you dig in a little deeper with the SIDEBARS in this article, you can appreciate some of the perspectives.   Similarly, perhaps you aren't quite as deep as I have been for 20 years into astroimaging and you like some of what I've said there.
-
-I will say this to you...keep learning...keep growing...keep sharing.   What I've discovered about this hobby, and my hobbies in general, is that things are cyclical.   Is doesn't take too many gray skies before we get side-tracked into other pastimes.  The nice part about astronomy is that the night sky is always there.    I find comfort in that, especially when I find myself away from the hobby because of life's other happenings.
-
-​Thanks for reading!
-
-## CONCLUSION
-
-So, my advice is to understand as much as you can about this hobby before making any purchase.   Don't rely on one person's opinion, but definitely make sure that any advice you get comes from people with "skin's on the wall."
-
-In your search for a scope, be certain to do your homework and if possible seek out a "star party" close to you.  The best way to know what scope is best for you is to actually look through them and ask the owner tons of questions.  You will discover that most all amateur astronomers are more than happy to share their equipment, and talk endlessly about it!
-
-If you make the wrong decision on a scope, don't let it dictate your opinion about the hobby.  There are so many things, so many scopes, so many experiences (good and bad) that can define success or failure.  My best advice is to never give up on a telescope before you have used it under the darkest possible skies...or if you are too frustrated by the rickety mount I told you NOT to buy!
-
-Be persistent; have a growth mindset; enjoy the process AND the results.
-
-I hope you found this Guide helpful!
-
-<div class="ke-sidebar" data-color="orange" data-width="half">
+<div class="ke-sidebar" data-color="orange" data-side="left" data-width="wide">
 
 ## Recommendations for Aspiring AstroImagers...
 
@@ -763,6 +719,52 @@ Celestron now has an 8" version of this same design, which is more cost effectiv
 There is something beyond.   LONG focal length imaging, as high as 3000mm or more, is possible with higher quality ($$$) mounts/accessories and great attention to detail.   I would consider "long" being anything greater than the aforementioned RASA, which still has it's own challenges.   Such goals go beyond the extent of a "Buyer's Guide" directed toward beginners; however, you should know that MANY people decide never to go into imaging with longer scopes...and this is totally cool.  But in the event you ever want the highest detail images of smaller objects in the sky, like most galaxies and clusters, then you might find yourself jumping in quite deep some day with more research on such setups.
 
 </div>
+
+**THE MONEY-IS-NO-OBJECT DUDE** - Sure, you have the money and you want to do it the "right way."  I get that.  I respect that.
+
+Now, do yourself a favor...put down the credit card and read through the other people I've described here.  Pick one, and then follow those recommendations.
+
+Sure, you have the green!   Certainly, you want the coolest thing around!  I get it.
+
+​But here's the thing...the "coolest" thing around is pushing six figures. (!)   Remember that bass-boat you bought last year?   Well, you only THOUGHT that was a lot of money!
+
+You can certainly spend less and get an amazing setup.  ***Budgeting $10,000 to $20,000 yields a nice APO refractor, bullet-proof EQ mount, and nice DSLR or astro CCD camera.***   But here's the thing...this is the kind of gear that people "upgrade" to, after many years of practice, research, and learning.
+
+It's okay to buy it if you are fully-prepared to learn to use it, which is why I recommend similar setups above.
+
+But I have been around many people just like you, Mr. Moneybags - don't just buy it because "you can."  Trust me when I say that you have to work up to this level of gear.  Unless you are determined, you need to pay your dues first, or you might just find this thing collecting dust in your closet.   Just remember that more money always means more complexity, so keep that in mind, even if it does look good hanging out next to your bass-boat!
+
+**THE HOBBY ENTHUSIAST** - ​You are one of my favorite types of people.  You really like space, hangout at star parties, and probably even got to spend some time on a variety of nice instruments.    More than likely, you've always loved photography; and you look at images like those I've shot in my gallery page and you can't wait to give it a try!
+
+You understand the concepts of paying your dues, finding dark skies, and being patient with your learning.  You already have your observing charts, object lists, and a telrad to mount on your new scope.   For you, the sky (or your budget) is the limit.
+
+I would have no problem recommending telescopes for you, as I know you would likely end up having several scopes to do so many different types of things anyway, from visual observing to imaging, from solar work to actual science.
+
+The nice part is that I probably don't need to recommend anything for you.  You already know this stuff...even if you'd never actually owned it or used it.  I wish all people were like you, in fact.   You'll likely win many people to the hobby in the near future, and I greatly appreciate your zeal!
+
+If I do have a recommendation, it would be to find a role-model and a mentor; people who do what you WANT to do and people who can help you achieve it.
+
+**THE SEASONED VETERAN** - Many of you I've shared time with, either online or under actual stars.   You know what you want, the different scope designs, what value is found in certain instruments, and how to make the most from them.   But perhaps you are here reading my views on what you would consider a very "basic" topic.
+
+But what I've learned over the many years is that my own understanding of things can be greatly increased by reading the perspectives of other seasoned veterans.  Hopefully, and especially, if you dig in a little deeper with the SIDEBARS in this article, you can appreciate some of the perspectives.   Similarly, perhaps you aren't quite as deep as I have been for 20 years into astroimaging and you like some of what I've said there.
+
+I will say this to you...keep learning...keep growing...keep sharing.   What I've discovered about this hobby, and my hobbies in general, is that things are cyclical.   Is doesn't take too many gray skies before we get side-tracked into other pastimes.  The nice part about astronomy is that the night sky is always there.    I find comfort in that, especially when I find myself away from the hobby because of life's other happenings.
+
+​Thanks for reading!
+
+<div class="ke-clear"></div>
+
+## CONCLUSION
+
+So, my advice is to understand as much as you can about this hobby before making any purchase.   Don't rely on one person's opinion, but definitely make sure that any advice you get comes from people with "skin's on the wall."
+
+In your search for a scope, be certain to do your homework and if possible seek out a "star party" close to you.  The best way to know what scope is best for you is to actually look through them and ask the owner tons of questions.  You will discover that most all amateur astronomers are more than happy to share their equipment, and talk endlessly about it!
+
+If you make the wrong decision on a scope, don't let it dictate your opinion about the hobby.  There are so many things, so many scopes, so many experiences (good and bad) that can define success or failure.  My best advice is to never give up on a telescope before you have used it under the darkest possible skies...or if you are too frustrated by the rickety mount I told you NOT to buy!
+
+Be persistent; have a growth mindset; enjoy the process AND the results.
+
+I hope you found this Guide helpful!
 
 <div class="ke-figure ke-figure-right ke-figure-quarter">
 
