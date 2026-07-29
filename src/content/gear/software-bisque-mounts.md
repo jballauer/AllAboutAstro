@@ -1,11 +1,10 @@
 ---
 title: Software Bisque Mounts
+heading: The Software Bisque Paramounts - An Overview and a Review
 description: An overview and review of the Software Bisque Paramount line of astronomy mounts.
 order: 1
 draft: false
 ---
-
-*The Software Bisque Paramounts - An Overview and a Review*
 
 First, let's hop right to the conclusion of this review since you are probably very curious if I like the Software Bisque (SB) Paramounts?
 
@@ -79,12 +78,6 @@ You might get a kick out of it...
 
 Today I received shipping of the "Software Bisque Paramount ME Robotic Telescope Mount." Yes, it's a long title, but so many words aren't wasted on equipment like this. Thanks to my association with the Three Rivers Foundation for the Arts and Sciences (3RF), I'm fortunate to have the opportunity to use this mount for the foreseeable future.
 
-<div class="ke-figure">
-
-![A Software Bisque Paramount](./_images/sb-03-17890.jpg)
-
-</div>
-
 **First Impressions**
 
 Three boxes came to my front door step at high noon today, two of which hurt my back when carrying them into the house. The largest box, the one that includes the mount head and software, weighed 80 lbs. The next 65 lbs. box holds nothing but the three 20 lbs. counter weights. The final box contained all the hardware for the mount, including the counterweight bar and Versaplate, or the top mounting plate for the mount.
@@ -103,12 +96,6 @@ The Paramount has two control panels. The main "Telescope Control System" is loc
 
 The Versaplate itself is amazing. It can be placed in either a straight orientation, along the scope's axis to accommodate larger scope tubes, or in an oblong orientation to accommodate smaller side-by-side systems. Whichever method you choose, I assure you that there are enough holes in this plate to give you an unlimited number of mounting options, regardless of the hardware you have. It even has a Losmandy dovetail channel ready to receive your Losmandy mounting accessories. Because this particular mount will soon hold a 12.5" RCOS Ritchey-Chretien Cassegrain scope that is due to arrive, hopefully, in one more week, I opted for the traditional, straight placement of the Versaplate.
 
-<div class="ke-figure">
-
-![A Paramount in use](./_images/sb-04-589952209.jpg)
-
-</div>
-
 After putting on a single counterweight to balance my Tak FSQ-106 atop of it - I needed something to put on it, afterall - I plugged in the power cable, USB cable, and joystick controller. Of course, the 20 lbs. counterweight is really too large to balance the smallish FSQ, but this is the only time the mount will tote ONLY this little scope. Still, it's always better to have more weight on the counterweight bar, if only to keep from accidentally loosening the clutches and watching a top-heavy OTA hit the floor!
 
 Actually, "clutches" is somewhat of a misnomer here. This is a clutch-less system, intended for pure electronic control. The mount head is locked in place by engaging the gears with the worm drives. When engaged, the system is locked and loaded for slewing. When dis-engaged, it moves freely, without friction. To balance the OTA, you dis-engage the gears. When balanced, you re-engage them. Therefore, care must be taken to prevent imbalance when the gears are dis-engaged. Keeping a hand on the OTA while loading the counterweights is important, and frankly, with the upcoming 50 lbs. RCOS scope, I'm sure that two people will be required to perform simple balancing of the OTA. That said, some type of lock on the axies would be perhaps the only thing I might find the Bisque guys wishing they'd have added; however, perhaps it will prove to be an insignificant concern.
@@ -123,13 +110,19 @@ Once the scope found Vega, I synced to this star, not really moving the controll
 
 Of course, this was the limit to my play at this time. What else can you do indoors? Once I get the RCOS scope and get it outside, I'll put the mount to the test, including it's tracking and guiding ability. Hopefully, the next new moon will signal that the REAL play time is about to begin.
 
-**The Sky X Professional** - The entire suite of this do-it-all control software is $1200 when purchased separately. But it comes WITH every Paramount purchase, and in many ways, a Paramount is almost just "some other mount" without it.
-
 </div>
 
 ## COMMON PARAMOUNT FEATURES
 
 Because Paramounts are a hardware/software system, and because the software, TheSkyX Professional, can be purchased for use with third-party mounts, it should be said that many such mounts can be setup and controlled within TheSkyX to offer SOME of what Paramounts can do. Essentially, we would need a review of TheSkyX Professional itself to explain these advantages more fully. But whereas this might be true to some extent, the full feature-set of the software can never be fully-realized without Paramount hardware. More importantly, the security of just KNOWING that the system will work is only true of Paramounts themselves. As such, let's explore the nature of a Paramount's hardware features, keeping in mind how the software can enhances these mounts to make them perhaps the most reliable, flexible, and powerful mounts available to amateurs today.
+
+<div class="ke-figure ke-figure-right">
+
+![The Sky X Professional software box](./_images/sb-03-17890.jpg)
+
+<p class="ke-figure-caption">The Sky X Professional - The entire suite of this do-it-all control software is $1200 when purchased separately. But it comes WITH every Paramount purchase, and in many ways, a Paramount is almost just "some other mount" without it.</p>
+
+</div>
 
 ### Anodized aluminum plating with through-mount wiring
 
@@ -177,8 +170,6 @@ Today, SB designs the mounts to provide an additional lock when the mount is dis
 
 **ASIDE:** With regard to their older mounts, Astro-Physics will tell you that there is no reason to tighten the clutch knobs beyond hand-tightening and that the clutches should always be allowed to slip. This bothers me in a remote observatory situation, where a cable pull could ruin the pointing accuracy and require a "re-sync." Similarly, if I bump the mount accidentally, I wouldn't want that to necessitate a re-sync, which is no small feat with T-Point. People use these mounts routinely in remote observatory situations, so it's likely not a big problem in actuality...and certainly, the newer AP mounts solve the problem entirely. But for me, there is a certain piece of mind with the Paramount from the very beginning. It just shows that Software Bisque has always designed their mounts for imagers first.
 
-Of note here is the Particle Wave Technology portable pier option originally acquired with the Paramount ME. Pricey then and impossible to find today, the PWT pier was a beautiful way to "mount the mount," with a near-matching anodized aluminum color in the familiar "Paramount red."
-
 ### Polar Alignment
 
 One of the simple hardware virtues of all Paramounts is that the alt-az adjustment knobs have tics or cogs built into them, each with known amounts of angular adjustment. This, coupled with a vernier scale, can allow you to know how much you are adjusting the mount, either in a complete rotation of the knob or by moving it a certain number of "tics." When you use TheSkyX for polar-alignment via T-Point, the software will tell you how far off you are from a perfect alignment and will instruct you to turn the knob the proper number of tics to fix it. This is can make for very accurate polar alignment in a quick amount of time (depending on the size of the T-Point model). I've used Paramounts in the field and was able to dial in a near perfect polar alignment within 30 minutes, and this includes an additional T-Point model to reestablish the pointing accuracy of the mount (once a physical adjustment is made, it invalidates that model and a new one is required to reestablish a new slewing model.
@@ -197,7 +188,17 @@ Additionally, for $1350, SB sells a MyT-specific tripod, which is more like a "p
 
 These portable tripods and piers are relatively new for SB and were not available at the time I acquired my first Paramount ME. At that time, a third-party, Particle Wave Technology, sold a PWT tripod option as shown in the picture above. This option, no longer available today, originally cost $3300. While it's an amazing portable "pier" option, it's easy to see that the SB options of today are a little more budget friendly, and the newer MyT portable pier option most certainly appears to be a descendant of the PWT version.
 
+<div class="ke-figure ke-figure-right ke-figure-third">
+
+![A Paramount in use](./_images/sb-04-589952209.jpg)
+
+<p class="ke-figure-caption">Of note here is the Particle Wave Technology portable pier option originally acquired with the Paramount ME. Pricey then and impossible to find today, the PWT pier was a beautiful way to "mount the mount," with a near-matching anodized aluminum color in the familiar "Paramount red."</p>
+
+</div>
+
 Software Bisque also carries a variety of permanent piers for MX and larger mounts. Priced around $680, standard heights are 12", 18", 24", 30", 36", and 48", with custom options available.
+
+<div class="ke-clear"></div>
 
 ### Accuracy
 
@@ -216,12 +217,6 @@ Of course, the less error (periodic or otherwise) is better; however, the realit
 The magic behind all Paramounts is the MKS control system. From Day 1 of these mounts, the control system was designed to be as minimal as possible, whereas the true work of the mount is accomplished via software, namely "The Sky" Software Suite that comes with the mount.
 
 I didn't understand this at first. My previous experience to the Paramount ME was the Meade LX50 & LX200 scopes (Magellan controller), the Celestron CGE mount (NexStar controller), and the Losmandy GM-8 (the Gemini controller). And when I first opened up the Paramount, I was stumped by the single joystick controller packaged in the box. Instead of the lit-up handbox I was used to, advertised by Meade and Celestron to let me see zillions of objects in their databases, Software Bisque gives me something that looked like it belonged on an Atari 2600.
-
-<div class="ke-figure">
-
-![Paramount model comparison](./_images/sb-05-supermodel.jpg)
-
-</div>
 
 In other words, the Paramounts have always been designed to leverage the power of your PC. No processing or storage is required in hardware, meaning a simpler, more bulletproof design based on microcontroller ICs and mosfets. These are not mounts that you setup in the field to show people thousands of objects in the mounts internal database. There are no setup menus to navigate through upon setup. No "tours." You just connect to a PC via USB, make sure the driver is installed on the computer, and press "connect" in TheSKY. Then, a one-star "sync" and a single click on any object's slew command sends the mount merily across the night sky.
 
@@ -277,7 +272,15 @@ In a remote observatory, all-sky modeling has tremendous value. Confidence is hi
 
 ### ProTrack Implementation
 
-In any T-Point model, the inaccuracies are categorized by what the software calls "terms." There are 6 basic terms to any T-Point model, with additional terms that can be added if the model is thorough enough to provide a level of accuracy to support the additional terms. For example, once the 6 basic terms are known, further repeatable inaccuracies can be explained and accurately modeled using additional terms. Shown in the figure above - the first 2 terms are indexing errors (offset of the object/star in the sky which should be dead center); terms 3 and 4 are errors in axis perpendicularity; and terms 5 and 6 are altitude and azimuth polar alignment errors. Various forms of component flexure typically comprise the next few terms, as an example. When your T-Point model approaches 300 or more points all over the sky, the refinements made by the model can become so accurate that any residual error is reasoned to be periodic. As such, telescope tracking can be improved via the T-Point model itself, not only by a PEC model.
+In any T-Point model, the inaccuracies are categorized by what the software calls "terms." There are 6 basic terms to any T-Point model, with additional terms that can be added if the model is thorough enough to provide a level of accuracy to support the additional terms. For example, once the 6 basic terms are known, further repeatable inaccuracies can be explained and accurately modeled using additional terms.
+
+<div class="ke-figure">
+
+![Paramount model comparison](./_images/sb-05-supermodel.jpg)
+
+</div>
+
+Shown in the figure above - the first 2 terms are indexing errors (offset of the object/star in the sky which should be dead center); terms 3 and 4 are errors in axis perpendicularity; and terms 5 and 6 are altitude and azimuth polar alignment errors. Various forms of component flexure typically comprise the next few terms, as an example. When your T-Point model approaches 300 or more points all over the sky, the refinements made by the model can become so accurate that any residual error is reasoned to be periodic. As such, telescope tracking can be improved via the T-Point model itself, not only by a PEC model.
 
 This is what ProTrack does - it enhances T-Point to provide increases in tracking performance via modeling, in most cases affectively eliminating any periodic mount error that remains after activating a PEC curve.
 

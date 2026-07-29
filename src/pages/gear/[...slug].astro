@@ -24,7 +24,7 @@ const banner = pageBanners[item.id];
 <BaseLayout title={item.data.title} description={item.data.description}>
   <article>
     {banner && <PageBanner src={banner.src} alt={banner.alt} />}
-    <h1>{item.data.title}</h1>
+    <h1>{item.data.heading ?? item.data.title}</h1>
     <Content />
   </article>
 </BaseLayout>

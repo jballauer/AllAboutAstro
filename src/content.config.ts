@@ -28,6 +28,10 @@ const gear = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/gear' }),
   schema: ({ image }) => z.object({
     title: z.string(),
+    // Optional override for the on-page <h1> when the article's own title
+    // (as the source page wrote it) differs from the short nav-friendly
+    // `title` used in the Gear dropdown and breadcrumbs.
+    heading: z.string().optional(),
     description: z.string().optional(),
     order: z.number().default(0),
     coverImage: image().optional(),
