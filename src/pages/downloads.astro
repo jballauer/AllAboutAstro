@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import lunarEclipse from '../assets/downloads/lunar-eclipse-2019.jpg';
+import m42Spectral from '../assets/downloads/m42-spectral-bands.jpg';
+---
+
+<BaseLayout title="Downloads" description="A few calibration and reference files available for download." noindex={true}>
+  <article>
+    <h1>Downloads</h1>
+
+    <p>A handful of files available for download — mostly calibration data and a couple of reference images.</p>
+
+    <h2>Calibration Files (FLI 16803)</h2>
+    <ul>
+      <li><a href="https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/fli_16803_dark_600_sec___-20c.fit">fli_16803_dark_600_sec___-20c.fit</a> — dark frame, 600 sec, -20&deg;C (33,560 kb)</li>
+      <li><a href="https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/fli_16803_dark_300_sec___-5c.fit">fli_16803_dark_300_sec___-5c.fit</a> — dark frame, 300 sec, -5&deg;C (33,560 kb)</li>
+      <li><a href="https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/fli_16803_bias_unbinned.fit">fli_16803_bias_unbinned.fit</a> — bias frame, unbinned (33,560 kb)</li>
+    </ul>
+
+    <h2>Reference Images</h2>
+
+    <p>
+      <a href="https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/lunar-eclipse-2019-linear-composition-4k.jpg">lunar-eclipse-2019-linear-composition-4k.jpg</a> — a linear composite of the 2019 lunar eclipse (2,198 kb)
+    </p>
+    <Image src={lunarEclipse} alt="2019 lunar eclipse, linear composition" width={500} />
+
+    <p>
+      <a href="https://oldallaboutastro.weebly.com/uploads/1/2/4/7/12477060/m42_spectral_bands.jpg">m42_spectral_bands.jpg</a> — the Orion Nebula (M42) across spectral bands (612 kb)
+    </p>
+    <Image src={m42Spectral} alt="M42, the Orion Nebula, shown across spectral bands" width={500} />
+
+    <p><em>All images and content are copyright by Jay Ballauer. Permission for use and proper credit is required.</em></p>
+  </article>
+</BaseLayout>
