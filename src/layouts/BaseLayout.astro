@@ -385,6 +385,25 @@ const { title, description = 'All About Astro — astrophotography, gear, and le
     margin: 0;
   }
 
+  /* Small outlined "jump to" pointer -- e.g. an article directing readers
+     to a related gallery/results page. Deliberately compact and unobtrusive,
+     unlike the bordered .ke-ai-stub disclosure box. */
+  .ke-jump-link {
+    display: inline-block;
+    margin: 0.25rem 0 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-link);
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  .ke-jump-link a {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  .ke-jump-link a:hover {
+    text-decoration: underline;
+  }
+
   /* shared callout-box visual (Weebly "colored box" widget) — used by
      Aside.astro (floated, article prose) and by page-specific multi-column
      layouts (e.g. the home page's "Most Recent Images" widget column) */
