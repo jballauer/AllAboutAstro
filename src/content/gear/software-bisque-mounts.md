@@ -27,14 +27,6 @@ My first use of Paramount came in January, 2005, when a Paramount ME entered my 
 
 But from Day 1, what has made an SB mount so unique was that it wasn't just a hardware solution like almost every other mount. Rather, it's a total package of excellent hardware plus powerful software, and it's the integration of these two aspects that have always made Paramounts so awesome. Paramounts come with the most current version of the *The Sky* software, seemingly custom written with the Paramount in mind. Feature rich, current mounts are shipped with *The Sky X Pro Software Suite*. This opens up a vast amount of capabilities that no other mount can really boast. To make matters worst for non-Paramount buyers, you are probably going to want to purchase The Sky X Pro software anyway, especially if you are in an observatory setting and desire to run T-Point to refine the tracking and slewing performance of your own high-end mount. T-Point is only one of the powerful tools that are a part of The Sky X Pro software suite.
 
-<div class="ke-figure ke-figure-right">
-
-![A Celestron C11 Edge on a Paramount MX+ mount](./_images/sb-02-c11-mxplus.jpg)
-
-</div>
-
-<div class="ke-clear"></div>
-
 Coming in at a variety of price points - all high ones - Software Bisque offers three Paramount options to the typical amateur...the MyT, the MX+, and the ME II. Also, for those with even deeper pockets and larger needs (read universities), SB has their fork-mount Taurus and Apollo Paramounts.
 
 Of course today's versions are refinement of the original SB mounts, the GT-1100, the MX, and the ME.
@@ -54,6 +46,12 @@ A clutch-free design, with internal cable routing, and a hardware-fixed home pos
 Today, these mounts can be found used for around $5000, down from the $12,000 original price tag. This is a tremendous amount of functionality for the price and should make mount buyers question if they really do need something newer or "better"? If you do find one, make sure it has the MKS 4000 controller. And if you find one cheap enough, it's worth considering an upgrade to today's current system, the MKS 5000.
 
 **The Paramount MX** - Because the ME did so well, people clamored for the same level of excellence in a smaller mount at a more budget-friendly price point. In return, SB gave us the MX mount in 2011. However, at a $9000 sticker price, it's debatable HOW budget-friendly it truly was! It did feature the same capabilities of the ME with a 90 lbs. payload capacity, saving $3k from the ME price tag.
+
+<div class="ke-figure ke-figure-right">
+
+![A Celestron C11 Edge on a Paramount MX mount](./_images/sb-02-c11-mxplus.jpg)
+
+</div>
 
 **The Paramount ME II** - In March 2013, SB redesigned the ME in the form of the ME II (two). They added more payload capacity, capable of now holding 240 lbs. Bisque also updated the control system to the MKS 5000. The price raised as well - $15,000 was the cost of this top-tier SB mount. This remains in the current product line-up.
 
