@@ -116,9 +116,7 @@ Of course, this was the limit to my play at this time. What else can you do indo
 
 Because Paramounts are a hardware/software system, and because the software, TheSkyX Professional, can be purchased for use with third-party mounts, it should be said that many such mounts can be setup and controlled within TheSkyX to offer SOME of what Paramounts can do. Essentially, we would need a review of TheSkyX Professional itself to explain these advantages more fully. But whereas this might be true to some extent, the full feature-set of the software can never be fully-realized without Paramount hardware. More importantly, the security of just KNOWING that the system will work is only true of Paramounts themselves. As such, let's explore the nature of a Paramount's hardware features, keeping in mind how the software can enhances these mounts to make them perhaps the most reliable, flexible, and powerful mounts available to amateurs today.
 
-<div class="ke-clear"></div>
-
-<div class="ke-figure ke-figure-right ke-figure-quarter">
+<div class="ke-figure ke-figure-column">
 
 ![The Sky X Professional software box](./_images/sb-03-17890.jpg)
 
@@ -199,8 +197,6 @@ Additionally, for $1350, SB sells a MyT-specific tripod, which is more like a "p
 These portable tripods and piers are relatively new for SB and were not available at the time I acquired my first Paramount ME. At that time, a third-party, Particle Wave Technology, sold a PWT tripod option as shown in the picture above. This option, no longer available today, originally cost $3300. While it's an amazing portable "pier" option, it's easy to see that the SB options of today are a little more budget friendly, and the newer MyT portable pier option most certainly appears to be a descendant of the PWT version.
 
 Software Bisque also carries a variety of permanent piers for MX and larger mounts. Priced around $680, standard heights are 12", 18", 24", 30", 36", and 48", with custom options available.
-
-<div class="ke-clear"></div>
 
 ### Accuracy
 
