@@ -1,5 +1,5 @@
 ---
-title: The Great American Solar Eclipse 2024 - Totality over Arkansas
+title: The Great American Solar Eclipse 2024
 description: Diamond rings, corona, earthshine, and prominence detail from the April 8, 2024 total solar eclipse.
 pubDate: 2024-04-08
 image: ./_images/great-american-solar-eclipse-2024.jpg
