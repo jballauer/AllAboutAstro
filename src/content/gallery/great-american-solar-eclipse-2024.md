@@ -1,5 +1,5 @@
 ---
-title: The Great American Solar Eclipse 2024 - Totality over Texas
+title: The Great American Solar Eclipse 2024 - Totality over Arkansas
 description: Diamond rings, corona, earthshine, and prominence detail from the April 8, 2024 total solar eclipse.
 pubDate: 2024-04-08
 image: ./_images/great-american-solar-eclipse-2024.jpg
@@ -8,7 +8,7 @@ exposure: "Composite stacks ranging from 1/3200 sec to 2 sec"
 draft: false
 ---
 
-Location: Texas, on the centerline of totality for the April 8, 2024 "Great American Eclipse." Seven years after chasing the 2017 eclipse to Kentucky, this one crossed right through my home state &mdash; no cross-country drive required, just clear skies and about four minutes of totality.
+Location: Conway, Arkansas, on the centerline of totality for the April 8, 2024 "Great American Eclipse." Seven years after chasing the 2017 eclipse to Kentucky, this trip took me to central Arkansas &mdash; clear skies and about four minutes of totality.
 
 <div class="ke-figure" data-hires="/images/gallery/great-american-solar-eclipse-2024-diamond-ring-hires.jpg">
 
@@ -75,11 +75,11 @@ For more on how I planned and shot this eclipse &mdash; equipment, exposure stra
 <dt>What it is</dt>
 <dd>The April 8, 2024 total solar eclipse, whose path of totality crossed Mexico, the United States (from Texas to Maine), and the Canadian Maritimes &mdash; the last total solar eclipse visible from the contiguous U.S. until 2044.</dd>
 <dt>Location observed</dt>
-<dd>Texas, on the centerline of totality</dd>
+<dd>Conway, Arkansas, on the centerline of totality</dd>
 <dt>Path width</dt>
 <dd>~115 miles (185 km)</dd>
 <dt>Maximum totality duration</dt>
-<dd>~4 minutes 28 seconds (near the point of greatest eclipse in Mexico); around 4 minutes along much of the Texas centerline</dd>
+<dd>~4 minutes 28 seconds (near the point of greatest eclipse in Mexico); around 4 minutes in central Arkansas</dd>
 <dt>Next similar U.S. event</dt>
 <dd>August 23, 2044 total solar eclipse</dd>
 </dl>
