@@ -6,7 +6,7 @@ image: ./_images/b33-horsehead-nebula.jpg
 draft: false
 ---
 
-B33, the Horsehead Nebula, in LLRGB &mdash; a close-up view battling the glare of nearby Alnitak. A [wider region shot](/gallery/horsehead-flame-nebula-region/) including the Flame Nebula is also on file.
+B33, the Horsehead Nebula, in LLRGB &mdash; a close-up view battling the glare of nearby Alnitak. A [wider region shot](/gallery/horsehead-flame-nebula-region/) including the Flame Nebula is also on file, as is an [earlier attempt](/gallery/b33-horsehead-nebula-2003/) from 2003.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
@@ -34,22 +34,6 @@ B33, the Horsehead Nebula, in LLRGB &mdash; a close-up view battling the glare o
 <p align="center"><em>The Horsehead Nebula, Barnard 33, in detail</em></p>
 
 ![Detail crop of the Horsehead Nebula at close to the full resolution of the camera](./_images/b33-horsehead-nebula-detail.jpg)
-
-<hr>
-
-<h3>Previous Attempt</h3>
-
-![An earlier attempt at the Horsehead Nebula with an SBIG ST-7E, November 2003](./_images/b33-horsehead-nebula-previous2003.jpg)
-
-<p><strong>Location:</strong> Ballauer Observatory in Azle, Texas<br>
-<strong>Seeing:</strong> 8/10 (2.5 FWHM)<br>
-<strong>Transparency:</strong> 4/10<br>
-<strong>Date and Time:</strong> November 18, 2003 @ 11:00PM<br>
-<strong>Equipment:</strong> SBIG ST-7E, Tak FSQ-106 @ f/5, and Celestron CGE mount<br>
-<strong>Length:</strong> Five 20 minute exposures binned 1x1<br>
-<strong>Processing Information:</strong> Dark frames, gradient removal, registration and Sigma Combine in MaxIm 3.0. Levels, Curves, Gaussian Blur and Unsharp Mask in Photoshop 7.</p>
-
-<p><em>Exposure Notes: First light image with the new Celestron CGE mount.</em></p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
