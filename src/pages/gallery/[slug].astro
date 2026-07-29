@@ -121,6 +121,49 @@ const m20HeroStars = [
   { commonName: null, catalogName: '2MASS J18034968-2246519', mag: 11.8, specType: '', x: 12.5, y: 127.1 },
 ];
 
+// Plate-solved via astrometry.net, cross-matched against SIMBAD (cone
+// search, V<=10) -- see the star-mag-hover-with-slider skill. bucket is
+// ceil(mag): a star shows once the slider reaches its bucket value, so
+// "mag <= slider value" holds exactly. Jay opted for mag 10 here over the
+// mag12 skill's default depth after the mag-12 pull came back with 162
+// markers (a rich open cluster field) -- too dense to stay legible.
+const m35HeroStars = [
+  { commonName: null, catalogName: 'HD 41996', mag: 7.42, specType: 'G0', x: 275.8, y: 56.2 },
+  { commonName: null, catalogName: 'HD 42086', mag: 7.55, specType: 'A3V', x: 60.3, y: 408.1 },
+  { commonName: null, catalogName: 'HD 41940', mag: 8.14, specType: 'B8', x: 397.2, y: 170.7 },
+  { commonName: null, catalogName: 'HD 252260', mag: 8.57, specType: 'K5', x: 368.4, y: 327.3 },
+  { commonName: null, catalogName: 'HD 42066', mag: 8.73, specType: 'A2', x: 97.5, y: 525 },
+  { commonName: null, catalogName: 'HD 252405', mag: 8.78, specType: '', x: 200, y: 362.4 },
+  { commonName: null, catalogName: 'HD 252353', mag: 9.1, specType: 'A', x: 277.9, y: 70.4, tagDx: 30, tagDy: 45 },
+  { commonName: null, catalogName: 'HD 251671', mag: 9.26, specType: 'B8', x: 1162.4, y: 255.4 },
+  { commonName: null, catalogName: 'HD 252373', mag: 9.29, specType: 'B7III', x: 215.9, y: 254.5 },
+  { commonName: null, catalogName: 'HD 252504', mag: 9.32, specType: 'B9.5V', x: 16.4, y: 367.8, tagDx: -12, tagDy: 82 },
+  { commonName: null, catalogName: 'HD 252199', mag: 9.38, specType: 'A0V', x: 437.8, y: 47.3 },
+  { commonName: null, catalogName: 'TYC 1864-951-1', mag: 9.39, specType: '', x: 1036.6, y: 404.8 },
+  // ~39px from HD 252373 -- a real close pair (both A/B-type stars in the
+  // cluster core), not a dedup case. tagDy clears the tag collision only.
+  { commonName: null, catalogName: 'HD 252319', mag: 9.4, specType: 'G5', x: 267, y: 205.7, tagDx: 154, tagDy: 80 },
+  { commonName: null, catalogName: 'HD 251944', mag: 9.46, specType: 'A0m', x: 834.4, y: 453 },
+  { commonName: null, catalogName: 'HD 252404', mag: 9.67, specType: 'A', x: 208.8, y: 134.6 },
+  { commonName: null, catalogName: 'HD 252480', mag: 9.69, specType: 'A0V', x: 61.7, y: 168.4 },
+  // ~31px from HD 251944 (real pair, cluster core) and ~48px from TYC
+  // 1864-677-1 below -- nudged up, away from both and from HD 252048.
+  { commonName: null, catalogName: 'TYC 1864-545-1', mag: 9.69, specType: '', x: 835.8, y: 494.2, tagDx: -90, tagDy: -41 },
+  { commonName: null, catalogName: 'TYC 1864-677-1', mag: 9.7, specType: '', x: 887.5, y: 529.3, tagDx: 55, tagDy: 30 },
+  { commonName: null, catalogName: 'TYC 1864-607-1', mag: 9.76, specType: '', x: 794.8, y: 381.2 },
+  // ~39px from HD 252404 (real pair) -- tagDy clears the tag collision.
+  // Genuinely dense sub-cluster (252373/252319/252404/41940/252318 all
+  // within ~60px on screen at slider=10) -- this offset minimizes but
+  // doesn't fully eliminate tag overlap; a small collision with 252405's
+  // tag remains as an accepted density limitation, not a placement bug.
+  { commonName: null, catalogName: 'HD 252318', mag: 9.8, specType: 'A', x: 258.9, y: 155.2, tagDx: 0, tagDy: 127 },
+  { commonName: null, catalogName: 'HD 252176', mag: 9.8, specType: 'A0V', x: 502.6, y: 102.6 },
+  { commonName: null, catalogName: 'HD 252153', mag: 9.82, specType: 'A0', x: 544.9, y: 22.3 },
+  { commonName: null, catalogName: 'HD 252201', mag: 9.87, specType: 'A', x: 476.2, y: 442.2 },
+  { commonName: null, catalogName: 'HD 252202', mag: 9.9, specType: 'A0', x: 454.7, y: 608.6 },
+  { commonName: null, catalogName: 'HD 252048', mag: 9.94, specType: 'B8III-IVSi', x: 691.5, y: 501.9 },
+];
+
 import eclipse2017Event01 from '../../content/gallery/_images/eclipse2017-event-dsc0195.jpg';
 import eclipse2017Event02 from '../../content/gallery/_images/eclipse2017-event-dsc0193.jpg';
 import eclipse2017Event03 from '../../content/gallery/_images/eclipse2017-event-dsc0202.jpg';
@@ -233,6 +276,14 @@ const hires = hiresMap[entry.id];
         imageHeight={800}
         stars={m20HeroStars}
         maxMag={12}
+      />
+    ) : entry.id === 'm35-open-cluster-gemini' ? (
+      <StarMagnitudeSlider
+        image={entry.data.image}
+        alt={entry.data.title}
+        imageWidth={1200}
+        imageHeight={800}
+        stars={m35HeroStars}
       />
     ) : (
       entry.id !== 'comet-neowise-timelapse' && entry.data.image && (
