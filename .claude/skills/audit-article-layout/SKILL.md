@@ -152,7 +152,17 @@ For each confirmed issue (missing content or a layout-rule violation):
 1. Fix it directly in the `.md` file, following the relevant numbered rule
    in `CLAUDE.md`. When a fix needs a new image, prefer copying a
    byte-identical file already in the repo (as with the signature graphic)
-   over re-downloading if one exists.
+   over re-downloading if one exists. **Overriding rule (see `CLAUDE.md`):
+   body text must run continuously, with no dead visible gaps — don't reach
+   for `ke-clear` to solve a squeeze or narrow-line problem, since a clear
+   just relocates the void rather than closing it.** Resize the float
+   instead (anywhere from ~1/4 to ~3/4 article width) or reposition it
+   beside a different paragraph with more/less text to wrap around — e.g.
+   `.ke-figure-column` (or its mirror, floating whichever edge the sidebar
+   *isn't* on) to exactly fill a wide sidebar's leftover width so there's
+   nothing left to squeeze into, no clear needed. Reserve `ke-clear` for
+   spots where it creates no visible gap (e.g. the true tail end of an
+   article, after the last float, before the closing signature).
 2. Re-render and re-run the specific check that flagged the issue to
    confirm it's actually resolved — don't assume from reading the diff.
 3. Once the page is clean, commit and push to `origin main` without

@@ -32,16 +32,24 @@ return JSON.stringify(gaps,null,1);
   rect actually spans the reported gap.
 - **A sidebar occupying the gap in parallel.** Sidebars are deliberately
   excluded from the flow list (they float beside the flow, not within it),
-  so a heading that correctly waits for `ke-clear` after a sidebar will
+  so a heading/paragraph rendering after a still-active sidebar clears will
   always look like a gap to this script. Pull the sidebar's own rect
   separately and check whether it (plus a small margin) accounts for the
-  reported gap — if so, this is correct layout, not a bug.
+  reported gap — if so, this is fine (the sidebar itself has visible
+  content filling the row, it's just excluded from this script's flow
+  list), not a bug.
 
 If, after ruling both of those out, a gap still isn't explained by any
-element's rect, it's a real void — usually caused by a plain (non-floated)
-image or `.ke-figure` deferring past an active float instead of sliding into
-the remaining space (see `CLAUDE.md` rule 3 / the site-wide layout memory
-for the fix: float the smaller element too).
+element's rect, it's a real void. Two common causes: (1) a plain
+(non-floated) image or `.ke-figure` deferring past an active float instead
+of sliding into the remaining space — float the smaller element too (see
+`CLAUDE.md` rule 3); (2) **an explicit `ke-clear` forcing the next element
+to jump past a still-tall float with nothing rendering in between — this is
+now a confirmed bug, not acceptable layout, per `CLAUDE.md`'s overriding
+"body text must run continuously" rule (2026-07-28).** Don't rationalize a
+`ke-clear`-caused gap as "correctly waiting" — remove the clear and resize
+or reposition the float instead (see `SKILL.md` Step 4) so text keeps
+flowing right up to the point the float actually ends.
 
 ## 2. Same-side figure/sidebar overlap (squeeze check)
 
