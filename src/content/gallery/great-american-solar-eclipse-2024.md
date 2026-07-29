@@ -3,7 +3,7 @@ title: The Great American Solar Eclipse 2024 - Totality over Texas
 description: Diamond rings, corona, earthshine, and prominence detail from the April 8, 2024 total solar eclipse.
 pubDate: 2024-04-08
 image: ./_images/great-american-solar-eclipse-2024.jpg
-equipment: "Takahashi TOA-150 apochromatic refractor, Coronado Solar Max H-alpha scope, Nikon D810a DSLR"
+equipment: "Takahashi FSQ-106 apochromatic refractor (white light/totality), Coronado Solarmax 90 H-alpha scope, Nikon D810a DSLR"
 exposure: "Composite stacks ranging from 1/3200 sec to 2 sec"
 draft: false
 ---
@@ -47,7 +47,7 @@ A sequence of frames leading into totality at Second Contact &mdash; the diamond
 
 </div>
 </div>
-<p class="ke-image-feature-caption">Left: a closeup crop on the prominences visible during totality, the pink plasma loops arcing along the sun's magnetic field lines. Right: the same kind of limb detail, this time captured in hydrogen-alpha with the Coronado scope, showing the prominences against the chromosphere's fibrous texture.</p>
+<p class="ke-image-feature-caption">Left: a closeup crop on the prominences visible during totality, the pink plasma loops arcing along the sun's magnetic field lines. Right: the same kind of limb detail, this time captured in hydrogen-alpha with the Coronado Solarmax 90, showing the prominences against the chromosphere's fibrous texture.</p>
 </div>
 
 <div class="ke-figure" data-hires="/images/gallery/great-american-solar-eclipse-2024-white-light-4th-contact-hires.jpg">
@@ -64,7 +64,7 @@ The white-light view as the moon pulls away near Fourth Contact, the eclipse's f
 
 </div>
 
-And the same moment near Fourth Contact captured in H-alpha through the Coronado scope, showing the sun's chromosphere in fine fibrous detail, filaments threading across the disk and prominences still lifting off the limb.
+And the same moment near Fourth Contact captured in H-alpha through the Coronado Solarmax 90, showing the sun's chromosphere in fine fibrous detail, filaments threading across the disk and prominences still lifting off the limb.
 
 For more on how I planned and shot this eclipse &mdash; equipment, exposure strategy, and the contact-by-contact rundown &mdash; see the [Great American Solar Eclipse 2024](/learning/great-american-solar-eclipse-2024/) article.
 
