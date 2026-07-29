@@ -6,7 +6,7 @@ image: ./_images/m31-andromeda-galaxy.jpg
 draft: false
 ---
 
-A three-panel mosaic of the Andromeda Galaxy and its companion, M32. Two earlier attempts at this same object — from [2004](/gallery/m31-andromeda-2004/) and [2003](/gallery/m31-andromeda-2003/) — are also on file, if you're curious how this one evolved.
+A three-panel mosaic of the Andromeda Galaxy and its companion, M32. Two earlier attempts at this same object — from [2004](/gallery/m31-andromeda-2004/) and [2003](/gallery/m31-andromeda-2003/) — are also on file, if you're curious how this one evolved. A much more ambitious [eight-panel mosaic](/gallery/m31-mosaic/) from 2019 is the newer, definitive version.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">

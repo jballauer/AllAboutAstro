@@ -6,7 +6,7 @@ image: ./_images/m31-mosaic.jpg
 draft: false
 ---
 
-An eight-frame LRGB mosaic of the Great Andromeda Galaxy — combining long-focal-length resolution with a wide enough field of view to capture the whole galaxy in one frame.
+An eight-frame LRGB mosaic of the Great Andromeda Galaxy — combining long-focal-length resolution with a wide enough field of view to capture the whole galaxy in one frame. Earlier attempts at this object are also on file: a [three-panel mosaic](/gallery/m31-andromeda-galaxy/) from 2005, and even earlier images from [2004](/gallery/m31-andromeda-2004/) and [2003](/gallery/m31-andromeda-2003/).
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">

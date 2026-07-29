@@ -7,7 +7,7 @@ draft: false
 showInGallery: false
 ---
 
-An earlier attempt at M31, the Andromeda Galaxy — see the [current version](/gallery/m31-andromeda-galaxy/) for the full writeup on this object.
+An earlier attempt at M31, the Andromeda Galaxy. An even [earlier 2003 attempt](/gallery/m31-andromeda-2003/), a [2005 three-panel mosaic](/gallery/m31-andromeda-galaxy/) (with the full writeup on this object), and the newest [eight-panel mosaic](/gallery/m31-mosaic/) from 2019 are also on file.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
