@@ -14,7 +14,7 @@ Just judging by all the pictures of equipment at All About Astro.com, you've no 
 
 Now that the mystery is out of the way, let's talk about why I - and so many others interested in serious astroimaging - will put so much money into one (or more) of the several Software Bisque mounts on either the new and used telescope market.
 
-<div class="ke-figure ke-figure-left">
+<div class="ke-figure ke-figure-left ke-figure-quarter">
 
 ![The Aries instrument pier setup](./_images/sb-01-aries-pier.jpg)
 
@@ -46,7 +46,7 @@ Today, these mounts can be found used for around $5000, down from the $12,000 or
 
 **The Paramount MX** - Because the ME did so well, people clamored for the same level of excellence in a smaller mount at a more budget-friendly price point. In return, SB gave us the MX mount in 2011. However, at a $9000 sticker price, it's debatable HOW budget-friendly it truly was! It did feature the same capabilities of the ME with a 90 lbs. payload capacity, saving $3k from the ME price tag.
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![A Celestron C11 Edge on a Paramount MX mount](./_images/sb-02-c11-mxplus.jpg)
 
@@ -116,7 +116,9 @@ Of course, this was the limit to my play at this time. What else can you do indo
 
 Because Paramounts are a hardware/software system, and because the software, TheSkyX Professional, can be purchased for use with third-party mounts, it should be said that many such mounts can be setup and controlled within TheSkyX to offer SOME of what Paramounts can do. Essentially, we would need a review of TheSkyX Professional itself to explain these advantages more fully. But whereas this might be true to some extent, the full feature-set of the software can never be fully-realized without Paramount hardware. More importantly, the security of just KNOWING that the system will work is only true of Paramounts themselves. As such, let's explore the nature of a Paramount's hardware features, keeping in mind how the software can enhances these mounts to make them perhaps the most reliable, flexible, and powerful mounts available to amateurs today.
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-clear"></div>
+
+<div class="ke-figure ke-figure-right ke-figure-quarter">
 
 ![The Sky X Professional software box](./_images/sb-03-17890.jpg)
 
@@ -184,10 +186,6 @@ These mounts are pretty, as are their counterweights. While some mounts use pain
 
 Software Bisque currently has a variety of options for mounting your Paramount. There are currently two general tripod offerings known as the Pyramid ($2000) and Helium ($1100). The Helium is designed for use with the smaller MyT and MX+ Paramounts and comes with your choice of mounting plate (the hole patterns are different for these mounts). The Pyramid mount comes with the standard MX plate, which also works for the ME and ME2 mounts (a smaller plate for the MyT mount can be purchased separately).
 
-Additionally, for $1350, SB sells a MyT-specific tripod, which is more like a "portable pier." All tripod options have additional pier 4" and 6" extensions for an extra $100.
-
-These portable tripods and piers are relatively new for SB and were not available at the time I acquired my first Paramount ME. At that time, a third-party, Particle Wave Technology, sold a PWT tripod option as shown in the picture above. This option, no longer available today, originally cost $3300. While it's an amazing portable "pier" option, it's easy to see that the SB options of today are a little more budget friendly, and the newer MyT portable pier option most certainly appears to be a descendant of the PWT version.
-
 <div class="ke-figure ke-figure-right ke-figure-third">
 
 ![A Paramount in use](./_images/sb-04-589952209.jpg)
@@ -195,6 +193,10 @@ These portable tripods and piers are relatively new for SB and were not availabl
 <p class="ke-figure-caption">Of note here is the Particle Wave Technology portable pier option originally acquired with the Paramount ME. Pricey then and impossible to find today, the PWT pier was a beautiful way to "mount the mount," with a near-matching anodized aluminum color in the familiar "Paramount red."</p>
 
 </div>
+
+Additionally, for $1350, SB sells a MyT-specific tripod, which is more like a "portable pier." All tripod options have additional pier 4" and 6" extensions for an extra $100.
+
+These portable tripods and piers are relatively new for SB and were not available at the time I acquired my first Paramount ME. At that time, a third-party, Particle Wave Technology, sold a PWT tripod option as shown in the picture above. This option, no longer available today, originally cost $3300. While it's an amazing portable "pier" option, it's easy to see that the SB options of today are a little more budget friendly, and the newer MyT portable pier option most certainly appears to be a descendant of the PWT version.
 
 Software Bisque also carries a variety of permanent piers for MX and larger mounts. Priced around $680, standard heights are 12", 18", 24", 30", 36", and 48", with custom options available.
 
@@ -352,17 +354,17 @@ Like you, I have a dream equipment list; gear that will satisfy my every whim an
 - A 14.5" Ritchey-Chretian Cassegrain (any make will do) for narrow-field CCD imaging.
 - One of several GOTO mounts such as an AP900/1200, a Software Bisque Paramount, a Takahashi NJP, or a Mountain Instruments MI-250.
 
-<div class="ke-figure">
-
-![A Paramount setup](./_images/sb-06-484795617.jpg)
-
-</div>
-
 Any one telescope in each category will satisfy my requirements and will be held onto for the rest of my life. Even unto death. Who needs a coffin when you have a big dob?
 
 Yeah, these scopes cost some money...but don't all dream scopes? And when I receive one, I hope you will pardon me for my moment of glee. It's a feeling I'll only have maybe 4 or 5 times in a lifetime!
 
-**The Setup of Dreams** - My first Paramount ME was definitely a dream mount. In all honesty, it still is, which is why a used Paramount ME in today's market for around $5,000 is an absolute bargain. I've been fortunate in my astronomy "career" to be associated with some great people and organizations, which have led to opportunities that could never happen otherwise. At that point, when you have three killer 6" apochromatic refractors and a Paramount, there's probably no good reason to use them all at the same time. But isn't that what dreams are all about? Dreams are seldom about what is necessary; rather, about what is fantastic. For me, imaging with a Tak TOA-150 and Sky-Watcher Esprit 150 simultaneously, while relegating the Astro-Physics AP-160 refractor to the role of "guide-scope" is utterly ridiculous and delicious, all at the same time!
+<div class="ke-figure">
+
+![A Paramount setup](./_images/sb-06-484795617.jpg)
+
+<p class="ke-figure-caption">The Setup of Dreams - My first Paramount ME was definitely a dream mount. In all honesty, it still is, which is why a used Paramount ME in today's market for around $5,000 is an absolute bargain. I've been fortunate in my astronomy "career" to be associated with some great people and organizations, which have led to opportunities that could never happen otherwise. At that point, when you have three killer 6" apochromatic refractors and a Paramount, there's probably no good reason to use them all at the same time. But isn't that what dreams are all about? Dreams are seldom about what is necessary; rather, about what is fantastic. For me, imaging with a Tak TOA-150 and Sky-Watcher Esprit 150 simultaneously, while relegating the Astro-Physics AP-160 refractor to the role of "guide-scope" is utterly ridiculous and delicious, all at the same time!</p>
+
+</div>
 
 </div>
 
