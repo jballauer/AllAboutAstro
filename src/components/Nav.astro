@@ -2,10 +2,10 @@
 import { getCollection } from 'astro:content';
 
 const gearItems = (await getCollection('gear')).sort((a, b) => a.data.order - b.data.order);
-const learningItems = (await getCollection('learning', ({ data }) => !data.draft)).sort(
+const learningItems = (await getCollection('learning', ({ data }) => !data.draft && !data.unlisted)).sort(
   (a, b) => a.data.order - b.data.order
 );
-const allSliderules = await getCollection('sliderules');
+const allSliderules = await getCollection('sliderules', ({ data }) => !data.draft && !data.unlisted);
 const sliderulesTop = allSliderules
   .filter((item) => !item.id.includes('/'))
   .sort((a, b) => a.data.order - b.data.order);
