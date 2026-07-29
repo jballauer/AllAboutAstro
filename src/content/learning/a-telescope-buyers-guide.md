@@ -369,34 +369,6 @@ Don't be disappointed in this fact.  Instead, celebrate that open competition in
 
 </div>
 
-<div class="ke-sidebar" data-color="teal" data-side="right" data-width="wide">
-
-## Sidebar: "Alt-az" vs. "EQ"
-
-Mounts come in two varieties in terms of how we align them, shown in the picture below.
-
-<div class="ke-figure">
-
-![Comparison of alt-az and equatorial telescope mounts](./_images/guide-17-telescope-mounts2.jpg)
-
-<p class="ke-figure-caption">- Courtesy of Starry Hill Observatory at www.starryhill.org</p>
-
-</div>
-
-"Alt-az" or altitude-azimuth mounts are quite simple...rotating the scope is an azimuth move and raising the scopes is an altitude move.  As such, mounts like these can be made simply and cheaply, making them easily portable.  They are also free of difficulties in terms of use.
-
-Both axes can be equipped with encoders and motors, which is the typical fork-armed SCT setup (Meade LXs and Celestron Nexstars).  These take advantage of on-board electronics to know exactly where an object is at any given time, coordinates that are mapped out at (azimuth, altitude).   These "GOTO" scopes are very popular, keeping in mind that ANY electronics increases the learning curve with such instruments, as well as one more thing that could break.  Similarly, the alt-az Dobsonian scope may be configured with encoders that indicate the coordinates in which the scope is directed.  These "push-to" electronics are often sold as extra bundles to existing dobs for some extra money.  For example, with Orion XT dobs, this is the difference between the "Classic" and the "Intelliscope" versions, which have a $250 price differential for same aperture scopes.
-
-With motors, electronics, and heavy fork-arms (like with SCTs), the non-dobsonian alt-az mount ceases being light-weight and simple.  When beefed up to hold large OTAs, they can be monstrous.  It should also be said that such alt-az scopes, even those with tracking motors in both axes, are not photographic instruments because of a dynamic called "field rotation."  Over the time of a longer exposure, the camera view will rotate around the center of optical axis unless the scope is equatorially-mounted.  For this reason, many scopes like SCTs have a "wedge" accessory that allows you to mount the same scope equatorially.  Wedges are heavy.  This makes such setup even LESS portable and much more complex in use.
-
-"EQ" or equatorial mounts, are tilted to point toward the celestial pole, which lies above the earth's axis of rotation.   As such, aligning to the celestial pole (very near Polaris or the "North Star" for northern hemisphere users) allows the mount to accurately track the stars by using a single motor, which spins at the earth's rotational speed.   This is highly desired for photographers, since a well-aligned EQ mount will run happily all night on an object without any issues.  No field rotation to speak of.   Even manually, one just has to turn one knob (the RA knob) to keep up with the earth's rotation.
-
-A good EQ mount will typically be motorized on both axes, and when equipped with a electronics the positions of objects can be dialed in according to the (Right Ascension, Declination) coordinates for any given time.   EQ mounts require a beefier setup for greater accuracy and heavier payloads, and for this reason many of these lack the portability of a simple, motorless alt-az setup.
-
-There is a smaller type of EQ mount popular today known as "tracker" mounts.  Such mounts allow for very small payloads like smaller refractor and camera lenses.  Motorized, these light-weight mounts can be quickly "polar aligned" and left to track an object all-night.   These will typically NOT be GOTO mounts, so be sure you know how to find the objects yourself.
-
-</div>
-
 <div class="ke-figure ke-figure-right" data-hires="/images/learning/guide-16-dob10-full.jpg">
 
 ![A 10" Sky-Watcher truss Dobsonian telescope](./_images/guide-16-dob10.jpg)
@@ -450,6 +422,34 @@ Optics without electronics, such as high-quality, high-performing APO refractors
 Similarly, some designs are in higher demand than others.   Petzval-based refractors and those with oil-spaced or fluorite lenses are very attractive.   Also, mirrors from well-known custom makers (i.e. Zambuto) always carry a premium...and many people will pay almost new prices for used gear just to circumvent the build-time (often measured in years) for certain optics.   An Astro-Physics refractor is the classic example of this principle, as their wait-list for current refractors is about 7 years long.   Thus, people who want such instruments will often pay full retail price (or more) for used gear, saving 7 years of agonizing waiting!
 
 Larger instruments are the most difficult to resell, obviously due to their size.   Shipping is a pain...and costly.   So, resale is often limited to local-only, where the demand will be much less.   Thus, smaller instruments, especially portable optics like APO refractors, will be the easiest to move.
+
+<div class="ke-sidebar" data-color="teal" data-side="right" data-width="wide">
+
+## Sidebar: "Alt-az" vs. "EQ"
+
+Mounts come in two varieties in terms of how we align them, shown in the picture below.
+
+<div class="ke-figure">
+
+![Comparison of alt-az and equatorial telescope mounts](./_images/guide-17-telescope-mounts2.jpg)
+
+<p class="ke-figure-caption">- Courtesy of Starry Hill Observatory at www.starryhill.org</p>
+
+</div>
+
+"Alt-az" or altitude-azimuth mounts are quite simple...rotating the scope is an azimuth move and raising the scopes is an altitude move.  As such, mounts like these can be made simply and cheaply, making them easily portable.  They are also free of difficulties in terms of use.
+
+Both axes can be equipped with encoders and motors, which is the typical fork-armed SCT setup (Meade LXs and Celestron Nexstars).  These take advantage of on-board electronics to know exactly where an object is at any given time, coordinates that are mapped out at (azimuth, altitude).   These "GOTO" scopes are very popular, keeping in mind that ANY electronics increases the learning curve with such instruments, as well as one more thing that could break.  Similarly, the alt-az Dobsonian scope may be configured with encoders that indicate the coordinates in which the scope is directed.  These "push-to" electronics are often sold as extra bundles to existing dobs for some extra money.  For example, with Orion XT dobs, this is the difference between the "Classic" and the "Intelliscope" versions, which have a $250 price differential for same aperture scopes.
+
+With motors, electronics, and heavy fork-arms (like with SCTs), the non-dobsonian alt-az mount ceases being light-weight and simple.  When beefed up to hold large OTAs, they can be monstrous.  It should also be said that such alt-az scopes, even those with tracking motors in both axes, are not photographic instruments because of a dynamic called "field rotation."  Over the time of a longer exposure, the camera view will rotate around the center of optical axis unless the scope is equatorially-mounted.  For this reason, many scopes like SCTs have a "wedge" accessory that allows you to mount the same scope equatorially.  Wedges are heavy.  This makes such setup even LESS portable and much more complex in use.
+
+"EQ" or equatorial mounts, are tilted to point toward the celestial pole, which lies above the earth's axis of rotation.   As such, aligning to the celestial pole (very near Polaris or the "North Star" for northern hemisphere users) allows the mount to accurately track the stars by using a single motor, which spins at the earth's rotational speed.   This is highly desired for photographers, since a well-aligned EQ mount will run happily all night on an object without any issues.  No field rotation to speak of.   Even manually, one just has to turn one knob (the RA knob) to keep up with the earth's rotation.
+
+A good EQ mount will typically be motorized on both axes, and when equipped with a electronics the positions of objects can be dialed in according to the (Right Ascension, Declination) coordinates for any given time.   EQ mounts require a beefier setup for greater accuracy and heavier payloads, and for this reason many of these lack the portability of a simple, motorless alt-az setup.
+
+There is a smaller type of EQ mount popular today known as "tracker" mounts.  Such mounts allow for very small payloads like smaller refractor and camera lenses.  Motorized, these light-weight mounts can be quickly "polar aligned" and left to track an object all-night.   These will typically NOT be GOTO mounts, so be sure you know how to find the objects yourself.
+
+</div>
 
 ### Ease of Use
 
