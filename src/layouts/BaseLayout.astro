@@ -7,12 +7,14 @@ interface Props {
   title: string;
   description?: string;
   showUnderConstruction?: boolean;
+  noindex?: boolean;
 }
 
 const {
   title,
   description = 'All About Astro — astrophotography, gear, and learning resources.',
   showUnderConstruction = false,
+  noindex = false,
 } = Astro.props;
 ---
 
@@ -23,6 +25,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <title>{title} | All About Astro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

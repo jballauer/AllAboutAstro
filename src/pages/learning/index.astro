@@ -25,7 +25,7 @@ import thumbPresNeaic from '../../content/learning/_images/thumbs/pres-neaic-201
 import thumbPresPhotoshop from '../../content/learning/_images/thumbs/pres-photoshop-workflows.png';
 import thumbPresMath from '../../content/learning/_images/thumbs/pres-math-in-astronomy.png';
 
-const articles = await getCollection('learning', ({ data }) => !data.draft);
+const articles = await getCollection('learning', ({ data }) => !data.draft && !data.unlisted);
 const byId = Object.fromEntries(articles.map((a) => [a.id, a]));
 
 // Categorized groupings and thumbnails match the original Weebly page's

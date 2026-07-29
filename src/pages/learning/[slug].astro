@@ -45,7 +45,7 @@ const { Content } = await render(article);
 const banner = pageBanners[article.id];
 ---
 
-<BaseLayout title={article.data.title} description={article.data.description}>
+<BaseLayout title={article.data.title} description={article.data.description} noindex={article.data.unlisted}>
   <article>
     {banner && <PageBanner src={banner.src} alt={banner.alt} />}
     <h1>{article.data.title}</h1>

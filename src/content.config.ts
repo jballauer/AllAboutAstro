@@ -21,6 +21,12 @@ const learning = defineCollection({
     order: z.number().default(0),
     coverImage: image().optional(),
     draft: z.boolean().default(false),
+    // Built and deployed, but excluded from the /learning/ index, nav, and
+    // sitemap, and rendered with a noindex meta tag — reachable only by
+    // direct URL. For old-site pages restored as unlisted drafts/holding
+    // pages, distinct from `draft` (which drops the page from the build
+    // entirely outside local dev).
+    unlisted: z.boolean().default(false),
   }),
 });
 
@@ -47,6 +53,7 @@ const sliderules = defineCollection({
     order: z.number().default(0),
     coverImage: image().optional(),
     draft: z.boolean().default(false),
+    unlisted: z.boolean().default(false),
   }),
 });
 
