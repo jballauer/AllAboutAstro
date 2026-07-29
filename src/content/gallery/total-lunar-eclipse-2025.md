@@ -4,22 +4,22 @@ description: A composite sequence and individual frames from the total lunar ecl
 pubDate: 2025-03-14
 image: ./_images/total-lunar-eclipse-2025.jpg
 equipment: "Takahashi TOA-150 apochromatic refractor on an iOptron CEM60ec mount, Nikon D810a DSLR"
-exposure: "290+ individual frames captured through the night; 16 combined into the composite above"
+exposure: "290+ individual frames captured through the night; 9 combined into the composite above"
 draft: false
 ---
 
-A linear composite showing the full progression of the March 13-14, 2025 total lunar eclipse, shot right from home in Grapevine, Texas. No need to travel for this one &mdash; the whole event, start to finish, played out overhead on a clear March night.
+A composite showing the full progression of the March 13-14, 2025 total lunar eclipse, shot right from home in Grapevine, Texas. No need to travel for this one &mdash; the whole event, start to finish, played out overhead on a clear March night.
 
-The moon was tracked continuously through an intervalometer-driven sequence of 290+ exposures, from the first bite of the penumbra through totality and back out again. Sixteen frames from that sequence, evenly spaced, make up the composite above &mdash; the exposure time climbing steeply toward the middle of the sequence as the moon dims from a fully-lit disk to a dim red ember and back again.
+The moon was tracked continuously through an intervalometer-driven sequence of 290+ exposures, from the first bite of the penumbra through totality and back out again. Nine frames from that sequence, evenly spaced, make up the composite above &mdash; arranged in a single row radiating outward from totality at the center, with the exposure time climbing steeply toward the middle of the sequence as the moon dims from a fully-lit disk to a dim red ember and back again.
 
 <div class="ke-image-feature">
 <div class="ke-image-feature-row">
-<div class="ke-image-feature-item">
+<div class="ke-image-feature-item" data-hires="/images/gallery/total-lunar-eclipse-2025-partial-hires.jpg">
 
 ![The partial phase of the March 2025 lunar eclipse, as the umbral shadow advances across the lunar disk](./_images/total-lunar-eclipse-2025-partial.jpg)
 
 </div>
-<div class="ke-image-feature-item">
+<div class="ke-image-feature-item" data-hires="/images/gallery/total-lunar-eclipse-2025-totality-hires.jpg">
 
 ![Totality during the March 2025 lunar eclipse, the full lunar disk lit only by refracted, reddened sunlight](./_images/total-lunar-eclipse-2025-totality.jpg)
 
@@ -32,13 +32,13 @@ That jump in exposure time from one frame to the next is the whole story of a lu
 
 ### A Second Composite
 
-<div class="ke-figure">
+<div class="ke-figure" data-hires="/images/gallery/total-lunar-eclipse-2025-sequence-hires.jpg">
 
-![A second composite of the March 2025 total lunar eclipse, arranged as a single row radiating out from totality at center](./_images/total-lunar-eclipse-2025-radial.jpg)
+![A second composite of the March 2025 total lunar eclipse, sixteen frames arranged in two rows spanning the full progression](./_images/total-lunar-eclipse-2025-sequence.jpg)
 
 </div>
 
-A second, simpler arrangement of the same event &mdash; nine frames in a single row, radiating outward from totality at the center rather than stacked in two rows like the composite up top. Same eclipse, same night, just a different way of laying out the story.
+A second, denser arrangement of the same event &mdash; sixteen frames stacked in two rows rather than radiating out from a single center like the composite up top. Same eclipse, same night, just a different way of laying out the story.
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
