@@ -6,4 +6,20 @@ draft: false
 unlisted: true
 ---
 
-This page is a placeholder for an article that was never finished (or was kept password-protected as a work-in-progress) on the original site. There isn't real content here yet — check back later, or reach out to [Jay](mailto:jballauer@gmail.com) if you were looking for something specific.
+This article was never expanded past a set of principles on the original site. Here's what's actually there:
+
+I. Build relationships with kids and develop a climate of trust.
+
+II. Know your subject and be able to communicate it.
+
+III. Have an atmosphere of expectation.
+
+IV. Seek to change the fixed mindset of your learners to a growth mindset.
+
+V. Work toward changing the way we do math education on the whole.
+
+VI. Understand that people mature at different rates. Just because you aren't "good" at math now doesn't mean you won't be good at math later.
+
+Everything else undergirds these principles: administration support of your expectations in the classroom, both to the kids and the parents; use of technology and basic pedagogical principles (i.e., the Fundamental Five) to support your ability to communicate academic objectives and your expectations (these are tools to help accomplish your objectives)...
+
+That's the whole page — the outline was never fleshed out further. Reach out to [Jay](mailto:jballauer@gmail.com) if you were hoping for more.

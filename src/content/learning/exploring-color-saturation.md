@@ -6,4 +6,10 @@ draft: false
 unlisted: true
 ---
 
-This page is a placeholder for an article that was never finished (or was kept password-protected as a work-in-progress) on the original site. There isn't real content here yet — check back later, or reach out to [Jay](mailto:jballauer@gmail.com) if you were looking for something specific.
+This article was never expanded past a couple of opening notes on the original site. Here's what's actually there:
+
+Saturation problems...
+
+1. Boosting saturation by boosting curves can inject noise into the image. In doing sound, when we needed to raise somebody else over the mix, we wouldn't lift the slider, we would drop all the others.
+
+That's the whole page — the thought was never developed further. Reach out to [Jay](mailto:jballauer@gmail.com) if you were hoping for more.
