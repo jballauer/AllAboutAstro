@@ -9,7 +9,14 @@ Thus begins a comprehensive picture list of all the slide rules in my collection
 
 This page is very much under construction. I will be adding history, scale and construction details for all rules at some point. Not all rules I own are pictured here. Please refer to the [Version History](/sliderules/all-about-ke-rules/appendix-5-version-history/) page for the changes made when they happen.
 
-## Aristo
+Click a maker's name below to expand its rules.
+
+<div class="ke-portfolio-list">
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Aristo</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Nr. 621 Circular**
 
@@ -121,7 +128,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Concise
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Concise</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Model 271**
 
@@ -146,11 +160,20 @@ This page is very much under construction. I will be adding history, scale and c
 </div>
 
 **No. 31 keychain circular rule for Nissan**
+
 ![Concise No. 31 keychain circular rule for Nissan](./_images/all-rules/concise-keychain.jpg)
 
-## Dietzgen
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Dietzgen</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Redirule No. 1776**
+
 ![Dietzgen Redirule No. 1776, front](./_images/all-rules/dietzgen-1776-front.jpg)
 
 **1778 Redilog Pocket Rule**
@@ -175,7 +198,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Diwa
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Diwa</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **851/4 Darmstadt**
 
@@ -199,9 +229,17 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Faber-Castell
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Faber-Castell</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **2/83N Novo-Biplex**
+
 ![Faber-Castell 2/83N Novo-Biplex, front](./_images/all-rules/fc-283n-front.jpg)
 
 **8/10 Circular**
@@ -292,7 +330,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Graphoplex
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Graphoplex</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **615 Caltex**
 
@@ -338,7 +383,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Hemmi
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Hemmi</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Model 35ML**
 
@@ -539,6 +591,7 @@ This page is very much under construction. I will be adding history, scale and c
 </div>
 
 **P281 Student Simplex Rule**
+
 ![Hemmi P281 Student Simplex Rule, front and back](./_images/all-rules/hemmi-p281.jpg)
 
 **410 "Involute of Gear Wheels"**
@@ -563,7 +616,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## K&E (Keuffel & Esser)
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">K&amp;E (Keuffel &amp; Esser)</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **4088-1 Pocket Polyphase Duplex**
 
@@ -741,7 +801,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Logarex
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Logarex</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **27205**
 
@@ -765,12 +832,27 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Norma
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Norma</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Ronda 100**
+
 ![Norma Ronda 100](./_images/all-rules/norma-ronda100.jpg)
 
-## Pickett
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Pickett</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **B1**
 
@@ -795,6 +877,7 @@ This page is very much under construction. I will be adding history, scale and c
 </div>
 
 **N4-T**
+
 ![Pickett N4-T, front](./_images/all-rules/pk-n4t-front.jpg)
 
 **N4P-ES Pocket**
@@ -820,6 +903,7 @@ This page is very much under construction. I will be adding history, scale and c
 </div>
 
 **N16-ES Electronic**
+
 ![Pickett N16-ES Electronic, front](./_images/all-rules/pk-n16es-front.jpg)
 
 **C19-T Collins Microwave Transmission**
@@ -911,6 +995,7 @@ This page is very much under construction. I will be adding history, scale and c
 </div>
 
 **Model 106C Proportional Scale**
+
 ![Pickett Model 106C Proportional Scale, front](./_images/all-rules/pk-106c-front.jpg)
 
 **Model 111-ES Circular**
@@ -1089,7 +1174,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Post
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Post</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Post 1441**
 
@@ -1179,7 +1271,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Sans & Streiffe
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Sans &amp; Streiffe</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **No. 313**
 
@@ -1203,7 +1302,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## SIC - Scientific Instruments Company
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">SIC - Scientific Instruments Company</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Star No. 25 for General Motors**
 
@@ -1249,7 +1355,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Staedtler
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Staedtler</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **No. 54428**
 
@@ -1273,7 +1386,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Standardgraph
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Standardgraph</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Standardgraph Nr. 900**
 
@@ -1297,7 +1417,14 @@ This page is very much under construction. I will be adding history, scale and c
 
 </div>
 
-## Unique
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Unique</span></summary>
+
+<div class="ke-portfolio-detail">
 
 **Unique Log Log Pocket**
 
@@ -1318,5 +1445,11 @@ This page is very much under construction. I will be adding history, scale and c
 <p class="ke-figure-caption">Back</p>
 
 </div>
+
+</div>
+
+</div>
+
+</details>
 
 </div>
