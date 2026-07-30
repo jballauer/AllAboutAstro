@@ -25,32 +25,82 @@ const legacyCategories = legacyCategoryOrder
 <BaseLayout title="Blog">
   <PageBanner src={blogBanner} alt="A close-up of the Moon's cratered surface" />
   <h1>Blog</h1>
-  <ul>
-    {posts.map((post) => (
-      <li>
-        <a href={`/blog/${post.id}/`}>
-          {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })} &mdash; {post.data.title}
-        </a>
-      </li>
-    ))}
-  </ul>
+  <div class="blog-columns">
+    <div class="blog-col blog-col-main">
+      <ul class="blog-list">
+        {posts.map((post) => (
+          <li>
+            <a href={`/blog/${post.id}/`}>
+              {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })} &mdash; {post.data.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
 
-  {legacyCategories.length > 0 && (
-    <>
-      <h2>Legacy Articles</h2>
-      <p>Older articles from the site's early years, before posts were dated -- carried over as-is from the original archive.</p>
-      {legacyCategories.map((group) => (
-        <>
-          <h3>{group.category}</h3>
-          <ul>
-            {group.items.map((post) => (
-              <li>
-                <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-              </li>
-            ))}
-          </ul>
-        </>
-      ))}
-    </>
-  )}
+    {legacyCategories.length > 0 && (
+      <div class="blog-col blog-col-legacy">
+        <h2>Legacy Articles</h2>
+        <p class="blog-legacy-intro">Older articles from the site's early years, before posts were dated -- carried over as-is from the original archive.</p>
+        {legacyCategories.map((group) => (
+          <>
+            <h3>{group.category}</h3>
+            <ul class="blog-list">
+              {group.items.map((post) => (
+                <li>
+                  <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        ))}
+      </div>
+    )}
+  </div>
 </BaseLayout>
+
+<style>
+  .blog-columns {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 0 2.5rem;
+    align-items: start;
+  }
+  .blog-col-legacy h2 {
+    margin-top: 0;
+  }
+  .blog-legacy-intro {
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
+  .blog-col-legacy h3 {
+    font-size: 1rem;
+    margin: 1.25rem 0 0.4rem;
+  }
+  .blog-list {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+  .blog-list li {
+    margin: 0 0 0.32rem;
+  }
+  .blog-list a {
+    font-size: 0.78rem;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+  @media (max-width: 700px) {
+    .blog-columns {
+      grid-template-columns: 1fr;
+    }
+    .blog-list a {
+      font-size: 0.85rem;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+    }
+  }
+</style>
