@@ -6,7 +6,7 @@ image: ./_images/m33-pinwheel-galaxy-early.jpg
 draft: false
 ---
 
-An earlier LLRGB attempt at [M33, the Pinwheel Galaxy](/gallery/m33-pinwheel-galaxy/), imaged over three nights at Comanche Springs. A [second, even earlier attempt](#previous-attempt) from 2003 is further down this page.
+An earlier LLRGB attempt at M33, the Pinwheel Galaxy, imaged over three nights at Comanche Springs — see the [more recent HaRGB version](/gallery/m33-pinwheel-galaxy/) for my current best image. A [second, even earlier attempt](#previous-attempt) from 2003 is further down this page.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
