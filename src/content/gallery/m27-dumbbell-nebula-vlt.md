@@ -1,12 +1,12 @@
 ---
-title: "M27 - The Dumbbell Nebula"
-description: M27, the Dumbbell Nebula, mapped to "Hubble" narrowband colors -- Red = SII, Green = Ha, Blue = OIII.
+title: "M27 - The Dumbbell Nebula in \"VLT\" Colors"
+description: M27, the Dumbbell Nebula, mapped to "VLT" narrowband colors -- Red = Ha, Green = OIII, Blue = SII -- as an homage to the 1998 ESO VLT image of the same object.
 pubDate: 2005-06-25
-image: ./_images/m27-dumbbell-nebula.jpg
+image: ./_images/m27-dumbbell-nebula-vlt.jpg
 draft: false
 ---
 
-M27, the Dumbbell Nebula, in "Hubble" colors &mdash; Red = SII, Green = Ha, Blue = OIII. A [VLT-color mapping](/gallery/m27-dumbbell-nebula-vlt/) of the same underlying data is also on file.
+M27, the Dumbbell Nebula, mapped to "VLT" colors &mdash; Red = Ha, Green = OIII, Blue = SII (with a hint of Ha to simulate H-beta). A [Hubble-color mapping](/gallery/m27-dumbbell-nebula/) of the same underlying data is also on file.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
@@ -19,16 +19,16 @@ M27, the Dumbbell Nebula, in "Hubble" colors &mdash; Red = SII, Green = Ha, Blue
 <p><strong>Scope/Mount:</strong> 12.5" RCOS RC and Paramount ME</p>
 <p><strong>Camera:</strong> SBIG STL-6303e astro CCD camera</p>
 <p><strong>Filters:</strong> Custom Scientific 4.5nm Ha, OIII, and SII spectral line filters</p>
-<p><strong>Exposure Info:</strong> Mapped color image - SII/Ha/OIII - 120:300:80 minutes (20 minute subexposures unbinned)</p>
+<p><strong>Exposure Info:</strong> Mapped color image - Ha/OIII/SII - 300:80:120 minutes (20 minute subexposures unbinned)</p>
 <p><strong>Processing Information:</strong> Calibration, registration, hot/cold pixel removal, and DDP in MaxIm DL 4. LR Deconvolution on Ha channel in CCDSharp. Color mapping, cropping, color balance, levels/curves, sharpening, and noise removal in Photoshop CS.</p>
-<p><strong>Exposure Notes:</strong> This represents my first "mapped color" image taken with narrowband, spectral line filters. The SII data is mapped to the red channel, Ha to green, and OIII to blue. Seeing was exceptional, in the 1" arc second neighborhood, but data was taken near a full moon.</p>
+<p><strong>Exposure Notes:</strong> This is a re-mapping of the same color data used in the <a href="/gallery/m27-dumbbell-nebula/">Hubble colors image</a>. The Ha data is mapped to the red channel, OIII to green, and SII to blue. Some H-alpha data (15%) was blended into the blue channel as well to imitate H-beta emissions. Seeing was exceptional, in the 1" arc second neighborhood, but data was taken near a full moon.</p>
 
 </div>
 <div class="ke-sidebar ke-two-col-about" data-color="teal">
 
 <h2>About this Image</h2>
-<p>No, this isn't a Hubble shot. But this image was acquired and processed just like the gorgeous Hubble telescope images that we've come to love. To accomplish this, the image was taken through specialized, narrowband emission line filters. This information was then "mapped" to the traditional red, green, and blue channels of an RGB image. The green portions of the image represent Hydrogen-alpha ionized gases. Most notably, these gases extend well outside the Dumbbell itself to form a halo around the outskirts, something that requires very long exposure times to capture in an amateur image. The color blue represents doubly ionized Oxygen gases, and as you'd expect from a planetary nebula, the heaviest concentration of these gases are around the core area itself. Finally, red represents singly ionized Sulfur gases. While the stars glow heavily in the sulfur wavelength, there is only a light concentration of it in the nebula, mostly throughout the brighter portions.</p>
-<p>Such images, while obviously beautiful, have a real scientific purpose. Because the colors are mapped specifically to certain gases, it's easy to understand the concentrations of ionizations and how (where) they interact with each other.</p>
+<p>This is an attempt to take spectral line emission data and use the same techniques as the well-known European Southern Observatory (ESO) image taken back in 1998 on the newly constructed 8.2 meter VLT scope. While this image was taken with much less aperture, the instrumentation is so sophisticated in such scopes that it's rather remarkable! Of course, the ESO image used only 5 minute exposures for each component!</p>
+<p>The only difference between the two images, other than the general quality, is that the ESO image used a broadband filter to capture data for the blue channel while this image uses singly ionized Sulfur data for blue (with a hint of Ha data to simulate H-beta gases). Otherwise, Ha is mapped to red and OIII is mapped to green in both images.</p>
 
 </div>
 </div>
