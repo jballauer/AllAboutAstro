@@ -1,0 +1,21 @@
+---
+title: "Choosing a CCD camera"
+description: "A rundown of the three basic types of CCD cameras — autoguiders, imagers, and video systems — and how to pick the right one for your astrophotography goals."
+legacy: true
+legacyCategory: "Astrophotography"
+draft: false
+---
+
+You should realize that there are really three basic types of CCDs: autoguiders, imagers, and video systems. So you must know what type of imaging you'd like to do first.
+
+**Autoguiders** work to send guiding correction to your scope to keep it tracking accurately on a guidestar. Their sole purpose is to guide the scope electronically while your regular camera does the picture taking. CCD cameras of this type generally do not take pictures, so if you are only interested in guiding your 35mm film camera, then this is a good solution. The standards are the SBIG ST-4 and the Meade 201xt and 208xt. The SBIG STV is now the top line autoguider but it serves other functions as well.
+
+**Imagers** can also function as autoguiders, very good ones in fact, but they are best at taking the pictures (I am assuming for astrophotography as opposed to scientific applications - which would change our discussion entirely). There are several good astrophotography CCD cameras, but some of the best on the market are those with the Kodak line of CCD chips, beginning with the KAF-0400. These devices begin at ~$2000, but are wonderful. SBIG ST-7E and Meade 416xte are the chief competitors here. Both come with separate autoguiding chips (the Meade comes with a separate 201xt guider to compete) that both guides and images at the same time. However, for a bargain, you could get the SBIG ST-237A with a Sony chip for $1300. Imagers like this do what's called "track and accumulate," which automatically takes a multiple of shorter exposures and then compensates for any guiding errors by realigning each image between shots in software.
+
+Imagers are highly technical, works of art. I won't get into dark frames, flat fields, cooling, pixel sizes and fields of view because its too much info right now. But you should know that all chips 1.) run hot at longer exposures, 2.) need cooling to avoid dark currents, 3.) vary in pixel and array sizes, 4.) need to be matched well with your scope and 5.) only cover a fraction of the actual field of view of a standard 35mm camera (unless you are rich and can afford one that does).
+
+To take color pictures, you have to take three (four if doing a luminance layer) separate exposures with filters and compile them with software. CCDs generally only register the value of a light image so take black and white images only. Some CCDs are color (such as Starlight Express MX-7C) and contain three color pixels for each black and white pixel (like a Television). People have mixed results with color cameras because its still tough to make the pixels small enough (for reasons and results that I'll will not discuss now).
+
+**Video imaging** is the third category. It consists of attaching your home video recorder or modified webcam to the scope, or purchasing a video camera designed for astrophotography. These cameras are usually only suitable for solar system objects because they do not collect and accumulate light fast enough to see deep sky stuff in real time, though some of the newer cameras such as the Stellacam and SAC series are being used successfully on some of the bright DSOs. Such cameras are always better than a regular video camera or webcam, with more sensitive CCDs (higher lux levels). To compensate for the inability to take long exposures, these cameras usually take a series of shorter exposures and then stack them in software to show the object. It's effective, though hardly as powerful as a full CCD imager.
+
+Then, there is the SBIG STV, which is a true hybrid camera. It functions as a video camera taking 30 frames per second, or it functions as an imager allowing individual exposures of up to 10 minutes. It is black and white only with no way to use filters [update: SBIG has recently added color wheel capability], but when galaxies are popping up on your video monitor as you are guiding (which is its chief purpose), your jaw simply drops. Very, very cool stuff. See my Gallery for examples of shots taken with the STV.
