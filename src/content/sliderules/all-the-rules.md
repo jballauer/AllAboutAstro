@@ -9,16 +9,16 @@ Thus begins a comprehensive picture list of all the slide rules in my collection
 
 This page is very much under construction. I will be adding history, scale and construction details for all rules at some point. Not all rules I own are pictured here. Please refer to the [Version History](/sliderules/all-about-ke-rules/appendix-5-version-history/) page for the changes made when they happen.
 
-Click a maker's name below to expand its rules.
+Click a rule's name to expand it and see its front and back photos.
+
+## Aristo
 
 <div class="ke-portfolio-list">
 
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Aristo</span></summary>
+<summary><span class="ke-portfolio-name">Nr. 621 Circular</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Nr. 621 Circular**
 
 <div class="ke-figure-row">
 
@@ -40,7 +40,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Nr. 803 Mono-Rietz Pocket Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Nr. 803 Mono-Rietz Pocket Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -62,7 +69,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**0958 Geodat Surveyor Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">0958 Geodat Surveyor Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -84,7 +98,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**867 Darmstadt Pocket Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">867 Darmstadt Pocket Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -106,7 +127,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Nr. 965 Commerz II**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Nr. 965 Commerz II</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -132,12 +160,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Concise
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Concise</span></summary>
+<summary><span class="ke-portfolio-name">Model 271</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Model 271**
 
 <div class="ke-figure-row">
 
@@ -159,7 +191,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**No. 31 keychain circular rule for Nissan**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">No. 31 keychain circular rule for Nissan</span></summary>
+
+<div class="ke-portfolio-detail">
 
 ![Concise No. 31 keychain circular rule for Nissan](./_images/all-rules/concise-keychain.jpg)
 
@@ -167,16 +206,27 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Dietzgen
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Dietzgen</span></summary>
+<summary><span class="ke-portfolio-name">Redirule No. 1776</span></summary>
 
 <div class="ke-portfolio-detail">
 
-**Redirule No. 1776**
-
 ![Dietzgen Redirule No. 1776, front](./_images/all-rules/dietzgen-1776-front.jpg)
 
-**1778 Redilog Pocket Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">1778 Redilog Pocket Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -202,12 +252,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Diwa
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Diwa</span></summary>
+<summary><span class="ke-portfolio-name">851/4 Darmstadt</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**851/4 Darmstadt**
 
 <div class="ke-figure-row">
 
@@ -233,16 +287,27 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Faber-Castell
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Faber-Castell</span></summary>
+<summary><span class="ke-portfolio-name">2/83N Novo-Biplex</span></summary>
 
 <div class="ke-portfolio-detail">
 
-**2/83N Novo-Biplex**
-
 ![Faber-Castell 2/83N Novo-Biplex, front](./_images/all-rules/fc-283n-front.jpg)
 
-**8/10 Circular**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">8/10 Circular</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -264,7 +329,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**62/83 Biplex**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">62/83 Biplex</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -286,7 +358,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**67/87R with Addiator**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">67/87R with Addiator</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -308,7 +387,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**111/54 A Addiator Darmstadt**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">111/54 A Addiator Darmstadt</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -334,12 +420,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Graphoplex
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Graphoplex</span></summary>
+<summary><span class="ke-portfolio-name">615 Caltex</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**615 Caltex**
 
 <div class="ke-figure-row">
 
@@ -361,7 +451,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**698 Electronicien**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">698 Electronicien</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -387,12 +484,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Hemmi
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Hemmi</span></summary>
+<summary><span class="ke-portfolio-name">Model 35ML</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Model 35ML**
 
 <div class="ke-figure-row">
 
@@ -414,7 +515,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**250 General Computation**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">250 General Computation</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -436,7 +544,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**251 Mechanical Engineering**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">251 Mechanical Engineering</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -458,7 +573,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**255 Expert Electrical Engineering**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">255 Expert Electrical Engineering</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -480,7 +602,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**255D Expert Electrical Engineering**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">255D Expert Electrical Engineering</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -502,7 +631,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**256 Radio Communications**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">256 Radio Communications</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -524,7 +660,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**259D Expert Mechanical Engineering**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">259D Expert Mechanical Engineering</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -546,7 +689,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**266 Electronics**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">266 Electronics</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -568,7 +718,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**274 General Engineering**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">274 General Engineering</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -590,11 +747,25 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**P281 Student Simplex Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">P281 Student Simplex Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 ![Hemmi P281 Student Simplex Rule, front and back](./_images/all-rules/hemmi-p281.jpg)
 
-**410 "Involute of Gear Wheels"**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">410 &quot;Involute of Gear Wheels&quot;</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -620,12 +791,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## K&E (Keuffel & Esser)
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">K&amp;E (Keuffel &amp; Esser)</span></summary>
+<summary><span class="ke-portfolio-name">4088-1 Pocket Polyphase Duplex</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**4088-1 Pocket Polyphase Duplex**
 
 <div class="ke-figure-row">
 
@@ -647,7 +822,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**4097C Ever-There**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">4097C Ever-There</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -669,7 +851,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**4097D Ever-There**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">4097D Ever-There</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -691,7 +880,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**4139 Cooke Radio Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">4139 Cooke Radio Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -713,7 +909,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**4168 Doric**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">4168 Doric</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -735,7 +938,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**4181-1 Pocket Log Log Decitrig**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">4181-1 Pocket Log Log Decitrig</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -757,7 +967,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Deci-Lon 5 Model 68-1300**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Deci-Lon 5 Model 68-1300</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -779,7 +996,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**GP-12 Model 68-1565**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">GP-12 Model 68-1565</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -805,12 +1029,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Logarex
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Logarex</span></summary>
+<summary><span class="ke-portfolio-name">27205</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**27205**
 
 <div class="ke-figure-row">
 
@@ -836,12 +1064,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Norma
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Norma</span></summary>
+<summary><span class="ke-portfolio-name">Ronda 100</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Ronda 100**
 
 ![Norma Ronda 100](./_images/all-rules/norma-ronda100.jpg)
 
@@ -849,12 +1081,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Pickett
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Pickett</span></summary>
+<summary><span class="ke-portfolio-name">B1</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**B1**
 
 <div class="ke-figure-row">
 
@@ -876,11 +1112,25 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**N4-T**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N4-T</span></summary>
+
+<div class="ke-portfolio-detail">
 
 ![Pickett N4-T, front](./_images/all-rules/pk-n4t-front.jpg)
 
-**N4P-ES Pocket**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N4P-ES Pocket</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -902,11 +1152,25 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**N16-ES Electronic**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N16-ES Electronic</span></summary>
+
+<div class="ke-portfolio-detail">
 
 ![Pickett N16-ES Electronic, front](./_images/all-rules/pk-n16es-front.jpg)
 
-**C19-T Collins Microwave Transmission**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">C19-T Collins Microwave Transmission</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -928,7 +1192,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Model 100 Douglas Sky Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 100 Douglas Sky Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -950,7 +1221,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Model 101-C Dial-Rule**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 101-C Dial-Rule</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -972,7 +1250,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Model 103ES Mark-Up Calculator**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 103ES Mark-Up Calculator</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -994,11 +1279,25 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Model 106C Proportional Scale**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 106C Proportional Scale</span></summary>
+
+<div class="ke-portfolio-detail">
 
 ![Pickett Model 106C Proportional Scale, front](./_images/all-rules/pk-106c-front.jpg)
 
-**Model 111-ES Circular**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 111-ES Circular</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1020,7 +1319,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**N200-T**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N200-T</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1042,7 +1348,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**N300-T**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N300-T</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1064,7 +1377,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Model 400**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 400</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1086,7 +1406,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**N600-ES**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N600-ES</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1108,7 +1435,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Model 700 USAF Aerial Photo**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Model 700 USAF Aerial Photo</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1130,7 +1464,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**N808-T Standard Marine Fuels**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N808-T Standard Marine Fuels</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1152,7 +1493,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**N1006-ES**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">N1006-ES</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1178,12 +1526,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Post
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Post</span></summary>
+<summary><span class="ke-portfolio-name">Post 1441</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Post 1441**
 
 <div class="ke-figure-row">
 
@@ -1205,7 +1557,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Post Hemmi 1461 Electronic**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Post Hemmi 1461 Electronic</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1227,7 +1586,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Post 1461 Pocket Versalog 1**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Post 1461 Pocket Versalog 1</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1249,7 +1615,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**Post 1461 Pocket Versalog 2**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">Post 1461 Pocket Versalog 2</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1275,12 +1648,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Sans & Streiffe
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Sans &amp; Streiffe</span></summary>
+<summary><span class="ke-portfolio-name">No. 313</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**No. 313**
 
 <div class="ke-figure-row">
 
@@ -1306,12 +1683,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## SIC - Scientific Instruments Company
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">SIC - Scientific Instruments Company</span></summary>
+<summary><span class="ke-portfolio-name">Star No. 25 for General Motors</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Star No. 25 for General Motors**
 
 <div class="ke-figure-row">
 
@@ -1333,7 +1714,14 @@ Click a maker's name below to expand its rules.
 
 </div>
 
-**No. 1610-D Circular**
+</div>
+
+</details>
+
+<details class="ke-portfolio-item">
+<summary><span class="ke-portfolio-name">No. 1610-D Circular</span></summary>
+
+<div class="ke-portfolio-detail">
 
 <div class="ke-figure-row">
 
@@ -1359,12 +1747,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Staedtler
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Staedtler</span></summary>
+<summary><span class="ke-portfolio-name">No. 54428</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**No. 54428**
 
 <div class="ke-figure-row">
 
@@ -1390,12 +1782,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Standardgraph
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Standardgraph</span></summary>
+<summary><span class="ke-portfolio-name">Standardgraph Nr. 900</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Standardgraph Nr. 900**
 
 <div class="ke-figure-row">
 
@@ -1421,12 +1817,16 @@ Click a maker's name below to expand its rules.
 
 </details>
 
+</div>
+
+## Unique
+
+<div class="ke-portfolio-list">
+
 <details class="ke-portfolio-item">
-<summary><span class="ke-portfolio-name">Unique</span></summary>
+<summary><span class="ke-portfolio-name">Unique Log Log Pocket</span></summary>
 
 <div class="ke-portfolio-detail">
-
-**Unique Log Log Pocket**
 
 <div class="ke-figure-row">
 
