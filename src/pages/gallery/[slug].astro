@@ -164,6 +164,22 @@ const m35HeroStars = [
   { commonName: null, catalogName: 'HD 252048', mag: 9.94, specType: 'B8III-IVSi', x: 691.5, y: 501.9 },
 ];
 
+// Plate-solved via astrometry.net, cross-matched against SIMBAD (cone
+// search, V<=12) -- see the star-mag-hover-with-slider-mag12 skill. bucket
+// is ceil(mag): a star shows once the slider reaches its bucket value, so
+// "mag <= slider value" holds exactly. Sparse field (only 6 in-frame
+// candidates down to mag 12 -- the Helix Nebula sits in a catalog-sparse
+// patch of Aquarius) with no coo_qual='E' rows, no near-duplicate
+// positions to dedup, and no tag collisions (nearest pair is ~128px apart).
+const helixHeroStars = [
+  { commonName: null, catalogName: 'HD 213056', mag: 9.912, specType: 'K1(III)', x: 914.36, y: 353.55 },
+  { commonName: null, catalogName: 'HD 213069', mag: 10.436, specType: 'F5/6(V)', x: 865.5, y: 837.34 },
+  { commonName: null, catalogName: 'BD-21 6241', mag: 10.622, specType: '', x: 195.66, y: 505.16 },
+  { commonName: null, catalogName: 'TYC 6391-1496-1', mag: 11.11, specType: '', x: 744.12, y: 794.82 },
+  { commonName: null, catalogName: 'BD-21 6232', mag: 11.11, specType: '', x: 1032.81, y: 99.72 },
+  { commonName: null, catalogName: 'TYC 6391-967-1', mag: 11.16, specType: '', x: 1007.8, y: 474.83 },
+];
+
 import eclipse2017Event01 from '../../content/gallery/_images/eclipse2017-event-dsc0195.jpg';
 import eclipse2017Event02 from '../../content/gallery/_images/eclipse2017-event-dsc0193.jpg';
 import eclipse2017Event03 from '../../content/gallery/_images/eclipse2017-event-dsc0202.jpg';
@@ -224,7 +240,6 @@ const hiresMap: Record<string, string> = {
   'ic1848-embryo-nebula': '/images/gallery/ic1848-embryo-nebula-hires.jpg',
   'ic405-410-capella': '/images/gallery/ic405-410-capella-hires.jpg',
   'iris-nebula': '/images/gallery/iris-nebula-hires.jpg',
-  'helix-nebula': '/images/gallery/helix-nebula-hires.jpg',
   'ic1396-cepheus': '/images/gallery/ic1396-cepheus-hires.jpg',
   'm1-crab-nebula': '/images/gallery/m1-crab-nebula-hires.jpg',
   'm101-whirlpool-galaxy': '/images/gallery/m101-whirlpool-galaxy-hires.jpg',
@@ -285,6 +300,15 @@ const hires = hiresMap[entry.id];
         imageWidth={1200}
         imageHeight={800}
         stars={m35HeroStars}
+      />
+    ) : entry.id === 'helix-nebula' ? (
+      <StarMagnitudeSlider
+        image={entry.data.image}
+        alt={entry.data.title}
+        imageWidth={1200}
+        imageHeight={902}
+        stars={helixHeroStars}
+        maxMag={12}
       />
     ) : (
       entry.id !== 'comet-neowise-timelapse' && entry.data.image && (
