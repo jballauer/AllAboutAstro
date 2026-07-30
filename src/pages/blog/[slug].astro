@@ -20,7 +20,11 @@ const { Content } = await render(post);
   <article>
     <PageBanner src={moonBanner} alt="A close-up view of the Moon" />
     <h1>{post.data.title}</h1>
-    <p class="post-date">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })}</p>
+    {post.data.pubDate ? (
+      <p class="post-date">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })}</p>
+    ) : (
+      <p class="post-date">From the site's early, undated archive</p>
+    )}
     <Content />
   </article>
 </BaseLayout>

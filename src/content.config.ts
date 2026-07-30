@@ -6,10 +6,19 @@ const blog = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string().optional(),
-    pubDate: z.coerce.date(),
+    // Undated posts imported from the pre-Weebly "Articles" archive --
+    // real writing, but with no original publish date on file. Kept out
+    // of the dated chronological list and shown in their own "Legacy
+    // Articles" section instead. See blog/index.astro.
+    pubDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     coverImage: image().optional(),
     draft: z.boolean().default(false),
+    legacy: z.boolean().default(false),
+    // Groups legacy articles under the same category headers the old
+    // site used (FAQ, Astrophotography, Equipment Issues, Reviews).
+    // Ignored for non-legacy posts.
+    legacyCategory: z.string().optional(),
   }),
 });
 

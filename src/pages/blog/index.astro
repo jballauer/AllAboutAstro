@@ -4,9 +4,22 @@ import PageBanner from '../../components/PageBanner.astro';
 import { getCollection } from 'astro:content';
 import blogBanner from '../../assets/banners/about-me-banner.jpg';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+
+const posts = allPosts
+  .filter((post) => !post.data.legacy)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const legacyPosts = allPosts.filter((post) => post.data.legacy);
+const legacyCategoryOrder = ['FAQ', 'Astrophotography', 'Equipment Issues', 'Reviews'];
+const legacyCategories = legacyCategoryOrder
+  .map((category) => ({
+    category,
+    items: legacyPosts
+      .filter((post) => post.data.legacyCategory === category)
+      .sort((a, b) => a.data.title.localeCompare(b.data.title)),
+  }))
+  .filter((group) => group.items.length > 0);
 ---
 
 <BaseLayout title="Blog">
@@ -21,4 +34,23 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
       </li>
     ))}
   </ul>
+
+  {legacyCategories.length > 0 && (
+    <>
+      <h2>Legacy Articles</h2>
+      <p>Older articles from the site's early years, before posts were dated -- carried over as-is from the original archive.</p>
+      {legacyCategories.map((group) => (
+        <>
+          <h3>{group.category}</h3>
+          <ul>
+            {group.items.map((post) => (
+              <li>
+                <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
+    </>
+  )}
 </BaseLayout>
