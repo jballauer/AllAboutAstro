@@ -30,6 +30,9 @@ M27, the Dumbbell Nebula, mapped to "VLT" colors &mdash; Red = Ha, Green = OIII,
 <p>This is an attempt to take spectral line emission data and use the same techniques as the well-known European Southern Observatory (ESO) image taken back in 1998 on the newly constructed 8.2 meter VLT scope. While this image was taken with much less aperture, the instrumentation is so sophisticated in such scopes that it's rather remarkable! Of course, the ESO image used only 5 minute exposures for each component!</p>
 <p>The only difference between the two images, other than the general quality, is that the ESO image used a broadband filter to capture data for the blue channel while this image uses singly ionized Sulfur data for blue (with a hint of Ha data to simulate H-beta gases). Otherwise, Ha is mapped to red and OIII is mapped to green in both images.</p>
 
+![The ESO VLT image of M27, the Dumbbell Nebula, taken in 1998](./_images/m27-dumbbell-nebula-vlt-eso-comparison.jpg)
+<p class="ke-figure-caption">The original 1998 ESO VLT image of M27 that inspired this attempt. Credit: <a href="https://www.eso.org/public/images/eso9846a/">ESO</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+
 </div>
 </div>
 
