@@ -165,12 +165,16 @@ const m35HeroStars = [
 ];
 
 // Plate-solved via astrometry.net, cross-matched against SIMBAD (cone
-// search, V<=12) -- see the star-mag-hover-with-slider-mag12 skill. bucket
+// search, V<=16) -- see the star-mag-hover-with-slider-mag16 skill. bucket
 // is ceil(mag): a star shows once the slider reaches its bucket value, so
-// "mag <= slider value" holds exactly. Sparse field (only 6 in-frame
-// candidates down to mag 12 -- the Helix Nebula sits in a catalog-sparse
-// patch of Aquarius) with no coo_qual='E' rows, no near-duplicate
-// positions to dedup, and no tag collisions (nearest pair is ~128px apart).
+// "mag <= slider value" holds exactly. Sparse field even at this depth --
+// only 9 in-frame candidates (the Helix Nebula sits in a catalog-sparse
+// patch of Aquarius) after dropping 8 coo_qual='E' rows (all quantized
+// "GEN#" designations). No near-duplicate positions to dedup and no tag
+// collisions at render (nearest pair, TYC 6391-936-1 to BD-21 6241, is
+// ~85px apart). Notably includes NGC 7293 itself -- the Helix Nebula's own
+// central white dwarf, visible as a point source in the nebula's central
+// cavity -- as a real, verified marker, not a mistake.
 const helixHeroStars = [
   { commonName: null, catalogName: 'HD 213056', mag: 9.912, specType: 'K1(III)', x: 914.36, y: 353.55 },
   { commonName: null, catalogName: 'HD 213069', mag: 10.436, specType: 'F5/6(V)', x: 865.5, y: 837.34 },
@@ -178,6 +182,9 @@ const helixHeroStars = [
   { commonName: null, catalogName: 'TYC 6391-1496-1', mag: 11.11, specType: '', x: 744.12, y: 794.82 },
   { commonName: null, catalogName: 'BD-21 6232', mag: 11.11, specType: '', x: 1032.81, y: 99.72 },
   { commonName: null, catalogName: 'TYC 6391-967-1', mag: 11.16, specType: '', x: 1007.8, y: 474.83 },
+  { commonName: null, catalogName: 'TYC 6391-936-1', mag: 12.31, specType: '', x: 149.16, y: 433.07 },
+  { commonName: 'Central Star', catalogName: 'NGC 7293', mag: 13.524, specType: 'DAO.5', x: 627.24, y: 516.3 },
+  { commonName: null, catalogName: 'UCAC2 23772022', mag: 13.654, specType: '', x: 198.61, y: 17.92 },
 ];
 
 import eclipse2017Event01 from '../../content/gallery/_images/eclipse2017-event-dsc0195.jpg';
@@ -308,7 +315,7 @@ const hires = hiresMap[entry.id];
         imageWidth={1200}
         imageHeight={902}
         stars={helixHeroStars}
-        maxMag={12}
+        maxMag={16}
       />
     ) : (
       entry.id !== 'comet-neowise-timelapse' && entry.data.image && (
