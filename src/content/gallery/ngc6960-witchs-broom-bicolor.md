@@ -6,7 +6,7 @@ image: ./_images/ngc6960-witchs-broom-bicolor.jpg
 draft: false
 ---
 
-NGC 6960, the Witch's Broom, in a bicolor hydrogen/oxygen palette. A [2003 grayscale attempt](/gallery/ngc6960-veil-nebula-2003/) is also on file. This image is also covered in a [blog post](/blog/ngc6960-witchs-broom-bicolor/).
+NGC 6960, the Witch's Broom, in a bicolor hydrogen/oxygen palette. A [2003 grayscale attempt](/gallery/ngc6960-veil-nebula-2003/) and a [wide-field full-complex color mosaic](/gallery/veil-nebula-full-complex/) are also on file. This image is also covered in a [blog post](/blog/ngc6960-witchs-broom-bicolor/).
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">

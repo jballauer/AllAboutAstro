@@ -7,7 +7,7 @@ draft: false
 showInGallery: false
 ---
 
-The Veil Nebula in Cygnus, in grayscale Hydrogen-Alpha. An [earlier film attempt](/gallery/veil-nebula-complex/) and a [more recent bicolor image](/gallery/ngc6960-witchs-broom-bicolor/) are also on file.
+The Veil Nebula in Cygnus, in grayscale Hydrogen-Alpha. An [earlier film attempt](/gallery/veil-nebula-complex/), a [wide-field full-complex color mosaic](/gallery/veil-nebula-full-complex/), and a [more recent bicolor image](/gallery/ngc6960-witchs-broom-bicolor/) are also on file.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
