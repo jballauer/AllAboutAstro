@@ -1,10 +1,10 @@
 ---
-title: NGC 2244 - The Rosette Nebula (2004)
+title: NGC2244 - The Rosette Nebula (HaRGB)
 description: An early Ha(Ha+R)GB image of the Rosette Nebula from the original Ballauer Observatory.
 pubDate: 2004-12-17
 image: ./_images/ngc2244-rosette-2004.jpg
 draft: false
-showInGallery: false
+showInGallery: true
 ---
 
 An early Ha(Ha+R)GB image of the Rosette Nebula from the original Ballauer Observatory.
@@ -12,6 +12,7 @@ An early Ha(Ha+R)GB image of the Rosette Nebula from the original Ballauer Obser
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
 
+<p><strong>Date:</strong> December 17, 2004</p>
 <p><strong>Location:</strong> The Ballauer Observatory near Azle, Texas</p>
 <p><strong>Conditions:</strong> Transparency 4.8 mag zenithal, seeing 7/10, temperature 38&deg;F, camera cooled to -25&deg;C</p>
 <p><strong>Equipment:</strong> Takahashi FSQ-106 at f/5 on a Takahashi NJP mount</p>
