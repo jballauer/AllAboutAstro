@@ -9,11 +9,12 @@ This site has **two coexisting image-zoom mechanisms**, both implemented in
 `src/layouts/BaseLayout.astro`'s single script block:
 
 1. **In-frame zoom-and-pan** (this skill) — opt-in only, gated behind the
-   `.ke-zoom-inframe` class. Currently applied to exactly one image: the M31
-   Mosaic gallery page (`src/pages/gallery/[slug].astro`, set conditionally
-   on `entry.id === 'm31-mosaic'`). **Do not broaden the selector to all
-   images without Jay's explicit go-ahead** — he is trialing it on one image
-   before deciding whether to roll it out further.
+   `.ke-zoom-inframe` class. Currently applied to two images: the M31
+   Mosaic and M33 Pinwheel Galaxy gallery pages (`src/pages/gallery/[slug].astro`,
+   set conditionally on `entry.id === 'm31-mosaic' || entry.id === 'm33-pinwheel-galaxy'`).
+   **Do not broaden the selector to all images without Jay's explicit
+   go-ahead** — he is rolling it out one image at a time by explicit request,
+   not blanket-applying it.
 2. **Plain fullscreen click-to-enlarge lightbox** — the default for every
    other image on the site (the original, pre-trial behavior: `#ke-lightbox`
    overlay, fit-to-viewport, no pan, no click-point anchoring).
