@@ -73,7 +73,17 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
   globular: { otypeClause: `b.otype = 'GlC'` },
   open: { otypeClause: `b.otype = 'OpC'` },
   hii: { otypeClause: `b.otype = 'HII'`, catalogClause: MAJOR_CATALOG_CLAUSE },
-  reflection: { otypeClause: `b.otype = 'RNe'`, catalogClause: MAJOR_CATALOG_CLAUSE },
+  // 'RNe' (reflection nebula) is a child of the more generic 'GNe'
+  // (gaseous nebula) in SIMBAD's hierarchy -- confirmed live that SIMBAD
+  // classifies well-known, named reflection nebulae under the *generic*
+  // parent code rather than the specific child: IC 4603/4604/4605 (the
+  // famous Rho Ophiuchi reflection nebulae) are all 'GNe', not 'RNe'. An
+  // exact 'RNe' match missed them entirely. Matching the whole branch
+  // (same fix pattern as galaxies/stars above) catches both.
+  reflection: {
+    otypeClause: `b.otype IN (SELECT otype FROM otypedef WHERE path = 'ISM > Cld > GNe' OR path LIKE 'ISM > Cld > GNe >%')`,
+    catalogClause: MAJOR_CATALOG_CLAUSE,
+  },
   messier: { catalogClause: `i.id LIKE 'M %'` },
   ngc: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'NGC %'` },
   ic: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'IC %'` },
