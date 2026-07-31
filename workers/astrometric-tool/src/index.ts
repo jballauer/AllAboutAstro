@@ -15,19 +15,38 @@ const MAX_UPLOAD_BYTES = 10 * 1024 * 1024; // 10MB
 const MAX_RADIUS_DEG = 5;
 const MAX_MAG_LIMIT = 18;
 
-// Only categories directly queryable from SIMBAD's `basic.otype` column.
-// `stars` intentionally has no otype filter -- same as the site's existing
-// slider pipeline, which relies on the flux join alone to select point
-// sources rather than filtering by otype (SIMBAD splits plain stars across
-// many sub-type codes). HII regions are NOT supported here -- the existing
-// skill pipeline sources those from NED, not SIMBAD, a materially separate
-// integration left out of v1.
-const CATEGORY_OTYPE: Record<string, string | null> = {
-  stars: null,
-  galaxies: 'G',
-  globular: 'GlC',
-  open: 'OpC',
+// SIMBAD's `otype` column is a leaf code in a hierarchy (exposed via its
+// own `otypedef` table, with a `path` column like "G > AGN > SyG > Sy2").
+// A plain `otype = 'G'` filter (what an earlier version of this file used)
+// only matches objects classified as the generic base type and misses
+// everything filed under a more specific descendant -- e.g. M31 itself is
+// classified 'AGN', not 'G', so it would silently never match. Filtering
+// via `otype IN (SELECT otype FROM otypedef WHERE path = 'G' OR path LIKE
+// 'G >%')` matches the whole branch instead. Same reasoning for `stars`:
+// rather than leaving otype unfiltered (which let bright cataloged
+// galaxies/AGN with real V-band photometry -- again, M31 -- leak into the
+// "stars" category and get labeled with the object's own name), require
+// membership in the '*' (star) branch. Verified against live SIMBAD data
+// 2026-07-31: 'GlC'/'OpC' (globular/open cluster) are leaf codes with no
+// further descendants, so an exact match is correct for those as-is.
+const CATEGORY_OTYPE_CLAUSE: Record<string, string> = {
+  stars: `b.otype IN (SELECT otype FROM otypedef WHERE path LIKE '*%')`,
+  galaxies: `b.otype IN (SELECT otype FROM otypedef WHERE path = 'G' OR path LIKE 'G >%')`,
+  globular: `b.otype = 'GlC'`,
+  open: `b.otype = 'OpC'`,
 };
+
+// Extended objects (clusters/galaxies) are frequently missing a V-band row
+// in SIMBAD's `flux` table entirely -- e.g. M4 and NGC 6144 (both real
+// globular clusters, verified live) have g/z/K photometry but no V, so an
+// INNER JOIN on filter='V' silently excluded them no matter how generous
+// the mag limit was. These categories LEFT JOIN across V/B/g (first match
+// wins, in that priority) and keep objects with no photometry at all
+// rather than dropping them -- "stars" keeps its original strict INNER
+// JOIN on V alone since that's proven correct by the existing skill
+// pipeline's own verified results (e.g. 37 stars on the M45 Mosaic).
+const EXTENDED_CATEGORIES = new Set(['galaxies', 'globular', 'open']);
+const EXTENDED_FLUX_FILTERS = ['V', 'B', 'g'];
 
 function corsHeaders(origin: string | null): HeadersInit {
   const headers: Record<string, string> = {
@@ -200,21 +219,33 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
   if (!Number.isFinite(ra) || !Number.isFinite(dec) || !Number.isFinite(radiusDeg)) {
     return errorJson('Missing/invalid ra, dec, or radiusDeg.', origin, 400);
   }
-  if (!(category in CATEGORY_OTYPE)) {
+  if (!(category in CATEGORY_OTYPE_CLAUSE)) {
     return errorJson(`Unknown category "${category}".`, origin, 400);
   }
   const clampedRadius = Math.min(Math.max(radiusDeg, 0), MAX_RADIUS_DEG);
   const clampedMag = Math.min(Math.max(maglimit, -5), MAX_MAG_LIMIT);
-  const otype = CATEGORY_OTYPE[category];
+  const otypeClause = CATEGORY_OTYPE_CLAUSE[category];
+  const isExtended = EXTENDED_CATEGORIES.has(category);
 
-  const otypeClause = otype ? `AND b.otype = '${otype}'` : '';
-  const adql = `SELECT b.main_id, b.ra, b.dec, b.otype, b.sp_type, b.coo_qual, f.flux AS vmag
-    FROM basic AS b JOIN flux AS f ON b.oid = f.oidref
-    WHERE f.filter='V'
-    ${otypeClause}
-    AND 1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${ra}, ${dec}, ${clampedRadius}))
-    AND f.flux <= ${clampedMag}
-    ORDER BY vmag ASC`;
+  let adql: string;
+  if (isExtended) {
+    const filterList = EXTENDED_FLUX_FILTERS.map((f) => `'${f}'`).join(',');
+    adql = `SELECT b.main_id AS name, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux
+      FROM basic AS b LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
+      WHERE ${otypeClause}
+      AND b.coo_qual != 'E'
+      AND 1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${ra}, ${dec}, ${clampedRadius}))
+      AND (f.flux <= ${clampedMag} OR f.flux IS NULL)
+      ORDER BY name`;
+  } else {
+    adql = `SELECT b.main_id AS name, b.ra, b.dec, b.otype, b.sp_type, b.coo_qual, f.flux AS vmag
+      FROM basic AS b JOIN flux AS f ON b.oid = f.oidref
+      WHERE f.filter='V'
+      AND ${otypeClause}
+      AND 1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${ra}, ${dec}, ${clampedRadius}))
+      AND f.flux <= ${clampedMag}
+      ORDER BY vmag ASC`;
+  }
 
   const body = new URLSearchParams();
   body.set('request', 'doQuery');
@@ -230,14 +261,47 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
 
   const header = rows[0].map((h) => h.trim());
   const idx = (col: string) => header.indexOf(col);
-  const iName = idx('main_id');
+  const iName = idx('name');
   const iRa = idx('ra');
   const iDec = idx('dec');
   const iOtype = idx('otype');
-  const iSpType = idx('sp_type');
   const iCooQual = idx('coo_qual');
-  const iMag = idx('vmag');
 
+  if (isExtended) {
+    // Extended objects can come back with multiple rows (one per matched
+    // filter, e.g. M31 has both a V and a B row) -- group by name and keep
+    // the best available filter (V > B > g), or no magnitude at all if the
+    // object has none of the three.
+    const iFilter = idx('filter');
+    const iFlux = idx('flux');
+    const priority: Record<string, number> = { V: 0, B: 1, g: 2 };
+    const byName = new Map<string, { ra: number; dec: number; otype: string; mag: number | null; filterRank: number }>();
+    for (const r of rows.slice(1)) {
+      const name = r[iName].replace(/^\*\s*/, '').trim();
+      const ra_ = Number(r[iRa]);
+      const dec_ = Number(r[iDec]);
+      if (!Number.isFinite(ra_) || !Number.isFinite(dec_)) continue;
+      const filter = r[iFilter];
+      const flux = r[iFlux] ? Number(r[iFlux]) : null;
+      const filterRank = filter && filter in priority ? priority[filter] : 99;
+      const existing = byName.get(name);
+      if (!existing || filterRank < existing.filterRank) {
+        byName.set(name, { ra: ra_, dec: dec_, otype: r[iOtype], mag: flux, filterRank });
+      }
+    }
+    const objects = Array.from(byName.entries()).map(([name, o]) => ({
+      name,
+      ra: o.ra,
+      dec: o.dec,
+      otype: o.otype,
+      spType: null,
+      mag: o.mag,
+    }));
+    return json(objects, origin);
+  }
+
+  const iMag = idx('vmag');
+  const iSpType = idx('sp_type');
   const objects = rows
     .slice(1)
     .filter((r) => r[iCooQual] !== 'E')

@@ -236,7 +236,7 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
   const SEARCH_RADII = [26, 40, 58, 80, 105, 135, 170, 210, 250];
 
   const CATEGORY_META = {
-    stars: { label: 'Stars', maglimit: 10, kind: null },
+    stars: { label: 'Stars', maglimit: 12, kind: null },
     galaxies: { label: 'Galaxies', maglimit: 15, kind: 'Galaxy' },
     globular: { label: 'Globular Clusters', maglimit: 12, kind: 'Globular Cluster' },
     open: { label: 'Open Clusters', maglimit: 12, kind: 'Open Cluster' },
@@ -516,12 +516,12 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     return Math.ceil(mag - 1e-9);
   }
 
-  function buildMarkerEl(obj, category, x, y) {
+  function buildMarkerEl(obj, category, x, y, bucket) {
     const meta = CATEGORY_META[category];
     const marker = document.createElement('span');
     marker.className = 'at-marker';
     marker.dataset.category = category;
-    marker.dataset.bucket = String(bucketOf(obj.mag));
+    marker.dataset.bucket = String(bucket);
     marker.style.left = `${((x / wcs.IMAGEW) * 100).toFixed(2)}%`;
     marker.style.top = `${((y / wcs.IMAGEH) * 100).toFixed(2)}%`;
 
@@ -543,10 +543,16 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
       kindEl.textContent = kindText;
       tag.appendChild(kindEl);
     }
-    const magEl = document.createElement('span');
-    magEl.className = 'at-mag';
-    magEl.textContent = `mag ${obj.mag.toFixed(1)}`;
-    tag.appendChild(magEl);
+    // Extended objects (clusters/galaxies) frequently have no photometry
+    // in SIMBAD at all -- obj.mag is null in that case, so there's no
+    // "mag X.X" line to show (matches DeepSkyMarkerSlider's own handling
+    // of magnitude-less markers).
+    if (obj.mag != null) {
+      const magEl = document.createElement('span');
+      magEl.className = 'at-mag';
+      magEl.textContent = `mag ${obj.mag.toFixed(1)}`;
+      tag.appendChild(magEl);
+    }
 
     marker.appendChild(dot);
     marker.appendChild(leader);
@@ -634,9 +640,13 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
       for (const obj of rows) {
         const { x, y } = radecToPixel(wcs, obj.ra, obj.dec);
         if (x < 0 || x > wcs.IMAGEW || y < 0 || y > wcs.IMAGEH) continue;
-        const marker = buildMarkerEl(obj, category, x, y);
+        // No real magnitude on file for this object (common for extended
+        // objects like clusters/galaxies) -- fall back to the category's
+        // own mag limit so it still gets a defined reveal position instead
+        // of being silently dropped.
+        const bucket = obj.mag != null ? bucketOf(obj.mag) : meta.maglimit;
+        const marker = buildMarkerEl(obj, category, x, y, bucket);
         frame.appendChild(marker);
-        const bucket = bucketOf(obj.mag);
         minBucket = Math.min(minBucket, bucket);
         maxBucket = Math.max(maxBucket, bucket);
         added++;
