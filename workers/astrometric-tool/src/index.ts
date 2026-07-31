@@ -461,6 +461,29 @@ function extractFitsNumber(text: string, key: string): number {
   return Number(match[1]);
 }
 
+// SIP (Simple Imaging Polynomial) distortion terms -- astrometry.net fits
+// these automatically whenever a field shows real optical/lens distortion
+// (common on real astrophotos), on top of the linear CD-matrix solution.
+// Reported live 2026-08-01: two objects genuinely close to the frame edge
+// on a real photo (M91, NGC 4571 on a Markarian's Chain field) computed to
+// pixel positions just outside the image via the plain CD-matrix math,
+// while dozens of more-central objects on the same solve landed correctly
+// -- exactly the signature of un-corrected SIP distortion (small error at
+// the tangent point, growing toward the edges/corners). The AP_p_q/BP_p_q
+// terms (when present) are astrometry.net's own precomputed *inverse* SIP
+// polynomial, meant for exactly this sky-to-pixel direction -- extracted
+// here as (p, q, coeff) triples rather than named individually since the
+// polynomial order (and therefore which keys exist) varies per solve.
+function extractSipTerms(text: string, prefix: 'AP' | 'BP'): { p: number; q: number; coeff: number }[] {
+  const re = new RegExp(`\\b${prefix}_(\\d+)_(\\d+)\\s*=\\s*([-+0-9.eE]+)`, 'g');
+  const terms: { p: number; q: number; coeff: number }[] = [];
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    terms.push({ p: Number(m[1]), q: Number(m[2]), coeff: Number(m[3]) });
+  }
+  return terms;
+}
+
 async function handleWcs(request: Request, origin: string | null): Promise<Response> {
   const url = new URL(request.url);
   const jobId = url.searchParams.get('jobId');
@@ -487,6 +510,8 @@ async function handleWcs(request: Request, origin: string | null): Promise<Respo
       CD2_2: extractFitsNumber(text, 'CD2_2'),
       IMAGEW: extractFitsNumber(text, 'IMAGEW'),
       IMAGEH: extractFitsNumber(text, 'IMAGEH'),
+      apTerms: extractSipTerms(text, 'AP'),
+      bpTerms: extractSipTerms(text, 'BP'),
     };
     return json(wcs, origin);
   } catch (err) {

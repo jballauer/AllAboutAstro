@@ -489,8 +489,23 @@ const CATALOG_GUIDE = [
     const xi = ((Math.cos(d) * Math.sin(a - a0)) / cosc) * R2D;
     const eta = ((Math.cos(d0) * Math.sin(d) - Math.sin(d0) * Math.cos(d) * Math.cos(a - a0)) / cosc) * R2D;
     const det = wcs.CD1_1 * wcs.CD2_2 - wcs.CD1_2 * wcs.CD2_1;
-    const u = (wcs.CD2_2 * xi - wcs.CD1_2 * eta) / det;
-    const v = (-wcs.CD2_1 * xi + wcs.CD1_1 * eta) / det;
+    let u = (wcs.CD2_2 * xi - wcs.CD1_2 * eta) / det;
+    let v = (-wcs.CD2_1 * xi + wcs.CD1_1 * eta) / det;
+    // Inverse SIP distortion correction, where the solve has it -- the
+    // plain linear CD-matrix math above is only exact at the tangent
+    // point and drifts increasingly toward the frame's edges/corners on
+    // any field with real optical distortion. Reported live 2026-08-01:
+    // two objects genuinely near the edge of a real photo (M91, NGC 4571)
+    // computed to just-outside-frame pixel positions without this term,
+    // while every more-central object on the same solve was unaffected.
+    if (wcs.apTerms && wcs.apTerms.length) {
+      let du = 0;
+      let dv = 0;
+      for (const t of wcs.apTerms) du += t.coeff * Math.pow(u, t.p) * Math.pow(v, t.q);
+      for (const t of wcs.bpTerms) dv += t.coeff * Math.pow(u, t.p) * Math.pow(v, t.q);
+      u += du;
+      v += dv;
+    }
     return { x: wcs.CRPIX1 + u, y: wcs.CRPIX2 + v };
   }
 
@@ -741,10 +756,20 @@ const CATALOG_GUIDE = [
       const scaleY = Math.hypot(wcs.CD1_2, wcs.CD2_2);
       const fovW = scaleX * wcs.IMAGEW;
       const fovH = scaleY * wcs.IMAGEH;
+      // The half-diagonal is the farthest any point in the *undistorted*
+      // linear-CD-matrix rectangle can be from center, but a real photo's
+      // true sky coverage (once SIP distortion is accounted for, see
+      // radecToPixel above) commonly runs a bit larger at the edges than
+      // that flat estimate -- confirmed live 2026-08-01: a real edge
+      // object needed a search radius ~10-15% past the plain half-diagonal
+      // before SIMBAD's cone search would even return it as a candidate.
+      // A generous cushion here is cheap (MAX_RADIUS_DEG caps it, and the
+      // in-frame pixel check below still correctly excludes anything
+      // that's actually outside the photo).
       fieldCenter = {
         ra: wcs.CRVAL1,
         dec: wcs.CRVAL2,
-        radiusDeg: (Math.sqrt(fovW * fovW + fovH * fovH) / 2) * 1.05,
+        radiusDeg: (Math.sqrt(fovW * fovW + fovH * fovH) / 2) * 1.18,
       };
 
       const pixelScaleArcsec = ((scaleX + scaleY) / 2) * 3600;
@@ -924,6 +949,12 @@ const CATALOG_GUIDE = [
   // are actually in the photo without pulling in genuinely-outside ones.
   const EDGE_TOLERANCE_FRAC = 0.02;
 
+  // Debug aid: every fetch's raw SIMBAD rows plus which ones got excluded
+  // by the frame bounds check, keyed by category -- lets a "why isn't X
+  // showing up" report be diagnosed directly from devtools (or by reading
+  // this out of the live page) instead of guessing at WCS math blind.
+  window.__atDebug = {};
+
   async function fetchCategoryRows(category, maglimit) {
     const url = `${WORKER_URL}/simbad/cone?ra=${fieldCenter.ra}&dec=${fieldCenter.dec}&radiusDeg=${fieldCenter.radiusDeg}&category=${category}&maglimit=${maglimit}`;
     const res = await fetch(url);
@@ -935,10 +966,15 @@ const CATALOG_GUIDE = [
     // image.
     const marginX = wcs.IMAGEW * EDGE_TOLERANCE_FRAC;
     const marginY = wcs.IMAGEH * EDGE_TOLERANCE_FRAC;
-    return rows.filter((obj) => {
-      const { x, y } = radecToPixel(wcs, obj.ra, obj.dec);
-      return x >= -marginX && x <= wcs.IMAGEW + marginX && y >= -marginY && y <= wcs.IMAGEH + marginY;
-    });
+    const withPixels = rows.map((obj) => ({ obj, ...radecToPixel(wcs, obj.ra, obj.dec) }));
+    const inFrame = [];
+    const excluded = [];
+    for (const r of withPixels) {
+      const ok = r.x >= -marginX && r.x <= wcs.IMAGEW + marginX && r.y >= -marginY && r.y <= wcs.IMAGEH + marginY;
+      (ok ? inFrame : excluded).push({ name: r.obj.name, ra: r.obj.ra, dec: r.obj.dec, x: r.x, y: r.y });
+    }
+    window.__atDebug[category] = { imagew: wcs.IMAGEW, imageh: wcs.IMAGEH, marginX, marginY, inFrame, excluded };
+    return inFrame.map((r) => rows.find((o) => o.name === r.name));
   }
 
   async function addCategorySlider(category) {
