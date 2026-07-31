@@ -74,7 +74,7 @@ const EXCLUDE_STARS_CLAUSE = `b.otype NOT IN (SELECT otype FROM otypedef WHERE p
 // Herschel II NGC-ordered list
 // (astroleague.org/wp-content/uploads/2022/02/H2-Lists-2020-NGC.pdf).
 // Both lists are NGC-only (no IC objects), matching the source PDFs.
-const HERSCHEL_400_NGC = new Set([
+const HERSCHEL_400_LIST = [
   40, 129, 136, 157, 185, 205, 225, 246, 247, 253, 278, 288, 381, 404, 436, 457, 488, 524, 559, 584, 596, 598, 613,
   615, 637, 651, 654, 659, 663, 720, 752, 772, 779, 869, 884, 891, 908, 936, 1022, 1023, 1027, 1052, 1055, 1084,
   1245, 1342, 1407, 1444, 1501, 1502, 1513, 1528, 1535, 1545, 1647, 1664, 1788, 1817, 1857, 1907, 1931, 1961, 1964,
@@ -96,9 +96,16 @@ const HERSCHEL_400_NGC = new Set([
   6629, 6633, 6638, 6642, 6645, 6664, 6712, 6755, 6756, 6781, 6802, 6818, 6823, 6826, 6830, 6834, 6866, 6882, 6885,
   6905, 6910, 6934, 6939, 6940, 6946, 7000, 7006, 7008, 7009, 7044, 7062, 7086, 7128, 7142, 7160, 7209, 7217, 7243,
   7296, 7331, 7380, 7448, 7479, 7510, 7606, 7662, 7686, 7723, 7727, 7789, 7790, 7814,
-]);
+];
+const HERSCHEL_400_NGC = new Set(HERSCHEL_400_LIST);
+// Not an "official" published per-object ordinal (the Astronomical
+// League's list isn't numbered 1-400 anywhere) -- this is this array's
+// own position, used only to give each match a "#N of 400" reference
+// point on its label, per Jay's request to show a list position alongside
+// the object's real name.
+const HERSCHEL_400_ORDINAL = new Map(HERSCHEL_400_LIST.map((n, i) => [n, i + 1]));
 
-const HERSCHEL_II_NGC = new Set([
+const HERSCHEL_II_LIST = [
   23, 24, 125, 151, 175, 198, 206, 214, 217, 315, 337, 357, 410, 428, 499, 513, 514, 604, 636, 660, 665, 672, 706,
   718, 741, 821, 890, 896, 925, 991, 1003, 1012, 1032, 1035, 1045, 1058, 1060, 1070, 1073, 1087, 1090, 1114, 1156,
   1161, 1162, 1169, 1172, 1175, 1184, 1187, 1193, 1199, 1207, 1209, 1325, 1332, 1348, 1353, 1400, 1421, 1491, 1507,
@@ -120,7 +127,9 @@ const HERSCHEL_II_NGC = new Set([
   6596, 6604, 6717, 6772, 6793, 6800, 6804, 6814, 6824, 6857, 6888, 6894, 6907, 6960, 6991, 6992, 6997, 7023, 7031,
   7042, 7067, 7082, 7129, 7139, 7156, 7171, 7177, 7184, 7218, 7245, 7332, 7354, 7377, 7392, 7419, 7457, 7463, 7465,
   7492, 7507, 7541, 7562, 7600, 7619, 7623, 7626, 7635, 7640, 7742, 7762, 7785, 7814, 7832,
-]);
+];
+const HERSCHEL_II_NGC = new Set(HERSCHEL_II_LIST);
+const HERSCHEL_II_ORDINAL = new Map(HERSCHEL_II_LIST.map((n, i) => [n, i + 1]));
 
 // Caldwell catalogue (Patrick Moore, 109 objects). Sourced from Wikipedia's
 // "Caldwell catalogue" table 2026-08-01 and spot-checked against known
@@ -132,18 +141,60 @@ const HERSCHEL_II_NGC = new Set([
 // those are matched by exact SIMBAD ident instead (verified live: Sh2-155
 // -> "SH  2-155", the Hyades -> "Cl Melotte   25", the Coalsack -> "NAME
 // Coalsack Nebula"). C14 (the Double Cluster) is two NGC objects, both
-// included.
-const CALDWELL_NGC = new Set([
-  188, 40, 4236, 7023, 6543, 2403, 559, 663, 7635, 6946, 457, 869, 884, 6826, 7243, 147, 185, 7000, 4449, 7662, 891,
-  1275, 2419, 4244, 6888, 752, 5005, 7331, 4631, 6992, 6960, 4889, 4559, 6885, 4565, 2392, 3626, 7006, 7814, 7479,
-  5248, 2261, 6934, 2775, 2237, 2244, 4697, 3115, 2506, 7009, 246, 6822, 2360, 3242, 4038, 4039, 247, 7293, 2362,
-  253, 5694, 1097, 6729, 6302, 300, 2477, 55, 1851, 3132, 6124, 6231, 5128, 6541, 3201, 5139, 6352, 6193, 4945,
-  5286, 6397, 1261, 5823, 6087, 2867, 3532, 3372, 6752, 4755, 6025, 2516, 3766, 4609, 6744, 2070, 362, 4833, 104,
-  6101, 4372, 3195,
-]);
-const CALDWELL_IC = new Set([342, 5146, 405, 1613, 2391, 2944, 2602]);
+// included. Kept as one explicit [C#, prefix, designation] list (rather
+// than separate membership sets) so the real published C-number can be
+// attached to each match's label, not just yes/no membership.
+const CALDWELL_ENTRIES: [number, 'NGC' | 'IC' | 'OTHER', number | string][] = [
+  [1, 'NGC', 188], [2, 'NGC', 40], [3, 'NGC', 4236], [4, 'NGC', 7023], [5, 'IC', 342], [6, 'NGC', 6543],
+  [7, 'NGC', 2403], [8, 'NGC', 559], [9, 'OTHER', 'SH 2-155'], [10, 'NGC', 663], [11, 'NGC', 7635],
+  [12, 'NGC', 6946], [13, 'NGC', 457], [14, 'NGC', 869], [14, 'NGC', 884], [15, 'NGC', 6826], [16, 'NGC', 7243],
+  [17, 'NGC', 147], [18, 'NGC', 185], [19, 'IC', 5146], [20, 'NGC', 7000], [21, 'NGC', 4449], [22, 'NGC', 7662],
+  [23, 'NGC', 891], [24, 'NGC', 1275], [25, 'NGC', 2419], [26, 'NGC', 4244], [27, 'NGC', 6888], [28, 'NGC', 752],
+  [29, 'NGC', 5005], [30, 'NGC', 7331], [31, 'IC', 405], [32, 'NGC', 4631], [33, 'NGC', 6992], [34, 'NGC', 6960],
+  [35, 'NGC', 4889], [36, 'NGC', 4559], [37, 'NGC', 6885], [38, 'NGC', 4565], [39, 'NGC', 2392], [40, 'NGC', 3626],
+  [41, 'OTHER', 'Cl Melotte 25'], [42, 'NGC', 7006], [43, 'NGC', 7814], [44, 'NGC', 7479], [45, 'NGC', 5248],
+  [46, 'NGC', 2261], [47, 'NGC', 6934], [48, 'NGC', 2775], [49, 'NGC', 2237], [50, 'NGC', 2244], [51, 'IC', 1613],
+  [52, 'NGC', 4697], [53, 'NGC', 3115], [54, 'NGC', 2506], [55, 'NGC', 7009], [56, 'NGC', 246], [57, 'NGC', 6822],
+  [58, 'NGC', 2360], [59, 'NGC', 3242], [60, 'NGC', 4038], [61, 'NGC', 4039], [62, 'NGC', 247], [63, 'NGC', 7293],
+  [64, 'NGC', 2362], [65, 'NGC', 253], [66, 'NGC', 5694], [67, 'NGC', 1097], [68, 'NGC', 6729], [69, 'NGC', 6302],
+  [70, 'NGC', 300], [71, 'NGC', 2477], [72, 'NGC', 55], [73, 'NGC', 1851], [74, 'NGC', 3132], [75, 'NGC', 6124],
+  [76, 'NGC', 6231], [77, 'NGC', 5128], [78, 'NGC', 6541], [79, 'NGC', 3201], [80, 'NGC', 5139], [81, 'NGC', 6352],
+  [82, 'NGC', 6193], [83, 'NGC', 4945], [84, 'NGC', 5286], [85, 'IC', 2391], [86, 'NGC', 6397], [87, 'NGC', 1261],
+  [88, 'NGC', 5823], [89, 'NGC', 6087], [90, 'NGC', 2867], [91, 'NGC', 3532], [92, 'NGC', 3372], [93, 'NGC', 6752],
+  [94, 'NGC', 4755], [95, 'NGC', 6025], [96, 'NGC', 2516], [97, 'NGC', 3766], [98, 'NGC', 4609],
+  [99, 'OTHER', 'NAME Coalsack Nebula'], [100, 'IC', 2944], [101, 'NGC', 6744], [102, 'IC', 2602],
+  [103, 'NGC', 2070], [104, 'NGC', 362], [105, 'NGC', 4833], [106, 'NGC', 104], [107, 'NGC', 6101],
+  [108, 'NGC', 4372], [109, 'NGC', 3195],
+];
+const CALDWELL_NGC = new Set(CALDWELL_ENTRIES.filter((e) => e[1] === 'NGC').map((e) => e[2] as number));
+const CALDWELL_IC = new Set(CALDWELL_ENTRIES.filter((e) => e[1] === 'IC').map((e) => e[2] as number));
+const CALDWELL_NUMBER_BY_NGC = new Map(CALDWELL_ENTRIES.filter((e) => e[1] === 'NGC').map((e) => [e[2] as number, e[0]]));
+const CALDWELL_NUMBER_BY_IC = new Map(CALDWELL_ENTRIES.filter((e) => e[1] === 'IC').map((e) => [e[2] as number, e[0]]));
+const CALDWELL_NUMBER_BY_EXTRA = new Map(CALDWELL_ENTRIES.filter((e) => e[1] === 'OTHER').map((e) => [e[2] as string, e[0]]));
 const CALDWELL_EXTRA_CLAUSE = `i.id IN ('SH  2-155', 'Cl Melotte   25', 'NAME Coalsack Nebula')`;
 const CALDWELL_EXTRA_NAMES = new Set(['SH 2-155', 'Cl Melotte 25', 'NAME Coalsack Nebula']);
+
+// Attaches a "list position" label to a match, per Jay's request to show
+// the object's number in the list alongside its real designation --
+// returns null for categories where this doesn't apply.
+function listNumberOf(category: string, name: string): string | null {
+  if (category === 'herschel400' || category === 'herschel2') {
+    const c = isCleanNgcOrIc(name);
+    if (!c || c.prefix !== 'NGC') return null;
+    const ordinal = (category === 'herschel400' ? HERSCHEL_400_ORDINAL : HERSCHEL_II_ORDINAL).get(c.num);
+    return ordinal ? `#${ordinal} of 400` : null;
+  }
+  if (category === 'caldwell') {
+    const c = isCleanNgcOrIc(name);
+    if (c) {
+      const n = c.prefix === 'NGC' ? CALDWELL_NUMBER_BY_NGC.get(c.num) : CALDWELL_NUMBER_BY_IC.get(c.num);
+      return n ? `C${n}` : null;
+    }
+    const n = CALDWELL_NUMBER_BY_EXTRA.get(name);
+    return n ? `C${n}` : null;
+  }
+  return null;
+}
 
 // Anchored at both ends -- NGC/IC catalog numbers are also informally
 // reused as a prefix for objects/features *within* the parent object
@@ -171,6 +222,15 @@ function isCaldwell(name: string): boolean {
   const c = isCleanNgcOrIc(name);
   if (c) return c.prefix === 'NGC' ? CALDWELL_NGC.has(c.num) : CALDWELL_IC.has(c.num);
   return CALDWELL_EXTRA_NAMES.has(name);
+}
+// e.g. "17 Tau", "5 Vul" -- digits, space, exactly a 3-letter IAU
+// constellation abbreviation (mixed-case: "CMa", "CVn", "UMa" all have a
+// capital mid-word, so this can't assume simple title-case).
+function isFlamsteedShaped(name: string): boolean {
+  return /^\d+\s+[A-Za-z]{3}$/.test(name);
+}
+function isCleanBd(name: string): boolean {
+  return /^BD[+-]\d+\s+\d+$/.test(name);
 }
 
 interface CategoryDef {
@@ -225,10 +285,33 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
     catalogClause: `(i.id LIKE 'NGC %' OR i.id LIKE 'IC %' OR ${CALDWELL_EXTRA_CLAUSE})`,
     membershipFilter: isCaldwell,
   },
+  // Star catalogs. WDS/HIP/SAO/WD/BD each have a literal, unambiguous
+  // ident prefix (verified live 2026-08-01: "WDS J...", "HIP N", "SAO N",
+  // "WD hhmm+dd", "BD+dd N"/"BD-dd N") so they use the same clean
+  // LIKE-prefix approach as the other single-catalog categories.
+  // Flamsteed is different: SIMBAD stores it under the generic '*' (star)
+  // alias prefix shared with Bayer designations, variable-star names, etc.
+  // (confirmed live: 17 Tau's full alias list has it as plain "*  17 Tau",
+  // no distinct "Flamsteed" prefix to filter on) -- so it's matched by
+  // ident *shape* instead (digits, space, 3-letter constellation
+  // abbreviation) after the generic '*' JOIN, via membershipFilter.
+  flamsteed: { catalogClause: `i.id LIKE '* %'`, membershipFilter: isFlamsteedShaped },
+  wds: { catalogClause: `i.id LIKE 'WDS %'` },
+  hip: { catalogClause: `i.id LIKE 'HIP %'` },
+  sao: { catalogClause: `i.id LIKE 'SAO %'` },
+  wd: { catalogClause: `i.id LIKE 'WD %'` },
+  // Like NGC/IC, BD numbers are reused as a suffix base for double-star
+  // components of the same cataloged position ("BD+23 512" and its
+  // component "BD+23 512A" both matching the same physical star) --
+  // confirmed live near M45. Restricting to a clean "BD+dd N" / "BD-dd N"
+  // shape (no trailing component letter) avoids showing the same star
+  // twice under two BD aliases.
+  bd: { catalogClause: `(i.id LIKE 'BD+%' OR i.id LIKE 'BD-%')`, membershipFilter: isCleanBd },
 };
 
 const SINGLE_CATALOG_CATEGORIES = new Set([
   'messier', 'ngc', 'ic', 'barnard', 'arp', 'herschel400', 'herschel2', 'caldwell',
+  'flamsteed', 'wds', 'hip', 'sao', 'wd', 'bd',
 ]);
 
 // Per-category display-name rewrite, applied after the generic
@@ -528,8 +611,28 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       otype: o.otype,
       spType: null,
       mag: o.mag,
+      listNumber: listNumberOf(category, name),
     }));
     if (def.membershipFilter) objects = objects.filter((o) => def.membershipFilter!(o.name));
+    if (category === 'wd') {
+      // Unlike BD's component-letter suffixes, the WD catalog's duplicate
+      // aliases for the same star aren't a simple suffix pattern -- e.g.
+      // "WD 0642-16", "WD 0642-163", and "WD 0642-166" are three
+      // completely different-looking but fully valid SIMBAD idents for
+      // the exact same star (confirmed live, identical ra/dec to 10+
+      // decimal places), reflecting different historical WD-catalog
+      // naming precision. Name-based grouping doesn't catch this since
+      // the names themselves differ -- dedupe by rounded coordinate
+      // instead, coarse enough to collapse "same star, different alias"
+      // but far tighter than any real close pair would ever be.
+      const seenCoords = new Set<string>();
+      objects = objects.filter((o) => {
+        const key = `${o.ra.toFixed(4)},${o.dec.toFixed(4)}`;
+        if (seenCoords.has(key)) return false;
+        seenCoords.add(key);
+        return true;
+      });
+    }
     return json(objects, origin);
   }
 

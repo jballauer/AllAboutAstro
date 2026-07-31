@@ -5,6 +5,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 // workers/astrometric-tool/README.md) -- `npx wrangler deploy` prints the
 // URL, something like https://astrometric-tool.<subdomain>.workers.dev
 const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
+
+// Reference blurbs for every catalog/list slider -- static content, shown
+// regardless of tool state, so it's not tied to the client-side script.
+const CATALOG_GUIDE = [
+  { name: 'Messier', body: 'Charles Messier’s 1771–1781 list of 110 bright, fixed deep-sky objects -- compiled not to celebrate them, but to help comet hunters avoid mistaking them for new comets. Nearly all of the sky’s showpiece galaxies, clusters, and nebulae are on it.' },
+  { name: 'NGC', body: 'The New General Catalogue (J.L.E. Dreyer, 1888), 7,840 deep-sky objects compiled from the Herschels’ visual survey work and other 19th-century observers. Still the primary reference designation for most galaxies, clusters, and nebulae.' },
+  { name: 'IC', body: 'The Index Catalogue (Dreyer, 1895 and 1908), two supplements to the NGC adding 5,386 more objects found after 1888, many via early astrophotography rather than visual observation.' },
+  { name: 'Barnard', body: 'E.E. Barnard’s 1919 catalogue of 349 dark nebulae -- obscuring dust clouds silhouetted against the Milky Way’s star fields, identified from his own wide-field photographic plates.' },
+  { name: 'Arp', body: 'Halton Arp’s 1966 "Atlas of Peculiar Galaxies," 338 galaxies chosen specifically for unusual/disturbed morphology -- interacting pairs, tidal tails, ring galaxies -- rather than brightness or size.' },
+  { name: 'Herschel 400', body: 'A 400-object observing list curated by the Astronomical League from William Herschel’s much larger 18th-century discovery catalogue (2,500+ objects) -- selected as a challenging but achievable "next step" past the Messier list for visual observers.' },
+  { name: 'Herschel II', body: 'A second, complementary 400-object Herschel list, originally selected by the Rose City Astronomers (Portland, OR) in 1997 and adopted by the Astronomical League as a follow-on observing program to Herschel 400.' },
+  { name: 'Caldwell', body: 'Patrick Moore’s 1995 list of 109 bright deep-sky objects, deliberately built to complement Messier’s list by including showpiece objects Messier missed -- mostly ones too far south for his Paris latitude, or just outside his comet-hunting focus.' },
+  { name: 'Flamsteed', body: 'John Flamsteed’s early-18th-century numbering of naked-eye stars within each constellation (e.g. "51 Peg"), ordered roughly by right ascension. Still the standard designation for many bright stars without a proper name.' },
+  { name: 'WDS', body: 'The Washington Double Star Catalog (US Naval Observatory), the world’s principal database of double and multiple star systems -- over 150,000 pairs, identified by coordinate-based designation and component letter (A, B, Aa/Ab, ...).' },
+  { name: 'HIP', body: 'The Hipparcos catalogue, ~118,000 stars with precision positions/parallaxes/proper motions measured by ESA’s Hipparcos satellite (1989–1993) -- the standard reference for stellar astrometry before Gaia.' },
+  { name: 'SAO', body: 'The Smithsonian Astrophysical Observatory Star Catalog (1966), ~258,000 stars to about 9th magnitude with positions, proper motions, and photometry -- a workhorse all-sky catalog predating Hipparcos.' },
+  { name: 'WD', body: 'White dwarf catalogues (McCook & Sion and successors) listing confirmed white dwarf stars -- the dense, faint stellar remnants left behind after a Sun-like star exhausts its fuel.' },
+  { name: 'BD', body: 'The Bonner Durchmusterung (1859–1903), a massive 19th-century positional survey of the Northern and equatorial sky (~325,000 stars to about 9th–10th magnitude) -- one of the foundational all-sky star catalogues.' },
+];
 ---
 
 <BaseLayout
@@ -36,6 +55,16 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
             <img id="at-preview-img" alt="Uploaded astrophoto preview" />
           </div>
         </div>
+
+        <div class="at-info-bar" id="at-info-bar" hidden>
+          <dl class="at-image-specs">
+            <div><dt>Resolution</dt><dd id="at-spec-resolution">&mdash;</dd></div>
+            <div><dt>Image scale</dt><dd id="at-spec-scale">&mdash;</dd></div>
+            <div><dt>Field of view</dt><dd id="at-spec-fov">&mdash;</dd></div>
+            <div><dt>Center (RA, Dec)</dt><dd id="at-spec-center">&mdash;</dd></div>
+          </dl>
+          <button type="button" id="at-download-btn">Download labeled image</button>
+        </div>
       </div>
 
       <aside class="at-sidebar">
@@ -65,6 +94,15 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
             <button type="button" data-category="herschel2">+ Herschel II</button>
             <button type="button" data-category="caldwell">+ Caldwell</button>
           </div>
+          <p>...or by star catalog:</p>
+          <div class="at-category-buttons">
+            <button type="button" data-category="flamsteed">+ Flamsteed</button>
+            <button type="button" data-category="wds">+ WDS</button>
+            <button type="button" data-category="hip">+ HIP</button>
+            <button type="button" data-category="sao">+ SAO</button>
+            <button type="button" data-category="wd">+ WD</button>
+            <button type="button" data-category="bd">+ BD</button>
+          </div>
           <p class="at-status" id="at-category-status" role="status"></p>
         </div>
 
@@ -72,12 +110,20 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
           <button type="button" id="at-reset-sliders-btn">Reset sliders</button>
           <div class="at-sliders" id="at-sliders"></div>
         </div>
-
-        <div class="at-download" id="at-download-panel" hidden>
-          <button type="button" id="at-download-btn">Download labeled image</button>
-        </div>
       </aside>
     </div>
+
+    <section class="at-catalog-guide">
+      <h2>About the catalogs</h2>
+      <div class="at-catalog-guide-grid">
+        {CATALOG_GUIDE.map((c) => (
+          <div class="at-catalog-guide-item">
+            <h3>{c.name}</h3>
+            <p>{c.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   </article>
 </BaseLayout>
 
@@ -167,6 +213,59 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     display: block;
     width: 100%;
     height: auto;
+  }
+  .at-info-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0.75rem 0 1.5rem;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  .at-image-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.75rem;
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+  }
+  .at-image-specs > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .at-image-specs dt {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    opacity: 0.65;
+  }
+  .at-image-specs dd {
+    margin: 0;
+    font-weight: bold;
+  }
+  .at-catalog-guide {
+    margin: 2.5rem 0 1rem;
+    max-width: 900px;
+  }
+  .at-catalog-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+  .at-catalog-guide-item h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1rem;
+  }
+  .at-catalog-guide-item p {
+    margin: 0;
+    font-size: 0.88rem;
+    opacity: 0.85;
   }
   .at-solve-panel,
   .at-categories,
@@ -322,6 +421,17 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     herschel400: { label: 'Herschel 400', maglimit: 15, kind: null },
     herschel2: { label: 'Herschel II', maglimit: 15, kind: null },
     caldwell: { label: 'Caldwell', maglimit: 15, kind: null },
+    // Star catalogs default shallower than the deep-sky ones -- HIP/SAO/BD
+    // in particular catalog hundreds of thousands of stars each, so an
+    // unbounded query on a rich field would return an unusable/slow flood
+    // of results. The auto-widen-if-sparse logic below still deepens these
+    // to mag 18 on a field where even this default turns up 2 or fewer.
+    flamsteed: { label: 'Flamsteed', maglimit: 10, kind: null },
+    wds: { label: 'WDS (double stars)', maglimit: 10, kind: null },
+    hip: { label: 'HIP (Hipparcos)', maglimit: 9, kind: null },
+    sao: { label: 'SAO', maglimit: 9, kind: null },
+    wd: { label: 'WD (white dwarfs)', maglimit: 15, kind: null },
+    bd: { label: 'BD', maglimit: 10, kind: null },
   };
 
   // Human-readable labels for the handful of SIMBAD otype codes this tool's
@@ -344,6 +454,25 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
 
   const D2R = Math.PI / 180;
   const R2D = 180 / Math.PI;
+
+  function formatDegArcmin(deg) {
+    const d = Math.floor(deg);
+    const m = (deg - d) * 60;
+    return `${d}° ${m.toFixed(1)}'`;
+  }
+  function formatRaDec(raDeg, decDeg) {
+    const raH = raDeg / 15;
+    const rh = Math.floor(raH);
+    const rm = Math.floor((raH - rh) * 60);
+    const rs = ((raH - rh) * 60 - rm) * 60;
+    const decSign = decDeg < 0 ? '−' : '+';
+    const decAbs = Math.abs(decDeg);
+    const dd = Math.floor(decAbs);
+    const dm = Math.floor((decAbs - dd) * 60);
+    const ds = ((decAbs - dd) * 60 - dm) * 60;
+    const pad2 = (n) => String(n).padStart(2, '0');
+    return `${pad2(rh)}h ${pad2(rm)}m ${rs.toFixed(1)}s, ${decSign}${pad2(dd)}° ${pad2(dm)}' ${ds.toFixed(0)}"`;
+  }
 
   function radecToPixel(wcs, raDeg, decDeg) {
     const a0 = wcs.CRVAL1 * D2R;
@@ -534,8 +663,12 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
   const slidersPanel = document.getElementById('at-sliders-panel');
   const slidersContainer = document.getElementById('at-sliders');
   const resetSlidersBtn = document.getElementById('at-reset-sliders-btn');
-  const downloadPanel = document.getElementById('at-download-panel');
+  const infoBar = document.getElementById('at-info-bar');
   const downloadBtn = document.getElementById('at-download-btn');
+  const specResolution = document.getElementById('at-spec-resolution');
+  const specScale = document.getElementById('at-spec-scale');
+  const specFov = document.getElementById('at-spec-fov');
+  const specCenter = document.getElementById('at-spec-center');
 
   let uploadedFile = null;
   let wcs = null; // { CRVAL1, CRVAL2, CRPIX1, CRPIX2, CD1_1, CD1_2, CD2_1, CD2_2, IMAGEW, IMAGEH }
@@ -558,7 +691,11 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     previewImg.src = url;
     frameWrap.hidden = false;
     solvePanel.hidden = false;
-    downloadPanel.hidden = false;
+    infoBar.hidden = false;
+    specResolution.textContent = '—';
+    specScale.textContent = '—';
+    specFov.textContent = '—';
+    specCenter.textContent = '—';
     solveBtn.disabled = false;
     solveBtn.textContent = 'Plate-solve this image';
   });
@@ -603,6 +740,12 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
         dec: wcs.CRVAL2,
         radiusDeg: (Math.sqrt(fovW * fovW + fovH * fovH) / 2) * 1.05,
       };
+
+      const pixelScaleArcsec = ((scaleX + scaleY) / 2) * 3600;
+      specResolution.textContent = `${wcs.IMAGEW} × ${wcs.IMAGEH} px`;
+      specScale.textContent = `${pixelScaleArcsec.toFixed(2)}"/px`;
+      specFov.textContent = `${formatDegArcmin(fovW)} × ${formatDegArcmin(fovH)} (${fovW.toFixed(3)}° × ${fovH.toFixed(3)}°)`;
+      specCenter.textContent = formatRaDec(fieldCenter.ra, fieldCenter.dec);
 
       solveStatus.textContent = 'Solved! Add a slider below to start labeling.';
       solveBtn.textContent = 'Solved';
@@ -665,7 +808,11 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     const tag = document.createElement('span');
     tag.className = 'at-tag';
     const nameEl = document.createElement('strong');
-    nameEl.textContent = obj.name;
+    // Observing-list catalogs (Herschel 400/II, Caldwell) get their own
+    // list position shown alongside the object's real designation, e.g.
+    // "C106 · NGC 104" -- the object's number in that list, not just its
+    // NGC/IC name.
+    nameEl.textContent = obj.listNumber ? `${obj.listNumber} · ${obj.name}` : obj.name;
     tag.appendChild(nameEl);
     const kindText = meta.kind || obj.spType || (obj.otype ? OTYPE_LABELS[obj.otype] || obj.otype : null);
     if (kindText) {
@@ -753,6 +900,23 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     return block;
   }
 
+  const SPARSE_RETRY_MAGLIMIT = 18;
+  const SPARSE_THRESHOLD = 2;
+
+  async function fetchCategoryRows(category, maglimit) {
+    const url = `${WORKER_URL}/simbad/cone?ra=${fieldCenter.ra}&dec=${fieldCenter.dec}&radiusDeg=${fieldCenter.radiusDeg}&category=${category}&maglimit=${maglimit}`;
+    const res = await fetch(url);
+    const rows = await res.json();
+    if (rows.error) throw new Error(rows.error);
+    // Only rows that actually land inside the frame count toward
+    // "sparse" -- a cone search can return plenty of raw rows that fall
+    // outside the rectangular image.
+    return rows.filter((obj) => {
+      const { x, y } = radecToPixel(wcs, obj.ra, obj.dec);
+      return x >= 0 && x <= wcs.IMAGEW && y >= 0 && y <= wcs.IMAGEH;
+    });
+  }
+
   async function addCategorySlider(category) {
     if (!wcs || !fieldCenter || activeCategories.has(category)) return;
     activeCategories.add(category);
@@ -762,17 +926,21 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
 
     try {
       const meta = CATEGORY_META[category];
-      const url = `${WORKER_URL}/simbad/cone?ra=${fieldCenter.ra}&dec=${fieldCenter.dec}&radiusDeg=${fieldCenter.radiusDeg}&category=${category}&maglimit=${meta.maglimit}`;
-      const res = await fetch(url);
-      const rows = await res.json();
-      if (rows.error) throw new Error(rows.error);
+      let rows = await fetchCategoryRows(category, meta.maglimit);
+      // A field that's genuinely sparse in this category (e.g. only 1-2
+      // Caldwell objects visible) is worth digging deeper for -- retry at
+      // a much deeper cutoff rather than leaving the slider nearly empty.
+      if (rows.length <= SPARSE_THRESHOLD && meta.maglimit < SPARSE_RETRY_MAGLIMIT) {
+        categoryStatus.textContent = `Only ${rows.length} found at first pass -- looking deeper…`;
+        const deeper = await fetchCategoryRows(category, SPARSE_RETRY_MAGLIMIT);
+        if (deeper.length > rows.length) rows = deeper;
+      }
 
       let added = 0;
       let minBucket = Infinity;
       let maxBucket = -Infinity;
       for (const obj of rows) {
         const { x, y } = radecToPixel(wcs, obj.ra, obj.dec);
-        if (x < 0 || x > wcs.IMAGEW || y < 0 || y > wcs.IMAGEH) continue;
         // No real magnitude on file for this object (common for extended
         // objects like clusters/galaxies) -- fall back to the category's
         // own mag limit so it still gets a defined reveal position instead
