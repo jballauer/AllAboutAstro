@@ -331,6 +331,16 @@ const SINGLE_CATALOG_CATEGORIES = new Set([
   'bayer', 'flamsteed', 'wds', 'hip', 'sao', 'wd', 'bd',
 ]);
 
+// Common-name display (added for the star categories, e.g. "Sirius A (alf
+// CMa)") is deliberately NOT applied to every category -- confirmed live
+// that plenty of deep-sky objects have their own unrelated "NAME %" ident
+// rows that are not human-friendly common names at all (M86 -> "NAME FAUST
+// V051", M87 -> "NAME M 87*" for the black-hole-imaging designation), which
+// produced garbage labels like "FAUST V051 (NGC 4406)" on the Messier/NGC
+// sliders. Scoped to just the star-only categories, where every "NAME %"
+// row really is a recognizable proper name.
+const STAR_CATEGORIES = new Set(['stars', 'bayer', 'flamsteed', 'wds', 'hip', 'sao', 'wd', 'bd']);
+
 // Per-category display-name rewrite, applied after the generic
 // asterisk-strip/whitespace-collapse cleanup below. Only "arp" needs one
 // so far (SIMBAD's own catalog prefix doesn't match the catalog's common
@@ -579,11 +589,18 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     // so there's no single unambiguous alias to prefer there -- main_id
     // stays correct for those, same as the type-only categories.
     const nameExpr = SINGLE_CATALOG_CATEGORIES.has(category) ? 'i.id AS name' : 'b.main_id AS name';
-    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux, n.id AS common_name
+    // Untyped "NULL AS common_name" is rejected by SIMBAD's ADQL parser
+    // (confirmed live 2026-08-01), so rather than always selecting the
+    // column and conditionally faking a null, the column itself is only
+    // present in the SELECT list for star categories -- idx('common_name')
+    // below naturally returns -1 for every other category, and the
+    // existing cleanCommonName(undefined) already resolves that to null.
+    const includeCommonName = STAR_CATEGORIES.has(category);
+    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux${includeCommonName ? ', n.id AS common_name' : ''}
       FROM basic AS b
       ${identJoin}
       LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
-      ${commonNameJoin}
+      ${includeCommonName ? commonNameJoin : ''}
       WHERE ${whereParts.join(' AND ')}
       ORDER BY name`;
   }

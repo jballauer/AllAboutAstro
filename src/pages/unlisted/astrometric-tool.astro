@@ -914,17 +914,30 @@ const CATALOG_GUIDE = [
   const SPARSE_RETRY_MAGLIMIT = 18;
   const SPARSE_THRESHOLD = 2;
 
+  // A hard 0..IMAGEW/IMAGEH cutoff clips real, visually-in-frame objects
+  // sitting right at the edge -- the astrometry.net WCS solution is a fit,
+  // not exact, and a couple of arcsec of residual error is normal. Reported
+  // live (2026-08-01): M91 and NGC 4571, both genuinely visible near the
+  // top edge of a Markarian's Chain photo, were silently dropped by this
+  // check even though the worker's own cone search returned them. A small
+  // tolerance margin (2% of each dimension) keeps near-edge objects that
+  // are actually in the photo without pulling in genuinely-outside ones.
+  const EDGE_TOLERANCE_FRAC = 0.02;
+
   async function fetchCategoryRows(category, maglimit) {
     const url = `${WORKER_URL}/simbad/cone?ra=${fieldCenter.ra}&dec=${fieldCenter.dec}&radiusDeg=${fieldCenter.radiusDeg}&category=${category}&maglimit=${maglimit}`;
     const res = await fetch(url);
     const rows = await res.json();
     if (rows.error) throw new Error(rows.error);
-    // Only rows that actually land inside the frame count toward
-    // "sparse" -- a cone search can return plenty of raw rows that fall
-    // outside the rectangular image.
+    // Only rows that actually land inside the frame (plus a small edge
+    // tolerance, see above) count toward "sparse" -- a cone search can
+    // return plenty of raw rows that fall well outside the rectangular
+    // image.
+    const marginX = wcs.IMAGEW * EDGE_TOLERANCE_FRAC;
+    const marginY = wcs.IMAGEH * EDGE_TOLERANCE_FRAC;
     return rows.filter((obj) => {
       const { x, y } = radecToPixel(wcs, obj.ra, obj.dec);
-      return x >= 0 && x <= wcs.IMAGEW && y >= 0 && y <= wcs.IMAGEH;
+      return x >= -marginX && x <= wcs.IMAGEW + marginX && y >= -marginY && y <= wcs.IMAGEH + marginY;
     });
   }
 
