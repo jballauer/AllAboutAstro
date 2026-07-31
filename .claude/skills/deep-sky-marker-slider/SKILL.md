@@ -70,6 +70,20 @@ necessary. For each category:
   role (M31: NGC 206, SIMBAD-typed "Association", not "HII" — see
   below on how to handle its missing magnitude) rather than forcing a
   technically-HII label onto something that isn't one.
+- **Galaxy otype filter is a curated guess, not exhaustive — expect to
+  miss real ones.** Markarian Chain's deep pull filtered SIMBAD's
+  cone-search results to a specific otype list (`G`, `GiG`, `GiP`,
+  `GiC`, `Sy1`, `Sy2`, `AGN`, `LIN`, `LSB`, `BiC`, `rG`, `SBG`) that
+  missed `H2G` (a real, fairly bright NGC galaxy — NGC 4459, mag
+  11.32 — used exactly this otype) entirely, because that code wasn't
+  anticipated. When Jay flags a visible smudge with no marker near
+  it, don't assume it's just another too-faint dropped candidate —
+  compute its RA/Dec via the inverse WCS transform (invert the same
+  gnomonic+CD-matrix math used for RA/Dec→pixel, see the component's
+  own frontmatter for the forward form) and run a plain
+  `CONTAINS(POINT..., CIRCLE...)` cone search with **no otype filter
+  at all** around that exact spot — the real object's otype tells you
+  what to add to the filter list next time, rather than guessing.
 - **Globular clusters**: SIMBAD TAP, `otype='GlCl'`, also very dense
   (M31: 629 rows). Try named/famous ones first by direct query (e.g.
   M31's G1/Mayall II) — **but verify they're actually within the
@@ -236,29 +250,35 @@ interface Props {
   render the slider on a **second copy of the same photo** further
   down the page instead, with its own short heading (e.g.
   `### Objects in this Image`) and one-line intro (M31, M33).
-- **On a plain hero (no in-frame zoom), it can attach directly to the
-  hero itself** instead of adding a second copy — this is what the
-  user usually wants by default; only fall back to a second copy when
-  the hero is zoomable or the user asks for a separate chart. Do this
-  the same way the existing `StarMagnitudeSlider` hero pages work: add
-  an `entry.id === '<slug>'` branch in `src/pages/gallery/[slug].astro`
-  that renders `<DeepSkyMarkerSlider image={entry.data.image} ... />`
-  in place of the plain `<Image>`, with a `markers` array (and a
-  sourcing comment) defined near the top of that file alongside the
-  other hero star/marker datasets. `imageWidth`/`imageHeight` must be
-  the same 1000-wide render dimensions the plain-`<Image>` branch
-  would have used (`Math.round(1000 * nativeHeight / nativeWidth)`
-  for the height) since marker `x`/`y` are pixel coordinates at that
-  render size, not the source image's native resolution — plate-solve
-  and verify against the native file, then scale the resulting pixel
+- **On a plain hero with no click-to-zoom of any kind, it can attach
+  directly to the hero itself** instead of adding a second copy. Do
+  this the same way the existing `StarMagnitudeSlider` hero pages
+  work: add an `entry.id === '<slug>'` branch in
+  `src/pages/gallery/[slug].astro` that renders
+  `<DeepSkyMarkerSlider image={entry.data.image} ... />` in place of
+  the plain `<Image>`. `imageWidth`/`imageHeight` must be the same
+  1000-wide render dimensions the plain-`<Image>` branch would have
+  used (`Math.round(1000 * nativeHeight / nativeWidth)` for the
+  height) since marker `x`/`y` are pixel coordinates at that render
+  size, not the source image's native resolution — plate-solve and
+  verify against the native file, then scale the resulting pixel
   positions by `1000 / nativeWidth` before writing them into the
-  marker array (Markarian Chain: native 1200×846, scale 1000/1200).
-  This bypasses the file's `hiresMap`/lightbox-hint logic entirely for
-  that slug, same as the existing StarMagnitudeSlider hero cases (some
-  of which still carry an orphaned, now-unused `hiresMap` entry from
-  before they became a slider hero — harmless, not worth cleaning up).
-  No MDX conversion needed for this path; the `.md` file only needs a
-  short intro sentence and sourcing caption near the top.
+  marker array.
+- **If the hero later gains a hires image and Click-to-Zoom (or
+  Click-to-Zoom-and-Pan), move the slider off the hero.** The plain
+  fullscreen lightbox *can* coexist with the slider on the same image
+  (see the `hires` prop above), but `ke-zoom-inframe` cannot — and
+  Jay upgraded Markarian Chain from "hero-attached slider" to
+  "zoom-and-pan hero + slider on a second copy" in the same session
+  this rule was first written, which is exactly the scenario the
+  earlier revision of this doc didn't anticipate. When that happens:
+  convert the `.md` to `.mdx`, move the `markers` array and the
+  `<DeepSkyMarkerSlider>` call into the content file (same as the
+  MDX/second-copy pattern below), delete the `entry.id === '<slug>'`
+  branch and its marker data from `[slug].astro` entirely, and add
+  the slug to the `isInFrameZoom` boolean per the `zoom-and-pan`
+  skill. Don't leave stale marker data sitting unused in
+  `[slug].astro` after moving it — delete it, don't comment it out.
 - **Requires MDX** only for the *second-copy* placement, since that's
   a real interactive component embedded *mid-content*, not something
   `[slug].astro`'s branch-by-`entry.id` pattern can inject at an
@@ -291,6 +311,32 @@ interface Props {
    check the actual rendered text (not just a quick screenshot glance,
    which can misread small stacked text) before assuming a `tagDx`/
    `tagDy` nudge is needed.
+6. **De-overlapping a dense cluster (10+ markers close together, e.g.
+   Markarian Chain's 35) needs actual DOM measurement, not mental math
+   or eyeballing.** `tagDx`/`tagDy` are *raw CSS pixels applied at
+   whatever width the frame is actually rendered at* (`getComputedStyle`/
+   `getBoundingClientRect`, not the logical 1000px the marker
+   coordinates were authored against) — trying to hand-compute two
+   tags' post-offset positions from their `x`/`y` + `tagDx`/`tagDy`
+   values doesn't reliably predict collisions or clearances (repeatedly
+   wrong during Markarian's 35-marker cleanup: pushing a tag "150px
+   right" against a neighbor computed as "should clear by 150+px" in
+   practice landed 12px apart, because the actual rendered frame width
+   differs from 1000 and every other marker's own translate is stacked
+   into the same crowded region). Do this instead: dispatch an `input`
+   event with `value = input.max` to reveal every marker, then run a
+   `getBoundingClientRect()` pairwise-AABB-overlap script over every
+   `.dsm-tag` and read back the exact list of still-colliding name
+   pairs. Adjust only those, rebuild, re-run the same script — repeat
+   until it returns an empty list. For a tag that keeps colliding with
+   several neighbors no matter which direction it's nudged (it's
+   boxed in on all sides in a genuinely crowded cluster), query the
+   *actual* neighboring tag positions within e.g. a 250px radius (not
+   just the colliding pair) to find real open space before choosing
+   the next offset, and consider shortening an unusually long
+   `catalogName` (a long survey ID makes the tag itself wide enough to
+   collide with things a shorter name wouldn't reach) rather than only
+   pushing it further away.
 
 ## Apply only on request
 
