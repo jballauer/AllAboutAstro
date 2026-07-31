@@ -44,6 +44,13 @@ interface Props {
   // value shows everything.
   minMag?: number;
   maxMag?: number;
+  // Path to a genuine higher-resolution file. When set, the frame becomes
+  // click-to-zoom (site's default fullscreen lightbox) same as any other
+  // article image -- the lightbox is a full-page overlay, not an in-place
+  // transform, so it doesn't fight the percentage-positioned markers.
+  // Omit when there's no real hi-res source on file (matches the site-wide
+  // convention of not promising a zoom that doesn't deliver).
+  hires?: string;
 }
 
 const {
@@ -55,6 +62,7 @@ const {
   step = 1,
   minMag: minMagProp,
   maxMag: maxMagProp,
+  hires,
 } = Astro.props;
 
 const decimals = step < 1 ? String(step).split('.')[1]?.length ?? 1 : 0;
@@ -102,7 +110,7 @@ function leaderGeometry(m: DeepSkyMarker) {
 ---
 
 <div class="deep-sky-marker-slider">
-  <div class="dsm-frame no-lightbox">
+  <div class={hires ? 'dsm-frame' : 'dsm-frame no-lightbox'} data-hires={hires || undefined}>
     <Image src={image} alt={alt} width={imageWidth} height={imageHeight} />
     {markers.map((m) => {
       const { length, angleDeg, anchorX, anchorY } = leaderGeometry(m);
@@ -129,6 +137,7 @@ function leaderGeometry(m: DeepSkyMarker) {
       );
     })}
   </div>
+  {hires && <p class="ke-zoom-hint">Click to Zoom</p>}
   <div class="dsm-controls">
     <input
       type="range"

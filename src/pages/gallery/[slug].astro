@@ -189,25 +189,54 @@ const helixHeroStars = [
 ];
 
 // Plate-solved via astrometry.net, cross-matched against SIMBAD -- see
-// the deep-sky-marker-slider skill. All 8 named Messier/NGC galaxies from
-// Jay's own "About this Image" prose. Magnitudes are the Virgo Cluster
-// ACS Survey V-band value (SIMBAD) where available (M84/86/87/89/90);
-// M88, M91, and NGC 4571 have no such V-band entry in SIMBAD -- SIMBAD's
-// only V-band row for those three (bibcode 2010A&A...518A..10V) was a
-// clear outlier (13.18/13.57, ~3 mag fainter than every other source for
-// the same objects), so NED's quick-look magnitude was used for those
-// three instead. Bucketed with step=0.5 since the whole group spans just
-// over 3 magnitudes and integer buckets would have collapsed most of
-// them into the same reveal step.
+// the deep-sky-marker-slider skill. Started with the 8 named Messier/NGC
+// galaxies from Jay's own "About this Image" prose, then extended with a
+// deep (V<=16) SIMBAD cone search of the whole field, restricted to
+// galaxy-family otypes (G, GiG, GiP, GiC, Sy1, Sy2, AGN, LIN, LSB, BiC,
+// rG) and filtered down to the ~21 that verify as a real, independently
+// visible smudge in the source photo (crosshair-cropped, contrast-
+// boosted) -- most V>13 candidates from that pull are real catalogued
+// galaxies but too faint/diffuse to actually show in this exposure, so
+// they were dropped rather than shipped as markers pointing at blank
+// sky. Magnitudes are the Virgo Cluster ACS Survey V-band value (SIMBAD)
+// where available; M88, M91, and NGC 4571 have no such V-band entry in
+// SIMBAD -- SIMBAD's only V-band row for those three (bibcode
+// 2010A&A...518A..10V) was a clear outlier (~3 mag fainter than every
+// other source for the same objects), so NED's quick-look magnitude was
+// used for those three instead. step=0.25 since the field is dense
+// between mag 10-13 (the Virgo core cluster) and integer/half-mag
+// buckets would collapse many distinct galaxies into the same reveal
+// step.
 const markarianMarkers = [
-  { catalogName: 'M87', kind: 'Galaxy', mag: 8.63, x: 453.58, y: 614.22 },
-  { catalogName: 'M86', kind: 'Galaxy', mag: 8.9, x: 763.08, y: 448.73 },
+  { catalogName: 'M87', kind: 'Galaxy', mag: 8.63, x: 453.58, y: 614.22, tagDx: -70, tagDy: -15 },
+  { catalogName: 'M86', kind: 'Galaxy', mag: 8.9, x: 763.08, y: 448.73, tagDx: -95, tagDy: -35 },
   { catalogName: 'M90', kind: 'Galaxy', mag: 9.54, x: 38.88, y: 410.76 },
   { catalogName: 'M88', kind: 'Galaxy', mag: 9.56, x: 357.39, y: 50.59 },
   { catalogName: 'M89', kind: 'Galaxy', mag: 9.75, x: 122.65, y: 577.93 },
-  { catalogName: 'M84', kind: 'Galaxy', mag: 10.49, x: 840.77, y: 462.33 },
+  { catalogName: 'NGC 4438', kind: 'Galaxy', mag: 10.17, x: 656.22, y: 434.99, tagDx: 90, tagDy: 25 },
+  { catalogName: 'NGC 4473', kind: 'Galaxy', mag: 10.2, x: 512.97, y: 322.45, tagDx: 60, tagDy: 10 },
+  { catalogName: 'NGC 4477', kind: 'Galaxy', mag: 10.42, x: 496.07, y: 265.14, tagDx: 0, tagDy: -35 },
+  { catalogName: 'M84', kind: 'Galaxy', mag: 10.49, x: 840.77, y: 462.33, tagDx: 70, tagDy: -15 },
+  { catalogName: 'NGC 4435', kind: 'Galaxy', mag: 10.8, x: 661.39, y: 415.21, tagDx: -70, tagDy: -10 },
   { catalogName: 'M91', kind: 'Galaxy', mag: 10.96, x: 123.33, y: 36.03 },
+  { catalogName: 'NGC 4388', kind: 'Galaxy', mag: 11.02, x: 794.24, y: 526.86, tagDx: 40, tagDy: 55 },
+  { catalogName: 'NGC 4461', kind: 'Galaxy', mag: 11.19, x: 567.06, y: 389.18, tagDx: -70, tagDy: 30 },
+  { catalogName: 'NGC 4478', kind: 'Galaxy', mag: 11.45, x: 490.46, y: 630.5, tagDx: 0, tagDy: 50 },
+  { catalogName: 'NGC 4486A', kind: 'Galaxy', mag: 11.59, x: 445.22, y: 648.2, tagDx: -40, tagDy: 75 },
+  { catalogName: 'NGC 4550', kind: 'Galaxy', mag: 11.68, x: 135.62, y: 671.27, tagDx: 70, tagDy: 15 },
+  { catalogName: 'NGC 4440', kind: 'Galaxy', mag: 11.72, x: 654.08, y: 634.84, tagDx: -70, tagDy: -10 },
   { catalogName: 'NGC 4571', kind: 'Galaxy', mag: 11.82, x: 23.97, y: 116.58 },
+  { catalogName: 'NGC 4425', kind: 'Galaxy', mag: 11.83, x: 695.47, y: 510.12, tagDx: 90, tagDy: 10 },
+  { catalogName: 'NGC 4551', kind: 'Galaxy', mag: 12.02, x: 126.93, y: 659.46, tagDx: -70, tagDy: -10 },
+  { catalogName: 'NGC 4458', kind: 'Galaxy', mag: 12.07, x: 572.69, y: 372.77, tagDx: -70, tagDy: -15 },
+  { catalogName: 'NGC 4387', kind: 'Galaxy', mag: 12.12, x: 798.58, y: 485.25, tagDx: -110, tagDy: 20 },
+  { catalogName: 'NGC 4479', kind: 'Galaxy', mag: 12.44, x: 478.33, y: 282.16, tagDx: -80, tagDy: 20 },
+  { catalogName: 'NGC 4431', kind: 'Galaxy', mag: 12.89, x: 683.82, y: 634.64, tagDx: 70, tagDy: -5 },
+  { catalogName: 'NGC 4436', kind: 'Galaxy', mag: 12.98, x: 667.86, y: 627.99, tagDx: 0, tagDy: 45 },
+  { catalogName: 'IC 3303', kind: 'Galaxy', mag: 14.24, x: 829.55, y: 510.86, tagDx: 90, tagDy: 20 },
+  { catalogName: 'LEDA 41007', kind: 'Galaxy', mag: 15.47, x: 611.44, y: 384.35, tagDx: 115, tagDy: -45 },
+  { catalogName: 'LEDA 40598', kind: 'Galaxy', mag: 15.56, x: 784.68, y: 377.66, tagDx: 40, tagDy: -20 },
+  { catalogName: 'LEDA 40519', kind: 'Galaxy', mag: 16.0, x: 815.23, y: 533.18, tagDx: 95, tagDy: 75 },
 ];
 
 import eclipse2017Event01 from '../../content/gallery/_images/eclipse2017-event-dsc0195.jpg';
@@ -349,7 +378,8 @@ const isInFrameZoom = entry.id === 'm31-mosaic' || entry.id === 'm33-pinwheel-ga
         imageWidth={1000}
         imageHeight={705}
         markers={markarianMarkers}
-        step={0.5}
+        step={0.25}
+        hires={hires}
       />
     ) : (
       entry.id !== 'comet-neowise-timelapse' && entry.data.image && (

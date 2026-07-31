@@ -6,9 +6,9 @@ image: ./_images/markarian-chain-virgo.jpg
 draft: false
 ---
 
-Markarian's Chain of galaxies in Virgo, in LRGB from the Texas Star Party. Drag the slider below the image to reveal each of the chain's named Messier/NGC galaxies, brightest first.
+<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; galaxy identities and apparent magnitudes cross-matched against the SIMBAD catalog (NED's quick-look magnitude used for the few lacking a comparable SIMBAD V-band measurement). Click the image to zoom to full resolution, or drag the slider below it to reveal 29 catalogued galaxies in the field, brightest first.</p>
 
-<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; galaxy identities and apparent magnitudes cross-matched against the SIMBAD catalog, with NED's quick-look magnitude used for the three galaxies (M88, M91, NGC 4571) lacking a comparable SIMBAD V-band measurement.</p>
+Markarian's Chain of galaxies in Virgo, in LRGB from the Texas Star Party.
 
 <div class="ke-two-col">
 <div class="ke-two-col-specs">
@@ -32,10 +32,6 @@ Markarian's Chain of galaxies in Virgo, in LRGB from the Texas Star Party. Drag 
 
 </div>
 </div>
-
-<p align="center"><em>Full-resolution detail of the M84/M86 region</em></p>
-
-![Full-resolution detail crop of the M84/M86 region of the Markarian Chain](./_images/markarian-chain-virgo-detail.jpg)
 
 <hr>
 
