@@ -248,6 +248,22 @@ function isBayerShaped(name: string): boolean {
 function isCleanBd(name: string): boolean {
   return /^BD[+-]\d+\s+\d+$/.test(name);
 }
+// Like BD/NGC, LBN entries carry two aliases matching the same "LBN "
+// prefix for one physical object -- confirmed live 2026-08-01: the plain
+// Lynds number ("LBN 974") and a galactic-coordinate-style designation
+// ("LBN 209.13-19.35") both resolve to identical ra/dec. Keep only the
+// clean numbered form, the one anyone would actually recognize.
+function isLbnNumbered(name: string): boolean {
+  return /^LBN\s*\d+$/.test(name);
+}
+// Lynds' Catalogue of Dark Nebulae (1962) -- same publisher/pattern as
+// LBN, and already known to share the same galactic-coordinate-alias
+// duplication (see the Barnard-catalog comment near EXCLUDE_STARS_CLAUSE:
+// Barnard 44/45 were confirmed live cataloged in SIMBAD as "LDN 1712"/
+// "LDN 1744"). Reusing the same numbered-form filter shape.
+function isLdnNumbered(name: string): boolean {
+  return /^LDN\s*\d+$/.test(name);
+}
 
 interface CategoryDef {
   otypeClause?: string;
@@ -279,6 +295,19 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
   ngc: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'NGC %'`, membershipFilter: (n) => !!isCleanNgcOrIc(n) },
   ic: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'IC %'`, membershipFilter: (n) => !!isCleanNgcOrIc(n) },
   barnard: { catalogClause: `i.id LIKE 'Barnard %'` },
+  // Same "SH " prefix already used inside MAJOR_CATALOG_CLAUSE for the
+  // hii/reflection otype-filtered sliders, but standalone here with no
+  // otype restriction -- like Messier/NGC/Barnard, the point of a plain
+  // catalog slider is showing every object in the catalog regardless of
+  // type (Sharpless is nebulae almost exclusively, but not filtering by
+  // otype keeps this consistent with the other catalog-only sliders and
+  // avoids silently dropping any oddly-typed member).
+  sharpless: { catalogClause: `i.id LIKE 'SH %'` },
+  // Lynds' Catalogue of Bright Nebulae (1965) -- confirmed live 2026-08-01
+  // that SIMBAD's own ident prefix is "LBN ", but (see isLbnNumbered)
+  // needs the same duplicate-alias filtering as BD/NGC.
+  lbn: { catalogClause: `i.id LIKE 'LBN %'`, membershipFilter: isLbnNumbered },
+  ldn: { catalogClause: `i.id LIKE 'LDN %'`, membershipFilter: isLdnNumbered },
   // Halton Arp's "Atlas of Peculiar Galaxies" is catalogued in SIMBAD
   // under the prefix "APG" ("Atlas of Peculiar Galaxies"), not "Arp" --
   // confirmed live via a known object (Arp 220 resolves to ident
@@ -328,7 +357,7 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
 
 const SINGLE_CATALOG_CATEGORIES = new Set([
   'messier', 'ngc', 'ic', 'barnard', 'arp', 'herschel400', 'herschel2', 'caldwell',
-  'bayer', 'flamsteed', 'wds', 'hip', 'sao', 'wd', 'bd',
+  'sharpless', 'lbn', 'ldn', 'bayer', 'flamsteed', 'wds', 'hip', 'sao', 'wd', 'bd',
 ]);
 
 // Common-name display (added for the star categories, e.g. "Sirius A (alf

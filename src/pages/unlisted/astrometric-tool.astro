@@ -13,6 +13,9 @@ const CATALOG_GUIDE = [
   { name: 'NGC', body: 'The New General Catalogue (J.L.E. Dreyer, 1888), 7,840 deep-sky objects compiled from the Herschels’ visual survey work and other 19th-century observers. Still the primary reference designation for most galaxies, clusters, and nebulae.' },
   { name: 'IC', body: 'The Index Catalogue (Dreyer, 1895 and 1908), two supplements to the NGC adding 5,386 more objects found after 1888, many via early astrophotography rather than visual observation.' },
   { name: 'Barnard', body: 'E.E. Barnard’s 1919 catalogue of 349 dark nebulae -- obscuring dust clouds silhouetted against the Milky Way’s star fields, identified from his own wide-field photographic plates.' },
+  { name: 'Sharpless', body: 'Stewart Sharpless’s 1959 catalogue (Sh2) of 313 HII emission regions -- glowing hydrogen gas clouds, mostly star-forming nebulae, mapped from the National Geographic-Palomar Sky Survey.' },
+  { name: 'LBN', body: 'Beverly Lynds’s 1965 Catalogue of Bright Nebulae, ~1,100 emission and reflection nebulae identified visually from photographic plates and rated by surface brightness and form.' },
+  { name: 'LDN', body: 'Beverly Lynds’s 1962 Catalogue of Dark Nebulae -- ~1,800 obscuring dust clouds cataloged from the same photographic survey work as LBN, rated by opacity rather than brightness.' },
   { name: 'Arp', body: 'Halton Arp’s 1966 "Atlas of Peculiar Galaxies," 338 galaxies chosen specifically for unusual/disturbed morphology -- interacting pairs, tidal tails, ring galaxies -- rather than brightness or size.' },
   { name: 'Herschel 400', body: 'A 400-object observing list curated by the Astronomical League from William Herschel’s much larger 18th-century discovery catalogue (2,500+ objects) -- selected as a challenging but achievable "next step" past the Messier list for visual observers.' },
   { name: 'Herschel II', body: 'A second, complementary 400-object Herschel list, originally selected by the Rose City Astronomers (Portland, OR) in 1997 and adopted by the Astronomical League as a follow-on observing program to Herschel 400.' },
@@ -94,6 +97,9 @@ const CATALOG_GUIDE = [
             <button type="button" data-category="herschel400">+ Herschel 400</button>
             <button type="button" data-category="herschel2">+ Herschel II</button>
             <button type="button" data-category="caldwell">+ Caldwell</button>
+            <button type="button" data-category="sharpless">+ Sharpless</button>
+            <button type="button" data-category="lbn">+ LBN</button>
+            <button type="button" data-category="ldn">+ LDN</button>
           </div>
           <p>...or by star catalog:</p>
           <div class="at-category-buttons">
@@ -423,6 +429,14 @@ const CATALOG_GUIDE = [
     herschel400: { label: 'Herschel 400', maglimit: 15, kind: null },
     herschel2: { label: 'Herschel II', maglimit: 15, kind: null },
     caldwell: { label: 'Caldwell', maglimit: 15, kind: null },
+    // Both nebula catalogs -- Sharpless is HII regions almost exclusively
+    // (no citable point magnitude in SIMBAD for most, hence the deep
+    // default and reliance on the sparse-retry-to-18 fallback below), LBN
+    // is a mix of emission/reflection nebulae with similarly patchy
+    // photometry.
+    sharpless: { label: 'Sharpless', maglimit: 15, kind: null },
+    lbn: { label: 'LBN', maglimit: 15, kind: null },
+    ldn: { label: 'LDN', maglimit: 15, kind: null },
     // Star catalogs default shallower than the deep-sky ones -- HIP/SAO/BD
     // in particular catalog hundreds of thousands of stars each, so an
     // unbounded query on a rich field would return an unusable/slow flood
