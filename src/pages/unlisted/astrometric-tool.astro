@@ -59,7 +59,11 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
   </article>
 </BaseLayout>
 
-<style>
+<style is:global>
+  /* Global, not scoped -- the marker/tag/leader elements below are created
+     at runtime via document.createElement(), so they never get Astro's
+     scoped data-astro-cid attribute and scoped selectors would silently
+     never match them. */
   .at-tool {
     max-width: var(--container-width, 900px);
   }
