@@ -19,10 +19,14 @@ interface DeepSkyMarker {
   kind?: string;
   x: number;
   y: number;
-  // Optional label-only nudge (px, at the frame's natural render width) for
-  // co-located markers whose tags would otherwise overlap. Shifts the tag
-  // box and its leader together; the ring itself always stays exactly on
-  // the marker's real pixel position regardless of this offset.
+  // Tag placement is fully automatic by default (see the client-side
+  // layout engine below) -- omit these for a normal marker. Set either
+  // one to PIN the tag at an exact offset (px, at the frame's actual
+  // rendered width) instead of letting the algorithm choose, e.g. to
+  // co-locate a magnitude-less marker's label with a real one it should
+  // visually accompany. A pinned tag still counts as an obstacle for
+  // every other (auto-placed) marker's search. The ring itself always
+  // stays exactly on the marker's real pixel position regardless.
   tagDx?: number;
   tagDy?: number;
 }
@@ -118,6 +122,8 @@ function leaderGeometry(m: DeepSkyMarker) {
         <span
           class="dsm-marker"
           data-bucket={bucketOf(m)}
+          data-pin-dx={m.tagDx ?? undefined}
+          data-pin-dy={m.tagDy ?? undefined}
           style={`left:${((m.x / imageWidth) * 100).toFixed(2)}%; top:${((m.y / imageHeight) * 100).toFixed(2)}%`}
         >
           <span class="dsm-dot"></span>
@@ -187,6 +193,14 @@ function leaderGeometry(m: DeepSkyMarker) {
   }
   .dsm-marker[data-visible='true'] {
     display: block;
+  }
+  /* Forces a measurable (but invisible) box during the client-side
+     auto-layout pass, regardless of the marker's current data-visible
+     state -- the layout accounts for every marker, not just the ones
+     the slider currently reveals. */
+  .dsm-marker.dsm-measuring {
+    display: block !important;
+    visibility: hidden;
   }
   /* Hollow ring, not a filled dot -- the underlying feature (galaxy core,
      nebulosity, faint point source) must stay visible through the middle
@@ -262,6 +276,221 @@ function leaderGeometry(m: DeepSkyMarker) {
 </style>
 
 <script>
+  // Automatic label placement. Runs once per widget (plus on resize/font-
+  // load) and lays out EVERY marker's tag as if the slider were all the
+  // way up -- not just the currently-revealed subset. A non-overlapping
+  // layout for the full set is automatically non-overlapping for any
+  // subset of it too, so this one computation covers every slider
+  // position without needing to re-run on each `input` event. This is
+  // what makes the component usable on a dense field (many markers close
+  // together) without hand-tuning a tagDx/tagDy offset per marker --
+  // those props still exist as an optional pin/override, but are not
+  // required.
+  const RING_RADIUS = 5; // px, half of .dsm-dot's 10px diameter
+  const BASE_GAP = 7; // px, ring-bottom-to-tag-top gap with no offset
+  const TAG_DEFAULT_Y = RING_RADIUS + BASE_GAP;
+  const RING_EXCLUDE = 13; // px kept clear around every ring, labeled or not
+  const EDGE_MARGIN = 4; // px kept clear at the frame's own edges
+  const SEARCH_ANGLES = 16;
+  const SEARCH_RADII = [26, 40, 58, 80, 105, 135, 170, 210, 250];
+
+  function rectCircleOverlap(left: number, top: number, w: number, h: number, cx: number, cy: number, r: number) {
+    const closestX = Math.max(left, Math.min(cx, left + w));
+    const closestY = Math.max(top, Math.min(cy, top + h));
+    const dx = cx - closestX;
+    const dy = cy - closestY;
+    return dx * dx + dy * dy < r * r;
+  }
+  function rectsOverlap(a: { left: number; top: number; w: number; h: number }, b: { left: number; top: number; w: number; h: number }) {
+    return !(a.left + a.w < b.left || b.left + b.w < a.left || a.top + a.h < b.top || b.top + b.h < a.top);
+  }
+  function overlapArea(a: { left: number; top: number; w: number; h: number }, b: { left: number; top: number; w: number; h: number }) {
+    const ox = Math.max(0, Math.min(a.left + a.w, b.left + b.w) - Math.max(a.left, b.left));
+    const oy = Math.max(0, Math.min(a.top + a.h, b.top + b.h) - Math.max(a.top, b.top));
+    return ox * oy;
+  }
+  // Shortest distance from a ring center to the ring-to-candidate line
+  // segment, used to penalize a leader line that would thread through an
+  // unrelated marker's ring on its way to the label.
+  function segPointDist(x1: number, y1: number, x2: number, y2: number, px: number, py: number) {
+    const dx = x2 - x1;
+    const dy = y2 - y1;
+    const lenSq = dx * dx + dy * dy;
+    let t = lenSq === 0 ? 0 : ((px - x1) * dx + (py - y1) * dy) / lenSq;
+    t = Math.max(0, Math.min(1, t));
+    const cx = x1 + t * dx;
+    const cy = y1 + t * dy;
+    return Math.hypot(px - cx, py - cy);
+  }
+
+  interface LayoutItem {
+    tag: HTMLElement;
+    leader: HTMLElement;
+    ringX: number;
+    ringY: number;
+    natLeft: number;
+    natTop: number;
+    w: number;
+    h: number;
+    pinDx?: number;
+    pinDy?: number;
+  }
+
+  function layoutLabels(widget: HTMLElement) {
+    const frame = widget.querySelector<HTMLElement>('.dsm-frame');
+    const markerEls = Array.from(widget.querySelectorAll<HTMLElement>('.dsm-marker'));
+    if (!frame || !markerEls.length) return;
+
+    // Force every marker to a measurable box (display:block) without a
+    // visible flash, regardless of its current slider-driven data-visible
+    // state -- the layout must account for every marker, not just the
+    // ones currently revealed.
+    markerEls.forEach((m) => m.classList.add('dsm-measuring'));
+    void frame.offsetWidth; // force reflow before measuring
+
+    const frameRect = frame.getBoundingClientRect();
+    const items: LayoutItem[] = markerEls.map((m) => {
+      const dot = m.querySelector('.dsm-dot')!;
+      const tag = m.querySelector<HTMLElement>('.dsm-tag')!;
+      const leader = m.querySelector<HTMLElement>('.dsm-leader')!;
+      tag.style.transform = ''; // reset to natural (untransformed) box before measuring
+      const dr = dot.getBoundingClientRect();
+      const tr = tag.getBoundingClientRect();
+      const pinDx = m.dataset.pinDx ? Number(m.dataset.pinDx) : undefined;
+      const pinDy = m.dataset.pinDy ? Number(m.dataset.pinDy) : undefined;
+      return {
+        tag,
+        leader,
+        ringX: dr.x + dr.width / 2 - frameRect.x,
+        ringY: dr.y + dr.height / 2 - frameRect.y,
+        natLeft: tr.x - frameRect.x,
+        natTop: tr.y - frameRect.y,
+        w: tr.width,
+        h: tr.height,
+        pinDx,
+        pinDy,
+      };
+    });
+
+    const placed: { left: number; top: number; w: number; h: number }[] = [];
+
+    function ringClear(left: number, top: number, w: number, h: number, selfIndex: number) {
+      for (let j = 0; j < items.length; j++) {
+        if (j === selfIndex) continue;
+        if (rectCircleOverlap(left, top, w, h, items[j].ringX, items[j].ringY, RING_EXCLUDE)) return false;
+      }
+      return true;
+    }
+    function inBounds(left: number, top: number, w: number, h: number) {
+      return left >= EDGE_MARGIN && top >= EDGE_MARGIN && left + w <= frameRect.width - EDGE_MARGIN && top + h <= frameRect.height - EDGE_MARGIN;
+    }
+    function crossingPenalty(ringX: number, ringY: number, cx: number, cy: number, selfIndex: number) {
+      let crossings = 0;
+      for (let j = 0; j < items.length; j++) {
+        if (j === selfIndex) continue;
+        if (segPointDist(ringX, ringY, cx, cy, items[j].ringX, items[j].ringY) < RING_EXCLUDE) crossings++;
+      }
+      return crossings;
+    }
+
+    items.forEach((item, i) => {
+      let best: { cx: number; cy: number; left: number; top: number } | null = null;
+
+      if (item.pinDx !== undefined || item.pinDy !== undefined) {
+        const dx = item.pinDx ?? 0;
+        const dy = item.pinDy ?? 0;
+        const cx = item.natLeft + item.w / 2 + dx;
+        const cy = item.natTop + item.h / 2 + dy;
+        best = { cx, cy, left: cx - item.w / 2, top: cy - item.h / 2 };
+      }
+
+      // Pass 1: fully clear of every ring and every already-placed tag.
+      if (!best) {
+        let bestScore = Infinity;
+        for (const radius of SEARCH_RADII) {
+          let foundAtRadius: typeof best = null;
+          let foundScore = Infinity;
+          for (let a = 0; a < SEARCH_ANGLES; a++) {
+            const angle = (a / SEARCH_ANGLES) * Math.PI * 2;
+            const cx = item.ringX + radius * Math.cos(angle);
+            const cy = item.ringY + radius * Math.sin(angle);
+            const left = cx - item.w / 2;
+            const top = cy - item.h / 2;
+            if (!inBounds(left, top, item.w, item.h)) continue;
+            if (!ringClear(left, top, item.w, item.h, i)) continue;
+            const box = { left, top, w: item.w, h: item.h };
+            if (placed.some((p) => rectsOverlap(box, p))) continue;
+            const score = crossingPenalty(item.ringX, item.ringY, cx, cy, i) * 40;
+            if (score < foundScore) {
+              foundScore = score;
+              foundAtRadius = { cx, cy, left, top };
+            }
+          }
+          if (foundAtRadius) {
+            best = foundAtRadius;
+            bestScore = foundScore;
+            break; // closest usable radius wins
+          }
+        }
+        void bestScore;
+      }
+
+      // Pass 2 (dense-field fallback): ring-clear is still required (never
+      // cover an unlabeled object), but allow the *least-bad* tag overlap
+      // rather than leaving the label unplaced.
+      if (!best) {
+        let bestScore = Infinity;
+        for (const radius of SEARCH_RADII) {
+          for (let a = 0; a < SEARCH_ANGLES; a++) {
+            const angle = (a / SEARCH_ANGLES) * Math.PI * 2;
+            const cx = item.ringX + radius * Math.cos(angle);
+            const cy = item.ringY + radius * Math.sin(angle);
+            const left = cx - item.w / 2;
+            const top = cy - item.h / 2;
+            if (!inBounds(left, top, item.w, item.h)) continue;
+            if (!ringClear(left, top, item.w, item.h, i)) continue;
+            const box = { left, top, w: item.w, h: item.h };
+            const overlap = placed.reduce((sum, p) => sum + overlapArea(box, p), 0);
+            const score = radius + overlap * 3;
+            if (score < bestScore) {
+              bestScore = score;
+              best = { cx, cy, left, top };
+            }
+          }
+        }
+      }
+
+      // Last resort: the pre-existing default (directly below the ring),
+      // if literally nothing else satisfied even ring-clearance.
+      if (!best) {
+        const cx = item.ringX;
+        const cy = item.ringY + TAG_DEFAULT_Y + item.h / 2;
+        best = { cx, cy, left: cx - item.w / 2, top: item.ringY + TAG_DEFAULT_Y };
+      }
+
+      placed.push({ left: best.left, top: best.top, w: item.w, h: item.h });
+
+      const dx = best.cx - (item.natLeft + item.w / 2);
+      const dy = best.cy - (item.natTop + item.h / 2);
+      item.tag.style.transform = `translate(${dx}px, ${dy}px)`;
+
+      const targetX = dx;
+      const targetY = TAG_DEFAULT_Y + dy;
+      const anchorX = dx !== 0 ? Math.sign(dx) * RING_RADIUS : 0;
+      const anchorY = dx !== 0 ? 0 : RING_RADIUS;
+      const vx = targetX - anchorX;
+      const vy = targetY - anchorY;
+      const length = Math.sqrt(vx * vx + vy * vy);
+      const angleDeg = (Math.atan2(-vx, vy) * 180) / Math.PI;
+      item.leader.style.left = `calc(50% + ${anchorX}px)`;
+      item.leader.style.top = `${anchorY}px`;
+      item.leader.style.height = `${length.toFixed(2)}px`;
+      item.leader.style.transform = `translate(-50%, 0) rotate(${angleDeg.toFixed(2)}deg)`;
+    });
+
+    markerEls.forEach((m) => m.classList.remove('dsm-measuring'));
+  }
+
   document.querySelectorAll<HTMLElement>('.deep-sky-marker-slider').forEach((widget) => {
     const input = widget.querySelector<HTMLInputElement>('.dsm-input')!;
     const markers = Array.from(widget.querySelectorAll<HTMLElement>('.dsm-marker'));
@@ -293,5 +522,16 @@ function leaderGeometry(m: DeepSkyMarker) {
 
     input.addEventListener('input', apply);
     apply();
+
+    let resizeTimer: number | undefined;
+    window.addEventListener('resize', () => {
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => layoutLabels(widget), 200);
+    });
+
+    layoutLabels(widget);
+    if ('fonts' in document) {
+      (document as Document).fonts.ready.then(() => layoutLabels(widget));
+    }
   });
 </script>
