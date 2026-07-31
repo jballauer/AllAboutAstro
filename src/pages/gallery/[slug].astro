@@ -279,6 +279,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const hires = hiresMap[entry.id];
+const isInFrameZoom = entry.id === 'm31-mosaic' || entry.id === 'm33-pinwheel-galaxy';
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -328,7 +329,7 @@ const hires = hiresMap[entry.id];
                 alt={entry.data.title}
                 width={1000}
                 height={Math.round((1000 * entry.data.image.height) / entry.data.image.width)}
-                class={entry.id === 'm31-mosaic' || entry.id === 'm33-pinwheel-galaxy' ? 'ke-zoom-inframe' : undefined}
+                class={isInFrameZoom ? 'ke-zoom-inframe' : undefined}
               />
             </span>
           ) : (
@@ -345,7 +346,7 @@ const hires = hiresMap[entry.id];
               class="no-lightbox"
             />
           )}
-          {hires && <p class="ke-zoom-hint">Click to Zoom</p>}
+          {hires && <p class="ke-zoom-hint">{isInFrameZoom ? 'Click to Zoom and Pan' : 'Click to Zoom'}</p>}
         </>
       )
     )}
