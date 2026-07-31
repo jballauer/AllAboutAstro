@@ -1,0 +1,238 @@
+---
+import { Image } from 'astro:assets';
+
+interface HiiRegionMarker {
+  catalogName: string;
+  mag: number;
+  x: number;
+  y: number;
+  // Optional label-only nudge (px, at the frame's natural render width) for
+  // co-located regions whose tags would otherwise overlap. Shifts the tag
+  // box and its leader together; the ring itself always stays exactly on
+  // the region's real pixel position regardless of this offset.
+  tagDx?: number;
+  tagDy?: number;
+}
+
+interface Props {
+  image: ImageMetadata;
+  alt: string;
+  imageWidth: number;
+  imageHeight: number;
+  regions: HiiRegionMarker[];
+  // Slider floor/ceiling, in whole magnitudes. Default: floor of the
+  // dimmest region's mag minus 1 (so the resting value shows nothing) up
+  // to the ceiling of the brightest... no, brightest = lowest mag. See
+  // below: floor(min mag) is the resting/empty state, ceil(max mag) is
+  // "everything shown".
+  minMag?: number;
+  maxMag?: number;
+}
+
+const { image, alt, imageWidth, imageHeight, regions, minMag: minMagProp, maxMag: maxMagProp } = Astro.props;
+
+const mags = regions.map((r) => r.mag);
+// The resting value must be a magnitude strictly brighter (numerically
+// lower) than every region's own bucket, so "at rest" is guaranteed to
+// show zero markers -- not an accident of the data, an explicit floor.
+const minMag = minMagProp ?? Math.floor(Math.min(...mags)) - 1;
+const maxMag = maxMagProp ?? Math.ceil(Math.max(...mags));
+const ticks = Array.from({ length: maxMag - minMag + 1 }, (_, i) => minMag + i);
+
+const RING_RADIUS = 5; // px, half of .hrs-dot's 10px diameter
+const BASE_GAP = 7; // px, the ring-bottom-to-tag-top gap with no offset
+const TAG_DEFAULT_Y = RING_RADIUS + BASE_GAP; // tag's default top-center y, from ring center
+function leaderGeometry(r: HiiRegionMarker) {
+  const dx = r.tagDx ?? 0;
+  const targetX = dx;
+  const targetY = TAG_DEFAULT_Y + (r.tagDy ?? 0);
+  const anchorX = dx !== 0 ? Math.sign(dx) * RING_RADIUS : 0;
+  const anchorY = dx !== 0 ? 0 : RING_RADIUS;
+  const vx = targetX - anchorX;
+  const vy = targetY - anchorY;
+  const length = Math.sqrt(vx * vx + vy * vy);
+  const angleDeg = (Math.atan2(-vx, vy) * 180) / Math.PI;
+  return { length, angleDeg, anchorX, anchorY };
+}
+---
+
+<div class="hii-region-slider">
+  <div class="hrs-frame no-lightbox">
+    <Image src={image} alt={alt} width={imageWidth} height={imageHeight} />
+    {regions.map((r) => {
+      const { length, angleDeg, anchorX, anchorY } = leaderGeometry(r);
+      return (
+        <span
+          class="hrs-marker"
+          data-bucket={Math.ceil(r.mag)}
+          style={`left:${((r.x / imageWidth) * 100).toFixed(2)}%; top:${((r.y / imageHeight) * 100).toFixed(2)}%`}
+        >
+          <span class="hrs-dot"></span>
+          <span
+            class="hrs-leader"
+            style={`left:calc(50% + ${anchorX}px); top:${anchorY}px; height:${length.toFixed(2)}px; transform: translate(-50%, 0) rotate(${angleDeg.toFixed(2)}deg);`}
+          ></span>
+          <span
+            class="hrs-tag"
+            style={(r.tagDx || r.tagDy) ? `transform: translate(${r.tagDx ?? 0}px, ${r.tagDy ?? 0}px)` : undefined}
+          >
+            <strong>{r.catalogName}</strong>
+            <span class="hrs-mag">mag {r.mag.toFixed(1)}</span>
+          </span>
+        </span>
+      );
+    })}
+  </div>
+  <div class="hrs-controls">
+    <input
+      type="range"
+      class="hrs-input"
+      min={minMag}
+      max={maxMag}
+      step="1"
+      value={minMag}
+      list="hrs-ticks"
+      aria-label="Reveal HII regions down to this apparent magnitude"
+    />
+    <datalist id="hrs-ticks">
+      {ticks.map((t) => <option value={t}></option>)}
+    </datalist>
+    <div class="hrs-readout">
+      <span class="hrs-readout-value">Normal image</span>
+      <span class="hrs-readout-count"></span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hii-region-slider {
+    margin: 0.3rem 0 1.5rem;
+  }
+  .hrs-frame {
+    position: relative;
+    cursor: default;
+  }
+  .hrs-frame :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: default;
+  }
+  /* The marker's own left/top is the region's exact pixel (as a
+     percentage) -- do NOT transform/center the whole dot+tag block on
+     that point, or the tag ends up covering the region itself. Only
+     horizontal centering is applied to the block; the ring's negative
+     margin (below) pulls just the ring itself up so its center -- not
+     the block's top edge -- lands exactly on the marked point. */
+  .hrs-marker {
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+    display: none;
+  }
+  .hrs-marker[data-visible='true'] {
+    display: block;
+  }
+  /* Hollow ring, not a filled dot -- the nebulosity must stay visible
+     through the middle even while marked/labeled. Same black-outline
+     treatment as the star slider's ring, so it stays legible against a
+     saturated pink/white emission core. */
+  .hrs-dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: -5px auto 0;
+    border-radius: 50%;
+    border: 1.5px solid #ffd54a;
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 0, 0, 0.85),
+      0 0 0 1px rgba(0, 0, 0, 0.85),
+      0 0 2px rgba(0, 0, 0, 0.9);
+  }
+  .hrs-leader {
+    position: absolute;
+    width: 1px;
+    transform-origin: top center;
+    background: rgba(255, 213, 74, 0.85);
+    box-shadow:
+      -1px 0 0 rgba(0, 0, 0, 0.85),
+      1px 0 0 rgba(0, 0, 0, 0.85);
+  }
+  .hrs-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.15;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.78);
+    border: 1px solid rgba(255, 213, 74, 0.55);
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-top: 7px;
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    color: #fff;
+    pointer-events: none;
+  }
+  .hrs-tag strong {
+    font-size: 0.68rem;
+  }
+  .hrs-mag {
+    color: #ffd54a;
+  }
+  .hrs-controls {
+    max-width: 420px;
+    margin: 0.75rem auto 0;
+    text-align: center;
+  }
+  .hrs-input {
+    width: 100%;
+  }
+  .hrs-readout {
+    margin-top: 0.35rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+  .hrs-readout-count {
+    opacity: 0.75;
+  }
+  .hrs-readout-count:not(:empty)::before {
+    content: ' \2014 ';
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.hii-region-slider').forEach((widget) => {
+    const input = widget.querySelector<HTMLInputElement>('.hrs-input')!;
+    const markers = Array.from(widget.querySelectorAll<HTMLElement>('.hrs-marker'));
+    const valueEl = widget.querySelector('.hrs-readout-value')!;
+    const countEl = widget.querySelector('.hrs-readout-count')!;
+    const restValue = Number(input.min);
+
+    function apply() {
+      const value = Number(input.value);
+      if (value <= restValue) {
+        markers.forEach((m) => m.removeAttribute('data-visible'));
+        valueEl.textContent = 'Normal image';
+        countEl.textContent = '';
+        return;
+      }
+      let shown = 0;
+      markers.forEach((m) => {
+        const bucket = Number(m.dataset.bucket);
+        if (bucket <= value) {
+          m.setAttribute('data-visible', 'true');
+          shown++;
+        } else {
+          m.removeAttribute('data-visible');
+        }
+      });
+      valueEl.textContent = `HII regions ≤ magnitude ${value}`;
+      countEl.textContent = `${shown} labeled`;
+    }
+
+    input.addEventListener('input', apply);
+    apply();
+  });
+</script>

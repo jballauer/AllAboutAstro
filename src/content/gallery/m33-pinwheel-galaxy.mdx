@@ -6,6 +6,17 @@ image: ./_images/m33-pinwheel-galaxy.jpg
 draft: false
 ---
 
+import HiiRegionSlider from '../../components/HiiRegionSlider.astro';
+import m33HiiChart from './_images/m33-pinwheel-galaxy.jpg';
+
+export const m33HiiRegions = [
+  { catalogName: 'NGC 604', mag: 14.0, x: 274.70, y: 541.22 },
+  { catalogName: 'NGC 595', mag: 14.0, x: 376.81, y: 299.51 },
+  { catalogName: 'NGC 588', mag: 11.5, x: 423.34, y: 100.35 },
+  { catalogName: 'IC 132', mag: 16.6, x: 84.55, y: 231.33 },
+  { catalogName: 'IC 133', mag: 12.8, x: 155.47, y: 230.70 },
+];
+
 An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies.
 
 <div class="ke-two-col">
@@ -35,21 +46,11 @@ An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies
 
 ### HII Regions in this Image
 
-A handful of M33's brightest HII regions carry their own NGC/IC catalog numbers; hover the chart below to identify them.
+A handful of M33's brightest HII regions carry their own NGC/IC catalog numbers; drag the slider below to reveal them in order of brightness.
 
-<div class="ke-star-hover">
+<HiiRegionSlider image={m33HiiChart} alt="M33 with its brightest catalogued HII regions marked by apparent magnitude" imageWidth={820} imageHeight={800} regions={m33HiiRegions} />
 
-![M33 with its brightest catalogued HII regions marked &mdash; hover or tap a marker for its name](./_images/m33-pinwheel-galaxy.jpg)
-
-<button class="ke-star-hover-dot" type="button" style="left:33.50%; top:67.65%;"><span class="ke-star-hover-tip">NGC 604</span></button>
-<button class="ke-star-hover-dot" type="button" style="left:45.95%; top:37.44%;"><span class="ke-star-hover-tip">NGC 595</span></button>
-<button class="ke-star-hover-dot" type="button" style="left:51.63%; top:12.54%;"><span class="ke-star-hover-tip">NGC 588</span></button>
-<button class="ke-star-hover-dot" type="button" style="left:10.31%; top:28.92%;"><span class="ke-star-hover-tip">IC 132</span></button>
-<button class="ke-star-hover-dot" type="button" style="left:18.96%; top:28.84%;"><span class="ke-star-hover-tip">IC 133</span></button>
-
-</div>
-
-<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; region identities cross-matched against the SIMBAD catalog, otype HII, restricted to entries with a formal NGC/IC designation (the field also contains hundreds of fainter catalogued regions with only survey-internal designations, e.g. BCLMP/LGGS numbers, not labeled here). Hover (or tap, on touch devices) a marker to see that region's catalog name.</p>
+<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; region identities cross-matched against the SIMBAD catalog, otype HII, restricted to entries with a formal NGC/IC designation (the field also contains hundreds of fainter catalogued regions with only survey-internal designations, e.g. BCLMP/LGGS numbers, not labeled here). Apparent (B-band) magnitudes from the NASA/IPAC Extragalactic Database (NED). Drag the slider to reveal each region's catalog name, brightest first.</p>
 
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
