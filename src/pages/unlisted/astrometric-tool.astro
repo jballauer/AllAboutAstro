@@ -29,41 +29,47 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
       <p class="at-hint">JPEG or PNG, up to 10MB.</p>
     </section>
 
-    <div class="at-frame-wrap" id="at-frame-wrap" hidden>
-      <div class="at-frame" id="at-frame">
-        <img id="at-preview-img" alt="Uploaded astrophoto preview" />
+    <div class="at-workspace">
+      <div class="at-image-col">
+        <div class="at-frame-wrap" id="at-frame-wrap" hidden>
+          <div class="at-frame" id="at-frame">
+            <img id="at-preview-img" alt="Uploaded astrophoto preview" />
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="at-solve-panel" id="at-solve-panel" hidden>
-      <button type="button" id="at-solve-btn">Plate-solve this image</button>
-      <p class="at-status" id="at-solve-status" role="status"></p>
-    </div>
+      <aside class="at-sidebar">
+        <div class="at-solve-panel" id="at-solve-panel" hidden>
+          <button type="button" id="at-solve-btn">Plate-solve this image</button>
+          <p class="at-status" id="at-solve-status" role="status"></p>
+        </div>
 
-    <div class="at-categories" id="at-categories" hidden>
-      <p>Add a slider, by object type:</p>
-      <div class="at-category-buttons">
-        <button type="button" data-category="stars">+ Stars</button>
-        <button type="button" data-category="galaxies">+ Galaxies</button>
-        <button type="button" data-category="globular">+ Globular Clusters</button>
-        <button type="button" data-category="open">+ Open Clusters</button>
-        <button type="button" data-category="hii">+ HII Regions</button>
-        <button type="button" data-category="reflection">+ Reflection Nebulae</button>
-      </div>
-      <p>...or by catalog (any object type):</p>
-      <div class="at-category-buttons">
-        <button type="button" data-category="messier">+ Messier</button>
-        <button type="button" data-category="ngc">+ NGC</button>
-        <button type="button" data-category="ic">+ IC</button>
-        <button type="button" data-category="barnard">+ Barnard</button>
-      </div>
-      <p class="at-status" id="at-category-status" role="status"></p>
-    </div>
+        <div class="at-categories" id="at-categories" hidden>
+          <p>Add a slider, by object type:</p>
+          <div class="at-category-buttons">
+            <button type="button" data-category="stars">+ Stars</button>
+            <button type="button" data-category="galaxies">+ Galaxies</button>
+            <button type="button" data-category="globular">+ Globular Clusters</button>
+            <button type="button" data-category="open">+ Open Clusters</button>
+            <button type="button" data-category="hii">+ HII Regions</button>
+            <button type="button" data-category="reflection">+ Reflection Nebulae</button>
+          </div>
+          <p>...or by catalog (any object type):</p>
+          <div class="at-category-buttons">
+            <button type="button" data-category="messier">+ Messier</button>
+            <button type="button" data-category="ngc">+ NGC</button>
+            <button type="button" data-category="ic">+ IC</button>
+            <button type="button" data-category="barnard">+ Barnard</button>
+          </div>
+          <p class="at-status" id="at-category-status" role="status"></p>
+        </div>
 
-    <div class="at-sliders" id="at-sliders"></div>
+        <div class="at-sliders" id="at-sliders"></div>
 
-    <div class="at-download" id="at-download-panel" hidden>
-      <button type="button" id="at-download-btn">Download labeled image</button>
+        <div class="at-download" id="at-download-panel" hidden>
+          <button type="button" id="at-download-btn">Download labeled image</button>
+        </div>
+      </aside>
     </div>
   </article>
 </BaseLayout>
@@ -73,8 +79,49 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
      at runtime via document.createElement(), so they never get Astro's
      scoped data-astro-cid attribute and scoped selectors would silently
      never match them. */
+  /* This is a standalone tool page, not article prose -- the sitewide
+     960px reading-width container makes no sense here (the whole point
+     is seeing the image and its slider controls at once), so both the
+     shared `main` element and this page's own content are widened. The
+     `:has()` selector scopes the `main` override to only pages
+     containing `.at-tool`, leaving every other page's width untouched
+     without editing BaseLayout.astro itself. */
+  main:has(.at-tool) {
+    max-width: min(1800px, 96vw);
+  }
   .at-tool {
-    max-width: var(--container-width, 900px);
+    max-width: 100%;
+  }
+  .at-workspace {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .at-image-col {
+    flex: 1 1 auto;
+    min-width: 0; /* allow the flex item to shrink below the image's natural width */
+  }
+  .at-sidebar {
+    flex: 0 0 340px;
+    /* Keeps the sliders in view alongside the image while scrolling a
+       tall image, rather than requiring a trip back up the page to
+       reach them -- the whole reason for this side-by-side layout. */
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+  @media (max-width: 900px) {
+    .at-workspace {
+      flex-direction: column;
+    }
+    .at-sidebar {
+      position: static;
+      max-height: none;
+      flex-basis: auto;
+      width: 100%;
+    }
   }
   .at-upload {
     margin: 1.25rem 0;
@@ -108,7 +155,6 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
   }
   .at-frame {
     position: relative;
-    max-width: 900px;
   }
   .at-frame img {
     display: block;
@@ -118,7 +164,7 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
   .at-solve-panel,
   .at-categories,
   .at-download {
-    margin: 1rem 0;
+    margin: 0 0 1.25rem;
   }
   .at-status {
     font-family: var(--font-body);
