@@ -33,6 +33,24 @@ An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies
 </div>
 </div>
 
+### HII Regions in this Image
+
+A handful of M33's brightest HII regions carry their own NGC/IC catalog numbers; hover the chart below to identify them.
+
+<div class="ke-star-hover">
+
+![M33 with its brightest catalogued HII regions marked &mdash; hover or tap a marker for its name](./_images/m33-pinwheel-galaxy.jpg)
+
+<button class="ke-star-hover-dot" type="button" style="left:33.50%; top:67.65%;"><span class="ke-star-hover-tip">NGC 604</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:45.95%; top:37.44%;"><span class="ke-star-hover-tip">NGC 595</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:51.63%; top:12.54%;"><span class="ke-star-hover-tip">NGC 588</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:10.31%; top:28.92%;"><span class="ke-star-hover-tip">IC 132</span></button>
+<button class="ke-star-hover-dot" type="button" style="left:18.96%; top:28.84%;"><span class="ke-star-hover-tip">IC 133</span></button>
+
+</div>
+
+<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; region identities cross-matched against the SIMBAD catalog, otype HII, restricted to entries with a formal NGC/IC designation (the field also contains hundreds of fainter catalogued regions with only survey-internal designations, e.g. BCLMP/LGGS numbers, not labeled here). Hover (or tap, on touch devices) a marker to see that region's catalog name.</p>
+
 <div class="ke-ai-stub">
 <span class="ke-ai-stub-badge">🤖 AI-drafted &middot; unverified</span>
 
