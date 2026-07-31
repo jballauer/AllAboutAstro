@@ -29,23 +29,59 @@ const MAX_MAG_LIMIT = 18;
 // membership in the '*' (star) branch. Verified against live SIMBAD data
 // 2026-07-31: 'GlC'/'OpC' (globular/open cluster) are leaf codes with no
 // further descendants, so an exact match is correct for those as-is.
-const CATEGORY_OTYPE_CLAUSE: Record<string, string> = {
-  stars: `b.otype IN (SELECT otype FROM otypedef WHERE path LIKE '*%')`,
-  galaxies: `b.otype IN (SELECT otype FROM otypedef WHERE path = 'G' OR path LIKE 'G >%')`,
-  globular: `b.otype = 'GlC'`,
-  open: `b.otype = 'OpC'`,
+// Verified live against SIMBAD 2026-07-31/08-01. `otype` is a leaf code in
+// a hierarchy exposed via SIMBAD's own `otypedef` table (`path` column,
+// e.g. "G > AGN > SyG > Sy2") -- filtering on an exact leaf otype like
+// 'G' misses every more-specific descendant (M31 itself is 'AGN', not
+// 'G'). Where a category maps to a whole branch (stars, galaxies) filter
+// via `otype IN (SELECT otype FROM otypedef WHERE path ...)`; where it's
+// a single leaf with no descendants (GlC, OpC, HII, RNe) an exact match
+// is correct and confirmed as such.
+//
+// `catalogClause` restricts results to objects with a real identifier in
+// specific catalogs, via a JOIN against SIMBAD's `ident` table (aliases,
+// not just the primary main_id). Requested for HII regions/reflection
+// nebulae specifically to avoid flooding those sliders with obscure
+// survey-only designations that mean nothing to a casual viewer; the
+// catalog-only categories (messier/ngc/ic/barnard) use catalogClause
+// alone with no otype restriction at all, on purpose -- the whole point
+// of a catalog slider is showing "every kind of object in catalog X",
+// not one object type. Confirmed live identifier formats: Messier "M   4",
+// NGC "NGC  6144", IC "IC    2", Sharpless "SH  2-9" (both Sh1 and Sh2
+// sub-catalogs share the "SH " prefix), Barnard dark nebulae
+// "Barnard  18".
+const MAJOR_CATALOG_CLAUSE = `(i.id LIKE 'M %' OR i.id LIKE 'NGC %' OR i.id LIKE 'IC %' OR i.id LIKE 'SH %')`;
+
+interface CategoryDef {
+  otypeClause?: string;
+  catalogClause?: string;
+}
+
+const CATEGORY_DEFS: Record<string, CategoryDef> = {
+  stars: { otypeClause: `b.otype IN (SELECT otype FROM otypedef WHERE path LIKE '*%')` },
+  galaxies: { otypeClause: `b.otype IN (SELECT otype FROM otypedef WHERE path = 'G' OR path LIKE 'G >%')` },
+  globular: { otypeClause: `b.otype = 'GlC'` },
+  open: { otypeClause: `b.otype = 'OpC'` },
+  hii: { otypeClause: `b.otype = 'HII'`, catalogClause: MAJOR_CATALOG_CLAUSE },
+  reflection: { otypeClause: `b.otype = 'RNe'`, catalogClause: MAJOR_CATALOG_CLAUSE },
+  messier: { catalogClause: `i.id LIKE 'M %'` },
+  ngc: { catalogClause: `i.id LIKE 'NGC %'` },
+  ic: { catalogClause: `i.id LIKE 'IC %'` },
+  barnard: { catalogClause: `i.id LIKE 'Barnard %'` },
 };
 
-// Extended objects (clusters/galaxies) are frequently missing a V-band row
-// in SIMBAD's `flux` table entirely -- e.g. M4 and NGC 6144 (both real
-// globular clusters, verified live) have g/z/K photometry but no V, so an
-// INNER JOIN on filter='V' silently excluded them no matter how generous
-// the mag limit was. These categories LEFT JOIN across V/B/g (first match
-// wins, in that priority) and keep objects with no photometry at all
-// rather than dropping them -- "stars" keeps its original strict INNER
-// JOIN on V alone since that's proven correct by the existing skill
-// pipeline's own verified results (e.g. 37 stars on the M45 Mosaic).
-const EXTENDED_CATEGORIES = new Set(['galaxies', 'globular', 'open']);
+const SINGLE_CATALOG_CATEGORIES = new Set(['messier', 'ngc', 'ic', 'barnard']);
+
+// Extended objects are frequently missing a V-band row in SIMBAD's `flux`
+// table entirely -- e.g. M4 and NGC 6144 (both real globular clusters,
+// verified live) have g/z/K photometry but no V, so an INNER JOIN on
+// filter='V' silently excluded them no matter how generous the mag limit
+// was. Every category except "stars" LEFT JOINs across V/B/g (first
+// match wins, in that priority) and keeps objects with no photometry at
+// all rather than dropping them -- "stars" keeps its original strict
+// INNER JOIN on V alone since that's proven correct by the existing
+// skill pipeline's own verified results (e.g. 37 stars on the M45
+// Mosaic).
 const EXTENDED_FLUX_FILTERS = ['V', 'B', 'g'];
 
 function corsHeaders(origin: string | null): HeadersInit {
@@ -219,32 +255,56 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
   if (!Number.isFinite(ra) || !Number.isFinite(dec) || !Number.isFinite(radiusDeg)) {
     return errorJson('Missing/invalid ra, dec, or radiusDeg.', origin, 400);
   }
-  if (!(category in CATEGORY_OTYPE_CLAUSE)) {
+  if (!(category in CATEGORY_DEFS)) {
     return errorJson(`Unknown category "${category}".`, origin, 400);
   }
   const clampedRadius = Math.min(Math.max(radiusDeg, 0), MAX_RADIUS_DEG);
   const clampedMag = Math.min(Math.max(maglimit, -5), MAX_MAG_LIMIT);
-  const otypeClause = CATEGORY_OTYPE_CLAUSE[category];
-  const isExtended = EXTENDED_CATEGORIES.has(category);
+  const def = CATEGORY_DEFS[category];
 
   let adql: string;
-  if (isExtended) {
-    const filterList = EXTENDED_FLUX_FILTERS.map((f) => `'${f}'`).join(',');
-    adql = `SELECT b.main_id AS name, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux
-      FROM basic AS b LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
-      WHERE ${otypeClause}
-      AND b.coo_qual != 'E'
-      AND 1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${ra}, ${dec}, ${clampedRadius}))
-      AND (f.flux <= ${clampedMag} OR f.flux IS NULL)
-      ORDER BY name`;
-  } else {
+  if (category === 'stars') {
     adql = `SELECT b.main_id AS name, b.ra, b.dec, b.otype, b.sp_type, b.coo_qual, f.flux AS vmag
       FROM basic AS b JOIN flux AS f ON b.oid = f.oidref
       WHERE f.filter='V'
-      AND ${otypeClause}
+      AND ${def.otypeClause}
       AND 1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${ra}, ${dec}, ${clampedRadius}))
       AND f.flux <= ${clampedMag}
       ORDER BY vmag ASC`;
+  } else {
+    const filterList = EXTENDED_FLUX_FILTERS.map((f) => `'${f}'`).join(',');
+    const identJoin = def.catalogClause ? 'JOIN ident AS i ON b.oid = i.oidref' : '';
+    // No coo_qual filter here, deliberately -- 'E' (rounded/coarse position)
+    // is the NORMAL quality for a diffuse object's catalogued centroid, not
+    // a sign of bad data. Verified live: Barnard 44/45 (real, well-known
+    // dark nebulae) are cataloged as 'LDN 1712'/'LDN 1744' at coo_qual='E',
+    // and 350 of ~372 total Barnard-catalog objects in SIMBAD are 'E' --
+    // excluding it would drop the vast majority of the catalog. The 'E'
+    // exclusion on the "stars" path above is different and stays: that's
+    // proven correct for point sources, where a coarse position really
+    // does mean the marker lands off-target (site's own star-slider pilot).
+    const whereParts = [
+      def.otypeClause,
+      def.catalogClause,
+      `1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${ra}, ${dec}, ${clampedRadius}))`,
+      `(f.flux <= ${clampedMag} OR f.flux IS NULL)`,
+    ].filter(Boolean);
+    // For a single-catalog category (one specific ident prefix, no
+    // ambiguity about which alias matched), show the actual catalog
+    // designation the user asked for rather than SIMBAD's own arbitrary
+    // "preferred" identifier -- e.g. Barnard 44 is real and in-field, but
+    // its main_id is "LDN 1712", which would mean nothing to someone who
+    // clicked "+ Barnard". hii/reflection match against 4 different
+    // catalog prefixes at once (an object could satisfy more than one),
+    // so there's no single unambiguous alias to prefer there -- main_id
+    // stays correct for those, same as the type-only categories.
+    const nameExpr = SINGLE_CATALOG_CATEGORIES.has(category) ? 'i.id AS name' : 'b.main_id AS name';
+    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux
+      FROM basic AS b
+      ${identJoin}
+      LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
+      WHERE ${whereParts.join(' AND ')}
+      ORDER BY name`;
   }
 
   const body = new URLSearchParams();
@@ -267,17 +327,20 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
   const iOtype = idx('otype');
   const iCooQual = idx('coo_qual');
 
-  if (isExtended) {
-    // Extended objects can come back with multiple rows (one per matched
-    // filter, e.g. M31 has both a V and a B row) -- group by name and keep
-    // the best available filter (V > B > g), or no magnitude at all if the
-    // object has none of the three.
+  if (category !== 'stars') {
+    // Non-star categories can come back with multiple rows per object --
+    // one per matched flux filter (e.g. M31 has both a V and a B row), or
+    // one per matched catalog identifier for categories with a
+    // catalogClause (an object can have more than one qualifying alias
+    // in `ident`). Group by name and keep the best available filter
+    // (V > B > g), or no magnitude at all if the object has none of the
+    // three.
     const iFilter = idx('filter');
     const iFlux = idx('flux');
     const priority: Record<string, number> = { V: 0, B: 1, g: 2 };
     const byName = new Map<string, { ra: number; dec: number; otype: string; mag: number | null; filterRank: number }>();
     for (const r of rows.slice(1)) {
-      const name = r[iName].replace(/^\*\s*/, '').trim();
+      const name = r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' ');
       const ra_ = Number(r[iRa]);
       const dec_ = Number(r[iDec]);
       if (!Number.isFinite(ra_) || !Number.isFinite(dec_)) continue;
@@ -306,7 +369,7 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     .slice(1)
     .filter((r) => r[iCooQual] !== 'E')
     .map((r) => ({
-      name: r[iName].replace(/^\*\s*/, '').trim(),
+      name: r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' '),
       ra: Number(r[iRa]),
       dec: Number(r[iDec]),
       otype: r[iOtype],

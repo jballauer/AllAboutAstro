@@ -41,12 +41,21 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     </div>
 
     <div class="at-categories" id="at-categories" hidden>
-      <p>Add a slider:</p>
+      <p>Add a slider, by object type:</p>
       <div class="at-category-buttons">
         <button type="button" data-category="stars">+ Stars</button>
         <button type="button" data-category="galaxies">+ Galaxies</button>
         <button type="button" data-category="globular">+ Globular Clusters</button>
         <button type="button" data-category="open">+ Open Clusters</button>
+        <button type="button" data-category="hii">+ HII Regions</button>
+        <button type="button" data-category="reflection">+ Reflection Nebulae</button>
+      </div>
+      <p>...or by catalog (any object type):</p>
+      <div class="at-category-buttons">
+        <button type="button" data-category="messier">+ Messier</button>
+        <button type="button" data-category="ngc">+ NGC</button>
+        <button type="button" data-category="ic">+ IC</button>
+        <button type="button" data-category="barnard">+ Barnard</button>
       </div>
       <p class="at-status" id="at-category-status" role="status"></p>
     </div>
@@ -240,6 +249,34 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     galaxies: { label: 'Galaxies', maglimit: 15, kind: 'Galaxy' },
     globular: { label: 'Globular Clusters', maglimit: 12, kind: 'Globular Cluster' },
     open: { label: 'Open Clusters', maglimit: 12, kind: 'Open Cluster' },
+    hii: { label: 'HII Regions', maglimit: 15, kind: 'HII Region' },
+    reflection: { label: 'Reflection Nebulae', maglimit: 15, kind: 'Reflection Nebula' },
+    // Catalog sliders span every object type on purpose -- no fixed
+    // `kind` label, since a Messier/NGC/IC/Barnard result can be a
+    // galaxy, cluster, or nebula. buildMarkerEl() falls back to a
+    // friendly name for the object's real SIMBAD otype instead.
+    messier: { label: 'Messier', maglimit: 15, kind: null },
+    ngc: { label: 'NGC', maglimit: 15, kind: null },
+    ic: { label: 'IC', maglimit: 15, kind: null },
+    barnard: { label: 'Barnard', maglimit: 15, kind: null },
+  };
+
+  // Human-readable labels for the handful of SIMBAD otype codes this tool's
+  // categories actually surface -- used as a fallback "kind" line on
+  // catalog-slider markers, which span multiple object types and so can't
+  // use a single fixed kind label the way the type-only sliders do.
+  const OTYPE_LABELS = {
+    'GlC': 'Globular Cluster',
+    'OpC': 'Open Cluster',
+    'HII': 'HII Region',
+    'RNe': 'Reflection Nebula',
+    'DNe': 'Dark Nebula',
+    'G': 'Galaxy',
+    'AGN': 'Galaxy (AGN)',
+    'Sy1': 'Seyfert Galaxy',
+    'Sy2': 'Seyfert Galaxy',
+    'SyG': 'Seyfert Galaxy',
+    'PN': 'Planetary Nebula',
   };
 
   const D2R = Math.PI / 180;
@@ -516,12 +553,41 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     return Math.ceil(mag - 1e-9);
   }
 
+  // A single real object can satisfy more than one active slider at once
+  // -- e.g. M42 matches both "HII Regions" (by otype) and "Messier" (by
+  // catalog). Rather than render two overlapping rings/tags for the same
+  // object, each marker tracks EVERY category that claims it (`categories`
+  // set, mirrored into the `data-category` attribute as a space-separated
+  // list so `[data-category~="x"]` selectors keep working) plus a
+  // per-category bucket and visibility flag -- a shared marker must stay
+  // visible if ANY of its owning sliders currently reveals it, not just
+  // the most-recently-adjusted one.
+  function syncVisible(marker) {
+    const anyVisible = Object.values(marker._visible).some(Boolean);
+    if (anyVisible) marker.setAttribute('data-visible', 'true');
+    else marker.removeAttribute('data-visible');
+  }
+
+  function findExistingMarker(name) {
+    return frame.querySelector(`.at-marker[data-name="${CSS.escape(name)}"]`);
+  }
+
+  function mergeCategoryIntoMarker(marker, category, bucket) {
+    marker._categories.add(category);
+    marker.dataset.category = Array.from(marker._categories).join(' ');
+    marker._buckets[category] = bucket;
+    marker._visible[category] = false;
+  }
+
   function buildMarkerEl(obj, category, x, y, bucket) {
     const meta = CATEGORY_META[category];
     const marker = document.createElement('span');
     marker.className = 'at-marker';
-    marker.dataset.category = category;
-    marker.dataset.bucket = String(bucket);
+    marker.dataset.name = obj.name;
+    marker._categories = new Set();
+    marker._buckets = {};
+    marker._visible = {};
+    mergeCategoryIntoMarker(marker, category, bucket);
     marker.style.left = `${((x / wcs.IMAGEW) * 100).toFixed(2)}%`;
     marker.style.top = `${((y / wcs.IMAGEH) * 100).toFixed(2)}%`;
 
@@ -536,17 +602,17 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     const nameEl = document.createElement('strong');
     nameEl.textContent = obj.name;
     tag.appendChild(nameEl);
-    const kindText = meta.kind || obj.spType;
+    const kindText = meta.kind || obj.spType || (obj.otype ? OTYPE_LABELS[obj.otype] || obj.otype : null);
     if (kindText) {
       const kindEl = document.createElement('span');
       kindEl.className = 'at-kind';
       kindEl.textContent = kindText;
       tag.appendChild(kindEl);
     }
-    // Extended objects (clusters/galaxies) frequently have no photometry
-    // in SIMBAD at all -- obj.mag is null in that case, so there's no
-    // "mag X.X" line to show (matches DeepSkyMarkerSlider's own handling
-    // of magnitude-less markers).
+    // Extended objects (clusters/galaxies/nebulae) frequently have no
+    // photometry in SIMBAD at all -- obj.mag is null in that case, so
+    // there's no "mag X.X" line to show (matches DeepSkyMarkerSlider's
+    // own handling of magnitude-less markers).
     if (obj.mag != null) {
       const magEl = document.createElement('span');
       magEl.className = 'at-mag';
@@ -594,22 +660,24 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     const restValue = minBucket - 1;
     function apply() {
       const value = Number(input.value);
-      const markers = document.querySelectorAll(`.at-marker[data-category="${category}"]`);
+      // ~= (not =) since a marker's data-category can hold more than one
+      // category once objects are shared across active sliders.
+      const markers = document.querySelectorAll(`.at-marker[data-category~="${category}"]`);
       if (value <= restValue) {
-        markers.forEach((m) => m.removeAttribute('data-visible'));
+        markers.forEach((m) => {
+          m._visible[category] = false;
+          syncVisible(m);
+        });
         readoutValue.textContent = 'Normal image';
         readoutCount.textContent = '';
         return;
       }
       let shown = 0;
       markers.forEach((m) => {
-        const bucket = Number(m.dataset.bucket);
-        if (bucket <= value) {
-          m.setAttribute('data-visible', 'true');
-          shown++;
-        } else {
-          m.removeAttribute('data-visible');
-        }
+        const bucket = m._buckets[category];
+        m._visible[category] = bucket <= value;
+        if (m._visible[category]) shown++;
+        syncVisible(m);
       });
       readoutValue.textContent = `Down to magnitude ${value}`;
       readoutCount.textContent = `${shown} labeled`;
@@ -645,8 +713,17 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
         // own mag limit so it still gets a defined reveal position instead
         // of being silently dropped.
         const bucket = obj.mag != null ? bucketOf(obj.mag) : meta.maglimit;
-        const marker = buildMarkerEl(obj, category, x, y, bucket);
-        frame.appendChild(marker);
+        // The same real object can satisfy more than one active category
+        // (e.g. M42 matches both "HII Regions" and "Messier") -- merge
+        // into the existing ring/tag instead of stacking a duplicate on
+        // top of it.
+        const existing = findExistingMarker(obj.name);
+        if (existing) {
+          mergeCategoryIntoMarker(existing, category, bucket);
+        } else {
+          const marker = buildMarkerEl(obj, category, x, y, bucket);
+          frame.appendChild(marker);
+        }
         minBucket = Math.min(minBucket, bucket);
         maxBucket = Math.max(maxBucket, bucket);
         added++;
