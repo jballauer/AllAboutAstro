@@ -1,15 +1,28 @@
 ---
 import { Image } from 'astro:assets';
 
-interface HiiRegionMarker {
+interface DeepSkyMarker {
   catalogName: string;
-  mag: number;
+  // Real apparent magnitude, when one exists. null for genuinely
+  // diffuse/extended objects with no citable point magnitude (e.g. a star
+  // cloud) -- pair with an explicit `bucket` in that case so it still has
+  // a defined reveal position, just not one implying real photometry.
+  mag: number | null;
+  // Explicit reveal bucket, same units as `step`. Required when mag is
+  // null; optional otherwise (defaults to the mag rounded up to the next
+  // `step`) -- use it to force an object to appear alongside another
+  // (e.g. co-locating a magnitude-less object with a real one).
+  bucket?: number;
+  // Short human-readable kind shown under the name (e.g. "Galaxy",
+  // "Globular Cluster", "Star Cloud") -- optional, omit for a plain
+  // single-line tag.
+  kind?: string;
   x: number;
   y: number;
   // Optional label-only nudge (px, at the frame's natural render width) for
-  // co-located regions whose tags would otherwise overlap. Shifts the tag
+  // co-located markers whose tags would otherwise overlap. Shifts the tag
   // box and its leader together; the ring itself always stays exactly on
-  // the region's real pixel position regardless of this offset.
+  // the marker's real pixel position regardless of this offset.
   tagDx?: number;
   tagDy?: number;
 }
@@ -19,33 +32,65 @@ interface Props {
   alt: string;
   imageWidth: number;
   imageHeight: number;
-  regions: HiiRegionMarker[];
-  // Slider floor/ceiling, in whole magnitudes. Default: floor of the
-  // dimmest region's mag minus 1 (so the resting value shows nothing) up
-  // to the ceiling of the brightest... no, brightest = lowest mag. See
-  // below: floor(min mag) is the resting/empty state, ceil(max mag) is
-  // "everything shown".
+  markers: DeepSkyMarker[];
+  // Bucket granularity -- 1 for a whole-magnitude spread (e.g. mag 2-10),
+  // 0.1 for a tightly-clustered set (e.g. several objects all within one
+  // whole magnitude of each other, where integer buckets would collapse
+  // them into a single reveal step instead of staggering by real
+  // brightness). Default 1.
+  step?: number;
+  // Slider floor/ceiling, in `step` units. Default: computed from the
+  // markers' own buckets so the resting value shows nothing and the max
+  // value shows everything.
   minMag?: number;
   maxMag?: number;
 }
 
-const { image, alt, imageWidth, imageHeight, regions, minMag: minMagProp, maxMag: maxMagProp } = Astro.props;
+const {
+  image,
+  alt,
+  imageWidth,
+  imageHeight,
+  markers,
+  step = 1,
+  minMag: minMagProp,
+  maxMag: maxMagProp,
+} = Astro.props;
 
-const mags = regions.map((r) => r.mag);
-// The resting value must be a magnitude strictly brighter (numerically
-// lower) than every region's own bucket, so "at rest" is guaranteed to
-// show zero markers -- not an accident of the data, an explicit floor.
-const minMag = minMagProp ?? Math.floor(Math.min(...mags)) - 1;
-const maxMag = maxMagProp ?? Math.ceil(Math.max(...mags));
-const ticks = Array.from({ length: maxMag - minMag + 1 }, (_, i) => minMag + i);
+const decimals = step < 1 ? String(step).split('.')[1]?.length ?? 1 : 0;
+function roundUpToStep(value: number): number {
+  // Small epsilon so a value that's already an exact multiple of `step`
+  // (e.g. mag exactly 14.0 with step 1) rounds to itself, not the next
+  // step up -- Math.ceil alone would push 14.0 to 15 due to how floating
+  // point division can land a hair above the exact multiple.
+  const raw = Math.ceil(value / step - 1e-9) * step;
+  return Number(raw.toFixed(decimals));
+}
+function bucketOf(m: DeepSkyMarker): number {
+  return m.bucket ?? roundUpToStep(m.mag!);
+}
 
-const RING_RADIUS = 5; // px, half of .hrs-dot's 10px diameter
+const buckets = markers.map(bucketOf);
+// The resting value must be strictly below every marker's own bucket, so
+// "at rest" is guaranteed to show zero markers -- not an accident of the
+// data, an explicit floor.
+const minMag = minMagProp ?? Number((Math.min(...buckets) - step).toFixed(decimals));
+const maxMag = maxMagProp ?? Math.max(...buckets);
+// Datalist tick marks are a visual aid only (the slider itself still
+// moves in `step` increments) -- one per whole number in range keeps the
+// control legible even when `step` is fractional and would otherwise
+// imply dozens of ticks.
+const tickStart = Math.floor(minMag);
+const tickEnd = Math.ceil(maxMag);
+const ticks = Array.from({ length: tickEnd - tickStart + 1 }, (_, i) => tickStart + i);
+
+const RING_RADIUS = 5; // px, half of .dsm-dot's 10px diameter
 const BASE_GAP = 7; // px, the ring-bottom-to-tag-top gap with no offset
 const TAG_DEFAULT_Y = RING_RADIUS + BASE_GAP; // tag's default top-center y, from ring center
-function leaderGeometry(r: HiiRegionMarker) {
-  const dx = r.tagDx ?? 0;
+function leaderGeometry(m: DeepSkyMarker) {
+  const dx = m.tagDx ?? 0;
   const targetX = dx;
-  const targetY = TAG_DEFAULT_Y + (r.tagDy ?? 0);
+  const targetY = TAG_DEFAULT_Y + (m.tagDy ?? 0);
   const anchorX = dx !== 0 ? Math.sign(dx) * RING_RADIUS : 0;
   const anchorY = dx !== 0 ? 0 : RING_RADIUS;
   const vx = targetX - anchorX;
@@ -56,88 +101,89 @@ function leaderGeometry(r: HiiRegionMarker) {
 }
 ---
 
-<div class="hii-region-slider">
-  <div class="hrs-frame no-lightbox">
+<div class="deep-sky-marker-slider">
+  <div class="dsm-frame no-lightbox">
     <Image src={image} alt={alt} width={imageWidth} height={imageHeight} />
-    {regions.map((r) => {
-      const { length, angleDeg, anchorX, anchorY } = leaderGeometry(r);
+    {markers.map((m) => {
+      const { length, angleDeg, anchorX, anchorY } = leaderGeometry(m);
       return (
         <span
-          class="hrs-marker"
-          data-bucket={Math.ceil(r.mag)}
-          style={`left:${((r.x / imageWidth) * 100).toFixed(2)}%; top:${((r.y / imageHeight) * 100).toFixed(2)}%`}
+          class="dsm-marker"
+          data-bucket={bucketOf(m)}
+          style={`left:${((m.x / imageWidth) * 100).toFixed(2)}%; top:${((m.y / imageHeight) * 100).toFixed(2)}%`}
         >
-          <span class="hrs-dot"></span>
+          <span class="dsm-dot"></span>
           <span
-            class="hrs-leader"
+            class="dsm-leader"
             style={`left:calc(50% + ${anchorX}px); top:${anchorY}px; height:${length.toFixed(2)}px; transform: translate(-50%, 0) rotate(${angleDeg.toFixed(2)}deg);`}
           ></span>
           <span
-            class="hrs-tag"
-            style={(r.tagDx || r.tagDy) ? `transform: translate(${r.tagDx ?? 0}px, ${r.tagDy ?? 0}px)` : undefined}
+            class="dsm-tag"
+            style={(m.tagDx || m.tagDy) ? `transform: translate(${m.tagDx ?? 0}px, ${m.tagDy ?? 0}px)` : undefined}
           >
-            <strong>{r.catalogName}</strong>
-            <span class="hrs-mag">mag {r.mag.toFixed(1)}</span>
+            <strong>{m.catalogName}</strong>
+            {m.kind && <span class="dsm-kind">{m.kind}</span>}
+            {m.mag != null && <span class="dsm-mag">mag {m.mag.toFixed(1)}</span>}
           </span>
         </span>
       );
     })}
   </div>
-  <div class="hrs-controls">
+  <div class="dsm-controls">
     <input
       type="range"
-      class="hrs-input"
+      class="dsm-input"
       min={minMag}
       max={maxMag}
-      step="1"
+      step={step}
       value={minMag}
-      list="hrs-ticks"
-      aria-label="Reveal HII regions down to this apparent magnitude"
+      list="dsm-ticks"
+      aria-label="Reveal deep-sky objects down to this apparent magnitude"
     />
-    <datalist id="hrs-ticks">
+    <datalist id="dsm-ticks">
       {ticks.map((t) => <option value={t}></option>)}
     </datalist>
-    <div class="hrs-readout">
-      <span class="hrs-readout-value">Normal image</span>
-      <span class="hrs-readout-count"></span>
+    <div class="dsm-readout">
+      <span class="dsm-readout-value">Normal image</span>
+      <span class="dsm-readout-count"></span>
     </div>
   </div>
 </div>
 
 <style>
-  .hii-region-slider {
+  .deep-sky-marker-slider {
     margin: 0.3rem 0 1.5rem;
   }
-  .hrs-frame {
+  .dsm-frame {
     position: relative;
     cursor: default;
   }
-  .hrs-frame :global(img) {
+  .dsm-frame :global(img) {
     display: block;
     width: 100%;
     height: auto;
     cursor: default;
   }
-  /* The marker's own left/top is the region's exact pixel (as a
+  /* The marker's own left/top is the object's exact pixel (as a
      percentage) -- do NOT transform/center the whole dot+tag block on
-     that point, or the tag ends up covering the region itself. Only
+     that point, or the tag ends up covering the object itself. Only
      horizontal centering is applied to the block; the ring's negative
      margin (below) pulls just the ring itself up so its center -- not
      the block's top edge -- lands exactly on the marked point. */
-  .hrs-marker {
+  .dsm-marker {
     position: absolute;
     transform: translateX(-50%);
     text-align: center;
     display: none;
   }
-  .hrs-marker[data-visible='true'] {
+  .dsm-marker[data-visible='true'] {
     display: block;
   }
-  /* Hollow ring, not a filled dot -- the nebulosity must stay visible
-     through the middle even while marked/labeled. Same black-outline
-     treatment as the star slider's ring, so it stays legible against a
-     saturated pink/white emission core. */
-  .hrs-dot {
+  /* Hollow ring, not a filled dot -- the underlying feature (galaxy core,
+     nebulosity, faint point source) must stay visible through the middle
+     even while marked/labeled. Same black-outline treatment as the star
+     slider's ring, so it stays legible against a saturated core. */
+  .dsm-dot {
     display: block;
     width: 10px;
     height: 10px;
@@ -149,7 +195,7 @@ function leaderGeometry(r: HiiRegionMarker) {
       0 0 0 1px rgba(0, 0, 0, 0.85),
       0 0 2px rgba(0, 0, 0, 0.9);
   }
-  .hrs-leader {
+  .dsm-leader {
     position: absolute;
     width: 1px;
     transform-origin: top center;
@@ -158,7 +204,7 @@ function leaderGeometry(r: HiiRegionMarker) {
       -1px 0 0 rgba(0, 0, 0, 0.85),
       1px 0 0 rgba(0, 0, 0, 0.85);
   }
-  .hrs-tag {
+  .dsm-tag {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,40 +220,44 @@ function leaderGeometry(r: HiiRegionMarker) {
     color: #fff;
     pointer-events: none;
   }
-  .hrs-tag strong {
+  .dsm-tag strong {
     font-size: 0.68rem;
   }
-  .hrs-mag {
+  .dsm-kind {
+    color: rgba(255, 255, 255, 0.65);
+    font-style: italic;
+  }
+  .dsm-mag {
     color: #ffd54a;
   }
-  .hrs-controls {
+  .dsm-controls {
     max-width: 420px;
     margin: 0.75rem auto 0;
     text-align: center;
   }
-  .hrs-input {
+  .dsm-input {
     width: 100%;
   }
-  .hrs-readout {
+  .dsm-readout {
     margin-top: 0.35rem;
     font-family: var(--font-body);
     font-size: 0.85rem;
     font-style: italic;
   }
-  .hrs-readout-count {
+  .dsm-readout-count {
     opacity: 0.75;
   }
-  .hrs-readout-count:not(:empty)::before {
+  .dsm-readout-count:not(:empty)::before {
     content: ' \2014 ';
   }
 </style>
 
 <script>
-  document.querySelectorAll<HTMLElement>('.hii-region-slider').forEach((widget) => {
-    const input = widget.querySelector<HTMLInputElement>('.hrs-input')!;
-    const markers = Array.from(widget.querySelectorAll<HTMLElement>('.hrs-marker'));
-    const valueEl = widget.querySelector('.hrs-readout-value')!;
-    const countEl = widget.querySelector('.hrs-readout-count')!;
+  document.querySelectorAll<HTMLElement>('.deep-sky-marker-slider').forEach((widget) => {
+    const input = widget.querySelector<HTMLInputElement>('.dsm-input')!;
+    const markers = Array.from(widget.querySelectorAll<HTMLElement>('.dsm-marker'));
+    const valueEl = widget.querySelector('.dsm-readout-value')!;
+    const countEl = widget.querySelector('.dsm-readout-count')!;
     const restValue = Number(input.min);
 
     function apply() {
@@ -228,7 +278,7 @@ function leaderGeometry(r: HiiRegionMarker) {
           m.removeAttribute('data-visible');
         }
       });
-      valueEl.textContent = `HII regions ≤ magnitude ${value}`;
+      valueEl.textContent = `Down to magnitude ${value}`;
       countEl.textContent = `${shown} labeled`;
     }
 

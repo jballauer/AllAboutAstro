@@ -6,15 +6,15 @@ image: ./_images/m33-pinwheel-galaxy.jpg
 draft: false
 ---
 
-import HiiRegionSlider from '../../components/HiiRegionSlider.astro';
+import DeepSkyMarkerSlider from '../../components/DeepSkyMarkerSlider.astro';
 import m33HiiChart from './_images/m33-pinwheel-galaxy.jpg';
 
 export const m33HiiRegions = [
-  { catalogName: 'NGC 604', mag: 14.0, x: 274.70, y: 541.22 },
-  { catalogName: 'NGC 595', mag: 14.0, x: 376.81, y: 299.51 },
-  { catalogName: 'NGC 588', mag: 11.5, x: 423.34, y: 100.35 },
-  { catalogName: 'IC 132', mag: 16.6, x: 84.55, y: 231.33 },
-  { catalogName: 'IC 133', mag: 12.8, x: 155.47, y: 230.70 },
+  { catalogName: 'NGC 604', kind: 'HII Region', mag: 14.0, x: 274.70, y: 541.22 },
+  { catalogName: 'NGC 595', kind: 'HII Region', mag: 14.0, x: 376.81, y: 299.51 },
+  { catalogName: 'NGC 588', kind: 'HII Region', mag: 11.5, x: 423.34, y: 100.35 },
+  { catalogName: 'IC 132', kind: 'HII Region', mag: 16.6, x: 84.55, y: 231.33 },
+  { catalogName: 'IC 133', kind: 'HII Region', mag: 12.8, x: 155.47, y: 230.70 },
 ];
 
 An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies.
@@ -48,7 +48,7 @@ An LRGB plus H-alpha image of the Triangulum/Pinwheel Galaxy from Bortle 2 skies
 
 A handful of M33's brightest HII regions carry their own NGC/IC catalog numbers; drag the slider below to reveal them in order of brightness.
 
-<HiiRegionSlider image={m33HiiChart} alt="M33 with its brightest catalogued HII regions marked by apparent magnitude" imageWidth={820} imageHeight={800} regions={m33HiiRegions} />
+<DeepSkyMarkerSlider image={m33HiiChart} alt="M33 with its brightest catalogued HII regions marked by apparent magnitude" imageWidth={820} imageHeight={800} markers={m33HiiRegions} />
 
 <p class="ke-star-hover-caption">Positions plate-solved via astrometry.net; region identities cross-matched against the SIMBAD catalog, otype HII, restricted to entries with a formal NGC/IC designation (the field also contains hundreds of fainter catalogued regions with only survey-internal designations, e.g. BCLMP/LGGS numbers, not labeled here). Apparent (B-band) magnitudes from the NASA/IPAC Extragalactic Database (NED). Drag the slider to reveal each region's catalog name, brightest first.</p>
 

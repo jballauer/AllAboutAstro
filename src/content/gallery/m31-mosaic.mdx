@@ -6,6 +6,20 @@ image: ./_images/m31-mosaic.jpg
 draft: false
 ---
 
+import DeepSkyMarkerSlider from '../../components/DeepSkyMarkerSlider.astro';
+import m31Chart from './_images/m31-mosaic.jpg';
+
+export const m31Markers = [
+  { catalogName: 'M32', kind: 'Galaxy', mag: 8.08, x: 274.46, y: 400.03 },
+  { catalogName: 'M110', kind: 'Galaxy', mag: 8.07, x: 720.15, y: 646.90 },
+  { catalogName: 'NGC 206', kind: 'Star Cloud', mag: null, bucket: 8.1, x: 202.09, y: 620.08 },
+  { catalogName: 'Bol 338', kind: 'Globular Cluster', mag: 14.168, x: 124.37, y: 575.59 },
+  { catalogName: 'Bol 23', kind: 'Globular Cluster', mag: 14.17, x: 471.10, y: 576.66 },
+  { catalogName: 'Bol 225', kind: 'Globular Cluster', mag: 14.22, x: 549.41, y: 220.75 },
+  { catalogName: 'Bol 158', kind: 'Globular Cluster', mag: 14.65, x: 416.54, y: 346.77 },
+  { catalogName: 'Bol 218', kind: 'Globular Cluster', mag: 14.682, x: 528.05, y: 246.35 },
+];
+
 An eight-frame LRGB mosaic of the Great Andromeda Galaxy — combining long-focal-length resolution with a wide enough field of view to capture the whole galaxy in one frame. Earlier attempts at this object are also on file: a [three-panel mosaic](/gallery/m31-andromeda-galaxy/) from 2005, and even earlier images from [2004](/gallery/m31-andromeda-2004/) and [2003](/gallery/m31-andromeda-2003/).
 
 <div class="ke-two-col">
@@ -41,3 +55,11 @@ An eight-frame LRGB mosaic of the Great Andromeda Galaxy — combining long-foca
 
 </div>
 </div>
+
+### Objects in this Image
+
+M31's two brightest Messier companions, its most prominent star cloud, and its brightest resolvable globular clusters are all identifiable in this mosaic. Drag the slider below to reveal them in order of brightness.
+
+<DeepSkyMarkerSlider image={m31Chart} alt="M31 mosaic with its companion galaxies, star cloud, and brightest globular clusters marked by apparent magnitude" imageWidth={1008} imageHeight={800} markers={m31Markers} step={0.1} />
+
+<p class="ke-star-hover-caption">Positions plate-solved via astrometry.net. M32 and NGC 205/M110's identities and apparent (V-band) magnitudes are from the SIMBAD catalog, as are the five brightest resolvable globular clusters actually within this frame (Bologna catalog designations; SIMBAD lists over 600 catalogued globular clusters in this field, only the brightest confirmed few are labeled). NGC 206, the large star cloud near M31's southwest arm, has no published point magnitude — it's revealed alongside M32 and M110 rather than placed by brightness. Drag the slider to reveal each object's name, brightest first.</p>
