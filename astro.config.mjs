@@ -38,6 +38,7 @@ const UNLISTED_PATHS = [
   '/learning/the-inverse-relationship-of-field-of-view-and-resolution/',
   '/learning/how-to-be-a-good-math-teacher/',
   '/sliderules/itty-bitty-rules/',
+  '/unlisted/astrometric-tool/',
 ];
 
 // https://astro.build/config

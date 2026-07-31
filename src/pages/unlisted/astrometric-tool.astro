@@ -1,0 +1,793 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Fill in after deploying the Cloudflare Worker (see
+// workers/astrometric-tool/README.md) -- `npx wrangler deploy` prints the
+// URL, something like https://astrometric-tool.<subdomain>.workers.dev
+const WORKER_URL = 'https://astrometric-tool.example.workers.dev';
+---
+
+<BaseLayout
+  title="Astrometric Labeling Tool"
+  description="Upload an astrophoto, plate-solve it, and add sliders that label the stars and deep-sky objects in the field."
+  noindex={true}
+>
+  <article class="at-tool">
+    <h1>Astrometric Labeling Tool</h1>
+    <p>
+      Upload your own astrophoto. It gets plate-solved against the real sky, then you can add
+      sliders that reveal labels for stars, galaxies, and clusters in the field -- each one down
+      to whatever brightness you drag it to. When you're happy with it, download the labeled
+      image.
+    </p>
+
+    <section class="at-upload">
+      <label class="at-upload-label" for="at-file-input">
+        <input type="file" id="at-file-input" accept="image/*" />
+        <span>Choose an image&hellip;</span>
+      </label>
+      <p class="at-hint">JPEG or PNG, up to 10MB.</p>
+    </section>
+
+    <div class="at-frame-wrap" id="at-frame-wrap" hidden>
+      <div class="at-frame" id="at-frame">
+        <img id="at-preview-img" alt="Uploaded astrophoto preview" />
+      </div>
+    </div>
+
+    <div class="at-solve-panel" id="at-solve-panel" hidden>
+      <button type="button" id="at-solve-btn">Plate-solve this image</button>
+      <p class="at-status" id="at-solve-status" role="status"></p>
+    </div>
+
+    <div class="at-categories" id="at-categories" hidden>
+      <p>Add a slider:</p>
+      <div class="at-category-buttons">
+        <button type="button" data-category="stars">+ Stars</button>
+        <button type="button" data-category="galaxies">+ Galaxies</button>
+        <button type="button" data-category="globular">+ Globular Clusters</button>
+        <button type="button" data-category="open">+ Open Clusters</button>
+      </div>
+      <p class="at-status" id="at-category-status" role="status"></p>
+    </div>
+
+    <div class="at-sliders" id="at-sliders"></div>
+
+    <div class="at-download" id="at-download-panel" hidden>
+      <button type="button" id="at-download-btn">Download labeled image</button>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .at-tool {
+    max-width: var(--container-width, 900px);
+  }
+  .at-upload {
+    margin: 1.25rem 0;
+  }
+  .at-upload-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-body);
+  }
+  .at-upload-label input[type='file'] {
+    /* Kept in normal flow (not display:none) so it's still keyboard/AT
+       reachable -- visually hidden instead. */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .at-hint {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin: 0.35rem 0 0;
+  }
+  .at-frame-wrap {
+    margin: 1rem 0;
+  }
+  .at-frame {
+    position: relative;
+    max-width: 900px;
+  }
+  .at-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .at-solve-panel,
+  .at-categories,
+  .at-download {
+    margin: 1rem 0;
+  }
+  .at-status {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.8;
+    min-height: 1.2em;
+  }
+  .at-category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  button {
+    font-family: var(--font-body);
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+    opacity: 0.55;
+  }
+
+  /* Marker + slider styling -- same visual language as
+     DeepSkyMarkerSlider.astro's .dsm-* classes, reused here since these
+     markers are created dynamically at runtime rather than at build time. */
+  .at-marker {
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+    display: none;
+  }
+  .at-marker[data-visible='true'] {
+    display: block;
+  }
+  .at-marker.at-measuring {
+    display: block !important;
+    visibility: hidden;
+  }
+  .at-dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: -5px auto 0;
+    border-radius: 50%;
+    border: 1.5px solid #ffd54a;
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 0, 0, 0.85),
+      0 0 0 1px rgba(0, 0, 0, 0.85),
+      0 0 2px rgba(0, 0, 0, 0.9);
+  }
+  .at-leader {
+    position: absolute;
+    width: 1px;
+    transform-origin: top center;
+    background: rgba(255, 213, 74, 0.85);
+    box-shadow:
+      -1px 0 0 rgba(0, 0, 0, 0.85),
+      1px 0 0 rgba(0, 0, 0, 0.85);
+  }
+  .at-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.15;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.78);
+    border: 1px solid rgba(255, 213, 74, 0.55);
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-top: 7px;
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    color: #fff;
+    pointer-events: none;
+  }
+  .at-tag strong {
+    font-size: 0.68rem;
+  }
+  .at-kind {
+    color: rgba(255, 255, 255, 0.65);
+    font-style: italic;
+  }
+  .at-mag {
+    color: #ffd54a;
+  }
+
+  .at-slider-block {
+    max-width: 420px;
+    margin: 0.9rem 0;
+  }
+  .at-slider-block .at-slider-title {
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+  }
+  .at-slider-block input[type='range'] {
+    width: 100%;
+  }
+  .at-readout {
+    margin-top: 0.35rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+  .at-readout-count {
+    opacity: 0.75;
+  }
+  .at-readout-count:not(:empty)::before {
+    content: ' \2014 ';
+  }
+</style>
+
+<script define:vars={{ WORKER_URL }}>
+  // ---------------------------------------------------------------------
+  // Constants shared with the label-layout engine (ported from
+  // DeepSkyMarkerSlider.astro's client-side script -- same algorithm,
+  // applied here to markers created at runtime instead of at build time).
+  // ---------------------------------------------------------------------
+  const RING_RADIUS = 5;
+  const BASE_GAP = 7;
+  const TAG_DEFAULT_Y = RING_RADIUS + BASE_GAP;
+  const RING_EXCLUDE = 13;
+  const EDGE_MARGIN = 4;
+  const SEARCH_ANGLES = 16;
+  const SEARCH_RADII = [26, 40, 58, 80, 105, 135, 170, 210, 250];
+
+  const CATEGORY_META = {
+    stars: { label: 'Stars', maglimit: 10, kind: null },
+    galaxies: { label: 'Galaxies', maglimit: 15, kind: 'Galaxy' },
+    globular: { label: 'Globular Clusters', maglimit: 12, kind: 'Globular Cluster' },
+    open: { label: 'Open Clusters', maglimit: 12, kind: 'Open Cluster' },
+  };
+
+  const D2R = Math.PI / 180;
+  const R2D = 180 / Math.PI;
+
+  function radecToPixel(wcs, raDeg, decDeg) {
+    const a0 = wcs.CRVAL1 * D2R;
+    const d0 = wcs.CRVAL2 * D2R;
+    const a = raDeg * D2R;
+    const d = decDeg * D2R;
+    const cosc = Math.sin(d0) * Math.sin(d) + Math.cos(d0) * Math.cos(d) * Math.cos(a - a0);
+    const xi = ((Math.cos(d) * Math.sin(a - a0)) / cosc) * R2D;
+    const eta = ((Math.cos(d0) * Math.sin(d) - Math.sin(d0) * Math.cos(d) * Math.cos(a - a0)) / cosc) * R2D;
+    const det = wcs.CD1_1 * wcs.CD2_2 - wcs.CD1_2 * wcs.CD2_1;
+    const u = (wcs.CD2_2 * xi - wcs.CD1_2 * eta) / det;
+    const v = (-wcs.CD2_1 * xi + wcs.CD1_1 * eta) / det;
+    return { x: wcs.CRPIX1 + u, y: wcs.CRPIX2 + v };
+  }
+
+  // -- Label auto-layout engine (verbatim port of DeepSkyMarkerSlider's
+  // layoutLabels/leaderGeometry, operating on '.at-marker' elements in
+  // '#at-frame' instead of '.dsm-marker'/'​.dsm-frame'). --
+  function rectCircleOverlap(left, top, w, h, cx, cy, r) {
+    const closestX = Math.max(left, Math.min(cx, left + w));
+    const closestY = Math.max(top, Math.min(cy, top + h));
+    const dx = cx - closestX;
+    const dy = cy - closestY;
+    return dx * dx + dy * dy < r * r;
+  }
+  function rectsOverlap(a, b) {
+    return !(a.left + a.w < b.left || b.left + b.w < a.left || a.top + a.h < b.top || b.top + b.h < a.top);
+  }
+  function overlapArea(a, b) {
+    const ox = Math.max(0, Math.min(a.left + a.w, b.left + b.w) - Math.max(a.left, b.left));
+    const oy = Math.max(0, Math.min(a.top + a.h, b.top + b.h) - Math.max(a.top, b.top));
+    return ox * oy;
+  }
+  function segPointDist(x1, y1, x2, y2, px, py) {
+    const dx = x2 - x1;
+    const dy = y2 - y1;
+    const lenSq = dx * dx + dy * dy;
+    let t = lenSq === 0 ? 0 : ((px - x1) * dx + (py - y1) * dy) / lenSq;
+    t = Math.max(0, Math.min(1, t));
+    const cx = x1 + t * dx;
+    const cy = y1 + t * dy;
+    return Math.hypot(px - cx, py - cy);
+  }
+
+  function layoutLabels() {
+    const frame = document.getElementById('at-frame');
+    const markerEls = Array.from(document.querySelectorAll('.at-marker'));
+    if (!frame || !markerEls.length) return;
+
+    markerEls.forEach((m) => m.classList.add('at-measuring'));
+    void frame.offsetWidth;
+
+    const frameRect = frame.getBoundingClientRect();
+    const items = markerEls.map((m) => {
+      const dot = m.querySelector('.at-dot');
+      const tag = m.querySelector('.at-tag');
+      const leader = m.querySelector('.at-leader');
+      tag.style.transform = '';
+      const dr = dot.getBoundingClientRect();
+      const tr = tag.getBoundingClientRect();
+      return {
+        tag,
+        leader,
+        ringX: dr.x + dr.width / 2 - frameRect.x,
+        ringY: dr.y + dr.height / 2 - frameRect.y,
+        natLeft: tr.x - frameRect.x,
+        natTop: tr.y - frameRect.y,
+        w: tr.width,
+        h: tr.height,
+      };
+    });
+
+    const placed = [];
+
+    function ringClear(left, top, w, h) {
+      for (let j = 0; j < items.length; j++) {
+        if (rectCircleOverlap(left, top, w, h, items[j].ringX, items[j].ringY, RING_EXCLUDE)) return false;
+      }
+      return true;
+    }
+    function inBounds(left, top, w, h) {
+      return left >= EDGE_MARGIN && top >= EDGE_MARGIN && left + w <= frameRect.width - EDGE_MARGIN && top + h <= frameRect.height - EDGE_MARGIN;
+    }
+    function crossingPenalty(ringX, ringY, cx, cy, selfIndex) {
+      let crossings = 0;
+      for (let j = 0; j < items.length; j++) {
+        if (j === selfIndex) continue;
+        if (segPointDist(ringX, ringY, cx, cy, items[j].ringX, items[j].ringY) < RING_EXCLUDE) crossings++;
+      }
+      return crossings;
+    }
+
+    items.forEach((item, i) => {
+      let best = null;
+
+      if (!best) {
+        for (const radius of SEARCH_RADII) {
+          let foundAtRadius = null;
+          let foundScore = Infinity;
+          for (let a = 0; a < SEARCH_ANGLES; a++) {
+            const angle = (a / SEARCH_ANGLES) * Math.PI * 2;
+            const cx = item.ringX + radius * Math.cos(angle);
+            const cy = item.ringY + radius * Math.sin(angle);
+            const left = cx - item.w / 2;
+            const top = cy - item.h / 2;
+            if (!inBounds(left, top, item.w, item.h)) continue;
+            if (!ringClear(left, top, item.w, item.h)) continue;
+            const box = { left, top, w: item.w, h: item.h };
+            if (placed.some((p) => rectsOverlap(box, p))) continue;
+            const score = crossingPenalty(item.ringX, item.ringY, cx, cy, i) * 40;
+            if (score < foundScore) {
+              foundScore = score;
+              foundAtRadius = { cx, cy, left, top };
+            }
+          }
+          if (foundAtRadius) {
+            best = foundAtRadius;
+            break;
+          }
+        }
+      }
+
+      if (!best) {
+        let bestScore = Infinity;
+        for (const radius of SEARCH_RADII) {
+          for (let a = 0; a < SEARCH_ANGLES; a++) {
+            const angle = (a / SEARCH_ANGLES) * Math.PI * 2;
+            const cx = item.ringX + radius * Math.cos(angle);
+            const cy = item.ringY + radius * Math.sin(angle);
+            const left = cx - item.w / 2;
+            const top = cy - item.h / 2;
+            if (!inBounds(left, top, item.w, item.h)) continue;
+            if (!ringClear(left, top, item.w, item.h)) continue;
+            const box = { left, top, w: item.w, h: item.h };
+            const overlap = placed.reduce((sum, p) => sum + overlapArea(box, p), 0);
+            const score = radius + overlap * 3;
+            if (score < bestScore) {
+              bestScore = score;
+              best = { cx, cy, left, top };
+            }
+          }
+        }
+      }
+
+      if (!best) {
+        const cx = item.ringX;
+        const cy = item.ringY + TAG_DEFAULT_Y + item.h / 2;
+        best = { cx, cy, left: cx - item.w / 2, top: item.ringY + TAG_DEFAULT_Y };
+      }
+
+      placed.push({ left: best.left, top: best.top, w: item.w, h: item.h });
+
+      const dx = best.cx - (item.natLeft + item.w / 2);
+      const dy = best.cy - (item.natTop + item.h / 2);
+      item.tag.style.transform = `translate(${dx}px, ${dy}px)`;
+      item.tag.dataset.offsetX = String(dx);
+      item.tag.dataset.offsetY = String(dy);
+
+      const targetX = dx;
+      const targetY = TAG_DEFAULT_Y + dy;
+      const anchorX = dx !== 0 ? Math.sign(dx) * RING_RADIUS : 0;
+      const anchorY = dx !== 0 ? 0 : RING_RADIUS;
+      const vx = targetX - anchorX;
+      const vy = targetY - anchorY;
+      const length = Math.sqrt(vx * vx + vy * vy);
+      const angleDeg = (Math.atan2(-vx, vy) * 180) / Math.PI;
+      item.leader.style.left = `calc(50% + ${anchorX}px)`;
+      item.leader.style.top = `${anchorY}px`;
+      item.leader.style.height = `${length.toFixed(2)}px`;
+      item.leader.style.transform = `translate(-50%, 0) rotate(${angleDeg.toFixed(2)}deg)`;
+    });
+
+    markerEls.forEach((m) => m.classList.remove('at-measuring'));
+  }
+
+  // ---------------------------------------------------------------------
+  // Page wiring
+  // ---------------------------------------------------------------------
+  const fileInput = document.getElementById('at-file-input');
+  const frameWrap = document.getElementById('at-frame-wrap');
+  const frame = document.getElementById('at-frame');
+  const previewImg = document.getElementById('at-preview-img');
+  const solvePanel = document.getElementById('at-solve-panel');
+  const solveBtn = document.getElementById('at-solve-btn');
+  const solveStatus = document.getElementById('at-solve-status');
+  const categoriesPanel = document.getElementById('at-categories');
+  const categoryStatus = document.getElementById('at-category-status');
+  const slidersContainer = document.getElementById('at-sliders');
+  const downloadPanel = document.getElementById('at-download-panel');
+  const downloadBtn = document.getElementById('at-download-btn');
+
+  let uploadedFile = null;
+  let wcs = null; // { CRVAL1, CRVAL2, CRPIX1, CRPIX2, CD1_1, CD1_2, CD2_1, CD2_2, IMAGEW, IMAGEH }
+  let fieldCenter = null; // { ra, dec, radiusDeg }
+  const activeCategories = new Set();
+
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files && fileInput.files[0];
+    if (!file) return;
+    uploadedFile = file;
+    wcs = null;
+    fieldCenter = null;
+    activeCategories.clear();
+    slidersContainer.innerHTML = '';
+    document.querySelectorAll('.at-marker').forEach((m) => m.remove());
+    categoriesPanel.hidden = true;
+    solveStatus.textContent = '';
+
+    const url = URL.createObjectURL(file);
+    previewImg.src = url;
+    frameWrap.hidden = false;
+    solvePanel.hidden = false;
+    downloadPanel.hidden = false;
+    solveBtn.disabled = false;
+    solveBtn.textContent = 'Plate-solve this image';
+  });
+
+  async function pollStatus(subid) {
+    for (;;) {
+      await new Promise((r) => setTimeout(r, 4000));
+      const res = await fetch(`${WORKER_URL}/solve/status?subid=${encodeURIComponent(subid)}`);
+      const data = await res.json();
+      if (data.status === 'solved') return data.jobId;
+      if (data.status === 'failed') throw new Error('Plate-solve failed -- try a clearer/wider-field image.');
+      solveStatus.textContent = data.status === 'submitted' ? 'Queued…' : 'Solving…';
+    }
+  }
+
+  solveBtn.addEventListener('click', async () => {
+    if (!uploadedFile) return;
+    solveBtn.disabled = true;
+    solveStatus.textContent = 'Uploading…';
+    try {
+      const form = new FormData();
+      form.set('file', uploadedFile);
+      const uploadRes = await fetch(`${WORKER_URL}/solve/upload`, { method: 'POST', body: form });
+      const uploadData = await uploadRes.json();
+      if (uploadData.error) throw new Error(uploadData.error);
+
+      solveStatus.textContent = 'Queued…';
+      const jobId = await pollStatus(uploadData.subid);
+
+      solveStatus.textContent = 'Fetching solution…';
+      const wcsRes = await fetch(`${WORKER_URL}/solve/wcs?jobId=${encodeURIComponent(jobId)}`);
+      const wcsData = await wcsRes.json();
+      if (wcsData.error) throw new Error(wcsData.error);
+      wcs = wcsData;
+
+      const scaleX = Math.hypot(wcs.CD1_1, wcs.CD2_1);
+      const scaleY = Math.hypot(wcs.CD1_2, wcs.CD2_2);
+      const fovW = scaleX * wcs.IMAGEW;
+      const fovH = scaleY * wcs.IMAGEH;
+      fieldCenter = {
+        ra: wcs.CRVAL1,
+        dec: wcs.CRVAL2,
+        radiusDeg: (Math.sqrt(fovW * fovW + fovH * fovH) / 2) * 1.05,
+      };
+
+      solveStatus.textContent = 'Solved! Add a slider below to start labeling.';
+      solveBtn.textContent = 'Solved';
+      categoriesPanel.hidden = false;
+    } catch (err) {
+      solveStatus.textContent = err instanceof Error ? err.message : 'Something went wrong.';
+      solveBtn.disabled = false;
+      solveBtn.textContent = 'Plate-solve this image';
+    }
+  });
+
+  function bucketOf(mag) {
+    return Math.ceil(mag - 1e-9);
+  }
+
+  function buildMarkerEl(obj, category, x, y) {
+    const meta = CATEGORY_META[category];
+    const marker = document.createElement('span');
+    marker.className = 'at-marker';
+    marker.dataset.category = category;
+    marker.dataset.bucket = String(bucketOf(obj.mag));
+    marker.style.left = `${((x / wcs.IMAGEW) * 100).toFixed(2)}%`;
+    marker.style.top = `${((y / wcs.IMAGEH) * 100).toFixed(2)}%`;
+
+    const dot = document.createElement('span');
+    dot.className = 'at-dot';
+
+    const leader = document.createElement('span');
+    leader.className = 'at-leader';
+
+    const tag = document.createElement('span');
+    tag.className = 'at-tag';
+    const nameEl = document.createElement('strong');
+    nameEl.textContent = obj.name;
+    tag.appendChild(nameEl);
+    const kindText = meta.kind || obj.spType;
+    if (kindText) {
+      const kindEl = document.createElement('span');
+      kindEl.className = 'at-kind';
+      kindEl.textContent = kindText;
+      tag.appendChild(kindEl);
+    }
+    const magEl = document.createElement('span');
+    magEl.className = 'at-mag';
+    magEl.textContent = `mag ${obj.mag.toFixed(1)}`;
+    tag.appendChild(magEl);
+
+    marker.appendChild(dot);
+    marker.appendChild(leader);
+    marker.appendChild(tag);
+    return marker;
+  }
+
+  function buildSliderBlock(category, markerCount, minBucket, maxBucket) {
+    const meta = CATEGORY_META[category];
+    const block = document.createElement('div');
+    block.className = 'at-slider-block';
+    block.dataset.category = category;
+
+    const title = document.createElement('p');
+    title.className = 'at-slider-title';
+    title.textContent = meta.label;
+    block.appendChild(title);
+
+    const input = document.createElement('input');
+    input.type = 'range';
+    input.min = String(minBucket - 1);
+    input.max = String(maxBucket);
+    input.step = '1';
+    input.value = String(minBucket - 1);
+    input.setAttribute('aria-label', `Reveal ${meta.label.toLowerCase()} down to this apparent magnitude`);
+    block.appendChild(input);
+
+    const readout = document.createElement('div');
+    readout.className = 'at-readout';
+    const readoutValue = document.createElement('span');
+    readoutValue.className = 'at-readout-value';
+    readoutValue.textContent = 'Normal image';
+    const readoutCount = document.createElement('span');
+    readoutCount.className = 'at-readout-count';
+    readout.appendChild(readoutValue);
+    readout.appendChild(readoutCount);
+    block.appendChild(readout);
+
+    const restValue = minBucket - 1;
+    function apply() {
+      const value = Number(input.value);
+      const markers = document.querySelectorAll(`.at-marker[data-category="${category}"]`);
+      if (value <= restValue) {
+        markers.forEach((m) => m.removeAttribute('data-visible'));
+        readoutValue.textContent = 'Normal image';
+        readoutCount.textContent = '';
+        return;
+      }
+      let shown = 0;
+      markers.forEach((m) => {
+        const bucket = Number(m.dataset.bucket);
+        if (bucket <= value) {
+          m.setAttribute('data-visible', 'true');
+          shown++;
+        } else {
+          m.removeAttribute('data-visible');
+        }
+      });
+      readoutValue.textContent = `Down to magnitude ${value}`;
+      readoutCount.textContent = `${shown} labeled`;
+    }
+    input.addEventListener('input', apply);
+    apply();
+
+    return block;
+  }
+
+  async function addCategorySlider(category) {
+    if (!wcs || !fieldCenter || activeCategories.has(category)) return;
+    activeCategories.add(category);
+    const btn = document.querySelector(`.at-category-buttons button[data-category="${category}"]`);
+    if (btn) btn.disabled = true;
+    categoryStatus.textContent = `Looking up ${CATEGORY_META[category].label.toLowerCase()}…`;
+
+    try {
+      const meta = CATEGORY_META[category];
+      const url = `${WORKER_URL}/simbad/cone?ra=${fieldCenter.ra}&dec=${fieldCenter.dec}&radiusDeg=${fieldCenter.radiusDeg}&category=${category}&maglimit=${meta.maglimit}`;
+      const res = await fetch(url);
+      const rows = await res.json();
+      if (rows.error) throw new Error(rows.error);
+
+      let added = 0;
+      let minBucket = Infinity;
+      let maxBucket = -Infinity;
+      for (const obj of rows) {
+        const { x, y } = radecToPixel(wcs, obj.ra, obj.dec);
+        if (x < 0 || x > wcs.IMAGEW || y < 0 || y > wcs.IMAGEH) continue;
+        const marker = buildMarkerEl(obj, category, x, y);
+        frame.appendChild(marker);
+        const bucket = bucketOf(obj.mag);
+        minBucket = Math.min(minBucket, bucket);
+        maxBucket = Math.max(maxBucket, bucket);
+        added++;
+      }
+
+      if (added === 0) {
+        categoryStatus.textContent = `No ${CATEGORY_META[category].label.toLowerCase()} found in this field.`;
+        activeCategories.delete(category);
+        if (btn) btn.disabled = false;
+        return;
+      }
+
+      const block = buildSliderBlock(category, added, minBucket, maxBucket);
+      slidersContainer.appendChild(block);
+      categoryStatus.textContent = `Added ${added} ${CATEGORY_META[category].label.toLowerCase()}.`;
+      layoutLabels();
+    } catch (err) {
+      categoryStatus.textContent = err instanceof Error ? err.message : 'Lookup failed.';
+      activeCategories.delete(category);
+      if (btn) btn.disabled = false;
+    }
+  }
+
+  document.querySelectorAll('.at-category-buttons button').forEach((btn) => {
+    btn.addEventListener('click', () => addCategorySlider(btn.dataset.category));
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(() => layoutLabels(), 200);
+  });
+
+  // ---------------------------------------------------------------------
+  // Download: composite the base image + every currently-visible marker
+  // onto a canvas at the image's native resolution, scaling ring/leader/
+  // text sizes up from their on-screen CSS-pixel sizes by the same ratio
+  // as native-width/displayed-width, so the export looks proportionally
+  // identical to what's on screen.
+  // ---------------------------------------------------------------------
+  function drawRoundedRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
+  downloadBtn.addEventListener('click', () => {
+    const naturalWidth = previewImg.naturalWidth;
+    const naturalHeight = previewImg.naturalHeight;
+    if (!naturalWidth || !naturalHeight) return;
+
+    const displayWidth = frame.getBoundingClientRect().width;
+    const scale = naturalWidth / displayWidth;
+
+    const canvas = document.createElement('canvas');
+    canvas.width = naturalWidth;
+    canvas.height = naturalHeight;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(previewImg, 0, 0, naturalWidth, naturalHeight);
+
+    const ringRadius = RING_RADIUS * scale;
+    const nameFontPx = 11 * scale;
+    const smallFontPx = 10 * scale;
+    const lineHeight = 13 * scale;
+    const padX = 5 * scale;
+    const padY = 3 * scale;
+
+    document.querySelectorAll('.at-marker[data-visible="true"]').forEach((m) => {
+      const leftPct = parseFloat(m.style.left) / 100;
+      const topPct = parseFloat(m.style.top) / 100;
+      const ringX = leftPct * naturalWidth;
+      const ringY = topPct * naturalHeight;
+
+      const tag = m.querySelector('.at-tag');
+      const offsetX = (Number(tag.dataset.offsetX) || 0) * scale;
+      const offsetY = (Number(tag.dataset.offsetY) || 0) * scale;
+
+      // Ring
+      ctx.beginPath();
+      ctx.arc(ringX, ringY, ringRadius, 0, Math.PI * 2);
+      ctx.strokeStyle = 'rgba(0,0,0,0.85)';
+      ctx.lineWidth = ringRadius * 0.5;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(ringX, ringY, ringRadius, 0, Math.PI * 2);
+      ctx.strokeStyle = '#ffd54a';
+      ctx.lineWidth = ringRadius * 0.3;
+      ctx.stroke();
+
+      // Tag text lines
+      const nameLine = tag.querySelector('strong')?.textContent || '';
+      const kindLine = tag.querySelector('.at-kind')?.textContent || '';
+      const magLine = tag.querySelector('.at-mag')?.textContent || '';
+      const lines = [nameLine, kindLine, magLine].filter(Boolean);
+
+      ctx.font = `bold ${nameFontPx}px sans-serif`;
+      const widths = lines.map((line, i) => {
+        ctx.font = i === 0 ? `bold ${nameFontPx}px sans-serif` : `${smallFontPx}px sans-serif`;
+        return ctx.measureText(line).width;
+      });
+      const tagW = Math.max(...widths) + padX * 2;
+      const tagH = lines.length * lineHeight + padY * 2;
+      const tagCenterX = ringX + offsetX;
+      const tagCenterY = ringY + TAG_DEFAULT_Y * scale + offsetY + tagH / 2 - lineHeight / 2;
+      const tagLeft = tagCenterX - tagW / 2;
+      const tagTop = tagCenterY - tagH / 2;
+
+      // Leader line: from ring edge to tag top-center.
+      const dx = tagCenterX - ringX;
+      const dy = tagTop - ringY;
+      const len = Math.hypot(dx, dy);
+      if (len > 0) {
+        const ux = dx / len;
+        const uy = dy / len;
+        ctx.beginPath();
+        ctx.moveTo(ringX + ux * ringRadius, ringY + uy * ringRadius);
+        ctx.lineTo(tagCenterX, tagTop);
+        ctx.strokeStyle = 'rgba(255,213,74,0.85)';
+        ctx.lineWidth = Math.max(1, scale);
+        ctx.stroke();
+      }
+
+      // Tag background
+      ctx.fillStyle = 'rgba(0,0,0,0.78)';
+      drawRoundedRect(ctx, tagLeft, tagTop, tagW, tagH, 3 * scale);
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255,213,74,0.55)';
+      ctx.lineWidth = Math.max(1, scale * 0.5);
+      ctx.stroke();
+
+      // Tag text
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      lines.forEach((line, i) => {
+        const isName = i === 0;
+        ctx.font = isName ? `bold ${nameFontPx}px sans-serif` : `${smallFontPx}px sans-serif`;
+        ctx.fillStyle = i === lines.length - 1 && magLine ? '#ffd54a' : isName ? '#fff' : 'rgba(255,255,255,0.75)';
+        ctx.fillText(line, tagCenterX, tagTop + padY + lineHeight * i + lineHeight / 2);
+      });
+    });
+
+    canvas.toBlob((blob) => {
+      if (!blob) return;
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'labeled-astrophoto.png';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }, 'image/png');
+  });
+</script>

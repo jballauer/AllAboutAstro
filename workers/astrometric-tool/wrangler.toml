@@ -1,0 +1,6 @@
+name = "astrometric-tool"
+main = "src/index.ts"
+compatibility_date = "2026-07-01"
+
+# ASTROMETRY_API_KEY is set as a secret, not here:
+#   wrangler secret put ASTROMETRY_API_KEY
