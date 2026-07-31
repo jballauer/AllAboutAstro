@@ -151,6 +151,22 @@ visible color/structure, not necessarily a sharp point:
    sorted candidate selection near a bright, saturated galaxy core —
    budget for at least one rejection when picking globulars/point
    sources near a galaxy's center.
+3. **A deep magnitude pull (V<=16) of an extended/diffuse type
+   (galaxies especially) returns far more real catalogue entries than
+   are actually visible in a given exposure.** Point-source depth
+   (stars) doesn't transfer to diffuse-object depth — a real, correctly
+   identified V=15 galaxy spreads its light over many pixels and can be
+   genuinely invisible in a photo where a V=16 point-source star is
+   easily seen, since surface brightness (not integrated magnitude)
+   governs whether diffuse light clears the noise floor. Markarian
+   Chain: a deep SIMBAD cone search returned 58 galaxy-type candidates
+   in-field; only 21 beyond the 8 already-named ones verified as a real
+   independently-visible smudge once crosshair-cropped (with a
+   contrast boost for the faint end) — the rest were dropped, not
+   shipped as markers pointing at blank sky. Don't skip this
+   verification step just because a deep pull "should" be more
+   thorough; more candidates from SIMBAD means *more* verification
+   work, not less.
 3. Confirm at least one object against independent corroboration where
    possible — the plate-solve's own `objects_in_field` naming it
    directly is the strongest signal.
@@ -176,8 +192,19 @@ interface Props {
   step?: number;   // bucket granularity, default 1 -- see below
   minMag?: number; // override the computed resting/floor value
   maxMag?: number; // override the computed max/ceiling value
+  hires?: string;  // path to a genuine hi-res file -- see below
 }
 ```
+
+- **`hires`**: when set, the frame keeps the site's default fullscreen
+  click-to-zoom lightbox (and a "Click to Zoom" hint below the chart)
+  instead of the usual `no-lightbox` treatment. This is safe to combine
+  with the slider because that lightbox is a full-page modal overlay,
+  not an in-place CSS transform — it doesn't move or resize the inline
+  image, so the percentage-positioned markers never drift out of
+  alignment the way they would under `ke-zoom-inframe`. Omit `hires`
+  (the default) to keep the chart slider-only with no zoom affordance,
+  same as before this prop existed.
 
 - **`step` matters when a dataset's real magnitudes cluster within one
   whole magnitude of each other.** M31's five globular candidates
