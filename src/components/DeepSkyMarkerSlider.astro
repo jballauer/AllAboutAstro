@@ -374,9 +374,12 @@ function leaderGeometry(m: DeepSkyMarker) {
 
     const placed: { left: number; top: number; w: number; h: number }[] = [];
 
-    function ringClear(left: number, top: number, w: number, h: number, selfIndex: number) {
+    // Deliberately checked against EVERY ring, including the marker's own
+    // -- a label must never cover the very object it names either. `self`
+    // is only used by the crossing-penalty check below (a leader line
+    // legitimately starts at its own ring, that's not a "crossing").
+    function ringClear(left: number, top: number, w: number, h: number) {
       for (let j = 0; j < items.length; j++) {
-        if (j === selfIndex) continue;
         if (rectCircleOverlap(left, top, w, h, items[j].ringX, items[j].ringY, RING_EXCLUDE)) return false;
       }
       return true;
@@ -417,7 +420,7 @@ function leaderGeometry(m: DeepSkyMarker) {
             const left = cx - item.w / 2;
             const top = cy - item.h / 2;
             if (!inBounds(left, top, item.w, item.h)) continue;
-            if (!ringClear(left, top, item.w, item.h, i)) continue;
+            if (!ringClear(left, top, item.w, item.h)) continue;
             const box = { left, top, w: item.w, h: item.h };
             if (placed.some((p) => rectsOverlap(box, p))) continue;
             const score = crossingPenalty(item.ringX, item.ringY, cx, cy, i) * 40;
@@ -448,7 +451,7 @@ function leaderGeometry(m: DeepSkyMarker) {
             const left = cx - item.w / 2;
             const top = cy - item.h / 2;
             if (!inBounds(left, top, item.w, item.h)) continue;
-            if (!ringClear(left, top, item.w, item.h, i)) continue;
+            if (!ringClear(left, top, item.w, item.h)) continue;
             const box = { left, top, w: item.w, h: item.h };
             const overlap = placed.reduce((sum, p) => sum + overlapArea(box, p), 0);
             const score = radius + overlap * 3;
