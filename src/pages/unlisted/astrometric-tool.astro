@@ -17,6 +17,7 @@ const CATALOG_GUIDE = [
   { name: 'Herschel 400', body: 'A 400-object observing list curated by the Astronomical League from William Herschel’s much larger 18th-century discovery catalogue (2,500+ objects) -- selected as a challenging but achievable "next step" past the Messier list for visual observers.' },
   { name: 'Herschel II', body: 'A second, complementary 400-object Herschel list, originally selected by the Rose City Astronomers (Portland, OR) in 1997 and adopted by the Astronomical League as a follow-on observing program to Herschel 400.' },
   { name: 'Caldwell', body: 'Patrick Moore’s 1995 list of 109 bright deep-sky objects, deliberately built to complement Messier’s list by including showpiece objects Messier missed -- mostly ones too far south for his Paris latitude, or just outside his comet-hunting focus.' },
+  { name: 'Bayer', body: 'Johann Bayer’s 1603 system of naming naked-eye stars within a constellation by Greek letter, roughly in order of brightness (e.g. Alpha Canis Majoris = Sirius). The most recognized designation for bright stars, and the one usually paired with a common name.' },
   { name: 'Flamsteed', body: 'John Flamsteed’s early-18th-century numbering of naked-eye stars within each constellation (e.g. "51 Peg"), ordered roughly by right ascension. Still the standard designation for many bright stars without a proper name.' },
   { name: 'WDS', body: 'The Washington Double Star Catalog (US Naval Observatory), the world’s principal database of double and multiple star systems -- over 150,000 pairs, identified by coordinate-based designation and component letter (A, B, Aa/Ab, ...).' },
   { name: 'HIP', body: 'The Hipparcos catalogue, ~118,000 stars with precision positions/parallaxes/proper motions measured by ESA’s Hipparcos satellite (1989–1993) -- the standard reference for stellar astrometry before Gaia.' },
@@ -96,6 +97,7 @@ const CATALOG_GUIDE = [
           </div>
           <p>...or by star catalog:</p>
           <div class="at-category-buttons">
+            <button type="button" data-category="bayer">+ Bayer</button>
             <button type="button" data-category="flamsteed">+ Flamsteed</button>
             <button type="button" data-category="wds">+ WDS</button>
             <button type="button" data-category="hip">+ HIP</button>
@@ -426,6 +428,10 @@ const CATALOG_GUIDE = [
     // unbounded query on a rich field would return an unusable/slow flood
     // of results. The auto-widen-if-sparse logic below still deepens these
     // to mag 18 on a field where even this default turns up 2 or fewer.
+    // Bayer designations only exist for naked-eye stars (down to ~mag 6.5
+    // by convention), so a shallower default than Flamsteed is correct
+    // here, not just consistent with it.
+    bayer: { label: 'Bayer', maglimit: 7, kind: null },
     flamsteed: { label: 'Flamsteed', maglimit: 10, kind: null },
     wds: { label: 'WDS (double stars)', maglimit: 10, kind: null },
     hip: { label: 'HIP (Hipparcos)', maglimit: 9, kind: null },
@@ -808,11 +814,16 @@ const CATALOG_GUIDE = [
     const tag = document.createElement('span');
     tag.className = 'at-tag';
     const nameEl = document.createElement('strong');
+    // Where SIMBAD has a recognized common name (Sirius, Betelgeuse, ...),
+    // show it alongside the catalog designation rather than in place of
+    // it -- the designation is still the unambiguous identifier, the name
+    // is what most people will actually recognize.
+    const displayName = obj.commonName ? `${obj.commonName} (${obj.name})` : obj.name;
     // Observing-list catalogs (Herschel 400/II, Caldwell) get their own
     // list position shown alongside the object's real designation, e.g.
     // "C106 · NGC 104" -- the object's number in that list, not just its
     // NGC/IC name.
-    nameEl.textContent = obj.listNumber ? `${obj.listNumber} · ${obj.name}` : obj.name;
+    nameEl.textContent = obj.listNumber ? `${obj.listNumber} · ${displayName}` : displayName;
     tag.appendChild(nameEl);
     const kindText = meta.kind || obj.spType || (obj.otype ? OTYPE_LABELS[obj.otype] || obj.otype : null);
     if (kindText) {

@@ -229,6 +229,22 @@ function isCaldwell(name: string): boolean {
 function isFlamsteedShaped(name: string): boolean {
   return /^\d+\s+[A-Za-z]{3}$/.test(name);
 }
+// SIMBAD's Greek-letter (Bayer) designations share the same generic '* '
+// alias prefix as Flamsteed numbers and other star aliases (confirmed live
+// 2026-08-01: Sirius's full alias list has it as plain "*  alf CMa", no
+// distinct "Bayer" prefix to filter on) -- so, like Flamsteed, it's matched
+// by ident *shape* after the same '* ' JOIN: a Greek-letter abbreviation
+// (optionally with a trailing component digit for shared-letter systems,
+// e.g. "alf01 Cap"/"alf02 Cap") followed by a 3-letter constellation code.
+const GREEK_ABBR = new Set([
+  'alf', 'bet', 'gam', 'del', 'eps', 'zet', 'eta', 'the', 'iot', 'kap',
+  'lam', 'mu.', 'nu.', 'xi.', 'omi', 'pi.', 'rho', 'sig', 'tau', 'ups',
+  'phi', 'chi', 'psi', 'ome',
+]);
+function isBayerShaped(name: string): boolean {
+  const m = /^([A-Za-z.]{3})\d{0,2}\s+[A-Za-z]{3}$/.exec(name);
+  return !!m && GREEK_ABBR.has(m[1].toLowerCase());
+}
 function isCleanBd(name: string): boolean {
   return /^BD[+-]\d+\s+\d+$/.test(name);
 }
@@ -289,12 +305,13 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
   // ident prefix (verified live 2026-08-01: "WDS J...", "HIP N", "SAO N",
   // "WD hhmm+dd", "BD+dd N"/"BD-dd N") so they use the same clean
   // LIKE-prefix approach as the other single-catalog categories.
-  // Flamsteed is different: SIMBAD stores it under the generic '*' (star)
-  // alias prefix shared with Bayer designations, variable-star names, etc.
+  // Bayer and Flamsteed are different: SIMBAD stores both under the
+  // generic '*' (star) alias prefix shared with variable-star names, etc.
   // (confirmed live: 17 Tau's full alias list has it as plain "*  17 Tau",
-  // no distinct "Flamsteed" prefix to filter on) -- so it's matched by
-  // ident *shape* instead (digits, space, 3-letter constellation
-  // abbreviation) after the generic '*' JOIN, via membershipFilter.
+  // no distinct "Flamsteed"/"Bayer" prefix to filter on) -- so both are
+  // matched by ident *shape* instead after the generic '*' JOIN, via
+  // membershipFilter.
+  bayer: { catalogClause: `i.id LIKE '* %'`, membershipFilter: isBayerShaped },
   flamsteed: { catalogClause: `i.id LIKE '* %'`, membershipFilter: isFlamsteedShaped },
   wds: { catalogClause: `i.id LIKE 'WDS %'` },
   hip: { catalogClause: `i.id LIKE 'HIP %'` },
@@ -311,7 +328,7 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
 
 const SINGLE_CATALOG_CATEGORIES = new Set([
   'messier', 'ngc', 'ic', 'barnard', 'arp', 'herschel400', 'herschel2', 'caldwell',
-  'flamsteed', 'wds', 'hip', 'sao', 'wd', 'bd',
+  'bayer', 'flamsteed', 'wds', 'hip', 'sao', 'wd', 'bd',
 ]);
 
 // Per-category display-name rewrite, applied after the generic
@@ -512,10 +529,23 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
   const clampedMag = Math.min(Math.max(maglimit, -5), MAX_MAG_LIMIT);
   const def = CATEGORY_DEFS[category];
 
+  // Common proper name (e.g. "Sirius", "Betelgeuse"), where SIMBAD has
+  // one -- stored as its own "NAME xxx"-prefixed row in `ident`, same
+  // table as every other alias. A correlated scalar subquery in the
+  // SELECT list (the first approach tried here) is rejected outright by
+  // SIMBAD's ADQL parser (confirmed live 2026-08-01: "Encountered
+  // 'SELECT' ... reserved ADQL word"), so this has to be a real LEFT
+  // JOIN instead -- which, like the existing catalog-alias JOIN below,
+  // can multiply row cardinality (rare stars have more than one
+  // recognized name) and needs the same kind of post-query dedup.
+  const commonNameJoin = `LEFT JOIN ident AS n ON b.oid = n.oidref AND n.id LIKE 'NAME %'`;
+
   let adql: string;
   if (category === 'stars') {
-    adql = `SELECT b.main_id AS name, b.ra, b.dec, b.otype, b.sp_type, b.coo_qual, f.flux AS vmag
-      FROM basic AS b JOIN flux AS f ON b.oid = f.oidref
+    adql = `SELECT b.main_id AS name, b.ra, b.dec, b.otype, b.sp_type, b.coo_qual, f.flux AS vmag, n.id AS common_name
+      FROM basic AS b
+      JOIN flux AS f ON b.oid = f.oidref
+      ${commonNameJoin}
       WHERE f.filter='V'
       AND ${def.otypeClause}
       AND 1=CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', ${ra}, ${dec}, ${clampedRadius}))
@@ -549,10 +579,11 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     // so there's no single unambiguous alias to prefer there -- main_id
     // stays correct for those, same as the type-only categories.
     const nameExpr = SINGLE_CATALOG_CATEGORIES.has(category) ? 'i.id AS name' : 'b.main_id AS name';
-    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux
+    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux, n.id AS common_name
       FROM basic AS b
       ${identJoin}
       LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
+      ${commonNameJoin}
       WHERE ${whereParts.join(' AND ')}
       ORDER BY name`;
   }
@@ -576,6 +607,9 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
   const iDec = idx('dec');
   const iOtype = idx('otype');
   const iCooQual = idx('coo_qual');
+  const iCommonName = idx('common_name');
+  const cleanCommonName = (raw: string | undefined) =>
+    raw ? raw.replace(/^NAME\s*/, '').trim().replace(/\s+/g, ' ') : null;
 
   if (category !== 'stars') {
     // Non-star categories can come back with multiple rows per object --
@@ -588,7 +622,7 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     const iFilter = idx('filter');
     const iFlux = idx('flux');
     const priority: Record<string, number> = { V: 0, B: 1, g: 2 };
-    const byName = new Map<string, { ra: number; dec: number; otype: string; mag: number | null; filterRank: number }>();
+    const byName = new Map<string, { ra: number; dec: number; otype: string; mag: number | null; filterRank: number; commonName: string | null }>();
     const rewrite = NAME_REWRITES[category];
     for (const r of rows.slice(1)) {
       let name = r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' ');
@@ -599,9 +633,19 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       const filter = r[iFilter];
       const flux = r[iFlux] ? Number(r[iFlux]) : null;
       const filterRank = filter && filter in priority ? priority[filter] : 99;
+      const commonName = cleanCommonName(r[iCommonName]);
       const existing = byName.get(name);
-      if (!existing || filterRank < existing.filterRank) {
-        byName.set(name, { ra: ra_, dec: dec_, otype: r[iOtype], mag: flux, filterRank });
+      if (!existing) {
+        byName.set(name, { ra: ra_, dec: dec_, otype: r[iOtype], mag: flux, filterRank, commonName });
+      } else {
+        if (filterRank < existing.filterRank) {
+          existing.ra = ra_;
+          existing.dec = dec_;
+          existing.otype = r[iOtype];
+          existing.mag = flux;
+          existing.filterRank = filterRank;
+        }
+        if (!existing.commonName && commonName) existing.commonName = commonName;
       }
     }
     let objects = Array.from(byName.entries()).map(([name, o]) => ({
@@ -611,6 +655,7 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       otype: o.otype,
       spType: null,
       mag: o.mag,
+      commonName: o.commonName,
       listNumber: listNumberOf(category, name),
     }));
     if (def.membershipFilter) objects = objects.filter((o) => def.membershipFilter!(o.name));
@@ -638,18 +683,26 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
 
   const iMag = idx('vmag');
   const iSpType = idx('sp_type');
-  const objects = rows
-    .slice(1)
-    .filter((r) => r[iCooQual] !== 'E')
-    .map((r) => ({
-      name: r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' '),
-      ra: Number(r[iRa]),
-      dec: Number(r[iDec]),
-      otype: r[iOtype],
-      spType: r[iSpType] || null,
-      mag: Number(r[iMag]),
-    }))
-    .filter((o) => Number.isFinite(o.ra) && Number.isFinite(o.dec) && Number.isFinite(o.mag));
+  // The common-name LEFT JOIN can multiply a star's row (rare stars carry
+  // more than one recognized proper name) -- group by name and merge
+  // rather than emitting duplicate markers for the same star.
+  const byNameStars = new Map<string, { ra: number; dec: number; otype: string; spType: string | null; mag: number; commonName: string | null }>();
+  for (const r of rows.slice(1)) {
+    if (r[iCooQual] === 'E') continue;
+    const name = r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' ');
+    const ra_ = Number(r[iRa]);
+    const dec_ = Number(r[iDec]);
+    const mag_ = Number(r[iMag]);
+    if (!Number.isFinite(ra_) || !Number.isFinite(dec_) || !Number.isFinite(mag_)) continue;
+    const commonName = cleanCommonName(r[iCommonName]);
+    const existing = byNameStars.get(name);
+    if (!existing) {
+      byNameStars.set(name, { ra: ra_, dec: dec_, otype: r[iOtype], spType: r[iSpType] || null, mag: mag_, commonName });
+    } else if (!existing.commonName && commonName) {
+      existing.commonName = commonName;
+    }
+  }
+  const objects = Array.from(byNameStars.entries()).map(([name, o]) => ({ name, ...o }));
 
   return json(objects, origin);
 }
