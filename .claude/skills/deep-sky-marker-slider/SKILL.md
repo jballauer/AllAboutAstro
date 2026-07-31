@@ -1,6 +1,6 @@
 ---
 name: deep-sky-marker-slider
-description: Add a magnitude-depth slider that labels real catalogued objects visible in a deep-sky photo — companion galaxies, HII (emission-nebula) regions, globular clusters, star clouds/associations, or a mix — revealed brightest first as the slider is dragged. Plate-solve the image via astrometry.net, identify/cross-match objects against SIMBAD (by type: otype='HII', otype='GlCl', or by name for known companion galaxies/star clouds), pull magnitudes from SIMBAD or NED, then render via the DeepSkyMarkerSlider.astro component. Use when the user wants named deep-sky objects labeled on a photo with a slider control, or asks for "reference" on visible structures/companions/clusters in an image. Started 2026-07-30 as hii-region-hover (M33, 5 HII regions, mouseover), same-day converted to hii-region-slider (brightness-ordered reveal), then generalized to deep-sky-marker-slider when rolled out to M31 Mosaic (2 companion galaxies, 1 star cloud, 5 globular clusters) — read the whole history below before assuming this is HII-region-only.
+description: Add a magnitude-depth slider that labels real catalogued objects visible in a deep-sky photo — companion galaxies, HII (emission-nebula) regions, globular clusters, star clouds/associations, or a mix — revealed brightest first as the slider is dragged. Plate-solve the image via astrometry.net, identify/cross-match objects against SIMBAD (by type: otype='HII', otype='GlCl', or by name for known companion galaxies/star clouds), pull magnitudes from SIMBAD or NED, then render via the DeepSkyMarkerSlider.astro component. Use when the user wants named deep-sky objects labeled on a photo with a slider control, or asks for "reference" on visible structures/companions/clusters in an image. Started 2026-07-30 as hii-region-hover (M33, 5 HII regions, mouseover), same-day converted to hii-region-slider (brightness-ordered reveal), then generalized to deep-sky-marker-slider when rolled out to M31 Mosaic (2 companion galaxies, 1 star cloud, 5 globular clusters), then rolled out again to the Markarian Chain in Virgo (8 named Messier/NGC galaxies) attached directly to the plain (non-zoom) hero image itself rather than a second copy of the photo — read the whole history below before assuming this is HII-region-only or always-a-second-copy.
 ---
 
 # Deep-sky marker slider
@@ -34,6 +34,13 @@ different for labeling non-stellar objects.
    override for objects with no citable point magnitude), and a
    `step` prop for when a dataset's magnitudes cluster too tightly for
    whole-integer buckets to stagger them.
+5. 2026-07-30: rolled out to the Markarian Chain in Virgo (8 named
+   Messier/NGC galaxies: M84/86/87/88/89/90/91, NGC 4571), this time
+   **attached directly to the hero image** per Jay's explicit request
+   ("attach it to the hero image, not as a separate image") rather
+   than a second copy of the photo further down the page. This only
+   works because that hero isn't a `ke-zoom-inframe` image — see the
+   updated placement rule below.
 
 If asked for "the HII region thing" or "the star-labeling slider" on a
 new image, build **this** generalized component directly — don't
@@ -198,14 +205,39 @@ interface Props {
   `zoom-and-pan` skill) — that mechanism live-transforms the image via
   CSS `scale()`/`translate()` on click/hover, but this slider's
   percentage-positioned markers don't share that transform and would
-  drift out of alignment once zoomed. Render it on a **second copy of
-  the same photo** further down the page instead, with its own short
-  heading (e.g. `### Objects in this Image`) and one-line intro.
-- **Requires MDX**, since it's a real interactive component embedded
-  *mid-content*, not something `[slug].astro`'s branch-by-`entry.id`
-  pattern can inject at an arbitrary point in rendered markdown.
-  Convert the target `.md` to `.mdx` (gallery collection's loader
-  already globs both) and follow the precedent in
+  drift out of alignment once zoomed. On a `ke-zoom-inframe` page,
+  render the slider on a **second copy of the same photo** further
+  down the page instead, with its own short heading (e.g.
+  `### Objects in this Image`) and one-line intro (M31, M33).
+- **On a plain hero (no in-frame zoom), it can attach directly to the
+  hero itself** instead of adding a second copy — this is what the
+  user usually wants by default; only fall back to a second copy when
+  the hero is zoomable or the user asks for a separate chart. Do this
+  the same way the existing `StarMagnitudeSlider` hero pages work: add
+  an `entry.id === '<slug>'` branch in `src/pages/gallery/[slug].astro`
+  that renders `<DeepSkyMarkerSlider image={entry.data.image} ... />`
+  in place of the plain `<Image>`, with a `markers` array (and a
+  sourcing comment) defined near the top of that file alongside the
+  other hero star/marker datasets. `imageWidth`/`imageHeight` must be
+  the same 1000-wide render dimensions the plain-`<Image>` branch
+  would have used (`Math.round(1000 * nativeHeight / nativeWidth)`
+  for the height) since marker `x`/`y` are pixel coordinates at that
+  render size, not the source image's native resolution — plate-solve
+  and verify against the native file, then scale the resulting pixel
+  positions by `1000 / nativeWidth` before writing them into the
+  marker array (Markarian Chain: native 1200×846, scale 1000/1200).
+  This bypasses the file's `hiresMap`/lightbox-hint logic entirely for
+  that slug, same as the existing StarMagnitudeSlider hero cases (some
+  of which still carry an orphaned, now-unused `hiresMap` entry from
+  before they became a slider hero — harmless, not worth cleaning up).
+  No MDX conversion needed for this path; the `.md` file only needs a
+  short intro sentence and sourcing caption near the top.
+- **Requires MDX** only for the *second-copy* placement, since that's
+  a real interactive component embedded *mid-content*, not something
+  `[slug].astro`'s branch-by-`entry.id` pattern can inject at an
+  arbitrary point in rendered markdown. Convert the target `.md` to
+  `.mdx` (gallery collection's loader already globs both) and follow
+  the precedent in
   `src/content/learning/great-american-solar-eclipse-2024.mdx`:
   `import DeepSkyMarkerSlider from '../../components/DeepSkyMarkerSlider.astro'`
   plus an `export const someMarkers = [...]` block, then
