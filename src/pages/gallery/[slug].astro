@@ -264,6 +264,7 @@ const hiresMap: Record<string, string> = {
   'ngc7822-ced214': '/images/gallery/ngc7822-ced214-hires.jpg',
   'rho-ophiuchus-antares-region': '/images/gallery/rho-ophiuchus-antares-region-hires.jpg',
   'm33-pinwheel-galaxy-early': '/images/gallery/m33-pinwheel-galaxy-early-hires.jpg',
+  'm33-pinwheel-galaxy': '/images/gallery/m33-pinwheel-galaxy-hires.jpg',
   'total-lunar-eclipse-2025': '/images/gallery/total-lunar-eclipse-2025-hires.jpg',
 };
 
@@ -327,7 +328,7 @@ const hires = hiresMap[entry.id];
                 alt={entry.data.title}
                 width={1000}
                 height={Math.round((1000 * entry.data.image.height) / entry.data.image.width)}
-                class={entry.id === 'm31-mosaic' ? 'ke-zoom-inframe' : undefined}
+                class={entry.id === 'm31-mosaic' || entry.id === 'm33-pinwheel-galaxy' ? 'ke-zoom-inframe' : undefined}
               />
             </span>
           ) : (
