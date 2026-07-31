@@ -330,6 +330,15 @@ maximally packed cluster — it falls back to the least-overlapping spot
 that still respects (b), so a marker is never placed on top of an
 unrelated object even under extreme density.
 
+**Constraint (b) checks every ring, including the marker's own.** The
+first version of this engine excluded self from the ring-clearance
+check, on the assumption that a tag sitting near/over its own target
+was fine — Jay corrected this immediately: "the target should exist
+with the target clearly visible," i.e. a label must never cover the
+very object it names either, not just avoid other labels/objects. Any
+future edit to `ringClear()` must keep checking every marker
+(including `i` itself), not just the others.
+
 **Why computing against the full set (not the currently-revealed
 subset) is correct and sufficient**: a non-overlapping layout for the
 complete marker set is automatically non-overlapping for any subset of
@@ -404,10 +413,9 @@ zero-config on any future image, not just the ones already rolled out.
    to patch with a per-marker `tagDx`/`tagDy` on this one image —
    fixing it in the algorithm keeps the component genuinely zero-config
    for the next image and the next person who uses it.
-7. Also confirm no tag covers **another** marker's ring (not just its
-   own — a tag sitting near/over its own ring is normal and expected):
-   compare every tag's bounding box against every *other* marker's dot
-   center, should be zero hits.
+7. Also confirm no tag covers **any** marker's ring, including its
+   own: compare every tag's bounding box against every marker's dot
+   center (self included), should be zero hits.
 
 ## Apply only on request
 
