@@ -46,10 +46,19 @@ zoom.
 
 1. Give the target `<img>` (or Astro `<Image>`) the class `ke-zoom-inframe`,
    conditionally scoped to just that entry/page — follow the pattern in
-   `src/pages/gallery/[slug].astro`:
+   `src/pages/gallery/[slug].astro`, which computes a single `isInFrameZoom`
+   boolean and reuses it for both the image class and the hint text:
    ```astro
-   class={entry.id === 'some-id' ? 'ke-zoom-inframe' : undefined}
+   const isInFrameZoom = entry.id === 'm31-mosaic' || entry.id === 'm33-pinwheel-galaxy';
+   ...
+   class={isInFrameZoom ? 'ke-zoom-inframe' : undefined}
+   ...
+   {hires && <p class="ke-zoom-hint">{isInFrameZoom ? 'Click to Zoom and Pan' : 'Click to Zoom'}</p>}
    ```
+   Add the new entry's id to that boolean when extending to another image —
+   the hint text must say "Click to Zoom and Pan" for in-frame images (they
+   support hover-pan) and stay plain "Click to Zoom" for plain-lightbox
+   images (they don't pan, so the longer wording would overpromise).
 2. Make sure a hi-res source is wired via `data-hires` on an ancestor
    element (see `feedback_ke_hires_lightbox` memory) — the mechanism works
    without one (falls back to a `rect.width * 2.5` default scale using the
