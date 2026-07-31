@@ -61,6 +61,9 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
             <button type="button" data-category="ic">+ IC</button>
             <button type="button" data-category="barnard">+ Barnard</button>
             <button type="button" data-category="arp">+ Arp</button>
+            <button type="button" data-category="herschel400">+ Herschel 400</button>
+            <button type="button" data-category="herschel2">+ Herschel II</button>
+            <button type="button" data-category="caldwell">+ Caldwell</button>
           </div>
           <p class="at-status" id="at-category-status" role="status"></p>
         </div>
@@ -316,6 +319,9 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     ic: { label: 'IC', maglimit: 15, kind: null },
     barnard: { label: 'Barnard', maglimit: 15, kind: null },
     arp: { label: 'Arp', maglimit: 15, kind: null },
+    herschel400: { label: 'Herschel 400', maglimit: 15, kind: null },
+    herschel2: { label: 'Herschel II', maglimit: 15, kind: null },
+    caldwell: { label: 'Caldwell', maglimit: 15, kind: null },
   };
 
   // Human-readable labels for the handful of SIMBAD otype codes this tool's

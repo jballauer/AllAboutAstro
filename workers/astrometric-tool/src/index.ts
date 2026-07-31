@@ -62,9 +62,124 @@ const MAX_MAG_LIMIT = 18;
 const MAJOR_CATALOG_CLAUSE = `(i.id LIKE 'M %' OR i.id LIKE 'NGC %' OR i.id LIKE 'IC %' OR i.id LIKE 'SH %')`;
 const EXCLUDE_STARS_CLAUSE = `b.otype NOT IN (SELECT otype FROM otypedef WHERE path LIKE '*%')`;
 
+// Herschel 400 and Herschel II are amateur-astronomy observing-list
+// curations (compiled by the Astronomical League and, originally, the
+// Rose City Astronomers), not catalogs with their own identifiers in
+// SIMBAD -- confirmed live 2026-08-01 that SIMBAD's `ident` table has
+// zero entries for any "Herschel"/"H400"-style prefix. Their complete,
+// real membership lists (400 NGC numbers each) were instead sourced
+// directly from the Astronomical League's own official PDFs: "The
+// Herschel 400 Club Observing List in NGC Number Order"
+// (astroleague.org/wp-content/uploads/2022/02/h400lstn.pdf) and the
+// Herschel II NGC-ordered list
+// (astroleague.org/wp-content/uploads/2022/02/H2-Lists-2020-NGC.pdf).
+// Both lists are NGC-only (no IC objects), matching the source PDFs.
+const HERSCHEL_400_NGC = new Set([
+  40, 129, 136, 157, 185, 205, 225, 246, 247, 253, 278, 288, 381, 404, 436, 457, 488, 524, 559, 584, 596, 598, 613,
+  615, 637, 651, 654, 659, 663, 720, 752, 772, 779, 869, 884, 891, 908, 936, 1022, 1023, 1027, 1052, 1055, 1084,
+  1245, 1342, 1407, 1444, 1501, 1502, 1513, 1528, 1535, 1545, 1647, 1664, 1788, 1817, 1857, 1907, 1931, 1961, 1964,
+  1980, 1999, 2022, 2024, 2126, 2129, 2158, 2169, 2185, 2186, 2194, 2204, 2215, 2232, 2244, 2251, 2264, 2266, 2281,
+  2286, 2301, 2304, 2311, 2324, 2335, 2343, 2353, 2354, 2355, 2360, 2362, 2371, 2372, 2392, 2395, 2403, 2419, 2420,
+  2421, 2422, 2423, 2438, 2440, 2479, 2482, 2489, 2506, 2509, 2527, 2539, 2548, 2567, 2571, 2613, 2627, 2655, 2681,
+  2683, 2742, 2768, 2775, 2782, 2787, 2811, 2841, 2859, 2903, 2950, 2964, 2974, 2976, 2985, 3034, 3077, 3079, 3115,
+  3147, 3166, 3169, 3184, 3190, 3193, 3198, 3226, 3227, 3242, 3245, 3277, 3294, 3310, 3344, 3377, 3379, 3384, 3395,
+  3412, 3414, 3432, 3486, 3489, 3504, 3521, 3556, 3593, 3607, 3608, 3610, 3613, 3619, 3621, 3626, 3628, 3631, 3640,
+  3655, 3665, 3675, 3686, 3726, 3729, 3810, 3813, 3877, 3893, 3898, 3900, 3912, 3938, 3941, 3945, 3949, 3953, 3962,
+  3982, 3992, 3998, 4026, 4027, 4030, 4036, 4038, 4041, 4051, 4085, 4088, 4102, 4111, 4143, 4147, 4150, 4151, 4179,
+  4203, 4214, 4216, 4245, 4251, 4258, 4261, 4273, 4274, 4278, 4281, 4293, 4303, 4314, 4346, 4350, 4361, 4365, 4371,
+  4394, 4414, 4419, 4429, 4435, 4438, 4442, 4448, 4449, 4450, 4459, 4473, 4477, 4478, 4485, 4490, 4494, 4526, 4527,
+  4535, 4536, 4546, 4548, 4550, 4559, 4565, 4570, 4594, 4596, 4618, 4631, 4636, 4643, 4654, 4656, 4660, 4665, 4666,
+  4689, 4697, 4698, 4699, 4725, 4753, 4754, 4762, 4781, 4800, 4845, 4856, 4866, 4900, 4958, 4995, 5005, 5033, 5054,
+  5195, 5248, 5273, 5322, 5363, 5364, 5466, 5473, 5474, 5557, 5566, 5576, 5631, 5634, 5676, 5689, 5694, 5746, 5846,
+  5866, 5897, 5907, 5982, 6118, 6144, 6171, 6207, 6217, 6229, 6235, 6284, 6287, 6293, 6304, 6316, 6342, 6355, 6356,
+  6369, 6401, 6426, 6440, 6445, 6451, 6514, 6517, 6520, 6522, 6528, 6540, 6543, 6544, 6553, 6568, 6569, 6583, 6624,
+  6629, 6633, 6638, 6642, 6645, 6664, 6712, 6755, 6756, 6781, 6802, 6818, 6823, 6826, 6830, 6834, 6866, 6882, 6885,
+  6905, 6910, 6934, 6939, 6940, 6946, 7000, 7006, 7008, 7009, 7044, 7062, 7086, 7128, 7142, 7160, 7209, 7217, 7243,
+  7296, 7331, 7380, 7448, 7479, 7510, 7606, 7662, 7686, 7723, 7727, 7789, 7790, 7814,
+]);
+
+const HERSCHEL_II_NGC = new Set([
+  23, 24, 125, 151, 175, 198, 206, 214, 217, 315, 337, 357, 410, 428, 499, 513, 514, 604, 636, 660, 665, 672, 706,
+  718, 741, 821, 890, 896, 925, 991, 1003, 1012, 1032, 1035, 1045, 1058, 1060, 1070, 1073, 1087, 1090, 1114, 1156,
+  1161, 1162, 1169, 1172, 1175, 1184, 1187, 1193, 1199, 1207, 1209, 1325, 1332, 1348, 1353, 1400, 1421, 1491, 1507,
+  1514, 1579, 1582, 1587, 1600, 1605, 1618, 1624, 1637, 1662, 1663, 1700, 1762, 1778, 1779, 1832, 1883, 1977, 1985,
+  2023, 2071, 2112, 2139, 2170, 2182, 2192, 2196, 2236, 2245, 2252, 2254, 2259, 2261, 2269, 2274, 2283, 2302, 2309,
+  2316, 2331, 2339, 2346, 2347, 2359, 2366, 2367, 2374, 2396, 2414, 2415, 2432, 2467, 2493, 2500, 2525, 2541, 2610,
+  2639, 2756, 2765, 2781, 2784, 2805, 2855, 2880, 2889, 2986, 3065, 3067, 3073, 3078, 3107, 3145, 3156, 3158, 3162,
+  3177, 3225, 3254, 3274, 3301, 3319, 3338, 3359, 3424, 3430, 3507, 3511, 3513, 3516, 3524, 3547, 3583, 3585, 3596,
+  3599, 3605, 3611, 3622, 3636, 3637, 3642, 3646, 3652, 3659, 3666, 3668, 3669, 3672, 3681, 3682, 3683, 3689, 3693,
+  3705, 3732, 3756, 3887, 3892, 4013, 4024, 4039, 4045, 4047, 4062, 4073, 4096, 4100, 4105, 4124, 4133, 4136, 4138,
+  4144, 4152, 4157, 4168, 4169, 4185, 4189, 4212, 4217, 4220, 4224, 4233, 4235, 4236, 4237, 4241, 4244, 4248, 4250,
+  4256, 4260, 4264, 4267, 4270, 4271, 4290, 4291, 4294, 4298, 4299, 4302, 4310, 4312, 4313, 4319, 4336, 4339, 4340,
+  4343, 4359, 4369, 4379, 4395, 4487, 4517, 4519, 4571, 4586, 4605, 4608, 4612, 4639, 4647, 4691, 4742, 4880, 4902,
+  4904, 4914, 4915, 4928, 4939, 4941, 4956, 4981, 4984, 4999, 5012, 5018, 5020, 5023, 5037, 5044, 5053, 5056, 5061,
+  5068, 5077, 5078, 5084, 5087, 5103, 5129, 5134, 5204, 5308, 5371, 5383, 5426, 5430, 5440, 5443, 5444, 5445, 5447,
+  5448, 5462, 5480, 5481, 5485, 5490, 5493, 5506, 5507, 5520, 5523, 5529, 5533, 5548, 5560, 5582, 5585, 5590, 5595,
+  5597, 5600, 5602, 5605, 5638, 5660, 5668, 5687, 5728, 5750, 5775, 5791, 5806, 5812, 5813, 5831, 5838, 5850, 5854,
+  5861, 5864, 5878, 5879, 5899, 5970, 5985, 6015, 6058, 6070, 6106, 6155, 6166, 6181, 6239, 6340, 6507, 6526, 6548,
+  6596, 6604, 6717, 6772, 6793, 6800, 6804, 6814, 6824, 6857, 6888, 6894, 6907, 6960, 6991, 6992, 6997, 7023, 7031,
+  7042, 7067, 7082, 7129, 7139, 7156, 7171, 7177, 7184, 7218, 7245, 7332, 7354, 7377, 7392, 7419, 7457, 7463, 7465,
+  7492, 7507, 7541, 7562, 7600, 7619, 7623, 7626, 7635, 7640, 7742, 7762, 7785, 7814, 7832,
+]);
+
+// Caldwell catalogue (Patrick Moore, 109 objects). Sourced from Wikipedia's
+// "Caldwell catalogue" table 2026-08-01 and spot-checked against known
+// objects (C1=NGC 188, C57=NGC 6822/Barnard's Galaxy, C77=NGC 5128/
+// Centaurus A, C92=NGC 3372/Carina Nebula, C106=NGC 104/47 Tucanae all
+// confirmed correct). Like Herschel 400/II, Caldwell itself has no SIMBAD
+// identifier -- matched here via the NGC/IC numbers of its member objects
+// instead. Three of the 109 (C9, C41, C99) aren't NGC/IC objects at all;
+// those are matched by exact SIMBAD ident instead (verified live: Sh2-155
+// -> "SH  2-155", the Hyades -> "Cl Melotte   25", the Coalsack -> "NAME
+// Coalsack Nebula"). C14 (the Double Cluster) is two NGC objects, both
+// included.
+const CALDWELL_NGC = new Set([
+  188, 40, 4236, 7023, 6543, 2403, 559, 663, 7635, 6946, 457, 869, 884, 6826, 7243, 147, 185, 7000, 4449, 7662, 891,
+  1275, 2419, 4244, 6888, 752, 5005, 7331, 4631, 6992, 6960, 4889, 4559, 6885, 4565, 2392, 3626, 7006, 7814, 7479,
+  5248, 2261, 6934, 2775, 2237, 2244, 4697, 3115, 2506, 7009, 246, 6822, 2360, 3242, 4038, 4039, 247, 7293, 2362,
+  253, 5694, 1097, 6729, 6302, 300, 2477, 55, 1851, 3132, 6124, 6231, 5128, 6541, 3201, 5139, 6352, 6193, 4945,
+  5286, 6397, 1261, 5823, 6087, 2867, 3532, 3372, 6752, 4755, 6025, 2516, 3766, 4609, 6744, 2070, 362, 4833, 104,
+  6101, 4372, 3195,
+]);
+const CALDWELL_IC = new Set([342, 5146, 405, 1613, 2391, 2944, 2602]);
+const CALDWELL_EXTRA_CLAUSE = `i.id IN ('SH  2-155', 'Cl Melotte   25', 'NAME Coalsack Nebula')`;
+const CALDWELL_EXTRA_NAMES = new Set(['SH 2-155', 'Cl Melotte 25', 'NAME Coalsack Nebula']);
+
+// Anchored at both ends -- NGC/IC catalog numbers are also informally
+// reused as a prefix for objects/features *within* the parent object
+// (star sub-designations like "NGC 6121 27", component suffixes like
+// "NGC 660A"/"NGC 660B", X-ray sources like "NGC 104 125"). A loose
+// `^NGC\s*(\d+)` match treats all of those as the plain parent number --
+// confirmed live: "NGC 660A"/"NGC 660B" (components of one real Herschel
+// II object) and four "NGC 104 ###" X-ray sub-sources inside 47 Tucanae
+// (an X-ray point source isn't excluded by EXCLUDE_STARS_CLAUSE, which
+// only excludes the star branch) both slipped through before this was
+// anchored. Requiring nothing after the digits rejects all of these.
+function isCleanNgcOrIc(name: string): { prefix: 'NGC' | 'IC'; num: number } | null {
+  const m = /^(NGC|IC)\s*(\d+)$/.exec(name);
+  return m ? { prefix: m[1] as 'NGC' | 'IC', num: Number(m[2]) } : null;
+}
+function isHerschel400(name: string): boolean {
+  const c = isCleanNgcOrIc(name);
+  return !!c && c.prefix === 'NGC' && HERSCHEL_400_NGC.has(c.num);
+}
+function isHerschelII(name: string): boolean {
+  const c = isCleanNgcOrIc(name);
+  return !!c && c.prefix === 'NGC' && HERSCHEL_II_NGC.has(c.num);
+}
+function isCaldwell(name: string): boolean {
+  const c = isCleanNgcOrIc(name);
+  if (c) return c.prefix === 'NGC' ? CALDWELL_NGC.has(c.num) : CALDWELL_IC.has(c.num);
+  return CALDWELL_EXTRA_NAMES.has(name);
+}
+
 interface CategoryDef {
   otypeClause?: string;
   catalogClause?: string;
+  // Post-query filter applied after grouping, for categories whose
+  // membership isn't expressible as a SIMBAD identifier pattern (static
+  // observing-list curations matched by NGC/IC number instead).
+  membershipFilter?: (name: string) => boolean;
 }
 
 const CATEGORY_DEFS: Record<string, CategoryDef> = {
@@ -85,8 +200,8 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
     catalogClause: MAJOR_CATALOG_CLAUSE,
   },
   messier: { catalogClause: `i.id LIKE 'M %'` },
-  ngc: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'NGC %'` },
-  ic: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'IC %'` },
+  ngc: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'NGC %'`, membershipFilter: (n) => !!isCleanNgcOrIc(n) },
+  ic: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'IC %'`, membershipFilter: (n) => !!isCleanNgcOrIc(n) },
   barnard: { catalogClause: `i.id LIKE 'Barnard %'` },
   // Halton Arp's "Atlas of Peculiar Galaxies" is catalogued in SIMBAD
   // under the prefix "APG" ("Atlas of Peculiar Galaxies"), not "Arp" --
@@ -95,9 +210,26 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
   // is found via "APG 168"). Renamed back to "Arp NNN" for display since
   // that's the name anyone would actually recognize.
   arp: { catalogClause: `i.id LIKE 'APG %'` },
+  herschel400: {
+    otypeClause: EXCLUDE_STARS_CLAUSE,
+    catalogClause: `i.id LIKE 'NGC %'`,
+    membershipFilter: isHerschel400,
+  },
+  herschel2: {
+    otypeClause: EXCLUDE_STARS_CLAUSE,
+    catalogClause: `i.id LIKE 'NGC %'`,
+    membershipFilter: isHerschelII,
+  },
+  caldwell: {
+    otypeClause: EXCLUDE_STARS_CLAUSE,
+    catalogClause: `(i.id LIKE 'NGC %' OR i.id LIKE 'IC %' OR ${CALDWELL_EXTRA_CLAUSE})`,
+    membershipFilter: isCaldwell,
+  },
 };
 
-const SINGLE_CATALOG_CATEGORIES = new Set(['messier', 'ngc', 'ic', 'barnard', 'arp']);
+const SINGLE_CATALOG_CATEGORIES = new Set([
+  'messier', 'ngc', 'ic', 'barnard', 'arp', 'herschel400', 'herschel2', 'caldwell',
+]);
 
 // Per-category display-name rewrite, applied after the generic
 // asterisk-strip/whitespace-collapse cleanup below. Only "arp" needs one
@@ -389,7 +521,7 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
         byName.set(name, { ra: ra_, dec: dec_, otype: r[iOtype], mag: flux, filterRank });
       }
     }
-    const objects = Array.from(byName.entries()).map(([name, o]) => ({
+    let objects = Array.from(byName.entries()).map(([name, o]) => ({
       name,
       ra: o.ra,
       dec: o.dec,
@@ -397,6 +529,7 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       spType: null,
       mag: o.mag,
     }));
+    if (def.membershipFilter) objects = objects.filter((o) => def.membershipFilter!(o.name));
     return json(objects, origin);
   }
 
