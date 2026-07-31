@@ -60,11 +60,15 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
             <button type="button" data-category="ngc">+ NGC</button>
             <button type="button" data-category="ic">+ IC</button>
             <button type="button" data-category="barnard">+ Barnard</button>
+            <button type="button" data-category="arp">+ Arp</button>
           </div>
           <p class="at-status" id="at-category-status" role="status"></p>
         </div>
 
-        <div class="at-sliders" id="at-sliders"></div>
+        <div class="at-sliders-panel" id="at-sliders-panel" hidden>
+          <button type="button" id="at-reset-sliders-btn">Reset sliders</button>
+          <div class="at-sliders" id="at-sliders"></div>
+        </div>
 
         <div class="at-download" id="at-download-panel" hidden>
           <button type="button" id="at-download-btn">Download labeled image</button>
@@ -251,6 +255,12 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     color: #ffd54a;
   }
 
+  .at-sliders-panel {
+    margin: 0 0 1.25rem;
+  }
+  #at-reset-sliders-btn {
+    margin-bottom: 0.5rem;
+  }
   .at-slider-block {
     max-width: 420px;
     margin: 0.9rem 0;
@@ -305,6 +315,7 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
     ngc: { label: 'NGC', maglimit: 15, kind: null },
     ic: { label: 'IC', maglimit: 15, kind: null },
     barnard: { label: 'Barnard', maglimit: 15, kind: null },
+    arp: { label: 'Arp', maglimit: 15, kind: null },
   };
 
   // Human-readable labels for the handful of SIMBAD otype codes this tool's
@@ -514,7 +525,9 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
   const solveStatus = document.getElementById('at-solve-status');
   const categoriesPanel = document.getElementById('at-categories');
   const categoryStatus = document.getElementById('at-category-status');
+  const slidersPanel = document.getElementById('at-sliders-panel');
   const slidersContainer = document.getElementById('at-sliders');
+  const resetSlidersBtn = document.getElementById('at-reset-sliders-btn');
   const downloadPanel = document.getElementById('at-download-panel');
   const downloadBtn = document.getElementById('at-download-btn');
 
@@ -784,6 +797,7 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
 
       const block = buildSliderBlock(category, added, minBucket, maxBucket);
       slidersContainer.appendChild(block);
+      slidersPanel.hidden = false;
       categoryStatus.textContent = `Added ${added} ${CATEGORY_META[category].label.toLowerCase()}.`;
       layoutLabels();
     } catch (err) {
@@ -795,6 +809,20 @@ const WORKER_URL = 'https://astrometric-tool.jballauer.workers.dev';
 
   document.querySelectorAll('.at-category-buttons button').forEach((btn) => {
     btn.addEventListener('click', () => addCategorySlider(btn.dataset.category));
+  });
+
+  // Clears every active slider/marker while leaving the uploaded image and
+  // its plate-solve (wcs/fieldCenter) untouched, so re-adding sliders
+  // afterward doesn't require re-uploading or re-solving.
+  resetSlidersBtn.addEventListener('click', () => {
+    document.querySelectorAll('.at-marker').forEach((m) => m.remove());
+    slidersContainer.innerHTML = '';
+    slidersPanel.hidden = true;
+    activeCategories.clear();
+    document.querySelectorAll('.at-category-buttons button').forEach((btn) => {
+      btn.disabled = false;
+    });
+    categoryStatus.textContent = '';
   });
 
   let resizeTimer;

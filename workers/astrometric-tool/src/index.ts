@@ -88,9 +88,24 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
   ngc: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'NGC %'` },
   ic: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'IC %'` },
   barnard: { catalogClause: `i.id LIKE 'Barnard %'` },
+  // Halton Arp's "Atlas of Peculiar Galaxies" is catalogued in SIMBAD
+  // under the prefix "APG" ("Atlas of Peculiar Galaxies"), not "Arp" --
+  // confirmed live via a known object (Arp 220 resolves to ident
+  // "APG 220"; M32 itself, a real Arp-catalog companion galaxy of M31,
+  // is found via "APG 168"). Renamed back to "Arp NNN" for display since
+  // that's the name anyone would actually recognize.
+  arp: { catalogClause: `i.id LIKE 'APG %'` },
 };
 
-const SINGLE_CATALOG_CATEGORIES = new Set(['messier', 'ngc', 'ic', 'barnard']);
+const SINGLE_CATALOG_CATEGORIES = new Set(['messier', 'ngc', 'ic', 'barnard', 'arp']);
+
+// Per-category display-name rewrite, applied after the generic
+// asterisk-strip/whitespace-collapse cleanup below. Only "arp" needs one
+// so far (SIMBAD's own catalog prefix doesn't match the catalog's common
+// name).
+const NAME_REWRITES: Record<string, (name: string) => string> = {
+  arp: (name) => name.replace(/^APG\s*/, 'Arp '),
+};
 
 // Extended objects are frequently missing a V-band row in SIMBAD's `flux`
 // table entirely -- e.g. M4 and NGC 6144 (both real globular clusters,
@@ -359,8 +374,10 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     const iFlux = idx('flux');
     const priority: Record<string, number> = { V: 0, B: 1, g: 2 };
     const byName = new Map<string, { ra: number; dec: number; otype: string; mag: number | null; filterRank: number }>();
+    const rewrite = NAME_REWRITES[category];
     for (const r of rows.slice(1)) {
-      const name = r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' ');
+      let name = r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' ');
+      if (rewrite) name = rewrite(name);
       const ra_ = Number(r[iRa]);
       const dec_ = Number(r[iDec]);
       if (!Number.isFinite(ra_) || !Number.isFinite(dec_)) continue;
