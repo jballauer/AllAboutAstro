@@ -1,6 +1,6 @@
 ---
 name: deep-sky-marker-slider
-description: Add a magnitude-depth slider that labels real catalogued objects visible in a deep-sky photo — companion galaxies, HII (emission-nebula) regions, globular clusters, star clouds/associations, or a mix — revealed brightest first as the slider is dragged. Plate-solve the image via astrometry.net, identify/cross-match objects against SIMBAD (by type: otype='HII', otype='GlCl', or by name for known companion galaxies/star clouds), pull magnitudes from SIMBAD or NED, then render via the DeepSkyMarkerSlider.astro component. Use when the user wants named deep-sky objects labeled on a photo with a slider control, or asks for "reference" on visible structures/companions/clusters in an image. Started 2026-07-30 as hii-region-hover (M33, 5 HII regions, mouseover), same-day converted to hii-region-slider (brightness-ordered reveal), then generalized to deep-sky-marker-slider when rolled out to M31 Mosaic (2 companion galaxies, 1 star cloud, 5 globular clusters), then rolled out again to the Markarian Chain in Virgo (8 named Messier/NGC galaxies) attached directly to the plain (non-zoom) hero image itself rather than a second copy of the photo — read the whole history below before assuming this is HII-region-only or always-a-second-copy.
+description: Add a magnitude-depth slider that labels real catalogued objects visible in a deep-sky photo — companion galaxies, HII (emission-nebula) regions, globular clusters, star clouds/associations, or a mix — revealed brightest first as the slider is dragged, with fully automatic client-side label placement (no per-marker manual offset tuning needed). Plate-solve the image via astrometry.net, identify/cross-match objects against SIMBAD (by type: otype='HII', otype='GlCl', or by name for known companion galaxies/star clouds), pull magnitudes from SIMBAD or NED, then render via the DeepSkyMarkerSlider.astro component. Use when the user wants named deep-sky objects labeled on a photo with a slider control, or asks for "reference" on visible structures/companions/clusters in an image. Started 2026-07-30 as hii-region-hover (M33), generalized to deep-sky-marker-slider (M31), rolled out to the Markarian Chain in Virgo (grew to 35 galaxies across follow-up rounds, hero upgraded to zoom-and-pan with the slider moved to a second copy), then gained a real collision-avoiding auto-layout engine on 2026-07-31 replacing all hand-tuned tagDx/tagDy offsets — read the whole history below before assuming this is HII-region-only, always-a-second-copy, or needs manual label tuning.
 ---
 
 # Deep-sky marker slider
@@ -40,7 +40,21 @@ different for labeling non-stellar objects.
    ("attach it to the hero image, not as a separate image") rather
    than a second copy of the photo further down the page. This only
    works because that hero isn't a `ke-zoom-inframe` image — see the
-   updated placement rule below.
+   updated placement rule below. Later the same day, extended to 35
+   markers via a deep magnitude pull, then the hero was upgraded to
+   zoom-and-pan and the slider moved to a second copy (see the
+   placement-rule section for both).
+6. 2026-07-31: replaced hand-tuned `tagDx`/`tagDy` on every marker with
+   a real **automatic label-placement engine** (candidate-search +
+   collision-avoidance, runs client-side) after manually de-overlapping
+   Markarian's 35 markers took ~9 rebuild-and-recheck rounds — see the
+   "Automatic label placement" section below. Also fixed a real
+   misidentification bug this surfaced: a marker Jay flagged as
+   missing (NGC 4402, ~12th mag, "just above M86") turned out to have
+   been swapped for an unrelated ~4px-away fainter background galaxy
+   during an earlier too-tight-radius cone search — always widen the
+   search radius and re-verify by crosshair crop when a "missing
+   object" report doesn't match what a search returns.
 
 If asked for "the HII region thing" or "the star-labeling slider" on a
 new image, build **this** generalized component directly — don't
@@ -195,7 +209,7 @@ interface DeepSkyMarker {
   kind?: string;          // e.g. "Galaxy", "Globular Cluster", "Star Cloud", "HII Region"
   x: number;
   y: number;
-  tagDx?: number; tagDy?: number;  // same overlap-nudge mechanism as StarMagnitudeSlider
+  tagDx?: number; tagDy?: number;  // optional PIN override -- see "Automatic label placement" below. Omit for normal markers; the layout engine positions them.
 }
 interface Props {
   image: ImageMetadata;
@@ -292,6 +306,74 @@ interface Props {
   body wherever it belongs. Reuse the page's own hero image file via
   a second `import` if the chart is a second copy of that photo.
 
+## Automatic label placement
+
+Don't hand-tune `tagDx`/`tagDy` per marker — the component does this
+itself, client-side, and it's what makes a dense field (dozens of
+close-together markers) usable without per-image manual iteration.
+Author markers with just `x`/`y` (and `mag`/`kind`/etc); leave
+`tagDx`/`tagDy` unset unless you genuinely need to pin one.
+
+**How it works** (in the component's `<script>` block, function
+`layoutLabels`): for every marker, in array order (so brightness-first
+authoring order doubles as placement priority), search a ring of
+candidate tag positions at increasing radius and 16 angles around it.
+A candidate is accepted only if it (a) stays within the frame's own
+bounds, (b) doesn't cover **any** other marker's ring — labeled,
+unlabeled, or not yet revealed by the current slider position, doesn't
+matter, since the layout is computed once for the full (all-visible)
+set — and (c) doesn't overlap any tag already placed for a
+higher-priority marker. Among valid candidates at the closest usable
+radius, it further prefers the one whose leader line threads past the
+fewest other rings. If literally nothing satisfies (b)+(c) — a
+maximally packed cluster — it falls back to the least-overlapping spot
+that still respects (b), so a marker is never placed on top of an
+unrelated object even under extreme density.
+
+**Why computing against the full set (not the currently-revealed
+subset) is correct and sufficient**: a non-overlapping layout for the
+complete marker set is automatically non-overlapping for any subset of
+it too. So one computation at page load covers every slider position
+from rest to max — no need to recompute as the slider moves, and it's
+what makes "all labels clearly shown even at max density" hold
+directly, matching what Jay asked for rather than something that only
+happens to look right at whatever density you tested.
+
+**Re-runs**: once on initial page load, again once `document.fonts.ready`
+resolves (a webfont swap after first paint would otherwise leave stale
+measurements), and on window `resize` (debounced ~200ms) — the search
+operates in actual rendered CSS pixels via `getBoundingClientRect()`,
+not the logical 1000-ish px coordinate space markers are authored in,
+so a responsive width change genuinely changes the geometry and needs
+a fresh pass.
+
+**The `tagDx`/`tagDy` pin escape hatch**: set either one on a marker to
+place its tag at an exact fixed offset instead of running the search
+for it. Use this for a case the algorithm can't judge well on its own
+— most commonly co-locating a magnitude-less marker's label with the
+real object it should visually accompany (M31's NGC 206 pattern). A
+pinned marker's final tag box still counts as an obstacle when placing
+every other (auto-placed) marker, so it won't get silently covered.
+M31 and M33's existing hand-authored `tagDx`/`tagDy` values from before
+this engine existed still work as pins and don't need to be removed.
+
+**Verifying it worked** — same DOM-measurement approach as before, but
+now you're confirming the algorithm's output rather than hand-iterating
+toward it:
+```js
+const input = document.querySelector('.dsm-input');
+input.value = input.max;
+input.dispatchEvent(new Event('input', { bubbles: true }));
+// then getBoundingClientRect() + pairwise AABB overlap over every
+// .dsm-tag, same script as documented in "How to verify" below --
+// should return zero collisions with no manual intervention.
+```
+If it doesn't, that's a real bug in the algorithm (or in the frame's
+actual rendered dimensions vs. what was assumed), not something to
+patch around with a manual `tagDx`/`tagDy` — fix the search/scoring
+logic in the component instead, since this is meant to work
+zero-config on any future image, not just the ones already rolled out.
+
 ## How to verify the rendered slider
 
 1. **Brightness ordering**: dispatch `input.value = String(v)` + an
@@ -311,32 +393,21 @@ interface Props {
    check the actual rendered text (not just a quick screenshot glance,
    which can misread small stacked text) before assuming a `tagDx`/
    `tagDy` nudge is needed.
-6. **De-overlapping a dense cluster (10+ markers close together, e.g.
-   Markarian Chain's 35) needs actual DOM measurement, not mental math
-   or eyeballing.** `tagDx`/`tagDy` are *raw CSS pixels applied at
-   whatever width the frame is actually rendered at* (`getComputedStyle`/
-   `getBoundingClientRect`, not the logical 1000px the marker
-   coordinates were authored against) — trying to hand-compute two
-   tags' post-offset positions from their `x`/`y` + `tagDx`/`tagDy`
-   values doesn't reliably predict collisions or clearances (repeatedly
-   wrong during Markarian's 35-marker cleanup: pushing a tag "150px
-   right" against a neighbor computed as "should clear by 150+px" in
-   practice landed 12px apart, because the actual rendered frame width
-   differs from 1000 and every other marker's own translate is stacked
-   into the same crowded region). Do this instead: dispatch an `input`
-   event with `value = input.max` to reveal every marker, then run a
-   `getBoundingClientRect()` pairwise-AABB-overlap script over every
-   `.dsm-tag` and read back the exact list of still-colliding name
-   pairs. Adjust only those, rebuild, re-run the same script — repeat
-   until it returns an empty list. For a tag that keeps colliding with
-   several neighbors no matter which direction it's nudged (it's
-   boxed in on all sides in a genuinely crowded cluster), query the
-   *actual* neighboring tag positions within e.g. a 250px radius (not
-   just the colliding pair) to find real open space before choosing
-   the next offset, and consider shortening an unusually long
-   `catalogName` (a long survey ID makes the tag itself wide enough to
-   collide with things a shorter name wouldn't reach) rather than only
-   pushing it further away.
+6. **De-overlapping a dense cluster is now the layout engine's job, not
+   yours** — see "Automatic label placement" above. Just confirm it
+   actually reached zero collisions on the specific image (the
+   algorithm can still fall back to an overlapping "least-bad" spot on
+   a genuinely maximally-packed cluster): the `getBoundingClientRect()`
+   pairwise-AABB-overlap script there. If it doesn't reach zero,
+   that's a real bug worth fixing in the component's search/scoring
+   (radius steps, angle count, ring-exclusion radius), not something
+   to patch with a per-marker `tagDx`/`tagDy` on this one image —
+   fixing it in the algorithm keeps the component genuinely zero-config
+   for the next image and the next person who uses it.
+7. Also confirm no tag covers **another** marker's ring (not just its
+   own — a tag sitting near/over its own ring is normal and expected):
+   compare every tag's bounding box against every *other* marker's dot
+   center, should be zero hits.
 
 ## Apply only on request
 
