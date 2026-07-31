@@ -44,13 +44,23 @@ const MAX_MAG_LIMIT = 18;
 // nebulae specifically to avoid flooding those sliders with obscure
 // survey-only designations that mean nothing to a casual viewer; the
 // catalog-only categories (messier/ngc/ic/barnard) use catalogClause
-// alone with no otype restriction at all, on purpose -- the whole point
-// of a catalog slider is showing "every kind of object in catalog X",
-// not one object type. Confirmed live identifier formats: Messier "M   4",
-// NGC "NGC  6144", IC "IC    2", Sharpless "SH  2-9" (both Sh1 and Sh2
-// sub-catalogs share the "SH " prefix), Barnard dark nebulae
+// alone with no *positive* otype restriction, on purpose -- the whole
+// point of a catalog slider is showing "every kind of object in catalog
+// X", not one object type. Confirmed live identifier formats: Messier
+// "M   4", NGC "NGC  6144", IC "IC    2", Sharpless "SH  2-9" (both Sh1
+// and Sh2 sub-catalogs share the "SH " prefix), Barnard dark nebulae
 // "Barnard  18".
+//
+// NGC/IC are large general-purpose catalogs that also number individual
+// stars *within* a cluster as sub-entries (e.g. a globular cluster's own
+// member RR Lyrae variables get "NGC 6121 ###"-style designations) --
+// confirmed live within M4's own field: querying "NGC %" turned up 1 real
+// cluster (M4/NGC 6121 itself) plus 231 individual member stars. Since
+// stars already have their own dedicated slider, NGC/IC explicitly
+// exclude the star branch so the catalog slider shows only the cataloged
+// object itself, not everything numbered underneath it.
 const MAJOR_CATALOG_CLAUSE = `(i.id LIKE 'M %' OR i.id LIKE 'NGC %' OR i.id LIKE 'IC %' OR i.id LIKE 'SH %')`;
+const EXCLUDE_STARS_CLAUSE = `b.otype NOT IN (SELECT otype FROM otypedef WHERE path LIKE '*%')`;
 
 interface CategoryDef {
   otypeClause?: string;
@@ -65,8 +75,8 @@ const CATEGORY_DEFS: Record<string, CategoryDef> = {
   hii: { otypeClause: `b.otype = 'HII'`, catalogClause: MAJOR_CATALOG_CLAUSE },
   reflection: { otypeClause: `b.otype = 'RNe'`, catalogClause: MAJOR_CATALOG_CLAUSE },
   messier: { catalogClause: `i.id LIKE 'M %'` },
-  ngc: { catalogClause: `i.id LIKE 'NGC %'` },
-  ic: { catalogClause: `i.id LIKE 'IC %'` },
+  ngc: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'NGC %'` },
+  ic: { otypeClause: EXCLUDE_STARS_CLAUSE, catalogClause: `i.id LIKE 'IC %'` },
   barnard: { catalogClause: `i.id LIKE 'Barnard %'` },
 };
 
