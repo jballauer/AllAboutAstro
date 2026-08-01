@@ -452,6 +452,7 @@ const COMMON_NAME_OVERRIDES: Record<string, string> = {
   'NGC 7635': 'Bubble Nebula',
   'NGC 7662': 'Blue Snowball Nebula',
   // IC
+  'IC 405': 'Flaming Star Nebula',
   'IC 443': 'Jellyfish Nebula',
   'IC 1396': "Elephant's Trunk Nebula",
   'IC 1805': 'Heart Nebula',
