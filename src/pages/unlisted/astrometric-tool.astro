@@ -365,6 +365,20 @@ const CATALOG_GUIDE = [
     color: #ffd54a;
   }
 
+  /* Faint dashed sky-outline for large Messier/NGC objects -- like a star
+     chart's footprint symbol, not meant to be a precise boundary. */
+  .at-outline {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px dashed rgba(255, 213, 74, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    display: none;
+  }
+  .at-outline[data-visible='true'] {
+    display: block;
+  }
+
   .at-sliders-panel {
     margin: 0 0 1.25rem;
   }
@@ -521,6 +535,34 @@ const CATALOG_GUIDE = [
       v += dv;
     }
     return { x: wcs.CRPIX1 + u, y: wcs.CRPIX2 + v };
+  }
+
+  // SIMBAD's galdim_angle is a position angle measured East of North on the
+  // sky, not a screen-space rotation -- rather than assume the photo is
+  // plain North-up/East-left (real uploads can be rotated or mirrored),
+  // project the major/minor axis endpoints through the same radecToPixel()
+  // math used for every marker and measure the resulting angle in actual
+  // image-pixel space, so the ellipse's orientation matches this photo's
+  // real WCS solution regardless of its rotation/parity.
+  function outlineEllipsePixels(wcs, raDeg, decDeg, majArcmin, minArcmin, angleDeg) {
+    const cosDecFactor = Math.cos(decDeg * D2R);
+    const paRad = angleDeg * D2R;
+    function endpoint(semiAxisArcmin, angleRad) {
+      const distDeg = semiAxisArcmin / 60;
+      const dNorth = distDeg * Math.cos(angleRad);
+      const dEast = distDeg * Math.sin(angleRad);
+      return radecToPixel(wcs, raDeg + dEast / cosDecFactor, decDeg + dNorth);
+    }
+    const center = radecToPixel(wcs, raDeg, decDeg);
+    const majEnd = endpoint(majArcmin / 2, paRad);
+    const minEnd = endpoint(minArcmin / 2, paRad + Math.PI / 2);
+    return {
+      cx: center.x,
+      cy: center.y,
+      widthPx: Math.hypot(majEnd.x - center.x, majEnd.y - center.y) * 2,
+      heightPx: Math.hypot(minEnd.x - center.x, minEnd.y - center.y) * 2,
+      angleDeg: (Math.atan2(majEnd.y - center.y, majEnd.x - center.x) * 180) / Math.PI,
+    };
   }
 
   // -- Label auto-layout engine (verbatim port of DeepSkyMarkerSlider's
@@ -752,7 +794,7 @@ const CATALOG_GUIDE = [
     fieldCenter = null;
     activeCategories.clear();
     slidersContainer.innerHTML = '';
-    document.querySelectorAll('.at-marker').forEach((m) => m.remove());
+    document.querySelectorAll('.at-marker, .at-outline').forEach((m) => m.remove());
     categoriesPanel.hidden = true;
     solveStatus.textContent = '';
 
@@ -851,8 +893,13 @@ const CATALOG_GUIDE = [
   // the most-recently-adjusted one.
   function syncVisible(marker) {
     const anyVisible = Object.values(marker._visible).some(Boolean);
-    if (anyVisible) marker.setAttribute('data-visible', 'true');
-    else marker.removeAttribute('data-visible');
+    if (anyVisible) {
+      marker.setAttribute('data-visible', 'true');
+      if (marker._outlineEl) marker._outlineEl.setAttribute('data-visible', 'true');
+    } else {
+      marker.removeAttribute('data-visible');
+      if (marker._outlineEl) marker._outlineEl.removeAttribute('data-visible');
+    }
   }
 
   function findExistingMarker(name) {
@@ -1067,6 +1114,19 @@ const CATALOG_GUIDE = [
         } else {
           const marker = buildMarkerEl(obj, category, x, y, bucket);
           frame.appendChild(marker);
+          if (obj.outline) {
+            const geo = outlineEllipsePixels(wcs, obj.ra, obj.dec, obj.outline.majAxisArcmin, obj.outline.minAxisArcmin, obj.outline.angleDeg);
+            const outlineEl = document.createElement('span');
+            outlineEl.className = 'at-outline';
+            outlineEl.dataset.name = obj.name;
+            outlineEl.style.left = `${(geo.cx / wcs.IMAGEW) * 100}%`;
+            outlineEl.style.top = `${(geo.cy / wcs.IMAGEH) * 100}%`;
+            outlineEl.style.width = `${(geo.widthPx / wcs.IMAGEW) * 100}%`;
+            outlineEl.style.height = `${(geo.heightPx / wcs.IMAGEH) * 100}%`;
+            outlineEl.style.transform = `translate(-50%, -50%) rotate(${geo.angleDeg.toFixed(2)}deg)`;
+            frame.appendChild(outlineEl);
+            marker._outlineEl = outlineEl;
+          }
         }
         minBucket = Math.min(minBucket, bucket);
         maxBucket = Math.max(maxBucket, bucket);
@@ -1100,7 +1160,7 @@ const CATALOG_GUIDE = [
   // its plate-solve (wcs/fieldCenter) untouched, so re-adding sliders
   // afterward doesn't require re-uploading or re-solving.
   resetSlidersBtn.addEventListener('click', () => {
-    document.querySelectorAll('.at-marker').forEach((m) => m.remove());
+    document.querySelectorAll('.at-marker, .at-outline').forEach((m) => m.remove());
     slidersContainer.innerHTML = '';
     slidersPanel.hidden = true;
     activeCategories.clear();
@@ -1149,6 +1209,25 @@ const CATALOG_GUIDE = [
     const lineHeight = 13 * scale;
     const padX = 5 * scale;
     const padY = 3 * scale;
+
+    document.querySelectorAll('.at-outline[data-visible="true"]').forEach((el) => {
+      const cx = (parseFloat(el.style.left) / 100) * naturalWidth;
+      const cy = (parseFloat(el.style.top) / 100) * naturalHeight;
+      const w = (parseFloat(el.style.width) / 100) * naturalWidth;
+      const h = (parseFloat(el.style.height) / 100) * naturalHeight;
+      const rotMatch = /rotate\(([-\d.]+)deg\)/.exec(el.style.transform);
+      const rotDeg = rotMatch ? Number(rotMatch[1]) : 0;
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate((rotDeg * Math.PI) / 180);
+      ctx.setLineDash([6 * scale, 5 * scale]);
+      ctx.strokeStyle = 'rgba(255,213,74,0.5)';
+      ctx.lineWidth = Math.max(1, scale);
+      ctx.beginPath();
+      ctx.ellipse(0, 0, w / 2, h / 2, 0, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+    });
 
     document.querySelectorAll('.at-marker[data-visible="true"]').forEach((m) => {
       const leftPct = parseFloat(m.style.left) / 100;

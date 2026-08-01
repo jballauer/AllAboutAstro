@@ -390,6 +390,18 @@ const NAME_REWRITES: Record<string, (name: string) => string> = {
 // Mosaic).
 const EXTENDED_FLUX_FILTERS = ['V', 'B', 'g'];
 
+// Dashed sky-outline overlay (Jay's request, 2026-08-01) -- deliberately
+// scoped to just Messier/NGC ("keep to large extended objects from only
+// the Messier and NGC catalog") rather than every category, since SIMBAD's
+// galdim_* fields are populated mostly for galaxies and a scattering of
+// bright nebulae, not reliably enough to promise an outline anywhere else.
+// 8 arcmin is a "large" floor -- excludes small/average galaxies (M104 at
+// 8.7' is right at the edge, M51 at 11'x7' clears it) while still catching
+// planetary-nebula-scale objects like M57 (1.15') on purpose, since those
+// are common but tiny and would just be visual clutter as an "outline".
+const OUTLINE_CATEGORIES = new Set(['messier', 'ngc']);
+const LARGE_OUTLINE_MIN_ARCMIN = 8;
+
 function corsHeaders(origin: string | null): HeadersInit {
   const headers: Record<string, string> = {
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
@@ -650,7 +662,8 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     // below naturally returns -1 for every other category, and the
     // existing cleanCommonName(undefined) already resolves that to null.
     const includeCommonName = STAR_CATEGORIES.has(category);
-    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux${includeCommonName ? ', n.id AS common_name' : ''}
+    const includeGaldim = OUTLINE_CATEGORIES.has(category);
+    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux${includeCommonName ? ', n.id AS common_name' : ''}${includeGaldim ? ', b.galdim_majaxis, b.galdim_minaxis, b.galdim_angle' : ''}
       FROM basic AS b
       ${identJoin}
       LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
@@ -692,8 +705,11 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     // three.
     const iFilter = idx('filter');
     const iFlux = idx('flux');
+    const iMajAxis = idx('galdim_majaxis');
+    const iMinAxis = idx('galdim_minaxis');
+    const iAngle = idx('galdim_angle');
     const priority: Record<string, number> = { V: 0, B: 1, g: 2 };
-    const byName = new Map<string, { ra: number; dec: number; otype: string; mag: number | null; filterRank: number; commonName: string | null }>();
+    const byName = new Map<string, { ra: number; dec: number; otype: string; mag: number | null; filterRank: number; commonName: string | null; majAxis: number | null; minAxis: number | null; angle: number | null }>();
     const rewrite = NAME_REWRITES[category];
     for (const r of rows.slice(1)) {
       let name = r[iName].replace(/^\*\s*/, '').trim().replace(/\s+/g, ' ');
@@ -705,9 +721,15 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       const flux = r[iFlux] ? Number(r[iFlux]) : null;
       const filterRank = filter && filter in priority ? priority[filter] : 99;
       const commonName = cleanCommonName(r[iCommonName]);
+      // Same value repeated on every row for this object (galdim_* lives
+      // directly on `basic`, not a joined table with per-filter rows), so
+      // any row that has it is as good as any other.
+      const majAxis = iMajAxis >= 0 && r[iMajAxis] ? Number(r[iMajAxis]) : null;
+      const minAxis = iMinAxis >= 0 && r[iMinAxis] ? Number(r[iMinAxis]) : null;
+      const angle = iAngle >= 0 && r[iAngle] ? Number(r[iAngle]) : null;
       const existing = byName.get(name);
       if (!existing) {
-        byName.set(name, { ra: ra_, dec: dec_, otype: r[iOtype], mag: flux, filterRank, commonName });
+        byName.set(name, { ra: ra_, dec: dec_, otype: r[iOtype], mag: flux, filterRank, commonName, majAxis, minAxis, angle });
       } else {
         if (filterRank < existing.filterRank) {
           existing.ra = ra_;
@@ -717,6 +739,11 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
           existing.filterRank = filterRank;
         }
         if (!existing.commonName && commonName) existing.commonName = commonName;
+        if (existing.majAxis == null && majAxis != null) {
+          existing.majAxis = majAxis;
+          existing.minAxis = minAxis;
+          existing.angle = angle;
+        }
       }
     }
     let objects = Array.from(byName.entries()).map(([name, o]) => ({
@@ -728,6 +755,10 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       mag: o.mag,
       commonName: o.commonName,
       listNumber: listNumberOf(category, name),
+      outline:
+        o.majAxis != null && o.majAxis >= LARGE_OUTLINE_MIN_ARCMIN
+          ? { majAxisArcmin: o.majAxis, minAxisArcmin: o.minAxis ?? o.majAxis, angleDeg: o.angle ?? 0 }
+          : null,
     }));
     if (def.membershipFilter) objects = objects.filter((o) => def.membershipFilter!(o.name));
     if (category === 'wd') {
