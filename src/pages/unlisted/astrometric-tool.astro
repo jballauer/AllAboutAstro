@@ -552,9 +552,24 @@ const CATALOG_GUIDE = [
     return Math.hypot(px - cx, py - cy);
   }
 
+  // Dragging a slider (or moving several at once) can fire many visibility
+  // changes in quick succession -- debounce so a fast drag doesn't run the
+  // full collision-avoidance pass on every intermediate value.
+  let layoutTimer;
+  function scheduleLayout() {
+    window.clearTimeout(layoutTimer);
+    layoutTimer = window.setTimeout(() => layoutLabels(), 60);
+  }
+
   function layoutLabels() {
     const frame = document.getElementById('at-frame');
-    const markerEls = Array.from(document.querySelectorAll('.at-marker'));
+    // Only markers a currently-active slider actually reveals should act as
+    // placement obstacles -- a page can accumulate hundreds of markers
+    // across all fetched categories (e.g. 700+ stars) that stay hidden
+    // until their slider is pulled down. Including hidden ones here was
+    // forcing visible labels to dodge phantom dots nobody can see, which is
+    // what produced needlessly long leader lines into open space.
+    const markerEls = Array.from(document.querySelectorAll('.at-marker[data-visible="true"]'));
     if (!frame || !markerEls.length) return;
 
     markerEls.forEach((m) => m.classList.add('at-measuring'));
@@ -577,7 +592,20 @@ const CATALOG_GUIDE = [
         natTop: tr.y - frameRect.y,
         w: tr.width,
         h: tr.height,
+        mag: m.dataset.mag ? parseFloat(m.dataset.mag) : Infinity,
+        hasName: m.dataset.hasName === '1',
       };
+    });
+
+    // Whoever gets placed first claims the closest/cleanest spot to their
+    // own target, so process brightest-first (fainter/extended objects with
+    // no photometry sort last), then named objects ahead of unnamed ones at
+    // the same brightness, then point sources ahead of extended objects --
+    // matches Jay's stated relocation priority (2026-08-01).
+    items.sort((a, b) => {
+      if (a.mag !== b.mag) return a.mag - b.mag;
+      if (a.hasName !== b.hasName) return a.hasName ? -1 : 1;
+      return 0;
     });
 
     const placed = [];
@@ -654,8 +682,14 @@ const CATALOG_GUIDE = [
 
       if (!best) {
         const cx = item.ringX;
-        const cy = item.ringY + TAG_DEFAULT_Y + item.h / 2;
-        best = { cx, cy, left: cx - item.w / 2, top: item.ringY + TAG_DEFAULT_Y };
+        let left = cx - item.w / 2;
+        let top = item.ringY + TAG_DEFAULT_Y;
+        // True last resort (no legal, overlap-minimized spot found at any
+        // search radius) -- still must not push the box past the frame
+        // edge, so clamp into bounds rather than skipping the check.
+        left = Math.max(EDGE_MARGIN, Math.min(left, frameRect.width - EDGE_MARGIN - item.w));
+        top = Math.max(EDGE_MARGIN, Math.min(top, frameRect.height - EDGE_MARGIN - item.h));
+        best = { cx: left + item.w / 2, cy: top + item.h / 2, left, top };
       }
 
       placed.push({ left: best.left, top: best.top, w: item.w, h: item.h });
@@ -857,6 +891,8 @@ const CATALOG_GUIDE = [
     // show it alongside the catalog designation rather than in place of
     // it -- the designation is still the unambiguous identifier, the name
     // is what most people will actually recognize.
+    marker.dataset.mag = obj.mag != null ? String(obj.mag) : '';
+    marker.dataset.hasName = obj.commonName ? '1' : '0';
     const displayName = obj.commonName ? `${obj.commonName} (${obj.name})` : obj.name;
     // Observing-list catalogs (Herschel 400/II, Caldwell) get their own
     // list position shown alongside the object's real designation, e.g.
@@ -943,6 +979,7 @@ const CATALOG_GUIDE = [
       });
       readoutValue.textContent = `Down to magnitude ${value}`;
       readoutCount.textContent = `${shown} labeled`;
+      scheduleLayout();
     }
     input.addEventListener('input', apply);
     apply();
@@ -1073,11 +1110,7 @@ const CATALOG_GUIDE = [
     categoryStatus.textContent = '';
   });
 
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    window.clearTimeout(resizeTimer);
-    resizeTimer = window.setTimeout(() => layoutLabels(), 200);
-  });
+  window.addEventListener('resize', scheduleLayout);
 
   // ---------------------------------------------------------------------
   // Download: composite the base image + every currently-visible marker
