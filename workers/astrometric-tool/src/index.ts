@@ -14,6 +14,16 @@ const ALLOWED_ORIGINS = new Set([
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024; // 10MB
 const MAX_RADIUS_DEG = 5;
 const MAX_MAG_LIMIT = 18;
+// Hard safety cap on rows returned per cone search, regardless of magnitude
+// limit -- reported live 2026-08-01 (Jay): raising the default depth on a
+// sparse field (Helix Nebula, only 6 stars down to mag 12) is one half of
+// the fix, but the same deeper default would let a genuinely dense field
+// (rich Milky Way star fields, crowded globular clusters) return an
+// unmanageable pile of markers if the slider gets dragged deep. Applied as
+// a SQL "TOP" clause with brightness-first ordering (see ORDER BY changes
+// below) so a truncated result always keeps the brightest/most-relevant
+// objects rather than an arbitrary alphabetical or catalog-order slice.
+const MAX_ROWS_PER_QUERY = 500;
 
 // SIMBAD's `otype` column is a leaf code in a hierarchy (exposed via its
 // own `otypedef` table, with a `path` column like "G > AGN > SyG > Sy2").
@@ -738,7 +748,7 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
 
   let adql: string;
   if (category === 'stars') {
-    adql = `SELECT b.main_id AS name, b.ra, b.dec, b.otype, b.sp_type, b.coo_qual, f.flux AS vmag, n.id AS common_name
+    adql = `SELECT TOP ${MAX_ROWS_PER_QUERY} b.main_id AS name, b.ra, b.dec, b.otype, b.sp_type, b.coo_qual, f.flux AS vmag, n.id AS common_name
       FROM basic AS b
       JOIN flux AS f ON b.oid = f.oidref
       ${commonNameJoin}
@@ -783,13 +793,17 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     // existing cleanCommonName(undefined) already resolves that to null.
     const includeCommonName = STAR_CATEGORIES.has(category);
     const includeGaldim = OUTLINE_CATEGORIES.has(category);
-    adql = `SELECT ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux${includeCommonName ? ', n.id AS common_name' : ''}${includeGaldim ? ', b.galdim_majaxis, b.galdim_minaxis, b.galdim_angle' : ''}
+    // Brightest-first (unknown-magnitude rows last) rather than alphabetical
+    // -- matters once TOP truncates: a dense field should lose its faintest/
+    // unmeasured members first, not an arbitrary alphabetical slice.
+    const orderExpr = 'CASE WHEN f.flux IS NULL THEN 1 ELSE 0 END, f.flux ASC';
+    adql = `SELECT TOP ${MAX_ROWS_PER_QUERY} ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux${includeCommonName ? ', n.id AS common_name' : ''}${includeGaldim ? ', b.galdim_majaxis, b.galdim_minaxis, b.galdim_angle' : ''}
       FROM basic AS b
       ${identJoin}
       LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
       ${includeCommonName ? commonNameJoin : ''}
       WHERE ${whereParts.join(' AND ')}
-      ORDER BY name`;
+      ORDER BY ${orderExpr}`;
   }
 
   const body = new URLSearchParams();

@@ -425,7 +425,12 @@ const CATALOG_GUIDE = [
   const SEARCH_RADII = [26, 40, 58, 80, 105, 135, 170, 210, 250];
 
   const CATEGORY_META = {
-    stars: { label: 'Stars', maglimit: 12, kind: null },
+    // Reported live 2026-08-01 (Jay): a sparse field (Helix Nebula) only
+    // had 6 stars down to mag 12 -- bumped to 15 so sparse fields have more
+    // range to actually reveal. Dense fields are protected separately by
+    // the worker's own MAX_ROWS_PER_QUERY brightness-ordered cap, so this
+    // doesn't reopen the "overwhelming label count" risk.
+    stars: { label: 'Stars', maglimit: 15, kind: null },
     galaxies: { label: 'Galaxies', maglimit: 15, kind: 'Galaxy' },
     globular: { label: 'Globular Clusters', maglimit: 12, kind: 'Globular Cluster' },
     open: { label: 'Open Clusters', maglimit: 12, kind: 'Open Cluster' },
