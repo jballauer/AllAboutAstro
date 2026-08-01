@@ -378,6 +378,96 @@ const NAME_REWRITES: Record<string, (name: string) => string> = {
   arp: (name) => name.replace(/^APG\s*/, 'Arp '),
 };
 
+// Well-known deep-sky common names (Horsehead, Flame, Rosette, etc.).
+// SIMBAD *does* carry a "NAME %" alias for genuinely famous objects like
+// these, same mechanism as star names -- but it's deliberately NOT wired
+// up for catalog/otype categories the way it is for stars (see
+// STAR_CATEGORIES below), because plenty of deep-sky objects have their
+// own unrelated technical "NAME %" rows that read as garbage to a casual
+// viewer (M86 -> "NAME FAUST V051", M87 -> "NAME M 87*"). Rather than try
+// to algorithmically tell "real recognizable name" apart from "technical
+// alias that happens to start with NAME", this is a hand-curated list --
+// same sourcing/verification approach as the Caldwell table above (spot
+// checked against well-known objects). Every key here was confirmed live
+// 2026-08-01 to be the exact post-whitespace-collapse `name` this file
+// would otherwise produce for that object (main_id or single-catalog
+// ident, after the `.replace(/\s+/g, ' ')` cleanup below) -- so this is a
+// straight lookup, not a fuzzy match. Deliberately NOT exhaustive; add to
+// it as more come up rather than trying to enumerate every named object in
+// astronomy up front.
+const COMMON_NAME_OVERRIDES: Record<string, string> = {
+  // Messier
+  'M 1': 'Crab Nebula',
+  'M 8': 'Lagoon Nebula',
+  'M 16': 'Eagle Nebula',
+  'M 17': 'Omega Nebula',
+  'M 20': 'Trifid Nebula',
+  'M 27': 'Dumbbell Nebula',
+  'M 31': 'Andromeda Galaxy',
+  'M 33': 'Triangulum Galaxy',
+  'M 42': 'Orion Nebula',
+  'M 43': "De Mairan's Nebula",
+  'M 51': 'Whirlpool Galaxy',
+  'M 57': 'Ring Nebula',
+  'M 64': 'Black Eye Galaxy',
+  'M 76': 'Little Dumbbell Nebula',
+  'M 81': "Bode's Galaxy",
+  'M 82': 'Cigar Galaxy',
+  'M 83': 'Southern Pinwheel Galaxy',
+  'M 97': 'Owl Nebula',
+  'M 101': 'Pinwheel Galaxy',
+  'M 104': 'Sombrero Galaxy',
+  // NGC
+  'NGC 253': 'Sculptor Galaxy',
+  'NGC 281': 'Pacman Nebula',
+  'NGC 1499': 'California Nebula',
+  'NGC 1977': 'Running Man Nebula',
+  'NGC 2024': 'Flame Nebula',
+  'NGC 2070': 'Tarantula Nebula',
+  'NGC 2174': 'Monkey Head Nebula',
+  'NGC 2237': 'Rosette Nebula',
+  'NGC 2264': 'Christmas Tree Cluster',
+  'NGC 2359': "Thor's Helmet",
+  'NGC 2392': 'Eskimo Nebula',
+  'NGC 3132': 'Southern Ring Nebula',
+  'NGC 3242': 'Ghost of Jupiter',
+  'NGC 3372': 'Carina Nebula',
+  'NGC 3576': 'Statue of Liberty Nebula',
+  'NGC 4565': 'Needle Galaxy',
+  'NGC 5128': 'Centaurus A',
+  'NGC 6302': 'Butterfly Nebula',
+  'NGC 6334': "Cat's Paw Nebula",
+  'NGC 6357': 'Lobster Nebula',
+  'NGC 6543': "Cat's Eye Nebula",
+  'NGC 6826': 'Blinking Planetary',
+  'NGC 6888': 'Crescent Nebula',
+  'NGC 6946': 'Fireworks Galaxy',
+  'NGC 6960': "Witch's Broom Nebula",
+  'NGC 6992': 'Eastern Veil Nebula',
+  'NGC 7000': 'North America Nebula',
+  'NGC 7009': 'Saturn Nebula',
+  'NGC 7023': 'Iris Nebula',
+  'NGC 7293': 'Helix Nebula',
+  'NGC 7380': 'Wizard Nebula',
+  'NGC 7635': 'Bubble Nebula',
+  'NGC 7662': 'Blue Snowball Nebula',
+  // IC
+  'IC 443': 'Jellyfish Nebula',
+  'IC 1396': "Elephant's Trunk Nebula",
+  'IC 1805': 'Heart Nebula',
+  'IC 1848': 'Soul Nebula',
+  'IC 2118': 'Witch Head Nebula',
+  'IC 2177': 'Seagull Nebula',
+  'IC 5070': 'Pelican Nebula',
+  'IC 5146': 'Cocoon Nebula',
+  // Barnard (dark nebulae)
+  'Barnard 33': 'Horsehead Nebula',
+  // Sharpless
+  'SH 2-101': 'Tulip Nebula',
+  'SH 2-155': 'Cave Nebula',
+  'SH 2-276': "Barnard's Loop",
+};
+
 // Extended objects are frequently missing a V-band row in SIMBAD's `flux`
 // table entirely -- e.g. M4 and NGC 6144 (both real globular clusters,
 // verified live) have g/z/K photometry but no V, so an INNER JOIN on
@@ -720,7 +810,10 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       const filter = r[iFilter];
       const flux = r[iFlux] ? Number(r[iFlux]) : null;
       const filterRank = filter && filter in priority ? priority[filter] : 99;
-      const commonName = cleanCommonName(r[iCommonName]);
+      // Curated override wins where it exists (guaranteed to be an actual
+      // recognizable name); falls back to the live SIMBAD alias join for
+      // categories that have one (star categories only, see includeCommonName).
+      const commonName = COMMON_NAME_OVERRIDES[name] ?? cleanCommonName(r[iCommonName]);
       // Same value repeated on every row for this object (galdim_* lives
       // directly on `basic`, not a joined table with per-filter rows), so
       // any row that has it is as good as any other.
