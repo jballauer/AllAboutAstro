@@ -468,6 +468,31 @@ const COMMON_NAME_OVERRIDES: Record<string, string> = {
   'SH 2-276': "Barnard's Loop",
 };
 
+// Fallback angular size for well-known Messier/NGC nebulae that SIMBAD's
+// own galdim_* fields leave blank -- reported live 2026-08-01: NGC 2024
+// (Flame Nebula) has real, large size on the sky (~30') but SIMBAD has no
+// galdim data on file for it at all, because galdim_* is populated almost
+// exclusively for objects classified as galaxies, not the 'HII'/'Cl*'/etc
+// types most bright nebulae carry. Sourced from each object's Wikipedia
+// infobox "Apparent dimensions (V)" field 2026-08-01, degrees converted to
+// arcmin; angle omitted (treated as 0) where Wikipedia doesn't give a
+// position angle either -- these are approximate/representative sizes for
+// a faint reference outline, not survey-grade photometric measurements.
+// Deliberately small and hand-picked rather than exhaustive: a few large,
+// well-known objects (Seagull Nebula, the individual Veil Nebula segments,
+// California Nebula) were looked up but skipped because no reliable
+// source gave a full major/minor/angle triple -- better to leave those
+// showing no outline than to invent a size.
+const SIZE_OVERRIDES: Record<string, { majAxisArcmin: number; minAxisArcmin: number; angleDeg: number }> = {
+  'M 8': { majAxisArcmin: 90, minAxisArcmin: 40, angleDeg: 0 }, // Lagoon Nebula
+  'NGC 281': { majAxisArcmin: 35, minAxisArcmin: 35, angleDeg: 0 }, // Pacman Nebula
+  'NGC 2024': { majAxisArcmin: 30, minAxisArcmin: 30, angleDeg: 0 }, // Flame Nebula
+  'NGC 2174': { majAxisArcmin: 40, minAxisArcmin: 40, angleDeg: 0 }, // Monkey Head Nebula
+  'NGC 2237': { majAxisArcmin: 78, minAxisArcmin: 78, angleDeg: 0 }, // Rosette Nebula
+  'NGC 3372': { majAxisArcmin: 120, minAxisArcmin: 120, angleDeg: 0 }, // Carina Nebula
+  'NGC 7000': { majAxisArcmin: 120, minAxisArcmin: 100, angleDeg: 0 }, // North America Nebula
+};
+
 // Extended objects are frequently missing a V-band row in SIMBAD's `flux`
 // table entirely -- e.g. M4 and NGC 6144 (both real globular clusters,
 // verified live) have g/z/K photometry but no V, so an INNER JOIN on
@@ -848,10 +873,14 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
       mag: o.mag,
       commonName: o.commonName,
       listNumber: listNumberOf(category, name),
-      outline:
-        o.majAxis != null && o.majAxis >= LARGE_OUTLINE_MIN_ARCMIN
-          ? { majAxisArcmin: o.majAxis, minAxisArcmin: o.minAxis ?? o.majAxis, angleDeg: o.angle ?? 0 }
-          : null,
+      outline: (() => {
+        const fallback = SIZE_OVERRIDES[name];
+        const maj = o.majAxis ?? fallback?.majAxisArcmin ?? null;
+        if (maj == null || maj < LARGE_OUTLINE_MIN_ARCMIN) return null;
+        const min = o.minAxis ?? fallback?.minAxisArcmin ?? maj;
+        const angle = o.angle ?? fallback?.angleDeg ?? 0;
+        return { majAxisArcmin: maj, minAxisArcmin: min, angleDeg: angle };
+      })(),
     }));
     if (def.membershipFilter) objects = objects.filter((o) => def.membershipFilter!(o.name));
     if (category === 'wd') {
