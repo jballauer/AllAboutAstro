@@ -795,15 +795,22 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     const includeGaldim = OUTLINE_CATEGORIES.has(category);
     // Brightest-first (unknown-magnitude rows last) rather than alphabetical
     // -- matters once TOP truncates: a dense field should lose its faintest/
-    // unmeasured members first, not an arbitrary alphabetical slice.
-    const orderExpr = 'CASE WHEN f.flux IS NULL THEN 1 ELSE 0 END, f.flux ASC';
-    adql = `SELECT TOP ${MAX_ROWS_PER_QUERY} ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux${includeCommonName ? ', n.id AS common_name' : ''}${includeGaldim ? ', b.galdim_majaxis, b.galdim_minaxis, b.galdim_angle' : ''}
+    // unmeasured members first, not an arbitrary alphabetical slice. Two
+    // ADQL gotchas confirmed live 2026-08-01 fixing an earlier version of
+    // this query that broke every non-star category: SIMBAD's ADQL parser
+    // doesn't support CASE expressions at all ("CASE is not supported in
+    // ADQL, but is however a reserved word"), and ORDER BY only accepts a
+    // SELECT-aliased column, not a raw table.column expression ("Encountered
+    // '.' ... expecting ASC/DESC"). Plain ORDER BY on an aliased nullable
+    // column already sorts NULLs after every real value here (verified live
+    // against a real mixed field), so no CASE fallback is even needed.
+    adql = `SELECT TOP ${MAX_ROWS_PER_QUERY} ${nameExpr}, b.ra, b.dec, b.otype, b.coo_qual, f.filter, f.flux AS flux_val${includeCommonName ? ', n.id AS common_name' : ''}${includeGaldim ? ', b.galdim_majaxis, b.galdim_minaxis, b.galdim_angle' : ''}
       FROM basic AS b
       ${identJoin}
       LEFT JOIN flux AS f ON b.oid = f.oidref AND f.filter IN (${filterList})
       ${includeCommonName ? commonNameJoin : ''}
       WHERE ${whereParts.join(' AND ')}
-      ORDER BY ${orderExpr}`;
+      ORDER BY flux_val ASC`;
   }
 
   const body = new URLSearchParams();
@@ -838,7 +845,7 @@ async function handleSimbadCone(request: Request, origin: string | null): Promis
     // (V > B > g), or no magnitude at all if the object has none of the
     // three.
     const iFilter = idx('filter');
-    const iFlux = idx('flux');
+    const iFlux = idx('flux_val');
     const iMajAxis = idx('galdim_majaxis');
     const iMinAxis = idx('galdim_minaxis');
     const iAngle = idx('galdim_angle');
