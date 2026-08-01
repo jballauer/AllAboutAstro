@@ -489,6 +489,10 @@ const SIZE_OVERRIDES: Record<string, { majAxisArcmin: number; minAxisArcmin: num
   'NGC 2024': { majAxisArcmin: 30, minAxisArcmin: 30, angleDeg: 0 }, // Flame Nebula
   'NGC 2174': { majAxisArcmin: 40, minAxisArcmin: 40, angleDeg: 0 }, // Monkey Head Nebula
   'NGC 2237': { majAxisArcmin: 78, minAxisArcmin: 78, angleDeg: 0 }, // Rosette Nebula
+  // California Nebula -- Wikipedia gives only the 150' major-axis length,
+  // no minor axis/angle; stellarium-web.org's own chart (2026-08-01) shows
+  // a clean 160'x40' ellipse rendered close to vertical, filling the gap.
+  'NGC 1499': { majAxisArcmin: 160, minAxisArcmin: 40, angleDeg: 0 }, // California Nebula
   'NGC 3372': { majAxisArcmin: 120, minAxisArcmin: 120, angleDeg: 0 }, // Carina Nebula
   'NGC 7000': { majAxisArcmin: 120, minAxisArcmin: 100, angleDeg: 0 }, // North America Nebula
 };
