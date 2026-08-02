@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Fill in after deploying the Cloudflare Worker (see
 // workers/astrometric-tool/README.md) -- `npx wrangler deploy` prints the
@@ -33,7 +33,6 @@ const CATALOG_GUIDE = [
 <BaseLayout
   title="Astrometric Labeling Tool"
   description="Upload an astrophoto, plate-solve it, and add sliders that label the stars and deep-sky objects in the field."
-  noindex={true}
 >
   <article class="at-tool">
     <h1>Astrometric Labeling Tool</h1>
