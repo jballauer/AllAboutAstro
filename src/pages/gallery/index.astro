@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
+import toolExampleImage from '../../content/gallery/_images/m45-pleiades-mosaic.jpg';
 
 const allImages = await getCollection('gallery', ({ data }) => !data.draft && data.showInGallery);
 
@@ -31,18 +32,24 @@ const thumbPosition: Record<string, string> = {
 ---
 
 <BaseLayout title="Astro Gallery">
+  <article>
   <h1>Astrophotography by Jay Ballauer</h1>
   <p>Here is a selection of just some of the images I have taken over the many years of pointing a telescope at the night sky. For the most part, they are taken with a wide variety of apochromatic refractors, ranging from 3" to 6", with narrow-field images taken with a 12.5" RCOS RC. A variety of cameras are used and you can assume that the images are from a cooled astro CCD unless otherwise indicated in the title. Clicking on any of the images will bring up a separate page with more information about it. My goal is to add more images over time, as well as provide more of the individual pages full of details about them.</p>
   <aside class="ke-sidebar" data-side="right">
-    <h2>Try the Astrometric Labeling Tool</h2>
-    <p>Upload your own astrophoto and it gets plate-solved against the real sky &mdash; then drag sliders to label the stars, galaxies, and clusters in the field, straight from real astronomical catalogs. Upload a shot of the Pleiades, for example, and reveal every named star down to whatever magnitude you choose.</p>
+    <h2>Sidebar: AllAboutAstro Labeling Tool</h2>
+    <span class="at-example-frame" data-hires={toolExampleImage.src}>
+      <Image src={toolExampleImage} alt="Pleiades (M45) mosaic, labeled with the tool" width={900} />
+    </span>
+    <p class="at-example-caption"><a href="/gallery/m45-pleiades-mosaic/">See it live on the Pleiades mosaic &rarr;</a></p>
+    <p>I built this myself, and it's dead simple to use: upload a photo, click one button, and it figures out exactly where in the sky it's pointed &mdash; no typing in coordinates, no account, no special knowledge needed.</p>
+    <p>Once it knows what it's looking at, you can add sliders that reveal the stars, galaxies, and nebulae hiding in your shot, dragging deeper to bring in fainter ones, each one labeled with its real name straight from professional catalogs. It's a great way to finally find out what's actually in a photo you took &mdash; then download the labeled version to keep.</p>
     <p><a href="/astrometric-tool/">Open the tool &rarr;</a></p>
   </aside>
-  <p>Some images also include an interactive slider below them &mdash; drag it to reveal the stars in that photo, labeled with their name and magnitude, straight from real astronomical catalogs.</p>
+  <p>Some images also include an interactive slider below them &mdash; drag it to reveal the stars in that photo, labeled with their name and magnitude, straight from real astronomical catalogs. I created the tool and I thought you'd appreciate trying it with your own images! (see Sidebar: AllAboutAstro Labeling Tool).</p>
   <p>Still sorting through older images from past cameras and setups? Take a look at the <a href="/gallery/legacy/">legacy gallery</a> &mdash; a working area of earlier and lesser attempts that haven't yet made the cut for the main collection above.</p>
   <div class="grid">
     {images.map((entry) => (
-      <a class="tile" href={`/gallery/${entry.id}/`}>
+      <a class="tile no-lightbox" href={`/gallery/${entry.id}/`}>
         {entry.data.image && (
           <span class="tile-image">
             <Image
@@ -58,18 +65,75 @@ const thumbPosition: Record<string, string> = {
       </a>
     ))}
   </div>
+  </article>
 </BaseLayout>
 
 <style>
+  /* Tiles are inline-block (not a grid) so they flow around the floated
+     .ke-sidebar tool teaser above, the same way wrapped text does -- a CSS
+     grid/flex container establishes its own formatting context and would
+     just shrink to the space beside the sidebar for its *entire* height,
+     wasting the freed-up width once the sidebar ends. Floating the tiles
+     themselves instead of using inline-block was tried first, but same-side
+     floats of uneven row height can leave gaps of their own (an earlier row
+     "uses up" a column that a later, taller row can't reclaim) -- inline
+     layout recomputes the available width fresh on every line, so it can't
+     strand a gap like that. `font-size: 0`/reset below just collapses the
+     whitespace gap inline-block normally leaves between tags. */
   .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1.5rem;
     margin-top: 1.5rem;
+    font-size: 0;
   }
   .tile {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    margin: 0 4% 1.5rem 0;
+    box-sizing: border-box;
+    font-size: var(--font-body-size);
     color: inherit;
     text-decoration: none;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+  .tile:nth-child(4n) {
+    margin-right: 0;
+  }
+  @media (max-width: 900px) {
+    .tile {
+      width: 30%;
+      margin-right: 5%;
+    }
+    .tile:nth-child(4n) {
+      margin-right: 5%;
+    }
+    .tile:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    .tile {
+      width: 47%;
+      margin-right: 6%;
+    }
+    .tile:nth-child(3n) {
+      margin-right: 6%;
+    }
+    .tile:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 420px) {
+    .tile {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  /* Pop the whole tile forward on hover -- scale it up and lift it above
+     its neighbors (they don't reflow, it just overlaps them slightly). */
+  .tile:hover {
+    transform: scale(1.06);
+    z-index: 5;
   }
   /* 4:3 crop (close to the site's typical astrophoto proportions --
      3:2 to 4:3 in practice) instead of a full square, so less of each
@@ -77,11 +141,21 @@ const thumbPosition: Record<string, string> = {
   .tile-image {
     position: relative;
     display: block;
+    transition: box-shadow 0.2s ease;
+  }
+  .tile:hover .tile-image {
+    box-shadow:
+      0 12px 28px rgba(0, 0, 0, 0.65),
+      0 0 0 2px rgba(124, 184, 255, 0.6);
   }
   .tile-image :global(img) {
     display: block;
     width: 100%;
     height: auto;
+    transition: filter 0.2s ease;
+  }
+  .tile:hover .tile-image :global(img) {
+    filter: brightness(1.15) saturate(1.1);
   }
   /* Caption overlaid directly on the image, bottom-anchored, capped at
      1/4 of the image's own height so it stays a minor accent rather than
@@ -102,5 +176,24 @@ const thumbPosition: Record<string, string> = {
     font-family: var(--font-body);
     font-size: 0.9rem;
     line-height: 1.2;
+  }
+  @media (min-width: 701px) {
+    .ke-sidebar[data-side='right'] {
+      width: 50%;
+    }
+  }
+  .at-example-frame {
+    display: block;
+  }
+  .at-example-frame :global(img) {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    cursor: zoom-in;
+  }
+  .at-example-caption {
+    margin: 0.5rem 0 1rem;
+    font-size: 0.85rem;
   }
 </style>
