@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  id: string;
+  title: string;
+  image?: ImageMetadata;
+  thumbnailImage?: ImageMetadata;
+  position?: string;
+}
+
+const { id, title, image, thumbnailImage, position } = Astro.props;
+---
+
+<a class="tile no-lightbox" href={`/gallery/${id}/`}>
+  {image && (
+    <span class="tile-image">
+      <Image src={thumbnailImage ?? image} alt="" width={400} height={300} position={position} />
+      <span class="tile-caption">{title}</span>
+    </span>
+  )}
+</a>
+
+<style>
+  /* Pop the whole tile forward on hover -- scale it up and lift it above
+     its neighbors (they don't reflow, it just overlaps them slightly). */
+  .tile {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  .tile:hover {
+    transform: scale(1.06);
+    z-index: 5;
+  }
+  /* 4:3 crop (close to the site's typical astrophoto proportions --
+     3:2 to 4:3 in practice) instead of a full square, so less of each
+     photo needs to be cropped away than a 1:1 thumbnail would require. */
+  .tile-image {
+    position: relative;
+    display: block;
+    transition: box-shadow 0.2s ease;
+  }
+  .tile:hover .tile-image {
+    box-shadow:
+      0 12px 28px rgba(0, 0, 0, 0.65),
+      0 0 0 2px rgba(124, 184, 255, 0.6);
+  }
+  .tile-image :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.2s ease;
+  }
+  .tile:hover .tile-image :global(img) {
+    filter: brightness(1.15) saturate(1.1);
+  }
+  /* Caption overlaid directly on the image, bottom-anchored, capped at
+     1/4 of the image's own height so it stays a minor accent rather than
+     covering a third of the photo. */
+  .tile-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.6rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+</style>
