@@ -30,50 +30,26 @@ const images = [...known, ...undated];
 const thumbPosition: Record<string, string> = {
   'comet-neowise-timelapse': 'left',
 };
-
-// A small dedicated 2-column mini-grid runs alongside the tool sidebar;
-// the rest continue below in the regular 4-column grid. The mini-grid and
-// the sidebar are flex siblings (see .hero-row below) stretched to equal
-// height, with the mini-grid's rows sized in `fr` units, so it always
-// fills exactly as much vertical space as the sidebar actually renders at
-// -- no guessing a row count that happens to match the sidebar's height
-// (a static row count left a leftover void one way or a stranded gap the
-// other way, depending whether it guessed short or long).
-const sidebarImages = images.slice(0, 4);
-const remainingImages = images.slice(4);
 ---
 
 <BaseLayout title="Astro Gallery">
   <article>
   <h1>Astrophotography by Jay Ballauer</h1>
   <p>Here is a selection of just some of the images I have taken over the many years of pointing a telescope at the night sky. For the most part, they are taken with a wide variety of apochromatic refractors, ranging from 3" to 6", with narrow-field images taken with a 12.5" RCOS RC. A variety of cameras are used and you can assume that the images are from a cooled astro CCD unless otherwise indicated in the title. Clicking on any of the images will bring up a separate page with more information about it. My goal is to add more images over time, as well as provide more of the individual pages full of details about them.</p>
+  <aside class="ke-sidebar" data-side="right">
+    <h2>Sidebar: AllAboutAstro Labeling Tool</h2>
+    <span class="at-example-frame" data-hires={toolExampleImage.src}>
+      <Image src={toolExampleImage} alt="Pleiades (M45) mosaic, labeled with the tool" width={900} />
+    </span>
+    <p class="at-example-caption"><a href="/gallery/m45-pleiades-mosaic/">See it live on the Pleiades mosaic &rarr;</a></p>
+    <p>I built this myself, and it's dead simple to use: upload a photo, click one button, and it figures out exactly where in the sky it's pointed &mdash; no typing in coordinates, no account, no special knowledge needed.</p>
+    <p>Once it knows what it's looking at, you can add sliders that reveal the stars, galaxies, and nebulae hiding in your shot, dragging deeper to bring in fainter ones, each one labeled with its real name straight from professional catalogs. It's a great way to finally find out what's actually in a photo you took &mdash; then download the labeled version to keep.</p>
+    <p><a href="/astrometric-tool/">Open the tool &rarr;</a></p>
+  </aside>
   <p>Some images also include an interactive slider below them &mdash; drag it to reveal the stars in that photo, labeled with their name and magnitude, straight from real astronomical catalogs. I created the tool and I thought you'd appreciate trying it with your own images! (see Sidebar: AllAboutAstro Labeling Tool).</p>
-  <div class="hero-row">
-    <div class="mini-grid">
-      {sidebarImages.map((entry) => (
-        <GalleryTile
-          id={entry.id}
-          title={entry.data.title}
-          image={entry.data.image}
-          thumbnailImage={entry.data.thumbnailImage}
-          position={thumbPosition[entry.id]}
-        />
-      ))}
-    </div>
-    <aside class="ke-sidebar" data-side="right">
-      <h2>Sidebar: AllAboutAstro Labeling Tool</h2>
-      <span class="at-example-frame" data-hires={toolExampleImage.src}>
-        <Image src={toolExampleImage} alt="Pleiades (M45) mosaic, labeled with the tool" width={900} />
-      </span>
-      <p class="at-example-caption"><a href="/gallery/m45-pleiades-mosaic/">See it live on the Pleiades mosaic &rarr;</a></p>
-      <p>I built this myself, and it's dead simple to use: upload a photo, click one button, and it figures out exactly where in the sky it's pointed &mdash; no typing in coordinates, no account, no special knowledge needed.</p>
-      <p>Once it knows what it's looking at, you can add sliders that reveal the stars, galaxies, and nebulae hiding in your shot, dragging deeper to bring in fainter ones, each one labeled with its real name straight from professional catalogs. It's a great way to finally find out what's actually in a photo you took &mdash; then download the labeled version to keep.</p>
-      <p><a href="/astrometric-tool/">Open the tool &rarr;</a></p>
-    </aside>
-  </div>
   <p>Still sorting through older images from past cameras and setups? Take a look at the <a href="/gallery/legacy/">legacy gallery</a> &mdash; a working area of earlier and lesser attempts that haven't yet made the cut for the main collection above.</p>
   <div class="grid">
-    {remainingImages.map((entry) => (
+    {images.map((entry) => (
       <GalleryTile
         id={entry.id}
         title={entry.data.title}
@@ -87,77 +63,74 @@ const remainingImages = images.slice(4);
 </BaseLayout>
 
 <style>
-  /* The mini-grid and the sidebar are flex siblings stretched to equal
-     height (align-items: stretch, the flex default) -- that's what
-     guarantees the mini-grid always fills exactly as much vertical space
-     as the sidebar renders at, with no leftover void either direction.
-     Its rows are sized in `fr` units against that stretched height, and
-     the tiles/images inside are told to fill their cell (height: 100%,
-     object-fit: cover) instead of sizing to their own aspect ratio, so
-     they actually stretch to match rather than just leaving blank space
-     in a taller cell. (An earlier attempt tried to *guess* a row count
-     that happened to match the sidebar's real rendered height using
-     float-driven shrink-to-fit -- that's inherently fragile, since the
-     sidebar's height depends on paragraph line-wrapping, viewport width,
-     etc. Flex stretch sidesteps the guess entirely.) */
-  .hero-row {
-    display: flex;
-    align-items: stretch;
-    gap: 1.75rem;
-    margin: 1.5rem 0;
-  }
-  .hero-row .mini-grid {
-    flex: 1 1 0%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  .hero-row .mini-grid :global(.tile) {
-    height: 100%;
-  }
-  .hero-row .mini-grid :global(.tile-image) {
-    height: 100%;
-  }
-  .hero-row .mini-grid :global(.tile-image img) {
-    height: 100%;
-    object-fit: cover;
-  }
-  .hero-row .ke-sidebar[data-side='right'] {
-    float: none;
-    margin: 0;
-    width: 50%;
-  }
-  @media (max-width: 700px) {
-    .hero-row {
-      flex-wrap: wrap;
-    }
-    .hero-row .mini-grid {
-      flex-basis: 100%;
-    }
-    .hero-row .ke-sidebar[data-side='right'] {
-      width: 100%;
-    }
-  }
+  /* One grid, one tile size, throughout -- the sidebar is a plain float,
+     and the tiles are inline-block (not floats, not a grid/flex container)
+     so they wrap around it exactly the way body text does: 2 fit per line
+     while the sidebar is active, 4 once it's cleared, all at the same
+     fixed size. (Two earlier attempts got this wrong: floated tiles can
+     strand a gap when a much taller opposing float is involved, since the
+     float-placement algorithm searches for "highest available" slots
+     rather than laying out strictly line-by-line; a CSS grid/flexbox
+     container avoids a float using its width *at the point it starts*,
+     then keeps that width for its whole height even after the float ends,
+     wasting the freed-up space below. Plain inline-block content re-lays
+     out fresh on every line, so it can't develop either problem.)
+
+     Getting even gutters without an nth-child(4n)-style "is this the last
+     one in its row" check (which breaks the moment a row doesn't have
+     exactly 4 items, i.e. every row beside the sidebar) needs the classic
+     negative-margin trick instead: every tile gets a left gutter,
+     including the first one in each row, and the container's matching
+     negative left margin swallows that leading gutter back to zero -- so
+     each row starts flush regardless of how many tiles are in it. */
   .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
     margin-top: 1.5rem;
+    margin-left: -1.5rem;
+    font-size: 0;
+  }
+  /* Tile width as a fraction of .grid's own content box (its containing
+     block for the percentage below) -- NOT of the article. Because
+     .grid's negative margin-left makes its content box exactly one
+     gutter wider than the article (auto-width absorbs the negative
+     margin), "1/4 of container, minus one gutter" is the formula that
+     makes a full row of 4 actually span the article's real width: with
+     G = article-width + gutter, solving 4t + 3*gutter = article-width for
+     t and rewriting in terms of G gives t = G/4 - gutter, i.e. `25% -
+     gutter` below (not the more obvious-looking `(100% - 3*gutter)/4`,
+     which is 100% of the *wrong* (wider) base and overshoots). */
+  .grid :global(.tile) {
+    width: calc(25% - 1.5rem);
+    margin: 0 0 1.5rem 1.5rem;
+    font-size: var(--font-body-size);
   }
   @media (max-width: 900px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
+    .grid :global(.tile) {
+      width: calc(33.3333% - 1.5rem);
     }
   }
   @media (max-width: 600px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
+    .grid :global(.tile) {
+      width: calc(50% - 1.5rem);
     }
   }
   @media (max-width: 420px) {
     .grid {
-      grid-template-columns: 1fr;
+      margin-left: 0;
+    }
+    .grid :global(.tile) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  /* The sidebar's width is picked so exactly 2 (fixed-size, 4-column-wide)
+     tiles fit on the line beside it: available-width-beside-sidebar must
+     equal 2 tile-widths + 1 gutter between them. Solving that against the
+     tile-width formula above (and the sidebar's own 1.75rem left gutter)
+     gives 50% - 16px -- not a round number, but it's what makes the two
+     column counts line up instead of just approximately fitting. */
+  @media (min-width: 701px) {
+    .ke-sidebar[data-side='right'] {
+      width: calc(50% - 16px);
     }
   }
   .at-example-frame {
