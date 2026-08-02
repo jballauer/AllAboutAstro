@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Running changelog for the AllAboutAstro Labeling Tool. Add a new entry
+// (newest first) whenever a real user-facing enhancement ships -- bug
+// fixes and internal refactors don't need their own line unless they
+// change what the tool does or how it behaves.
+const VERSIONS = [
+  {
+    version: '1.0',
+    date: '2026-08-01',
+    notes: [
+      'Initial public release, linked from the Gallery page.',
+      'Upload an astrophoto and plate-solve it against the real sky.',
+      'Add sliders that reveal labels by object type -- Stars, Galaxies, Globular Clusters, Open Clusters, HII Regions, Reflection Nebulae.',
+      'Add sliders by catalog -- Messier, NGC, IC, Barnard, Arp, Herschel 400, Herschel II, Caldwell, Sharpless, LBN, LDN.',
+      'Add sliders by star catalog -- Bayer, Flamsteed, WDS, HIP, SAO, WD, BD -- plus common star names alongside catalog designations.',
+      'Dashed sky-outline shown for large Messier/NGC objects, oriented to match the photo’s real plate-solved orientation.',
+      'Image info bar with resolution, image scale, field of view, and field center (RA/Dec).',
+      'Download the labeled image as a PNG, composited at full native resolution.',
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Labeling Tool -- Version History"
+  description="Running list of updates and enhancements to the AllAboutAstro Labeling Tool."
+>
+  <article class="au-page">
+    <h1>Labeling Tool: Version History</h1>
+    <p>
+      A running list of updates to the <a href="/astrometric-tool">AllAboutAstro Labeling Tool</a>.
+    </p>
+
+    {VERSIONS.map((v) => (
+      <section class="au-version">
+        <h2>v{v.version} <span class="au-date">{v.date}</span></h2>
+        <ul>
+          {v.notes.map((n) => <li>{n}</li>)}
+        </ul>
+      </section>
+    ))}
+  </article>
+</BaseLayout>
+
+<style>
+  .au-page {
+    max-width: 720px;
+  }
+  .au-version {
+    margin: 2rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .au-version:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+  .au-version h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  .au-date {
+    font-weight: normal;
+    font-size: 0.85rem;
+    opacity: 0.65;
+    margin-left: 0.5rem;
+  }
+  .au-version ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  .au-version li {
+    margin: 0.3rem 0;
+  }
+</style>
