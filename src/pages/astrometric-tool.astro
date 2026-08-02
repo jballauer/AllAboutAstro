@@ -44,10 +44,8 @@ const CATALOG_GUIDE = [
     </p>
 
     <section class="at-upload">
-      <label class="at-upload-label" for="at-file-input">
-        <input type="file" id="at-file-input" accept="image/*" />
-        <span>Upload Image</span>
-      </label>
+      <input type="file" id="at-file-input" accept="image/*" hidden />
+      <button type="button" id="at-upload-btn">Upload Image</button>
       <p class="at-hint">JPEG or PNG, up to 10MB.</p>
     </section>
 
@@ -185,25 +183,6 @@ const CATALOG_GUIDE = [
   }
   .at-upload {
     margin: 1.25rem 0;
-  }
-  .at-upload-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.1rem;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: var(--font-body);
-  }
-  .at-upload-label input[type='file'] {
-    /* Kept in normal flow (not display:none) so it's still keyboard/AT
-       reachable -- visually hidden instead. */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    overflow: hidden;
   }
   .at-hint {
     font-size: 0.85rem;
@@ -767,6 +746,7 @@ const CATALOG_GUIDE = [
   // Page wiring
   // ---------------------------------------------------------------------
   const fileInput = document.getElementById('at-file-input');
+  const uploadBtn = document.getElementById('at-upload-btn');
   const frameWrap = document.getElementById('at-frame-wrap');
   const frame = document.getElementById('at-frame');
   const previewImg = document.getElementById('at-preview-img');
@@ -789,6 +769,8 @@ const CATALOG_GUIDE = [
   let wcs = null; // { CRVAL1, CRVAL2, CRPIX1, CRPIX2, CD1_1, CD1_2, CD2_1, CD2_2, IMAGEW, IMAGEH }
   let fieldCenter = null; // { ra, dec, radiusDeg }
   const activeCategories = new Set();
+
+  uploadBtn.addEventListener('click', () => fileInput.click());
 
   fileInput.addEventListener('change', () => {
     const file = fileInput.files && fileInput.files[0];
