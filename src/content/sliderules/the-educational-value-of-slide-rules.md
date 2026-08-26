@@ -13,9 +13,9 @@ draft: false
 
 Every year, 160 to 180 new students enter into one of my six high school Precalculus classes. And before I learn their names, I already know what they feel about math. As a subject, there is nothing more polarizing. It's the only subject taught in school where a student can be excused for carrying the label "bad at math," a label often passed down from parent to child. And as a teacher, my first task is to overcome their preconceived attitude toward math.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure">
 
-![Screenshot referenced in the article](./_images/edu/edu-02.jpg)
+![A Calvin and Hobbes comic strip about a father who was taught math on a slide rule](./_images/edu/edu-02.jpg)
 
 </div>
 
@@ -57,29 +57,11 @@ And therein lies the polarizing nature of math. How many students give up before
 
 What follows are TEN different ways in which math education is worse from no longer having slide rules. These aspects are a direct reflection of the device itself; what it does and how it can help us in the classroom. But all of these should show us how we can rethink math education today, to show how "old technology" can be used in a modern classroom; that educators might find some enlightenment about our current pedagogy.
 
-<div class="ke-image-feature">
+<div class="ke-figure">
 
-<div class="ke-image-feature-row">
+![A close-up art shot of a slide rule's self-documented scales, signed](./_images/edu/edu-03.jpg)
 
-<div class="ke-image-feature-item">
-
-![A vintage calculating device](./_images/edu/edu-03.jpg)
-
-</div>
-
-<div class="ke-image-feature-item">
-
-![An eBay listing photo of a vintage calculator](./_images/edu/edu-04.jpg)
-
-</div>
-
-<div class="ke-image-feature-item">
-
-![An HP-35 calculator](./_images/edu/edu-05.jpg)
-
-</div>
-
-</div>
+<p class="ke-figure-caption">A close-up of one of the rules in Jay's collection.</p>
 
 </div>
 
@@ -88,6 +70,22 @@ What follows are TEN different ways in which math education is worse from no lon
 ## Sidebar: Are Calculators also Obsolete?
 
 An argument can be made that the replacement for the slide rule has become obsolete as well.
+
+<div class="ke-figure-row">
+
+<div class="ke-figure">
+
+![A TI-84 Plus graphing calculator](./_images/edu/edu-04.jpg)
+
+</div>
+
+<div class="ke-figure">
+
+![An early HP scientific calculator with a red LED display](./_images/edu/edu-05.jpg)
+
+</div>
+
+</div>
 
 The classroom set of Texas Instrument calculators (TI-84 Plus) in my classroom likely cost my school around $150 each. Yet it's based on a technology/chip set that is more than 25 years old - and I shouldn't have to tell you how long that is in "computer years." Low resolution, non-touch, black-and-white screens; non-intuitive, extended-menu interface for functions beyond the simple operations; and no Internet connectivity.
 
@@ -109,9 +107,9 @@ So why use them? In Texas, our standards require us to use a "graphing calculato
 
 Look up any state standards for a math class and you will see the idea of a "math manipulative" expressed. Defined, a math manipulative would constitute any concrete, hands-on tool for learning. As an educator earlier in my career, this idea, often coupled with the learning "center," became thematic with good education. The proper use of a manipulative would have students match a specific visualization or analogy to a learning goal, such as using an interactive ***ruler*** or ***number line*** to visualize the addition and subtraction of integers. A calculator does not replace the purpose of the ruler in that case, because the virtue of the manipulative is the hands-on, visual-reinforcement of an IDEA that takes place.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right">
 
-![A Texas Precalculus TEKS standards screenshot](./_images/edu/edu-06.png)
+![A Texas Precalculus TEKS standards screenshot with "manipulatives" circled in red](./_images/edu/edu-06.png)
 
 </div>
 
@@ -137,9 +135,9 @@ So perhaps it's time to bring back slide rules as a manipulative? This is becaus
 
 If the objective is to understand continuity, then the slide rule can be used to give a subtle feel for either the continuity or the closeness of values. It builds intuition, especially when connected to the active feel of the slide rule. And importantly, as we will see in examples that follow, the slide rule helps support students in the development of mental math, estimation, and number sense skills that most teachers believe to be lacking in today's students.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure">
 
-![A Texas Precalculus TEKS standards screenshot showing the manipulatives requirement](./_images/edu/edu-07.png)
+![A Texas Precalculus TEKS standards screenshot showing the P.Intro.4 requirement](./_images/edu/edu-07.png)
 
 </div>
 
@@ -155,9 +153,9 @@ Students today feel that if they had a calculator, then everything would be mira
 
 But after each test, when we go over commonly missed problems, it's almost always the calculator problems that they get wrong. This is largely because students assume no responsibility for such problems; they believe that the calculator would do everything right for them. When the calculator spits out the wrong answer, they have no understanding, no warning that it is incorrect. This is because students are either not taught to provide estimations in advance of the solution or because they simply lack the ability to do so. The prophylactic aspect or idea of a "reasonable" solution eludes them.
 
-<div class="ke-figure ke-figure-right ke-figure-third">
+<div class="ke-figure ke-figure-right">
 
-![The C and D scales of a slide rule set up to divide 8 by 7](./_images/edu/edu-08.jpg)
+![A Dietzgen Redirule slide rule showing the C and D scales](./_images/edu/edu-08.jpg)
 
 </div>
 
