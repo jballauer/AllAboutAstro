@@ -157,7 +157,7 @@ Students today feel that if they had a calculator, then everything would be mira
 
 But after each test, when we go over commonly missed problems, it's almost always the calculator problems that they get wrong. This is largely because students assume no responsibility for such problems; they believe that the calculator would do everything right for them. When the calculator spits out the wrong answer, they have no understanding, no warning that it is incorrect. This is because students are either not taught to provide estimations in advance of the solution or because they simply lack the ability to do so. The prophylactic aspect or idea of a "reasonable" solution eludes them.
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure ke-figure-right" style="width: 67%;">
 
 ![A Dietzgen Redirule slide rule showing the C and D scales](./_images/edu/edu-08.jpg)
 
