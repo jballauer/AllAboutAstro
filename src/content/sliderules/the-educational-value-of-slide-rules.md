@@ -323,7 +323,7 @@ Speaking of which, one of the aspects of slide rules that blindsided me was the 
 
 In fact, if you put the slide rule into the hands of somebody who's never seen one, and then asked them to figure out what all the scales do, it could be the beginning of a very satisfying journey of discovery.
 
-<div class="ke-image-feature" style="width: 60%; margin-left: auto; margin-right: auto;">
+<div class="ke-image-feature" style="width: 60%; float: right; clear: none; margin: 0.3rem 0 1rem 1.5rem;">
 
 <div class="ke-image-feature-item">
 
@@ -361,13 +361,13 @@ In fact, if you put the slide rule into the hands of somebody who's never seen o
 
 We lack the time for such an investigation here, so let's give a quick primer instead. Actually, let's BUILD a "DIY Slide Rule" from paper, starting with the table of logarithmic values at right...
 
+With this information, you will construct two logarithmic scales (or number lines). See Figure 1 at left. The standard size of most slide rules are 10" (or 25 cm) scale lengths, so let's start with a sheet of paper, pencil, and ruler. Draw a 10" line. Mark the ends of the line with tick marks (like on a ruler) and label them 1 and 10 respectively. These will represent the values of the log (1) and log (10) in the table. In slide rule terms, they are known as the left and right indices (indexes).
+
 <div class="ke-figure ke-figure-right ke-figure-third">
 
 ![A table of logarithmic values from 1 to 10](./_images/edu/edu-20.png)
 
 </div>
-
-With this information, you will construct two logarithmic scales (or number lines). See Figure 1 at left. The standard size of most slide rules are 10" (or 25 cm) scale lengths, so let's start with a sheet of paper, pencil, and ruler. Draw a 10" line. Mark the ends of the line with tick marks (like on a ruler) and label them 1 and 10 respectively. These will represent the values of the log (1) and log (10) in the table. In slide rule terms, they are known as the left and right indices (indexes).
 
 Moving on to log (2), change the .301 decimal to a percentage (30.1%) and mark the number line with a tick mark at 30% of the distance from the left index. That would be 3" if measuring with a ruler. Mark this tick mark with the number 2, which represents log(2).
 
