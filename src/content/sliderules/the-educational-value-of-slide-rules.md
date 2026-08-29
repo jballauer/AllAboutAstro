@@ -323,13 +323,13 @@ Speaking of which, one of the aspects of slide rules that blindsided me was the 
 
 In fact, if you put the slide rule into the hands of somebody who's never seen one, and then asked them to figure out what all the scales do, it could be the beginning of a very satisfying journey of discovery.
 
-<div class="ke-image-feature">
-
-<div class="ke-image-feature-row">
+<div class="ke-image-feature" style="width: 60%; margin-left: auto; margin-right: auto;">
 
 <div class="ke-image-feature-item">
 
 ![Scales created from the log table](./_images/edu/edu-16.jpg)
+
+<p class="ke-image-feature-caption">Figure 1 - Scales created from the log table.</p>
 
 </div>
 
@@ -337,11 +337,15 @@ In fact, if you put the slide rule into the hands of somebody who's never seen o
 
 ![Showing the multiplication of 2 x 3 = 6](./_images/edu/edu-17.jpg)
 
+<p class="ke-image-feature-caption">Figure 2 - Showing the multiplication of 2 x 3 = 6. The left index of the upper scale lines up on the 2 with the result read under the 3 on the bottom scale. For that matter, it also shows all multiples of 2 (up to 5) as well. You may also notice it shows fractions/proportions equal to 1/2 across the scales, something we'll talk about in the next section.</p>
+
 </div>
 
 <div class="ke-image-feature-item">
 
 ![This setting of the scales shows 6 x 4 = 24](./_images/edu/edu-18.jpg)
+
+<p class="ke-image-feature-caption">Figure 3 - This setting of the scales shows 6 x 4 = 24. Note that the right index of the upper rule is aligned with the 6, and the answer is read under the 4 on the bottom scale. The result, 2.4, would be understood as 24. You are responsible for your own decimal! The right index is used like this if using the left decimal takes you off the scale.</p>
 
 </div>
 
@@ -349,11 +353,9 @@ In fact, if you put the slide rule into the hands of somebody who's never seen o
 
 ![Showing division of 9 by 4](./_images/edu/edu-19.jpg)
 
-</div>
+<p class="ke-image-feature-caption">Figure 4 - How about division? It's essentially the inverse of multiplication, meaning that here you align the numbers to be divided and read the answer off of the index. The scales are set to show 9 / 4 = 2.25. Here I have divided up the logs between 2 and 3 to provide more resolution for the decimal quotient.</p>
 
 </div>
-
-<p class="ke-image-feature-caption">Figure 1 - Scales created from the log table. Figure 2 - Showing the multiplication of 2 x 3 = 6. The left index of the upper scale lines up on the 2 with the result read under the 3 on the bottom scale. For that matter, it also shows all multiples of 2 (up to 5) as well. You may also notice it shows fractions/proportions equal to 1/2 across the scales, something we'll talk about in the next section. Figure 3 - This setting of the scales shows 6 x 4 = 24. Note that the right index of the upper rule is aligned with the 6, and the answer is read under the 4 on the bottom scale. The result, 2.4, would be understood as 24. You are responsible for your own decimal! The right index is used like this if using the left decimal takes you off the scale. Figure 4 - How about division? It's essentially the inverse of multiplication, meaning that here you align the numbers to be divided and read the answer off of the index. The scales are set to show 9 / 4 = 2.25. Here I have divided up the logs between 2 and 3 to provide more resolution for the decimal quotient.</p>
 
 </div>
 
