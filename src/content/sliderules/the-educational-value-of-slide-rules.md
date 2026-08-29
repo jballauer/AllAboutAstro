@@ -23,7 +23,7 @@ Such is my job of a math apologist...to give them positive experiences in mathem
 
 The first of these experiences begins the moment you enter my classroom, where you will be surrounded by mathematical history. Over 200 calculating devices, primarily slide rules, hang on my walls to elicit curiosity and questioning within my students. The depth and breadth of what could be accomplished with these slide rules goes far beyond computational mathematics, but also into applications, history, number sense, and real-life models. These aspects seem to have little value in today's math education, which values doing pseudo-applications (phony word problems that act like real-life math), computations and passing state-level standardized tests. The richness of mathematics is sacrificed for the achievement of all the wrong goals, which have more to do with reading comprehension than it does real mathematics.
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure ke-figure-right" style="width: 75%;">
 
 ![A Calvin and Hobbes comic strip about a father who was taught math on a slide rule](./_images/edu/edu-02.jpg)
 
@@ -67,10 +67,6 @@ What follows are TEN different ways in which math education is worse from no lon
 
 <div class="ke-sidebar" data-side="right" data-width="wide">
 
-## Sidebar: Are Calculators also Obsolete?
-
-An argument can be made that the replacement for the slide rule has become obsolete as well.
-
 <div class="ke-figure-row">
 
 <div class="ke-figure">
@@ -86,6 +82,10 @@ An argument can be made that the replacement for the slide rule has become obsol
 </div>
 
 </div>
+
+## Sidebar: Are Calculators also Obsolete?
+
+An argument can be made that the replacement for the slide rule has become obsolete as well.
 
 The classroom set of Texas Instrument calculators (TI-84 Plus) in my classroom likely cost my school around $150 each. Yet it's based on a technology/chip set that is more than 25 years old - and I shouldn't have to tell you how long that is in "computer years." Low resolution, non-touch, black-and-white screens; non-intuitive, extended-menu interface for functions beyond the simple operations; and no Internet connectivity.
 
@@ -111,9 +111,9 @@ Look up any state standards for a math class and you will see the idea of a "mat
 
 ![A Texas Precalculus TEKS standards screenshot with "manipulatives" circled in red](./_images/edu/edu-06.png)
 
-</div>
+<p class="ke-figure-caption">Dig into your state's course objectives and you'll see process standards as required for student success. In Texas, this is what the "TEKS" are for Precalculus, which includes not only the concept of the manipulative, but also "mental math, estimation, and number sense" as techniques. (Note as well "reasonableness of the solution" in P.1.B above it.) The slide rule is a perfect "manipulative" because it requires those techniques when using it. I would advocate the use of slide rules in modern education as a way to not only meet all of these requirements, but to help improve this skill deficiency in our students.</p>
 
-Dig into your state's course objectives and you'll see process standards as required for student success. In Texas, this is what the "TEKS" are for Precalculus, which includes not only the concept of the manipulative, but also "mental math, estimation, and number sense" as techniques. (Note as well "reasonableness of the solution" in P.1.B above it.) The slide rule is a perfect "manipulative" because it requires those techniques when using it. I would advocate the use of slide rules in modern education as a way to not only meet all of these requirements, but to help improve this skill deficiency in our students.
+</div>
 
 But replacing manipulatives with calculators is exactly what happened!
 
@@ -156,6 +156,8 @@ But after each test, when we go over commonly missed problems, it's almost alway
 <div class="ke-figure ke-figure-right">
 
 ![A Dietzgen Redirule slide rule showing the C and D scales](./_images/edu/edu-08.jpg)
+
+<p class="ke-figure-caption">On a slide rule, the C and D scales (labelled on the left of the scales), provide students the ability to do division. In this case, with the 8 on the D scale aligned with the 7 on the C scale, the result of 8 ÷ 7 can be read at the D scale beneath the "1" or "left index" of the C scale, as shown here on the hairline of the cursor. This reading of 114 (and a little more) are the significant figures for any of the computations at the left. It becomes YOUR job to supply the necessary decimal.</p>
 
 </div>
 
