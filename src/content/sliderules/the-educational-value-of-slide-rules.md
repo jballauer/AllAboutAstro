@@ -167,7 +167,13 @@ But after each test, when we go over commonly missed problems, it's almost alway
 
 It's different with a slide rule. As an example, on a calculator, you get the following outputs...
 
-8 ÷ 700 = .0114286<br>8 ÷ 70 = 0.114286<br>8 ÷ 7 = 1.14286<br>80 ÷ 7 = 11.4286<br>800 ÷ 7 = 114.286
+<table class="ke-equation-table">
+<tr><td>8 ÷ 700</td><td>= .0114286</td></tr>
+<tr><td>8 ÷ 70</td><td>= 0.114286</td></tr>
+<tr><td>8 ÷ 7</td><td>= 1.14286</td></tr>
+<tr><td>80 ÷ 7</td><td>= 11.4286</td></tr>
+<tr><td>800 ÷ 7</td><td>= 114.286</td></tr>
+</table>
 
 But when doing this computation on a slide rule, all 5 computations are performed with the identical setting of the rule (see right). The user must know where the decimal place belongs.
 
@@ -195,7 +201,11 @@ To support this statement, let's do some exploration about numbers and then show
 
 Let's start with these facts...
 
-sin (3°) = .052<br>tan (3°) = .052<br>3° ≈ .052 radians
+<table class="ke-equation-table">
+<tr><td>sin (3°)</td><td>= .052</td></tr>
+<tr><td>tan (3°)</td><td>= .052</td></tr>
+<tr><td>3°</td><td>≈ .052 radians</td></tr>
+</table>
 
 First, despite teaching trig graphs to kids, I NEVER made the association, in 28 years of teaching, that sine and tangent curves are so nearly identical when near the origin. Similar, yes, but not so exacting as this. But as you can see from the figures at right, both function curves look almost identical over their first 6 degrees.
 
@@ -205,7 +215,7 @@ But these numerical relationships are obvious to those who grew up with a slide 
 
 <div class="ke-figure-row">
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-fill">
 
 ![The sine graph zoomed to an x-window of 7 degrees](./_images/edu/edu-09.png)
 
@@ -213,7 +223,7 @@ But these numerical relationships are obvious to those who grew up with a slide 
 
 </div>
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-fill">
 
 ![The tangent graph zoomed to an x-window of 7 degrees](./_images/edu/edu-10.png)
 
@@ -243,11 +253,21 @@ Let's look at another intuition about numbers, this time as it concerns logarith
 
 How about this pattern of values?
 
-log (3) = 0.477<br>log (30) = 1.477<br>log (300) = 2.477<br>log (3000) = 3.477
+<table class="ke-equation-table">
+<tr><td>log (3)</td><td>= 0.477</td></tr>
+<tr><td>log (30)</td><td>= 1.477</td></tr>
+<tr><td>log (300)</td><td>= 2.477</td></tr>
+<tr><td>log (3000)</td><td>= 3.477</td></tr>
+</table>
 
 An aspect of logarithms that my students are NOT required to learn (according to our state requirements) is knowledge of the characteristic and mantissa of a log. For any number between 1 and 10, the log of that number will be a decimal value between 0 and 1. This result is known as the mantissa. To find the log of numbers greater than 10, a whole number value (the characteristic) is added to the mantissa depending on the number of digits of the input. This can be seen very easily using a tool for logarithms that my students ARE required to know, the Product Rule for Logs, as applied to the following pattern:
 
-log (3) = 0.477<br>log (30) = log (3 × 10) = log 3 + log 10 = 0.477 (mantissa) + 1 (characteristic) = 1.477<br>log (300) = log (3 × 100) = log 3 + log 100 = 0.477 (mantissa) + 2 (characteristic) = 2.477<br>log (3000) = log (3 × 1000) = log 3 + log 1000 = 0.477 (mantissa) + 3 (characteristic) = 3.477
+<table class="ke-equation-table">
+<tr><td>log (3)</td><td>= 0.477</td></tr>
+<tr><td>log (30)</td><td>= log (3 × 10) = log 3 + log 10 = 0.477 (mantissa) + 1 (characteristic) = 1.477</td></tr>
+<tr><td>log (300)</td><td>= log (3 × 100) = log 3 + log 100 = 0.477 (mantissa) + 2 (characteristic) = 2.477</td></tr>
+<tr><td>log (3000)</td><td>= log (3 × 1000) = log 3 + log 1000 = 0.477 (mantissa) + 3 (characteristic) = 3.477</td></tr>
+</table>
 
 Of course, the calculator inputs this value directly, assuming we are using the correct log base on the calculator (not always a given with students). However, the association between these values, the pattern, will not be obvious to students unless I have a reason as a teacher to show it to them. Doing so helps the students with a perspective of the magnitude of the logs themselves, giving them expectations for which they can provide estimates and check for reasonableness of solution. Likewise, the pattern reinforces this very important Product Rule for Logs, which my students are required to know. This gives students a visual and practical application for this rule, and for logarithms themselves.
 
@@ -367,7 +387,13 @@ Now, for the MAGIC!
 
 Put the left index of one of the scales onto the 2 of the other scale, as in Figure 2. Then, measure 3 on the top rule and look at where that value falls on the bottom rule. Observe that the result is 6. Congratulations, you just performed the computation 2 × 3 = 6. In addition, observe that you just performed the following computations as well:
 
-20 × 3 = 60<br>2 × 30 = 60<br>200 × 3 = 600<br>20 × 300 = 6000<br>2000 × 30 = 60000
+<table class="ke-equation-table">
+<tr><td>20 × 3</td><td>= 60</td></tr>
+<tr><td>2 × 30</td><td>= 60</td></tr>
+<tr><td>200 × 3</td><td>= 600</td></tr>
+<tr><td>20 × 300</td><td>= 6000</td></tr>
+<tr><td>2000 × 30</td><td>= 60000</td></tr>
+</table>
 
 The same setting of your "slide" rule gives you all such computations when, as is expected, you provide your own decimal!
 
