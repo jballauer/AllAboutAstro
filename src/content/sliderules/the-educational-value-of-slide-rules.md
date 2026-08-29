@@ -67,17 +67,21 @@ What follows are TEN different ways in which math education is worse from no lon
 
 <div class="ke-sidebar" data-side="right" data-width="wide">
 
-<div class="ke-figure-row">
+<div class="ke-image-feature">
 
-<div class="ke-figure">
+<div class="ke-image-feature-grid">
+
+<div class="ke-image-feature-item">
 
 ![A TI-84 Plus graphing calculator](./_images/edu/edu-04.jpg)
 
 </div>
 
-<div class="ke-figure">
+<div class="ke-image-feature-item">
 
 ![An early HP scientific calculator with a red LED display](./_images/edu/edu-05.jpg)
+
+</div>
 
 </div>
 
