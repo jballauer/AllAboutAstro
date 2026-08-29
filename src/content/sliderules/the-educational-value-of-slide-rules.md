@@ -5,7 +5,7 @@ order: 3
 draft: false
 ---
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-right">
 
 ![A slide rule end-view with a red pen, self-documented scale labels visible](./_images/edu/edu-01.jpg)
 
