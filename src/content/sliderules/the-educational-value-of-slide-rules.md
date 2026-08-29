@@ -380,14 +380,6 @@ Moving on to log (2), change the .301 decimal to a percentage (30.1%) and mark t
 
 Do the same with the remainder of the table, yielding a number line from 1 to 10. Get as close as possible with your percentage approximations for more accuracy. For example, if log (3) = .477, then 47.7% would be a skosh shy of 4 3/4" on the ruler. Note that the gap between 0 and 1 is far greater than the gap between 9 and 10. This is as you should expect with a logarithmic scale. Use the first scale to create another similar to it in Figure 1.
 
-<div class="ke-figure ke-figure-right">
-
-![A circular slide rule set to compute sin(1 degree)](./_images/edu/edu-21.jpg)
-
-<p class="ke-figure-caption">Yet another discovery, this from using a circular slide rule. Here, it is set to compute sin (1 degree), with 1 placed on the arc notated with the lowest red "S". The answer, 0.00174, is read off of the arc labeled with the red "C". Again, you must supply your own decimal. But this same setting also computes sin (0.1) on the red ST scale and sin (10) on the top red S scale. Would you have known that 0.1, 1, and 10 computed for sine all have the same significant digits of 174? Yeah, me neither!</p>
-
-</div>
-
 For additional precision, feel free to mark the finer gradations. For example, adding ticks for log (1.1), while tedious, can give you better precision if the time is taken to do it accurately. I have done such between the numbers 2 and 3 on both scales to illustrate the point.
 
 *(Historical note: Slide rule makers used a machine to etch the tick marks. These machines were known as "dividing engines." With this technology, makers could produce scales representing log (1.01) with great accuracy. Doing so, they would promote the accuracy of their rules using the term "engine-divided" when referring to logarithmically-spaced scales.)*
@@ -407,6 +399,14 @@ Put the left index of one of the scales onto the 2 of the other scale, as in Fig
 The same setting of your "slide" rule gives you all such computations when, as is expected, you provide your own decimal!
 
 So, how does this work? Why does this yield the product of those numbers? Keep in mind that on your scales, 2 and 3 represent the length of log (2) on one scale and log (3) on the other. So you are literally measuring out a distance of log (2) and adding it to the distance of log (3). And if you recall the Product Rule of Logs discussed earlier...
+
+<div class="ke-figure ke-figure-left">
+
+![A circular slide rule set to compute sin(1 degree)](./_images/edu/edu-21.jpg)
+
+<p class="ke-figure-caption">Yet another discovery, this from using a circular slide rule. Here, it is set to compute sin (1 degree), with 1 placed on the arc notated with the lowest red "S". The answer, 0.00174, is read off of the arc labeled with the red "C". Again, you must supply your own decimal. But this same setting also computes sin (0.1) on the red ST scale and sin (10) on the top red S scale. Would you have known that 0.1, 1, and 10 computed for sine all have the same significant digits of 174? Yeah, me neither!</p>
+
+</div>
 
 log (2) + log (3) = log (2 × 3) = log (6)
 
