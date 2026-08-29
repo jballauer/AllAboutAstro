@@ -133,7 +133,7 @@ Currently and typically, technology is still an almost entirely passive particip
 
 What it is NOT - if we are honest - is an active, integral role in the mastery of a learning objective. And in the spirit of using manipulatives as a pedagogical practice, technology has failed. While it could be used to function as a manipulative toward meeting specific educational objectives, we seldom require it to do so.
 
-Education is far worse today because teachers are not held accountable to give students hands-on, visual modelling via manipulatives - though, judging from my state's requirements at right, it appears that it is most certainly required.\* My guess is that either we've assumed that technology is providing that or we are given the choice to neglect it.
+Education is far worse today because teachers are not held accountable to give students hands-on, visual modelling via manipulatives - though, judging from my state's requirements below, it appears that it is most certainly required.\* My guess is that either we've assumed that technology is providing that or we are given the choice to neglect it.
 
 So perhaps it's time to bring back slide rules as a manipulative? This is because, unlike a calculator, slide rules gives students a very specific intuition about the computations they are performing. It is a number line, a conversion table, and a set of scales, all wrapped up into one. If the objective is to understand fractions and proportions, then setting the C and D scales for a single fraction gives all equivalences across the scales.
 
@@ -145,7 +145,7 @@ If the objective is to understand continuity, then the slide rule can be used to
 
 </div>
 
-*\*Note: Manipulatives are differentiated from technology (see right), as we can see by reading the 4th bullet point of the Precalculus standards. So as indicated, manipulatives (and real objects) are intended to be used whether, or not, technology is used.*
+*\*Note: Manipulatives are differentiated from technology (see above), as we can see by reading the 4th bullet point of the Precalculus standards. So as indicated, manipulatives (and real objects) are intended to be used whether, or not, technology is used.*
 
 <div class="ke-clear"></div>
 
@@ -207,7 +207,7 @@ Let's start with these facts...
 <tr><td>3°</td><td>≈ .052 radians</td></tr>
 </table>
 
-First, despite teaching trig graphs to kids, I NEVER made the association, in 28 years of teaching, that sine and tangent curves are so nearly identical when near the origin. Similar, yes, but not so exacting as this. But as you can see from the figures at right, both function curves look almost identical over their first 6 degrees.
+First, despite teaching trig graphs to kids, I NEVER made the association, in 28 years of teaching, that sine and tangent curves are so nearly identical when near the origin. Similar, yes, but not so exacting as this. But as you can see from the figures below, both function curves look almost identical over their first 6 degrees.
 
 When I first discovered this, it took me a while to forgive myself for not knowing this fact. I eventually did, since quite simply there has never been a context to make such a comparison for me. Why would I, when not only do we represent trig graphs in radians, but we never have a reason to show such a small domain of sine and tangent curves on the same graph? Perhaps I could have had a teacher show it to me somewhere along the way, but that would have required them to a) know about it themselves and b) value it enough to actually mention it to me.
 
@@ -219,7 +219,7 @@ But these numerical relationships are obvious to those who grew up with a slide 
 
 ![The sine graph zoomed to an x-window of 7 degrees](./_images/edu/edu-09.png)
 
-<p class="ke-figure-caption">The sine graph zoomed to an x-window of 7 degrees. Compare to the tangent graph pictured below.</p>
+<p class="ke-figure-caption">The sine graph zoomed to an x-window of 7 degrees. Compare to the tangent graph pictured to the right.</p>
 
 </div>
 
@@ -359,15 +359,22 @@ In fact, if you put the slide rule into the hands of somebody who's never seen o
 
 </div>
 
-We lack the time for such an investigation here, so let's give a quick primer instead. Actually, let's BUILD a "DIY Slide Rule" from paper, starting with the table of logarithmic values at right...
+We lack the time for such an investigation here, so let's give a quick primer instead. Actually, let's BUILD a "DIY Slide Rule" from paper, starting with the table of logarithmic values below...
 
-With this information, you will construct two logarithmic scales (or number lines). See Figure 1 at left. The standard size of most slide rules are 10" (or 25 cm) scale lengths, so let's start with a sheet of paper, pencil, and ruler. Draw a 10" line. Mark the ends of the line with tick marks (like on a ruler) and label them 1 and 10 respectively. These will represent the values of the log (1) and log (10) in the table. In slide rule terms, they are known as the left and right indices (indexes).
+<table class="ke-equation-table">
+<tr><td>log 1</td><td>= 0</td></tr>
+<tr><td>log 2</td><td>= .301</td></tr>
+<tr><td>log 3</td><td>= .477</td></tr>
+<tr><td>log 4</td><td>= .602</td></tr>
+<tr><td>log 5</td><td>= .699</td></tr>
+<tr><td>log 6</td><td>= .778</td></tr>
+<tr><td>log 7</td><td>= .845</td></tr>
+<tr><td>log 8</td><td>= .903</td></tr>
+<tr><td>log 9</td><td>= .954</td></tr>
+<tr><td>log 10</td><td>= 1</td></tr>
+</table>
 
-<div class="ke-figure ke-figure-right ke-figure-third">
-
-![A table of logarithmic values from 1 to 10](./_images/edu/edu-20.png)
-
-</div>
+With this information, you will construct two logarithmic scales (or number lines). See Figure 1 at right. The standard size of most slide rules are 10" (or 25 cm) scale lengths, so let's start with a sheet of paper, pencil, and ruler. Draw a 10" line. Mark the ends of the line with tick marks (like on a ruler) and label them 1 and 10 respectively. These will represent the values of the log (1) and log (10) in the table. In slide rule terms, they are known as the left and right indices (indexes).
 
 Moving on to log (2), change the .301 decimal to a percentage (30.1%) and mark the number line with a tick mark at 30% of the distance from the left index. That would be 3" if measuring with a ruler. Mark this tick mark with the number 2, which represents log(2).
 
@@ -650,7 +657,7 @@ The implication of this should be obvious. If used in a fixed position without t
 
 For students, this changing of scale required by the slide rule reinforces the concept of the growth or decay of an exponential function based on the nature of its base. Students gain intuition because they have to ask themselves if the value they expect should be greater or less than the base they started with when raising to positive exponents. They can be asked to find possible outputs on neighboring scales and then select the answer that is most reasonable.
 
-Another virtue of using a slide rule to perform these computations is that any base raised to ALL the powers are shown with the single setting of the rule. Figure 2 at left demonstrates how this can be done using a base of 2. Again, this is akin to inputting the 2^x function in a graphing calculator and selecting the table to display a range of outputs, or all of the ordered pairs that make such a function true.
+Another virtue of using a slide rule to perform these computations is that any base raised to ALL the powers are shown with the single setting of the rule. Figure 2 above demonstrates how this can be done using a base of 2. Again, this is akin to inputting the 2^x function in a graphing calculator and selecting the table to display a range of outputs, or all of the ordered pairs that make such a function true.
 
 Also, with the LL scales, reciprocals can be read directly off the rule. The LL2 and LL02 scales, for example, are reciprocal values. So also in Figure 2, with the slide set for 2 on the LL2 scale, the reciprocal of 2 (0.5) can be read off of the LL02 scale. While this doesn't necessarily build algebraic understanding, it is just one of the thousands of observations about numbers that students will glean from using the device.
 
@@ -750,7 +757,7 @@ Another example of when the slide rule makes you rethink math is what happens wh
 
 Likewise, there are also what is called "folded" scales on a slide rule, as we talked briefly about earlier in the article. Such scales, usually labeled "CF" and "DF," are essentially the same as the C and D scales, yet the beginning of the scales through pi (or √10 depending on the manufacturer), is lifted off the scale and reapplied at the end. This yields a single index at the center of the rule. As such, if folded at pi, it can either be used to automatically multiply a number by pi (making circle computations knowing the radius a breeze), but also can be used instead of the C and D scales for multiplication operations to assure an index is always on the rule. This promotes the idea that there's more than one way to do things, and some ways are more efficient than others. This is something my students today seem to struggle with.
 
-Speaking of efficiency, a slide rule can also be used as a function table to do multiple operations at once. For example, with the slide rule at left, when the middle slide is removed inputs on the D scale can be read as outputs on the L, K, and A scales by just moving the hairline. This slide rule, as are many of the European slide rules, are also "self-documenting," putting the functions they perform on the right side of the scale (see also above). As such, logs, cubes, and squares can be quickly read almost simultaneously, all without really needing to decipher what the L, K, and A scales actually mean.
+Speaking of efficiency, a slide rule can also be used as a function table to do multiple operations at once. For example, with the slide rule shown above, when the middle slide is removed inputs on the D scale can be read as outputs on the L, K, and A scales by just moving the hairline. This slide rule, as are many of the European slide rules, are also "self-documenting," putting the functions they perform on the right side of the scale (see also above). As such, logs, cubes, and squares can be quickly read almost simultaneously, all without really needing to decipher what the L, K, and A scales actually mean.
 
 Now this is something a calculator can do, but it requires a little preparation...type something like the squaring function into Y1 in the graph screen. Select the table for the graph. And read your results for multiple inputs. Of course this works well for integer inputs by default. To read off decimal inputs, you would need to customize the table for tenth or hundredths, and then scroll the table up and down all day long to get where you need it. Too bad the TI-84 doesn't have a manual cursor like a slide rule!
 
@@ -848,7 +855,7 @@ Finally, we answer the question you might have wondered, "How does it work for a
 
 **Method 3:** And finally, there are slide rules that can do addition. Chiefly, any slide rule with two linear scales on it, such as two "L" scales for computing base 10 logs - strangely, it's a linear scale - can be used in a similar manner to the DIY Addition rule in the previous method. Another rule, the K&E GP-12, shown earlier in the section on Improved Numeracy, can be used in this way. Neither method is user friendly, since such rules will be graduated by hundredths from 0 to 1, but they can work in a pinch.
 
-But at right, here's a slide rule from Faber-Castell that solves the problem of addition by putting a normal slide rule on the front side AND an "Addiator" on the back. Faber-Castell, the same company as the art supplier today - was known for including this adding machine on the back of many of their models, this particular model being their 67/54 RB Darmstadt. This German rule, dating from 1960, is fascinating. While using the Addiator is beyond the scope of this article, such devices, sold by many companies across the world during that era, are also ingenious devices.
+But below, here's a slide rule from Faber-Castell that solves the problem of addition by putting a normal slide rule on the front side AND an "Addiator" on the back. Faber-Castell, the same company as the art supplier today - was known for including this adding machine on the back of many of their models, this particular model being their 67/54 RB Darmstadt. This German rule, dating from 1960, is fascinating. While using the Addiator is beyond the scope of this article, such devices, sold by many companies across the world during that era, are also ingenious devices.
 
 I highly recommend their use in any classroom, especially as an intermediate step between learning the pencil-and-paper multi-digit method and the basic 4-function calculator era. The carry-over action of the device quickly demonstrates, in a mechanical way, how vertical addition actually works. The sense of adding numbers by tossing rocks in buckets is conveyed through devices like this, without actually breaking your back with a bunch of rocks and buckets.
 
