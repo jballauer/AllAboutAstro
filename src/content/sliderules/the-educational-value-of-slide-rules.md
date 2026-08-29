@@ -13,12 +13,6 @@ draft: false
 
 Every year, 160 to 180 new students enter into one of my six high school Precalculus classes. And before I learn their names, I already know what they feel about math. As a subject, there is nothing more polarizing. It's the only subject taught in school where a student can be excused for carrying the label "bad at math," a label often passed down from parent to child. And as a teacher, my first task is to overcome their preconceived attitude toward math.
 
-<div class="ke-figure">
-
-![A Calvin and Hobbes comic strip about a father who was taught math on a slide rule](./_images/edu/edu-02.jpg)
-
-</div>
-
 I believe that the problem stems from an educational system that reinforces the "bad at math" idea. This is because children are ability-grouped in their formative years, classified to an ability "level," and then never given a chance later to "bridge" back up to their potential once their developmental growth supports it. The student is left with no further opportunity because it is deemed by educators that it's no longer worth the effort.
 
 So when a third grader struggles with multiplication tables or a sixth grader lacks algebraic reasoning, they are started on an educational path that will not allow them another opportunity when they are actually ready for it, with no chance to catch up to their peers and no positive experience to be gained.
@@ -28,6 +22,12 @@ Because this is the situation of roughly 70% of my students when I first get the
 Such is my job of a math apologist...to give them positive experiences in mathematics that they were never given the opportunity to have.
 
 The first of these experiences begins the moment you enter my classroom, where you will be surrounded by mathematical history. Over 200 calculating devices, primarily slide rules, hang on my walls to elicit curiosity and questioning within my students. The depth and breadth of what could be accomplished with these slide rules goes far beyond computational mathematics, but also into applications, history, number sense, and real-life models. These aspects seem to have little value in today's math education, which values doing pseudo-applications (phony word problems that act like real-life math), computations and passing state-level standardized tests. The richness of mathematics is sacrificed for the achievement of all the wrong goals, which have more to do with reading comprehension than it does real mathematics.
+
+<div class="ke-figure ke-figure-right">
+
+![A Calvin and Hobbes comic strip about a father who was taught math on a slide rule](./_images/edu/edu-02.jpg)
+
+</div>
 
 So, has it always been this way?
 
