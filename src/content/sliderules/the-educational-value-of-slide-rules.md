@@ -139,7 +139,7 @@ So perhaps it's time to bring back slide rules as a manipulative? This is becaus
 
 If the objective is to understand continuity, then the slide rule can be used to give a subtle feel for either the continuity or the closeness of values. It builds intuition, especially when connected to the active feel of the slide rule. And importantly, as we will see in examples that follow, the slide rule helps support students in the development of mental math, estimation, and number sense skills that most teachers believe to be lacking in today's students.
 
-<div class="ke-figure">
+<div class="ke-figure ke-figure-fill">
 
 ![A Texas Precalculus TEKS standards screenshot showing the P.Intro.4 requirement](./_images/edu/edu-07.png)
 
