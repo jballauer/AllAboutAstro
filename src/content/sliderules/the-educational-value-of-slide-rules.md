@@ -480,7 +480,7 @@ It takes practice to be able to read a slide rule at first, just because we are 
 
 Once students can read decimals on the scales, then one of the more powerful aspects of the slide rule is that it is easy to align the rule so when one number is placed over another, the rest of the numbers across those scales will be in exact proportion to each other. It's like a table of equivalent fractions, an adjustable one at that. As I showed in the "DIY Slide Rule" in the previous section, when the scales are adjusted for division, the slide rule shows equivalences all across the rule. See this here on an actual slide rule...
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure ke-figure-fill">
 
 ![A slide rule with the cursor set to divide 8 by 5 on the C and D scales](./_images/edu/edu-26.jpg)
 
@@ -492,7 +492,7 @@ Thus, with one setting of the slide, you have computations for 8 ÷ 5 = 1.6 and 
 
 As another activity, consider if you want students to give you a variety of fractions that are the equivalent of 1.9 in decimal form. This requires setting up the rule first, as follows...
 
-<div class="ke-figure ke-figure-left">
+<div class="ke-figure ke-figure-fill">
 
 ![A slide rule with the C scale left index set over 1.9 on the D scale](./_images/edu/edu-27.jpg)
 
@@ -502,7 +502,7 @@ As another activity, consider if you want students to give you a variety of frac
 
 In a similar way, if you wanted a ratio that's roughly equivalent to pi, then the "folded" scales of the CF and DF (the top scale) have you covered. Shown below, we set the "1" or "index" of the top scale to pi on the CF scale. Then, reading from the C and D scale again, we see fractional estimates for the irrational number, such as 22/7 as shown under the cursor line.
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure ke-figure-fill">
 
 ![A slide rule's folded CF/DF scales set to pi](./_images/edu/edu-28.jpg)
 
