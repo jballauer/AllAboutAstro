@@ -575,7 +575,9 @@ In the image above, the slide is not necessary to see the relationship between n
 
 The P scale will also solve any right triangle for its missing leg using a similar technique. As example, take the triangle at right. Then observe how this is easily solved with a different slide rule below...
 
-<div class="ke-figure ke-figure-right">
+<div class="ke-figure-row">
+
+<div class="ke-figure">
 
 ![A slide rule dividing 9 by 14 and reading the P scale](./_images/edu/edu-32.jpg)
 
@@ -583,13 +585,17 @@ The P scale will also solve any right triangle for its missing leg using a simil
 
 </div>
 
-From this situation, we can create any number of similar triangles by multiplying all the sides by any value of our choosing. Because we are finding x when the hypotenuse is 14, then x is solved by multiplying the 0.766 value from the P scale by 14. This is shown here, circled, with the left index of the C scale over 0.766 on the D scale, and reading the value of x on the D scale under the 14 (1.4) on the C scale. This value for x = 10.71 is shown under the hairline.
-
-<div class="ke-figure ke-figure-left">
+<div class="ke-figure">
 
 ![A slide rule multiplying 0.766 by 14 to solve for x](./_images/edu/edu-33.jpg)
 
+<p class="ke-figure-caption">Circled, the left index of the C scale is set over 0.766 on the D scale, and the value of x is read on the D scale under the 14 (1.4) on the C scale. This value for x = 10.71 is shown under the hairline.</p>
+
 </div>
+
+</div>
+
+From this situation, we can create any number of similar triangles by multiplying all the sides by any value of our choosing. Because we are finding x when the hypotenuse is 14, then x is solved by multiplying the 0.766 value from the P scale by 14. This is shown here, circled, with the left index of the C scale over 0.766 on the D scale, and reading the value of x on the D scale under the 14 (1.4) on the C scale. This value for x = 10.71 is shown under the hairline.
 
 Solving for x here, technically speaking, is Algebra, but here we have been showing how slide rule usage builds algebraic understanding. And before you think that we have forgotten about that, let's look at the self-documentation for the P scale. Easier to see on the Aristo Darmstadt rule, the √(1 - x²) is a rewrite of the x² + y² = 1 equation, allowing you to find one leg when given the other if the hypotenuse is 1. So again, by dividing all triangle sides by the hypotenuse to begin with, then the slide rule makes quick work of solving right triangles.
 
