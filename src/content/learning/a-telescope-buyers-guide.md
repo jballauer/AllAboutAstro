@@ -125,7 +125,7 @@ Particularly great are those refractors that are described as apochromatic (APO)
 
 </div>
 
-Takahashi, Astro-physics, TMB, Stellarvue, Sky-Watcher, Vixen, TEC, Williams Optics, Explore Scientific, and Televue all offer a variety of apochromatic refractors at various different price-points.   Be aware that not all similar sized APOs are treated equally.   For example, the Sky-Watcher Esprit 150mm telescope has a price of $6000, which seems really expensive until you look at the price of Takahashi's TOA-150 of $12,970 for the same aperture size.  I can confirm that the "Tak" is a great performer, but it's not twice the performer that the Sky-Watcher is.   As somebody with lot of experience with both telescopes (see "Triple Threat" at left), you can take my word for that.
+Takahashi, Astro-physics, TMB, Stellarvue, Sky-Watcher, Vixen, TEC, Williams Optics, Explore Scientific, and Televue all offer a variety of apochromatic refractors at various different price-points.   Be aware that not all similar sized APOs are treated equally.   For example, the Sky-Watcher Esprit 150mm telescope has a price of $6000, which seems really expensive until you look at the price of Takahashi's TOA-150 of $12,970 for the same aperture size.  I can confirm that the "Tak" is a great performer, but it's not twice the performer that the Sky-Watcher is.   As somebody with lot of experience with both telescopes (see "Triple Threat"<span class="ke-dir"> at left</span><span class="ke-dir-alt"> above</span>), you can take my word for that.
 
 <blockquote class="ke-callout">
 

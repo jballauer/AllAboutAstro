@@ -431,7 +431,7 @@ The truth is, much of that space is likely unusable unless you have spent a TON 
 
 But HOW you crop and HOW you rotate the image can really set your image apart.  A few tips in that regard:
 
-**The Rule of Thirds** - A nice composition tool is to divide the image into an invisible grid of thirds, top to bottom.   Strive to put key features at the intersections of those grid lines (also see Golden Ratio at right).   Thus, the goal would be to crop and rotate the image in such a way that lines up your key features into places that your eye naturally wants to see them.  It's "Psychology 101."
+**The Rule of Thirds** - A nice composition tool is to divide the image into an invisible grid of thirds, top to bottom.   Strive to put key features at the intersections of those grid lines (also see Golden Ratio<span class="ke-dir"> at right</span><span class="ke-dir-alt"> above</span>).   Thus, the goal would be to crop and rotate the image in such a way that lines up your key features into places that your eye naturally wants to see them.  It's "Psychology 101."
 
 If you are the person that takes pictures of a single object, like globular clusters and small galaxies and you insist on putting them in the dead center of the chip, then this tip was meant for you.  You are welcome!
 

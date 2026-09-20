@@ -127,7 +127,7 @@ Because finding dark sky sites might also mean off-roading, a durable vehicle is
 
 As the hobby has gotten more technical over the past couple of decades, more and more people find themselves in need of power. Imagers seem in dire need of it, more than others. So, let's look at some considerations, as this does affect how you choose a site.
 
-<div class="ke-sidebar" data-color="orange" data-side="right">
+<div class="ke-sidebar" data-color="orange" data-side="right" id="aside-table-of-typical-power-needs">
 
 ## Table of Typical Power Needs
 
@@ -145,7 +145,7 @@ As the hobby has gotten more technical over the past couple of decades, more and
 
 </div>
 
-In order to determine how much power your gear needs, you should add up all of your equipment's current draw (in amps) and estimate the maximum amount of power you might need at any given time. See the Table of Typical Power Needs for an imaging setup at right.
+In order to determine how much power your gear needs, you should add up all of your equipment's current draw (in amps) and estimate the maximum amount of power you might need at any given time. See the [Table of Typical Power Needs](#aside-table-of-typical-power-needs) for an imaging setup<span class="ke-dir"> at right</span>.
 
 Of course, it's nothing more than an estimate, since not everything will be running all at once. Imaging cameras and dew heaters are the big power monsters, which means 10 amps of power continuously. A slewing mount can be 3 amps. All the USB powered gear will be 0.5 amps a piece. A focuser and/or scope controller could demand an extra 2 or 3 amps when they run. And if your laptop is running off its power "brick," it will need another 1.5 amps itself.
 

@@ -703,6 +703,19 @@ const {
     .ke-sidebar:not(.ke-two-col-about) {
       padding: 14px 16px;
     }
+    /* Stacked, a sidebar is no longer a compact aside squeezed beside the
+       text — it is a full-width block the reader opens deliberately, so its
+       prose should read at the same size as the body prose above and below
+       it.  Left at 14px it looked conspicuously smaller than the 16px body
+       text around it, which is the mismatch in portrait.  (The floated
+       701-900px band solves the same problem from the other direction:
+       there the sidebar still competes for width, so the BODY comes down to
+       meet it instead.) */
+    .ke-sidebar:not(.ke-two-col-about) p,
+    .ke-sidebar:not(.ke-two-col-about) li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
     .ke-sidebar-disclosure summary {
       cursor: pointer;
       list-style: none;

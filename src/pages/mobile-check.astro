@@ -16,6 +16,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <p><button type="button" id="mc-refresh">Re-measure</button></p>
 
+  <!-- The stand-in samples above can disagree with a real article, so the
+       diagnostic loads one for real and measures inside it. -->
+  <h2 class="mc-h2">Measured inside a real article</h2>
+  <div id="mc-frame-out" class="mc-out">Loading the article&hellip;</div>
+  <div class="mc-frame-wrap">
+  <iframe
+    id="mc-frame"
+    class="mc-frame"
+    src="/learning/where-to-setup-your-telescope/"
+    title="Where to Setup Your Telescope, loaded for measurement"
+    loading="eager"
+  ></iframe>
+  </div>
+
   <p class="mc-note">
     Every number above is measured live on <em>this</em> device, not assumed.
     Rotate to landscape and send a screenshot.
@@ -80,6 +94,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     color: #fff;
     border: 0;
     border-radius: 6px;
+  }
+  .mc-frame-wrap {
+    overflow-x: auto;
+  }
+  .mc-h2 {
+    font-size: 1.05rem;
+    margin: 1.5rem 0 0.6rem;
+  }
+  /* Tall enough that the article inside lays out as it really would, and
+     wide enough to share this page's column width so any width-dependent
+     text inflation behaves the same way. */
+  .mc-frame {
+    /* A percentage width makes the framed article render ~50px narrower
+       than the real viewport, which lands it on the wrong side of a
+       breakpoint.  Pinned to 750 (an iPhone in landscape) so the article
+       inside sees the same width it really does; the wrapper scrolls if
+       the screen is narrower. */
+    width: 750px;
+    max-width: none;
+    height: 420px;
+    border: 1px solid #2a2f3a;
+    border-radius: 6px;
+    margin-top: 0.75rem;
   }
   .mc-samples {
     margin-top: 2rem;
@@ -169,8 +206,68 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     out.textContent = lines.join('\n');
   };
 
+  // Same-origin, so the article's own computed and rendered sizes can be
+  // read directly out of the frame — no interpretation needed from whoever
+  // is holding the phone.
+  const measureFrame = () => {
+    const frameOut = document.getElementById('mc-frame-out');
+    const frame = document.getElementById('mc-frame');
+    let doc;
+    try {
+      doc = frame.contentDocument;
+    } catch (err) {
+      frameOut.textContent = 'Could not read the article frame.';
+      return;
+    }
+    if (!doc || !doc.querySelector('article')) {
+      frameOut.textContent = 'Article frame not ready — tap Re-measure.';
+      return;
+    }
+
+    const article = doc.querySelector('article');
+    const prose = Array.from(article.querySelectorAll('p')).find(
+      (p) => !p.closest('.ke-sidebar') && !p.closest('.ke-figure') && p.textContent.trim().length > 120
+    );
+    const sidebarP = article.querySelector('.ke-sidebar p');
+
+    // Same rendered-geometry probe, but inside the article's own document.
+    const probe = doc.createElement('div');
+    probe.style.cssText =
+      'position:absolute;left:-9999px;top:0;font-size:16px;line-height:1;width:250px;';
+    probe.textContent = 'M';
+    doc.body.appendChild(probe);
+    const probeH = probe.getBoundingClientRect().height;
+    probe.remove();
+
+    const rendered = (el) => {
+      if (!el) return null;
+      const lh = parseFloat(doc.defaultView.getComputedStyle(el).lineHeight);
+      const lines = Math.max(1, Math.round(el.getBoundingClientRect().height / lh));
+      return { lines, perLine: Math.round(el.textContent.trim().length / lines) };
+    };
+    const proseR = rendered(prose);
+    const sideR = rendered(sidebarP);
+    const cs = (el) => (el ? doc.defaultView.getComputedStyle(el).fontSize : 'n/a');
+
+    frameOut.textContent = [
+      'ARTICLE: Where to Setup Your Telescope',
+      '  frame width       ' + Math.round(frame.getBoundingClientRect().width),
+      '  css bundle        ' + (doc.querySelector('link[href*="BaseLayout"]')
+        ? doc.querySelector('link[href*="BaseLayout"]').getAttribute('href').split('/').pop()
+        : '(inline)'),
+      '  body prose        ' + cs(prose) + '   ~' + (proseR ? proseR.perLine : '?') + ' chars/line',
+      '  sidebar prose     ' + cs(sidebarP) + '   ~' + (sideR ? sideR.perLine : '?') + ' chars/line',
+      '  boost probe       ' + probeH.toFixed(1) + 'px  (16.0 = not boosted)',
+      '  VERDICT           ' + (probeH > 16.8 ? '*** BOOSTED IN THE ARTICLE ***' : 'not boosted'),
+    ].join(String.fromCharCode(10));
+  };
+
   measure();
-  document.getElementById('mc-refresh').addEventListener('click', measure);
+  document.getElementById('mc-frame').addEventListener('load', () => setTimeout(measureFrame, 300));
+  document.getElementById('mc-refresh').addEventListener('click', () => {
+    measure();
+    measureFrame();
+  });
   window.addEventListener('resize', measure);
   window.addEventListener('orientationchange', () => setTimeout(measure, 400));
 </script>
