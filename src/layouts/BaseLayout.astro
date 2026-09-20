@@ -19,7 +19,12 @@ const {
 ---
 
 <!doctype html>
-<html lang="en">
+<!-- -webkit-text-size-adjust is set inline, not in the stylesheet: the CSS
+     minifier treats the prefixed property as redundant and drops it, leaving
+     only the unprefixed form, which WebKit does not act on.  That silently
+     removed this fix from every build it was attempted in.  Inline styles do
+     not go through that pipeline. -->
+<html lang="en" style="-webkit-text-size-adjust: 100%; text-size-adjust: 100%">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -313,9 +318,12 @@ const {
      size, not the boosted one, so this bug is invisible to a computed-style
      check — it has to be measured from rendered geometry (see
      /mobile-check/). */
+  /* The load-bearing copy of this is inline on the <html> element (see the
+     comment above it); the minifier strips the prefixed property from here.
+     Kept so the intent is visible where the rest of the type rules live. */
   html {
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
   body {
     margin: 0;
@@ -1912,12 +1920,19 @@ const {
       // Rendered geometry, not computed style: iOS text autosizing inflates
       // painted text and leaves the computed value untouched, so a
       // computed-only readout cannot see it.
-      const probeBox = document.createElement('div');
-      probeBox.style.cssText =
-        'position:absolute;left:-9999px;top:0;font-size:16px;line-height:1;width:250px;';
-      probeBox.textContent = 'M';
-      document.body.appendChild(probeBox);
-      const probeH = probeBox.getBoundingClientRect().height;
+      // In flow, inside the article, and full of real text: WebKit exempts
+      // absolutely-positioned and tiny blocks from autosizing, so the
+      // previous probe reported "not boosted" while the prose beside it was
+      // being scaled 1.5x.
+      const probeBox = document.createElement('p');
+      probeBox.style.cssText = 'font-size:16px;line-height:1;margin:0;visibility:hidden;';
+      probeBox.textContent =
+        'Probe text long enough that the engine treats this as a real ' +
+        'paragraph of running prose rather than an incidental fragment, ' +
+        'because short blocks are skipped by the autosizing pass.';
+      (article || document.body).appendChild(probeBox);
+      const probeH = probeBox.getBoundingClientRect().height /
+        Math.max(1, Math.round(probeBox.getBoundingClientRect().height / 16));
       probeBox.remove();
 
       const perLine = (el) => {
