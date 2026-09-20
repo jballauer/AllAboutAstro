@@ -1878,3 +1878,73 @@ const {
     });
   }
 </script>
+
+<script>
+  // Add ?debug=type to any URL to get a live type readout for THAT page on
+  // THAT device.  Every remote diagnosis so far has failed because a
+  // stand-in page or a desktop emulator behaved differently from the real
+  // article on the real phone; this measures the page actually being read.
+  // The query string also defeats any cached copy, so what it reports is
+  // necessarily the current build.
+  if (window.location.search.indexOf('debug=type') !== -1) {
+    const panel = document.createElement('div');
+    panel.setAttribute(
+      'style',
+      'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#0b0e14;' +
+        'color:#e8ecf4;border-top:2px solid #359bdc;padding:10px 12px;' +
+        'font:12px/1.45 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;' +
+        'max-height:55vh;overflow:auto;'
+    );
+    document.body.appendChild(panel);
+
+    const read = () => {
+      const article = document.querySelector('article');
+      const prose = article
+        ? Array.from(article.querySelectorAll('p')).find(
+            (p) =>
+              !p.closest('.ke-sidebar') &&
+              !p.closest('.ke-figure') &&
+              p.textContent.trim().length > 150
+          )
+        : null;
+      const sidebarP = article ? article.querySelector('.ke-sidebar p') : null;
+
+      // Rendered geometry, not computed style: iOS text autosizing inflates
+      // painted text and leaves the computed value untouched, so a
+      // computed-only readout cannot see it.
+      const probeBox = document.createElement('div');
+      probeBox.style.cssText =
+        'position:absolute;left:-9999px;top:0;font-size:16px;line-height:1;width:250px;';
+      probeBox.textContent = 'M';
+      document.body.appendChild(probeBox);
+      const probeH = probeBox.getBoundingClientRect().height;
+      probeBox.remove();
+
+      const perLine = (el) => {
+        if (!el) return '?';
+        const lh = parseFloat(getComputedStyle(el).lineHeight);
+        const lines = Math.max(1, Math.round(el.getBoundingClientRect().height / lh));
+        return Math.round(el.textContent.trim().length / lines);
+      };
+      const size = (el) => (el ? getComputedStyle(el).fontSize : 'n/a');
+      const link = document.querySelector('link[href*="BaseLayout"]');
+
+      panel.textContent = [
+        'width ' + document.documentElement.clientWidth +
+          '   ' + (window.innerWidth > window.innerHeight ? 'LANDSCAPE' : 'PORTRAIT') +
+          '   dPR ' + window.devicePixelRatio,
+        'css   ' + (link ? link.getAttribute('href').split('/').pop() : '(inline)'),
+        'band  701-900 ' + window.matchMedia('(min-width: 701px) and (max-width: 900px)').matches +
+          '    <=700 ' + window.matchMedia('(max-width: 700px)').matches,
+        'PROSE   ' + size(prose) + '   ~' + perLine(prose) + ' chars/line',
+        'SIDEBAR ' + size(sidebarP) + '   ~' + perLine(sidebarP) + ' chars/line',
+        'probe   ' + probeH.toFixed(1) + 'px  (16.0 = not boosted)',
+        'VERDICT ' + (probeH > 16.8 ? '*** BOOSTED ***' : 'not boosted'),
+      ].join(String.fromCharCode(10));
+    };
+
+    read();
+    window.addEventListener('resize', read);
+    window.addEventListener('orientationchange', () => setTimeout(read, 400));
+  }
+</script>
