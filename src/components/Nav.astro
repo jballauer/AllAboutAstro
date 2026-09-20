@@ -17,7 +17,16 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
 <header class="site-header">
   <div class="site-header__inner">
     <a class="site-title" href="/">All About Astro.com</a>
-    <nav aria-label="Primary">
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      aria-label="Open menu"
+    >
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+    <nav id="primary-nav" aria-label="Primary">
       <ul>
         <li><a href="/" aria-current={currentPath === '/' ? 'page' : undefined}>Home</a></li>
         <li><a href="/blog/" aria-current={isCurrent('/blog/') ? 'page' : undefined}>Blog</a></li>
@@ -162,16 +171,221 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
     margin-right: 0;
   }
 
+  /* The hamburger only exists on phones; desktop keeps the hover menus. */
+  .nav-toggle {
+    display: none;
+  }
+
+  /* Phone layout: a 44px sticky bar and nothing else.  The previous
+     treatment turned every hover dropdown into a permanently-open static
+     list, which stacked to 1,110px - more than a full screen of menu ahead
+     of every article.  Now the bar holds the title and a hamburger, the
+     menu is a panel that opens over the page, and each section expands
+     only when its caret is tapped. */
   @media (max-width: 720px) {
-    .dropdown {
+    .site-header {
+      position: sticky;
+      top: 0;
+      /* Above page content and the home page's slideshow layers, still well
+         below the fullscreen lightbox overlay (1000). */
+      z-index: 200;
+    }
+    .site-header__inner {
+      padding: 0 0.25rem 0 1rem;
+      gap: 0;
+      flex-wrap: nowrap;
+      min-height: 44px;
+    }
+    .site-title {
+      font-size: 1rem;
+    }
+    .nav-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      /* Full 44px tap target, per the usual touch minimum, without making
+         the bar itself any taller than 44px. */
+      width: 44px;
+      height: 44px;
+      flex: 0 0 auto;
+      padding: 0;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+    .nav-toggle__bars,
+    .nav-toggle__bars::before,
+    .nav-toggle__bars::after {
       display: block;
+      width: 20px;
+      height: 2px;
+      background: #e8ecf4;
+      transition: transform 0.18s ease, background-color 0.18s ease;
+    }
+    .nav-toggle__bars::before,
+    .nav-toggle__bars::after {
+      content: '';
+      position: absolute;
+    }
+    .nav-toggle__bars::before {
+      transform: translateY(-6px);
+    }
+    .nav-toggle__bars::after {
+      transform: translateY(6px);
+    }
+    /* Open state: the three bars fold into an X. */
+    .nav-toggle[aria-expanded='true'] .nav-toggle__bars {
+      background: transparent;
+    }
+    .nav-toggle[aria-expanded='true'] .nav-toggle__bars::before {
+      transform: rotate(45deg);
+    }
+    .nav-toggle[aria-expanded='true'] .nav-toggle__bars::after {
+      transform: rotate(-45deg);
+    }
+
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #0d0d0e;
+      border-bottom: 1px solid #333;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+      /* A long section (Learning has 13 articles) scrolls inside the panel
+         rather than running off the bottom of the screen. */
+      max-height: calc(100vh - 44px);
+      overflow-y: auto;
+    }
+    .site-header[data-nav-open] nav {
+      display: block;
+    }
+    nav > ul {
+      flex-direction: column;
+      gap: 0;
+    }
+    nav > ul > li {
+      border-top: 1px solid #22262f;
+    }
+    nav > ul > li > a {
+      display: block;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+    }
+    /* The caret button carries the affordance now, so the parent link no
+       longer needs its own glyph. */
+    .has-dropdown {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .has-dropdown > a::after {
+      content: '';
+    }
+    .has-dropdown > a {
+      flex: 1 1 auto;
+    }
+    .sub-toggle {
+      flex: 0 0 auto;
+      width: 48px;
+      align-self: stretch;
+      background: none;
+      border: 0;
+      border-left: 1px solid #22262f;
+      color: #b8c0d0;
+      font-size: 0.8rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .sub-toggle[aria-expanded='true'] {
+      color: #e8ecf4;
+    }
+    .dropdown {
+      display: none;
       position: static;
-      margin-top: 0.25rem;
-      margin-left: 1rem;
+      flex-basis: 100%;
+      width: auto;
+      margin: 0;
+      padding: 0 0 0.35rem;
+      border: 0;
+      border-radius: 0;
+      background: #12151d;
       box-shadow: none;
+    }
+    .has-dropdown[data-sub-open] > .dropdown {
+      display: block;
+    }
+    .dropdown a {
+      padding: 0.55rem 1rem 0.55rem 1.75rem;
     }
     .submenu {
       margin-left: 1rem;
     }
   }
 </style>
+
+<script>
+  // Phone nav: the hamburger opens the panel, and each section with a
+  // dropdown gets a caret button that expands it in place.  The caret is
+  // injected rather than authored into the markup so the desktop hover
+  // menus stay exactly as they were.
+  {
+    const header = document.querySelector('.site-header');
+    const toggle = document.querySelector('.nav-toggle');
+
+    if (header && toggle) {
+      const setOpen = (open) => {
+        if (open) header.setAttribute('data-nav-open', '');
+        else header.removeAttribute('data-nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      };
+
+      toggle.addEventListener('click', () => {
+        setOpen(!header.hasAttribute('data-nav-open'));
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && header.hasAttribute('data-nav-open')) {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+
+      // A tap anywhere outside the header dismisses the panel, so it never
+      // strands the reader between the menu and the article.
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!header.hasAttribute('data-nav-open')) return;
+        if (target instanceof Node && header.contains(target)) return;
+        setOpen(false);
+      });
+
+      document.querySelectorAll('.has-dropdown').forEach((item) => {
+        const link = item.querySelector(':scope > a');
+        const submenu = item.querySelector(':scope > .dropdown');
+        if (!link || !submenu) return;
+
+        const caret = document.createElement('button');
+        caret.type = 'button';
+        caret.className = 'sub-toggle';
+        caret.setAttribute('aria-expanded', 'false');
+        caret.setAttribute('aria-label', 'Show ' + link.textContent.trim() + ' pages');
+        caret.textContent = '\u25BC';
+
+        caret.addEventListener('click', () => {
+          const open = item.hasAttribute('data-sub-open');
+          if (open) item.removeAttribute('data-sub-open');
+          else item.setAttribute('data-sub-open', '');
+          caret.setAttribute('aria-expanded', open ? 'false' : 'true');
+          caret.textContent = open ? '\u25BC' : '\u25B2';
+        });
+
+        link.insertAdjacentElement('afterend', caret);
+      });
+    }
+  }
+</script>

@@ -1573,16 +1573,25 @@ const {
 </style>
 
 <script>
-  // PROTOTYPE (2026-09-20) — collapse `.ke-sidebar` asides into tap-to-open
-  // disclosures on phones only.  Runs once at load and does not re-run on
-  // resize: a phone doesn't cross the 700px breakpoint in practice, and
-  // rewriting the DOM under a reader mid-article would lose their place.
-  // The `.ke-two-col-about` variant is skipped — it's a flex column in a
-  // deliberate two-column block, not an aside floated into running prose.
-  if (window.matchMedia('(max-width: 700px)').matches) {
-    document.querySelectorAll('.ke-sidebar').forEach((sidebar) => {
+  // Phone-only collapsible asides.  A stacked sidebar stops being an aside
+  // and becomes a wall: Chapter 3's European Influence box is 3,771px tall
+  // stacked, so the narrative halts for four and a half screens.  Collapsed,
+  // the box keeps its anchor point in the prose while the body text runs
+  // continuously past it — the closest phone-shaped translation of "runs
+  // alongside".  With no JS the sidebar renders open, which is the
+  // pre-existing behaviour.
+  {
+    const phone = window.matchMedia('(max-width: 700px)');
+
+    // A phone crosses this breakpoint exactly once in normal use: rotating
+    // to landscape, where there IS room for the real floated side-by-side
+    // layout.  So the rewrite has to run both ways — a one-way collapse
+    // left rotated sidebars stuck as bars inside a float that had already
+    // gone back to 58% width.
+    const collapse = (sidebar) => {
       if (sidebar.classList.contains('ke-two-col-about')) return;
-      const heading = sidebar.querySelector('h2');
+      if (sidebar.querySelector(':scope > .ke-sidebar-disclosure')) return;
+      const heading = sidebar.querySelector(':scope > h2');
       if (!heading) return;
 
       const details = document.createElement('details');
@@ -1601,10 +1610,38 @@ const {
       label.appendChild(hint);
       summary.appendChild(label);
 
+      // The heading element itself is kept (not just its text) so restoring
+      // it on rotation puts back the original node, attributes and all.
       heading.remove();
+      sidebar.ke_heading = heading;
+
       details.appendChild(summary);
       while (sidebar.firstChild) details.appendChild(sidebar.firstChild);
       sidebar.appendChild(details);
-    });
+    };
+
+    const restore = (sidebar) => {
+      const details = sidebar.querySelector(':scope > .ke-sidebar-disclosure');
+      if (!details) return;
+      const summary = details.querySelector(':scope > summary');
+      if (summary) summary.remove();
+      while (details.firstChild) sidebar.appendChild(details.firstChild);
+      details.remove();
+      if (sidebar.ke_heading) {
+        sidebar.insertBefore(sidebar.ke_heading, sidebar.firstChild);
+        sidebar.ke_heading = null;
+      }
+    };
+
+    const apply = () => {
+      const action = phone.matches ? collapse : restore;
+      document.querySelectorAll('.ke-sidebar').forEach(action);
+    };
+
+    apply();
+    // addEventListener on a MediaQueryList is the modern form; Safari only
+    // gained it in 14, so fall back to the deprecated addListener.
+    if (phone.addEventListener) phone.addEventListener('change', apply);
+    else if (phone.addListener) phone.addListener(apply);
   }
 </script>
