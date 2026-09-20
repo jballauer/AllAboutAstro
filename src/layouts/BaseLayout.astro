@@ -1929,7 +1929,24 @@ const {
       const size = (el) => (el ? getComputedStyle(el).fontSize : 'n/a');
       const link = document.querySelector('link[href*="BaseLayout"]');
 
+      // 750 is not a standard iPhone landscape width (667/736/780/844/852/932
+      // are), which points at a page-zoom or text-size setting shrinking the
+      // layout viewport.  screen.* is unaffected by zoom, so the ratio
+      // between them exposes it.
+      const sw = window.screen ? window.screen.width : 0;
+      const sh = window.screen ? window.screen.height : 0;
+      const longest = Math.max(sw, sh);
+      const zoomGuess = longest && window.innerWidth
+        ? (longest / window.innerWidth).toFixed(2)
+        : '?';
+
       panel.textContent = [
+        'screen ' + sw + 'x' + sh + '   landscape css should be ' + longest,
+        'zoom?  screen/inner = ' + zoomGuess + '   (1.00 = no page zoom)',
+        'vvp    ' + (window.visualViewport
+          ? Math.round(window.visualViewport.width) + ' @ scale ' +
+            window.visualViewport.scale.toFixed(2)
+          : 'n/a'),
         'width ' + document.documentElement.clientWidth +
           '   ' + (window.innerWidth > window.innerHeight ? 'LANDSCAPE' : 'PORTRAIT') +
           '   dPR ' + window.devicePixelRatio,
