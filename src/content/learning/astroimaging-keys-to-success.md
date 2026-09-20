@@ -51,9 +51,9 @@ Finally, knowing your equipment always means to recognize the importance of imag
 
 ### KEY #3 — Understand the Data
 
-We process data. When you get started, it's difficult to know what you are looking at. Heck, even when you open the FITS file from the astro camera, it's all black. Truly, you are in new territory. A proper stretch is typically the first processing move you MUST get correct, which allows you to see all the data on screen without blowing out the highlight areas. Equally important is the screen stretch, which displays the information you've collected during an imaging run. Doing so allows you to check object orientation and framing, if you have good focus, if the auto guider is behaving, and it lets you evaluate whether or not the object is worth spending time on. In total, if you don't like what you see in a stretched out 10 minute image, then it's very unlikely you will like what you see in a whole stack of them. See *"Sidebar: Judging the Screen Stretch"* at right.
+We process data. When you get started, it's difficult to know what you are looking at. Heck, even when you open the FITS file from the astro camera, it's all black. Truly, you are in new territory. A proper stretch is typically the first processing move you MUST get correct, which allows you to see all the data on screen without blowing out the highlight areas. Equally important is the screen stretch, which displays the information you've collected during an imaging run. Doing so allows you to check object orientation and framing, if you have good focus, if the auto guider is behaving, and it lets you evaluate whether or not the object is worth spending time on. In total, if you don't like what you see in a stretched out 10 minute image, then it's very unlikely you will like what you see in a whole stack of them. See *"[Sidebar: Judging the Screen Stretch](#aside-judging-the-screen-stretch)"*<span class="ke-dir"> at right</span>.
 
-<div class="ke-sidebar" data-side="right">
+<div class="ke-sidebar" data-side="right" id="aside-judging-the-screen-stretch">
 
 ## Sidebar: Judging the Screen Stretch
 

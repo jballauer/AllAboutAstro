@@ -11,7 +11,7 @@ An astronomical image can be defined as:
 
 Emphasis is placed on the "that can be interpreted" part.   In essence, this is the TASK OF IMAGING PROCESSING.  It's both the job of the software program AND the person using it.   This job is subject to all kinds of techniques, philosophies, and ethics, which is what makes this whole thing somewhat difficult.   Consistency in image processing is remarkably hard; and no two efforts will ever be the same.
 
-To drive this point home, see the figure at right.
+To drive this point home, see the figure <span class="ke-dir">at right</span><span class="ke-dir-alt">below</span>.
 
 The goal of this article is to provide a broad overview of the TASK of IMAGE PROCESSING, so if you are learning via a video or a tutorial you can know why you are doing what you are doing.
 
@@ -361,7 +361,7 @@ This should be "Exhibit A" for the flexibility and latitude that you actually ha
 
 **Hydrogen-Alpha Merging** - Perhaps the most difficult process to master, at some point after processing a well-balanced RGB or LRGB image, you might want to apply some h-alpha data to add impact to the emission nebulae within the image.
 
-After reading the LLRGB sidebar (at right), you probably realize that the issue with merging h-alpha with LRGB data is that there is essentially ZERO one-to-one correspondence between the data sets.  So, you must begin a process of merging the data together, slowing building up the color (typically the red channel) so that the H-alpha data is slowly folded in.
+After reading the [LLRGB sidebar](#aside-the-llrgb-technique)<span class="ke-dir"> (at right)</span>, you probably realize that the issue with merging h-alpha with LRGB data is that there is essentially ZERO one-to-one correspondence between the data sets.  So, you must begin a process of merging the data together, slowing building up the color (typically the red channel) so that the H-alpha data is slowly folded in.
 
 The steps go far beyond the scope of this article, but those who are trying to gain tips by looking at the workflow of others should not be surprised to see people attempting to add h-alpha data to their images to produce an HaRGB image...or probably something more like an (Ha+L ) (Ha+R) GB image.
 
@@ -391,9 +391,9 @@ I guess you are just happy that your FB "friends" have given you a "pat on the b
 
 The thing is, it doesn't have to be this way.   Your presentation of the image is EVERYTHING.   This is where being an artist comes into play.
 
-You need to realize that just because you have a big canvas or CCD chip, you don't have to use all of it!  More than likely, your optics don't completely cover something like a KAF-16803 anyway...or even a full-frame DSLR for that matter, which is roughly the same size as the KAI-11000 shown in the diagram at left.
+You need to realize that just because you have a big canvas or CCD chip, you don't have to use all of it!  More than likely, your optics don't completely cover something like a KAF-16803 anyway...or even a full-frame DSLR for that matter, which is roughly the same size as the KAI-11000 shown in the diagram <span class="ke-dir">at left</span><span class="ke-dir-alt">above</span>.
 
-<div class="ke-sidebar" data-side="right" data-width="wide">
+<div class="ke-sidebar" data-side="right" data-width="wide" id="aside-the-llrgb-technique">
 
 ## Sidebar: The LLRGB Technique
 
@@ -455,7 +455,7 @@ But one day at the Advanced Imaging Conference (AIC) in San Jose, Tony Hallas sh
 
 So, I went back to my images to see if any of them merited an adjustment.  Could I any of my images be rotated in such a way that put something of interest in the upper left corner?    Could any of my images benefit from being "read like a book"?
 
-When I revisited this image of the Cocoon, I noted how there was nothing but stars in the upper-left corner.  Perhaps you see that too?   Interestingly, it was the lower right corner that has something of interest - a bright blue star with perfect refractor spikes setting the scene for the reflection of its light off the background dust, which in turn cascades like a river toward the turbulent center.   So, I decided to rotate and slight crop the image further, as shown at right (below).
+When I revisited this image of the Cocoon, I noted how there was nothing but stars in the upper-left corner.  Perhaps you see that too?   Interestingly, it was the lower right corner that has something of interest - a bright blue star with perfect refractor spikes setting the scene for the reflection of its light off the background dust, which in turn cascades like a river toward the turbulent center.   So, I decided to rotate and slight crop the image further, as shown<span class="ke-dir"> at right</span> (below).
 
 <div class="ke-image-feature">
 <div class="ke-image-feature-row">

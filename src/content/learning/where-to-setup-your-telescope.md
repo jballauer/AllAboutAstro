@@ -159,7 +159,7 @@ Either way, once the total current requirements are known you are in a position 
 
 ### DC Power Needs
 
-<div class="ke-sidebar" data-side="right" data-width="wide">
+<div class="ke-sidebar" data-side="right" data-width="wide" id="aside-non-12vdc-equipment">
 
 ## Sidebar: Non-12vDC Equipment?
 
@@ -189,7 +189,7 @@ As for other equipment, such as laptop computers, you might need an inverter any
 
 For the most part, there's not a single power requirement we have that cannot be run off of a battery; thus, having a good portable solution to provide DC power, enough to last through the night, might be all you need. If that's the case, then you can pretty much setup anywhere; go anywhere. So for the MOST flexibility in where you setup, having your own supply of DC power is a great idea. Heck, even if there is AC power at a big star party, it's often nice to stay off the grid, especially when a breaker trips because of all the dew-slaying hair dryers.
 
-The real advantage of DC power is that voltage supply is consistent, a requirement of modern electronics. But make no mistake, there's not a single piece of equipment that you cannot run off of batteries. In fact, even if the mount comes with an AC/DC adapter so you can plug it into the wall - such "bricks" rectify and filter the current into smooth DC for the electronics - you can usually bypass them entirely and get power straight off of batteries instead. Or, you can power them off an AC/DC inverter (see Sidebar: Non-12vDC Equipment? at right).
+The real advantage of DC power is that voltage supply is consistent, a requirement of modern electronics. But make no mistake, there's not a single piece of equipment that you cannot run off of batteries. In fact, even if the mount comes with an AC/DC adapter so you can plug it into the wall - such "bricks" rectify and filter the current into smooth DC for the electronics - you can usually bypass them entirely and get power straight off of batteries instead. Or, you can power them off an AC/DC inverter (see [Sidebar: Non-12vDC Equipment?](#aside-non-12vdc-equipment)<span class="ke-dir"> at right</span>).
 
 I am a fan of group size 24 and 27 "marine" or "deep-cycle" batteries (AKA "wet cell" or "flooded") due to their reasonable cost and heavy load capacities in the area of 105 amp hours or more. This means that the battery can run a 1A load for 105 hours (or a 105A load for 1 hour). This is plenty of power for a consistent 10 amp current requirement (easily accomplished as long as you aren't running dew heaters). That yields an estimated 10.5 hours of power - enough to get you easily through a night of fantastic imaging. You do not see these often in the observing field due to their weight (perhaps 70 or 80 lbs.) but the price is right, typically around the ballpark of $100 to $120. But if you go to star parties that do not have AC power (like Rocky Mountain Star Stare), then you'd probably take TWO big batteries, just like me!
 
@@ -229,7 +229,7 @@ All because I'm trying to tap into AC power to run all of my DC gear!
 
 When I just have a scope in the field, I tend to let cables and bricks hang everywhere, perhaps tied back with a few zip-ties. But if your setup is at least semi-permanent, then it might be a great idea to get rid of all the bricks and power your devices straight from DC. It reduces the total number of cables, allows for shorter runs, and yields an opportunity for a neat and tidy solution.
 
-For my permanent setups, it's hard to beat a Powerwerx RigRunner Power Distribution Rail. It receives input power from your AC/DC power supply (I use Pyramid 10 to 20 amp supplies and route power cables through the Paramount, shown at left below). It routes the power through individual in-line fuses and provides Anderson "power pole" connectors for output to all your DC powered devices. Modifications and/or DIY cabling terminated with the same power pole connectors is required. The Rigrunner is mounted on a rail attached to the saddle plate of the mount, hugging the tube (OTA) of the telescope itself. This puts a supply of safe, reliable power RIGHT NEXT TO all of your power hungry devices. This means short and tidy cable runs, all of which spin around with the telescope.
+For my permanent setups, it's hard to beat a Powerwerx RigRunner Power Distribution Rail. It receives input power from your AC/DC power supply (I use Pyramid 10 to 20 amp supplies and route power cables through the Paramount, shown<span class="ke-dir"> at left</span> below). It routes the power through individual in-line fuses and provides Anderson "power pole" connectors for output to all your DC powered devices. Modifications and/or DIY cabling terminated with the same power pole connectors is required. The Rigrunner is mounted on a rail attached to the saddle plate of the mount, hugging the tube (OTA) of the telescope itself. This puts a supply of safe, reliable power RIGHT NEXT TO all of your power hungry devices. This means short and tidy cable runs, all of which spin around with the telescope.
 
 Route a USB cable through your mount and put a USB hub next to the Rigrunner alongside your dew heater and autofocuser controllers and you've got a slick, pretty, cable free set-up.
 
@@ -305,7 +305,7 @@ Heat is less of a problem for many people, but in Texas it can quickly become op
 
 </div>
 
-<div class="ke-sidebar" data-side="right" data-width="wide">
+<div class="ke-sidebar" data-side="right" data-width="wide" id="aside-omega-adventures">
 
 ## Sidebar: Omega Adventures
 
@@ -333,7 +333,7 @@ But when all is good and you have clear access to the photons, you can enjoy the
 
 If you are doing solar observing - or moon and planets for public outreach - then WHERE you setup isn't important. But for the dedicated observer or astro-imager, your location and specific site should account for the specific things that you want to see. For example, many people who come to TSP for the first time are excited to see Omega Centauri, since it rises an amazing 11 degrees above the southern horizon. But it's only amazing if you position your telescope away from enough trees and mountains to actually see it.
 
-Not just that, but at a star party, it's very likely that your dob might be blocked by the telescopes of people setting up around you. You will need direct line of sight to such objects. Speaking of Omega Centauri, I am excited to see it every year at TSP, but my first efforts to image it digitally were briefly thwarted. After aligning my telescope carefully for what seems half of the night, I didn't realize that I would be blocked by my neighbor's 6" refractor. See Sidebar: Omega Adventures at right.
+Not just that, but at a star party, it's very likely that your dob might be blocked by the telescopes of people setting up around you. You will need direct line of sight to such objects. Speaking of Omega Centauri, I am excited to see it every year at TSP, but my first efforts to image it digitally were briefly thwarted. After aligning my telescope carefully for what seems half of the night, I didn't realize that I would be blocked by my neighbor's 6" refractor. See [Sidebar: Omega Adventures](#aside-omega-adventures)<span class="ke-dir"> at right</span>.
 
 Many people, hoping to optimize their time under the skies, have their observing lists and imaging targets before they start. At TSP, you might be gunning for some observing pins. Perhaps you are going after your Messiers or Herschels for your Astronomical League certificate? How about doing a Messier marathon, where you orchestrate observations of all 110 Messiers on the same night?
 

@@ -539,6 +539,33 @@ const {
     }
   }
 
+  /* Layout-direction words.  Prose like "as shown at right" describes the
+     desktop float, which is wrong once that figure or sidebar is stacked
+     full-width on a phone.  `.ke-dir` carries the desktop wording and
+     `.ke-dir-alt` the phone wording, swapped at the same breakpoint the
+     floats themselves use; where the sentence already says "below" on its
+     own, the direction is tagged with no alternative and simply drops out.
+     These are tagged by hand per instance rather than rewritten in bulk:
+     more than a third of the site's "at right"/"at left" phrases describe
+     positions INSIDE a photo ("NGC 4248 at right", "curving upwards to the
+     right") or are idioms ("Expose to the right", "crop to the right
+     size"), and those must never be touched. */
+  .ke-dir-alt {
+    display: none;
+  }
+  @media (max-width: 700px) {
+    .ke-dir {
+      display: none;
+    }
+    .ke-dir-alt {
+      display: inline;
+    }
+    /* A sidebar reached by its link has to clear the 44px sticky bar. */
+    .ke-sidebar {
+      scroll-margin-top: 56px;
+    }
+  }
+
   /* PROTOTYPE (2026-09-20) — phone-only collapsible asides.
      A stacked sidebar on a phone stops being an aside and becomes a wall:
      a long one interrupts the main narrative for several screens, which is
@@ -1643,5 +1670,39 @@ const {
     // gained it in 14, so fall back to the deprecated addListener.
     if (phone.addEventListener) phone.addEventListener('change', apply);
     else if (phone.addListener) phone.addListener(apply);
+
+    // In-text references like "see Sidebar: Omega Adventures" link to the
+    // aside itself, which works in both layouts — but on a phone the target
+    // is collapsed, so following the link has to open it.  Opening happens
+    // before the browser's own scroll, so it lands on the expanded box.
+    const openTarget = (hash) => {
+      if (!hash || hash.length < 2) return null;
+      let target = null;
+      try {
+        target = document.querySelector(hash);
+      } catch (err) {
+        return null;
+      }
+      if (!target || !target.classList.contains('ke-sidebar')) return null;
+      const details = target.querySelector(':scope > .ke-sidebar-disclosure');
+      if (details) details.open = true;
+      return target;
+    };
+
+    document.addEventListener('click', (event) => {
+      const node = event.target;
+      if (!(node instanceof Element)) return;
+      const link = node.closest('a[href^="#"]');
+      if (link) openTarget(link.getAttribute('href'));
+    });
+
+    window.addEventListener('hashchange', () => openTarget(window.location.hash));
+
+    // A page opened directly on a #sidebar- link has already scrolled by the
+    // time this runs, and expanding the box moves it, so re-anchor once.
+    if (window.location.hash) {
+      const target = openTarget(window.location.hash);
+      if (target) target.scrollIntoView();
+    }
   }
 </script>

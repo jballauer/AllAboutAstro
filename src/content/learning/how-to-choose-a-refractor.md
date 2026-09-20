@@ -16,7 +16,7 @@ When most of us picture a "telescope," our minds see a refractor.
 
 </div>
 
-Sighting through a tube, from one end and out the other, magnifying the oncoming approach of pirates gaining on your ship or watching the Pink Panther fighting with the astronomer at Star Peak Observatory. There's a romantic aspect to the refractor that no other telescope designs have. Our childhood fantasy was one of looking up and through such a telescope as the 15" D&G f/12 refractor shown at right.
+Sighting through a tube, from one end and out the other, magnifying the oncoming approach of pirates gaining on your ship or watching the Pink Panther fighting with the astronomer at Star Peak Observatory. There's a romantic aspect to the refractor that no other telescope designs have. Our childhood fantasy was one of looking up and through such a telescope as the 15" D&G f/12 refractor shown <span class="ke-dir">at right</span><span class="ke-dir-alt">below</span>.
 
 From a pure design standpoint, a well executed refractor has its complexity, as lenses must be designed to not only flatten the field from side to side, but to do so by bringing all wave-lengths of light into focus exactly at that flattened plane.
 

@@ -7,7 +7,7 @@ draft: false
 
 *- edited May 6, 2020*
 
-Purchasing a telescope, especially your first scope, is a daunting task.  There are just so many different types of scopes that do so many different types of things.  Apos and Achros; SCTs and Maks; dobs and newts; RCs and CDKs...the choices can get overwhelming!    But then, you must also consider how each "scope" or optical tube assembly (OTA) is mounted (see **Sidebar: Basic Telescope Mount Options** at right).
+Purchasing a telescope, especially your first scope, is a daunting task.  There are just so many different types of scopes that do so many different types of things.  Apos and Achros; SCTs and Maks; dobs and newts; RCs and CDKs...the choices can get overwhelming!    But then, you must also consider how each "scope" or optical tube assembly (OTA) is mounted (see **[Sidebar: Basic Telescope Mount Options](#aside-basic-telescope-mount-options)**<span class="ke-dir"> at right</span>).
 
 So instead of trying to explain to you what each type of scope does (a study for a later time), I think it's important to outline several qualities first.   These should be on your mind when searching for your first telescope.  In fact, these qualities are relevant to both the beginner and the expert, and serve as general rules to the hobby.  Those five qualities are listed here, somewhat, in descending order of importance.
 
@@ -15,7 +15,7 @@ In this Telescope Buyer's Guide,  I'll talk a bit about each of these qualities 
 
 Finally, I will give recommendations based upon the kind of hobbyist you think you will be!     Let's get started...
 
-<div class="ke-sidebar" data-color="teal" data-side="right" data-width="wide">
+<div class="ke-sidebar" data-color="teal" data-side="right" data-width="wide" id="aside-basic-telescope-mount-options">
 
 ## Sidebar: Basic Telescope Mount Options
 
@@ -284,7 +284,7 @@ Likewise, those that purchase a small, rich-field refractor will be very disappo
 
 Therefore, as a beginner, you should probably temper your expectations a little bit and purchase a good telescope for visual use only, since the more versatile scopes are also more complex, not to mention more expensive.  Allow yourself some time before you look for versatility in a scope...save such things for your second one!
 
-<div class="ke-sidebar" data-color="teal" data-side="left" data-width="wide">
+<div class="ke-sidebar" data-color="teal" data-side="left" data-width="wide" id="aside-chinese-value-options">
 
 ## Sidebar: Chinese Value Options
 
@@ -399,7 +399,7 @@ For these reasons, ***Dobsonian reflectors*** deliver the most visual performanc
 
 Then again, there's another consideration, one that deals with making choices among certain types of gear.   For example, perhaps you want to do a little photography and see people buying a particular mount...or you've heard people tell you that the "CG-5" or "AVX" is the least mount they can recommend.  And certainly, such might be good advice, since such mounts DO represent good value choices in the hobby.    As such, "bang for the buck" might just mean making a value choice that delivers 80% of the performance of something twice as expensive.  In our discussion on OPTICAL PERFORMANCE, I mentioned that SkyWatcher Apo refractors were a high performance, yet great value choice compared to those from Takahashi, Astro-Physics, and the like.    But what I did NOT mention at that time is that these scopes are chinese-made, although SkyWatcher-USA outsources them.   I know.  Not 'Merican...for shame!
 
-Now it might be a moot point for you anyway, since even those scope are WAY out of your budget.   But one of the things to know is that MANY companies that you are looking at now, including Celestron, Orion, Explore Scientific, iOptron, Meade, and SkyWatcher...they ALL have items in their product lines that are sourced from China.   More specifically, one main company known as Synta (which is the parent company for Celestron and SkyWatcher-USA).   And this begins to make a little more sense when you see the similarities between various products (see Sidebar: Chinese Value Options at left).
+Now it might be a moot point for you anyway, since even those scope are WAY out of your budget.   But one of the things to know is that MANY companies that you are looking at now, including Celestron, Orion, Explore Scientific, iOptron, Meade, and SkyWatcher...they ALL have items in their product lines that are sourced from China.   More specifically, one main company known as Synta (which is the parent company for Celestron and SkyWatcher-USA).   And this begins to make a little more sense when you see the similarities between various products (see [Sidebar: Chinese Value Options](#aside-chinese-value-options)<span class="ke-dir"> at left</span>).
 
 I tell you this here because not all chinese-made things are bad, much of it is good "bang for the buck," AND the confusion when comparison shopping can be GREATLY eliminated once you realize how many of those products are actually the same thing.
 
@@ -604,7 +604,7 @@ There is no better time than NOW to get into the hobby for "The Techie Guy."   T
 
 For this type of person then, it's really hard to beat ***a Schmidt-Cassegrain Telescope (SCT) in the 8" to 11" aperture size.***  These instruments do just about everything you can imagine. They provide GOTO slews to thousands of targets in the night sky to be viewed through either an eyepiece, recorded on video, or snapped with a camera.  At a $2000 to $5000 price point, depending on size, it's nothing to sneeze at!  But then again, you recently dropped three-grand on a gaming PC, so why the heck not!
 
-Also, the scope shown at left, and many other scopes that are electronically-equipped, will have a dedicated jack for a serial, cable connection to a controlling PC or laptop.  Some, like the Evolution, even have WiFi capability to a phone or tablet device.  This is also true of German EQ mounts (GEMs) that you might consider for imaging.
+Also, the scope shown <span class="ke-dir">at left</span><span class="ke-dir-alt">above</span>, and many other scopes that are electronically-equipped, will have a dedicated jack for a serial, cable connection to a controlling PC or laptop.  Some, like the Evolution, even have WiFi capability to a phone or tablet device.  This is also true of German EQ mounts (GEMs) that you might consider for imaging.
 
 These connections lead for greater infrastructure possibilities, whereas these scopes become the centerpiece of an actual robotic observatory or an unattended, remote-controlled setup.  Whether its a backyard setup controlled from the comfort or a warm living room or an observatory located hundreds of miles away, this connectivity leverages powerful software to control the scope, camera, and any other accessories needed for hands-free operation, such as guiding cameras, auto-focusers, dew-heaters, and cooling fans.
 

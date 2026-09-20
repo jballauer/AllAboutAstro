@@ -219,7 +219,7 @@ But these numerical relationships are obvious to those who grew up with a slide 
 
 ![The sine graph zoomed to an x-window of 7 degrees](./_images/edu/edu-09.png)
 
-<p class="ke-figure-caption">The sine graph zoomed to an x-window of 7 degrees. Compare to the tangent graph pictured to the right.</p>
+<p class="ke-figure-caption">The sine graph zoomed to an x-window of 7 degrees. Compare to the tangent graph pictured <span class="ke-dir">to the right</span><span class="ke-dir-alt">below</span>.</p>
 
 </div>
 
@@ -245,7 +245,7 @@ But notice as well that I slipped in one other observation, that .052 is ALSO th
 
 </div>
 
-Armed with this knowledge, even a 5th grader can compute the sine or tangent of an angle 6 degrees or less, with 3 digit precision, equipped only with long division! While it's doubtful any 5th grader would need to do this, high school students back in the day most certainly did. In some cases, if their slide rules did not have trig scales, or, more likely, the rule only had S and T scales with no provision for higher resolution for small angles, then dividing by 57.2 was indeed the method used. In fact, on many slide rules, 57.2 was included as a gauge mark on the C or D scale, for division of such small angles. An example of this is shown at left where we show a way of finding the sine or tangent value of 3 degrees.
+Armed with this knowledge, even a 5th grader can compute the sine or tangent of an angle 6 degrees or less, with 3 digit precision, equipped only with long division! While it's doubtful any 5th grader would need to do this, high school students back in the day most certainly did. In some cases, if their slide rules did not have trig scales, or, more likely, the rule only had S and T scales with no provision for higher resolution for small angles, then dividing by 57.2 was indeed the method used. In fact, on many slide rules, 57.2 was included as a gauge mark on the C or D scale, for division of such small angles. An example of this is shown <span class="ke-dir">at left</span><span class="ke-dir-alt">above</span> where we show a way of finding the sine or tangent value of 3 degrees.
 
 Let's look at another intuition about numbers, this time as it concerns logarithms.
 
@@ -374,7 +374,7 @@ We lack the time for such an investigation here, so let's give a quick primer in
 <tr><td>log 10</td><td>= 1</td></tr>
 </table>
 
-With this information, you will construct two logarithmic scales (or number lines). See Figure 1 at right. The standard size of most slide rules are 10" (or 25 cm) scale lengths, so let's start with a sheet of paper, pencil, and ruler. Draw a 10" line. Mark the ends of the line with tick marks (like on a ruler) and label them 1 and 10 respectively. These will represent the values of the log (1) and log (10) in the table. In slide rule terms, they are known as the left and right indices (indexes).
+With this information, you will construct two logarithmic scales (or number lines). See Figure 1 <span class="ke-dir">at right</span><span class="ke-dir-alt">above</span>. The standard size of most slide rules are 10" (or 25 cm) scale lengths, so let's start with a sheet of paper, pencil, and ruler. Draw a 10" line. Mark the ends of the line with tick marks (like on a ruler) and label them 1 and 10 respectively. These will represent the values of the log (1) and log (10) in the table. In slide rule terms, they are known as the left and right indices (indexes).
 
 Moving on to log (2), change the .301 decimal to a percentage (30.1%) and mark the number line with a tick mark at 30% of the distance from the left index. That would be 3" if measuring with a ruler. Mark this tick mark with the number 2, which represents log(2).
 
@@ -637,7 +637,7 @@ But to show how these computations are done, let's use the massive desk model sl
 
 </div>
 
-Slide rule makers had their own designs for how their scales were arranged. Here, because of the massive amount of space on the rule, Aristo put all exponential scales on the same side, with red scales LL00, LL01, LL02, and LL03 on the top rail for exponential bases less than 1 and with black scales LL3, LL2, LL1, and LL0 on the bottom rail for bases greater than 1. Looking at the right side of the LL3 scale (click the image to zoom in), the self-documentation shows as e^x while the C scale is labeled x. The intuition, as taken from the other functions above, is that the number on the C scale is the power of whatever base you set. The documentation for this uses base e as default, which happens because the slide rule "folds" the scales specially at e, or 2.718. We can see this even with the slide removed (Figure 1, below at left).
+Slide rule makers had their own designs for how their scales were arranged. Here, because of the massive amount of space on the rule, Aristo put all exponential scales on the same side, with red scales LL00, LL01, LL02, and LL03 on the top rail for exponential bases less than 1 and with black scales LL3, LL2, LL1, and LL0 on the bottom rail for bases greater than 1. Looking at the right side of the LL3 scale (click the image to zoom in), the self-documentation shows as e^x while the C scale is labeled x. The intuition, as taken from the other functions above, is that the number on the C scale is the power of whatever base you set. The documentation for this uses base e as default, which happens because the slide rule "folds" the scales specially at e, or 2.718. We can see this even with the slide removed (Figure 1, below<span class="ke-dir"> at left</span>).
 
 <div class="ke-figure-row">
 
@@ -851,7 +851,7 @@ This takes us to an addition problem like 422 + 391. As we said, addition proble
 
 This seems elementary, so to make it an activity befitting high-schoolers, start by asking students what is required to make sure that ANY pair of two or three digit numbers can be added? This was easy when the sum had non-carried digits, but how does that work if they are using 12" rulers?
 
-So, here's what we can do...make 10" rulers instead. As in the DIY slide rule activity earlier, making two 10" rules with decimal tenth markings is all you need. Mine are shown in Figure 1 at left.
+So, here's what we can do...make 10" rulers instead. As in the DIY slide rule activity earlier, making two 10" rules with decimal tenth markings is all you need. Mine are shown in Figure 1 <span class="ke-dir">at left</span><span class="ke-dir-alt">above</span>.
 
 Applying the newly made rulers to something easy, like 22 + 45, it is clear that summing the distance, like a typical slide rule, yields the correct sum of 67, as shown in Figure 2. Here I use a yellow "post-it" note as my hairline.
 
@@ -901,7 +901,7 @@ But make no mistake, there is nothing like using the real thing!
 
 Whichever way you go about it, this article has been filled with scores of examples as to how slide rules build mathematical understanding. Perhaps you noticed the natural evolution of how this works, beginning first with the simple C and D scales for multiplication and division, and then advancing through other functions made possible by the other scales like the A, K, L, and the LL scales. There are many others.
 
-For those contemplating learning how to use slide rules beyond our cursory exploration of them here, it is important to know that slide rules become more capable with more scales being added to the rule. So, young children would have started using slide rules with a simple "scale set," like the Mannheim or Rietz, and then progressing to more powerful slide rules like the Darmstadt or "Log Log" scale sets when the tool was needed. My recommendation, if determining a real slide rule for student use, are those rules known as "student" or "trainer" rules. These are rules that I provide to my own students, as they often can be found bundled together on eBay, which saves the price on shipping. Buying them in bulk like this averages out to around $8 to $10 per slide rule. See the *Sidebar: Suitable Slide Rules* at right for specific recommendations.
+For those contemplating learning how to use slide rules beyond our cursory exploration of them here, it is important to know that slide rules become more capable with more scales being added to the rule. So, young children would have started using slide rules with a simple "scale set," like the Mannheim or Rietz, and then progressing to more powerful slide rules like the Darmstadt or "Log Log" scale sets when the tool was needed. My recommendation, if determining a real slide rule for student use, are those rules known as "student" or "trainer" rules. These are rules that I provide to my own students, as they often can be found bundled together on eBay, which saves the price on shipping. Buying them in bulk like this averages out to around $8 to $10 per slide rule. See the *[Sidebar: Suitable Slide Rules](#aside-suitable-slide-rules)*<span class="ke-dir"> at right</span> for specific recommendations.
 
 Justifying slide rule use in the modern classroom, especially finding the time to devote to it, becomes the real challenge as an educator. It is critically important to convey to ALL invested in the education of kids that YOU realize that slide rules are NOT practical. They are not. This article, and your adherence to it, does not advocate for the replacement of the calculators, iPads, and cell phones in use today. In fact, I would suggest that pushing through this article's ten sections will pay dividends with those devices as well, as undoubtedly you will evaluate how they are being used within your own curriculum.
 
@@ -922,7 +922,7 @@ That being said, by now you undoubtedly wonder how I use slide rules in my own h
 
   So in short, slide rules help paint a picture of a world in which what students learn today is important to their tomorrow.
 
-<div class="ke-sidebar" data-side="right" data-width="widest">
+<div class="ke-sidebar" data-side="right" data-width="widest" id="aside-suitable-slide-rules">
 
 ## Sidebar: Suitable Slide Rules
 

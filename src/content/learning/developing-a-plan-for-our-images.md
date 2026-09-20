@@ -15,7 +15,7 @@ Developing a Plan for Our Images
 
 </div>
 
-Once upon a time, I was a noob.  When I began in the hobby, I learned to find objects in the sky by star-hopping my 10" Meade LX50 telescope around the sky.   One of my favorite objects to view through that telescope was M104, the Sombrero Galaxy, shown at right.
+Once upon a time, I was a noob.  When I began in the hobby, I learned to find objects in the sky by star-hopping my 10" Meade LX50 telescope around the sky.   One of my favorite objects to view through that telescope was M104, the Sombrero Galaxy, shown <span class="ke-dir">at right</span><span class="ke-dir-alt">above</span>.
 
 It seemed only natural to connect my SLR camera (note the lack of a "D" in that acronym) to the back of the telescope to attempt to image this favorite object.   And I have to tell you, I was never all that successful at it, especially with film. I struggled with that scope, as it was just too long (2500mm) and I was just too green.
 
@@ -257,7 +257,7 @@ Taking a look at images on the internet taken by brethren in the hobby, it's eas
 
 ### Mosaics
 
-One of my favorite images of all time was this image of the Rho-Ophiuchus/Antares Region of the night sky, at right.  This is the first true mosaic I ever did, which is a only a two-framer, top and bottom.  If you look closely, you can see a seam in the middle, or at least detect a slight background difference between the halves of the image.    Taken back in 2005, "stitching" a mosaic together in Photoshop CS2 was a tall order, especially with LRGB color images.  
+One of my favorite images of all time was this image of the Rho-Ophiuchus/Antares Region of the night sky, <span class="ke-dir">at right</span><span class="ke-dir-alt">above</span>.  This is the first true mosaic I ever did, which is a only a two-framer, top and bottom.  If you look closely, you can see a seam in the middle, or at least detect a slight background difference between the halves of the image.    Taken back in 2005, "stitching" a mosaic together in Photoshop CS2 was a tall order, especially with LRGB color images.  
 
 Today, with PixInsight, processing multi-frame mosaics is much easier, giving seamless borders.  It's not without its learning curve, but the results are amazing.   But before we look at how to take them, let's first ask the key question, "Is this something I should do in the first place?"
 
