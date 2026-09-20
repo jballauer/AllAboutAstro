@@ -7,18 +7,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="A diagnostic page reporting the real type and viewport measurements this device produces."
   noindex={true}
 >
-  <h1>Mobile Check</h1>
+  <h1 class="mc-h1">Mobile Check</h1>
 
-  <p>
-    This page reports what <em>this</em> device actually does with the site's
-    type and layout. Open it on the phone, rotate to landscape, and send a
-    screenshot &mdash; every number below is measured live in the browser,
-    not assumed.
-  </p>
+  <!-- The readout comes FIRST and is sized to fit one phone screen: this
+       page exists to be screenshotted, and anything above it just pushes
+       the numbers out of frame. -->
+  <div id="mc-out" class="mc-out">Measuring&hellip;</div>
 
   <p><button type="button" id="mc-refresh">Re-measure</button></p>
 
-  <div id="mc-out" class="mc-out">Measuring&hellip;</div>
+  <p class="mc-note">
+    Every number above is measured live on <em>this</em> device, not assumed.
+    Rotate to landscape and send a screenshot.
+  </p>
 
   <!-- Two sample blocks the script measures. They deliberately carry no
        font-size of their own, exactly like real article prose, so whatever
@@ -42,16 +43,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
+  .mc-h1 {
+    font-size: 1.3rem;
+    margin: 0 0 0.75rem;
+  }
+  .mc-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
   .mc-out {
     font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-    font-size: 0.95rem;
-    line-height: 1.55;
+    /* Small enough that the whole readout fits one phone screen. */
+    font-size: 0.72rem;
+    line-height: 1.45;
     background: #12151d;
     border: 1px solid #2a2f3a;
     border-radius: 6px;
     padding: 1rem;
     white-space: pre-wrap;
     word-break: break-word;
+  }
+  /* In landscape there is height to spare only if the readout stops being
+     one tall column — two columns keep the whole thing inside a single
+     screenshot. */
+  @media (min-width: 600px) {
+    .mc-out {
+      columns: 2;
+      column-gap: 2rem;
+    }
   }
   #mc-refresh {
     font: inherit;

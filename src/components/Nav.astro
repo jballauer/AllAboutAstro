@@ -34,6 +34,7 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
 
         <li class="has-dropdown">
           <a href="/gear/" aria-current={isCurrent('/gear/') ? 'page' : undefined}>Astro Gear</a>
+          <button type="button" class="sub-toggle" aria-expanded="false" aria-label="Show Astro Gear pages">▼</button>
           <ul class="dropdown">
             {gearItems.map((item) => (
               <li><a href={`/gear/${item.id}/`}>{item.data.title}</a></li>
@@ -43,6 +44,7 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
 
         <li class="has-dropdown">
           <a href="/learning/" aria-current={isCurrent('/learning/') ? 'page' : undefined}>Learning</a>
+          <button type="button" class="sub-toggle" aria-expanded="false" aria-label="Show Learning pages">▼</button>
           <ul class="dropdown">
             {learningItems.map((item) => (
               <li><a href={`/learning/${item.id}/`}>{item.data.title}</a></li>
@@ -54,6 +56,7 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
 
         <li class="has-dropdown dropdown-right">
           <a href="/sliderules/" aria-current={isCurrent('/sliderules/') ? 'page' : undefined}>Jay's Slide Rules</a>
+          <button type="button" class="sub-toggle" aria-expanded="false" aria-label="Show Jay's Slide Rules pages">▼</button>
           <ul class="dropdown">
             {sliderulesTop.map((item) => (
               <li><a href={`/sliderules/${item.id}/`}>{item.data.title}</a></li>
@@ -171,8 +174,13 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
     margin-right: 0;
   }
 
-  /* The hamburger only exists on phones; desktop keeps the hover menus. */
-  .nav-toggle {
+  /* The hamburger and the per-section carets only exist on phones; desktop
+     keeps the hover menus.  The carets are injected by script at every
+     width (so a rotation into landscape doesn't need a re-run), which means
+     they must be hidden here rather than merely left unstyled — otherwise
+     they render as raw grey buttons in the desktop nav. */
+  .nav-toggle,
+  .sub-toggle {
     display: none;
   }
 
@@ -289,6 +297,7 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
       flex: 1 1 auto;
     }
     .sub-toggle {
+      display: block;
       flex: 0 0 auto;
       width: 48px;
       align-self: stretch;
@@ -364,17 +373,14 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
         setOpen(false);
       });
 
-      document.querySelectorAll('.has-dropdown').forEach((item) => {
-        const link = item.querySelector(':scope > a');
-        const submenu = item.querySelector(':scope > .dropdown');
-        if (!link || !submenu) return;
-
-        const caret = document.createElement('button');
-        caret.type = 'button';
-        caret.className = 'sub-toggle';
-        caret.setAttribute('aria-expanded', 'false');
-        caret.setAttribute('aria-label', 'Show ' + link.textContent.trim() + ' pages');
-        caret.textContent = '\u25BC';
+      // The caret buttons are real markup (see the template above) rather
+      // than script-created nodes: Astro scopes this component's CSS with a
+      // data-attribute it stamps on server-rendered elements only, so
+      // buttons built here at runtime would match none of these rules and
+      // rendered as raw grey buttons in the desktop nav.
+      document.querySelectorAll('.sub-toggle').forEach((caret) => {
+        const item = caret.closest('.has-dropdown');
+        if (!item) return;
 
         caret.addEventListener('click', () => {
           const open = item.hasAttribute('data-sub-open');
@@ -383,8 +389,6 @@ const isCurrent = (base: string) => currentPath === base || currentPath.startsWi
           caret.setAttribute('aria-expanded', open ? 'false' : 'true');
           caret.textContent = open ? '\u25BC' : '\u25B2';
         });
-
-        link.insertAdjacentElement('afterend', caret);
       });
     }
   }
