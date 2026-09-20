@@ -402,6 +402,73 @@ const {
       -webkit-overflow-scrolling: touch;
     }
   }
+
+  /* Phone layout for a genuinely wide data table.  Sideways scrolling is a
+     poor way to read one: the row you are in scrolls out of sight along
+     with its label, and the Telescope Buyer's Guide comparison table is 10
+     columns wide with a prose column on the end.  Each row becomes a card
+     instead — the row label as its heading, every score as a label/value
+     line, and any long prose cell as a paragraph under its own label.
+     Applied only to tables with 4+ columns (see the script at the bottom
+     of this file); a 2- or 3-column table reads fine as a table and keeps
+     the scroll treatment above. */
+  @media (max-width: 700px) {
+    .ke-table-cards {
+      display: block;
+      overflow-x: visible;
+      margin: 1.25rem 0;
+    }
+    .ke-table-cards thead {
+      display: none;
+    }
+    .ke-table-cards tbody,
+    .ke-table-cards tr,
+    .ke-table-cards td {
+      display: block;
+    }
+    .ke-table-cards tr {
+      background: #12151d;
+      border: 1px solid #2a2f3a;
+      border-radius: 6px;
+      padding: 0.7rem 0.85rem 0.85rem;
+      margin: 0 0 1rem;
+    }
+    .ke-table-cards td {
+      border: 0;
+      padding: 0.2rem 0;
+    }
+    .ke-table-card-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #e8ecf4;
+      border-bottom: 1px solid #2a2f3a;
+      padding-bottom: 0.45rem;
+      margin-bottom: 0.5rem;
+    }
+    /* Short cells read as a label/value pair on one line, with the value
+       pinned right so a column of scores stays scannable down the card. */
+    .ke-table-cards td[data-label]:not(.ke-table-card-note) {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .ke-table-cards td[data-label]::before {
+      content: attr(data-label);
+      color: #9aa4b5;
+      font-weight: 700;
+    }
+    .ke-table-card-note {
+      margin-top: 0.55rem;
+      padding-top: 0.55rem;
+      border-top: 1px solid #2a2f3a;
+      color: var(--color-prose-text);
+    }
+    .ke-table-card-note::before {
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+  }
   blockquote {
     border-left: 3px solid #333;
     margin: 1.5rem 0;
@@ -1715,5 +1782,41 @@ const {
       const target = openTarget(window.location.hash);
       if (target) target.scrollIntoView();
     }
+  }
+</script>
+
+<script>
+  // Wide data tables become one card per row on phones — see the
+  // `.ke-table-cards` rules in this file.  The header cells supply each
+  // value's label, so the transform is driven by the table's own markup and
+  // needs nothing added to the content files.
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    document.querySelectorAll('article table').forEach((table) => {
+      if (table.classList.contains('ke-equation-table')) return;
+
+      const headers = Array.from(table.querySelectorAll('thead th')).map((th) =>
+        (th.textContent || '').trim()
+      );
+      // A 2- or 3-column table is still readable as a table.
+      if (headers.length < 4) return;
+
+      table.classList.add('ke-table-cards');
+
+      table.querySelectorAll('tbody tr').forEach((row) => {
+        Array.from(row.children).forEach((cell, index) => {
+          const text = (cell.textContent || '').trim();
+          if (index === 0) {
+            // The first column is the row's own label, so it heads the card
+            // rather than being another labelled value.
+            cell.classList.add('ke-table-card-title');
+            return;
+          }
+          if (headers[index]) cell.setAttribute('data-label', headers[index]);
+          // A long cell (the Buyer's Guide "Category Summary" column runs to
+          // full sentences) can't sit on one line opposite its label.
+          if (text.length > 60) cell.classList.add('ke-table-card-note');
+        });
+      });
+    });
   }
 </script>

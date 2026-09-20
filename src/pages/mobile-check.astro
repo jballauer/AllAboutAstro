@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Mobile Check"
+  description="A diagnostic page reporting the real type and viewport measurements this device produces."
+  noindex={true}
+>
+  <h1>Mobile Check</h1>
+
+  <p>
+    This page reports what <em>this</em> device actually does with the site's
+    type and layout. Open it on the phone, rotate to landscape, and send a
+    screenshot &mdash; every number below is measured live in the browser,
+    not assumed.
+  </p>
+
+  <p><button type="button" id="mc-refresh">Re-measure</button></p>
+
+  <div id="mc-out" class="mc-out">Measuring&hellip;</div>
+
+  <!-- Two sample blocks the script measures. They deliberately carry no
+       font-size of their own, exactly like real article prose, so whatever
+       the browser does to body text it does to these too. -->
+  <div class="mc-samples" aria-hidden="true">
+    <p class="mc-body-sample">
+      Body sample. Kellner eyepieces came standard with many of the older
+      instruments, and the difference in contrast is obvious once you have
+      compared them side by side on a night of steady seeing.
+    </p>
+    <div class="ke-sidebar" data-side="right" data-width="wide">
+      <h2>Sidebar Sample</h2>
+      <p>
+        Sidebar sample text. This paragraph sits inside a real
+        <code>.ke-sidebar</code>, so it picks up exactly the same rules a
+        chapter sidebar would.
+      </p>
+    </div>
+    <div class="ke-clear"></div>
+  </div>
+</BaseLayout>
+
+<style>
+  .mc-out {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    background: #12151d;
+    border: 1px solid #2a2f3a;
+    border-radius: 6px;
+    padding: 1rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  #mc-refresh {
+    font: inherit;
+    padding: 0.6rem 1rem;
+    min-height: 44px;
+    background: #1d5f8a;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+  }
+  .mc-samples {
+    margin-top: 2rem;
+    opacity: 0.55;
+  }
+</style>
+
+<script>
+  const out = document.getElementById('mc-out');
+  const bodySample = document.querySelector('.mc-body-sample');
+  const sidebarSample = document.querySelector('.mc-samples .ke-sidebar');
+
+  const px = (el, prop) => (el ? getComputedStyle(el)[prop] : 'n/a');
+  const num = (v) => parseFloat(v) || 0;
+
+  const measure = () => {
+    const html = document.documentElement;
+    // A probe with no styling at all: whatever this computes to IS the
+    // browser's effective base font size on this device.
+    const probe = document.createElement('div');
+    probe.style.cssText = 'position:absolute;visibility:hidden;';
+    document.body.appendChild(probe);
+    const base = getComputedStyle(probe).fontSize;
+    probe.remove();
+
+    const sidebarP = sidebarSample ? sidebarSample.querySelector('p') : null;
+    const bodyPx = num(px(bodySample, 'fontSize'));
+    const sidePx = num(px(sidebarP, 'fontSize'));
+
+    // Which build is actually being served — the rem fix landed in a bundle
+    // whose --font-body-size is a rem value, not 14px.
+    const varValue = getComputedStyle(html).getPropertyValue('--font-body-size').trim();
+
+    const lines = [
+      'VIEWPORT',
+      '  innerWidth        ' + window.innerWidth,
+      '  clientWidth       ' + html.clientWidth,
+      '  orientation       ' + (window.innerWidth > window.innerHeight ? 'landscape' : 'portrait'),
+      '  devicePixelRatio  ' + window.devicePixelRatio,
+      '  visualViewport    ' + (window.visualViewport
+        ? Math.round(window.visualViewport.width) + ' @ scale ' + window.visualViewport.scale.toFixed(2)
+        : 'n/a'),
+      '',
+      'TYPE',
+      '  base font size    ' + base,
+      '  --font-body-size  ' + (varValue || '(unset)'),
+      '  body sample       ' + px(bodySample, 'fontSize') + '  / line ' + px(bodySample, 'lineHeight'),
+      '  sidebar sample    ' + px(sidebarP, 'fontSize') + '  / line ' + px(sidebarP, 'lineHeight'),
+      '  RATIO body:side   ' + (sidePx ? (bodyPx / sidePx).toFixed(2) : 'n/a') + '   (expected 1.14)',
+      '',
+      'LAYOUT',
+      '  sidebar float     ' + px(sidebarSample, 'float'),
+      '  sidebar width     ' + Math.round(sidebarSample.getBoundingClientRect().width) + 'px',
+      '  matches <=700px   ' + window.matchMedia('(max-width: 700px)').matches,
+      '  text-size-adjust  ' + (getComputedStyle(html).webkitTextSizeAdjust
+        || getComputedStyle(html).textSizeAdjust || '(unset)'),
+      '',
+      'BROWSER',
+      '  ' + navigator.userAgent,
+    ];
+
+    out.textContent = lines.join('\n');
+  };
+
+  measure();
+  document.getElementById('mc-refresh').addEventListener('click', measure);
+  window.addEventListener('resize', measure);
+  window.addEventListener('orientationchange', () => setTimeout(measure, 400));
+</script>
