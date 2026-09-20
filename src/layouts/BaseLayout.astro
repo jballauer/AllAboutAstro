@@ -272,11 +272,22 @@ const {
     /* prose/article typography (Weebly-confirmed) */
     --font-heading: 'Titillium Web', sans-serif;
     --font-heading-weight: 300;
-    --font-heading-size: 24px;
+    /* Sized in rem, not px.  Article body prose deliberately carries no
+       font-size rule at all, so it inherits the browser's base size — which
+       a phone often raises well above 16px (Chrome for Android's text
+       scaling, or any OS-level larger-text setting).  Pinned px here meant
+       the body column grew with that preference while every sidebar,
+       caption and heading stayed frozen, so on a phone in landscape the
+       body text towered over the sidebar beside it and ran far enough down
+       the page that "sidebar at left" no longer pointed at anything.  In
+       rem these track the base together and the proportions hold.  At the
+       standard 16px base these are exactly the old 24px and 14px, so
+       desktop rendering is unchanged. */
+    --font-heading-size: 1.5rem;
     --color-heading: #ffffff;
 
     --font-body: Arial, Helvetica, sans-serif;
-    --font-body-size: 14px;
+    --font-body-size: 0.875rem;
     --prose-line-height: 1.5;
     --color-prose-text: #aaaaaa;
     --color-link: #359bdc;
@@ -289,19 +300,6 @@ const {
   }
   * {
     box-sizing: border-box;
-  }
-  /* Mobile browsers inflate text automatically ("font boosting" in Chrome,
-     text autosizing in Safari), and the multiplier is computed PER BLOCK
-     from that block's width.  In landscape, where the floats are active,
-     the wide body column got a much bigger boost than the narrow floated
-     sidebar beside it, so a 16px/14px authored difference rendered as a
-     dramatic one — and the inflated body text ran so far down that the
-     paragraph saying "sidebar at left" had scrolled well past the sidebar
-     it was pointing at.  Opting out restores the authored proportions, so
-     a phone in landscape matches the desktop layout it's reproducing. */
-  html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
   }
   body {
     margin: 0;
@@ -838,7 +836,7 @@ const {
   }
   .ke-star-hover-caption {
     font-family: var(--font-body);
-    font-size: 10pt;
+    font-size: 0.833rem;
     font-style: italic;
     text-align: center;
     margin: 0.5rem 0 1rem;
@@ -846,7 +844,7 @@ const {
   /* Matches `.ke-sidebar.ke-two-col-about p`'s specificity so this wins
      (later in source) instead of being overridden back to 1rem. */
   .ke-sidebar p.ke-star-hover-caption {
-    font-size: 10pt;
+    font-size: 0.833rem;
     color: rgba(255, 255, 255, 0.8);
   }
 
