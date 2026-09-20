@@ -23,6 +23,8 @@ The **content conventions** (bold-first-mention, AI-stub disclosure box) are **K
 9. **Never write `:global(...)` selectors inside `BaseLayout.astro`'s `<style is:global>` block** — silently dropped by the browser, no error. Always plain selectors (`.foo img`, not `.foo :global(img)`).
 10. Grab hi-res images at extraction time — Weebly's `<img src>` is a small thumbnail; the real file is at the wrapping `<a href>`. Wire up `data-hires` on the wrapping element.
 11. A close-up photo with Jay's cursive signature visible in-frame is an "art shot" — display it large/full-width, never in a small float.
+12. **Phone layout (≤700px) is a first-class target, not an afterthought.** Every float unstacks there, so: never write a bare directional reference ("as shown at right") in prose — wrap it as `<span class="ke-dir">at right</span><span class="ke-dir-alt">above</span>` so the wording swaps. Reference a sidebar by linking its title to the aside's `aside-*` id rather than by direction. Directions describing positions *inside* a photo ("NGC 4248 at right") are untouched — they're correct on every device. Sidebars collapse to tap-to-open bars below 700px and restore on rotation to landscape.
+13. When adding a float/width variant, add it to the `max-width: 700px` block *by name*. Attribute and compound selectors (`.ke-sidebar[data-width='wide']`, `.ke-figure-third.ke-figure-left`) out-specify a bare class, so a mobile override that doesn't name them is silently ignored — this shipped broken for months.
 
 Full detail, verification scripts, and edge cases: memory files `feedback_ke_layout_rules.md`, `feedback_ke_sidebar_layout.md`, `feedback_ke_hires_lightbox.md`, `feedback_ke_art_shot_id.md`.
 
