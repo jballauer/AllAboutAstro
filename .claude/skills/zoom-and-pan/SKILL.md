@@ -97,7 +97,21 @@ during development. Don't simplify them away without re-reading why.
   `mousemove` (anchored at the current cursor point) — they're
   algebraically identical once the `fracX * rect.width` term cancels back
   to `x`, so don't reintroduce a separate fraction-based formula for entry.
-- **Panning is `mousemove`-only, not drag.** There is no `mousedown`/
+- **Panning is `mousemove`-only with a mouse, and drag-only on touch.**
+  Touch support was added 2026-09-20 after Jay found that on an iPhone
+  tapping zoomed in and out correctly but the image could not be moved at
+  all — a finger has no hover, so the `mousemove` pan below is simply
+  unreachable there. `touchmove` feeds the *same* anchor formula, so the
+  behaviour matches the mouse one (the point under the finger stays under
+  the finger) instead of becoming a second, differently-behaving
+  interaction. Three details matter: the gesture is only claimed after ~8px
+  of travel (so an unsteady tap still reads as a tap), `preventDefault()`
+  on `touchmove` plus `touch-action: none` on `.ke-zoom-active` stop the
+  page scrolling out from under the zoomed image, and a `touchPanned` flag
+  swallows the synthetic click a drag ends with — without it every pan
+  toggled the zoom off the moment the finger lifted. The hint text is
+  rewritten to "Tap to Zoom, Drag to Pan" under `(hover: none)`.
+  The mouse path is unchanged and still hover-follow: There is no `mousedown`/
   `mouseup` tracking in the current implementation — an earlier version
   used click-and-drag, which Jay explicitly rejected in favor of pure
   hover-follow ("as I move around stars in the underlying image, those same
@@ -150,6 +164,14 @@ amount). Verify with direct DOM instrumentation instead:
 4. **Test hover-pan** by dispatching a `mousemove` (not a drag) to a new
    frame-local position after zooming in, and confirm the transform's
    translate values update — panning must work without any `mousedown`.
+4b. **Test touch pan separately** — it is a different code path and a
+   desktop emulator will not exercise it by accident. Dispatch a real
+   `TouchEvent` sequence (`new Touch({identifier, target, clientX,
+   clientY})`, then touchstart -> touchmove >8px away -> touchend) and
+   check: the transform's translate changed, a click dispatched right after
+   the drag does NOT exit zoom, a plain click after that DOES, and
+   `getComputedStyle(frame).touchAction` is `none` while zoomed and `auto`
+   when not.
 5. **Cross-check against a real interaction**, not just synthetic events —
    `computer` click + `screenshot`, since dispatched `MouseEvent`s round
    `clientX`/`clientY` to integers and can introduce a few px of apparent

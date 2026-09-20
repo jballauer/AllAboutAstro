@@ -210,7 +210,60 @@ const {
       positionAt(e.clientX - rect.left, e.clientY - rect.top, state.scale, true);
     });
 
+    // Touch panning.  A finger has no hover, so the mousemove-follow pan
+    // above is simply unreachable on a phone: tapping zoomed in and out
+    // correctly but the image could not be moved at all.  A drag feeds the
+    // same anchor formula the mouse uses, so the behaviour matches the
+    // desktop one — the point under the finger stays under the finger —
+    // rather than becoming a second, differently-behaving interaction.
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchPanned = false;
+
+    frame.addEventListener(
+      'touchstart',
+      (e) => {
+        const touch = e.touches[0];
+        if (!touch) return;
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+        touchPanned = false;
+      },
+      { passive: true }
+    );
+
+    frame.addEventListener(
+      'touchmove',
+      (e) => {
+        if (!state.zoomed) return;
+        const touch = e.touches[0];
+        if (!touch) return;
+
+        // Wait for real travel before claiming the gesture, so an unsteady
+        // tap still reads as a tap and toggles the zoom off.
+        if (!touchPanned) {
+          const dx = Math.abs(touch.clientX - touchStartX);
+          const dy = Math.abs(touch.clientY - touchStartY);
+          if (dx < 8 && dy < 8) return;
+          touchPanned = true;
+        }
+
+        // Panning owns the gesture from here; without this the page scrolls
+        // out from under the zoomed image instead of panning it.
+        e.preventDefault();
+        const rect = frame.getBoundingClientRect();
+        positionAt(touch.clientX - rect.left, touch.clientY - rect.top, state.scale, true);
+      },
+      { passive: false }
+    );
+
     frame.addEventListener('click', (e) => {
+      // A touch drag ends by synthesising a click.  Without this guard,
+      // every pan would toggle the zoom off the moment the finger lifted.
+      if (touchPanned) {
+        touchPanned = false;
+        return;
+      }
       if (state.zoomed) {
         exitZoom();
       } else {
@@ -1395,7 +1448,11 @@ const {
   .ke-zoom-frame {
     display: contents;
   }
+  /* While zoomed, the frame owns touch gestures: a drag pans the image
+     instead of scrolling the page past it.  Scoped to the active state so
+     an unzoomed image never blocks ordinary page scrolling. */
   .ke-zoom-frame.ke-zoom-active {
+    touch-action: none;
     display: block;
     position: relative;
     overflow: hidden;
@@ -1978,5 +2035,19 @@ const {
     read();
     window.addEventListener('resize', read);
     window.addEventListener('orientationchange', () => setTimeout(read, 400));
+  }
+</script>
+
+<script>
+  // The zoom hint is server-rendered as "Click to Zoom and Pan", which tells
+  // a phone user to do something they cannot do and omits the drag that they
+  // can.  Rewritten at runtime rather than server-side because the same HTML
+  // is served to every device.
+  if (window.matchMedia('(hover: none)').matches) {
+    document.querySelectorAll('.ke-zoom-hint').forEach((hint) => {
+      const text = (hint.textContent || '').trim();
+      if (text === 'Click to Zoom and Pan') hint.textContent = 'Tap to Zoom, Drag to Pan';
+      else if (text === 'Click to Zoom') hint.textContent = 'Tap to Zoom';
+    });
   }
 </script>
