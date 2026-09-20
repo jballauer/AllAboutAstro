@@ -105,6 +105,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     const base = getComputedStyle(probe).fontSize;
     probe.remove();
 
+    // getComputedStyle reports the AUTHORED font-size, so it cannot see iOS
+    // Safari's text autosizing at all — that inflates the painted text and
+    // leaves the computed value alone.  These probes measure RENDERED
+    // geometry instead: a single line at font-size 16px / line-height 1 is
+    // 16px tall unless the browser is boosting it.
+    const boostProbe = (width) => {
+      const box = document.createElement('div');
+      box.style.cssText =
+        'position:absolute;left:-9999px;top:0;font-size:16px;line-height:1;' +
+        'font-family:var(--font-body);width:' + width + 'px;';
+      box.textContent = 'M';
+      document.body.appendChild(box);
+      const h = box.getBoundingClientRect().height;
+      box.remove();
+      return h;
+    };
+    const narrowBoost = boostProbe(250);
+    const wideBoost = boostProbe(700);
+    const boosted = narrowBoost > 16.8 || wideBoost > 16.8;
+
     const sidebarP = sidebarSample ? sidebarSample.querySelector('p') : null;
     const bodyPx = num(px(bodySample, 'fontSize'));
     const sidePx = num(px(sidebarP, 'fontSize'));
@@ -129,6 +149,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       '  body sample       ' + px(bodySample, 'fontSize') + '  / line ' + px(bodySample, 'lineHeight'),
       '  sidebar sample    ' + px(sidebarP, 'fontSize') + '  / line ' + px(sidebarP, 'lineHeight'),
       '  RATIO body:side   ' + (sidePx ? (bodyPx / sidePx).toFixed(2) : 'n/a') + '   (expected 1.14)',
+      '',
+      'RENDERED (catches boosting computed style hides)',
+      '  16px in 250px col ' + narrowBoost.toFixed(1) + 'px tall  (16.0 = not boosted)',
+      '  16px in 700px col ' + wideBoost.toFixed(1) + 'px tall  (16.0 = not boosted)',
+      '  VERDICT           ' + (boosted ? '*** TEXT IS BEING BOOSTED ***' : 'no boosting'),
       '',
       'LAYOUT',
       '  sidebar float     ' + px(sidebarSample, 'float'),

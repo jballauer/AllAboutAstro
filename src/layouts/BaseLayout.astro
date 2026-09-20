@@ -301,6 +301,22 @@ const {
   * {
     box-sizing: border-box;
   }
+  /* iOS Safari applies "text autosizing": it inflates the painted text of a
+     block based on that block's width, independently per block.  Beside a
+     floated sidebar the narrow body column got boosted to roughly twice the
+     sidebar's size while the sidebar kept its authored 14px — which is what
+     made body text tower over the sidebar in landscape and run so far down
+     the page that "sidebar at left" no longer pointed at anything.
+     `none` rather than `100%`: an earlier attempt used 100% and the boost
+     was still there on an iPhone running iOS 18.7, so this takes the
+     documented off switch.  Note getComputedStyle reports the AUTHORED
+     size, not the boosted one, so this bug is invisible to a computed-style
+     check — it has to be measured from rendered geometry (see
+     /mobile-check/). */
+  html {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
   body {
     margin: 0;
     font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
