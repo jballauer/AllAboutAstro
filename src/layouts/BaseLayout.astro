@@ -538,6 +538,75 @@ const {
       margin-left: 0;
     }
   }
+
+  /* PROTOTYPE (2026-09-20) — phone-only collapsible asides.
+     A stacked sidebar on a phone stops being an aside and becomes a wall:
+     a long one interrupts the main narrative for several screens, which is
+     exactly the reading relationship the floated desktop layout exists to
+     protect.  Collapsed, the box keeps its anchor point in the prose (the
+     reader still meets it at the moment it's relevant) while the body text
+     runs continuously past it — the closest phone-shaped translation of
+     "runs alongside".  Script at the bottom of this file does the DOM
+     rewrite, phone widths only; with no JS the sidebar simply renders
+     open, which is the pre-existing behaviour. */
+  @media (max-width: 700px) {
+    .ke-sidebar:not(.ke-two-col-about) {
+      padding: 14px 16px;
+    }
+    .ke-sidebar-disclosure summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+      color: #fff;
+    }
+    .ke-sidebar-disclosure summary::-webkit-details-marker {
+      display: none;
+    }
+    .ke-sidebar-disclosure summary .ke-sidebar-label {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      line-height: 1.35;
+    }
+    /* The chevron is the affordance; it sits on the title's first line
+       rather than centred against a title that may wrap to three lines. */
+    .ke-sidebar-disclosure summary::after {
+      content: '▾';
+      font-size: 1.2rem;
+      line-height: 1.2;
+      opacity: 0.85;
+      flex: 0 0 auto;
+    }
+    .ke-sidebar-disclosure[open] summary::after {
+      content: '▴';
+    }
+    .ke-sidebar-disclosure[open] summary {
+      padding-bottom: 0.6rem;
+      margin-bottom: 0.9rem;
+      border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+    }
+    /* The collapsed bar needs to say it opens — the chevron alone reads as
+       decoration at this size.  On its own line under the title, so a
+       three-line wrapped title doesn't shove it into the middle of the box. */
+    .ke-sidebar-disclosure summary .ke-sidebar-hint {
+      display: block;
+      font-family: var(--font-body);
+      font-weight: 400;
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      opacity: 0.75;
+      margin-top: 0.3rem;
+    }
+    .ke-sidebar-disclosure[open] summary .ke-sidebar-hint {
+      display: none;
+    }
+  }
   .ke-sidebar h2 {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -1502,3 +1571,40 @@ const {
     }
   }
 </style>
+
+<script>
+  // PROTOTYPE (2026-09-20) — collapse `.ke-sidebar` asides into tap-to-open
+  // disclosures on phones only.  Runs once at load and does not re-run on
+  // resize: a phone doesn't cross the 700px breakpoint in practice, and
+  // rewriting the DOM under a reader mid-article would lose their place.
+  // The `.ke-two-col-about` variant is skipped — it's a flex column in a
+  // deliberate two-column block, not an aside floated into running prose.
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    document.querySelectorAll('.ke-sidebar').forEach((sidebar) => {
+      if (sidebar.classList.contains('ke-two-col-about')) return;
+      const heading = sidebar.querySelector('h2');
+      if (!heading) return;
+
+      const details = document.createElement('details');
+      details.className = 'ke-sidebar-disclosure';
+
+      const summary = document.createElement('summary');
+      const label = document.createElement('span');
+      label.className = 'ke-sidebar-label';
+      label.textContent = heading.textContent || '';
+      const hint = document.createElement('span');
+      hint.className = 'ke-sidebar-hint';
+      // Leading space so a screen reader announcing the summary's text
+      // doesn't run it together as "...Maker Mysterytap to read".  The
+      // hint is a block element, so the space collapses visually.
+      hint.textContent = ' tap to read';
+      label.appendChild(hint);
+      summary.appendChild(label);
+
+      heading.remove();
+      details.appendChild(summary);
+      while (sidebar.firstChild) details.appendChild(sidebar.firstChild);
+      sidebar.appendChild(details);
+    });
+  }
+</script>
