@@ -290,6 +290,19 @@ const {
   * {
     box-sizing: border-box;
   }
+  /* Mobile browsers inflate text automatically ("font boosting" in Chrome,
+     text autosizing in Safari), and the multiplier is computed PER BLOCK
+     from that block's width.  In landscape, where the floats are active,
+     the wide body column got a much bigger boost than the narrow floated
+     sidebar beside it, so a 16px/14px authored difference rendered as a
+     dramatic one — and the inflated body text ran so far down that the
+     paragraph saying "sidebar at left" had scrolled well past the sidebar
+     it was pointing at.  Opting out restores the authored proportions, so
+     a phone in landscape matches the desktop layout it's reproducing. */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
   body {
     margin: 0;
     font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
