@@ -644,9 +644,13 @@ const {
      bring body prose to the same size the sidebar already uses, and give
      the widest sidebars back some room. */
   @media (min-width: 701px) and (max-width: 900px) {
-    article > p,
-    article > ul > li,
-    article > ol > li {
+    /* Every prose paragraph in the article, not just the ones that happen
+       to be direct children — gallery pages and the two-column component
+       nest theirs a level deeper, and a child-only selector left those at
+       16px beside a 14px sidebar, which is the very mismatch this rule
+       exists to remove.  Captions keep their own smaller sizes. */
+    article p:not(.ke-figure-caption):not(.ke-image-feature-caption):not(.ke-star-hover-caption),
+    article li {
       font-size: var(--font-body-size);
       line-height: var(--prose-line-height);
     }
