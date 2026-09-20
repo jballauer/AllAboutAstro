@@ -617,6 +617,31 @@ const {
     }
   }
 
+  /* The tablet/landscape-phone band, where the floats are still on but the
+     page is far narrower than the ~1100px the layout was tuned at.  At
+     750px (an iPhone in landscape) a `wide` sidebar takes 407px and sets
+     its own text at 14px on ~342px lines, while the body column beside it
+     is squeezed to a ~250px ribbon set at the inherited 16px — so the body
+     text is both bigger and in a much narrower column, runs far longer
+     vertically, and the paragraph referring to a sidebar ends up well past
+     the sidebar itself.  Two adjustments, both confined to this band:
+     bring body prose to the same size the sidebar already uses, and give
+     the widest sidebars back some room. */
+  @media (min-width: 701px) and (max-width: 900px) {
+    article > p,
+    article > ul > li,
+    article > ol > li {
+      font-size: var(--font-body-size);
+      line-height: var(--prose-line-height);
+    }
+    .ke-sidebar[data-width='wide'] {
+      width: 48%;
+    }
+    .ke-sidebar[data-width='widest'] {
+      width: 55%;
+    }
+  }
+
   /* Layout-direction words.  Prose like "as shown at right" describes the
      desktop float, which is wrong once that figure or sidebar is stacked
      full-width on a phone.  `.ke-dir` carries the desktop wording and
