@@ -548,6 +548,54 @@ Below I have ranked scope types according to each category on a 1-10 scale.  1 i
 
 </div>
 
+## THE ALL-IN-ONE OR SMART TELESCOPE
+
+Everything above assumes a telescope you look through, or one you bolt a camera onto.  There is now a third thing entirely, and it belongs in its own discussion because it doesn't sit anywhere on the chart above.
+
+The "all-in-one" or "smart" telescope is a small, sealed, robotic instrument with the optics, the mount, the camera, the computer, and the battery all in one package you can carry in one hand.  There is no eyepiece.  You don't look through it...you look at your phone.  And while that sounds like a compromise, what these things actually do is remarkable.
+
+### How They Work
+
+You set it down, turn it on, and connect your phone to it.  The scope points itself at a patch of sky, takes a picture, and works out where it is by matching the star pattern against a catalog — the same "plate solving" the professionals use.  From there you pick a target from a list and it slews, focuses itself, and starts shooting.
+
+Here is the part that matters.  It takes very short exposures, ten or twenty seconds at a time, and stacks them live, on board, as they arrive.  You watch an object emerge on your phone over a few minutes, going from a faint smudge to something with real structure and color.  Nothing is being guided.  Nothing is polar aligned.  There is no laptop, no cable spaghetti, no calibration frames unless you want them.  Those short sub-exposures are exactly what let a simple alt-az mount get away with the field rotation we discussed earlier — no single frame is up long enough for it to matter, and the software rotates and rejects as it goes.
+
+### What They Do Well - And What They Don't
+
+Wide field deep sky is their home turf.  The focal lengths are short, typically 150mm to 250mm, so the big targets frame beautifully — the North America Nebula, the Veil, the Rosette, Andromeda.  The moon is excellent.  With the proper solar filter — included with some models, a separate accessory on others — the sun is excellent too, and this is very likely the easiest solar imaging setup that has ever existed.  Most of them shoot time-lapses and daytime scenery as well.
+
+What they are not is a planetary instrument.  The focal lengths are far too short for serious work on Jupiter or Saturn, and no amount of clever software fixes that.  Small galaxies and globular clusters will be small.  And they are not visual instruments at all — if the experience you want is ancient photons landing on your own retina, this is not that, and it never will be.
+
+### What They Cost
+
+<div style="overflow-x: auto;">
+
+| Model | Aperture | Focal Length | Price |
+|---|---|---|---|
+| ZWO Seestar S30 | 30mm | 150mm | ~$300 |
+| ZWO Seestar S50 | 50mm | 250mm | $499 |
+| DwarfLab DWARF 3 | 35mm | 150mm | $549 |
+| ZWO Seestar S50 Pro | 50mm | 250mm | $999 |
+| Unistellar Odyssey | 85mm | 320mm | $2,499 |
+| Vaonis Vespera Pro | 50mm | 250mm | $2,999 |
+| Celestron Origin Mark II | 152mm (6") | 335mm | $4,299 |
+
+</div>
+
+*Prices as of September 2026 and worth re-checking, since this category moves quickly.*
+
+Look at the bottom of that table and then the top of it.  The Celestron Origin is a 6" RASA at f/2.2 with a Starvis 2 sensor, which is a genuinely serious imaging instrument in a self-driving box.  But the interesting story is at the other end.  For around $500, a Seestar S50 or a DWARF 3 will do — automatically, from your driveway, with no experience whatsoever — a version of what used to demand a five-figure equipment list, a laptop full of software, and several seasons of learning to use it.
+
+That deserves to be said plainly, because it changes the advice.  For a great many people, one of these is all anybody really needs.  Someone who wants to see the sky and keep a record of it, and who has no interest in becoming an engineer about it, is honestly well served by a $500 device that works every single time it is switched on.
+
+### Why You Want One Anyway
+
+For those of us with other telescopes already, these have quietly become something else: the instrument you would be foolish not to also own.  They do the things a big, long focal length rig does poorly or expensively.  Wide fields.  Solar.  Lunar.  Time-lapses.  The whole category of imaging that a 2000mm astrograph is simply the wrong tool for.
+
+And they do it while you are busy with something else.  That is the real argument.  Get to a dark sky site and let the little robot be the first thing out of the car — set it down, level it, tell it what to shoot, and walk away.  It collects for the rest of the night while you polar align the real mount, chase focus, fight a cable, run your sequence, or just sit and observe.  You came for something specific, and none of your attention has to be spent on the robot for you to end the night with an image you didn't work for.
+
+None of this replaces anything in the arsenal.  It gets added to it.  And that is why, for anyone serious about this hobby today, one of these has gone from a curiosity to something close to a requirement.
+
 ## HOW TO CHOOSE?
 
 As I said, with all the choices, true beginners are at a disadvantage.
