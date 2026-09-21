@@ -648,12 +648,6 @@ If you have a camera, then it might be welcome news to you that you do not need 
 
 </div>
 
-<div class="ke-figure ke-figure-left ke-figure-third">
-
-![An intervalometer for automating a sequence of exposures](./_images/guide-30-intervalometer.jpg)
-
-</div>
-
 Following the "Rule of 500" - exposure length is equal to 500 divided by the focal length of the lens - you can use a tripod very successfully without fear that the stars will "move" during the image.  For example, a wide-field Milky Way shot can be taken with a 24mm lens (try f/2.8 to f/4) very successfully with a 500/24 or approximately 21 second exposure.   I'd try 30 seconds (the shorter the lenses, the more it becomes a "rule of 600").
 
 Do the same thing for lightning storms, aurora, constellations, star trails, or any other creative thing you can think of.
@@ -663,6 +657,12 @@ Taken a step further, the purchase of an "intervalometer" (as shown above) allow
 ### The "Tracker" Mount
 
 Taking the tripod technique a step further, you are not far away from being able to move the camera with the stars.   All it requires is a way to "track" them.  "Tracker" mounts exist to do exactly that.  Attached between the tripod and the camera, these boxy little mounts have a motor that moves at the same rate that the earth spins.   As long as you are "polar aligned," it will track for any amount of exposure time.   This lets you shoot longer images of wide-fields, going even "deeper" with your Milky Way and constellation shots.   It also lets you use longer lenses (up to practical mount payload and tripod stability) without needed to worry about the Rule of 500.
+
+<div class="ke-figure ke-figure-right ke-figure-third">
+
+![A Sky-Watcher Star Adventurer tracker mount with its counterweight and polar scope](./_images/guide-30-star-adventurer-tracker.jpg)
+
+</div>
 
 This form of imaging also allows you to begin "stacking" individual exposures to form a single, deeper image.  It's this technique that is the foundation of all other more advanced forms of digital astrophotography...the more you "stack," the better the signal/noise ratio (or the cleaner the image).
 
