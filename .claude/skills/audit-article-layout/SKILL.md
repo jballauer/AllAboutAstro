@@ -38,6 +38,15 @@ one":
    — a recent, specific-sounding commit on the file (not just the original
    migration-batch commit) is the strongest signal that it's already been
    audited.
+2b. **`git log` on the `.md` alone can understate what's been done.** Some
+   fixes land in the *route* file, not the content file — My Favorite Slide
+   Rules had its 18-image art-shot carousel restored on 2026-07-22 into
+   `src/pages/sliderules/[...slug].astro`, so the `.md` still showed nothing
+   but its original migration commit and the page looked unaudited a second
+   time around. Before calling a page untouched, also grep the route file
+   (`[slug].astro` / `[...slug].astro`) for the page's id or slug, and check
+   `HISTORY.md`'s dated bullets for its title. Both checks are cheap; the
+   wrong conclusion is not.
 3. Pick the lowest-`order` file that has no such recent audit-shaped
    commit. If everything in the current collection looks covered, say so
    and ask which collection to move to next (Learning → sliderules/K&E →
