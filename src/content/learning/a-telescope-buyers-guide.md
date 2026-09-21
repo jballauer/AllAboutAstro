@@ -75,17 +75,29 @@ There are several makers of quality Dobsonian reflectors in sizes from 3" all th
 
 However, Dobs - and reflectors in general - that have custom optics will demand the highest prices.  If it comes with optics from the likes of Zambuto, Royce, or Pegasus then you can expect it to be a very nice telescope!  But be prepared to spend money in the thousands of dollars for such quality.
 
-<div class="ke-figure ke-figure-right" data-hires="/images/learning/guide-03-central-obstruction-full.jpg">
+<div class="ke-sidebar" data-color="teal" data-side="right" data-width="wide" id="aside-central-obstruction">
+
+## Sidebar: Central Obstruction
+
+A Schmidt-Cassegrain (SCT) is a "folded" design, where light bounces back upon itself twice. This puts a secondary mirror in the middle of the front corrector plate to bounce light straight back to the eyepiece. This creates a "central obstruction" (red arrow) that light must pass around.
+
+<div class="ke-figure" data-hires="/images/learning/guide-03-central-obstruction-full.jpg">
 
 ![Central obstruction comparison between an SCT and a newtonian reflector](./_images/guide-03-central-obstruction.jpg)
 
-<p class="ke-figure-caption">"Central Obstruction" - A Schmidt-Cassegrain (SCT) is a "folded" design, where light bounces back upon itself twice. This puts a secondary mirror in the middle of the front corrector plate to bounce light straight back to the eyepiece. This creates a "central obstruction" (red arrow) that light must pass around. While newtonians have this too, held in place with "vanes or a spider," it doesn't have to be nearly as large as that of the SCT. This is because light still has a 1/3 of its path remaining in the SCT, whereas in the "newt" it only has a little more distance to go. The effect of this is slightly "less" contrast in the view, since more of the light energy is concentrated into the "diffraction rings" of star's PDF. These are fancy words to say that non-obstructed designs like refractors are naturally higher contrast, while designs with the largest obstructions are worse, like SCTS, RCs, and CDKs, among others. That said, practically speaking, if its a good telescope, well-collimated with pristine optical figure, then it's only the most experienced visual observer will likely detect the difference.</p>
+</div>
+
+While newtonians have this too, held in place with "vanes or a spider," it doesn't have to be nearly as large as that of the SCT. This is because light still has a 1/3 of its path remaining in the SCT, whereas in the "newt" it only has a little more distance to go.
+
+The effect of this is slightly "less" contrast in the view, since more of the light energy is concentrated into the "diffraction rings" of star's PDF. These are fancy words to say that non-obstructed designs like refractors are naturally higher contrast, while designs with the largest obstructions are worse, like SCTS, RCs, and CDKs, among others.
+
+That said, practically speaking, if its a good telescope, well-collimated with pristine optical figure, then it's only the most experienced visual observer will likely detect the difference.
 
 </div>
 
 Another alternative when considering a telescope with larger apertures is the Schmidt-Cassegrains (SCTs).  These are excellent choices because they are more compact and portable for any given aperture - light folds back on itself twice, shortening the tube - and often contains some wonderful electronic features such as automatic GOTO pointing, where you tell the scope where to go and it goes there all by itself.  Thus, gadget "freaks" will certainly enjoy the ability to use their computers to control a large aperture scope.  Of course, these added features come at an increase in price.  Plus, they generally take a long cool-down time and are more susceptible to quality control issues because of the complexity of their electronics and mass-production techniques.
 
-​Some might say that the large central obstruction (see right) is a negative to the SCT design because of the general loss of contrast; however, my experience has been that contrast seems to fluctuate among samples of these scopes because of a variance in optical quality and poor user collimation from sample to sample. I've seen certain SCTs that exhibit some impressive, nicely contrasted views despite being obstructed.  In my opinion, these design trade-offs are minor negatives for a system that provides such great versatility and power.
+​Some might say that the large central obstruction (see [Sidebar: Central Obstruction](#aside-central-obstruction)) is a negative to the SCT design because of the general loss of contrast; however, my experience has been that contrast seems to fluctuate among samples of these scopes because of a variance in optical quality and poor user collimation from sample to sample. I've seen certain SCTs that exhibit some impressive, nicely contrasted views despite being obstructed.  In my opinion, these design trade-offs are minor negatives for a system that provides such great versatility and power.
 
 Meade and Celestron are the main players here; Meade with their LX-series OTA (typically in 8", 10", 12" and 16" sizes) and Celestron with some iteration of the classical C-8, C-9.25, C-11, and C14 (the numbers are their aperture sizes in inches).   Both companies have EQ and fork mounted varieties, both in one and two fork-arm designs.
 
