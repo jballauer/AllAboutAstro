@@ -63,7 +63,7 @@ My only Australian slide rule, gifted to me by an Aussie slide rule enthusiast I
 
 <div class="ke-figure">
 
-![A Faber-Castell 67/87 R, back face](./_images/my-favorites/f-c-67-87rback.jpg)
+![A Faber-Castell 67/87 R, back face, showing its Castell Addiator](./_images/my-favorites/fc-6787r-back-divider.jpg)
 
 </div>
 
