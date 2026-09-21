@@ -258,6 +258,8 @@ Otherwise, larger scopes are best when you can set them up permanently at home, 
 
 Because of this, it becomes necessary to consider scopes that can be toted easily to darker sky sites.  Some examples are most Maks, smaller Dobsonian reflectors, and smaller refractors on alt-az or light-weight German equatorial mounts (see the **Sidebar: "Alt-az" vs. "EQ"** below for a distinction between these mounts).   These can be good first telescopes, especially considering their lower prices.  A person who buys a scope that never gets used will probably leave the hobby prior to finding out how truly wonderful it is.   Lack of portability is a major reason why.
 
+In the last several years, a new, highly capable type of instrument redefines what it means to be portable.   These are "all-in-one" or "smart" telescopes.   They are not visual scopes; not at all, but rather they are small robotic scopes equipped with GPS, tracking/imaging software, and a built-in camera.   These devices are revolutionary in their ease of use, capabilities, flexibility, and portability.   And many are priced in the friendly neighborhood of around $500.  This means that regardless of what you use as your main telescope, there's very little reason for the serious amateur NOT to also have one of these devices.   More about this category of telescope will be discussed later in the article.
+
 ***Therefore, quite often the best scope for YOU is the scope you will use most often.***
 
 ## QUALITY
