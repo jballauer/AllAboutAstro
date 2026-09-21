@@ -552,6 +552,14 @@ Below I have ranked scope types according to each category on a 1-10 scale.  1 i
 
 Everything above assumes a telescope you look through, or one you bolt a camera onto.  There is now a third thing entirely, and it belongs in its own discussion because it doesn't sit anywhere on the chart above.
 
+<div class="ke-figure">
+
+![Three all-in-one smart telescopes, with a ZWO Seestar at center](./_images/guide-31-smart-telescopes.png)
+
+<p class="ke-figure-caption">Three of the all-in-one, "smart" telescopes now on the market.  The Seestar sits at center.</p>
+
+</div>
+
 The "all-in-one" or "smart" telescope is a small, sealed, robotic instrument with the optics, the mount, the camera, the computer, and the battery all in one package you can carry in one hand.  There is no eyepiece.  You don't look through it...you look at your phone.  And while that sounds like a compromise, what these things actually do is remarkable.
 
 ### How They Work
