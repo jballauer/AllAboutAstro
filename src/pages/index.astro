@@ -41,7 +41,9 @@ const highlightSlides = [
 
 const recentImages = (await getCollection('gallery', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 5);
+  // Four, because they now run as a single row across the page rather than
+  // stacking in a narrow column.
+  .slice(0, 4);
 
 const howToLearnLinks = [
   { slug: 'how-to-learn-astrophotography', title: 'How to Learn Astrophotography' },
@@ -87,34 +89,42 @@ const gear = {
     </div>
   </section>
 
-  <section class="feature-columns">
-    <div class="col col-eclipse-news">
-      <div class="slideshow">
-        {eclipseSlides.map((src, i) => (
-          <Image src={src} alt="An image from the 2024 Total Solar Eclipse" width={340} class="slide" data-active={i === 0}
-          />
-        ))}
-      </div>
-      <p class="slideshow-caption">A few favorites from the 2024 Total Solar Eclipse — see the full <a href="/gallery/great-american-solar-eclipse-2024/">Gallery results</a> for the whole story.</p>
+  <!-- Welcome leads the page: it is what a first-time visitor needs, and on
+       a phone whatever comes first here is simply what they see.  The
+       reference material sits in the right-hand column beside it, and the
+       eclipse material — which was the top of the page — moves to the end. -->
+  <section class="welcome-row">
+    <div class="welcome">
+      <h2>Welcome to All About Astro!</h2>
+      <p>What you'll find here is a website that showcases some of my astrophotography, but more than that, it will show you how to do the same! I hope that you can use this site to help you learn a new hobby - or master it!</p>
 
-      <hr />
+      <p>If you are a beginner, what you will discover in this wonderful, demanding hobby is that all the failures combine to make you a better imager. In essence, like an Apollo 13 mission, it will be the successful failures that make all the difference. Whereas Apollo has its faulty oxygen tank, we have our fogging of the CCD chamber window. While our struggle to find a guide-star is not as life-endangering as their compromised heat-shield, we need to experience some difficulties in order to appreciate what the hobby is all about.</p>
 
-      <h2>2024 Eclipse News...</h2>
-      <p>In a week full of hopeful worry preceding the eclipse, you would have found me obsessing on weather models, practicing some solar image runs, and staying in contact with people who wanted my advice on what to do, where to do, and what to expect.</p>
-      <p>That worry took me to Conway, Arkansas, where the forecast for clearer skies yielded better odds. Yet, all along, the astronomy gods must have been laughing at me while most of Texas miraculously cleared up for the event.</p>
-      <p>And I am grateful for this, as I had left behind so many family and friends who I desperately wanted to witness their first total solar eclipse.</p>
-      <p>This was my second total solar eclipse. The second in 7 years. My images of the 2017 event are all over All About Astro, including within the 2024 Total Solar Eclipse Guide I published here in early March 2024.</p>
-      <p>Setup for such an eclipse is not trivial, and many things can and did go wrong while tracking and imaging the eclipse itself. But I couldn't have asked for better results and all the while, in between frantic moments, I was able to settle down and really take in the beauty of what I consider to be the most astonishing display of nature that there is.</p>
-      <p>I've since finished processing the images — the small slideshow at the top shows a few favorites, and the full <a href="/gallery/great-american-solar-eclipse-2024/">Gallery results</a> have the whole story.</p>
-      <p>I sincerely hope your eclipse experience was successful and, moreover, that it might have inspired you to appreciate astronomy all the more and, perhaps, even remember to LOOK UP on occasion!</p>
+      <p>It is about adventure and perseverance and passion. It is about learning and struggling and improving. But above all else, astrophotography is all about meeting every challenge in a complex, unpredictable hobby that burdens us with a substantial learning-curve.</p>
+
+      <p>Therefore, the challenge of a good website about this hobby becomes organizing the information in a way that is logical, yet cohesive; organized, yet complete. But it is also about maintaining a balance between beginner and expert, giving a steady diet of meat and potatoes without letting the beginner know he is overeating.</p>
+
+      <p>In that light, I will not refrain from giving opinions on this site, particularly if I know a method, philosophy, or technique will provide the visitor with a time-saving, or money-saving approach.</p>
+
+      <p>In my time as a teacher and presenter of CCD topics and hands-on astronomy workshops, particularly to beginners, I've learned that I cannot take the approach of, "What questions do you have and let's see if I can answer them?"</p>
+
+
+      <p>The reality is that, in this terrifically and terribly difficult hobby, what is likely holding you back is that you have no earthly idea of what questions to ask!</p>
+
+      <p>So I suspect that if you've found your way here, you also want a little, "Jay, tell us what we need to know - and when." This is the key reason why, for the most part, All About Astro.com will attempt to teach the hobby from the macro perspective, focusing more on the overall concepts as opposed to giving the reader a myopic "getting started" or "step-by-step" guide.</p>
+
+      <p>But there are a couple of other reasons to express the hobby in such a way. First, the number of hardware and software options available to the hobbyist does not permit individual tutorials on specific software and hardware without also alienating the reader who has a different set of tools, or promoting only my favorite tools - I will do some of that, but only because I feel the tools are that good.</p>
+
+      <p>Second, teaching WHAT to do in this hobby, in the long-run, will not be as effective as teaching WHY. The person who understands the concepts and philosophies will soon be able to make decisions outside the scope of this website. This will lead to an understanding that promotes progress and innovation within the hobby, making it more likely that the imager will be able to contribute back to the astroimaging community at large.</p>
+
+      <p>Regardless of the reason you are in the hobby or the goals you hope to achieve, the problem with being a beginner is that we spend most of our time trying to figure out what questions we need to ask. Whereas there are many resources that can teach the hobby, I have found that too many of them leave me desiring for more, and more often than not, they leave us with apprehension about what is next.</p>
+
+      <p>Therefore this website not only showcases some fine astrophotography, but will help you learn how to do the same. It will attempt to tell you what questions you need to ask and when you need to ask them. This way, you can research your inquiries, perhaps beginning with this website and finishing in the laboratory of experience. But in the end, as comprehensive as you might find the information contained herein, it is my desire that All About Astro.com will prove authoritative, not because some guy like me wrote it, but rather because you find success in the methods contained on these pages.</p>
+
+      <p class="ke-clear">Give a person a fish, and he feeds for a day...teach a person to fish, and...well...you get it. Pithy saying, but applicable.</p>
     </div>
 
-    <div class="col col-eclipse-guide">
-      <h2>April 2024 Total Solar Eclipse Guide!!!</h2>
-      <p>I have completed an <a href="/learning/great-american-solar-eclipse-2024/">Eclipse Guide</a> for all you need to know with regard to the eclipse on April 8, 2024. The article is for everyone, but written in a way that teachers might appreciate!</p>
-
-      <hr />
-
+    <aside class="col side-col">
       <h2>How to Learn Other Stuff...</h2>
       <p>Head on over to the Learning page and let's read through some of these articles...</p>
       <ul class="link-list">
@@ -134,76 +144,76 @@ const gear = {
           </ul>
         </div>
       ))}
-    </div>
 
-    <div class="col col-recent-images callout-box" data-color="teal">
-      <h2>Most Recent Images...</h2>
-      <div class="recent-grid">
-        {recentImages.map((entry) => (
-          <a class="recent-tile" href={`/gallery/${entry.id}/`}>
-            {entry.data.image && (
-              <Image
-                src={entry.data.image}
-                alt={entry.data.title}
-                width={300}
-                height={220}
-                position={entry.id === 'comet-neowise-timelapse' ? 'left' : undefined}
-              />
-            )}
-            <span>{entry.data.title}</span>
-          </a>
-        ))}
-      </div>
-      <p><a href="/gallery/">View the Astro Gallery for more!</a></p>
-    </div>
+      <hr />
+
+      <h2>Highlights</h2>
+        <div class="highlights">
+          <div class="highlights-stage">
+            <button type="button" class="hl-pause" aria-label="Pause slideshow">Pause ❙❙</button>
+            <button type="button" class="hl-prev" aria-label="Previous image">‹</button>
+            <button type="button" class="hl-next" aria-label="Next image">›</button>
+            {highlightSlides.map((src, i) => (
+              <Image src={src} alt="A highlight image from All About Astro" width={620} class="hl-slide" data-index={i} data-active={i === 0} />
+            ))}
+          </div>
+          <div class="hl-thumbs">
+            {highlightSlides.map((src, i) => (
+              <Image src={src} alt="" width={90} class="hl-thumb" data-index={i} data-active={i === 0} />
+            ))}
+          </div>
+        </div>
+    </aside>
   </section>
 
-  <section class="welcome">
-    <h2>Welcome to All About Astro!</h2>
-    <p>What you'll find here is a website that showcases some of my astrophotography, but more than that, it will show you how to do the same! I hope that you can use this site to help you learn a new hobby - or master it!</p>
-
-    <p>If you are a beginner, what you will discover in this wonderful, demanding hobby is that all the failures combine to make you a better imager. In essence, like an Apollo 13 mission, it will be the successful failures that make all the difference. Whereas Apollo has its faulty oxygen tank, we have our fogging of the CCD chamber window. While our struggle to find a guide-star is not as life-endangering as their compromised heat-shield, we need to experience some difficulties in order to appreciate what the hobby is all about.</p>
-
-    <p>It is about adventure and perseverance and passion. It is about learning and struggling and improving. But above all else, astrophotography is all about meeting every challenge in a complex, unpredictable hobby that burdens us with a substantial learning-curve.</p>
-
-    <p>Therefore, the challenge of a good website about this hobby becomes organizing the information in a way that is logical, yet cohesive; organized, yet complete. But it is also about maintaining a balance between beginner and expert, giving a steady diet of meat and potatoes without letting the beginner know he is overeating.</p>
-
-    <p>In that light, I will not refrain from giving opinions on this site, particularly if I know a method, philosophy, or technique will provide the visitor with a time-saving, or money-saving approach.</p>
-
-    <p>In my time as a teacher and presenter of CCD topics and hands-on astronomy workshops, particularly to beginners, I've learned that I cannot take the approach of, "What questions do you have and let's see if I can answer them?"</p>
-
-    <div class="highlights">
-      <div class="highlights-stage">
-        <button type="button" class="hl-pause" aria-label="Pause slideshow">Pause ❙❙</button>
-        <button type="button" class="hl-prev" aria-label="Previous image">‹</button>
-        <button type="button" class="hl-next" aria-label="Next image">›</button>
-        {highlightSlides.map((src, i) => (
-          <Image src={src} alt="A highlight image from All About Astro" width={620} class="hl-slide" data-index={i} data-active={i === 0} />
-        ))}
-      </div>
-      <div class="hl-thumbs">
-        {highlightSlides.map((src, i) => (
-          <Image src={src} alt="" width={90} class="hl-thumb" data-index={i} data-active={i === 0} />
-        ))}
-      </div>
+  <!-- A band across the middle, separating the welcome from the eclipse
+       material below it. -->
+  <section class="recent-row callout-box" data-color="teal">
+    <h2>Most Recent Images...</h2>
+    <div class="recent-grid">
+      {recentImages.map((entry) => (
+        <a class="recent-tile" href={`/gallery/${entry.id}/`}>
+          {entry.data.image && (
+            <Image
+              src={entry.data.image}
+              alt={entry.data.title}
+              width={300}
+              height={220}
+              position={entry.id === 'comet-neowise-timelapse' ? 'left' : undefined}
+            />
+          )}
+          <span>{entry.data.title}</span>
+        </a>
+      ))}
     </div>
-
-    <p>The reality is that, in this terrifically and terribly difficult hobby, what is likely holding you back is that you have no earthly idea of what questions to ask!</p>
-
-    <p>So I suspect that if you've found your way here, you also want a little, "Jay, tell us what we need to know - and when." This is the key reason why, for the most part, All About Astro.com will attempt to teach the hobby from the macro perspective, focusing more on the overall concepts as opposed to giving the reader a myopic "getting started" or "step-by-step" guide.</p>
-
-    <p>But there are a couple of other reasons to express the hobby in such a way. First, the number of hardware and software options available to the hobbyist does not permit individual tutorials on specific software and hardware without also alienating the reader who has a different set of tools, or promoting only my favorite tools - I will do some of that, but only because I feel the tools are that good.</p>
-
-    <p>Second, teaching WHAT to do in this hobby, in the long-run, will not be as effective as teaching WHY. The person who understands the concepts and philosophies will soon be able to make decisions outside the scope of this website. This will lead to an understanding that promotes progress and innovation within the hobby, making it more likely that the imager will be able to contribute back to the astroimaging community at large.</p>
-
-    <p>Regardless of the reason you are in the hobby or the goals you hope to achieve, the problem with being a beginner is that we spend most of our time trying to figure out what questions we need to ask. Whereas there are many resources that can teach the hobby, I have found that too many of them leave me desiring for more, and more often than not, they leave us with apprehension about what is next.</p>
-
-    <p>Therefore this website not only showcases some fine astrophotography, but will help you learn how to do the same. It will attempt to tell you what questions you need to ask and when you need to ask them. This way, you can research your inquiries, perhaps beginning with this website and finishing in the laboratory of experience. But in the end, as comprehensive as you might find the information contained herein, it is my desire that All About Astro.com will prove authoritative, not because some guy like me wrote it, but rather because you find success in the methods contained on these pages.</p>
-
-    <p class="ke-clear">Give a person a fish, and he feeds for a day...teach a person to fish, and...well...you get it. Pithy saying, but applicable.</p>
-
-    <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="signature" />
+    <p><a href="/gallery/">View the Astro Gallery for more!</a></p>
   </section>
+
+  <section class="eclipse col">
+    <h2>2024 Eclipse News...</h2>
+    <p>In a week full of hopeful worry preceding the eclipse, you would have found me obsessing on weather models, practicing some solar image runs, and staying in contact with people who wanted my advice on what to do, where to do, and what to expect.</p>
+    <p>That worry took me to Conway, Arkansas, where the forecast for clearer skies yielded better odds. Yet, all along, the astronomy gods must have been laughing at me while most of Texas miraculously cleared up for the event.</p>
+    <p>And I am grateful for this, as I had left behind so many family and friends who I desperately wanted to witness their first total solar eclipse.</p>
+    <p>This was my second total solar eclipse. The second in 7 years. My images of the 2017 event are all over All About Astro, including within the 2024 Total Solar Eclipse Guide I published here in early March 2024.</p>
+    <p>Setup for such an eclipse is not trivial, and many things can and did go wrong while tracking and imaging the eclipse itself. But I couldn't have asked for better results and all the while, in between frantic moments, I was able to settle down and really take in the beauty of what I consider to be the most astonishing display of nature that there is.</p>
+    <p>I've since finished processing the images — the small slideshow at the top shows a few favorites, and the full <a href="/gallery/great-american-solar-eclipse-2024/">Gallery results</a> have the whole story.</p>
+    <p>I sincerely hope your eclipse experience was successful and, moreover, that it might have inspired you to appreciate astronomy all the more and, perhaps, even remember to LOOK UP on occasion!</p>
+    <div class="slideshow">
+      {eclipseSlides.map((src, i) => (
+        <Image src={src} alt="An image from the 2024 Total Solar Eclipse" width={340} class="slide" data-active={i === 0}
+        />
+      ))}
+    </div>
+    <p class="slideshow-caption">A few favorites from the 2024 Total Solar Eclipse — see the full <a href="/gallery/great-american-solar-eclipse-2024/">Gallery results</a> for the whole story.</p>
+
+    <hr />
+
+    <h2>April 2024 Total Solar Eclipse Guide!!!</h2>
+    <p>I have completed an <a href="/learning/great-american-solar-eclipse-2024/">Eclipse Guide</a> for all you need to know with regard to the eclipse on April 8, 2024. The article is for everyone, but written in a way that teachers might appreciate!</p>
+  </section>
+
+  <Image src={signatureImage} alt="Jay Ballauer's signature" width={139} class="signature" />
+
 </BaseLayout>
 
 <style>
@@ -239,12 +249,61 @@ const gear = {
     color: var(--color-prose-text);
   }
 
-  .feature-columns {
+  /* Welcome prose on the left, reference material in a narrower column at
+     the right.  A grid rather than a float so the two columns cannot
+     squeeze the prose into a sliver, and so the single-column phone
+     layout follows DOM order — welcome first, which is the point. */
+  .welcome-row {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 2.5rem;
     align-items: start;
     margin-bottom: 3rem;
+  }
+  @media (max-width: 900px) {
+    .welcome-row {
+      /* minmax(0, 1fr), not a bare 1fr: a grid track's automatic minimum is
+         min-content, so the thumbnail strip inside the highlights slideshow
+         stretched the single column to 954px on a 375px screen. */
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  .recent-row {
+    margin-bottom: 3rem;
+  }
+  .recent-row h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight);
+    font-size: var(--font-heading-size);
+    color: var(--color-heading);
+    margin: 0 0 0.75rem;
+  }
+
+  /* The eclipse material reads as an article now rather than a column: the
+     slideshow floats and the news text runs alongside it. */
+  .eclipse {
+    margin-bottom: 3rem;
+  }
+  .eclipse .slideshow {
+    float: right;
+    width: 46%;
+    margin: 0.3rem 0 1rem 1.75rem;
+  }
+  .eclipse .slideshow-caption {
+    float: right;
+    width: 46%;
+    clear: right;
+    margin: 0 0 1rem 1.75rem;
+  }
+  @media (max-width: 700px) {
+    .eclipse .slideshow,
+    .eclipse .slideshow-caption {
+      float: none;
+      width: 100%;
+      margin: 0 0 1rem;
+    }
   }
   .col h2 {
     font-family: var(--font-heading);
@@ -314,14 +373,21 @@ const gear = {
     font-style: italic;
   }
 
-  .col-recent-images {
-    align-self: stretch;
-  }
   .recent-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.25rem;
     margin: 1rem 0;
+  }
+  @media (max-width: 900px) {
+    .recent-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 420px) {
+    .recent-grid {
+      grid-template-columns: 1fr;
+    }
   }
   .recent-tile {
     color: inherit;
@@ -352,19 +418,15 @@ const gear = {
      any specific paragraph -- same 46% figure-float proportion as the
      site's .ke-figure-left convention, so it doesn't strand a narrow
      sliver of text next to it. */
+  /* Lives in the right-hand column now.  As a float inside the welcome
+     prose it left the lower two-thirds of that column empty once the gear
+     list ran out — 646px of nothing beside the text.  Here it fills that
+     space with something worth looking at, and the prose gets its full
+     column width back. */
   .highlights {
-    float: left;
-    width: 46%;
-    margin: 0.3rem 1.75rem 1rem 0;
+    margin: 0 0 1rem;
   }
 
-  @media (max-width: 700px) {
-    .highlights {
-      float: none;
-      width: 100%;
-      margin: 0 0 1.5rem;
-    }
-  }
   .highlights-stage {
     position: relative;
     aspect-ratio: 4 / 3;
@@ -439,11 +501,6 @@ const gear = {
     margin-left: auto;
   }
 
-  @media (max-width: 900px) {
-    .feature-columns {
-      grid-template-columns: 1fr;
-    }
-  }
 </style>
 
 <script>
