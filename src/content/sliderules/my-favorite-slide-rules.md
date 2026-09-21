@@ -9,6 +9,12 @@ In many ways, this is very much like choosing a favorite kid. But I think if we 
 
 What can make for a favorite slide rule could be some intrinsic quality of the slide rule itself. Or maybe it is historically significant. Or maybe there's a story that can be shared that's more personal? Regardless, here is my current list of deserving favorites...
 
+<div class="ke-figure">
+
+![A K&E Deci-Lon 5 pocket rule, front face](./_images/my-favorites/decilon5-front.jpg)
+
+</div>
+
 ## General Purpose Slide Rules
 
 **SIC 1610-D Circular Rule**
@@ -32,6 +38,12 @@ The pocket version of the famous Versalog is delightful and powerful. Made of ba
 **K&E Celanese Celcon**
 This is a rare K&E rule made only in 1968 and of a special "Celcon" resin. It's green. But it's a Doric pocket rule like the 9068 model, noticeably heavier, and it's really lovely. I didn't think I'd like it as much as I actually do!
 
+<div class="ke-figure">
+
+![A Pickett Model 100 Douglas Sky Rule, back face](./_images/my-favorites/model100back.jpg)
+
+</div>
+
 ## Specialty Slide Rules
 
 **Hemmi 266 Electronic**
@@ -48,6 +60,12 @@ I stole this one off of eBay and it's quite rare. As a woodworker myself, this o
 
 **W&G Model 432 Dual-Face Comprehensive**
 My only Australian slide rule, gifted to me by an Aussie slide rule enthusiast I met online. Thanks, Darren! Its duplex construction reminds me of a K&E, yet it sports a unique twist on some of the typical scales, in addition to some useful electrical scales.
+
+<div class="ke-figure">
+
+![A Faber-Castell 67/87 R, back face](./_images/my-favorites/f-c-67-87rback.jpg)
+
+</div>
 
 ## Rare or Awesome Rules
 
