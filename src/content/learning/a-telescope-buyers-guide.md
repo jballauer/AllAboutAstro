@@ -519,7 +519,7 @@ But just in case photography is important in your first scope (i.e. you have a l
 
 **Solar Imaging** - To take a picture of the sun, you can purchase a white light solar filter for your telescope, any telescope, and shoot away.  Thus, there is no specific requirements here...just be well informed and keep it safe.   But there are also dedicated instruments that ONLY image the sun.  These h-alpha solar scopes go beyond the scope of this article. though you should look into a Coronado PST if you want to explore some great solar views for less than a grand.
 
-**Note:**  The All-in-One, Smart Telescopes, which could be a "first telescope" in itself, and is capable of performing most of the above tasks.   However, they are outside the context of this above discussion.
+**Note:**  The All-in-One, Smart Telescopes could be a "first telescope" in themselves, and are capable of performing most of the above tasks.   However, they are outside the context of this above discussion.
 
 <div class="ke-clear"></div>
 
