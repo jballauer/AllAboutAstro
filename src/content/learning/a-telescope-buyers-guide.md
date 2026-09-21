@@ -700,7 +700,7 @@ It should probably be stated that a beginner to astroimaging should probably get
 
 Over the years, at some point, I have recommended SCTs (especially with small refractors and lenses piggybacked atop) and EQ-based Newtonians for beginners.   Then, I decided that smaller apochromatic refractors with mid-range EQ mounts was probably the best bet.
 
-Any of these would be good advice, especially any purchase that includes a solid EQ mount.
+Any of these would be good advice, especially any purchase that includes a solid EQ mount.  And for sure, a little robotic ZWO Seestar could satiate your imaging needs all by itself; albeit, most dedicated astroimagers want a little more involvement with the process.  Therefore...
 
 ​Today, I have concluded that there is no single best choice.    Instead, I have five suggestions, sequential steps toward success - see the **Recommendations for Aspiring AstroImagers** sidebar below.
 
