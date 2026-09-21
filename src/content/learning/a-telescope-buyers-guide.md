@@ -556,15 +556,15 @@ The "all-in-one" or "smart" telescope is a small, sealed, robotic instrument wit
 
 ### How They Work
 
-You set it down, turn it on, and connect your phone to it.  The scope points itself at a patch of sky, takes a picture, and works out where it is by matching the star pattern against a catalog — the same "plate solving" the professionals use.  From there you pick a target from a list and it slews, focuses itself, and starts shooting.
+You set it down, turn it on, and connect your phone to it.  The scope points itself at a patch of sky, takes a picture, and works out where it is by matching the star pattern against a catalog.  It is the same "plate solving" the professionals use.  From there you pick a target from a list and it slews, focuses itself, and starts shooting.
 
-Here is the part that matters.  It takes very short exposures, ten or twenty seconds at a time, and stacks them live, on board, as they arrive.  You watch an object emerge on your phone over a few minutes, going from a faint smudge to something with real structure and color.  Nothing is being guided.  Nothing is polar aligned.  There is no laptop, no cable spaghetti, no calibration frames unless you want them.  Those short sub-exposures are exactly what let a simple alt-az mount get away with the field rotation we discussed earlier — no single frame is up long enough for it to matter, and the software rotates and rejects as it goes.
+Here is the part that matters.  It takes very short exposures, ten or twenty seconds at a time, and stacks them live, on board, as they arrive.  You watch an object emerge on your phone over a few minutes, going from a faint smudge to something with real structure and color.  Nothing is being guided.  Nothing is polar aligned.  There is no laptop, no cable spaghetti, no calibration frames unless you want them.  Those short sub-exposures are exactly what let a simple alt-az mount get away with the field rotation we discussed earlier.  No single frame is up long enough for it to matter, and the software rotates and rejects as it goes.
 
 ### What They Do Well - And What They Don't
 
-Wide field deep sky is their home turf.  The focal lengths are short, typically 150mm to 250mm, so the big targets frame beautifully — the North America Nebula, the Veil, the Rosette, Andromeda.  The moon is excellent.  With the proper solar filter — included with some models, a separate accessory on others — the sun is excellent too, and this is very likely the easiest solar imaging setup that has ever existed.  Most of them shoot time-lapses and daytime scenery as well.
+Wide field deep sky is their home turf.  The focal lengths are short, typically 150mm to 250mm, so the big targets frame beautifully:  the North America Nebula, the Veil, the Rosette, Andromeda.  The moon is excellent.  With the proper solar filter (included with some models, a separate accessory on others), the sun is excellent too, and this is very likely the easiest solar imaging setup that has ever existed.  Most of them shoot time-lapses and daytime scenery as well.
 
-What they are not is a planetary instrument.  The focal lengths are far too short for serious work on Jupiter or Saturn, and no amount of clever software fixes that.  Small galaxies and globular clusters will be small.  And they are not visual instruments at all — if the experience you want is ancient photons landing on your own retina, this is not that, and it never will be.
+What they are not is a planetary instrument.  The focal lengths are far too short for serious work on Jupiter or Saturn, and no amount of clever software fixes that.  Small galaxies and globular clusters will be small.  And they are not visual instruments at all.  If the experience you want is ancient photons landing on your own retina, this is not that, and it never will be.
 
 ### What They Cost
 
@@ -584,15 +584,23 @@ What they are not is a planetary instrument.  The focal lengths are far too shor
 
 *Prices as of September 2026 and worth re-checking, since this category moves quickly.*
 
-Look at the bottom of that table and then the top of it.  The Celestron Origin is a 6" RASA at f/2.2 with a Starvis 2 sensor, which is a genuinely serious imaging instrument in a self-driving box.  But the interesting story is at the other end.  For around $500, a Seestar S50 or a DWARF 3 will do — automatically, from your driveway, with no experience whatsoever — a version of what used to demand a five-figure equipment list, a laptop full of software, and several seasons of learning to use it.
+Look at the bottom of that table and then the top of it.  The Celestron Origin is a 6" RASA at f/2.2 with a Starvis 2 sensor, which is a genuinely serious imaging instrument in a self-driving box.  But the interesting story is at the other end.  For around $500, a Seestar S50 or a DWARF 3 will do, automatically and from your own driveway with no experience whatsoever, a version of what used to demand a five-figure equipment list, a laptop full of software, and several seasons of learning to use it.
 
 That deserves to be said plainly, because it changes the advice.  For a great many people, one of these is all anybody really needs.  Someone who wants to see the sky and keep a record of it, and who has no interest in becoming an engineer about it, is honestly well served by a $500 device that works every single time it is switched on.
+
+### The One I'd Recommend
+
+For my money, the Seestar scopes are the ones to get.  They represent incredible value and capability for that price, and honestly, I would have a hard time advising anybody to spend several times more for the fancier options.  The Seestars are proven, simple, and powerful.
+
+If you are in doubt about a first telescope, and your budget is somewhere in this neighborhood, you could NOT go wrong with a Seestar.
+
+I will go further than that.  I think these instruments can open the hobby to a great many people who might never have found their way into it otherwise.  Once somebody sees what a Seestar can do, there is a good chance they will want something more substantial...a visual scope to put their own eye to, or a serious imaging setup like the ones discussed throughout this article.  That is not a threat to the hobby.  That is a doorway into it.
 
 ### Why You Want One Anyway
 
 For those of us with other telescopes already, these have quietly become something else: the instrument you would be foolish not to also own.  They do the things a big, long focal length rig does poorly or expensively.  Wide fields.  Solar.  Lunar.  Time-lapses.  The whole category of imaging that a 2000mm astrograph is simply the wrong tool for.
 
-And they do it while you are busy with something else.  That is the real argument.  Get to a dark sky site and let the little robot be the first thing out of the car — set it down, level it, tell it what to shoot, and walk away.  It collects for the rest of the night while you polar align the real mount, chase focus, fight a cable, run your sequence, or just sit and observe.  You came for something specific, and none of your attention has to be spent on the robot for you to end the night with an image you didn't work for.
+And they do it while you are busy with something else.  That is the real argument.  Get to a dark sky site and let the little robot be the first thing out of the car.  Set it down, level it, tell it what to shoot, and walk away.  It collects for the rest of the night while you polar align the real mount, chase focus, fight a cable, run your sequence, or just sit and observe.  You came for something specific, and none of your attention has to be spent on the robot for you to end the night with an image you didn't work for.
 
 None of this replaces anything in the arsenal.  It gets added to it.  And that is why, for anyone serious about this hobby today, one of these has gone from a curiosity to something close to a requirement.
 
