@@ -479,6 +479,8 @@ Similarly, a small refractor on a basic alt-az mount (see Sidebar: "Alt-az" vs. 
 
 More money usually leads to more complexity, either in the purchase of electronics, or the necessity of purchasing electronic-based gear in order to get full use of their telescopes, such as good mounts and cameras for use with already expensive APO refractors.
 
+But it does not have to be so.   With all-in-one, smart telescopes like those from Seestar, DWARF, Vaonis, Unistellar, and Celestron, taking images of the night sky is as simple as setting the device down, turning it on, pushing some buttons on your phone, and watching it take some pretty remarkable images!
+
 ### Photographic Capabilities
 
 Most beginners want a telescope to view the skies.  It's only later that they realize that hooking up a camera is a natural evolution of the hobby, and a generally COOL thing to do.   But not all forms of astroimaging are treated equally - different telescopes yield different results.  This is why the camera industry has different lenses for your camera - and scopes work exactly like camera lenses in this regard.
