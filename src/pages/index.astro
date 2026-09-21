@@ -193,29 +193,23 @@ const gear = {
 
   <section class="eclipse col">
     <h2>2024 Eclipse News...</h2>
+    <p>In a week full of hopeful worry preceding the eclipse, you would have found me obsessing on weather models, practicing some solar image runs, and staying in contact with people who wanted my advice on what to do, where to do, and what to expect.</p>
 
-    <div class="eclipse-row">
-      <div class="eclipse-figure">
+    <div class="eclipse-figure">
       <div class="slideshow">
-      {eclipseSlides.map((src, i) => (
-      <Image src={src} alt="An image from the 2024 Total Solar Eclipse" width={340} class="slide" data-active={i === 0}
-      />
-      ))}
+        {eclipseSlides.map((src, i) => (
+          <Image src={src} alt="An image from the 2024 Total Solar Eclipse" width={340} class="slide" data-active={i === 0}
+          />
+        ))}
       </div>
       <p class="slideshow-caption">A few favorites from the 2024 Total Solar Eclipse — see the full <a href="/gallery/great-american-solar-eclipse-2024/">Gallery results</a> for the whole story.</p>
-      </div>
-
-      <div class="eclipse-text">
-        <p>In a week full of hopeful worry preceding the eclipse, you would have found me obsessing on weather models, practicing some solar image runs, and staying in contact with people who wanted my advice on what to do, where to do, and what to expect.</p>
-
-        <p>That worry took me to Conway, Arkansas, where the forecast for clearer skies yielded better odds. Yet, all along, the astronomy gods must have been laughing at me while most of Texas miraculously cleared up for the event.</p>
-        <p>And I am grateful for this, as I had left behind so many family and friends who I desperately wanted to witness their first total solar eclipse.</p>
-        <p>This was my second total solar eclipse. The second in 7 years. My images of the 2017 event are all over All About Astro, including within the 2024 Total Solar Eclipse Guide I published here in early March 2024.</p>
-        <p>Setup for such an eclipse is not trivial, and many things can and did go wrong while tracking and imaging the eclipse itself. But I couldn't have asked for better results and all the while, in between frantic moments, I was able to settle down and really take in the beauty of what I consider to be the most astonishing display of nature that there is.</p>
-        <p>I've since finished processing the images — the slideshow here shows a few favorites, and the full <a href="/gallery/great-american-solar-eclipse-2024/">Gallery results</a> have the whole story.</p>
-        <p>I sincerely hope your eclipse experience was successful and, moreover, that it might have inspired you to appreciate astronomy all the more and, perhaps, even remember to LOOK UP on occasion!</p>
-      </div>
     </div>
+    <p>That worry took me to Conway, Arkansas, where the forecast for clearer skies yielded better odds. Yet, all along, the astronomy gods must have been laughing at me while most of Texas miraculously cleared up for the event.</p>
+    <p>And I am grateful for this, as I had left behind so many family and friends who I desperately wanted to witness their first total solar eclipse.</p>
+    <p>This was my second total solar eclipse. The second in 7 years. My images of the 2017 event are all over All About Astro, including within the 2024 Total Solar Eclipse Guide I published here in early March 2024.</p>
+    <p>Setup for such an eclipse is not trivial, and many things can and did go wrong while tracking and imaging the eclipse itself. But I couldn't have asked for better results and all the while, in between frantic moments, I was able to settle down and really take in the beauty of what I consider to be the most astonishing display of nature that there is.</p>
+    <p>I've since finished processing the images — the slideshow here shows a few favorites, and the full <a href="/gallery/great-american-solar-eclipse-2024/">Gallery results</a> have the whole story.</p>
+    <p>I sincerely hope your eclipse experience was successful and, moreover, that it might have inspired you to appreciate astronomy all the more and, perhaps, even remember to LOOK UP on occasion!</p>
 
     <hr />
 
@@ -295,48 +289,23 @@ const gear = {
   .eclipse {
     margin-bottom: 3rem;
   }
-  /* Slideshow across two of the page's three columns, news text in the
-     third.  A grid rather than a float so the two end together by
-     construction: floated, the image finished 110px before the text did
-     and the last paragraphs wrapped underneath it, and any hand-tuned
-     offset that fixed that at one width would drift at every other. */
-  .eclipse-row {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    gap: 1.75rem;
-    align-items: stretch;
-  }
+  /* Two of the page's three columns wide, with the news text running in the
+     remaining one and then continuing full width beneath it.  Wrapping the
+     slideshow and its caption together keeps the caption with the image
+     rather than needing its own float and a clear. */
   .eclipse-figure {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-  }
-  /* Takes its height from the text column beside it instead of its own
-     aspect ratio.  The slides already use object-fit: contain on black, so
-     a row taller or shorter than 4:3 letterboxes rather than distorting. */
-  .eclipse-figure .slideshow {
-    flex: 1;
-    aspect-ratio: auto;
-    min-height: 260px;
-    margin-bottom: 0.5rem;
+    float: left;
+    width: 66%;
+    margin: 0.3rem 1.75rem 1rem 0;
   }
   .eclipse-figure .slideshow-caption {
     margin: 0;
   }
-  .eclipse-text {
-    min-width: 0;
-  }
-  .eclipse-text p:first-child {
-    margin-top: 0;
-  }
   @media (max-width: 700px) {
-    .eclipse-row {
-      grid-template-columns: minmax(0, 1fr);
-      gap: 1rem;
-    }
-    .eclipse-figure .slideshow {
-      flex: none;
-      aspect-ratio: 4 / 3;
+    .eclipse-figure {
+      float: none;
+      width: 100%;
+      margin: 0 0 1.5rem;
     }
   }
   .col h2 {
