@@ -477,7 +477,7 @@ Once again, ***Dobsonian reflectors*** are the leaders here.   Coupled with thei
 
 Similarly, a small refractor on a basic alt-az mount (see Sidebar: "Alt-az" vs. "EQ" above) becomes akin to using binoculars...just point and look.
 
-And as I said before, more money usually leads to more complexity, either in the purchase of electronics, or the necessity of purchasing electronic-based gear in order to get full use of their telescopes, such as good mounts and cameras for use with already expensive APO refractors!
+More money usually leads to more complexity, either in the purchase of electronics, or the necessity of purchasing electronic-based gear in order to get full use of their telescopes, such as good mounts and cameras for use with already expensive APO refractors.
 
 ### Photographic Capabilities
 
