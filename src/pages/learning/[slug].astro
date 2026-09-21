@@ -44,9 +44,17 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 const banner = pageBanners[article.id];
-// Derived from the file's own last commit rather than typed into the
-// article, so it cannot drift out of date the way a hand-written line does.
-const lastUpdated = getEntryLastUpdated(article, 'src/content/learning');
+// Prefer an explicit `updated:` in the frontmatter, which Jay sets when the
+// writing itself changes.  Otherwise fall back to the file's last commit,
+// which cannot drift but does count typo fixes and layout passes as updates.
+const lastUpdated = article.data.updated
+  ? article.data.updated.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC',
+    })
+  : getEntryLastUpdated(article, 'src/content/learning');
 ---
 
 <BaseLayout title={article.data.title} description={article.data.description} noindex={article.data.unlisted}>

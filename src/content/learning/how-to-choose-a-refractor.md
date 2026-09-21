@@ -4,6 +4,7 @@ description: An in-progress guide to choosing a refractor telescope.
 order: 0
 draft: false
 unlisted: true
+updated: 2026-07-29
 ---
 
 When most of us picture a "telescope," our minds see a refractor.

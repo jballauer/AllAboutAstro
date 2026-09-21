@@ -4,6 +4,7 @@ description: Why dedicated monochrome astronomical CCD/CMOS cameras still out-pe
 order: 0
 draft: false
 unlisted: true
+updated: 2026-07-29
 ---
 
 <div class="ke-figure ke-figure-left ke-figure-third">

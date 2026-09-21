@@ -36,6 +36,11 @@ const learning = defineCollection({
     // pages, distinct from `draft` (which drops the page from the build
     // entirely outside local dev).
     unlisted: z.boolean().default(false),
+    // Date of the last SUBSTANTIVE revision, for the "Last updated" badge.
+    // Without it the badge falls back to the file's last commit date, which
+    // is accurate but counts every typo fix and layout pass as an update.
+    // Set this when the writing itself changes and leave it alone otherwise.
+    updated: z.coerce.date().optional(),
   }),
 });
 

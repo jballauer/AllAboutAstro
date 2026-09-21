@@ -4,6 +4,7 @@ description: An in-progress article on the keys to success in astroimaging.
 order: 0
 draft: false
 unlisted: true
+updated: 2026-07-29
 ---
 
 No doubt that you've made good progress in being able to take good pictures of the cosmos. You know a lot about what it takes, the techniques involved, and have encountered a lot of the obstacles that stand in your way to getting better at this hobby. But if you are like me, everything you first learned became a jumbled-up mess of disorganized tasks — a "to-do list" of disconnected ideas that you may or may NOT have remembered to do.

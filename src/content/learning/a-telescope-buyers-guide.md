@@ -3,6 +3,7 @@ title: A Telescope Buyer's Guide
 description: The five qualities to weigh when buying your first telescope, plus recommendations by hobbyist type.
 order: 2
 draft: false
+updated: 2026-09-21
 ---
 
 Purchasing a telescope, especially your first scope, is a daunting task.  There are just so many different types of scopes that do so many different types of things.  Apos and Achros; SCTs and Maks; dobs and newts; RCs and CDKs...the choices can get overwhelming!    But then, you must also consider how each "scope" or optical tube assembly (OTA) is mounted (see **[Sidebar: Basic Telescope Mount Options](#aside-basic-telescope-mount-options)**<span class="ke-dir"> at right</span>).

@@ -3,6 +3,7 @@ title: Developing a Plan for Our Images
 description: How to plan deep-sky imaging targets, framing, and mosaics rather than shooting objects at random.
 order: 4
 draft: false
+updated: 2026-07-22
 ---
 
 Developing a Plan for Our Images
