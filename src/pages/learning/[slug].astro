@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageBanner from '../../components/PageBanner.astro';
 import { getCollection, render } from 'astro:content';
-import { getEntryLastUpdated } from '../../utils/lastUpdated.js';
 import telescopeBuyersGuideBanner from '../../assets/banners/learning-a-telescope-buyers-guide-banner.jpeg';
 import astronomyAndTheWeatherBanner from '../../assets/banners/learning-astronomy-and-the-weather-banner.jpeg';
 import bestDataAcquisitionPracticesBanner from '../../assets/banners/learning-best-data-acquisition-practices-banner.png';
@@ -44,9 +43,10 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 const banner = pageBanners[article.id];
-// Prefer an explicit `updated:` in the frontmatter, which Jay sets when the
-// writing itself changes.  Otherwise fall back to the file's last commit,
-// which cannot drift but does count typo fixes and layout passes as updates.
+// Shown only where Jay has recorded a substantive revision via `updated:`.
+// Deliberately no git fallback: the file's commit date counts typo fixes and
+// layout passes as updates, which overstates them, and an article with no
+// recorded revision is better off showing no date than a misleading one.
 const lastUpdated = article.data.updated
   ? article.data.updated.toLocaleDateString('en-US', {
       year: 'numeric',
@@ -54,16 +54,23 @@ const lastUpdated = article.data.updated
       day: 'numeric',
       timeZone: 'UTC',
     })
-  : getEntryLastUpdated(article, 'src/content/learning');
+  : null;
 ---
 
 <BaseLayout title={article.data.title} description={article.data.description} noindex={article.data.unlisted}>
   <article>
     {banner && <PageBanner src={banner.src} alt={banner.alt} />}
-    <div class="title-row">
+    {lastUpdated ? (
+      <div class="title-row">
+        <h1>{article.data.title}</h1>
+        <p class="last-updated">Last updated: {lastUpdated}</p>
+      </div>
+    ) : (
+      /* No wrapper without a badge: .title-row zeroes the h1's bottom margin
+         to sit the badge on its baseline, which on the 35 articles that have
+         no recorded revision just collapsed the space under the heading. */
       <h1>{article.data.title}</h1>
-      {lastUpdated && <p class="last-updated">Last updated: {lastUpdated}</p>}
-    </div>
+    )}
     <Content />
   </article>
 </BaseLayout>

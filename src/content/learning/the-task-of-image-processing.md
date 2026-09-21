@@ -3,7 +3,6 @@ title: The Task of Image Processing
 description: A broad overview of what image processing actually is and the philosophies behind turning raw data into a finished astrophoto.
 order: 6
 draft: false
-updated: 2026-07-22
 ---
 
 An astronomical image can be defined as:

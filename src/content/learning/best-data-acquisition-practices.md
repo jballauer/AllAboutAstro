@@ -3,7 +3,6 @@ title: Best Data Acquisition Practices
 description: Focus, polar alignment, collimation, and other fundamentals that matter more than fancy equipment when acquiring astrophotography data.
 order: 5
 draft: false
-updated: 2026-07-22
 ---
 
 <div class="ke-figure ke-figure-right">

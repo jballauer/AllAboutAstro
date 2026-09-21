@@ -3,7 +3,6 @@ title: How to Learn Astrophotography
 description: A guide to building a program of study for learning astrophotography, covering tutorial, theory, and guided approaches plus recommended resources.
 order: 1
 draft: false
-updated: 2026-07-22
 ---
 
 ## Foreword

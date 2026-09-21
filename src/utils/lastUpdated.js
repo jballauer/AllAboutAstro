@@ -22,19 +22,3 @@ export function getLastUpdated(relativePath) {
     return null;
   }
 }
-
-// Convenience wrapper for a content-collection entry.  Astro exposes the
-// source file on the entry as `filePath`; older entries (or a collection
-// loader that omits it) fall back to trying both markdown extensions, since
-// the collection id is the filename without one.
-export function getEntryLastUpdated(entry, collectionDir) {
-  if (entry && entry.filePath) {
-    const hit = getLastUpdated(entry.filePath);
-    if (hit) return hit;
-  }
-  for (const ext of ['.md', '.mdx']) {
-    const hit = getLastUpdated(`${collectionDir}/${entry.id}${ext}`);
-    if (hit) return hit;
-  }
-  return null;
-}

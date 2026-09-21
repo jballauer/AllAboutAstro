@@ -3,7 +3,6 @@ title: Where to Setup Your Telescope
 description: Location, power, weather, critters, and the people around you — everything that goes into choosing a good observing site.
 order: 7
 draft: false
-updated: 2026-07-22
 ---
 
 When I do public observing events, whether in front of my school or for another cause, I've learned that my needs are small. If they have accessible power, then I might show some ambition and bring an imaging setup. During the day, I'm bringing solar gear. Otherwise, I'll just bring a scope that I can push around. Even in my DFW skies, there is plenty to see up there. Dark skies would be nice, but they aren't required if you hope to make a difference in the lives of people. People are worth it.

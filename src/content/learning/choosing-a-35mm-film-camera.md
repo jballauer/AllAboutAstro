@@ -3,7 +3,6 @@ title: Choosing a 35mm Film Camera
 description: A 2003-era guide (preserved for posterity) to choosing an SLR film camera suitable for astrophotography.
 order: 12
 draft: false
-updated: 2026-07-22
 ---
 
 Choosing a 35mm Film Camera (written in 2003)
