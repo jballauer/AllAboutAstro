@@ -616,13 +616,7 @@ None of this replaces anything in the arsenal.  It gets added to it.  And that i
 
 As I said, with all the choices, true beginners are at a disadvantage.
 
-<div class="ke-figure ke-figure-right" data-hires="/images/learning/guide-18-reeves-scope-full.jpg">
-
-![The Celestron Firstscope, Robert Reeves Signature Series](./_images/guide-18-reeves-scope.jpg)
-
-<p class="ke-figure-caption">Priced at around $55, this Celestron Firstscope (Robert Reeves Signature Series) is a decent performer compared to a lot of the cheaper EQ setups you'd purchase for a little more. The nice thing, other than having the knowledge that Robert is a friend, is that you won't be greatly put-out if you are disappointed. It's simple and easy to use...and that makes scopes like this (and full-sized dobs) a safe choice for a first scope.</p>
-
-</div>  But you can start by asking yourself what it is you'd like to do and how much you are willing to pay for it?   When we ask this question of people online in various forums, the typical person will indicate that they want to "see everything and do some photography."  Hopefully, in my presentation to this point, you realize that the MORE you hope a scope will do, the more likely the price tag becomes something you fail to anticipate.
+But you can start by asking yourself what it is you'd like to do and how much you are willing to pay for it?   When we ask this question of people online in various forums, the typical person will indicate that they want to "see everything and do some photography."  Hopefully, in my presentation to this point, you realize that the MORE you hope a scope will do, the more likely the price tag becomes something you fail to anticipate.
 
 Quite simply, for most, I recommend that you keep it simple and get a visual instrument.  In this way, you know you will be getting one tool, well chosen for the job.  Your likelihood of being dissatisfied with your choice lessens when you have fewer expectations of it.
 
@@ -640,9 +634,17 @@ As such, you should look no further than ***a 8" to 10" Dobsonian Reflector.*** 
 
 Here's the thing...if you aren't willing to spend $300 or more on a telescope, then just buy a nice pair of binoculars instead.
 
+<div class="ke-figure ke-figure-right" data-hires="/images/learning/guide-18-reeves-scope-full.jpg">
+
+![The Celestron Firstscope, Robert Reeves Signature Series](./_images/guide-18-reeves-scope.jpg)
+
+<p class="ke-figure-caption">Priced at around $55, this Celestron Firstscope (Robert Reeves Signature Series) is a decent performer compared to a lot of the cheaper EQ setups you'd purchase for a little more. The nice thing, other than having the knowledge that Robert is a friend, is that you won't be greatly put-out if you are disappointed. It's simple and easy to use...and that makes scopes like this (and full-sized dobs) a safe choice for a first scope.</p>
+
+</div>
+
 But here's what $300 will get you... ***a 4.5" to 6" Dobsonian reflector*** with a couple of eyepieces that can let your child learn the sky and see an enormous number of exciting objects in the night sky!
 
-And if you must buy something slightly cheaper, then get a table-top version of a similar style (see right).
+And if you must buy something slightly cheaper, then get a table-top version of a similar style (see<span class="ke-dir"> right</span><span class="ke-dir-alt"> above</span>).
 
 But what about the cheaper telescopes you see at the department store?   That's what you are really asking about, right?   Well, again, you get what you pay for...and you would be paying for low quality, frustrating junk.   Most of this is because of the tripod/mount that comes with these cheap scopes.  If it's low quality and lightweight (as they all are), then the scope will NEVER get used.  That is a promise.
 
