@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageBanner from '../../components/PageBanner.astro';
 import { getCollection, render } from 'astro:content';
+import { getEntryLastUpdated } from '../../utils/lastUpdated.js';
 import telescopeBuyersGuideBanner from '../../assets/banners/learning-a-telescope-buyers-guide-banner.jpeg';
 import astronomyAndTheWeatherBanner from '../../assets/banners/learning-astronomy-and-the-weather-banner.jpeg';
 import bestDataAcquisitionPracticesBanner from '../../assets/banners/learning-best-data-acquisition-practices-banner.png';
@@ -43,12 +44,44 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 const banner = pageBanners[article.id];
+// Derived from the file's own last commit rather than typed into the
+// article, so it cannot drift out of date the way a hand-written line does.
+const lastUpdated = getEntryLastUpdated(article, 'src/content/learning');
 ---
 
 <BaseLayout title={article.data.title} description={article.data.description} noindex={article.data.unlisted}>
   <article>
     {banner && <PageBanner src={banner.src} alt={banner.alt} />}
-    <h1>{article.data.title}</h1>
+    <div class="title-row">
+      <h1>{article.data.title}</h1>
+      {lastUpdated && <p class="last-updated">Last updated: {lastUpdated}</p>}
+    </div>
     <Content />
   </article>
 </BaseLayout>
+
+<style>
+  .title-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .title-row h1 {
+    margin-bottom: 0;
+  }
+
+  .last-updated {
+    display: inline-block;
+    margin: 0 0 1.25rem;
+    padding: 0.35rem 0.85rem;
+    border-left: 4px solid #b3261e;
+    background: #fdf1ef;
+    color: #6b1410;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+</style>

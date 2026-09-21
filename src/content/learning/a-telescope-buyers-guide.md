@@ -5,8 +5,6 @@ order: 2
 draft: false
 ---
 
-*- edited September 21, 2026*
-
 Purchasing a telescope, especially your first scope, is a daunting task.  There are just so many different types of scopes that do so many different types of things.  Apos and Achros; SCTs and Maks; dobs and newts; RCs and CDKs...the choices can get overwhelming!    But then, you must also consider how each "scope" or optical tube assembly (OTA) is mounted (see **[Sidebar: Basic Telescope Mount Options](#aside-basic-telescope-mount-options)**<span class="ke-dir"> at right</span>).
 
 So instead of trying to explain to you what each type of scope does (a study for a later time), I think it's important to outline several qualities first.   These should be on your mind when searching for your first telescope.  In fact, these qualities are relevant to both the beginner and the expert, and serve as general rules to the hobby.  Those five qualities are listed here, somewhat, in descending order of importance.
